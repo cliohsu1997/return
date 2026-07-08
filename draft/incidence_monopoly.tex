@@ -13,9 +13,11 @@ From Weyl and Fabinger (2013) to a Monopoly with Returns}
 \maketitle
 
 \begin{abstract}
-These notes extract the monopoly incidence principles of
-Weyl and Fabinger (2013) at an undergraduate level, then extend the framework
-to a setting with product returns.
+These notes extract the perfect-competition and monopoly incidence
+principles of Weyl and Fabinger (2013) at an undergraduate level
+(Sections~\ref{sec:pc}--\ref{sec:monopoly}), then extend the framework
+to a monopoly with product returns and derive pass-through of marginal
+and handling costs (Section~\ref{sec:returns}).
 \end{abstract}
 
 %=============================================================================
@@ -331,6 +333,276 @@ Then $\mathrm{DWL}/\pi = \tilde\rho$ globally.
 shock shows up in price versus quantity.  Adding up many small shocks is
 equivalent to averaging $\rho$, with weights proportional to quantity
 (tax incidence) or markup (welfare incidence).
+
+%=============================================================================
+\section{Monopoly with product returns}
+\label{sec:returns}
+%=============================================================================
+
+We now adapt the Weyl--Fabinger framework to a market with product returns.
+The monopolist still faces demand $Q = D(p)$, but a fraction of purchases
+are sent back.  Returns create an extra wedge between the price on the
+tag and the profit the seller actually keeps.
+
+%-----------------------------------------------------------------------------
+\subsection{Environment}
+%-----------------------------------------------------------------------------
+
+\paragraph{Demand and pricing.}
+Consumers demand $Q = D(p)$ units at price $p$, with $D'(p) < 0$.
+
+\paragraph{Return rate.}
+Conditional on price $p$, a share $r(p) \in (0,1)$ of units is returned.
+We assume
+\[
+  r'(p) > 0:
+\]
+when the product is more expensive, more buyers send it back (for example
+because the price--quality match is worse, or because free-return policies
+encourage experimentation that fails at high prices).
+
+\paragraph{Gross returns.}
+The \textbf{volume of returned units} is
+\[
+  G(p) \equiv D(p)\,r(p).
+\]
+The seller produces $Q = D(p)$ units; a share $1 - r(p)$ is kept by
+consumers and a share $r(p)$ comes back.
+
+\paragraph{Per-unit payoffs.}
+For each unit produced and sold at price $p$:
+\begin{itemize}
+  \item With probability $1 - r(p)$, the consumer keeps the item.  The
+    seller earns revenue $p$ and paid production cost $c$, so profit is
+    $(p - c)$.
+  \item With probability $r(p)$, the consumer returns the item.  The seller
+    refunds $p$, still paid production cost $c$, and pays handling cost
+    $h \ge 0$, so profit is $(-c - h)$.
+\end{itemize}
+
+\paragraph{Expected profit per unit sold.}
+Taking expectations over the return/keep margin,
+\begin{align}
+  \mu(p)
+  &\equiv (1 - r(p))(p - c) + r(p)(-c - h) \notag\\
+  &= p - c - r(p)\,(p + h).
+  \label{eq:margin-returns}
+\end{align}
+Interpretation: the seller collects $p$ from the buyer, but expects to
+refund $r(p)\,p$ and to incur handling cost $r(p)\,h$ on returned units.
+
+\paragraph{Total profit.}
+The monopolist chooses $p$ to solve
+\begin{equation}
+  \max_p \;\pi(p) = D(p)\,\mu(p).
+  \label{eq:profit-returns}
+\end{equation}
+She produces $D(p)$ units anticipating that a fraction $r(p)$ will come
+back.
+
+%-----------------------------------------------------------------------------
+\subsection{Pricing first-order condition}
+%-----------------------------------------------------------------------------
+
+Differentiate \eqref{eq:profit-returns}.  Using
+\eqref{eq:margin-returns} and
+\[
+  \mu'(p) = 1 - r'(p)\,(p + h) - r(p),
+\]
+the FOC is
+\begin{equation}
+  D'(p)\,\mu(p) + D(p)\,\mu'(p) = 0.
+  \label{eq:foc-returns}
+\end{equation}
+
+\paragraph{Undergraduate rearrangement.}
+Divide \eqref{eq:foc-returns} by $D(p)$ (positive) and use
+$D'(p)/D(p) = -1/(\varepsilon_D\, p)$:
+\[
+  -\frac{\mu(p)}{\varepsilon_D\, p} + \mu'(p) = 0
+  \quad\Rightarrow\quad
+  \mu(p) = \varepsilon_D\, p\,\mu'(p).
+\]
+So the \textbf{effective markup} $\mu(p)$ equals ``elasticity $\times$ price
+$\times$ how fast $\mu$ changes with $p$.''  When $r \equiv 0$,
+$\mu'(p) = 1$ and we recover Lerner's rule $(p-c)/p = 1/\varepsilon_D$.
+
+\paragraph{Why returns matter for pricing.}
+The term $-r'(p)(p+h)$ in $\mu'(p)$ is new.  Raising $p$ does two things:
+it increases the margin on kept units, but it also raises the return rate,
+which erodes $\mu(p)$.  Returns therefore make the seller more cautious
+about raising price than a standard monopolist would be.
+
+%-----------------------------------------------------------------------------
+\subsection{Pass-through of marginal cost}
+%-----------------------------------------------------------------------------
+
+Consider a small per-unit cost shock $\tau$ (a tax on production or an
+increase in $c$).  Write
+\[
+  \mu(p,\tau) = p - c - \tau - r(p)\,(p + h).
+\]
+Note $\partial \mu / \partial \tau = -1$.
+
+The FOC is $f(p,\tau) \equiv D'(p)\mu + D(p)\mu' = 0$.
+By the implicit function theorem,
+\[
+  \rho_c \equiv \frac{dp}{d\tau}
+  = -\frac{\partial f / \partial \tau}{\partial f / \partial p}
+  = \frac{D'(p)}{D''(p)\,\mu(p) + 2D'(p)\,\mu'(p)
+    + D(p)\,\mu''(p)},
+\]
+where
+\[
+  \mu''(p) = -2r'(p) - r''(p)\,(p + h).
+\]
+
+\paragraph{Signs.}
+At a stable maximum, the denominator is negative.  Since $D'(p) < 0$, we
+have $\rho_c > 0$: higher cost raises price.
+
+\paragraph{Comparison with the no-return monopoly.}
+If $r \equiv 0$, then $\mu = p - c - \tau$, $\mu' = 1$, $\mu'' = 0$, and
+\[
+  \rho_c^{(0)} = \frac{D'(p)}{D''(p)\,(p - c - \tau) + 2D'(p)}.
+\]
+This is the standard monopoly pass-through expressed with demand $D(p)$
+instead of inverse demand $p(Q)$.
+
+Returns change pass-through through three channels:
+\begin{enumerate}
+  \item \textbf{Level effect:} $\mu(p)$ replaces $p - c$ in the curvature term
+    $D''\mu$.  A lower effective margin makes the denominator smaller in
+    magnitude, tending to \emph{raise} pass-through.
+  \item \textbf{Slope effect:} $\mu'(p) < 1$ when $r'(p) > 0$, which tends to
+    \emph{lower} pass-through because price increases trigger more returns.
+  \item \textbf{Curvature effect:} $\mu''(p)$ adds a third term involving
+    $r''(p)$, capturing whether the return rate accelerates as price rises.
+\end{enumerate}
+
+There is no single closed form as clean as \eqref{eq:monopoly-rho} unless
+one imposes functional forms on $D$ and $r$ (see below).
+
+%-----------------------------------------------------------------------------
+\subsection{Pass-through of handling cost}
+%-----------------------------------------------------------------------------
+
+If the return-handling cost rises by one dollar ($h \to h + \Delta$),
+\[
+  \frac{\partial \mu}{\partial h} = -r(p).
+\]
+The same implicit-function logic gives
+\[
+  \rho_h \equiv \frac{dp}{dh}
+  = \frac{D'(p)\,r(p)}{D''(p)\,\mu(p) + 2D'(p)\,\mu'(p)
+    + D(p)\,\mu''(p)}.
+\]
+Because only returned units trigger $h$, pass-through of handling costs is
+scaled by the return rate $r(p)$.  If few units return, a higher $h$ barely
+moves price.
+
+%-----------------------------------------------------------------------------
+\subsection{Incidence with returns (parallel to Section~\ref{sec:monopoly})}
+%-----------------------------------------------------------------------------
+
+\paragraph{Producer tax $\tau$.}
+Holding quantity fixed, a small producer cost shock costs the monopolist
+$\pi_\tau = -D(p)\,d\tau$ by the envelope theorem (each sold unit loses
+one dollar of margin).  Consumers lose
+$dCS = -D(p)\,(dp/d\tau)\,d\tau = -\rho_c\,D(p)\,d\tau$.
+
+Total burden on participants:
+\[
+  |\Delta CS| + |\Delta \pi|
+  = (\rho_c + 1)\,D(p)\,d\tau,
+\]
+exactly as in Principle~2: the monopolist pays the tax dollar-for-dollar at
+the margin, and consumers bear the excess burden $\rho_c D(p)\,d\tau$.
+
+\paragraph{Incidence ratio.}
+\[
+  I_c \equiv \frac{|\Delta CS|}{|\Delta \pi|} = \rho_c.
+\]
+Pass-through remains the sufficient statistic for consumer versus producer
+incidence, but $\rho_c$ now depends on the return technology $r(p)$.
+
+\paragraph{Handling-cost shock.}
+For an increase in $h$, envelope gives $d\pi/dh = -D(p)\,r(p)$ while
+$dCS/dh = -\rho_h D(p)$.  Hence
+\[
+  I_h \equiv \frac{|\Delta CS|}{|\Delta \pi|}
+  = \frac{\rho_h}{r(p)}.
+\]
+If $\rho_h = r(p)\,\rho_c$ (which holds in the linear-demand example below),
+then $I_h = \rho_c$: the \emph{ratio} of consumer to producer burden is the
+same as for a production-cost shock, even though the \emph{levels} differ
+because only a fraction $r(p)$ of units trigger $h$.
+
+%-----------------------------------------------------------------------------
+\subsection{Example: linear demand and linear return rate}
+%-----------------------------------------------------------------------------
+
+Suppose
+\[
+  D(p) = a - bp, \qquad r(p) = \alpha + \gamma p,
+  \qquad \alpha,\gamma > 0,\; b>0,
+\]
+with parameters small enough that $r(p) \in (0,1)$ at the optimum.
+
+Then
+\[
+  \mu(p) = p - c - (\alpha + \gamma p)(p + h)
+  = (1-\gamma p - \alpha)\,p - c - \alpha h - \gamma p h,
+\]
+\[
+  \mu'(p) = 1 - \gamma(p + h) - (\alpha + \gamma p)
+  = 1 - \alpha - \gamma(2p + h),
+\]
+\[
+  \mu''(p) = -2\gamma.
+\]
+
+The FOC \eqref{eq:foc-returns} is quadratic in $p$ in general.  Once the
+optimum $p^*$ is found numerically or in closed form, substitute into the
+pass-through formulas above.
+
+\paragraph{Special case: no return-rate sensitivity ($\gamma = 0$).}
+Then $r(p) = \alpha$ is constant,
+$\mu = (1-\alpha)p - c - \alpha h$,
+$\mu' = 1 - \alpha$,
+$\mu'' = 0$, and
+\[
+  \rho_c = \frac{D'(p)}{D''\mu + 2D'\mu'}
+  = \frac{-b}{0 - 2b(1-\alpha)}
+  = \frac{1}{2(1-\alpha)}.
+\]
+Compared with the no-return benchmark $\rho_c^{(0)} = 1/2$, a positive
+return share $\alpha > 0$ \emph{raises} pass-through: the seller is already
+losing margin on returned units, so she shifts a larger share of further
+cost increases onto consumers who keep the product.
+
+For handling cost,
+\[
+  \rho_h = \frac{D'\alpha}{2D'(1-\alpha)} = \frac{\alpha}{2(1-\alpha)}
+  = \alpha\,\rho_c.
+\]
+
+%-----------------------------------------------------------------------------
+\subsection{Summary}
+%-----------------------------------------------------------------------------
+
+With returns, the monopoly problem is $\max_p D(p)\,\mu(p)$ where
+$\mu(p) = p - c - r(p)(p+h)$.  The Weyl--Fabinger logic survives:
+\begin{itemize}
+  \item Pass-through $\rho_c = dp/d\tau$ summarizes how a marginal-cost
+    shock splits between higher prices and lower quantity.
+  \item Incidence on consumers relative to producers equals $\rho_c$.
+  \item Returns matter because they lower the effective margin $\mu$ and
+    make $\mu'(p)$ depend on $r'(p)$: higher prices invite more returns.
+\end{itemize}
+The next step---not developed here---is to impose functional forms for
+$D$ and $r$ that match retail data and compare predicted pass-through to
+estimates from cost or return-policy shocks.
 
 %=============================================================================
 \section*{References}
