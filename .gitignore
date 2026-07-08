@@ -1,0 +1,30 @@
+# Python
+python/virtual env/
+__pycache__/
+*.pyc
+.poetry/
+
+# LaTeX
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+
+# R
+.Rhistory
+.RData
+.Rproj.user
+
+# Credentials / secrets
+.env
+.aws/
+credentials
+
+# OS
+.DS_Store
+Thumbs.db
