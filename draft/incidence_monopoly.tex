@@ -5,7 +5,7 @@
 \usepackage{hyperref}
 
 \title{Tax Pass-Through and Incidence:\\
-From Weyl and Fabinger (2013) to a Monopoly with Returns}
+Monopoly (Weyl and Fabinger, 2013) and Returns}
 \author{Draft notes}
 \date{\today}
 
@@ -13,596 +13,815 @@ From Weyl and Fabinger (2013) to a Monopoly with Returns}
 \maketitle
 
 \begin{abstract}
-These notes extract the perfect-competition and monopoly incidence
-principles of Weyl and Fabinger (2013) at an undergraduate level
-(Sections~\ref{sec:pc}--\ref{sec:monopoly}), then extend the framework
-to a monopoly with product returns and derive pass-through of marginal
-and handling costs (Section~\ref{sec:returns}).
+Self-contained notes on pass-through and tax incidence, following
+Weyl and Fabinger (2013) with full derivations under perfect competition
+and monopoly (Sections~\ref{sec:pc}--\ref{sec:monopoly}), then extended
+to a monopoly with product returns, where $r(p)$ is the aggregate return
+rate at price $p$ with $r'(p)>0$ (Section~\ref{sec:returns}, full derivations).
 \end{abstract}
 
 %=============================================================================
-\section{Perfect competition: five principles (brief)}
+\section{Shared notation}
+\label{sec:notation}
+%=============================================================================
+
+\begin{itemize}
+  \item $Q = D(p)$: demand at consumer price $p$, with $D' < 0$.
+  \item $\varepsilon_D \equiv -p D'(p)/D(p) > 0$: price elasticity of demand.
+  \item $t$ or $\tau$: per-unit tax or cost shock borne by the seller.
+  \item $\rho \equiv dp/d\tau$: \textbf{pass-through} (consumer price rise per
+    dollar of seller cost).
+  \item $CS(p) = \int_p^{\bar p} D(x)\,dx$, $\pi$: consumer surplus and profit.
+  \item $I \equiv |\Delta CS|/|\Delta \pi|$: \textbf{incidence ratio} (monopoly);
+    under perfect competition $I = \rho/(1-\rho)$.
+\end{itemize}
+
+%=============================================================================
+\section{Perfect competition: Weyl and Fabinger, Section II}
 \label{sec:pc}
 %=============================================================================
 
-Weyl and Fabinger begin with a perfectly competitive market to build
-intuition.  Consumers face price $p$; producers receive $p - t$ when a
-per-unit tax $t$ is levied on producers.  Demand is $Q = D(p)$ and supply
-is $Q = S(p - t)$.
-
-\paragraph{Pass-through.}
-The \textbf{pass-through rate} is
-\[
-  \rho \equiv \frac{dp}{dt},
-\]
-the amount by which the consumer price rises when the producer tax rises
-by one dollar.
-
-\paragraph{Five principles (perfect competition).}
-\begin{enumerate}
-  \item \textbf{Physical incidence is neutral.}  It does not matter
-    whether the tax is collected from buyers or sellers; the equilibrium
-    price pair $(p, p-t)$ is the same.  If the tax is shifted onto
-    consumers, the consumer price falls by $1 - \rho$.
-
-  \item \textbf{The burden is shared.}  For a small tax increase,
-    consumer surplus falls by $\rho Q\,dt$ and producer surplus falls by
-    $(1-\rho)Q\,dt$.  The two sides split the mechanical tax bill $Q\,dt$.
-
-  \item \textbf{Incidence ratio.}
-    $I \equiv \dfrac{|\Delta CS|}{|\Delta PS|} = \dfrac{\rho}{1-\rho}$.
-
-  \item \textbf{Pass-through formula.}
-    Differentiating $D(p) = S(p-t)$ gives
-    \[
-      \rho = \frac{1}{1 + \varepsilon_D / \varepsilon_S},
-    \]
-    where $\varepsilon_D \equiv -\dfrac{p D'(p)}{D(p)} > 0$ is the price
-    elasticity of demand and $\varepsilon_S \equiv \dfrac{(p-t) S'(p-t)}{S(p-t)}
-    > 0$ is the elasticity of supply.  The \emph{inelastic} side of the
-    market bears more of the tax.
-
-  \item \textbf{Local averages to global.}  For a large tax change from
-    $t_0$ to $t_1$, replace $\rho$ by the quantity-weighted average
-    $\bar\rho \equiv \dfrac{\int_{t_0}^{t_1} \rho(t) Q(t)\,dt}{\int_{t_0}^{t_1}
-    Q(t)\,dt}$.  Then $I = \bar\rho / (1-\bar\rho)$.  The same logic
-    determines how total surplus is split if the market is shut down by
-    taxation.
-\end{enumerate}
-
-\paragraph{Undergraduate derivation of $\rho$ under perfect competition.}
-Start from $D(p) = S(p-t)$.  Differentiate both sides with respect to $t$
-(using the chain rule on the right-hand side):
-\[
-  D'(p)\,\frac{dp}{dt} = S'(p-t)\left(\frac{dp}{dt} - 1\right).
-\]
-Collect terms with $dp/dt$ on the left:
-\[
-  \bigl[S'(p-t) - D'(p)\bigr]\rho = S'(p-t)
-  \quad\Rightarrow\quad
-  \rho = \frac{S'(p-t)}{S'(p-t) - D'(p)}.
-\]
-Divide numerator and denominator by $Q$ and use the elasticity definitions
-to obtain principle~4.
-
-The monopoly case below keeps the same definition of $\rho$ but changes
-\emph{who} bears the burden and \emph{how} $\rho$ is determined.
-
-%=============================================================================
-\section{Monopoly: five principles of Weyl and Fabinger (2013)}
-\label{sec:monopoly}
-%=============================================================================
-
-\subsection{Setup}
-
-A monopolist faces inverse demand $p(Q)$ (or, equivalently, demand
-$Q = D(p)$).  She chooses quantity $Q$ to maximize profit
-\[
-  \pi(Q) = \bigl[p(Q) - c\bigr]\,Q - C(Q),
-\]
-where $c$ is constant marginal cost and $C(Q)$ is any fixed cost (which
-does not affect the pricing decision).  For simplicity we take
-$C(Q) = 0$ unless noted.
-
-Define:
-\begin{itemize}
-  \item \textbf{Marginal revenue:}
-    $\mathrm{MR}(Q) \equiv \dfrac{d}{dQ}\bigl[p(Q)\,Q\bigr]
-    = p(Q) + p'(Q)\,Q$.
-  \item \textbf{Marginal cost:} $\mathrm{MC}(Q) \equiv C'(Q) = c$.
-  \item \textbf{Markup:} $m(Q) \equiv p(Q) - c$.
-\end{itemize}
-
-The monopolist's first-order condition (FOC) is
+Consumers pay $p$; producers receive $p - \tau$ when a per-unit tax $\tau$ is
+levied on producers.  Market clearing is
 \begin{equation}
-  \mathrm{MR}(Q) = \mathrm{MC}(Q) = c.
-  \label{eq:monopoly-foc}
+  D(p) = S(p - \tau).
+  \label{eq:pc-clearing}
 \end{equation}
-
-\paragraph{Taxes.}
-A per-unit tax $t$ on the \emph{producer} raises effective marginal cost to
-$c + t$, so \eqref{eq:monopoly-foc} becomes $\mathrm{MR}(Q) = c + t$.
-
-A per-unit tax on \emph{consumers} shifts inverse demand down by $t$:
-consumers pay $p$ but the monopolist still receives $p - t$ per unit.
-Either way, only the \emph{difference} $p - t$ matters for the monopolist's
-quantity choice.
+Let $Q$ denote equilibrium quantity and $\rho \equiv dp/d\tau$.
 
 %-----------------------------------------------------------------------------
 \subsection{Principle 1: Physical incidence is neutral}
 %-----------------------------------------------------------------------------
 
-\textbf{Claim.}  A tax on consumers (a parallel downward shift of demand)
-lowers the consumer price by $1 - \rho$.  Equivalently, the producer's
-nominal receipt $p - t$ moves the same way as when the tax is on producers.
+If the tax is collected from consumers instead, $p$ is the price consumers
+pay and producers receive $p - \tau$.  Equation \eqref{eq:pc-clearing} is
+unchanged, so $(p,\,Q)$ is unchanged.  Labeling alone differs.
 
-\textbf{Intuition.}  The monopolist cares only about the margin
-$p - t - c$.  Shifting \emph{who} writes the check to the government does
-not change her optimal quantity, only how the price is labeled.
-
-\textbf{Derivation.}  With a consumer tax, the monopolist solves
-$\max_Q (p(Q) - t - c)Q$, which is the same problem as producer tax
-$\max_Q (p(Q) - c)Q - tQ$ with the same FOC $\mathrm{MR}(Q) = c + t$.
+If a consumer tax lowers nominal $p$ by $\Delta\tau$, the producer's receipt
+$p - \tau$ falls by $1 - \rho$ when a producer tax of size $\Delta\tau$ would
+have raised $p$ by $\rho$.
 
 %-----------------------------------------------------------------------------
-\subsection{Principle 2: The burden exceeds the tax revenue}
+\subsection{Principles 2--3: Burden sharing and incidence}
 %-----------------------------------------------------------------------------
 
-\textbf{Claim.}  Under monopoly, consumers and the firm together bear
-\emph{more} than the dollar amount of tax collected.  The monopolist pays
-the full tax out of profit (holding quantity fixed), but consumers also
-suffer because quantity falls.
-
-\textbf{Derivation.}  Consumer surplus is $CS(p) = \int_p^{\bar p} D(x)\,dx$.
-For a small producer tax,
+Consumer surplus $CS(p) = \int_p^{\bar p} D(x)\,dx$ satisfies
+$dCS = -D(p)\,dp$, so
+\begin{equation}
+  \frac{dCS}{d\tau} = -D(p)\,\rho.
+  \label{eq:pc-dcs}
+\end{equation}
+Producer surplus is $PS(u)$ with $u \equiv p - \tau$ and
+$PS(u) = \int_0^u S(x)\,dx$, so $PS'(u) = S(u) = Q$.  Since
+$u = p - \tau$,
 \[
-  \frac{dCS}{dt} = -D(p)\,\frac{dp}{dt} = -\rho\,Q.
+  \frac{dPS}{d\tau}
+  = PS'(u)\left(\frac{dp}{d\tau} - 1\right)
+  = Q(\rho - 1)
+  = -(1-\rho)\,Q.
+  \label{eq:pc-dps}
 \]
-So consumers lose $\rho Q\,dt$---the same as under perfect competition.
+\emph{Principle 2:} the mechanical tax bill $Q\,d\tau$ splits with weights
+$\rho$ on consumers and $1-\rho$ on producers.
 
-Producer profit is $\pi = (p - c - t)Q$.  The \textbf{envelope theorem} says:
-when the monopolist re-optimizes, a small change in $t$ hurts profit
-\emph{as if quantity were held fixed}:
+\emph{Principle 3:}
 \[
-  \frac{d\pi}{dt} = -Q.
+  I \equiv \frac{|dCS/d\tau|}{|dPS/d\tau|}
+  = \frac{\rho Q}{(1-\rho)Q}
+  = \frac{\rho}{1-\rho}.
 \]
-The monopolist bears the entire mechanical tax bill $Q\,dt$.
-
-\textbf{Total burden on market participants:}
-\[
-  |\Delta CS| + |\Delta \pi|
-  = \rho Q\,dt + Q\,dt
-  = (1 + \rho)\,Q\,dt
-  > Q\,dt.
-\]
-The extra $\rho Q\,dt$ is the \textbf{deadweight burden on consumers} from
-the quantity distortion.  Under perfect competition, the firm bore
-$(1-\rho)Q\,dt$ and the total was only $Q\,dt$.
 
 %-----------------------------------------------------------------------------
-\subsection{Principle 3: Incidence ratio equals pass-through}
+\subsection{Principle 4: Pass-through formula}
 %-----------------------------------------------------------------------------
 
-\textbf{Claim.}  $I \equiv |\Delta CS| / |\Delta \pi| = \rho$.
-
-\textbf{Intuition.}  The monopolist always pays the tax dollar-for-dollar
-(at the margin, holding $Q$ fixed).  Any consumer loss beyond the tax
-shifting is pure excess burden, and its size relative to the producer loss
-is exactly the pass-through rate.
-
-\textbf{Derivation.}  From the previous subsection,
-$|\Delta CS|/|\Delta \pi| = \rho Q / Q = \rho$.
-
-\paragraph{Social incidence of competition (constant $c$).}
-Weyl and Fabinger offer a useful reinterpretation.  Suppose a small amount
-$\tilde q$ of the good is supplied competitively at marginal cost $c$
-(\emph{exogenous competition}).  The incumbent's profit becomes
-$[p(Q) - c](Q - \tilde q)$.  One extra unit of competition changes the
-incumbent's quantity incentive exactly like a marginal-cost increase of
-$p'(Q)$.  Hence
+Differentiate \eqref{eq:pc-clearing} with respect to $\tau$:
 \[
-  \frac{dQ}{d\tilde q} = p'(Q)\,\frac{dQ}{dt} = p'(Q)\,\rho.
+  D'(p)\,\frac{dp}{d\tau}
+  = S'(p-\tau)\left(\frac{dp}{d\tau} - 1\right).
 \]
-Deadweight loss from monopoly markup is
-$\mathrm{DWL}(Q) = \int_Q^{Q^{**}} m(q)\,dq$ where $Q^{**}$ satisfies
-$m(Q^{**}) = 0$, so $d\,\mathrm{DWL}/dQ = -m(Q)$.
-A small increase in competitive supply $\tilde q$ changes quantity by
-$dQ/d\tilde q = \rho$ (same comparative statics as a unit cost tax).
+Collect terms:
+\[
+  \bigl[S'(p-\tau) - D'(p)\bigr]\,\rho = S'(p-\tau)
+  \quad\Rightarrow\quad
+  \rho = \frac{S'(p-\tau)}{S'(p-\tau) - D'(p)}.
+\]
+Define elasticities at the equilibrium:
+\[
+  \varepsilon_D \equiv -\frac{p\,D'(p)}{D(p)} > 0,
+  \qquad
+  \varepsilon_S \equiv \frac{(p-\tau)\,S'(p-\tau)}{S(p-\tau)} > 0.
+\]
+Since $Q = D(p) = S(p-\tau)$, multiply numerator and denominator by
+$(p-\tau)/Q$:
+\[
+  \rho = \frac{\varepsilon_S}{\varepsilon_S + \varepsilon_D}
+  = \frac{1}{1 + \varepsilon_D/\varepsilon_S}.
+\]
+The inelastic side bears more of the tax.
+
+%-----------------------------------------------------------------------------
+\subsection{Principle 5: Local to global}
+%-----------------------------------------------------------------------------
+
+For a finite tax change $\tau_0 \to \tau_1$, integrate
+\eqref{eq:pc-dcs}--\eqref{eq:pc-dps}:
+\[
+  \Delta CS = -\int_{\tau_0}^{\tau_1} \rho(\tau)\,Q(\tau)\,d\tau,
+  \qquad
+  \Delta PS = -\int_{\tau_0}^{\tau_1} (1-\rho(\tau))\,Q(\tau)\,d\tau.
+\]
+Define the quantity-weighted average pass-through
+\[
+  \bar\rho_{\tau_0}^{\tau_1}
+  \equiv
+  \frac{\int_{\tau_0}^{\tau_1} \rho(\tau)\,Q(\tau)\,d\tau}
+       {\int_{\tau_0}^{\tau_1} Q(\tau)\,d\tau}.
+\]
+Then
+\[
+  I_{\tau_0}^{\tau_1}
+  = \frac{\Delta CS}{\Delta PS}
+  = \frac{\bar\rho_{\tau_0}^{\tau_1}}{1 - \bar\rho_{\tau_0}^{\tau_1}}.
+\]
+The local formula $I = \rho/(1-\rho)$ holds globally once $\rho$ is replaced
+by $\bar\rho$.  If $\tau$ rises until $Q=0$, the ratio $CS/PS$ of total
+surpluses equals $\bar\rho/(1-\bar\rho)$ with $\bar\rho$ averaged from
+$\tau=0$ to the choking tax.
+
+%=============================================================================
+\section{Monopoly: Weyl and Fabinger, Section III}
+\label{sec:monopoly}
+%=============================================================================
+
+The monopolist chooses quantity $Q$ facing inverse demand $p(Q)$ with
+$p'(Q) < 0$.  Revenue is $p(Q)\,Q$, cost is $c(Q)$ with
+$\mathrm{MC}(Q) \equiv c'(Q)$.  Define
+\[
+  \mathrm{MR}(Q) \equiv \frac{d}{dQ}\bigl[p(Q)\,Q\bigr] = p(Q) + p'(Q)\,Q,
+\]
+\[
+  m(Q) \equiv p(Q) - \mathrm{MC}(Q),
+  \qquad
+  ms(Q) \equiv -p'(Q)\,Q \quad \text{(marginal consumer surplus)}.
+\]
+With a per-unit producer tax $\tau$, the FOC is
+\begin{equation}
+  \mathrm{MR}(Q) = \mathrm{MC}(Q) + \tau.
+  \label{eq:mr-tax}
+\end{equation}
+We write $p$, $Q$, $m$, $ms$ evaluated at the optimum unless noted.
+
+%-----------------------------------------------------------------------------
+\subsection{Principle 1: Physical incidence is neutral}
+%-----------------------------------------------------------------------------
+
+\paragraph{Producer tax.}
+Problem: $\max_Q \bigl[p(Q) - \mathrm{MC}(Q) - \tau\bigr]\,Q$.
+FOC: $\mathrm{MR}(Q) = \mathrm{MC}(Q) + \tau$.
+
+\paragraph{Consumer tax.}
+Consumers pay $p$; the monopolist keeps $p - \tau$.  Problem:
+$\max_Q \bigl[p(Q) - \tau - \mathrm{MC}(Q)\bigr]\,Q$.
+The FOC is identical.
+
+\paragraph{Conclusion.}
+Only $p - \tau - \mathrm{MC}$ matters for $Q$.  Physical incidence does not
+affect real allocation; $\rho = dp/d\tau$ is the same under either labeling.
+
+%-----------------------------------------------------------------------------
+\subsection{Principle 2: Total burden exceeds tax revenue}
+%-----------------------------------------------------------------------------
+
+\paragraph{Step 1: Consumer burden.}
+Demand is still $Q = D(p)$, so as in \eqref{eq:pc-dcs},
+\begin{equation}
+  \frac{dCS}{d\tau} = -Q\,\rho.
+  \label{eq:mono-dcs}
+\end{equation}
+
+\paragraph{Step 2: Producer burden (envelope theorem).}
+Profit is $\pi(Q,\tau) = \bigl[p(Q) - \mathrm{MC}(Q) - \tau\bigr]\,Q$.
+Holding $Q$ fixed,
+\[
+  \frac{\partial \pi}{\partial \tau} = -Q.
+\]
+At the optimum, $\partial\pi/\partial Q = 0$, so the total derivative
+equals the partial derivative:
+\begin{equation}
+  \frac{d\pi}{d\tau} = -Q.
+  \label{eq:mono-dpi}
+\end{equation}
+The monopolist bears the full mechanical tax $Q\,d\tau$ at the margin.
+
+\paragraph{Step 3: Compare to tax revenue.}
+Revenue raised is $Q\,d\tau$.  Total burden on participants:
+\[
+  |\Delta CS| + |\Delta\pi|
+  = \rho Q\,d\tau + Q\,d\tau
+  = (1+\rho)\,Q\,d\tau
+  > Q\,d\tau.
+\]
+Under perfect competition \eqref{eq:pc-dps}, producers bore
+$(1-\rho)Q\,d\tau$ and the total equaled revenue.  Under monopoly the
+extra $\rho Q\,d\tau$ is \textbf{excess burden} on consumers from the
+quantity distortion.
+
+%-----------------------------------------------------------------------------
+\subsection{Principle 3: Incidence equals pass-through}
+%-----------------------------------------------------------------------------
+
+From \eqref{eq:mono-dcs}--\eqref{eq:mono-dpi},
+\[
+  I \equiv \frac{|\Delta CS|}{|\Delta\pi|}
+  = \frac{\rho Q}{Q}
+  = \rho.
+\]
+The monopolist pays the tax dollar-for-dollar (at fixed $Q$); any consumer
+loss beyond mechanical shifting is excess burden, and its ratio to producer
+loss is $\rho$.
+
+%-----------------------------------------------------------------------------
+\subsection{Social incidence of competition (constant marginal cost)}
+%-----------------------------------------------------------------------------
+
+Assume $\mathrm{MC} \equiv c$.  A quantity $\tilde q$ is supplied
+competitively at cost $c$.  Incumbent profit:
+$\pi = \bigl[p(Q) - c\bigr](Q - \tilde q)$.
+
+\paragraph{Step 1: Competition mimics a cost shock.}
+Marginal revenue becomes $p(Q) + p'(Q)(Q - \tilde q)$.  Increasing
+$\tilde q$ by $d\tilde q$ shifts the FOC exactly like raising $\tau$ by
+$-p'(Q)\,d\tilde q$:
+\[
+  \frac{dQ}{d\tilde q} = p'(Q)\,\frac{dQ}{d\tau}
+  = \frac{p'(Q)}{\mathrm{MR}'} = \rho.
+\]
+
+\paragraph{Step 2: Deadweight loss.}
+$m(Q) = p(Q) - c$.  Social optimum $Q^{**}$ satisfies $m(Q^{**}) = 0$.
+\[
+  \mathrm{DWL}(Q) = \int_Q^{Q^{**}} m(q)\,dq
+  \quad\Rightarrow\quad
+  \frac{d\,\mathrm{DWL}}{dQ} = -m(Q).
+\]
 Hence
 \[
   \frac{d\,\mathrm{DWL}}{d\tilde q}
   = \frac{d\,\mathrm{DWL}}{dQ}\,\frac{dQ}{d\tilde q}
-  = -\rho\,m(Q).
+  = -m\,\rho.
 \]
-By the envelope theorem, $d\pi/d\tilde q = -m(Q)$.  Therefore
+
+\paragraph{Step 3: Profit loss.}
+Envelope theorem at fixed $Q$: $d\pi/d\tilde q = -m$.
+
+\paragraph{Step 4: Social incidence.}
 \[
   \mathrm{SI}
   \equiv \frac{d\,\mathrm{DWL}/d\tilde q}{d\pi/d\tilde q}
+  = \frac{-\rho m}{-m}
   = \rho.
 \]
-Competition erodes deadweight loss and profit at the same rate $\rho$.
+Competition erodes deadweight loss and profit at the same rate as consumer
+incidence of a tax.
 
 %-----------------------------------------------------------------------------
-\subsection{Principle 4: Pass-through under monopoly}
+\subsection{Principle 4: Pass-through formula}
 %-----------------------------------------------------------------------------
 
-\textbf{Claim.}  With general (possibly nonlinear) cost $c(q)$,
-differentiating $\mathrm{MR}(Q) = \mathrm{MC}(Q) + t$ gives
+\paragraph{Step 1: Differentiate the FOC.}
+From \eqref{eq:mr-tax}, $\mathrm{MR}(Q) = \mathrm{MC}(Q) + \tau$.
+Differentiate with respect to $\tau$:
 \[
-  \rho = \frac{dp}{dt}
-  = \frac{p'(Q)}{\mathrm{MR}'(Q) - \mathrm{MC}'(Q)}.
+  \mathrm{MR}'(Q)\,\frac{dQ}{d\tau}
+  = \mathrm{MC}'(Q)\,\frac{dQ}{d\tau} + 1
+  \quad\Rightarrow\quad
+  \bigl[\mathrm{MR}' - \mathrm{MC}'\bigr]\,\frac{dQ}{d\tau} = 1.
 \]
-With constant marginal cost $c$, this simplifies to
+Hence
+\[
+  \frac{dQ}{d\tau} = \frac{1}{\mathrm{MR}' - \mathrm{MC}'}.
+\]
+
+\paragraph{Step 2: Pass-through in price.}
+Consumer price is $p(Q)$, so
+\begin{equation}
+  \rho = \frac{dp}{d\tau}
+  = p'(Q)\,\frac{dQ}{d\tau}
+  = \frac{p'(Q)}{\mathrm{MR}' - \mathrm{MC}'}.
+  \label{eq:rho-general}
+\end{equation}
+
+\paragraph{Step 3: Constant marginal cost ($\mathrm{MC}' = 0$).}
+$\mathrm{MR} = p + p'Q$, so
+\[
+  \mathrm{MR}' = p' + p' + p''Q = 2p' + p''Q,
+\]
+and \eqref{eq:rho-general} becomes
+\begin{equation}
+  \rho = \frac{p'}{2p' + p''Q}
+  = \frac{1}{2 + p''Q/p'}.
+  \label{eq:rho-curvature}
+\end{equation}
+
+\paragraph{Step 4: Introduce $\varepsilon_{ms}$.}
+Since $ms = -p'Q$,
+\[
+  ms' = \frac{d}{dQ}(-p'Q) = -p' - p''Q
+  \quad\Rightarrow\quad
+  \frac{p''Q}{p'} = -\frac{ms'}{p'} - 1.
+\]
+Define
+\[
+  \varepsilon_{ms} \equiv \frac{ms}{ms'\,Q}
+  \quad\Rightarrow\quad
+  \frac{1}{\varepsilon_{ms}} = \frac{ms'\,Q}{ms}
+  = \frac{p''Q}{p'} + 1,
+\]
+so $p''Q/p' = 1/\varepsilon_{ms} - 1$.  Substitute into
+\eqref{eq:rho-curvature}:
+\[
+  \rho = \frac{1}{2 + 1/\varepsilon_{ms} - 1}
+  = \frac{1}{1 + 1/\varepsilon_{ms}}.
+\]
+This is the \emph{curvature} part; supply and demand elasticities enter next.
+
+\paragraph{Step 5: Introduce $\varepsilon_D$ and $\varepsilon_S$.}
+Write \eqref{eq:rho-general} as
+$\rho = 1/\bigl(\mathrm{MR}'/p' - \mathrm{MC}'/p'\bigr)$.
+Since $\mathrm{MR} = p - ms$ with $ms \equiv -p'Q$,
+\[
+  \mathrm{MR}' = p' - ms'
+  \quad\Rightarrow\quad
+  \frac{\mathrm{MR}'}{p'}
+  = 1 - \frac{ms'}{p'}
+  = 2 + \frac{p''Q}{p'}
+  = 1 + \frac{1}{\varepsilon_{ms}},
+\]
+using $ms'/p' = -1 - p''Q/p'$ and $p''Q/p' = 1/\varepsilon_{ms} - 1$.
+For the cost side, with $\varepsilon_S \equiv \mathrm{MC}/(\mathrm{MC}'\,Q)$,
+\[
+  \frac{\mathrm{MC}'}{p'}
+  = \frac{1}{\varepsilon_S\,Q}\cdot\frac{\mathrm{MC}}{p'}.
+\]
+At $\tau = 0$, Lerner's rule $\mathrm{MC}/p = (\varepsilon_D-1)/\varepsilon_D$ and
+$\varepsilon_D = -p/(Q p')$ imply
+\[
+  \frac{\mathrm{MC}}{p'}
+  = \frac{\mathrm{MC}}{p}\cdot\frac{p}{p'}
+  = -\frac{(\varepsilon_D - 1)\,Q}{p},
+  \qquad
+  \frac{\mathrm{MC}'}{p'} = -\frac{\varepsilon_D - 1}{\varepsilon_S}.
+\]
+Therefore
+\[
+  \frac{\mathrm{MR}'}{p'} - \frac{\mathrm{MC}'}{p'}
+  = 1 + \frac{1}{\varepsilon_{ms}} + \frac{\varepsilon_D - 1}{\varepsilon_S},
+\]
+and
 \begin{equation}
   \rho = \frac{1}{1 + \dfrac{\varepsilon_D - 1}{\varepsilon_S}
-  + \dfrac{1}{\varepsilon_{ms}}},
+    + \dfrac{1}{\varepsilon_{ms}}}.
   \label{eq:monopoly-rho}
 \end{equation}
-where
-\[
-  \varepsilon_D \equiv -\frac{p}{Q}\,\frac{dQ}{dp} > 0,
-  \qquad
-  \varepsilon_S \equiv \frac{\mathrm{MC}}{\mathrm{MC}'}\,\frac{1}{Q},
-  \qquad
-  \varepsilon_{ms} \equiv \frac{ms}{ms'}\,Q,
-\]
-and $ms(Q) \equiv -p'(Q)\,Q$ is \textbf{marginal consumer surplus}
-(the consumer benefit from the last unit sold).
+When $\mathrm{MC}' = 0$ (constant marginal cost), $\varepsilon_S \to \infty$ and
+\eqref{eq:monopoly-rho} reduces to $\rho = 1/(1 + 1/\varepsilon_{ms})$ from
+Step~4.
 
-\paragraph{Step-by-step derivation (constant $c$).}
-The FOC with tax is $p(Q) + p'(Q)Q = c + t$, i.e.\ $\mathrm{MR} = c + t$.
-Differentiate with respect to $t$:
-\[
-  \mathrm{MR}'(Q)\,\frac{dQ}{dt} = 1
-  \quad\Rightarrow\quad
-  \frac{dQ}{dt} = \frac{1}{\mathrm{MR}'(Q)}.
-\]
-Consumer price changes by $\rho = p'(Q)\,dQ/dt$, so
-\[
-  \rho = \frac{p'(Q)}{\mathrm{MR}'(Q)}.
-\]
-Now $\mathrm{MR} = p + p'Q$, so
-$\mathrm{MR}' = 2p' + p''Q$.
-With linear cost, $\mathrm{MC}' = 0$ and the denominator is
-$\mathrm{MR}' - \mathrm{MC}' = \mathrm{MR}'$.
-
-Write $\mathrm{MR}' = p'\bigl(2 + p''Q/p'\bigr)$.  Using
-$p''Q/p' = 1/\varepsilon_{ms} - 1$ (from the definition of
-$\varepsilon_{ms}$) and Lerner's rule $(p-c)/p = 1/\varepsilon_D$, one
-obtains \eqref{eq:monopoly-rho}.
-
-\paragraph{Intuition: two differences from perfect competition.}
-\begin{enumerate}
-  \item \textbf{$\varepsilon_D - 1$ instead of $\varepsilon_D$.}
-    Under monopoly, demand must be elastic ($\varepsilon_D > 1$) at the
-    optimum.  The relevant ``residual'' elasticity for tax shifting is
-    measured relative to unity, not zero.
-
-  \item \textbf{The curvature term $1/\varepsilon_{ms}$.}
-    This captures the \emph{shape} of demand beyond its slope.
-    Define $\phi(p) \equiv \log D(p)$.  Then
-    $\phi''(p) = -1/\varepsilon_{ms} + 1/ms - 1/p'$.
-    \begin{itemize}
-      \item \textbf{Log-concave demand} ($\phi'' < 0$): pass-through
-        $\rho > 1$---a cost increase raises price by \emph{more} than one
-        dollar (Bulow and Pfleiderer 1983).
-      \item \textbf{Log-convex demand}: $\rho < 1$.
-      \item \textbf{Linear demand}: $\rho = 1$.
-    \end{itemize}
-\end{enumerate}
-
-\paragraph{Special case: linear demand and constant cost.}
-If $p(Q) = a - bQ$, then $p' = -b$ is constant, $p'' = 0$, and
-$\mathrm{MR}' = -2b$.  Hence $\rho = (-b)/(-2b) = 1/2$: half of a marginal
-cost increase is passed through to consumers.
+\paragraph{Step 6: Interpretation.}
+\begin{itemize}
+  \item \textbf{vs.\ perfect competition:} $\varepsilon_D$ becomes
+    $\varepsilon_D - 1$ because monopoly requires $\varepsilon_D > 1$.
+  \item \textbf{Curvature:} $1/\varepsilon_{ms}$ comes from $p''$.
+    Log-concave demand ($\phi'' < 0$ for $\phi = \log D$) implies
+    $\rho > 1$ when $\mathrm{MC}$ is constant.
+  \item \textbf{Linear inverse demand} $p(Q) = a - bQ$: $p'' = 0$,
+    $\mathrm{MR}' = -2b$, $p' = -b$, so $\rho = 1/2$.
+\end{itemize}
 
 %-----------------------------------------------------------------------------
-\subsection{Principle 5: Local pass-through averages to global incidence}
+\subsection{Principle 5: Local to global}
 %-----------------------------------------------------------------------------
 
-\textbf{Claim.}  For a finite tax change, replace $\rho$ in
-$I = \rho/(1-\rho)$ (perfect competition) or $I = \rho$ (monopoly) by the
-appropriate weighted average of $\rho$ over the path of the tax change.
-
-\paragraph{Finite tax (monopoly).}  If the tax rises from $t_0$ to $t_1$,
+Monopoly formulas \eqref{eq:mono-dcs}--\eqref{eq:mono-dpi} integrate as in
+Section~\ref{sec:pc}:
 \[
-  \Delta CS = -\int_{t_0}^{t_1} \rho(t)\,Q(t)\,dt,
+  \Delta CS = -\int \rho(\tau)\,Q(\tau)\,d\tau,
   \qquad
-  \Delta \pi = -\int_{t_0}^{t_1} Q(t)\,dt.
+  \Delta\pi = -\int Q(\tau)\,d\tau.
 \]
-Define the quantity-weighted average
-$\bar\rho_{t_0}^{t_1} \equiv
-\dfrac{\int \rho(t) Q(t)\,dt}{\int Q(t)\,dt}$.
-Then $I = \bar\rho_{t_0}^{t_1}$.
+With $\bar\rho$ the quantity-weighted average,
+$I = \bar\rho$ (not $\bar\rho/(1-\bar\rho)$).
 
-\paragraph{Global incidence.}  If the tax rises until the market shuts
-down ($Q = 0$), the ratio of total consumer surplus to producer surplus
-equals $\bar\rho$ computed from $t = 0$ to the choking tax.
-
-\paragraph{Social incidence (constant $c$).}  For competition from
-$\tilde q = 0$ to $\tilde q = Q^{**}$, use the \textbf{markup-weighted}
-average
+For social incidence with competition $\tilde q \in [0, Q^{**}]$, average
+$\rho$ with weight $m(\tilde q)$:
 \[
   \tilde\rho \equiv
   \frac{\int_0^{Q^{**}} \rho(\tilde q)\,m(\tilde q)\,d\tilde q}
        {\int_0^{Q^{**}} m(\tilde q)\,d\tilde q}.
 \]
-Then $\mathrm{DWL}/\pi = \tilde\rho$ globally.
+Then $\mathrm{DWL}/\pi = \tilde\rho$ globally (both numerator and
+denominator vanish at $\tilde q = Q^{**}$).
 
-\paragraph{Intuition.}  At each margin, $\rho$ tells you how much of a
-shock shows up in price versus quantity.  Adding up many small shocks is
-equivalent to averaging $\rho$, with weights proportional to quantity
-(tax incidence) or markup (welfare incidence).
+%-----------------------------------------------------------------------------
+\subsection{Summary: perfect competition vs.\ monopoly}
+%-----------------------------------------------------------------------------
+
+\begin{center}
+\begin{tabular}{lcc}
+  & Perfect competition & Monopoly \\
+  \hline
+  $dCS/d\tau$ & $-\rho Q$ & $-\rho Q$ \\
+  $d\pi/d\tau$ & $-(1-\rho)Q$ & $-Q$ \\
+  $I$ & $\rho/(1-\rho)$ & $\rho$ \\
+  $\rho$ & $1/(1+\varepsilon_D/\varepsilon_S)$
+  & $1/(1+\frac{\varepsilon_D-1}{\varepsilon_S}+\frac{1}{\varepsilon_{ms}})$ \\
+\end{tabular}
+\end{center}
 
 %=============================================================================
 \section{Monopoly with product returns}
 \label{sec:returns}
 %=============================================================================
 
-We now adapt the Weyl--Fabinger framework to a market with product returns.
-The monopolist still faces demand $Q = D(p)$, but a fraction of purchases
-are sent back.  Returns create an extra wedge between the price on the
-tag and the profit the seller actually keeps.
+This section extends the monopoly incidence framework to product returns.
+We keep $\rho \equiv dp/d\tau$ and $I \equiv |\Delta CS|/|\Delta\pi|$ from
+Section~\ref{sec:monopoly}.
 
 %-----------------------------------------------------------------------------
 \subsection{Environment}
 %-----------------------------------------------------------------------------
 
-\paragraph{Demand and pricing.}
-Consumers demand $Q = D(p)$ units at price $p$, with $D'(p) < 0$.
+\paragraph{Demand.}
+At price $p$, quantity purchased is $Q = D(p)$ with $D'(p) < 0$.
 
-\paragraph{Return rate.}
-Conditional on price $p$, a share $r(p) \in (0,1)$ of units is returned.
-We assume
-\[
+\paragraph{Aggregate return rate.}
+When the seller sets price $p$ and sells $Q = D(p)$ units, a share
+$r(p) \in (0,1)$ of those units is returned.  Thus $r(p)$ is the
+\textbf{aggregate (conditional) return rate}: among all units sold at
+price $p$, fraction $r(p)$ come back.  We assume
+\begin{equation}
   r'(p) > 0:
-\]
-when the product is more expensive, more buyers send it back (for example
-because the price--quality match is worse, or because free-return policies
-encourage experimentation that fails at high prices).
+  \label{eq:r-increasing}
+\end{equation}
+the aggregate return rate is higher at higher prices (e.g.\ worse
+price--quality match, more try-and-return when the tag price is high).
 
 \paragraph{Gross returns.}
-The \textbf{volume of returned units} is
+Total returned units are
 \[
   G(p) \equiv D(p)\,r(p).
 \]
-The seller produces $Q = D(p)$ units; a share $1 - r(p)$ is kept by
-consumers and a share $r(p)$ comes back.
+When $p$ rises, $D(p)$ falls but $r(p)$ rises.  So $G(p)$ can move either
+way; $r'(p)>0$ is the statement that the \textbf{return rate} itself
+increases with price, not that total returns $G(p)$ must rise.
 
-\paragraph{Per-unit payoffs.}
-For each unit produced and sold at price $p$:
-\begin{itemize}
-  \item With probability $1 - r(p)$, the consumer keeps the item.  The
-    seller earns revenue $p$ and paid production cost $c$, so profit is
-    $(p - c)$.
-  \item With probability $r(p)$, the consumer returns the item.  The seller
-    refunds $p$, still paid production cost $c$, and pays handling cost
-    $h \ge 0$, so profit is $(-c - h)$.
-\end{itemize}
+\paragraph{Payoffs.}
+The seller produces $Q = D(p)$ units at cost $c$ and pays handling $h \ge 0$
+per returned unit.  If kept: profit $(p-c)$.  If returned: refund $p$, cost
+$c$, handling $h$, so profit $(-c-h)$.
 
-\paragraph{Expected profit per unit sold.}
-Taking expectations over the return/keep margin,
-\begin{align}
-  \mu(p)
-  &\equiv (1 - r(p))(p - c) + r(p)(-c - h) \notag\\
-  &= p - c - r(p)\,(p + h).
-  \label{eq:margin-returns}
-\end{align}
-Interpretation: the seller collects $p$ from the buyer, but expects to
-refund $r(p)\,p$ and to incur handling cost $r(p)\,h$ on returned units.
+\paragraph{Step 1: Derive $\mu(p)$.}
+Among units sold at price $p$, share $1-r(p)$ are kept and share $r(p)$
+are returned:
+\begin{align*}
+  \mathbb{E}[\text{profit per unit sold}]
+  &= (1-r(p))(p-c) + r(p)(-c-h) \\
+  &= p - c - r(p)(p+h).
+\end{align*}
+Define the \textbf{effective margin}
+\begin{equation}
+  \mu(p) \equiv p - c - r(p)(p+h).
+  \label{eq:margin}
+\end{equation}
 
-\paragraph{Total profit.}
-The monopolist chooses $p$ to solve
+\paragraph{Step 2: Total profit.}
 \begin{equation}
   \max_p \;\pi(p) = D(p)\,\mu(p).
   \label{eq:profit-returns}
 \end{equation}
-She produces $D(p)$ units anticipating that a fraction $r(p)$ will come
-back.
+The seller produces $D(p)$ units; aggregate return rate $r(p)$ implies
+$G(p)=D(p)r(p)$ units returned.
 
 %-----------------------------------------------------------------------------
-\subsection{Pricing first-order condition}
+\subsection{Pricing and the Lerner condition with returns}
 %-----------------------------------------------------------------------------
 
-Differentiate \eqref{eq:profit-returns}.  Using
-\eqref{eq:margin-returns} and
-\[
-  \mu'(p) = 1 - r'(p)\,(p + h) - r(p),
-\]
-the FOC is
+\paragraph{Step 1: Derivative of $\mu$.}
+Differentiate \eqref{eq:margin}:
 \begin{equation}
-  D'(p)\,\mu(p) + D(p)\,\mu'(p) = 0.
+  \mu'(p) = 1 - \underbrace{r(p)}_{\text{level effect}}
+  - \underbrace{r'(p)\,(p+h)}_{\text{slope effect}}.
+  \label{eq:mu-prime}
+\end{equation}
+\begin{itemize}
+  \item \textbf{Level effect $-r(p)$:} a share $r(p)$ of sales are refunded, so
+    the seller keeps only $(1-r(p))$ of the list price on average.
+  \item \textbf{Slope effect $-r'(p)(p+h)$:} because $r'(p)>0$, raising $p$
+    increases the aggregate return rate and erodes margin on the margin
+    (pun intended).  This term is absent in standard Lerner.
+\end{itemize}
+When $r'(p)=0$ (return rate fixed in $p$), $\mu'(p)=1-r(p)<1$: returns lower
+the marginal effective margin but do not make it fall further as $p$ rises.
+
+\paragraph{Step 2: First-order condition.}
+From \eqref{eq:profit-returns},
+\begin{equation}
+  \pi'(p) = D'(p)\,\mu(p) + D(p)\,\mu'(p) = 0.
   \label{eq:foc-returns}
 \end{equation}
+Rearrange:
+\begin{equation}
+  -\frac{D'(p)}{D(p)} = \frac{\mu'(p)}{\mu(p)}.
+  \label{eq:foc-ratio}
+\end{equation}
+The left-hand side is the elasticity of demand (up to sign); the right-hand
+side is the elasticity of the \textbf{effective margin} $\mu$ with respect
+to price.
 
-\paragraph{Undergraduate rearrangement.}
-Divide \eqref{eq:foc-returns} by $D(p)$ (positive) and use
-$D'(p)/D(p) = -1/(\varepsilon_D\, p)$:
+\paragraph{Step 3: Demand elasticity.}
+By definition $\varepsilon_D \equiv -p\,D'(p)/D(p) > 0$, so
+\begin{equation}
+  -\frac{D'(p)}{D(p)} = \frac{1}{\varepsilon_D\, p}.
+  \label{eq:demand-elasticity}
+\end{equation}
+
+\paragraph{Step 4: Lerner condition (general).}
+Substitute \eqref{eq:demand-elasticity} into \eqref{eq:foc-ratio}:
 \[
-  -\frac{\mu(p)}{\varepsilon_D\, p} + \mu'(p) = 0
+  \frac{1}{\varepsilon_D\, p} = \frac{\mu'(p)}{\mu(p)}
   \quad\Rightarrow\quad
-  \mu(p) = \varepsilon_D\, p\,\mu'(p).
+  \boxed{\;\mu(p) = \varepsilon_D\, p\,\mu'(p).\;}
+  \label{eq:lerner-returns}
 \]
-So the \textbf{effective markup} $\mu(p)$ equals ``elasticity $\times$ price
-$\times$ how fast $\mu$ changes with $p$.''  When $r \equiv 0$,
-$\mu'(p) = 1$ and we recover Lerner's rule $(p-c)/p = 1/\varepsilon_D$.
+This is the \textbf{Lerner condition with returns}: at the optimum, the
+effective margin $\mu$ equals demand elasticity times price times the
+marginal change in $\mu$.
 
-\paragraph{Why returns matter for pricing.}
-The term $-r'(p)(p+h)$ in $\mu'(p)$ is new.  Raising $p$ does two things:
-it increases the margin on kept units, but it also raises the return rate,
-which erodes $\mu(p)$.  Returns therefore make the seller more cautious
-about raising price than a standard monopolist would be.
-
-%-----------------------------------------------------------------------------
-\subsection{Pass-through of marginal cost}
-%-----------------------------------------------------------------------------
-
-Consider a small per-unit cost shock $\tau$ (a tax on production or an
-increase in $c$).  Write
+\paragraph{Step 5: Effective markup rate.}
+Divide \eqref{eq:lerner-returns} by $p>0$:
+\begin{equation}
+  \frac{\mu(p)}{p}
+  = \varepsilon_D\,\mu'(p).
+  \label{eq:lerner-markup-rate}
+\end{equation}
+Define the \textbf{effective markup rate}
 \[
-  \mu(p,\tau) = p - c - \tau - r(p)\,(p + h).
+  \mathcal{L}(p) \equiv \frac{\mu(p)}{p}
+  = \frac{p - c - r(p)(p+h)}{p}
+  = 1 - \frac{c}{p} - \frac{r(p)(p+h)}{p}.
 \]
-Note $\partial \mu / \partial \tau = -1$.
-
-The FOC is $f(p,\tau) \equiv D'(p)\mu + D(p)\mu' = 0$.
-By the implicit function theorem,
+Then \eqref{eq:lerner-markup-rate} reads
+$\mathcal{L} = \varepsilon_D\,\mu'$.
+Compare to standard monopoly without returns ($r\equiv 0$):
 \[
-  \rho_c \equiv \frac{dp}{d\tau}
-  = -\frac{\partial f / \partial \tau}{\partial f / \partial p}
-  = \frac{D'(p)}{D''(p)\,\mu(p) + 2D'(p)\,\mu'(p)
-    + D(p)\,\mu''(p)},
+  \frac{p-c}{p} = \frac{1}{\varepsilon_D}
+  \quad\Longleftrightarrow\quad
+  \mu = \varepsilon_D\, p\,\mu' \text{ with } \mu'=1.
 \]
-where
+Returns replace the simple markup $(p-c)/p$ by $\mathcal{L}$ and replace
+$\mu'=1$ by $\mu' = 1 - r - r'(p+h)$.
+
+\paragraph{Step 6: Decomposed Lerner identity.}
+Substitute \eqref{eq:margin} and \eqref{eq:mu-prime} into
+\eqref{eq:lerner-returns}:
+\begin{equation}
+  p - c - r(p)(p+h)
+  = \varepsilon_D\, p\,\bigl[1 - r(p) - r'(p)(p+h)\bigr].
+  \label{eq:lerner-expanded}
+\end{equation}
+Expand the right-hand side:
 \[
-  \mu''(p) = -2r'(p) - r''(p)\,(p + h).
+  \varepsilon_D\, p - \varepsilon_D\, p\, r(p)
+  - \varepsilon_D\, p\, r'(p)(p+h).
 \]
+Collect price terms on one side:
+\begin{equation}
+  p\bigl[1 - \varepsilon_D + \varepsilon_D\, r(p) + \varepsilon_D\, r'(p)(p+h)\bigr]
+  = c + r(p)(p+h).
+  \label{eq:lerner-price}
+\end{equation}
+\emph{Reading \eqref{eq:lerner-price}.}
+\begin{itemize}
+  \item \textbf{No returns} ($r=r'=0$): $p(1-\varepsilon_D)=c$, i.e.\
+    $p = c/(1-1/\varepsilon_D)$, the usual monopoly markup formula.
+  \item \textbf{Returns, fixed rate} ($r'(p)=0$): the bracket on the left is
+    $1 - \varepsilon_D(1-r)$, so a higher aggregate return rate $r$ shrinks
+    the net ``markup factor'' on $p$.
+  \item \textbf{$r'(p)>0$}: the term $\varepsilon_D\, r'(p)(p+h)$ adds a
+    further penalty on $p$, reflecting that a higher price raises $r(p)$ and
+    tightens the optimum.
+\end{itemize}
 
-\paragraph{Signs.}
-At a stable maximum, the denominator is negative.  Since $D'(p) < 0$, we
-have $\rho_c > 0$: higher cost raises price.
-
-\paragraph{Comparison with the no-return monopoly.}
-If $r \equiv 0$, then $\mu = p - c - \tau$, $\mu' = 1$, $\mu'' = 0$, and
+\paragraph{Step 7: Accounting vs.\ economic margin.}
+It is tempting to plug $(p-c)/p$ into Lerner's rule, but that is wrong with
+returns.  The \textbf{accounting} margin rate is $(p-c)/p$, while the
+\textbf{economic} margin that enters the FOC is
 \[
-  \rho_c^{(0)} = \frac{D'(p)}{D''(p)\,(p - c - \tau) + 2D'(p)}.
+  \mathcal{L} = \frac{\mu}{p}
+  = \frac{p-c}{p} - \frac{r(p)(p+h)}{p}.
 \]
-This is the standard monopoly pass-through expressed with demand $D(p)$
-instead of inverse demand $p(Q)$.
+Returns create a wedge $r(p)(p+h)/p$ between list-price markup and profit
+per dollar of price.  Optimal pricing equates $\mathcal{L}$ to
+$\varepsilon_D\,\mu'$, not $(p-c)/p$ to $1/\varepsilon_D$.
 
-Returns change pass-through through three channels:
-\begin{enumerate}
-  \item \textbf{Level effect:} $\mu(p)$ replaces $p - c$ in the curvature term
-    $D''\mu$.  A lower effective margin makes the denominator smaller in
-    magnitude, tending to \emph{raise} pass-through.
-  \item \textbf{Slope effect:} $\mu'(p) < 1$ when $r'(p) > 0$, which tends to
-    \emph{lower} pass-through because price increases trigger more returns.
-  \item \textbf{Curvature effect:} $\mu''(p)$ adds a third term involving
-    $r''(p)$, capturing whether the return rate accelerates as price rises.
-\end{enumerate}
-
-There is no single closed form as clean as \eqref{eq:monopoly-rho} unless
-one imposes functional forms on $D$ and $r$ (see below).
-
-%-----------------------------------------------------------------------------
-\subsection{Pass-through of handling cost}
-%-----------------------------------------------------------------------------
-
-If the return-handling cost rises by one dollar ($h \to h + \Delta$),
+\paragraph{Step 8: Constant aggregate return rate $r(p)=\alpha$.}
+Then $\mu = (1-\alpha)p - c - \alpha h$ and $\mu' = 1-\alpha$.  Equation
+\eqref{eq:lerner-returns} becomes
 \[
-  \frac{\partial \mu}{\partial h} = -r(p).
+  (1-\alpha)p - c - \alpha h = \varepsilon_D\, p\,(1-\alpha).
 \]
-The same implicit-function logic gives
+Solve for $p$:
+\begin{equation}
+  p
+  = \frac{c + \alpha h}{(1-\alpha)(1-\varepsilon_D)}.
+  \label{eq:p-star-constant-r}
+\end{equation}
+(At an interior optimum, $\varepsilon_D>1$, so $1-\varepsilon_D<0$ and
+$p>0$.)  The effective markup rate is
 \[
-  \rho_h \equiv \frac{dp}{dh}
-  = \frac{D'(p)\,r(p)}{D''(p)\,\mu(p) + 2D'(p)\,\mu'(p)
-    + D(p)\,\mu''(p)}.
+  \mathcal{L} = \frac{\mu}{p} = \frac{1-\alpha}{\varepsilon_D},
 \]
-Because only returned units trigger $h$, pass-through of handling costs is
-scaled by the return rate $r(p)$.  If few units return, a higher $h$ barely
-moves price.
+lower than $1/\varepsilon_D$ when $\alpha>0$: returns compress economic
+markup at a given elasticity.
 
-%-----------------------------------------------------------------------------
-\subsection{Incidence with returns (parallel to Section~\ref{sec:monopoly})}
-%-----------------------------------------------------------------------------
-
-\paragraph{Producer tax $\tau$.}
-Holding quantity fixed, a small producer cost shock costs the monopolist
-$\pi_\tau = -D(p)\,d\tau$ by the envelope theorem (each sold unit loses
-one dollar of margin).  Consumers lose
-$dCS = -D(p)\,(dp/d\tau)\,d\tau = -\rho_c\,D(p)\,d\tau$.
-
-Total burden on participants:
-\[
-  |\Delta CS| + |\Delta \pi|
-  = (\rho_c + 1)\,D(p)\,d\tau,
-\]
-exactly as in Principle~2: the monopolist pays the tax dollar-for-dollar at
-the margin, and consumers bear the excess burden $\rho_c D(p)\,d\tau$.
-
-\paragraph{Incidence ratio.}
-\[
-  I_c \equiv \frac{|\Delta CS|}{|\Delta \pi|} = \rho_c.
-\]
-Pass-through remains the sufficient statistic for consumer versus producer
-incidence, but $\rho_c$ now depends on the return technology $r(p)$.
-
-\paragraph{Handling-cost shock.}
-For an increase in $h$, envelope gives $d\pi/dh = -D(p)\,r(p)$ while
-$dCS/dh = -\rho_h D(p)$.  Hence
-\[
-  I_h \equiv \frac{|\Delta CS|}{|\Delta \pi|}
-  = \frac{\rho_h}{r(p)}.
-\]
-If $\rho_h = r(p)\,\rho_c$ (which holds in the linear-demand example below),
-then $I_h = \rho_c$: the \emph{ratio} of consumer to producer burden is the
-same as for a production-cost shock, even though the \emph{levels} differ
-because only a fraction $r(p)$ of units trigger $h$.
-
-%-----------------------------------------------------------------------------
-\subsection{Example: linear demand and linear return rate}
-%-----------------------------------------------------------------------------
-
-Suppose
-\[
-  D(p) = a - bp, \qquad r(p) = \alpha + \gamma p,
-  \qquad \alpha,\gamma > 0,\; b>0,
-\]
-with parameters small enough that $r(p) \in (0,1)$ at the optimum.
-
+\paragraph{Step 9: Price-sensitive rate $r(p)=\alpha+\gamma p$.}
 Then
 \[
-  \mu(p) = p - c - (\alpha + \gamma p)(p + h)
-  = (1-\gamma p - \alpha)\,p - c - \alpha h - \gamma p h,
+  \mu(p) = p - c - (\alpha+\gamma p)(p+h),
+  \qquad
+  \mu'(p) = 1 - \alpha - \gamma(2p+h).
+\]
+The Lerner condition \eqref{eq:lerner-expanded} is
+\[
+  p - c - (\alpha+\gamma p)(p+h)
+  = \varepsilon_D\, p\,\bigl[1 - \alpha - \gamma(2p+h)\bigr].
+\]
+The left side is quadratic in $p$; the right side is also quadratic because
+of the $\gamma(2p+h)$ term in $\mu'$.  In general $p^*$ solves a cubic after
+substituting $\varepsilon_D = -p D'(p)/D(p)$.  With linear demand
+$D(p)=a-bp$, $\varepsilon_D = bp/(a-bp)$ and a closed-form $p^*$ exists but
+is lengthy; the qualitative point is that $r'(p)=\gamma>0$ enters both the
+level of $\mu$ and the marginal $\mu'$, shifting $p^*$ downward relative to
+the constant-$r$ case.
+
+\paragraph{Step 10: Summary of Lerner with returns.}
+\begin{center}
+\begin{tabular}{lcc}
+  \hline
+  & Standard monopoly & With returns \\
+  \hline
+  Profit per unit & $p-c$ & $\mu = p-c-r(p+h)$ \\
+  Marginal $\mu$ & $1$ & $1-r-r'(p+h)$ \\
+  FOC / Lerner & $(p-c)/p = 1/\varepsilon_D$
+  & $\mu/p = \varepsilon_D\,\mu'$ \\
+  Markup object & $(p-c)/p$ & $\mathcal{L}=\mu/p$ \\
+  \hline
+\end{tabular}
+\end{center}
+Returns preserve the \emph{structure} of Lerner (elasticity $\times$ marginal
+margin) but replace price-cost markup with the effective margin $\mu$ and its
+derivative $\mu'$, which encode both the level $r(p)$ and slope $r'(p)$ of
+the aggregate return rate.
+
+%-----------------------------------------------------------------------------
+\subsection{Pass-through of production cost $\tau$}
+%-----------------------------------------------------------------------------
+
+A per-unit cost shock gives $\mu(p,\tau) = p - c - \tau - r(p)(p+h)$ and
+$\partial\mu/\partial\tau = -1$.
+
+\paragraph{Step 1: Implicit equation.}
+$f(p,\tau) \equiv D'\mu + D\mu' = 0$.
+
+\paragraph{Step 2: Partial derivatives.}
+$\partial f/\partial\tau = -D'(p)$;
+\[
+  \frac{\partial f}{\partial p}
+  = D''\mu + 2D'\mu' + D\mu'',
+  \quad
+  \mu'' = -2r' - r''(p+h).
+\]
+
+\paragraph{Step 3: Pass-through.}
+\begin{equation}
+  \rho_\tau \equiv \frac{dp}{d\tau}
+  = \frac{D'(p)}{D''\mu + 2D'\mu' + D\mu''}.
+  \label{eq:rho-tau}
+\end{equation}
+Since $D'<0$ and the denominator is negative at a maximum, $\rho_\tau > 0$.
+
+\paragraph{Step 4: No returns.}
+If $r \equiv 0$, then $\mu = p-c-\tau$, $\mu'=1$, $\mu''=0$, and
+\eqref{eq:rho-tau} equals $D'/(D''(p-c-\tau)+2D')$.
+
+\paragraph{Step 5: Role of $r'(p)>0$.}
+Returns affect $\rho_\tau$ through $\mu$ (level), $\mu'<1$ (slope), and
+$\mu''$ (curvature of $r$).  No closed form like \eqref{eq:monopoly-rho}
+without specifying $D$ and $r$.
+
+%-----------------------------------------------------------------------------
+\subsection{Pass-through of handling cost $h$}
+%-----------------------------------------------------------------------------
+
+From \eqref{eq:margin}, $\partial\mu/\partial h = -r(p)$: handling cost
+applies to the fraction $r(p)$ of sold units that are returned.  Same derivation as above with $s(p)=r(p)$:
+\begin{equation}
+  \rho_h \equiv \frac{dp}{dh}
+  = \frac{D'(p)\,r(p)}{D''\mu + 2D'\mu' + D\mu''}.
+  \label{eq:rho-h}
+\end{equation}
+Pass-through of $h$ is scaled by the aggregate return rate $r(p)$.
+
+%-----------------------------------------------------------------------------
+\subsection{Incidence}
+%-----------------------------------------------------------------------------
+
+\paragraph{Step 1: Producer (envelope).}
+For $\partial\mu/\partial\theta = -s(p)$ with $s=1$ for $\tau$ and $s=r$ for
+$h$:
+\[
+  \frac{d\pi}{d\theta} = -D(p)\,s(p).
+  \label{eq:dpi-theta}
+\]
+
+\paragraph{Step 2: Consumers.}
+\[
+  \frac{dCS}{d\theta} = -D(p)\,\rho_\theta.
+  \label{eq:dcs-theta}
+\]
+
+\paragraph{Step 3: Incidence ratio.}
+\begin{equation}
+  I_\theta = \frac{|dCS/d\theta|}{|d\pi/d\theta|}
+  = \frac{\rho_\theta}{s(p)}.
+  \label{eq:incidence-returns}
+\end{equation}
+Production shock: $I_\tau = \rho_\tau$.  Handling shock: $I_h = \rho_h/r(p)$.
+
+\paragraph{Step 4: Total burden.}
+$|dCS| + |d\pi| = (\rho_\theta + s(p))\,D(p)\,d\theta > s(p)\,D(p)\,d\theta$
+when $\rho_\theta > 0$: excess burden on consumers as in Section~\ref{sec:monopoly}.
+
+%-----------------------------------------------------------------------------
+\subsection{Example A: constant $r(p)=\alpha$, linear demand}
+%-----------------------------------------------------------------------------
+
+Let $r(p)=\alpha \in (0,1)$ and $D(p)=a-bp$, $b>0$.
+
+\paragraph{Margins.}
+$\mu = (1-\alpha)p - c - \alpha h$, $\mu' = 1-\alpha$, $\mu''=0$.
+
+\paragraph{Pass-through.}
+\[
+  \rho_\tau = \frac{-b}{-2b(1-\alpha)} = \frac{1}{2(1-\alpha)} > \frac{1}{2},
+  \qquad
+  \rho_h = \frac{-b\,\alpha}{-2b(1-\alpha)} = \frac{\alpha}{2(1-\alpha)}
+  = \alpha\,\rho_\tau.
+\]
+
+\paragraph{Incidence.}
+$I_\tau = \rho_\tau$ and $I_h = \rho_h/\alpha = \rho_\tau$.
+
+%-----------------------------------------------------------------------------
+\subsection{Example B: price-sensitive aggregate return rate $r(p)=\alpha+\gamma p$}
+%-----------------------------------------------------------------------------
+
+With $\gamma>0$, the aggregate return rate rises with $p$: $r'(p)=\gamma>0$.
+Then
+\[
+  \mu(p) = p - c - (\alpha+\gamma p)(p+h),
 \]
 \[
-  \mu'(p) = 1 - \gamma(p + h) - (\alpha + \gamma p)
-  = 1 - \alpha - \gamma(2p + h),
-\]
-\[
+  \mu'(p) = 1 - \alpha - \gamma(2p+h) < 1,
+  \qquad
   \mu''(p) = -2\gamma.
 \]
-
-The FOC \eqref{eq:foc-returns} is quadratic in $p$ in general.  Once the
-optimum $p^*$ is found numerically or in closed form, substitute into the
-pass-through formulas above.
-
-\paragraph{Special case: no return-rate sensitivity ($\gamma = 0$).}
-Then $r(p) = \alpha$ is constant,
-$\mu = (1-\alpha)p - c - \alpha h$,
-$\mu' = 1 - \alpha$,
-$\mu'' = 0$, and
-\[
-  \rho_c = \frac{D'(p)}{D''\mu + 2D'\mu'}
-  = \frac{-b}{0 - 2b(1-\alpha)}
-  = \frac{1}{2(1-\alpha)}.
-\]
-Compared with the no-return benchmark $\rho_c^{(0)} = 1/2$, a positive
-return share $\alpha > 0$ \emph{raises} pass-through: the seller is already
-losing margin on returned units, so she shifts a larger share of further
-cost increases onto consumers who keep the product.
-
-For handling cost,
-\[
-  \rho_h = \frac{D'\alpha}{2D'(1-\alpha)} = \frac{\alpha}{2(1-\alpha)}
-  = \alpha\,\rho_c.
-\]
+Substitute into \eqref{eq:rho-tau}--\eqref{eq:rho-h} at the optimum $p^*$
+from \eqref{eq:foc-returns}.  Compared to Example~A, $\rho_\tau$ is lower
+when $\gamma$ is large: raising $p$ both reduces $D(p)$ and raises the
+aggregate return rate $r(p)$.
 
 %-----------------------------------------------------------------------------
 \subsection{Summary}
 %-----------------------------------------------------------------------------
 
-With returns, the monopoly problem is $\max_p D(p)\,\mu(p)$ where
-$\mu(p) = p - c - r(p)(p+h)$.  The Weyl--Fabinger logic survives:
-\begin{itemize}
-  \item Pass-through $\rho_c = dp/d\tau$ summarizes how a marginal-cost
-    shock splits between higher prices and lower quantity.
-  \item Incidence on consumers relative to producers equals $\rho_c$.
-  \item Returns matter because they lower the effective margin $\mu$ and
-    make $\mu'(p)$ depend on $r'(p)$: higher prices invite more returns.
-\end{itemize}
-The next step---not developed here---is to impose functional forms for
-$D$ and $r$ that match retail data and compare predicted pass-through to
-estimates from cost or return-policy shocks.
+\begin{center}
+\begin{tabular}{ll}
+  \hline
+  Object & Formula \\
+  \hline
+  Aggregate return rate at $p$ & $r(p)$, $r'(p)>0$ \\
+  Gross returns & $G(p) = D(p)\,r(p)$ \\
+  Margin & $\mu = p - c - r(p)(p+h)$ \\
+  FOC / Lerner & $\mu = \varepsilon_D\, p\,\mu'$
+    \eqref{eq:lerner-returns} \\
+  $\rho_\tau$ & $D'/(D''\mu + 2D'\mu' + D\mu'')$ \\
+  $\rho_h$ & $D'\,r/(D''\mu + 2D'\mu' + D\mu'')$ \\
+  Incidence & $I_\theta = \rho_\theta/s$, $s=1$ or $s=r$ \\
+  \hline
+\end{tabular}
+\end{center}
 
 %=============================================================================
 \section*{References}
