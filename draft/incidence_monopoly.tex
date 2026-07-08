@@ -1,0 +1,348 @@
+\documentclass[11pt]{article}
+
+\usepackage{amsmath,amssymb}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+
+\title{Tax Pass-Through and Incidence:\\
+From Weyl and Fabinger (2013) to a Monopoly with Returns}
+\author{Draft notes}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+These notes extract the monopoly incidence principles of
+Weyl and Fabinger (2013) at an undergraduate level, then extend the framework
+to a setting with product returns.
+\end{abstract}
+
+%=============================================================================
+\section{Perfect competition: five principles (brief)}
+\label{sec:pc}
+%=============================================================================
+
+Weyl and Fabinger begin with a perfectly competitive market to build
+intuition.  Consumers face price $p$; producers receive $p - t$ when a
+per-unit tax $t$ is levied on producers.  Demand is $Q = D(p)$ and supply
+is $Q = S(p - t)$.
+
+\paragraph{Pass-through.}
+The \textbf{pass-through rate} is
+\[
+  \rho \equiv \frac{dp}{dt},
+\]
+the amount by which the consumer price rises when the producer tax rises
+by one dollar.
+
+\paragraph{Five principles (perfect competition).}
+\begin{enumerate}
+  \item \textbf{Physical incidence is neutral.}  It does not matter
+    whether the tax is collected from buyers or sellers; the equilibrium
+    price pair $(p, p-t)$ is the same.  If the tax is shifted onto
+    consumers, the consumer price falls by $1 - \rho$.
+
+  \item \textbf{The burden is shared.}  For a small tax increase,
+    consumer surplus falls by $\rho Q\,dt$ and producer surplus falls by
+    $(1-\rho)Q\,dt$.  The two sides split the mechanical tax bill $Q\,dt$.
+
+  \item \textbf{Incidence ratio.}
+    $I \equiv \dfrac{|\Delta CS|}{|\Delta PS|} = \dfrac{\rho}{1-\rho}$.
+
+  \item \textbf{Pass-through formula.}
+    Differentiating $D(p) = S(p-t)$ gives
+    \[
+      \rho = \frac{1}{1 + \varepsilon_D / \varepsilon_S},
+    \]
+    where $\varepsilon_D \equiv -\dfrac{p D'(p)}{D(p)} > 0$ is the price
+    elasticity of demand and $\varepsilon_S \equiv \dfrac{(p-t) S'(p-t)}{S(p-t)}
+    > 0$ is the elasticity of supply.  The \emph{inelastic} side of the
+    market bears more of the tax.
+
+  \item \textbf{Local averages to global.}  For a large tax change from
+    $t_0$ to $t_1$, replace $\rho$ by the quantity-weighted average
+    $\bar\rho \equiv \dfrac{\int_{t_0}^{t_1} \rho(t) Q(t)\,dt}{\int_{t_0}^{t_1}
+    Q(t)\,dt}$.  Then $I = \bar\rho / (1-\bar\rho)$.  The same logic
+    determines how total surplus is split if the market is shut down by
+    taxation.
+\end{enumerate}
+
+\paragraph{Undergraduate derivation of $\rho$ under perfect competition.}
+Start from $D(p) = S(p-t)$.  Differentiate both sides with respect to $t$
+(using the chain rule on the right-hand side):
+\[
+  D'(p)\,\frac{dp}{dt} = S'(p-t)\left(\frac{dp}{dt} - 1\right).
+\]
+Collect terms with $dp/dt$ on the left:
+\[
+  \bigl[S'(p-t) - D'(p)\bigr]\rho = S'(p-t)
+  \quad\Rightarrow\quad
+  \rho = \frac{S'(p-t)}{S'(p-t) - D'(p)}.
+\]
+Divide numerator and denominator by $Q$ and use the elasticity definitions
+to obtain principle~4.
+
+The monopoly case below keeps the same definition of $\rho$ but changes
+\emph{who} bears the burden and \emph{how} $\rho$ is determined.
+
+%=============================================================================
+\section{Monopoly: five principles of Weyl and Fabinger (2013)}
+\label{sec:monopoly}
+%=============================================================================
+
+\subsection{Setup}
+
+A monopolist faces inverse demand $p(Q)$ (or, equivalently, demand
+$Q = D(p)$).  She chooses quantity $Q$ to maximize profit
+\[
+  \pi(Q) = \bigl[p(Q) - c\bigr]\,Q - C(Q),
+\]
+where $c$ is constant marginal cost and $C(Q)$ is any fixed cost (which
+does not affect the pricing decision).  For simplicity we take
+$C(Q) = 0$ unless noted.
+
+Define:
+\begin{itemize}
+  \item \textbf{Marginal revenue:}
+    $\mathrm{MR}(Q) \equiv \dfrac{d}{dQ}\bigl[p(Q)\,Q\bigr]
+    = p(Q) + p'(Q)\,Q$.
+  \item \textbf{Marginal cost:} $\mathrm{MC}(Q) \equiv C'(Q) = c$.
+  \item \textbf{Markup:} $m(Q) \equiv p(Q) - c$.
+\end{itemize}
+
+The monopolist's first-order condition (FOC) is
+\begin{equation}
+  \mathrm{MR}(Q) = \mathrm{MC}(Q) = c.
+  \label{eq:monopoly-foc}
+\end{equation}
+
+\paragraph{Taxes.}
+A per-unit tax $t$ on the \emph{producer} raises effective marginal cost to
+$c + t$, so \eqref{eq:monopoly-foc} becomes $\mathrm{MR}(Q) = c + t$.
+
+A per-unit tax on \emph{consumers} shifts inverse demand down by $t$:
+consumers pay $p$ but the monopolist still receives $p - t$ per unit.
+Either way, only the \emph{difference} $p - t$ matters for the monopolist's
+quantity choice.
+
+%-----------------------------------------------------------------------------
+\subsection{Principle 1: Physical incidence is neutral}
+%-----------------------------------------------------------------------------
+
+\textbf{Claim.}  A tax on consumers (a parallel downward shift of demand)
+lowers the consumer price by $1 - \rho$.  Equivalently, the producer's
+nominal receipt $p - t$ moves the same way as when the tax is on producers.
+
+\textbf{Intuition.}  The monopolist cares only about the margin
+$p - t - c$.  Shifting \emph{who} writes the check to the government does
+not change her optimal quantity, only how the price is labeled.
+
+\textbf{Derivation.}  With a consumer tax, the monopolist solves
+$\max_Q (p(Q) - t - c)Q$, which is the same problem as producer tax
+$\max_Q (p(Q) - c)Q - tQ$ with the same FOC $\mathrm{MR}(Q) = c + t$.
+
+%-----------------------------------------------------------------------------
+\subsection{Principle 2: The burden exceeds the tax revenue}
+%-----------------------------------------------------------------------------
+
+\textbf{Claim.}  Under monopoly, consumers and the firm together bear
+\emph{more} than the dollar amount of tax collected.  The monopolist pays
+the full tax out of profit (holding quantity fixed), but consumers also
+suffer because quantity falls.
+
+\textbf{Derivation.}  Consumer surplus is $CS(p) = \int_p^{\bar p} D(x)\,dx$.
+For a small producer tax,
+\[
+  \frac{dCS}{dt} = -D(p)\,\frac{dp}{dt} = -\rho\,Q.
+\]
+So consumers lose $\rho Q\,dt$---the same as under perfect competition.
+
+Producer profit is $\pi = (p - c - t)Q$.  The \textbf{envelope theorem} says:
+when the monopolist re-optimizes, a small change in $t$ hurts profit
+\emph{as if quantity were held fixed}:
+\[
+  \frac{d\pi}{dt} = -Q.
+\]
+The monopolist bears the entire mechanical tax bill $Q\,dt$.
+
+\textbf{Total burden on market participants:}
+\[
+  |\Delta CS| + |\Delta \pi|
+  = \rho Q\,dt + Q\,dt
+  = (1 + \rho)\,Q\,dt
+  > Q\,dt.
+\]
+The extra $\rho Q\,dt$ is the \textbf{deadweight burden on consumers} from
+the quantity distortion.  Under perfect competition, the firm bore
+$(1-\rho)Q\,dt$ and the total was only $Q\,dt$.
+
+%-----------------------------------------------------------------------------
+\subsection{Principle 3: Incidence ratio equals pass-through}
+%-----------------------------------------------------------------------------
+
+\textbf{Claim.}  $I \equiv |\Delta CS| / |\Delta \pi| = \rho$.
+
+\textbf{Intuition.}  The monopolist always pays the tax dollar-for-dollar
+(at the margin, holding $Q$ fixed).  Any consumer loss beyond the tax
+shifting is pure excess burden, and its size relative to the producer loss
+is exactly the pass-through rate.
+
+\textbf{Derivation.}  From the previous subsection,
+$|\Delta CS|/|\Delta \pi| = \rho Q / Q = \rho$.
+
+\paragraph{Social incidence of competition (constant $c$).}
+Weyl and Fabinger offer a useful reinterpretation.  Suppose a small amount
+$\tilde q$ of the good is supplied competitively at marginal cost $c$
+(\emph{exogenous competition}).  The incumbent's profit becomes
+$[p(Q) - c](Q - \tilde q)$.  One extra unit of competition changes the
+incumbent's quantity incentive exactly like a marginal-cost increase of
+$p'(Q)$.  Hence
+\[
+  \frac{dQ}{d\tilde q} = p'(Q)\,\frac{dQ}{dt} = p'(Q)\,\rho.
+\]
+Deadweight loss from monopoly markup is
+$\mathrm{DWL}(Q) = \int_Q^{Q^{**}} m(q)\,dq$ where $Q^{**}$ satisfies
+$m(Q^{**}) = 0$, so $d\,\mathrm{DWL}/dQ = -m(Q)$.
+A small increase in competitive supply $\tilde q$ changes quantity by
+$dQ/d\tilde q = \rho$ (same comparative statics as a unit cost tax).
+Hence
+\[
+  \frac{d\,\mathrm{DWL}}{d\tilde q}
+  = \frac{d\,\mathrm{DWL}}{dQ}\,\frac{dQ}{d\tilde q}
+  = -\rho\,m(Q).
+\]
+By the envelope theorem, $d\pi/d\tilde q = -m(Q)$.  Therefore
+\[
+  \mathrm{SI}
+  \equiv \frac{d\,\mathrm{DWL}/d\tilde q}{d\pi/d\tilde q}
+  = \rho.
+\]
+Competition erodes deadweight loss and profit at the same rate $\rho$.
+
+%-----------------------------------------------------------------------------
+\subsection{Principle 4: Pass-through under monopoly}
+%-----------------------------------------------------------------------------
+
+\textbf{Claim.}  With general (possibly nonlinear) cost $c(q)$,
+differentiating $\mathrm{MR}(Q) = \mathrm{MC}(Q) + t$ gives
+\[
+  \rho = \frac{dp}{dt}
+  = \frac{p'(Q)}{\mathrm{MR}'(Q) - \mathrm{MC}'(Q)}.
+\]
+With constant marginal cost $c$, this simplifies to
+\begin{equation}
+  \rho = \frac{1}{1 + \dfrac{\varepsilon_D - 1}{\varepsilon_S}
+  + \dfrac{1}{\varepsilon_{ms}}},
+  \label{eq:monopoly-rho}
+\end{equation}
+where
+\[
+  \varepsilon_D \equiv -\frac{p}{Q}\,\frac{dQ}{dp} > 0,
+  \qquad
+  \varepsilon_S \equiv \frac{\mathrm{MC}}{\mathrm{MC}'}\,\frac{1}{Q},
+  \qquad
+  \varepsilon_{ms} \equiv \frac{ms}{ms'}\,Q,
+\]
+and $ms(Q) \equiv -p'(Q)\,Q$ is \textbf{marginal consumer surplus}
+(the consumer benefit from the last unit sold).
+
+\paragraph{Step-by-step derivation (constant $c$).}
+The FOC with tax is $p(Q) + p'(Q)Q = c + t$, i.e.\ $\mathrm{MR} = c + t$.
+Differentiate with respect to $t$:
+\[
+  \mathrm{MR}'(Q)\,\frac{dQ}{dt} = 1
+  \quad\Rightarrow\quad
+  \frac{dQ}{dt} = \frac{1}{\mathrm{MR}'(Q)}.
+\]
+Consumer price changes by $\rho = p'(Q)\,dQ/dt$, so
+\[
+  \rho = \frac{p'(Q)}{\mathrm{MR}'(Q)}.
+\]
+Now $\mathrm{MR} = p + p'Q$, so
+$\mathrm{MR}' = 2p' + p''Q$.
+With linear cost, $\mathrm{MC}' = 0$ and the denominator is
+$\mathrm{MR}' - \mathrm{MC}' = \mathrm{MR}'$.
+
+Write $\mathrm{MR}' = p'\bigl(2 + p''Q/p'\bigr)$.  Using
+$p''Q/p' = 1/\varepsilon_{ms} - 1$ (from the definition of
+$\varepsilon_{ms}$) and Lerner's rule $(p-c)/p = 1/\varepsilon_D$, one
+obtains \eqref{eq:monopoly-rho}.
+
+\paragraph{Intuition: two differences from perfect competition.}
+\begin{enumerate}
+  \item \textbf{$\varepsilon_D - 1$ instead of $\varepsilon_D$.}
+    Under monopoly, demand must be elastic ($\varepsilon_D > 1$) at the
+    optimum.  The relevant ``residual'' elasticity for tax shifting is
+    measured relative to unity, not zero.
+
+  \item \textbf{The curvature term $1/\varepsilon_{ms}$.}
+    This captures the \emph{shape} of demand beyond its slope.
+    Define $\phi(p) \equiv \log D(p)$.  Then
+    $\phi''(p) = -1/\varepsilon_{ms} + 1/ms - 1/p'$.
+    \begin{itemize}
+      \item \textbf{Log-concave demand} ($\phi'' < 0$): pass-through
+        $\rho > 1$---a cost increase raises price by \emph{more} than one
+        dollar (Bulow and Pfleiderer 1983).
+      \item \textbf{Log-convex demand}: $\rho < 1$.
+      \item \textbf{Linear demand}: $\rho = 1$.
+    \end{itemize}
+\end{enumerate}
+
+\paragraph{Special case: linear demand and constant cost.}
+If $p(Q) = a - bQ$, then $p' = -b$ is constant, $p'' = 0$, and
+$\mathrm{MR}' = -2b$.  Hence $\rho = (-b)/(-2b) = 1/2$: half of a marginal
+cost increase is passed through to consumers.
+
+%-----------------------------------------------------------------------------
+\subsection{Principle 5: Local pass-through averages to global incidence}
+%-----------------------------------------------------------------------------
+
+\textbf{Claim.}  For a finite tax change, replace $\rho$ in
+$I = \rho/(1-\rho)$ (perfect competition) or $I = \rho$ (monopoly) by the
+appropriate weighted average of $\rho$ over the path of the tax change.
+
+\paragraph{Finite tax (monopoly).}  If the tax rises from $t_0$ to $t_1$,
+\[
+  \Delta CS = -\int_{t_0}^{t_1} \rho(t)\,Q(t)\,dt,
+  \qquad
+  \Delta \pi = -\int_{t_0}^{t_1} Q(t)\,dt.
+\]
+Define the quantity-weighted average
+$\bar\rho_{t_0}^{t_1} \equiv
+\dfrac{\int \rho(t) Q(t)\,dt}{\int Q(t)\,dt}$.
+Then $I = \bar\rho_{t_0}^{t_1}$.
+
+\paragraph{Global incidence.}  If the tax rises until the market shuts
+down ($Q = 0$), the ratio of total consumer surplus to producer surplus
+equals $\bar\rho$ computed from $t = 0$ to the choking tax.
+
+\paragraph{Social incidence (constant $c$).}  For competition from
+$\tilde q = 0$ to $\tilde q = Q^{**}$, use the \textbf{markup-weighted}
+average
+\[
+  \tilde\rho \equiv
+  \frac{\int_0^{Q^{**}} \rho(\tilde q)\,m(\tilde q)\,d\tilde q}
+       {\int_0^{Q^{**}} m(\tilde q)\,d\tilde q}.
+\]
+Then $\mathrm{DWL}/\pi = \tilde\rho$ globally.
+
+\paragraph{Intuition.}  At each margin, $\rho$ tells you how much of a
+shock shows up in price versus quantity.  Adding up many small shocks is
+equivalent to averaging $\rho$, with weights proportional to quantity
+(tax incidence) or markup (welfare incidence).
+
+%=============================================================================
+\section*{References}
+\addcontentsline{toc}{section}{References}
+\begin{thebibliography}{9}
+
+\bibitem[Weyl and Fabinger(2013)]{weyl2013pass}
+Weyl, E.~G. and M. Fabinger (2013).
+\newblock Pass-through as an economic tool: Principles of incidence under
+  imperfect competition.
+\newblock \emph{Journal of Political Economy}, 121(3):528--583.
+
+\end{thebibliography}
+
+\end{document}
