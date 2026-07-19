@@ -15,6 +15,8 @@ return/
 ├── structure/            → Project structure documentation (this file)
 ├── literature/           → Literature review source materials (papers, notes)
 ├── draft/                → LaTeX manuscript and paper drafts
+│   ├── incidence/        → Incidence / pass-through notes (baseline and under returns)
+│   └── welfare_foundation/ → Consumer surplus with returns (local sufficiency of D,r)
 ├── figuretable/          → Figures and tables (draft inputs)
 ├── doc/                  → Project documentation
 ├── report/               → Generated reports
@@ -46,6 +48,8 @@ return/
 |--------|---------|
 | `literature/` | Papers, reading notes, and materials for the literature review |
 | `draft/` | LaTeX draft (`main.tex`, sections, bibliography) |
+| `draft/incidence/` | Incidence / pass-through notes (Weyl–Fabinger baseline; under product returns) |
+| `draft/welfare_foundation/` | Welfare with returns: local CS sufficiency of $(D,r)$; second-order needs types |
 | `figuretable/` | Figure and table fragments for the draft |
 | `R/` | R package code and estimation scripts |
 | `src/` | C++ implementations |

@@ -1,0 +1,330 @@
+\documentclass[11pt]{article}
+
+\usepackage{amsmath,amssymb}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+
+\title{Pass-Through and Incidence under Product Returns}
+\author{Draft notes}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Pass-through and incidence when a seller faces product returns.  The aggregate
+return rate $r(p)$---the share of units sold at price $p$ that are
+returned---rises with $p$.  Two per-unit costs enter: production cost $c$ (all
+units) and handling cost $h$ (returned units only).  Results are derived for
+perfect competition and monopoly.
+\end{abstract}
+
+%=============================================================================
+\section{Notation}
+\label{sec:notation}
+%=============================================================================
+
+\begin{itemize}
+  \item $Q=D(p)$: demand at list price $p$, $D'<0$;
+    $\varepsilon_D\equiv -pD'/D>0$ (demand elasticity w.r.t.\ $p$).
+  \item $Q=S(\mu)$: supply at effective margin $\mu$, $S'>0$.
+  \item $r(p)\in(0,1)$: aggregate (conditional) return rate at $p$; $r'(p)>0$.
+  \item $c$: per-unit production cost; $h$: per-unit handling cost on returns.
+  \item $\mu(p,c,h)$: expected profit per unit sold (effective margin).
+  \item $\mu_p\equiv\partial\mu/\partial p$,
+    $\mu_c\equiv\partial\mu/\partial c$,
+    $\mu_h\equiv\partial\mu/\partial h$.
+  \item $\rho_c\equiv dp/dc$, $\rho_h\equiv dp/dh$: pass-through into $p$.
+  \item $I$: incidence ratio $|\Delta CS|/|\Delta PS|$ (PC) or
+    $|\Delta CS|/|\Delta\pi|$ (monopoly).
+\end{itemize}
+
+%=============================================================================
+\section{Perfect competition with product returns}
+\label{sec:pc-returns}
+%=============================================================================
+
+Consumers pay list price $p$.  Producers sell $Q$ units; share $r(p)$ is
+returned.
+
+%-----------------------------------------------------------------------------
+\subsection{Model}
+%-----------------------------------------------------------------------------
+
+Per unit sold at $p$: a kept unit yields $(p-c)$; a returned unit yields
+$(-c-h)$.  Expected margin per unit sold is
+\[
+  \mu(p,c,h) \equiv p - c - r(p)\bigl(p+h\bigr),
+\]
+so
+\[
+  \mu_p = 1 - r(p) - r'(p)\bigl(p+h\bigr),
+  \qquad
+  \mu_c = -1,
+  \qquad
+  \mu_h = -r(p),
+  \qquad
+  \mu_{pc} = 0,
+  \qquad
+  \mu_{ph} = -r'(p).
+\]
+Supply is $Q=S(\mu)$ with $S'>0$.  Market clearing:
+\begin{equation}
+  D(p) = S\bigl(\mu(p,c,h)\bigr).
+  \label{eq:pc-clearing}
+\end{equation}
+Here $Q$ is \textbf{gross purchases} at list price $p$: $D(p)$ is checkout
+volume and share $r(p)$ return ex post.
+
+%-----------------------------------------------------------------------------
+\subsection{Pass-through of $c$ and $h$}
+%-----------------------------------------------------------------------------
+
+Market clearing $G(p,c,h)\equiv D(p)-S(\mu(p,c,h))=0$ pins down $p(c,h)$.
+Totally differentiate w.r.t.\ $x\in\{c,h\}$:
+\[
+  G_p\,\rho_x + G_x = 0,
+  \qquad
+  G_p = D'(p) - S'(\mu)\,\mu_p,
+  \qquad
+  G_x = -S'(\mu)\,\mu_x,
+\]
+since $D$ does not depend on $(c,h)$ directly.  Hence
+\begin{equation}
+  \rho_x
+  = \frac{S'(\mu)\,\mu_x}{D'(p)-S'(\mu)\,\mu_p}.
+  \label{eq:pc-rho-raw}
+\end{equation}
+In Weyl and Fabinger (2013) notation,
+$\varepsilon_D\equiv -pD'/Q$ and
+$\varepsilon_S\equiv (p/Q)\,dQ/dp$.
+From \eqref{eq:pc-clearing}, supply is indexed by $\mu$ and
+$dQ/dp=S'(\mu)\mu_p$, so
+$\varepsilon_S=pS'(\mu)\mu_p/Q$
+(reduces to $pS'(p-c)/Q$ when $r\equiv 0$).
+Substituting $D'=-\varepsilon_D Q/p$ into \eqref{eq:pc-rho-raw}:
+\begin{equation}
+  \rho_x
+  = \frac{pS'(\mu)\,\mu_x/Q}{\varepsilon_D+\varepsilon_S}
+  = \frac{\varepsilon_S\,\mu_x}{\mu_p\,(\varepsilon_D+\varepsilon_S)}.
+  \label{eq:pc-rho}
+\end{equation}
+
+\paragraph{Production cost $c$.}
+$\mu_c=-1$, $\mu_{pc}=0$.  From \eqref{eq:pc-rho}:
+\begin{equation}
+  \rho_c
+  = \frac{\varepsilon_S}{\mu_p\,(\varepsilon_S+\varepsilon_D)}.
+  \label{eq:pc-rho-c}
+\end{equation}
+When $r\equiv 0$ ($\mu_p=1$), $\rho_c=\varepsilon_S/(\varepsilon_S+\varepsilon_D)$.
+
+\paragraph{Handling cost $h$.}
+$\mu_h=-r(p)$.  From \eqref{eq:pc-rho}:
+\begin{equation}
+  \rho_h
+  = \frac{\varepsilon_S\,r(p)}{\mu_p\,(\varepsilon_S+\varepsilon_D)},
+  \qquad
+  \frac{\rho_h}{\rho_c} = r(p).
+  \label{eq:pc-rho-h}
+\end{equation}
+
+\paragraph{Example: $r(p)=\alpha$, $D(p)=a-bp$, $S(\mu)=d+e\mu$.}
+Clearing gives $a-bp=d+e\bigl(p-c-\alpha(p+h)\bigr)$, i.e.\
+$a-d-c-\alpha h = \bigl[b+e(1-\alpha)\bigr]p$.  Differentiate w.r.t.\ $c$:
+$0=\bigl[b+e(1-\alpha)\bigr]\rho_c - e$, so
+$\rho_c = e/\bigl[b+e(1-\alpha)\bigr]$.
+Differentiate w.r.t.\ $h$:
+$-\alpha=\bigl[b+e(1-\alpha)\bigr]\rho_h$, so
+$\rho_h = \alpha e/\bigl[b+e(1-\alpha)\bigr]=\alpha\,\rho_c$.
+
+%-----------------------------------------------------------------------------
+\subsection{Incidence}
+%-----------------------------------------------------------------------------
+
+Producer surplus is $PS(\mu)=\int_0^\mu S(x)\,dx$, so $PS'(\mu)=Q$.
+Consumer surplus satisfies $dCS=-Q\,dp$.  Along the equilibrium path,
+\begin{equation}
+  \frac{dCS}{dx}=-Q\,\rho_x,
+  \qquad
+  \frac{dPS}{dx}=Q\bigl(\mu_p\,\rho_x+\mu_x\bigr),
+  \qquad x\in\{c,h\}.
+  \label{eq:pc-burden}
+\end{equation}
+
+\paragraph{Production cost.}
+\begin{equation}
+  I_c \equiv \frac{|dCS/dc|}{|dPS/dc|}
+  = \frac{\rho_c}{1-\mu_p\,\rho_c}.
+  \label{eq:pc-Ic}
+\end{equation}
+When $r\equiv 0$ ($\mu_p=1$), $I_c=\rho_c/(1-\rho_c)$.
+
+\paragraph{Handling cost.}
+Using $\rho_h=r\rho_c$,
+\begin{equation}
+  I_h = \frac{\rho_h}{r-\mu_p\rho_h}
+  = \frac{\rho_c}{1-\mu_p\,\rho_c}
+  = I_c.
+  \label{eq:pc-Ih}
+\end{equation}
+Consumers bear the same fraction of a handling shock as of a production shock.
+
+%-----------------------------------------------------------------------------
+\subsection{Summary: perfect competition}
+%-----------------------------------------------------------------------------
+
+\begin{center}
+\begin{tabular}{ll}
+  \hline
+  Object & Formula \\
+  \hline
+  Margin & $\mu=p-c-r(p)(p+h)$ \\
+  $\rho_c$ & $\varepsilon_S/\bigl[\mu_p(\varepsilon_S+\varepsilon_D)\bigr]$ \\
+  $\rho_h$ & $r\,\rho_c$ \\
+  $I_c$, $I_h$ & $\rho_c/(1-\mu_p\rho_c)$ \\
+  \hline
+\end{tabular}
+\end{center}
+
+%=============================================================================
+\section{Monopoly with product returns}
+\label{sec:monopoly-returns}
+%=============================================================================
+
+A monopolist chooses $p$ to maximize $\pi(p)=D(p)\,\mu(p,c,h)$ with
+$\mu=p-c-r(p)(p+h)$ and $\mu_p=1-r-r'(p)(p+h)$.
+
+%-----------------------------------------------------------------------------
+\subsection{Lerner condition}
+%-----------------------------------------------------------------------------
+
+The FOC $D'\mu+D\mu_p=0$ implies
+\begin{equation}
+  \mathcal{L}\equiv\frac{\mu}{p}=\frac{\mu_p}{\varepsilon_D}.
+  \label{eq:lerner}
+\end{equation}
+Without returns ($r\equiv 0$, $\mu_p=1$), $\mathcal{L}=1/\varepsilon_D$.
+
+%-----------------------------------------------------------------------------
+\subsection{Pass-through of $c$ and $h$}
+%-----------------------------------------------------------------------------
+
+The monopolist's FOC is $f(p,c,h)\equiv D'(p)\,\mu + D(p)\,\mu_p=0$.
+At the optimum, totally differentiate w.r.t.\ $x\in\{c,h\}$:
+\[
+  0 = \frac{\partial f}{\partial x}
+  = \underbrace{D'\mu_x + D\mu_{px}}_{\text{direct effect}}
+  + \underbrace{\bigl(D''\mu + 2D'\mu_p + D\mu_{pp}\bigr)}_{\displaystyle\Delta}\,\rho_x,
+\]
+since $\partial f/\partial p=0$.  Write $\Delta\equiv D''\mu+2D'\mu_p+D\mu_{pp}$
+with $\mu_{pp}=-2r'(p)-r''(p)(p+h)$.  Hence
+\begin{equation}
+  \rho_x = -\frac{D'\mu_x + D\mu_{px}}{\Delta}.
+  \label{eq:mono-rho}
+\end{equation}
+
+\paragraph{Production cost $c$.}
+From $\mu=p-c-r(p)(p+h)$: $\mu_c=-1$, $\mu_{pc}=0$.  Then
+\begin{equation}
+  \rho_c
+  = -\frac{D'(-1)+D\cdot 0}{\Delta}
+  = \frac{D'}{\Delta}.
+  \label{eq:mono-rho-c}
+\end{equation}
+
+\paragraph{Handling cost $h$.}
+From $\mu$: $\mu_h=-r(p)$ and
+$\mu_{ph}=\partial\mu_p/\partial h=-r'(p)$.  Then
+\begin{equation}
+  \rho_h
+  = -\frac{D'(-r)+D(-r')}{\Delta}
+  = \frac{D'r + Dr'}{\Delta}.
+  \label{eq:mono-rho-h}
+\end{equation}
+The $D'r$ term is production pass-through scaled by $r$; the $Dr'$ term comes
+from $\mu_{ph}$.  Dividing \eqref{eq:mono-rho-h} by \eqref{eq:mono-rho-c}:
+\begin{equation}
+  \frac{\rho_h}{\rho_c}
+  = r + \frac{Dr'}{D'}
+  = r(p)-\frac{p\,r'(p)}{\varepsilon_D(p)},
+  \label{eq:mono-ratio}
+\end{equation}
+using $D'=-D\mu_p/\mu$ from the FOC and $\varepsilon_D=-pD'/D$.
+When $r'=0$, $\rho_h=r\rho_c$; when $r'>0$, $\rho_h<r\rho_c$.
+
+\paragraph{Example: $r(p)=\alpha$, $D(p)=a-bp$.}
+Here $\mu_p=1-\alpha$, $\mu_{pp}=\mu_{ph}=0$, and the FOC is
+$-b\mu+(a-bp)(1-\alpha)=0$.  Differentiate w.r.t.\ $c$:
+\[
+  0 = -b\bigl(\mu_c+\mu_p\,\rho_c\bigr) + D'(1-\alpha)\,\rho_c
+  = b - 2b(1-\alpha)\,\rho_c,
+\]
+so $\rho_c=1/\bigl[2(1-\alpha)\bigr]$.  Differentiate w.r.t.\ $h$:
+\[
+  0 = -b\bigl(\mu_h+\mu_p\,\rho_h\bigr) + D'(1-\alpha)\,\rho_h
+  = b\alpha - 2b(1-\alpha)\,\rho_h,
+\]
+so $\rho_h=\alpha/\bigl[2(1-\alpha)\bigr]=\alpha\,\rho_c$.
+
+%-----------------------------------------------------------------------------
+\subsection{Incidence}
+%-----------------------------------------------------------------------------
+
+Envelope theorem: $d\pi/dc=-D$, $d\pi/dh=-Dr$; $dCS/dx=-D\rho_x$.  Hence
+\begin{equation}
+  I_c=\rho_c,
+  \qquad
+  I_h=\frac{\rho_h}{r}
+  = \rho_c\!\left(1-\frac{p\,r'}{\varepsilon_D\,r}\right).
+  \label{eq:mono-incidence}
+\end{equation}
+$I_h=\rho_c$ when $r'=0$; $I_h<\rho_c$ when $r'>0$.
+%-----------------------------------------------------------------------------
+\subsection{Summary: monopoly}
+%-----------------------------------------------------------------------------
+
+\begin{center}
+\begin{tabular}{ll}
+  \hline
+  Object & Formula \\
+  \hline
+  Lerner & $\mathcal{L}=\mu_p/\varepsilon_D$ \\
+  $\rho_c$ & $D'/\Delta$ \\
+  $\rho_h$ & $(D'r+Dr')/\Delta$ \\
+  $I_c$ & $\rho_c$ \\
+  $I_h$ & $\rho_h/r$ \\
+  \hline
+\end{tabular}
+\end{center}
+
+%=============================================================================
+\section{Perfect competition vs.\ monopoly}
+%=============================================================================
+
+\begin{center}
+\begin{tabular}{lcc}
+  \hline
+  & Perfect competition & Monopoly \\
+  \hline
+  $\rho_h/\rho_c$ & $r$ & $r-pr'/\varepsilon_D$ \\
+  $I_c$ & $\rho_c/(1-\mu_p\rho_c)$ & $\rho_c$ \\
+  $I_h$ & $I_c$ & $\rho_h/r$ \\
+  \hline
+\end{tabular}
+\end{center}
+
+%=============================================================================
+\section*{References}
+\addcontentsline{toc}{section}{References}
+\begin{thebibliography}{9}
+
+\bibitem[Weyl and Fabinger(2013)]{weyl2013pass}
+Weyl, E.~G. and M. Fabinger (2013).
+\newblock Pass-through as an economic tool: Principles of incidence under
+  imperfect competition.
+\newblock \emph{Journal of Political Economy}, 121(3):528--583.
+
+\end{thebibliography}
+
+\end{document}

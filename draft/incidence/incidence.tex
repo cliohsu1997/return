@@ -1,0 +1,498 @@
+\documentclass[11pt]{article}
+
+\usepackage{amsmath,amssymb}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+
+\title{Tax Pass-Through and Incidence:\\
+Monopoly (Weyl and Fabinger, 2013)}
+\author{Draft notes}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Self-contained notes on pass-through and tax incidence, following
+Weyl and Fabinger (2013) with full derivations under perfect competition
+and monopoly (Sections~\ref{sec:pc}--\ref{sec:monopoly}).  The extension to
+product returns is in \texttt{incidence\_under\_return.tex}.
+\end{abstract}
+
+%=============================================================================
+\section{Shared notation}
+\label{sec:notation}
+%=============================================================================
+
+\begin{itemize}
+  \item $Q = D(p)$: demand at consumer price $p$, with $D' < 0$.
+  \item $\varepsilon_D \equiv -p D'(p)/D(p) > 0$: price elasticity of demand.
+  \item $t$ or $\tau$: per-unit tax or cost shock borne by the seller.
+  \item $\rho \equiv dp/d\tau$: \textbf{pass-through} (consumer price rise per
+    dollar of seller cost).
+  \item $CS(p) = \int_p^{\bar p} D(x)\,dx$, $\pi$: consumer surplus and profit.
+  \item $I \equiv |\Delta CS|/|\Delta \pi|$: \textbf{incidence ratio} (monopoly);
+    under perfect competition $I = \rho/(1-\rho)$.
+\end{itemize}
+
+%=============================================================================
+\section{Perfect competition: Weyl and Fabinger, Section II}
+\label{sec:pc}
+%=============================================================================
+
+Consumers pay $p$; producers receive $p - \tau$ when a per-unit tax $\tau$ is
+levied on producers.  Market clearing is
+\begin{equation}
+  D(p) = S(p - \tau).
+  \label{eq:pc-clearing}
+\end{equation}
+Let $Q$ denote equilibrium quantity and $\rho \equiv dp/d\tau$.
+
+%-----------------------------------------------------------------------------
+\subsection{Principle 1: Physical incidence is neutral}
+%-----------------------------------------------------------------------------
+
+\paragraph{Same equilibrium, different labels.}
+Whether the per-unit levy is legally collected from producers or from
+consumers, take $p$ to be the price consumers pay and $p-\tau$ the amount
+producers receive.  Then \eqref{eq:pc-clearing} is unchanged and the
+equilibrium $(p,Q)$ is the same; only the wording of who remits $\tau$
+differs.
+
+\paragraph{When $\tau$ rises by $\Delta\tau$.}
+Along the equilibrium path, the consumer price always rises by
+$\rho\,\Delta\tau$ (definition of pass-through).  Producer net receipt
+$u \equiv p-\tau$ changes by
+\[
+  \Delta u = \Delta p - \Delta\tau = (\rho-1)\,\Delta\tau = -(1-\rho)\,\Delta\tau.
+\]
+So the producer bears $(1-\rho)$ of each dollar of tax at the margin; the
+consumer bears $\rho$ through the higher price.
+
+\paragraph{Two ways to describe the same marginal change.}
+It is easy to mix up \emph{which} price moves when the tax is labeled
+differently:
+\begin{itemize}
+  \item \textbf{Producer tax} (this section's default): $\tau$ is subtracted
+    from what producers keep.  A rise $\Delta\tau$ pushes the \emph{consumer}
+    price up by $\rho\,\Delta\tau$.
+  \item \textbf{Consumer tax} (equivalent accounting): split the consumer
+    payment into a \emph{list price} $\tilde p$ plus the tax, so consumers
+    pay $\tilde p+\tau$ and producers receive $\tilde p$.  At the same
+    equilibrium, $\tilde p = p-\tau$.  When $\tau$ rises by $\Delta\tau$,
+    the total consumer payment still rises by $\rho\,\Delta\tau$, so the
+    list price must \emph{fall} by $(1-\rho)\,\Delta\tau$---not by the
+    full $\Delta\tau$.  Producer receipt ($\tilde p$) falls by that same
+    $(1-\rho)\,\Delta\tau$.
+\end{itemize}
+In either description, producer net receipt falls by $(1-\rho)\,\Delta\tau$
+while the consumer payment rises by $\rho\,\Delta\tau$.
+
+%-----------------------------------------------------------------------------
+\subsection{Principles 2--3: Burden sharing and incidence}
+%-----------------------------------------------------------------------------
+
+Consumer surplus $CS(p) = \int_p^{\bar p} D(x)\,dx$ satisfies
+$dCS = -D(p)\,dp$, so
+\begin{equation}
+  \frac{dCS}{d\tau} = -D(p)\,\rho.
+  \label{eq:pc-dcs}
+\end{equation}
+Producer surplus is $PS(u)$ with $u \equiv p - \tau$ and
+$PS(u) = \int_0^u S(x)\,dx$, so $PS'(u) = S(u) = Q$.  Since
+$u = p - \tau$,
+\[
+  \frac{dPS}{d\tau}
+  = PS'(u)\left(\frac{dp}{d\tau} - 1\right)
+  = Q(\rho - 1)
+  = -(1-\rho)\,Q.
+  \label{eq:pc-dps}
+\]
+\emph{Principle 2:} the mechanical tax bill $Q\,d\tau$ splits with weights
+$\rho$ on consumers and $1-\rho$ on producers.
+
+\emph{Principle 3:}
+\[
+  I \equiv \frac{|dCS/d\tau|}{|dPS/d\tau|}
+  = \frac{\rho Q}{(1-\rho)Q}
+  = \frac{\rho}{1-\rho}.
+\]
+
+%-----------------------------------------------------------------------------
+\subsection{Principle 4: Pass-through formula}
+%-----------------------------------------------------------------------------
+
+Differentiate \eqref{eq:pc-clearing} with respect to $\tau$:
+\[
+  D'(p)\,\frac{dp}{d\tau}
+  = S'(p-\tau)\left(\frac{dp}{d\tau} - 1\right).
+\]
+Collect terms:
+\[
+  \bigl[S'(p-\tau) - D'(p)\bigr]\,\rho = S'(p-\tau)
+  \quad\Rightarrow\quad
+  \rho = \frac{S'(p-\tau)}{S'(p-\tau) - D'(p)}.
+\]
+Define elasticities at the equilibrium (Weyl and Fabinger 2013, p.~534):
+\[
+  \varepsilon_D \equiv -\frac{p\,D'(p)}{Q} > 0,
+  \qquad
+  \varepsilon_S \equiv \frac{p\,S'(p-\tau)}{Q} > 0.
+\]
+Since $Q = D(p) = S(p-\tau)$, multiply numerator and denominator of
+$\rho = S'/(S'-D')$ by $p/Q$:
+\[
+  \rho = \frac{\varepsilon_S}{\varepsilon_S + \varepsilon_D}
+  = \frac{1}{1 + \varepsilon_D/\varepsilon_S}.
+\]
+The inelastic side bears more of the tax.
+
+%-----------------------------------------------------------------------------
+\subsection{Principle 5: Local to global}
+%-----------------------------------------------------------------------------
+
+For a finite tax change $\tau_0 \to \tau_1$, integrate
+\eqref{eq:pc-dcs}--\eqref{eq:pc-dps}:
+\[
+  \Delta CS = -\int_{\tau_0}^{\tau_1} \rho(\tau)\,Q(\tau)\,d\tau,
+  \qquad
+  \Delta PS = -\int_{\tau_0}^{\tau_1} (1-\rho(\tau))\,Q(\tau)\,d\tau.
+\]
+Define the quantity-weighted average pass-through
+\[
+  \bar\rho_{\tau_0}^{\tau_1}
+  \equiv
+  \frac{\int_{\tau_0}^{\tau_1} \rho(\tau)\,Q(\tau)\,d\tau}
+       {\int_{\tau_0}^{\tau_1} Q(\tau)\,d\tau}.
+\]
+Then
+\[
+  I_{\tau_0}^{\tau_1}
+  = \frac{\Delta CS}{\Delta PS}
+  = \frac{\bar\rho_{\tau_0}^{\tau_1}}{1 - \bar\rho_{\tau_0}^{\tau_1}}.
+\]
+The local formula $I = \rho/(1-\rho)$ holds globally once $\rho$ is replaced
+by $\bar\rho$.  If $\tau$ rises until $Q=0$, the ratio $CS/PS$ of total
+surpluses equals $\bar\rho/(1-\bar\rho)$ with $\bar\rho$ averaged from
+$\tau=0$ to the choking tax.
+
+%=============================================================================
+\section{Monopoly: Weyl and Fabinger, Section III}
+\label{sec:monopoly}
+%=============================================================================
+
+The monopolist chooses quantity $Q$ facing inverse demand $p(Q)$ with
+$p'(Q) < 0$.  Revenue is $p(Q)\,Q$, cost is $c(Q)$ with
+$\mathrm{MC}(Q) \equiv c'(Q)$.  Define
+\[
+  \mathrm{MR}(Q) \equiv \frac{d}{dQ}\bigl[p(Q)\,Q\bigr] = p(Q) + p'(Q)\,Q,
+\]
+\[
+  m(Q) \equiv p(Q) - \mathrm{MC}(Q),
+  \qquad
+  ms(Q) \equiv -p'(Q)\,Q \quad \text{(marginal consumer surplus)}.
+\]
+With a per-unit producer tax $\tau$, the FOC is
+\begin{equation}
+  \mathrm{MR}(Q) = \mathrm{MC}(Q) + \tau.
+  \label{eq:mr-tax}
+\end{equation}
+We write $p$, $Q$, $m$, $ms$ evaluated at the optimum unless noted.
+
+%-----------------------------------------------------------------------------
+\subsection{Principle 1: Physical incidence is neutral}
+%-----------------------------------------------------------------------------
+
+\paragraph{Producer tax.}
+Problem: $\max_Q \bigl[p(Q) - \mathrm{MC}(Q) - \tau\bigr]\,Q$.
+FOC: $\mathrm{MR}(Q) = \mathrm{MC}(Q) + \tau$.
+
+\paragraph{Consumer tax.}
+Consumers pay $p$; the monopolist keeps $p - \tau$.  Problem:
+$\max_Q \bigl[p(Q) - \tau - \mathrm{MC}(Q)\bigr]\,Q$.
+The FOC is identical.
+
+\paragraph{Conclusion.}
+Only $p - \tau - \mathrm{MC}$ matters for $Q$.  Physical incidence does not
+affect real allocation; $\rho = dp/d\tau$ is the same under either labeling.
+
+%-----------------------------------------------------------------------------
+\subsection{Principle 2: Total burden exceeds tax revenue}
+%-----------------------------------------------------------------------------
+
+\paragraph{Step 1: Consumer burden.}
+Demand is still $Q = D(p)$, so as in \eqref{eq:pc-dcs},
+\begin{equation}
+  \frac{dCS}{d\tau} = -Q\,\rho.
+  \label{eq:mono-dcs}
+\end{equation}
+
+\paragraph{Step 2: Producer burden (envelope theorem).}
+Profit is $\pi(Q,\tau) = \bigl[p(Q) - \mathrm{MC}(Q) - \tau\bigr]\,Q$.
+Holding $Q$ fixed,
+\[
+  \frac{\partial \pi}{\partial \tau} = -Q.
+\]
+At the optimum, $\partial\pi/\partial Q = 0$, so the total derivative
+equals the partial derivative:
+\begin{equation}
+  \frac{d\pi}{d\tau} = -Q.
+  \label{eq:mono-dpi}
+\end{equation}
+The monopolist bears the full mechanical tax $Q\,d\tau$ at the margin.
+
+\paragraph{Step 3: Compare to tax revenue.}
+Revenue raised is $Q\,d\tau$.  Total burden on participants:
+\[
+  |\Delta CS| + |\Delta\pi|
+  = \rho Q\,d\tau + Q\,d\tau
+  = (1+\rho)\,Q\,d\tau
+  > Q\,d\tau.
+\]
+Under perfect competition \eqref{eq:pc-dps}, producers bore
+$(1-\rho)Q\,d\tau$ and the total equaled revenue.  Under monopoly the
+extra $\rho Q\,d\tau$ is \textbf{excess burden} on consumers from the
+quantity distortion.
+
+%-----------------------------------------------------------------------------
+\subsection{Principle 3: Incidence equals pass-through}
+%-----------------------------------------------------------------------------
+
+From \eqref{eq:mono-dcs}--\eqref{eq:mono-dpi},
+\[
+  I \equiv \frac{|\Delta CS|}{|\Delta\pi|}
+  = \frac{\rho Q}{Q}
+  = \rho.
+\]
+The monopolist pays the tax dollar-for-dollar (at fixed $Q$); any consumer
+loss beyond mechanical shifting is excess burden, and its ratio to producer
+loss is $\rho$.
+
+%-----------------------------------------------------------------------------
+\subsection{Social incidence of competition (constant marginal cost)}
+%-----------------------------------------------------------------------------
+
+Assume $\mathrm{MC} \equiv c$.  A quantity $\tilde q$ is supplied
+competitively at cost $c$.  Incumbent profit:
+$\pi = \bigl[p(Q) - c\bigr](Q - \tilde q)$.
+
+\paragraph{Step 1: Competition mimics a cost shock.}
+Marginal revenue becomes $p(Q) + p'(Q)(Q - \tilde q)$.  Increasing
+$\tilde q$ by $d\tilde q$ shifts the FOC exactly like raising $\tau$ by
+$-p'(Q)\,d\tilde q$:
+\[
+  \frac{dQ}{d\tilde q} = p'(Q)\,\frac{dQ}{d\tau}
+  = \frac{p'(Q)}{\mathrm{MR}'} = \rho.
+\]
+
+\paragraph{Step 2: Deadweight loss.}
+$m(Q) = p(Q) - c$.  Social optimum $Q^{**}$ satisfies $m(Q^{**}) = 0$.
+\[
+  \mathrm{DWL}(Q) = \int_Q^{Q^{**}} m(q)\,dq
+  \quad\Rightarrow\quad
+  \frac{d\,\mathrm{DWL}}{dQ} = -m(Q).
+\]
+Hence
+\[
+  \frac{d\,\mathrm{DWL}}{d\tilde q}
+  = \frac{d\,\mathrm{DWL}}{dQ}\,\frac{dQ}{d\tilde q}
+  = -m\,\rho.
+\]
+
+\paragraph{Step 3: Profit loss.}
+Envelope theorem at fixed $Q$: $d\pi/d\tilde q = -m$.
+
+\paragraph{Step 4: Social incidence.}
+\[
+  \mathrm{SI}
+  \equiv \frac{d\,\mathrm{DWL}/d\tilde q}{d\pi/d\tilde q}
+  = \frac{-\rho m}{-m}
+  = \rho.
+\]
+Competition erodes deadweight loss and profit at the same rate as consumer
+incidence of a tax.
+
+%-----------------------------------------------------------------------------
+\subsection{Principle 4: Pass-through formula}
+%-----------------------------------------------------------------------------
+
+\paragraph{Step 1: Differentiate the FOC.}
+From \eqref{eq:mr-tax}, $\mathrm{MR}(Q) = \mathrm{MC}(Q) + \tau$.
+Differentiate with respect to $\tau$:
+\[
+  \mathrm{MR}'(Q)\,\frac{dQ}{d\tau}
+  = \mathrm{MC}'(Q)\,\frac{dQ}{d\tau} + 1
+  \quad\Rightarrow\quad
+  \bigl[\mathrm{MR}' - \mathrm{MC}'\bigr]\,\frac{dQ}{d\tau} = 1.
+\]
+Hence
+\[
+  \frac{dQ}{d\tau} = \frac{1}{\mathrm{MR}' - \mathrm{MC}'}.
+\]
+
+\paragraph{Step 2: Pass-through in price.}
+Consumer price is $p(Q)$, so
+\begin{equation}
+  \rho = \frac{dp}{d\tau}
+  = p'(Q)\,\frac{dQ}{d\tau}
+  = \frac{p'(Q)}{\mathrm{MR}' - \mathrm{MC}'}.
+  \label{eq:rho-general}
+\end{equation}
+
+\paragraph{Step 3: Constant marginal cost ($\mathrm{MC}' = 0$).}
+$\mathrm{MR} = p + p'Q$, so
+\[
+  \mathrm{MR}' = p' + p' + p''Q = 2p' + p''Q,
+\]
+and \eqref{eq:rho-general} becomes
+\begin{equation}
+  \rho = \frac{p'}{2p' + p''Q}
+  = \frac{1}{2 + p''Q/p'}.
+  \label{eq:rho-curvature}
+\end{equation}
+
+\paragraph{Step 4: Introduce $\varepsilon_{ms}$.}
+Since $ms = -p'Q$,
+\[
+  ms' = \frac{d}{dQ}(-p'Q) = -p' - p''Q
+  \quad\Rightarrow\quad
+  \frac{p''Q}{p'} = -\frac{ms'}{p'} - 1.
+\]
+Define
+\[
+  \varepsilon_{ms} \equiv \frac{ms}{ms'\,Q}
+  \quad\Rightarrow\quad
+  \frac{1}{\varepsilon_{ms}} = \frac{ms'\,Q}{ms}
+  = \frac{p''Q}{p'} + 1,
+\]
+so $p''Q/p' = 1/\varepsilon_{ms} - 1$.  Substitute into
+\eqref{eq:rho-curvature}:
+\[
+  \rho = \frac{1}{2 + 1/\varepsilon_{ms} - 1}
+  = \frac{1}{1 + 1/\varepsilon_{ms}}.
+\]
+This is the \emph{curvature} part; supply and demand elasticities enter next.
+
+\paragraph{Step 5: Introduce $\varepsilon_D$ and $\varepsilon_S$.}
+Write \eqref{eq:rho-general} as
+$\rho = 1/\bigl(\mathrm{MR}'/p' - \mathrm{MC}'/p'\bigr)$.
+Since $\mathrm{MR} = p - ms$ with $ms \equiv -p'Q$,
+\[
+  \mathrm{MR}' = p' - ms'
+  \quad\Rightarrow\quad
+  \frac{\mathrm{MR}'}{p'}
+  = 1 - \frac{ms'}{p'}
+  = 2 + \frac{p''Q}{p'}
+  = 1 + \frac{1}{\varepsilon_{ms}},
+\]
+using $ms'/p' = -1 - p''Q/p'$ and $p''Q/p' = 1/\varepsilon_{ms} - 1$.
+For the cost side, with $\varepsilon_S \equiv \mathrm{MC}/(\mathrm{MC}'\,Q)$,
+\[
+  \frac{\mathrm{MC}'}{p'}
+  = \frac{1}{\varepsilon_S\,Q}\cdot\frac{\mathrm{MC}}{p'}.
+\]
+At $\tau = 0$, Lerner's rule $\mathrm{MC}/p = (\varepsilon_D-1)/\varepsilon_D$ and
+$\varepsilon_D = -p/(Q p')$ imply
+\[
+  \frac{\mathrm{MC}}{p'}
+  = \frac{\mathrm{MC}}{p}\cdot\frac{p}{p'}
+  = -\frac{(\varepsilon_D - 1)\,Q}{p},
+  \qquad
+  \frac{\mathrm{MC}'}{p'} = -\frac{\varepsilon_D - 1}{\varepsilon_S}.
+\]
+Therefore
+\[
+  \frac{\mathrm{MR}'}{p'} - \frac{\mathrm{MC}'}{p'}
+  = 1 + \frac{1}{\varepsilon_{ms}} + \frac{\varepsilon_D - 1}{\varepsilon_S},
+\]
+and
+\begin{equation}
+  \rho = \frac{1}{1 + \dfrac{\varepsilon_D - 1}{\varepsilon_S}
+    + \dfrac{1}{\varepsilon_{ms}}}.
+  \label{eq:monopoly-rho}
+\end{equation}
+When $\mathrm{MC}' = 0$ (constant marginal cost), $\varepsilon_S \to \infty$ and
+\eqref{eq:monopoly-rho} reduces to $\rho = 1/(1 + 1/\varepsilon_{ms})$ from
+Step~4.
+
+\paragraph{Step 6: Interpretation.}
+\begin{itemize}
+  \item \textbf{vs.\ perfect competition:} $\varepsilon_D$ becomes
+    $\varepsilon_D - 1$ because monopoly requires $\varepsilon_D > 1$.
+  \item \textbf{Curvature:} $1/\varepsilon_{ms}$ comes from $p''$.
+    Log-concave demand ($\phi'' < 0$ for $\phi = \log D$) implies
+    $\rho > 1$ when $\mathrm{MC}$ is constant.
+  \item \textbf{Linear inverse demand} $p(Q) = a - bQ$: $p'' = 0$,
+    $\mathrm{MR}' = -2b$, $p' = -b$, so $\rho = 1/2$.
+\end{itemize}
+
+%-----------------------------------------------------------------------------
+\subsection{Principle 5: Local to global}
+%-----------------------------------------------------------------------------
+
+Throughout this section, $\tau$ denotes the \textbf{per-unit tax level} (a
+cost shifter in \eqref{eq:mr-tax}), not the consumer price $p$.
+Pass-through $\rho(\tau)\equiv dp/d\tau$ and quantity $Q(\tau)$ are evaluated
+along the equilibrium path as $\tau$ varies.
+
+\paragraph{Integrating over a tax change.}
+For a finite tax change $\tau_0 \to \tau_1$, integrate
+\eqref{eq:mono-dcs}--\eqref{eq:mono-dpi} as in Section~\ref{sec:pc}:
+\[
+  \Delta CS = -\int_{\tau_0}^{\tau_1} \rho(\tau)\,Q(\tau)\,d\tau,
+  \qquad
+  \Delta\pi = -\int_{\tau_0}^{\tau_1} Q(\tau)\,d\tau.
+\]
+With $\bar\rho$ the quantity-weighted average pass-through,
+\[
+  \bar\rho_{\tau_0}^{\tau_1}
+  \equiv
+  \frac{\int_{\tau_0}^{\tau_1} \rho(\tau)\,Q(\tau)\,d\tau}
+       {\int_{\tau_0}^{\tau_1} Q(\tau)\,d\tau},
+\]
+the global incidence ratio is $I=\bar\rho$ (not $\bar\rho/(1-\bar\rho)$ as
+under perfect competition).
+
+\paragraph{Social incidence: a different shock index.}
+The competition exercise in the previous subsection is \emph{not} indexed by
+$\tau$.  Competitive supply $\tilde q\in[0,Q^{**}]$ plays the role of the
+shock; pass-through $\rho(\tilde q)$ is the consumer-price response to
+marginal entry.  Average with weight $m(\tilde q)$:
+\[
+  \tilde\rho \equiv
+  \frac{\int_0^{Q^{**}} \rho(\tilde q)\,m(\tilde q)\,d\tilde q}
+       {\int_0^{Q^{**}} m(\tilde q)\,d\tilde q}.
+\]
+Then $\mathrm{DWL}/\pi = \tilde\rho$ globally (both numerator and
+denominator vanish at $\tilde q = Q^{**}$).
+
+%-----------------------------------------------------------------------------
+\subsection{Summary: perfect competition vs.\ monopoly}
+%-----------------------------------------------------------------------------
+
+\begin{center}
+\begin{tabular}{lcc}
+  & Perfect competition & Monopoly \\
+  \hline
+  $dCS/d\tau$ & $-\rho Q$ & $-\rho Q$ \\
+  $d\pi/d\tau$ & $-(1-\rho)Q$ & $-Q$ \\
+  $I$ & $\rho/(1-\rho)$ & $\rho$ \\
+  $\rho$ & $1/(1+\varepsilon_D/\varepsilon_S)$
+  & $1/(1+\frac{\varepsilon_D-1}{\varepsilon_S}+\frac{1}{\varepsilon_{ms}})$ \\
+\end{tabular}
+\end{center}
+
+%=============================================================================
+\section*{References}
+\addcontentsline{toc}{section}{References}
+\begin{thebibliography}{9}
+
+\bibitem[Weyl and Fabinger(2013)]{weyl2013pass}
+Weyl, E.~G. and M. Fabinger (2013).
+\newblock Pass-through as an economic tool: Principles of incidence under
+  imperfect competition.
+\newblock \emph{Journal of Political Economy}, 121(3):528--583.
+
+\end{thebibliography}
+
+\end{document}

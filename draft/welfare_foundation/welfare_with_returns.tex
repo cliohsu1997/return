@@ -1,0 +1,137 @@
+\documentclass[11pt]{article}
+
+\usepackage{amsmath,amssymb}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+
+\title{Welfare with Product Returns:\\
+  Sufficiency of Aggregates for Local Incidence}
+\author{Draft notes}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+With returns, gross demand $D(p)$ alone is no longer the right local welfare
+statistic.  For first-order (local) incidence, aggregates $D(p)$ and $r(p)$
+suffice: $dCS=-D(p)(1-r(p))\,dp$.  For second-order (global) deadweight loss,
+the full joint distribution of consumer types is required.
+\end{abstract}
+
+%=============================================================================
+\section{The problem}
+%=============================================================================
+
+Without returns, aggregate demand is a sufficient statistic for local consumer
+surplus:
+\[
+  dCS = -D(p)\,dp.
+\]
+With returns, a change in list price $p$ moves both the extensive margin (who
+buys) and the intensive margin (each buyer's return probability).  The
+aggregate return rate $r(p)$ is only the average among current buyers; it does
+not decompose how much of $\Delta r$ comes from new entrants versus
+inframarginal behavioural change.  So one cannot mechanically treat $(D,r)$ as
+a black-box welfare object without a microfoundation.
+
+%=============================================================================
+\section{The conjecture}
+%=============================================================================
+
+Conjecture: $D(p)$ and $r(p)$ are \emph{not} sufficient for welfare under
+returns; the joint distribution of individual return behaviour is needed,
+except in knife-edge cases (e.g.\ return probabilities independent of $p$, or
+shifting at a common rate).
+
+%=============================================================================
+\section{The result}
+%=============================================================================
+
+The conjecture is half right.  It depends on the order of the welfare effect.
+
+\paragraph{First-order (local) incidence.}
+$D(p)$ and $r(p)$ \emph{are} sufficient.  Drop the pre-purchase value $v$ and
+work with hassle cost $\kappa_i\geq 0$ and post-purchase match $u\sim G_i$.
+After buying at $p$, the consumer keeps if $u\geq p-\kappa_i$.  Expected surplus
+from buying is
+\[
+  s_i(p)
+  = \mathbb{E}_{u\sim G_i}\bigl[\max(u-p,\,-\kappa_i)\bigr].
+\]
+Buy iff $s_i(p)\geq 0$; keep probability $k_i(p)=\Pr(u\geq p-\kappa_i)$; return
+probability $r_i(p)=1-k_i(p)$.
+
+Aggregates:
+\begin{align*}
+  D(p)
+  &= \int \mathbf{1}\{s_i(p)\geq 0\}\,dF(i), \\
+  K(p)
+  &= \int \mathbf{1}\{s_i(p)\geq 0\}\,k_i(p)\,dF(i)
+  = D(p)\bigl(1-r(p)\bigr).
+\end{align*}
+Total consumer surplus $CS(p)=\int \mathbf{1}\{s_i\geq 0\}\,s_i\,dF$.
+Differentiate and apply the envelope theorem (marginal buyer has $s_i=0$, so
+the extensive margin drops out):
+\begin{equation}
+  CS'(p)
+  = -\int \mathbf{1}\{s_i\geq 0\}\,k_i(p)\,dF(i)
+  = -K(p)
+  = -D(p)\bigl(1-r(p)\bigr).
+  \label{eq:dCS-local}
+\end{equation}
+Hence for a small price change,
+\[
+  dCS = -D(p)\bigl(1-r(p)\bigr)\,dp.
+\]
+Composition effects cancel at first order because the marginal buyer adds zero
+surplus.  Aggregates $(D,r)$ appear directly on the right-hand side.
+
+\paragraph{Second-order (global / DWL).}
+The conjecture is fully correct.  Curvature $CS''(p)$ (e.g.\ a Harberger
+triangle) depends on how the composition of buyers changes with $p$, which
+requires the joint distribution of $(\kappa_i,G_i)$.  Aggregates $(D,r)$ alone
+cannot identify it.  That is beyond the scope of local pass-through / incidence
+analysis.
+
+%=============================================================================
+\section{Addendum for the incidence draft}
+%=============================================================================
+
+\paragraph{Consumer side (sufficient microfoundation).}
+Each consumer $i$ has hassle cost $\kappa_i$ and post-purchase match
+$u\sim G_i$.  At list price $p$,
+\[
+  s_i(p)
+  = \mathbb{E}_{u\sim G_i}\bigl[\max(u-p,\,-\kappa_i)\bigr].
+\]
+Buy if $s_i(p)\geq 0$; keep probability $k_i(p)=\Pr(u\geq p-\kappa_i)$.
+Gross demand and kept units:
+\begin{align*}
+  D(p)
+  &= \int \mathbf{1}\{s_i(p)\geq 0\}\,dF(i), \\
+  K(p)
+  &= \int \mathbf{1}\{s_i(p)\geq 0\}\,k_i(p)\,dF(i),
+\end{align*}
+with $K(p)=D(p)(1-r(p))$.
+
+\paragraph{Welfare for incidence (local).}
+By the envelope theorem,
+\[
+  CS'(p) = -K(p) = -D(p)\bigl(1-r(p)\bigr).
+\]
+This replaces the textbook $dCS=-D(p)\,dp$.  For local incidence, $(D,r)$ are
+sufficient; for global DWL they are not.
+
+\paragraph{Implication for incidence under returns.}
+In the perfect-competition notes, the local consumer burden of a price change
+should use kept volume $K=D(1-r)$, not gross purchases $Q=D$:
+\[
+  \frac{dCS}{dx} = -K(p)\,\rho_x
+  = -D(p)\bigl(1-r(p)\bigr)\,\rho_x,
+  \qquad x\in\{c,h\}.
+\]
+Pass-through formulae (market clearing in $\mu$) are unchanged; only the
+consumer-side incidence weight is corrected.
+
+\end{document}
