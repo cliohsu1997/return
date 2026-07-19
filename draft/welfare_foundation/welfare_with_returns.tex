@@ -25,14 +25,11 @@ maximization.
 %=============================================================================
 
 Consumers pay list price $p$ at checkout, then learn a post-purchase match and
-may return the item at hassle cost $\kappa_i$.  Producers are price-takers.
-Each firm $j$ has production cost $C_j(q_j)$; returned units also cost $h$ to
-handle.  Write $r(p)$ for the aggregate return rate and
-$\mu(p)\equiv p-r(p)(p+h)$ for the effective margin per gross unit sold.
-
+may return the item at hassle cost $\kappa_i$.  The industry is in perfect
+competition: each producer is a price-taker on list price $p$.  Firm $j$ has
+production cost $C_j(q_j)$, and each returned unit costs $h$ to handle.
 Equilibrium pairs list price $p$ with gross quantity $Q=D(p)$ such that
-consumers optimize purchase and return decisions and producers optimize output
-given effective margin $\mu(p)$.
+consumers optimize purchase and return decisions and producers optimize output.
 
 %=============================================================================
 \section{Consumer side}
@@ -78,8 +75,19 @@ The weight on $dp$ is kept volume $K$, not gross demand $D$.
 \section{Supply side}
 %=============================================================================
 
-On the producer side, each firm $j$ takes effective margin $\mu$ as given and
-chooses output to solve
+Returns make list price an imperfect summary of producer payoffs.  A gross sale
+brings revenue $p$ if the consumer keeps the item and costs refund $p$ plus
+handling $h$ if the item is returned.  Among gross sales at list price $p$,
+share $r(p)$ are returned, so expected revenue per gross unit---the
+\emph{effective margin}---is
+\begin{equation}
+  \mu(p) \equiv p - r(p)(p+h).
+  \label{eq:mu-def}
+\end{equation}
+Under perfect competition, firm $j$ takes $p$ as given and therefore faces a
+fixed number $\mu$ in its supply decision; at equilibrium, $\mu=\mu(p)$.
+
+Given $\mu$, firm $j$ chooses output to solve
 \[
   \max_{q_j \geq 0}\;\; \mu\,q_j - C_j(q_j),
   \qquad
@@ -129,8 +137,8 @@ supply at effective margin $\mu(p)$:
   \qquad Q \equiv D(p) = \sum_j q_j\bigl(\mu(p)\bigr).
   \label{eq:clearing}
 \end{equation}
-Let $j^*$ denote a marginal active firm ($q_{j^*}>0$ and
-$\mu=C_{j^*}'(q_{j^*})$).  Its per-unit production margin is zero in
+Let $j^*$ denote a marginal active firm ($q_{j^*}>0$ with
+$\mu(p)=C_{j^*}'(q_{j^*})$).  Its per-unit production margin is zero in
 equilibrium:
 \begin{equation}
   m(p) \equiv \mu(p) - C_{j^*}'\!\bigl(q_{j^*}(\mu(p))\bigr) = 0.
