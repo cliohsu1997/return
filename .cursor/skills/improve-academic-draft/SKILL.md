@@ -7,6 +7,8 @@ description: Reviews and improves academic draft text by checking notation defin
 
 When invoked on draft text, perform these checks systematically.
 
+For **writing or rewriting** model/derivation sections (continuous prose, derive-don't-announce, minimal notation), apply **academic-note-prose** instead of or before this review skill.
+
 - **Introduction only** (`\section{Introduction}`): run **§1b** in full, plus relevant parts of checks 1–4.
 - **Pre-model sections** (institutional background, data, stylized facts): run **§1c** in full, plus checks 4–5.
 - **Equilibrium / consumer-behavior subsections** (e.g., RRSI, CRSI under equilibrium analysis): apply **Cross-references** anti-patterns table; verify hold/fail cases stay with the condition they interpret; flag forward equation refs and adjacent section pointers.

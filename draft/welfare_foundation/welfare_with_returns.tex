@@ -4,8 +4,7 @@
 \usepackage[margin=1in]{geometry}
 \usepackage{hyperref}
 
-\title{Welfare with Product Returns:\\
-  Sufficiency of Aggregates for Local Incidence}
+\title{Pass-Through, Welfare, and Incidence under Product Returns}
 \author{Draft notes}
 \date{\today}
 
@@ -13,125 +12,175 @@
 \maketitle
 
 \begin{abstract}
-With returns, gross demand $D(p)$ alone is no longer the right local welfare
-statistic.  For first-order (local) incidence, aggregates $D(p)$ and $r(p)$
-suffice: $dCS=-D(p)(1-r(p))\,dp$.  For second-order (global) deadweight loss,
-the full joint distribution of consumer types is required.
+With product returns, the textbook local welfare formula $dCS=-D(p)\,dp$
+overstates the consumer burden of a price change: only kept units matter, so
+$dCS=-D(p)(1-r(p))\,dp$.  Aggregates $(D,r)$ are sufficient for this
+first-order measure.  Pass-through is unchanged in form; incidence uses kept
+volume on the consumer side and producer surplus derived from profit
+maximization.
 \end{abstract}
 
 %=============================================================================
-\section{The problem}
+\section{Setting}
 %=============================================================================
 
-Without returns, aggregate demand is a sufficient statistic for local consumer
-surplus:
-\[
-  dCS = -D(p)\,dp.
-\]
-With returns, a change in list price $p$ moves both the extensive margin (who
-buys) and the intensive margin (each buyer's return probability).  The
-aggregate return rate $r(p)$ is only the average among current buyers; it does
-not decompose how much of $\Delta r$ comes from new entrants versus
-inframarginal behavioural change.  So one cannot mechanically treat $(D,r)$ as
-a black-box welfare object without a microfoundation.
+Consumers pay list price $p$ at checkout, then learn a post-purchase match and
+may return the item at hassle cost $\kappa_i$.  Producers are price-takers.
+Each firm $j$ has production cost $C_j(q_j)$; returned units also cost $h$ to
+handle.  Write $r(p)$ for the aggregate return rate and
+$\mu(p)\equiv p-r(p)(p+h)$ for the effective margin per gross unit sold.
+
+Equilibrium pairs list price $p$ with gross quantity $Q=D(p)$ such that
+consumers optimize purchase and return decisions and producers optimize output
+given effective margin $\mu(p)$.
 
 %=============================================================================
-\section{The conjecture}
+\section{Consumer side}
 %=============================================================================
 
-Conjecture: $D(p)$ and $r(p)$ are \emph{not} sufficient for welfare under
-returns; the joint distribution of individual return behaviour is needed,
-except in knife-edge cases (e.g.\ return probabilities independent of $p$, or
-shifting at a common rate).
-
-%=============================================================================
-\section{The result}
-%=============================================================================
-
-The conjecture is half right.  It depends on the order of the welfare effect.
-
-\paragraph{First-order (local) incidence.}
-$D(p)$ and $r(p)$ \emph{are} sufficient.  Drop the pre-purchase value $v$ and
-work with hassle cost $\kappa_i\geq 0$ and post-purchase match $u\sim G_i$.
-After buying at $p$, the consumer keeps if $u\geq p-\kappa_i$.  Expected surplus
-from buying is
+Each consumer type $i$ has return hassle $\kappa_i$ and draws match quality
+$u\sim G_i$ after purchase.  Expected surplus from buying at list price $p$ is
 \[
   s_i(p)
   = \mathbb{E}_{u\sim G_i}\bigl[\max(u-p,\,-\kappa_i)\bigr].
 \]
-Buy iff $s_i(p)\geq 0$; keep probability $k_i(p)=\Pr(u\geq p-\kappa_i)$; return
-probability $r_i(p)=1-k_i(p)$.
-
-Aggregates:
+A type buys iff $s_i(p)\geq 0$; conditional on buying, it keeps the item iff
+$u\geq p-\kappa_i$, with keep probability $k_i(p)=\Pr(u\geq p-\kappa_i)$.
+Aggregating across types yields gross demand, kept volume, and the return rate:
 \begin{align*}
   D(p)
-  &= \int \mathbf{1}\{s_i(p)\geq 0\}\,dF(i), \\
+  &= \int \mathbf{1}\{s_i(p)\geq 0\}\,dF(i),
+  &\qquad
   K(p)
-  &= \int \mathbf{1}\{s_i(p)\geq 0\}\,k_i(p)\,dF(i)
-  = D(p)\bigl(1-r(p)\bigr).
+  &= \int \mathbf{1}\{s_i(p)\geq 0\}\,k_i(p)\,dF(i), \\
+  r(p)
+  &= 1 - K(p)/D(p).
 \end{align*}
-Total consumer surplus $CS(p)=\int \mathbf{1}\{s_i\geq 0\}\,s_i\,dF$.
-Differentiate and apply the envelope theorem (marginal buyer has $s_i=0$, so
-the extensive margin drops out):
+
+Total consumer surplus is $CS(p)=\int \mathbf{1}\{s_i\geq 0\}\,s_i\,dF$.
+Differentiating along the price path, inframarginal buyers satisfy
+$s_i'(p)=-k_i(p)$, while marginal buyers have $s_i=0$.  By the envelope
+theorem,
 \begin{equation}
-  CS'(p)
-  = -\int \mathbf{1}\{s_i\geq 0\}\,k_i(p)\,dF(i)
-  = -K(p)
-  = -D(p)\bigl(1-r(p)\bigr).
-  \label{eq:dCS-local}
+  CS'(p) = -K(p) = -D(p)\bigl(1-r(p)\bigr),
+  \label{eq:CS-prime}
 \end{equation}
-Hence for a small price change,
-\[
-  dCS = -D(p)\bigl(1-r(p)\bigr)\,dp.
-\]
-Composition effects cancel at first order because the marginal buyer adds zero
-surplus.  Aggregates $(D,r)$ appear directly on the right-hand side.
-
-\paragraph{Second-order (global / DWL).}
-The conjecture is fully correct.  Curvature $CS''(p)$ (e.g.\ a Harberger
-triangle) depends on how the composition of buyers changes with $p$, which
-requires the joint distribution of $(\kappa_i,G_i)$.  Aggregates $(D,r)$ alone
-cannot identify it.  That is beyond the scope of local pass-through / incidence
-analysis.
+so a small price change affects welfare only through kept units:
+\begin{equation}
+  dCS = -D(p)\bigl(1-r(p)\bigr)\,dp,
+  \qquad
+  \Delta CS = -\int_{p_0}^{p_1} D(p)\bigl(1-r(p)\bigr)\,dp.
+  \label{eq:dCS}
+\end{equation}
+The weight on $dp$ is kept volume $K$, not gross demand $D$.
 
 %=============================================================================
-\section{Addendum for the incidence draft}
+\section{Supply side}
 %=============================================================================
 
-\paragraph{Consumer side (sufficient microfoundation).}
-Each consumer $i$ has hassle cost $\kappa_i$ and post-purchase match
-$u\sim G_i$.  At list price $p$,
+On the producer side, each firm $j$ takes effective margin $\mu$ as given and
+chooses output to solve
 \[
-  s_i(p)
-  = \mathbb{E}_{u\sim G_i}\bigl[\max(u-p,\,-\kappa_i)\bigr].
+  \max_{q_j \geq 0}\;\; \mu\,q_j - C_j(q_j),
+  \qquad
+  \text{FOC: } C_j'(q_j)=\mu \;\;(\text{if } q_j>0),
 \]
-Buy if $s_i(p)\geq 0$; keep probability $k_i(p)=\Pr(u\geq p-\kappa_i)$.
-Gross demand and kept units:
-\begin{align*}
-  D(p)
-  &= \int \mathbf{1}\{s_i(p)\geq 0\}\,dF(i), \\
-  K(p)
-  &= \int \mathbf{1}\{s_i(p)\geq 0\}\,k_i(p)\,dF(i),
-\end{align*}
-with $K(p)=D(p)(1-r(p))$.
+with $C_j(0)=0$.  Write $q_j(\mu)$ for firm $j$'s supply, set to zero when
+$\mu$ is below its minimum marginal cost.
 
-\paragraph{Welfare for incidence (local).}
-By the envelope theorem,
-\[
-  CS'(p) = -K(p) = -D(p)\bigl(1-r(p)\bigr).
-\]
-This replaces the textbook $dCS=-D(p)\,dp$.  For local incidence, $(D,r)$ are
-sufficient; for global DWL they are not.
+Summing across firms defines market supply and industry profit:
+\begin{equation}
+  S(\mu) \equiv \sum_j q_j(\mu),
+  \qquad
+  PS(\mu) \equiv \sum_j \bigl[\mu\,q_j(\mu)-C_j\bigl(q_j(\mu)\bigr)\bigr].
+  \label{eq:agg-def}
+\end{equation}
+Which firms are active at each $\mu$ determines both the market quantity and
+total profit.
 
-\paragraph{Implication for incidence under returns.}
-In the perfect-competition notes, the local consumer burden of a price change
-should use kept volume $K=D(1-r)$, not gross purchases $Q=D$:
+Differentiating $PS(\mu)$ with respect to $\mu$ gives, for each firm,
 \[
-  \frac{dCS}{dx} = -K(p)\,\rho_x
-  = -D(p)\bigl(1-r(p)\bigr)\,\rho_x,
-  \qquad x\in\{c,h\}.
+  \frac{d}{d\mu}\Bigl[\mu\,q_j-C_j(q_j)\Bigr]
+  = q_j + q_j'(\mu)\,\bigl[\mu-C_j'(q_j)\bigr].
 \]
-Pass-through formulae (market clearing in $\mu$) are unchanged; only the
-consumer-side incidence weight is corrected.
+Active firms satisfy $C_j'(q_j)=\mu$ at their chosen output, so the adjustment
+term $q_j'(\mu)\,[\mu-C_j'(q_j)]$ is zero for each firm---equivalently, the
+envelope theorem applied to each firm's profit problem gives
+$d\pi_j/d\mu=q_j(\mu)$.  Summing over firms,
+\[
+  PS'(\mu)=\sum_j q_j(\mu)=S(\mu).
+\]
+With no production at $\mu=0$, it follows that industry profit equals the area
+to the left of the market supply curve:
+\begin{equation}
+  PS(\mu)=\int_0^\mu S(x)\,dx.
+  \label{eq:PS-integral}
+\end{equation}
+At equilibrium $\mu=\mu(p)$, $PS(\mu(p))=\int_0^{\mu(p)}S(x)\,dx$.
+
+%=============================================================================
+\section{Equilibrium}
+%=============================================================================
+
+Combining the two sides, equilibrium requires gross demand to equal aggregated
+supply at effective margin $\mu(p)$:
+\begin{equation}
+  D(p) = S\bigl(\mu(p)\bigr),
+  \qquad Q \equiv D(p) = \sum_j q_j\bigl(\mu(p)\bigr).
+  \label{eq:clearing}
+\end{equation}
+Let $j^*$ denote a marginal active firm ($q_{j^*}>0$ and
+$\mu=C_{j^*}'(q_{j^*})$).  Its per-unit production margin is zero in
+equilibrium:
+\begin{equation}
+  m(p) \equiv \mu(p) - C_{j^*}'\!\bigl(q_{j^*}(\mu(p))\bigr) = 0.
+  \label{eq:margin}
+\end{equation}
+Write $m_p\equiv dm/dp$ and $m_x\equiv \partial m/\partial x|_{Q,p}$.
+Differentiating the clearing condition and the zero-margin condition along the
+equilibrium path yields the pass-through objects used next.
+
+%=============================================================================
+\section{Pass-through}
+%=============================================================================
+
+Consider a small cost shock $x$, such as a uniform upward shift in every
+$C_j'$ or an increase in handling cost $h$, and write $\rho_x\equiv dp/dx$.
+Holding $(p,Q)$ fixed, a uniform production-cost shift lowers each firm's
+margin by one dollar on the marginal unit, so $m_x=-1$; a handling shock gives
+$m_x=-r(p)$.  Differentiating market clearing and the zero-margin condition
+along the shocked equilibrium path then gives
+\begin{equation}
+  \rho_x
+  = \frac{S'(\mu)\,m_x}{S'(\mu)\,m_p - D'(p)},
+  \qquad
+  \rho_h = r(p)\,\rho_C.
+  \label{eq:pass-through}
+\end{equation}
+Here $S'(\mu)=\sum_j q_j'(\mu)$ is the aggregated slope of firm supply; no
+single aggregate $C(Q)$ is needed.  In the homogeneous special case
+($C_j=C$), $m_p=1-C''(Q)D'(p)-r'(p)(p+h)-r(p)$ and the formula above reduces
+to the standard competitive pass-through when $r\equiv 0$.
+
+%=============================================================================
+\section{Incidence}
+%=============================================================================
+
+Combining the consumer first-order formula $dCS=-K\,dp$ with the supply-side
+objects above, the welfare incidence of the shock is
+\begin{equation}
+  \frac{dCS}{dx} = -K(p)\,\rho_x,
+  \qquad
+  \frac{dPS}{dx} = Q\bigl(m_p\,\rho_x + m_x\bigr).
+  \label{eq:burden}
+\end{equation}
+The incidence ratio $I_x\equiv |dCS/dx|/|dPS/dx|$ is
+\begin{equation}
+  I_C = I_h
+  = \frac{(1-r(p))\,S'(\mu)}{-D'(p)}.
+  \label{eq:incidence}
+\end{equation}
+Production and handling shocks bear the same consumer share because
+$\rho_h=r(p)\,\rho_C$ and the kept-volume factor $K=D(1-r)$ applies to both.
 
 \end{document}

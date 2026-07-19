@@ -66,6 +66,8 @@ Skills are in `.cursor/skills/`. **task-management-workflow** is mandatory readi
 - **aws-s3-data-management** — S3 credentials, load/write operations
 - **coding-style** — R and C++ code formatting standards
 - **git-rules** — Git workflow and commit message format
+- **academic-note-prose** — Paper-like model sections: natural prose, derive-don't-announce, minimal notation, sparse `\eqref`
+- **improve-academic-draft** — Review academic drafts (notation, flow, intro, identification)
 
 See `.cursor/skills/` for the full list.
 
