@@ -1,8 +1,11 @@
 \documentclass[11pt]{article}
 
 \usepackage{amsmath,amssymb}
+\usepackage{amsthm}
 \usepackage[margin=1in]{geometry}
 \usepackage{hyperref}
+
+\newtheorem{result}{Result}
 
 \title{Pass-Through, Welfare, and Incidence under Product Returns}
 \author{Draft notes}
@@ -192,10 +195,8 @@ $S_x\equiv \partial S/\partial x$ at fixed $\mu$.  Hence
   \label{eq:pass-through}
 \end{equation}
 A one-dollar parallel rise in production cost at fixed $\mu$ is equivalent to
-lowering the $\mu$ that clears marginal cost by one dollar, so market quantity
-falls by $S'(\mu)$ per dollar and $S_c=-S'(\mu)$.  Since production cost does
-not enter $\mu(p,h)$ at fixed $p$ and handling does not shift $S(\cdot)$ at
-fixed $\mu$,
+lowering the $\mu$ that clears marginal cost by one dollar, so $S_c=-S'(\mu)$.
+At fixed list price $p$, $\mu_c=0$ and $S_h=0$.  Hence
 \begin{align}
   \mu_c &= 0,
   &
@@ -205,17 +206,33 @@ fixed $\mu$,
   &
   S_h &= 0.
 \end{align}
-Write $\rho_c\equiv dp/dc$ and $\rho_h\equiv dp/dh$.  Substituting yields
-\begin{equation}
-  \rho_c
-  = \frac{-S'(\mu)}{D'(p)-S'(\mu)\,\mu_p},
-  \qquad
-  \rho_h
-  = \frac{S'(\mu)\,\mu_h}{D'(p)-S'(\mu)\,\mu_p}
-  = r(p)\,\rho_c.
-  \label{eq:rho-c-h}
-\end{equation}
-When $r\equiv 0$, $\rho_c$ is the textbook competitive pass-through formula.
+Write $\rho_c\equiv dp/dc$ and $\rho_h\equiv dp/dh$.  Substituting into the
+pass-through formula yields
+\begin{result}[Pass-through of production and handling costs]
+  \begin{equation}
+    \frac{\rho_h}{\rho_c}=r(p),
+    \label{eq:rho-ratio}
+  \end{equation}
+  with pass-through into list price
+  \begin{equation}
+    \rho_c
+    = \frac{-S'(\mu)}{D'(p)-S'(\mu)\,\mu_p},
+    \qquad
+    \rho_h = r(p)\,\rho_c.
+    \label{eq:rho-c-h}
+  \end{equation}
+\end{result}
+Both local cost shocks move effective marginal revenue $\mu$, but they do so at
+different margins.  A one-dollar rise in production cost is equivalent to a
+one-dollar fall in $\mu$ on each unit firms supply.  A one-dollar rise in
+handling cost lowers $\mu$ by $r(p)$ per gross unit sold, because only returned
+units incur $h$.
+
+Market clearing $D(p)=S(\mu)$ translates a given change in $\mu$ into list
+price through the same local comparative statics, regardless of which cost rose.
+Pass-through therefore scales with the shock's direct impact on $\mu$, yielding
+$\rho_h/\rho_c=r(p)$.  When $r\equiv 0$, handling does not move $\mu$ and
+$\rho_c$ coincides with the textbook competitive pass-through formula.
 
 %=============================================================================
 \section{Incidence}
@@ -259,5 +276,48 @@ Write $I_x\equiv |dCS/dx|/|dPS/dx|$.  For both shocks,
   = \frac{(1-r(p))\,S'(\mu)}{-D'(p)}.
   \label{eq:incidence}
 \end{equation}
+
+%=============================================================================
+\section{Tax neutrality}
+%=============================================================================
+
+Weyl and Fabinger (2013) show that without returns, buyer and seller remittance
+deliver the same equilibrium.  Fix checkout price $p$ and tax $\tau$.  Seller
+remittance clears at
+\begin{equation}
+  D(p) = S\bigl(p - \tau - r(p)(p+h)\bigr),
+\end{equation}
+because both the return rate and per-return cost $p+h$ are evaluated at
+checkout price $p$.  Buyer remittance clears at
+\begin{equation}
+  D(p) = S\bigl((p-\tau) - r(p-\tau)(p-\tau+h)\bigr),
+\end{equation}
+because the seller posts list price $p-\tau$, so returns and refund cost are
+evaluated there.  The two conditions define the
+same equilibrium only if the arguments of $S(\cdot)$ coincide; canceling
+$p-\tau$ yields
+\begin{equation}
+  r(p)(p+h) = r(p-\tau)(p-\tau+h).
+\end{equation}
+
+\begin{result}[Failure of tax neutrality with returns]
+  Seller and buyer taxes define the same equilibrium if and only if
+  $r(p)(p+h)=r(p-\tau)(p-\tau+h)$.\footnote{Write $g(x)\equiv r(x)(x+h)$, so
+  neutrality requires $g(p)=g(p-\tau)$.  If $g(x)\equiv C$, then
+  $r(x)=C/(x+h)$; without that functional form on $r$, the two clearing
+  conditions need not define the same equilibrium.}
+  When $r\equiv 0$, both clearings reduce to
+  $D(p)=S(p-\tau)$ and legal incidence is neutral in the Weyl and Fabinger sense.
+\end{result}
+
+Without returns, the tax is only a wedge of $\tau$ between payment and
+producer receipt.  With returns, each gross sale still loses $\tau$ to the tax,
+but expected refund cost per sale, $r(p)(p+h)$, depends on the seller's posted
+list price.  When the
+seller remits the tax, that posted price is checkout price $p$; when the buyer
+remits it, the posted price is $p-\tau$.  Legal incidence therefore shifts both
+$r(\cdot)$ and the refund cost the seller bears on returns, so buyer and seller
+remittance need not satisfy the same market-clearing condition unless $r$ takes
+a restrictive form.
 
 \end{document}
