@@ -7,7 +7,8 @@
 
 \newtheorem{result}{Result}
 
-\title{Pass-Through, Welfare, and Incidence under Product Returns}
+\title{Pass-Through, Welfare, and Incidence under Product Returns\\
+  in Perfect Competition}
 \author{Draft notes}
 \date{\today}
 
@@ -161,6 +162,7 @@ $PS=\int_0^{\mu(p,h)}S(z)\,dz$.
 %=============================================================================
 \section{Failure of tax neutrality}
 %=============================================================================
+\label{sec:tax-neutrality}
 
 Weyl and Fabinger (2013) show that without returns, buyer and seller remittance
 deliver the same equilibrium.  With returns, we ask whether that equivalence
@@ -316,43 +318,89 @@ pass-through generally differs from $\rho_c$.
 \section{Incidence}
 %=============================================================================
 
-Consumer surplus responds to a cost shock only through pass-through,
+With the pass-through results in hand, we can now compute the welfare effect of
+each cost shifter and the division of the loss between consumers and producers.
+Throughout, $Q\equiv D(p)$ and $r\equiv r(p)$ denote the equilibrium gross
+quantity and the return rate.  From the consumer-side analysis, a small
+increase in any shifter $x$ changes consumer surplus by
 \begin{equation}
-  \frac{dCS}{dx} = -D(p)\bigl(1-r(p)\bigr)\,\rho_x.
-  \label{eq:dCS-shock}
+  \frac{dCS}{dx} = -Q\,(1-r)\,\rho_x,
+  \label{eq:CSx}
 \end{equation}
-Producer surplus is $PS=\int_0^{\mu}S(\tilde\mu)\,d\tilde\mu$ at equilibrium.
-Differentiating along the shock gives
-\begin{equation}
-  \frac{dPS}{dx}
-  = \int_0^{\mu} S_x(\tilde\mu,x)\,d\tilde\mu
-  + Q\bigl(\mu_p\,\rho_x+\mu_x\bigr),
-  \label{eq:dPS-general}
-\end{equation}
-using $PS'(\mu)=Q$.  For production cost, $\mu_c=0$ and $S_c=-S'(\tilde\mu)$, so
-\begin{equation}
-  \int_0^{\mu} S_c(\tilde\mu)\,d\tilde\mu = -Q,
-  \qquad
-  \frac{dPS}{dc}=Q\bigl(\mu_p\,\rho_c-1\bigr).
-\end{equation}
-For handling, $S_h=0$, so
-\begin{equation}
-  \frac{dPS}{dh}=Q\bigl(\mu_p\,\rho_h+\mu_h\bigr).
-\end{equation}
-The supply-shift term equals the drop in industry quantity at fixed $\mu$, the
-same $-Q$ that would appear if $\mu$ fell by one dollar at fixed $p$.  Both
-shocks therefore satisfy
-\begin{equation}
-  \frac{dPS}{dx} = Q\bigl(\mu_p\,\rho_x + \mu_x\bigr),
-  \label{eq:burden}
-\end{equation}
-with $\mu_x=-1$ for production cost and $\mu_x=\mu_h$ for handling.
+where $\rho_x\equiv dp/dx$ is the pass-through of the shock into the list
+price.
 
-Write $I_x\equiv |dCS/dx|/|dPS/dx|$.  For both shocks,
+Producer surplus is less immediate because a shock may shift the supply
+schedule directly as well as indirectly through the effective marginal revenue
+$\mu$.  Let $S(\mu,x)$ be the market supply curve, where the second argument
+allows for a direct effect of $x$ on firms' costs, and write producer surplus
+as $PS(\mu,x)=\int_0^{\mu} S(z,x)\,dz$.  Differentiating with respect to $x$,
+\[
+  \frac{dPS}{dx}
+  = S(\mu,x)\,\frac{d\mu}{dx}
+    + \int_0^{\mu} \frac{\partial S(z,x)}{\partial x}\,dz .
+\]
+Using the equilibrium condition $S(\mu,x)=Q$ and denoting
+$\Sigma_x\equiv\int_0^\mu (\partial S(z,x)/\partial x)\,dz$, we obtain
 \begin{equation}
-  I_c = I_h
-  = \frac{(1-r(p))\,S'(\mu)}{-D'(p)}.
-  \label{eq:incidence}
+  \frac{dPS}{dx} = Q\,\frac{d\mu}{dx} + \Sigma_x
+  = Q\bigl(\mu_p\,\rho_x + \mu_x\bigr) + \Sigma_x,
+  \label{eq:PSx}
 \end{equation}
+with $\mu_p\equiv\partial\mu/\partial p$ and
+$\mu_x\equiv\partial\mu/\partial x$ evaluated at fixed list price.
+
+The term $\Sigma_x$ captures the direct shift of the supply curve holding
+$\mu$ constant.  A uniform, parallel increase in every firm's marginal
+production cost by one dollar ($x=c$) moves the supply curve inward according
+to $\partial S(\mu,c)/\partial c = -S'(\mu)$, so
+$\Sigma_c = \int_0^\mu (-S'(z))\,dz = -S(\mu) = -Q$.  For a handling-cost
+shock $h$ or a per-unit tax (whether seller- or buyer-remitted), the supply
+schedule at a given $\mu$ is unchanged, hence $\Sigma_h = \Sigma_{\tau_s} =
+\Sigma_{\tau_b} = 0$.  The partial derivatives $\mu_x$ are obtained directly
+from the definition of effective marginal revenue: $\mu_c=0$,
+$\mu_h=-r$, $\mu_{\tau_s}=-1$, and, for the buyer-remitted tax evaluated at
+$\tau=0$, $\mu_{\tau_b}=r+(p+h)r'-1$ as derived in Section~5.
+
+Substituting these values together with the pass-through expressions
+$\rho_h=r\rho_c$ and $\rho^s_\tau=\rho_c$ into \eqref{eq:PSx} yields the
+producer-surplus responses:
+\begin{align}
+  \frac{dPS}{dc}   &= Q\bigl(\mu_p\,\rho_c - 1\bigr), \label{eq:PS-c} \\
+  \frac{dPS}{dh}   &= Q\bigl(\mu_p\,\rho_h - r\bigr), \label{eq:PS-h} \\
+  \frac{dPS}{d\tau_s} &= Q\bigl(\mu_p\,\rho_c - 1\bigr), \label{eq:PS-taus} \\
+  \frac{dPS}{d\tau_b} &= Q\bigl(\mu_p\,\rho^b_\tau + \mu_{\tau_b}\bigr). \label{eq:PS-taub}
+\end{align}
+
+The incidence ratio $I(x)\equiv|dCS/dx|\,/\,|dPS/dx|$ measures how the total
+loss is divided.  For production cost, handling cost, and the seller-remitted
+tax, the ratio simplifies to the same expression:
+\begin{equation}
+  I(c)=I(h)=I(\tau_s)=\frac{(1-r)\,\rho_c}{1-\mu_p\,\rho_c}.
+  \label{eq:I-symmetric}
+\end{equation}
+For the buyer-remitted tax, the ratio is
+\begin{equation}
+  I(\tau_b)=\frac{(1-r)\,\rho^b_\tau}
+                  {-\bigl(\mu_p\,\rho^b_\tau + \mu_{\tau_b}\bigr)},
+  \qquad \mu_{\tau_b}=r+(p+h)r'-1.
+  \label{eq:I-taub}
+\end{equation}
+
+Equation \eqref{eq:I-symmetric} generalises the standard competitive-market
+formula $I=\rho/(1-\rho)$ (Weyl and Fabinger, 2013).  Consumer loss is scaled
+by the keep probability $1-r$, and the producer-side denominator involves the
+effective-revenue pass-through $\mu_p\rho_c$ rather than the list-price
+pass-through alone.  Production cost, handling cost, and a seller-remitted tax
+all generate the same incidence split because none of them changes the price
+at which consumers decide whether to return the product; they shift
+equilibrium exclusively through the effective marginal revenue $\mu$.  The
+buyer-remitted tax, in contrast, alters the refund price to the pre-tax list
+price, so the return rate and the per-return refund liability differ.  This
+breaks the symmetry, giving an incidence ratio that departs from
+\eqref{eq:I-symmetric}---a welfare counterpart to the tax-neutrality failure
+established earlier.  When returns are absent ($r=0$, $\mu_p=1$,
+$\rho^b_\tau=\rho_c$), all four ratios collapse to $\rho_c/(1-\rho_c)$,
+restoring the familiar equivalence.
 
 \end{document}
