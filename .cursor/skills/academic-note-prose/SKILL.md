@@ -1,177 +1,213 @@
 ---
 name: academic-note-prose
-description: Writes and edits economics draft notes and model sections as continuous paper prose—natural transitions, define notation at first use, derive results from definitions, minimal notation, and sparse equation cross-references. Use when drafting or revising LaTeX under draft/, writing model/derivation sections, welfare or incidence notes, or when the user asks for paper-like flow, natural linking, minimal notation, or derive-don't-state results.
+description: Writes and edits economics draft notes and model sections as continuous paper prose—define notation at first use, derive don't announce, minimal notation, sparse eqref, prose rhythm, math in displays. Use when drafting or revising LaTeX under draft/, welfare/incidence derivations, or when the user asks for paper-like flow.
 ---
 
 # Academic Note Prose
 
-Apply when **writing or revising** economics draft notes (`draft/**/*.tex`), especially model blocks, welfare derivations, and incidence sections. For **diagnostic review** (notation tables, intro checks), use **improve-academic-draft** instead.
+**Write/edit** economics notes (`draft/**/*.tex`). **Review-only** diagnosis → **improve-academic-draft** (§1f points here).
 
-## Revision lessons (prose vs algebra)
+**Core principle:** One clear pass through the logic—primitives → sufficient statistic → aggregates → derive → interpret. Polishing is not adding words or shuffling blocks.
 
-Compare draft text against an earlier version when polish goes wrong. Common failure modes:
+---
 
-| Failure | Symptom | Fix |
-|--------|---------|-----|
-| **Notation-led prose** | **Because** clauses restate payoffs (`lose $u-p$`) instead of economics | Plain language in prose; formal objects in the display |
-| **Triple redundancy** | Keep/return logic, then $\kappa$ flat in $p$, then “in words $s_p$ is …” | One economic sentence, then one equation |
-| **Double definition** | `Write $s_p$ for …; in words, $s_p$ is …` | Define in `where` at first appearance; embed meaning in one lead-in sentence |
-| **Wrong section job** | Setting repeats in Consumer side; primitives re-introduced | Setting = full setup once; later sections = aggregate/derive only |
-| **Extra names** | $K$ and $D(1-r)$; reservation price and WTP | One object, one name; drop aliases not used downstream |
-| **Hand-waved derive** | “By the envelope theorem, $CS'=\cdots$” with no margin split | Integral → extensive term (often zero) → intensive term → aggregates |
-| **Template filler** | “defined by … defined by …”; bogus **and**; equation opens section | Follow expository order; prose before first display |
+## Before every edit (mandatory)
 
-**Git baseline vs polished note:** an older commit may get aggregates and results right while still violating exposition (vague Setting, repeated setup, redundant $K$, announced results). Polishing is not adding words—it is **one clear pass** through the logic: primitives → sufficient statistic → aggregates → derive → interpret.
+Read the passage aloud (mentally). Fix in this order:
+
+1. **Redundancy** — same economics or symbol defined twice?
+2. **Paragraph rhythm** — stub one-line paragraphs? run-on sentence doing an equation's job?
+3. **Expository order** — mechanism before notation?
+4. **Model honesty** — claiming structure the primitives do not impose?
+5. **Structure last** — only after 1–4; reordering algebra is not a readability fix.
+
+Then run **Pre-compile checklist** (bottom) before `pdflatex`.
+
+---
 
 ## Core rules
 
-1. **Connect with words, not headers.** Write like a paper paragraph. Do not use `\paragraph{...}` or bold signpost labels inside a section. Use hinge sentences (“Aggregating across types yields…”, “Summing across firms defines…”, “Differentiating with respect to $w$ gives…”).
-2. **Derive; do not announce.** Do not state a result and then prove it. Start from primitives or aggregate definitions, work step by step, and display the result only at the end of the argument.
-3. **Minimal notation.** Introduce only symbols needed for the explanation. Drop redundant aliases. Do not label intermediate steps unless they are reused later.
-4. **Sparse `\eqref`.** Avoid `\eqref{...}` in prose unless a cross-reference is genuinely needed.
+| Rule | Do | Don't |
+|------|----|-------|
+| **Connect** | Hinge sentences between steps | `\paragraph{}`, bold signposts |
+| **Derive** | Primitives → steps → display at end | State result, then prove |
+| **Notation** | Symbols needed downstream only | Aliases ($K$ vs $D(1-r)$); firm-level ($j^*$, $\omega$) after $S(\mu)$ exists |
+| **`\eqref`** | Distant, non-obvious refs | Adjacent or just-defined equations |
+| **Terms** | **Effective margin** for $\mu$ | Bare “margin” when $\mu$ is meant |
+| **Honesty** | Say when model does not impose X | Invent common $c$, symmetric shocks, etc. |
 
-## Define notation at first use
+---
 
-- **Explain every new symbol in words** when it first appears—not later, not as an unexplained tuple like $(\kappa_i,G_i)$.
-- **Expository order:** product/market → who agents are → each dimension of heterogeneity (with meaning) → timing and micro payoffs → expected objects → **summarize to a sufficient statistic** (e.g. willingness to pay) → population aggregates ($F$, $D$, shares).
-- **Do not run backward:** avoid “heterogeneity is only across $(\kappa_i,G_i)$” before saying what $\kappa_i$ and $G_i$ are.
+## Exposition order
 
-**Bad:**
-```latex
-Consumer heterogeneity is only across types $i$ in $(\kappa_i,G_i)$. Type $i$ has
-return hassle $\kappa_i$ and draws $u$ from $G_i$.
-```
+**Setting (once):** market → agents → each heterogeneity dimension (words, not tuples) → timing/payoffs → expected objects → **sufficient statistic** (e.g. WTP $v_i$, defined by $s_i(v_i)=0$) → aggregates ($F$, $D$, $r$).
 
-**Good:**
-```latex
-Consumers indexed by $i$ differ in return hassle $\kappa_i$, the disutility from
-returning the product, and in match distribution $G_i$ over post-purchase
-quality $u$.
-```
+**Later sections:** aggregate / derive only—no primitive re-intro.
 
-## Sentence and paragraph craft
+**One object, one name:** WTP not also “reservation price”; no `Write $s_p$…; in words, $s_p$ is…`—meaning in one lead-in or `where` clause.
 
-### “And” discipline
+**Bad tuple:** `heterogeneity is only across $(\kappa_i,G_i)$` before defining $\kappa_i$, $G_i$.
 
-Use **and** only when two clauses are **the same logical step**. Separate sentences for separate steps.
+---
 
-| Join with **and** | Separate sentences |
-|---|---|
-| Two dimensions of the same heterogeneity | Product price, then consumer types |
-| Keep vs return payoffs in one decision rule | Buy rule, then definition of WTP |
-| Aggregates defined in one aggregation sentence | Primitive setup, then derived objects |
+## Prose craft
 
-**Bad:** `Type $i$ buys if $s_i(p)\geq 0$, and reservation price $v_i$ solves $s_i(v_i)=0$.` (two unrelated definitions stitched with **and**)
+### Sentences
 
-**Good:** `For purchase, all consumer-side heterogeneity summarizes into willingness to pay $v_i$, defined by $s_i(v_i)=0$, so type $i$ buys if and only if $p\leq v_i$.`
+- **And** only for the **same logical step**; separate unrelated definitions.
+- **~1–2 sentences per beat**; link with *who/which/so*, not bogus **and**.
+- **Not run-on:** do not pack product, heterogeneity, timing, aggregates, and three partials in one line.
 
-### Length balance
+### Paragraphs
 
-- **Not choppy:** do not break every short sentence into its own LaTeX paragraph (a blank line forces a new paragraph in the PDF).
-- **Not run-on:** do not glue product, heterogeneity, timing, and aggregates into one line.
-- **Target:** one logical beat per sentence or two; at most ~2 sentences per beat when the logic is tight. Link related ideas with **who/which/where**, commas, or **so**—not a bogus **and**.
+- Blank line in LaTeX = new PDF paragraph—use sparingly.
+- **Not choppy:** one line per shock, per symbol, or per “Write …”.
+- **Typical break:** economics (what moves) → derivation (one continuous block through displays)—not “general paragraph / special paragraph” as fake structure.
 
-### Sections do not open on display math
+### Punctuation
 
-Always **one prose sentence** before the first equation in a section.
+- **No `:` or `;`** as templates before displays or between unrelated steps. Period, then equation—or *so/yields/therefore*.
+- **Keep `:`** only for `FOC:`, conventional labels, true lists.
+- **Sections:** at least one prose sentence before the first display.
 
-**Bad:** `\section{Consumer side}` then `\begin{equation} CS(p)=...\end{equation}`
+### Math placement
 
-**Good:** `At list price $p$, consumer surplus integrates expected surplus over types who buy:` then the display.
+- **Prose:** economic meaning, one short hinge.
+- **Displays:** partials, multi-equation substitutions, pass-through formulas, $dPS/dx$ cases.
+- **Bad:** `At the production shock, $\mu_c=0$, and … $S_c=-S'$, and … $\mu_h=-r$, and …` in one sentence.
+- **Good:** one hinge → `align` or `equation`.
 
-## Sufficient statistics for heterogeneity
-
-When a margin (purchase, participation, entry) depends on a scalar summary of type:
-
-- Say explicitly that **all heterogeneity on that margin summarizes** into **willingness to pay** $v_i$.
-- Give **defined by** immediately (e.g. `$v_i$ defined by $s_i(v_i)=0$`).
-- State the **decision rule** in the same sentence or the next (e.g. `$p\leq v_i$`).
-
-Return behavior, match risk, etc. may still depend on underlying type parameters **off** the purchase margin; say so in the derivation section when relevant.
-
-## One object, one name
-
-- **Do not give two names to the same object** (e.g. willingness to pay and reservation price for the same $v_i$; $K$ and $D(1-r)$ when one symbol suffices in a paragraph).
-- Pick one term at first use and keep it throughout the note.
-- In derivations, **omit type-level steps** that add notation without new content when the next line already connects to the aggregate definition—but when a partial or derivative is new notation, give **one sentence** of economic meaning before its display, not a separate “Write …; in words, …” block.
-
-## Surplus, margins, and interpretation
-
-### Integral form when teaching extensive vs intensive margins
-
-For surplus over a WTP distribution $F$, prefer
-
-```latex
-CS(p)=\int_p^\infty s(v,p)\,dF(v), \qquad s(v,v)=0,
-```
-
-Differentiate to expose **extensive margin** (boundary term; often zero because $s(v,v)=0$) and **intensive margin** (integral of $\partial s/\partial p$). Define partials where they first appear (e.g. `$s_p(v,p)\equiv \partial s(v,p)/\partial p$` in the same display or its `where` clause).
-
-**Bad (triple redundancy):** state the economic logic, then `Write $s_p$ for …; in words, $s_p$ is …`, then the same equation.
-
-**Good:** one sentence embeds meaning and the object—`On the intensive margin, $s_p(v,p)$ equals minus the keep probability, because a higher price harms the consumer only when she keeps the purchase:` then the display. Do not restate the same logic with payoff notation (`$u-p$`) in the **because** clause when plain language already says it.
-
-### Interpretation **after** the math
-
-1. Derive the result (display the final formula).
-2. **Then** interpret: economic meaning, special cases, what enters at first order.
-3. When a local welfare object depends **only on aggregates** (e.g. $D(p)$ and $r(p)$), say so explicitly—and that **micro heterogeneity in how behavior responds to price** does not matter holding those aggregates fixed. That is often the main punchline; do not bury it in algebra.
+---
 
 ## Derivation template
 
-1. **Primitives** — market, agents, heterogeneity (each symbol defined), micro payoffs in consistent notation.
-2. **Summarize** — sufficient statistic for the relevant margin (WTP, type index, etc.).
-3. **Aggregates** — $F$, demand, shares; avoid “defined by … defined by …” chains—group logically.
-4. **Aggregate object** — surplus or profit in integral/sum form when margins matter.
-5. **Stepwise logic** — differentiate or envelope; show extensive/intensive split if useful.
-6. **Result** — numbered equation only when reused downstream.
-7. **Interpretation** — after the result; sufficient-statistic / aggregate-dependence claims belong here.
+1. Primitives (symbols defined)
+2. Sufficient statistic for the margin
+3. Aggregates
+4. Aggregate object (integral/sum if margins matter)
+5. Stepwise logic (extensive/intensive split when teaching $CS'$)
+6. Numbered equation **only if reused**
+7. Interpretation **after** result (special cases; aggregate-sufficiency punchline)
 
-**Bad (announce then verify):**
+**Surplus margins:** $CS(p)=\int_p^\infty s(v,p)\,dF(v)$, $s(v,v)=0$ → differentiate → extensive (often zero) → intensive ($s_p$ in `where`) → aggregates. Plain language in **because** clauses; not payoff restatement ($u-p$) when words suffice.
+
+**Announce-then-verify (bad):** display $PS=\int S$, then “To verify \eqref{…}, differentiate…”
+
+**Derive-then-conclude (good):** aggregate $PS$, differentiate, envelope → $PS'=S$ → integral.
+
+---
+
+## Pass-through and incidence
+
+### Readability ≠ algebra order
+
+General $\rho_x=-m_x/m_p$ before special cases is **correct math** but **not** a readability fix by itself. Reader must know **what each shock moves** before $m(p,x)$, $\rho_x$, or $x\in\{c,h\}$.
+
+### Structure (competitive notes; aggregate only)
+
+1. **Opening (once):** clearing $D(p)=S(\mu(p,h))$; $Q\equiv D(p)$; two shocks in plain English—production = uniform parallel +$1 in every firm's MC → shifts $S$ at given $\mu$; handling = +$1 in $h$ → lowers $\mu(p,h)$ at fixed $p$. Do **not** also say “$\mu$ unchanged” and “$S$ unchanged” for both—that is redundant.
+2. **General derive (keep density):** $m(p,x)\equiv D-S$; $m=0$; $\rho_x=-m_x/m_p$; align $m_p$, $m_x$; general $\rho_x$ in $\mu_x$, $S_x$.
+3. **Specialize (no re-teach):** one short hinge → **align** for shock-specific $\mu_x$, $S_x$ → $\rho_c$, $\rho_h$ (define $\rho_c,\rho_h$ here if not yet named).
+4. **Incidence:** $dCS$; $dPS$ integral + envelope term; handling and production in **displays**, not inline; one sentence links $\int S_x=-Q$ to $\mu_x=-1$ in unified $dPS/dx$; incidence ratio in display.
+
+### Model facts (welfare note; do not misstate)
+
+- Primitives: heterogeneous $C_j(q_j)$—**not** common scalar production cost $c$.
+- Production shock: **parallel shift** in every firm's marginal cost (indexes $c$ in $\rho_c=dp/dc$).
+- Handling: **level** $h$ in $\mu(p,h)=p-r(p)(p+h)$.
+- Pass-through: $\mu_c=0$, $S_c=-S'(\mu)$; $\mu_h=-r(p)$, $S_h=0$.
+- Incidence burden: $\mu_x=0$ in pass-through vs $\mu_x=-1$ for production in $dPS$—state the bridge explicitly.
+
+### Keep vs cut
+
+| Keep | Cut |
+|------|-----|
+| $m=0$, $\rho_x=-m_x/m_p$, $m_p/m_x$ align | “Both shocks enter through the same clearing condition” |
+| $\int S_x$ for production; $\mu_x=-1$ link | “numerator/direct effect…”, “with $\mu$ from (4)…” |
+| Shock channels **once** at top | Same channels in specialization prose |
+| Key steps for publication density | Stub paragraphs; notation-led openings |
+
+### Snippets
+
+**Bad opening:**
 ```latex
-Industry surplus equals the area under supply:
-\begin{equation} PS(w)=\int_0^w S(x)\,dx. \end{equation}
-To verify \eqref{eq:PS-integral}, differentiate \eqref{eq:agg-def}...
+Write $Q\equiv D(p)$. Consider shocks indexed by $x\in\{c,h\}$: handling cost
+$h$ in $\mu(p,h)$, or a uniform one-dollar parallel shift… Write
+$\rho_x\equiv dp/dx$. Production cost shifts $S(\cdot)$… Handling shifts
+$\mu(p,h)$…
 ```
 
-**Good (derive then conclude):**
+**Good opening:**
 ```latex
-Summing across firms defines market supply and industry profit:
-\begin{equation}
-  S(w)\equiv\sum_j q_j(w),\qquad
-  PS(w)\equiv\sum_j\bigl[w q_j(w)-C_j(q_j(w))\bigr].
-\end{equation}
-Differentiating $PS(w)$... Therefore $PS'(w)=S(w)$. With no production at $w=0$,
-\begin{equation} PS(w)=\int_0^w S(x)\,dx. \end{equation}
+Equilibrium satisfies $D(p)=S(\mu(p,h))$. Write $Q\equiv D(p)$. A uniform
+one-dollar parallel shift in every firm's marginal production cost shifts market
+supply at a given effective margin $\mu$. A one-dollar increase in handling
+cost $h$ lowers $\mu(p,h)$ at a fixed list price $p$.
 ```
 
-## Pre-compile proofread
+**Bad specialize:**
+```latex
+At the production-cost shock, $\mu$ does not move at fixed $p$, so $\mu_c=0$,
+and aggregate quantity falls… so $S_c=-S'(\mu)$. At the handling shock,
+$\mu_h=-r(p)$…
+```
 
-Before `pdflatex`, read the edited passage and check:
+**Good specialize:**
+```latex
+The two shocks differ in which margin moves at fixed $p$ or fixed $\mu$,
+\begin{align}
+  \mu_c &= 0, & S_c &= -S'(\mu), & \mu_h &= -r(p), & S_h &= 0.
+\end{align}
+```
 
-- [ ] Every symbol defined at first use (no naked tuples)
-- [ ] Expository order: primitives → summarize → aggregates
-- [ ] No bogus **and** between unrelated steps
-- [ ] No one-sentence paragraphs; no single run-on opening sentence
-- [ ] No section opens on a display equation
-- [ ] No comma-spliced “defined by” chains
-- [ ] Payoff notation consistent with $\max(\cdot)$ or equivalent objects
-- [ ] Interpretation follows derivation; aggregate-sufficiency stated when true
+---
 
-## Notation checklist
+## Failure modes (quick reference)
 
-- [ ] Same object with two symbols or two prose names when one suffices
-- [ ] Labels on equations never referenced in text
-- [ ] `\eqref` where prose would be shorter and clearer
+| Failure | Symptom | Fix |
+|---------|---------|-----|
+| **Reorder ≠ readable** | Shuffled paragraphs; still unreadable | Economics once; math in displays; then structure |
+| **Notation-led** | $\rho_x$, $x\in\{c,h\}$ before shocks explained | Mechanism → symbols |
+| **Triple redundancy** | Channels in open + middle + specialize | State once; align for partials |
+| **Math in prose** | Many partials/derivatives in one sentence | Hinge + align/equation |
+| **Choppy PDF** | Blank line after every short sentence | One break: economics → derive |
+| **Double definition** | $\rho_c$ early and late; two names for one object | Define at first **use** |
+| **Wrong model** | “Common $c$” with heterogeneous $C_j$ | Parallel MC shift; say what model imposes |
+| **Over-trim** | Cut $m=0$, $\mu_x=-1$ bridge | Keep derivation density; cut filler |
+| **Over-pad** | `\paragraph{}`, eq narration, filler hinges | Hinge only when logic turns |
+| **Hand-wave** | “By envelope, $CS'=…$” with no margin split | Integral → margins → aggregate |
+| **Wrong section job** | Setting repeated downstream | Aggregates only in later sections |
+| **Punctuation tics** | `;` / `:` before every display | Period + display |
+| **Interpretation timing** | Punchline before derive | After numbered result |
 
-## LaTeX workflow
+**Git baseline:** older commits may have correct math and bad exposition—fix exposition without dropping steps the user kept.
 
-After editing any file under `draft/`, recompile per **latex-compilation** / project-workflow (typically `pdflatex` twice from the note’s directory).
+---
 
-## Relation to other skills
+## Pre-compile checklist
+
+- [ ] Symbols defined in words at first use (no naked tuples)
+- [ ] Exposition: primitives → summarize → aggregates
+- [ ] Shock/mechanism before indexed notation ($x$, $\rho_x$)
+- [ ] No bogus **and**; no one-line paragraphs; no run-on math sentences
+- [ ] No section opens on display math
+- [ ] No unnecessary `:` or `;` before displays
+- [ ] No `\paragraph{}` signposts; sparse `\eqref`
+- [ ] Math-heavy steps in align/equation, not prose
+- [ ] Pass-through: channels once; general $m=0$ kept; specialize via align
+- [ ] Incidence: $dPS$ cases in displays; $\mu_x=-1$ bridge if production supply shift
+- [ ] Interpretation after derivation; aggregate-sufficiency stated when true
+- [ ] Model claims match primitives (no invented common cost, etc.)
+- [ ] Payoff notation consistent with $\max(\cdot)$ or equivalent
+
+---
+
+## Workflow
+
+After any `draft/**/*.tex` edit → **latex-compilation** / project-workflow (`pdflatex` twice from note directory; bib cycle if needed).
 
 | Skill | Role |
 |-------|------|
 | **academic-note-prose** (this) | Write/edit model and derivation text |
-| **improve-academic-draft** | Review checks: definitions, intro, identification, tone |
-| **latex-compilation** | Build PDFs after `.tex` changes |
+| **improve-academic-draft** (§1f) | Review verdict on draft notes |
+| **latex-compilation** | Build PDFs |

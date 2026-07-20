@@ -14,7 +14,7 @@
 \begin{abstract}
 With product returns, local welfare and incidence weight kept units rather
 than gross sales, and pass-through is unchanged once list price is replaced by
-effective margin.
+effective marginal revenue.
 \end{abstract}
 
 %=============================================================================
@@ -47,13 +47,13 @@ unit.
 
 Write $s(v,p)$ for expected surplus at list price $p$ among types with
 willingness to pay $v$, so $s(v,v)=0$.  Consumer surplus integrates surplus over
-all types who buy:
+all types who buy,
 \begin{equation}
   CS(p)=\int_p^\infty s(v,p)\,dF(v).
 \end{equation}
 Differentiating in $p$ gives an extensive-margin term from types entering or
 leaving the purchase margin and an intensive-margin term from lower surplus
-among inframarginal buyers:
+among inframarginal buyers,
 \[
   CS'(p)
   = -s(p,p)\,f(p)+\int_p^\infty s_p(v,p)\,dF(v),
@@ -62,7 +62,7 @@ where $s_p(v,p)\equiv \partial s(v,p)/\partial p$ and $f$ is the density of $v_i
 when $F$ is differentiable.  On the extensive margin, $s(p,p)=0$, so entry and
 exit contribute nothing at first order.  On the intensive margin, $s_p(v,p)$
 equals minus the keep probability, because a higher price harms the consumer
-only when she keeps the purchase:
+only when she keeps the purchase,
 \[
   s_p(v,p)=-\Pr(u\geq p-\kappa_i).
 \]
@@ -79,13 +79,13 @@ by the definitions of $D(p)$ and $r(p)$.  A small price change therefore satisfi
 
 The extensive- and intensive-margin decomposition makes the local formula
 transparent.  Consumer surplus changes depend only on the aggregates $D(p)$ and
-$r(p)$, both at each price and integrated along any path:
+$r(p)$, both at each price and integrated along any path,
 \[
   \Delta CS = -\int_{p_0}^{p_1} D(p)\bigl(1-r(p)\bigr)\,dp.
 \]
-Micro heterogeneity in price responses can be rich: $p$ enters each $s_i(p)$
-nonlinearly and can shift participation, return decisions, and inframarginal
-surplus differently across types.  Yet once $(D,r)$ are given, this
+Micro heterogeneity in price responses can be rich.  Price $p$ enters each
+$s_i(p)$ nonlinearly and can shift participation, return decisions, and
+inframarginal surplus differently across types.  Yet once $(D,r)$ are given, this
 microstructure is irrelevant for $dCS$ and $\Delta CS$.  Two economies with
 the same paths of $D(p)$ and $r(p)$ deliver the same consumer surplus loss,
 whether high-$v_i$ types adjust return behavior more steeply than low-$v_i$
@@ -94,7 +94,7 @@ gross purchases $D(p)$ alone.
 
 Let $\bar{p}$ denote the highest willingness to pay in the population, so
 $D(\bar{p})=0$ and $CS(\bar{p})=0$.  Integrating the local formula then
-rewrites consumer surplus as area under kept volume:
+rewrites consumer surplus as area under kept volume,
 \begin{equation}
   CS(p)=\int_p^{\bar{p}} D(x)\bigl(1-r(x)\bigr)\,dx.
 \end{equation}
@@ -107,13 +107,13 @@ Returns make list price an imperfect summary of producer payoffs.  A gross sale
 brings revenue $p$ if the consumer keeps the item and costs refund $p$ plus
 handling $h$ if the item is returned.  Among gross sales at list price $p$,
 share $r(p)$ are returned, so expected revenue per gross unit---the
-\emph{effective margin}---is
+\emph{effective marginal revenue}---is
 \begin{equation}
-  \mu(p) \equiv p - r(p)(p+h).
+  \mu(p,h) \equiv p - r(p)(p+h).
   \label{eq:mu-def}
 \end{equation}
 Under perfect competition, firm $j$ takes $p$ as given and therefore faces a
-fixed number $\mu$ in its supply decision.  At equilibrium, $\mu=\mu(p)$.
+fixed number $\mu$ in its supply decision.  At equilibrium, $\mu=\mu(p,h)$.
 
 Given $\mu$, firm $j$ chooses output to solve
 \[
@@ -124,7 +124,7 @@ Given $\mu$, firm $j$ chooses output to solve
 with $C_j(0)=0$.  Write $q_j(\mu)$ for firm $j$'s supply, set to zero when
 $\mu$ is below its minimum marginal cost.
 
-Summing across firms defines market supply and industry profit:
+Summing across firms defines market supply and industry profit,
 \begin{equation}
   S(\mu) \equiv \sum_j q_j(\mu),
   \qquad
@@ -147,58 +147,117 @@ $d\pi_j/d\mu=q_j(\mu)$.  Summing over firms,
   PS'(\mu)=\sum_j q_j(\mu)=S(\mu).
 \]
 With no production at $\mu=0$, it follows that industry profit equals the area
-to the left of the market supply curve:
+to the left of the market supply curve,
 \begin{equation}
   PS(\mu)=\int_0^\mu S(x)\,dx.
   \label{eq:PS-integral}
 \end{equation}
-At equilibrium $\mu=\mu(p)$, $PS(\mu(p))=\int_0^{\mu(p)}S(x)\,dx$.
+At equilibrium $\mu=\mu(p,h)$,
+$PS=\int_0^{\mu(p,h)}S(x)\,dx$.
 
 %=============================================================================
 \section{Pass-through}
 %=============================================================================
 
-Equilibrium clears the market when gross demand equals supply at the effective
-margin implied by returns, $D(p)=S(\mu(p))$ with $Q\equiv D(p)$.  Consider a
-small cost shock $x$, such as a uniform upward shift in every $C_j'$ or an
-increase in handling cost $h$, and write $\rho_x\equiv dp/dx$.  Let $m(p)$
-denote the marginal active firm's per-unit margin.  Perfect competition gives
-$m(p)=0$ in equilibrium.  Write $m_p\equiv dm/dp$ and
-$m_x\equiv \partial m/\partial x|_{Q,p}$.  Holding $(p,Q)$ fixed, a uniform
-production-cost shift gives $m_x=-1$ and a handling shock gives
-$m_x=-r(p)$.  Differentiating $D(p)=S(\mu(p))$ and $m(p)=0$ along the shocked
-equilibrium path then gives
+Equilibrium satisfies $D(p)=S(\mu(p,h))$.  Write $Q\equiv D(p)$.  We ask how
+list price moves when costs rise locally.  A uniform one-dollar parallel shift
+in every firm's marginal production cost shifts market supply at a given
+effective marginal revenue $\mu$.  A one-dollar increase in handling cost $h$ lowers
+$\mu(p,h)$ at a fixed list price $p$.
+
+For either shock, write the clearing residual and equilibrium condition
+\begin{equation}
+  m(p,x)\equiv D(p)-S(\mu(p,x),x)=0,
+  \qquad x\in\{c,h\}.
+\end{equation}
+Differentiating while keeping $m=0$ defines pass-through $\rho_x\equiv dp/dx$ by
+\begin{equation}
+  \rho_x=-\frac{m_x}{m_p},
+  \label{eq:pass-through-general}
+\end{equation}
+where $m_p\equiv \partial m/\partial p$ and $m_x\equiv \partial m/\partial x$.
+Since $m=D-S$,
+\begin{align}
+  m_p &= D'(p)-S'(\mu)\,\mu_p,
+  &
+  m_x &= -S'(\mu)\,\mu_x-S_x,
+\end{align}
+with $\mu_p\equiv d\mu/dp$,
+$\mu_x\equiv \partial\mu/\partial x$ at fixed $p$,
+$S'(\mu)\equiv dS/d\mu$, and
+$S_x\equiv \partial S/\partial x$ at fixed $\mu$.  Hence
 \begin{equation}
   \rho_x
-  = \frac{S'(\mu)\,m_x}{S'(\mu)\,m_p - D'(p)},
-  \qquad
-  \rho_h = r(p)\,\rho_C.
+  = \frac{S'(\mu)\,\mu_x+S_x}{D'(p)-S'(\mu)\,\mu_p}.
   \label{eq:pass-through}
 \end{equation}
-Here $S'(\mu)=\sum_j q_j'(\mu)$ is the aggregated slope of firm supply.  No
-single aggregate $C(Q)$ is needed.  In the homogeneous special case
-($C_j=C$), $m_p=1-C''(Q)D'(p)-r'(p)(p+h)-r(p)$ and the formula above reduces
-to the standard competitive pass-through when $r\equiv 0$.
+A one-dollar parallel rise in production cost at fixed $\mu$ is equivalent to
+lowering the $\mu$ that clears marginal cost by one dollar, so market quantity
+falls by $S'(\mu)$ per dollar and $S_c=-S'(\mu)$.  Since production cost does
+not enter $\mu(p,h)$ at fixed $p$ and handling does not shift $S(\cdot)$ at
+fixed $\mu$,
+\begin{align}
+  \mu_c &= 0,
+  &
+  S_c &= -S'(\mu),
+  &
+  \mu_h &= -r(p),
+  &
+  S_h &= 0.
+\end{align}
+Write $\rho_c\equiv dp/dc$ and $\rho_h\equiv dp/dh$.  Substituting yields
+\begin{equation}
+  \rho_c
+  = \frac{-S'(\mu)}{D'(p)-S'(\mu)\,\mu_p},
+  \qquad
+  \rho_h
+  = \frac{S'(\mu)\,\mu_h}{D'(p)-S'(\mu)\,\mu_p}
+  = r(p)\,\rho_c.
+  \label{eq:rho-c-h}
+\end{equation}
+When $r\equiv 0$, $\rho_c$ is the textbook competitive pass-through formula.
 
 %=============================================================================
 \section{Incidence}
 %=============================================================================
 
-Combining $dCS=-D(p)(1-r(p))\,dp$ with the supply-side objects above, the
-welfare incidence of the shock is
+Consumer surplus responds to a cost shock only through pass-through,
 \begin{equation}
-  \frac{dCS}{dx} = -D(p)\bigl(1-r(p)\bigr)\,\rho_x,
+  \frac{dCS}{dx} = -D(p)\bigl(1-r(p)\bigr)\,\rho_x.
+  \label{eq:dCS-shock}
+\end{equation}
+Producer surplus is $PS=\int_0^{\mu}S(\tilde\mu)\,d\tilde\mu$ at equilibrium.
+Differentiating along the shock gives
+\begin{equation}
+  \frac{dPS}{dx}
+  = \int_0^{\mu} S_x(\tilde\mu,x)\,d\tilde\mu
+  + Q\bigl(\mu_p\,\rho_x+\mu_x\bigr),
+  \label{eq:dPS-general}
+\end{equation}
+using $PS'(\mu)=Q$.  For production cost, $\mu_c=0$ and $S_c=-S'(\tilde\mu)$, so
+\begin{equation}
+  \int_0^{\mu} S_c(\tilde\mu)\,d\tilde\mu = -Q,
   \qquad
-  \frac{dPS}{dx} = Q\bigl(m_p\,\rho_x + m_x\bigr).
+  \frac{dPS}{dc}=Q\bigl(\mu_p\,\rho_c-1\bigr).
+\end{equation}
+For handling, $S_h=0$, so
+\begin{equation}
+  \frac{dPS}{dh}=Q\bigl(\mu_p\,\rho_h+\mu_h\bigr).
+\end{equation}
+The supply-shift term equals the drop in industry quantity at fixed $\mu$, the
+same $-Q$ that would appear if $\mu$ fell by one dollar at fixed $p$.  Both
+shocks therefore satisfy
+\begin{equation}
+  \frac{dPS}{dx} = Q\bigl(\mu_p\,\rho_x + \mu_x\bigr),
   \label{eq:burden}
 \end{equation}
-The incidence ratio $I_x\equiv |dCS/dx|/|dPS/dx|$ is
+with $\mu_x=-1$ for production cost and $\mu_x=\mu_h$ for handling.
+
+Write $I_x\equiv |dCS/dx|/|dPS/dx|$.  For both shocks,
 \begin{equation}
-  I_C = I_h
+  I_c = I_h
   = \frac{(1-r(p))\,S'(\mu)}{-D'(p)}.
   \label{eq:incidence}
 \end{equation}
-Production and handling shocks bear the same consumer share because
-$\rho_h=r(p)\,\rho_C$ and the factor $1-r(p)$ applies to both.
 
 \end{document}

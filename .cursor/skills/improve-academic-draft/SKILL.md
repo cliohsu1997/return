@@ -227,38 +227,26 @@ Scope: sections that state what is identified from which variation (e.g., §6 Id
 
 ## 1f. Model, setting, and derivation sections
 
-Scope: `\section{Setting}`, `\section{Model}`, consumer/supply derivations, welfare and incidence notes—especially under `draft/`. For **edits**, follow **academic-note-prose** in full; this block is the **review checklist**.
+Scope: `\section{Setting}`, model blocks, consumer/supply derivations, welfare and incidence notes—especially `draft/**`. For **edits**, follow **academic-note-prose** in full (mandatory pre-edit pass + pre-compile checklist). This block is **review-only**.
 
-### Notation and expository order
+Run **academic-note-prose** checklists and flag:
 
-- Every symbol **defined in words at first use**; flag unexplained tuples like $(x_i,G_i)$.
-- Order: market → agents → each heterogeneity dimension (with meaning) → timing/payoffs → expected objects → **sufficient statistic for the relevant margin** (e.g. WTP) → aggregates ($F$, demand, shares).
-- Flag **backward exposition** (stating “heterogeneity is only across …” before defining components).
-
-### Sentence craft (“and” discipline)
-
-- Flag **and** joining **unrelated logical steps** (e.g. buy rule + separate definition of a scalar type characteristic).
-- Flag **one-sentence paragraphs** in LaTeX (blank line after a short sentence).
-- Flag **run-on openings** that pack product, heterogeneity, timing, and aggregates into one line.
-- Prefer: summarize heterogeneity into one named statistic, **defined by** …, **so** decision rule—in one tight sentence when the logic belongs together.
-- Flag **two names for one object** (duplicate labels in prose or notation for the same symbol).
-
-### Section and definition layout
-
-- Flag sections that **open on display math** (equation before any prose lead-in).
-- Flag **“defined by … defined by …”** chains in one sentence; suggest logical grouping or separate sentences.
-
-### Derivations and interpretation
-
-- For surplus/welfare over a type distribution: flag missing **integral form** when extensive vs intensive margins are the point.
-- Flag **interpretation before derivation** or missing **post-result** interpretation.
-- Flag failure to state when a **local object depends only on aggregates** (holding sufficient statistics fixed), if the math supports that punchline.
+| Area | Flag if |
+|------|---------|
+| **Order** | Notation before mechanism; backward tuples; Setting repeated downstream |
+| **Prose** | Bogus **and**; `:`/`;` before displays; `\paragraph{}`; one-line paragraphs; run-on math sentences |
+| **Redundancy** | Same economics twice (e.g. shock channels in open + specialize); double symbol definitions |
+| **Math layout** | Section opens on equation; partials/derivatives crammed in prose instead of align/display |
+| **Derive** | Announce-then-verify; hand-waved envelope; interpretation before result |
+| **Pass-through/incidence** | Reorder-only “fix”; firm-level notation after $S(\mu)$; cut $m=0$ or $\mu_x=-1$ bridge; invented common $c$ vs parallel MC shift |
+| **Punchline** | Missing aggregate-sufficiency statement when math supports it |
 
 **Output** (model-section verdict):
 - **Overall**: well written / mostly clear / needs revision.
 - **Notation order**: clear / backward / undefined symbols.
-- **Sentence craft**: clear / bogus **and** / choppy / run-on.
+- **Prose rhythm**: clear / choppy / run-on / math-in-prose.
 - **Derivation layout**: derive-then-interpret / announce-then-verify / equation-first section.
+- **Redundancy**: none / mild / noticeable.
 - **Top fixes** (if any), ordered by impact.
 
 ## 2. Paragraph and Sentence Structure
