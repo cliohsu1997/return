@@ -11,9 +11,10 @@ For **writing or rewriting** model/derivation sections (continuous prose, derive
 
 - **Introduction only** (`\section{Introduction}`): run **§1b** in full, plus relevant parts of checks 1–4.
 - **Pre-model sections** (institutional background, data, stylized facts): run **§1c** in full, plus checks 4–5.
+- **Model / setting / derivation sections** (especially `draft/**` notes): run **§1f** and apply **academic-note-prose** when editing.
 - **Equilibrium / consumer-behavior subsections** (e.g., RRSI, CRSI under equilibrium analysis): apply **Cross-references** anti-patterns table; verify hold/fail cases stay with the condition they interpret; flag forward equation refs and adjacent section pointers.
 - **Identification sections** (and similar technical blocks): run **§1e**; ensure necessary and sufficient content only, with no repetition of model setup or estimation mechanics.
-- **Full paper**: run checks 1–7; add §1b/§1c/§1e when those sections are in scope.
+- **Full paper**: run checks 1–7; add §1b/§1c/§1e/§1f when those sections are in scope.
 
 ## 1. Notation and Concept Definitions
 
@@ -224,6 +225,42 @@ Scope: sections that state what is identified from which variation (e.g., §6 Id
 - **Redundancy**: none / mild / noticeable (setup vs identification vs estimation).
 - **Top fixes** (if any), ordered by impact.
 
+## 1f. Model, setting, and derivation sections
+
+Scope: `\section{Setting}`, `\section{Model}`, consumer/supply derivations, welfare and incidence notes—especially under `draft/`. For **edits**, follow **academic-note-prose** in full; this block is the **review checklist**.
+
+### Notation and expository order
+
+- Every symbol **defined in words at first use**; flag unexplained tuples like $(x_i,G_i)$.
+- Order: market → agents → each heterogeneity dimension (with meaning) → timing/payoffs → expected objects → **sufficient statistic for the relevant margin** (e.g. WTP) → aggregates ($F$, demand, shares).
+- Flag **backward exposition** (stating “heterogeneity is only across …” before defining components).
+
+### Sentence craft (“and” discipline)
+
+- Flag **and** joining **unrelated logical steps** (e.g. buy rule + separate definition of a scalar type characteristic).
+- Flag **one-sentence paragraphs** in LaTeX (blank line after a short sentence).
+- Flag **run-on openings** that pack product, heterogeneity, timing, and aggregates into one line.
+- Prefer: summarize heterogeneity into one named statistic, **defined by** …, **so** decision rule—in one tight sentence when the logic belongs together.
+- Flag **two names for one object** (duplicate labels in prose or notation for the same symbol).
+
+### Section and definition layout
+
+- Flag sections that **open on display math** (equation before any prose lead-in).
+- Flag **“defined by … defined by …”** chains in one sentence; suggest logical grouping or separate sentences.
+
+### Derivations and interpretation
+
+- For surplus/welfare over a type distribution: flag missing **integral form** when extensive vs intensive margins are the point.
+- Flag **interpretation before derivation** or missing **post-result** interpretation.
+- Flag failure to state when a **local object depends only on aggregates** (holding sufficient statistics fixed), if the math supports that punchline.
+
+**Output** (model-section verdict):
+- **Overall**: well written / mostly clear / needs revision.
+- **Notation order**: clear / backward / undefined symbols.
+- **Sentence craft**: clear / bogus **and** / choppy / run-on.
+- **Derivation layout**: derive-then-interpret / announce-then-verify / equation-first section.
+- **Top fixes** (if any), ordered by impact.
+
 ## 2. Paragraph and Sentence Structure
 
 - Each paragraph has a clear topic/purpose
@@ -281,10 +318,11 @@ Produce:
 3. **§1c Pre-model verdict** (when institutions/data are in scope): overall, AI tone, level structure, top fixes
 4. **§1d Equilibrium consumer-behavior verdict** (when RRSI/CRSI-style subsections are in scope): overall, publishing standard, cross-ref clutter, top fixes
 5. **§1e Identification-section verdict** (when identification or similar technical sections are in scope): overall, publishing standard, redundancy, top fixes
-6. **Mathematical Consistency Table** (when equations are in scope)
-7. **Structure / Logic / Tone / Grammar issues**: bullet lists with locations
-8. **Proof Issues** (when proofs are in scope)
-9. **Revised Cleaned Draft**: only when the user requests edits (reviews are diagnosis-only by default)
+6. **§1f Model/setting-section verdict** (when model blocks or draft notes are in scope): overall, notation order, sentence craft, derivation layout, top fixes
+7. **Mathematical Consistency Table** (when equations are in scope)
+8. **Structure / Logic / Tone / Grammar issues**: bullet lists with locations
+9. **Proof Issues** (when proofs are in scope)
+10. **Revised Cleaned Draft**: only when the user requests edits (reviews are diagnosis-only by default)
 
 ## LaTeX Auxiliary Files
 
