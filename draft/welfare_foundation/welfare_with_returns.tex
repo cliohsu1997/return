@@ -77,15 +77,27 @@ by the definitions of $D(p)$ and $r(p)$.  A small price change therefore satisfi
   \label{eq:dCS}
 \end{equation}
 
-The extensive- and intensive-margin decomposition makes the logic transparent,
-but the local surplus loss depends only on the aggregates $D(p)$ and $r(p)$.
-Price enters each $s_i(p)$ nonlinearly and can shift participation, return
-decisions, and inframarginal surplus differently across types.  Yet any
-microstructure that delivers the same gross demand $D(p)$ and return share
-$r(p)$ generates the same $dCS$.  In particular, it does not matter whether
-high-$v_i$ types adjust return behavior more steeply than low-$v_i$ types when
-$p$ changes: only kept units enter at first order, through the factor
-$1-r(p)$, not gross purchases $D(p)$ alone.
+The extensive- and intensive-margin decomposition makes the local formula
+transparent.  Consumer surplus changes depend only on the aggregates $D(p)$ and
+$r(p)$, both at each price and integrated along any path:
+\[
+  \Delta CS = -\int_{p_0}^{p_1} D(p)\bigl(1-r(p)\bigr)\,dp.
+\]
+Micro heterogeneity in price responses can be rich: $p$ enters each $s_i(p)$
+nonlinearly and can shift participation, return decisions, and inframarginal
+surplus differently across types.  Yet once $(D,r)$ are given, this
+microstructure is irrelevant for $dCS$ and $\Delta CS$.  Two economies with
+the same paths of $D(p)$ and $r(p)$ deliver the same consumer surplus loss,
+whether high-$v_i$ types adjust return behavior more steeply than low-$v_i$
+types or not.  Only kept units enter at first order, through $1-r(p)$, not
+gross purchases $D(p)$ alone.
+
+Let $\bar{p}$ denote the highest willingness to pay in the population, so
+$D(\bar{p})=0$ and $CS(\bar{p})=0$.  Integrating the local formula then
+rewrites consumer surplus as area under kept volume:
+\begin{equation}
+  CS(p)=\int_p^{\bar{p}} D(x)\bigl(1-r(x)\bigr)\,dx.
+\end{equation}
 
 %=============================================================================
 \section{Supply side}
