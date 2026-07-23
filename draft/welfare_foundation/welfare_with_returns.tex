@@ -19,29 +19,40 @@
 \section{Proposal}
 %=============================================================================
 
-In markets without returns, consumer surplus and producer surplus are fully
-captured by the demand and supply curves, with producer surplus given by the
-area to the left of the supply curve up to the market price.  This paper studies
-markets where consumers can return purchases and firms pay handling costs for
-returned items.
+About one in five products sold online is returned.  Pass-through, tax
+incidence, and the efficiency cost of taxation are well understood when
+purchase settles who keeps the good.  In that classical setting, the demand
+and supply curves are sufficient for consumer surplus, producer surplus, and
+deadweight loss.  With returns, allocation is decided in two stages.  Buyers
+first choose whether to purchase, then whether to keep or return after
+receiving the item.  Never buying and buying then returning leave the same
+final allocation---the consumer does not keep the good---yet their welfare
+costs differ.  A returned purchase incurs shipping, hassle, and handling that
+a non-purchase avoids, so demand and supply alone omit an economically
+relevant margin.
 
-We show that with returns, consumer surplus is summarized by two aggregate
-objects: the gross demand curve and the overall return rate.  All detailed
-heterogeneity across consumers---their tastes, match values, and return
-costs---matters only through these two curves.  Producer surplus follows
-exactly the same geometric rule---area to the left of the supply curve---but
-the price that matters is no longer the list price.  It is the net revenue the
-seller actually keeps per unit, namely the list price minus expected refunds
-and handling costs.
+What objects then replace the classical demand and supply curves, and how
+misleading is an analysis that ignores returns?  We study these questions under
+perfect competition with product returns and seller handling costs.  We
+characterize pass-through, incidence, and welfare losses with returns, compare
+them to the no-return benchmark, and identify where omitting the return margin
+changes conclusions.
 
-Consumers face the list price, but firms respond to the net revenue they
-retain.  Standard pass-through logic therefore applies directly to net revenue.
-How much of a tax shows up in the consumer's list price is then determined by
-how net revenue changes when the list price changes.  The classic result that it
-does not matter whether the seller or the buyer remits a tax no longer holds,
-because the return decision depends on which side pays the tax.  The analysis
-yields simple summary measures for welfare and the division of tax burdens in
-markets with product returns.
+Consumer surplus depends only on two aggregates: gross demand and the return
+rate.  Heterogeneity in tastes, match values, and return costs enters welfare
+solely through these objects.  Producer surplus retains the usual
+geometry---area to the left of the supply curve---but evaluated at net revenue
+rather than at list price.  Net revenue is list price minus expected refunds
+and handling.
+
+Because consumers pay the list price while firms respond to net revenue,
+pass-through from cost shocks into list prices is governed by how net revenue
+moves with the list price.  Tax neutrality fails for the same reason.  The
+keep-or-return decision depends on the refund price, which differs according
+to which party remits the tax.  An analyst who ignores returns and applies the
+classical formulas therefore misstates incidence and deadweight loss whenever
+the return margin is active.  List prices do not equal firm net revenue, and
+consumer surplus tracks kept units rather than gross sales.
 
 %=============================================================================
 \section{Setting}
@@ -58,10 +69,17 @@ Buying at price $p$ yields expected surplus
 \[
   s_i(p)=\mathbb{E}_{u\sim G_i}\bigl[\max(u-p,\,-\kappa_i)\bigr].
 \]
-For purchase, all consumer-side heterogeneity summarizes into willingness to
-pay $v_i$, defined by $s_i(v_i)=0$, so type $i$ buys if and only if
-$p\leq v_i$.  Across types, $F(v)=\Pr(v_i\leq v)$, gross demand is
-$D(p)=1-F(p)$, and share $r(p)$ of gross units sold at $p$ are returned.
+On the purchase margin, all consumer-side heterogeneity is summarized by
+willingness to pay $v_i$, defined by $s_i(v_i)=0$, so type $i$ buys if and
+only if $p\leq v_i$.  Across types, willingness to pay has distribution
+$F(v)=\Pr(v_i\leq v)$, so gross demand is $D(p)=1-F(p)$.  Of the gross units
+sold at price $p$, a share $r(p)$ are returned.
+
+We do not impose a sign on how $r(p)$ varies with $p$.  A higher price screens
+out low-value buyers and so tends to lower the average return rate among
+purchasers, but it also raises each buyer's keep threshold and therefore raises
+individual return probabilities.  These selection and behavioral effects pull
+in opposite directions.
 
 The product market is perfectly competitive, producer $j$ takes $p$ as given,
 chooses output at cost $C_j(q_j)$, and pays handling cost $h>0$ on each returned
@@ -335,6 +353,84 @@ At $\tau=0$,
 Under seller remittance, $\mu^s_\tau=-1$ at fixed checkout price, so
 $\rho^s_\tau=\rho_c$.  Under buyer remittance, $\mu^b_\tau$ differs, so tax
 pass-through generally differs from $\rho_c$.
+
+\paragraph{Elasticity representation and interpretation.}\mbox{}\\
+The level-form expression for production-cost pass-through in \eqref{eq:rho-c-h}
+is compact, but translating it into conventional elasticities reveals the
+precise economic mechanism.  Define the demand elasticity with respect to the
+list price,
+\[
+\varepsilon_D(p) \equiv \frac{p D'(p)}{D(p)} < 0,
+\]
+and, following the standard convention, define the supply elasticity with
+respect to the list price $p$:
+\[
+\varepsilon_S(p) \equiv \frac{d S(\mu(p))}{d p}\frac{p}{S(\mu(p))}
+= S'(\mu)\,\mu_p\,\frac{p}{S(\mu)} > 0.
+\]
+This is the observed elasticity of market supply with respect to the price that
+clears the market.  From $\mu = p - r(p)(p+h)$, the sensitivity of effective
+revenue to the list price is
+\[
+\mu_p \equiv \frac{d\mu}{dp}
+= 1 - r(p) - r'(p)(p+h)
+\]
+where $r'(p)\equiv dr(p)/dp$.
+Substituting these definitions into $\rho_c$ in \eqref{eq:rho-c-h} and using
+$D(p)=S(\mu)$ at equilibrium gives
+\begin{equation}
+  \rho_c
+  = \frac{-S'(\mu)}
+         {D'(p)-S'(\mu)\mu_p}.
+\end{equation}
+Multiplying the numerator and denominator by $p/S(\mu)$:
+\begin{align}
+  \rho_c
+  &= \frac{-S'(\mu)\,p/S(\mu)}
+         {\varepsilon_D - S'(\mu)\mu_p\,p/S(\mu)}.
+\end{align}
+Since $\varepsilon_S(p) = S'(\mu)\mu_p\,p/S(\mu)$, we have
+$S'(\mu)\,p/S(\mu) = \varepsilon_S(p)/\mu_p$.  Therefore,
+\begin{equation}
+  \boxed{
+    \rho_c =
+    \frac{-\varepsilon_S(p)/\mu_p}
+         {\varepsilon_D - \varepsilon_S(p)}
+  }
+  \label{eq:rho_c_elasticity_final}
+\end{equation}
+with $\mu_p$ as given above.
+
+The elasticity expression \eqref{eq:rho_c_elasticity_final} admits a sharp
+comparative interpretation.  In the textbook competitive model without returns,
+supply is written directly as a function of the list price $p$, and a uniform
+cost increase shifts that curve upward.  The standard formula is
+\[
+\rho_{\text{std}} = \frac{-\varepsilon_S}{\varepsilon_D - \varepsilon_S}.
+\]
+
+With returns, the supply curve is fundamentally a function of the seller's
+effective revenue $\mu$, not $p$.  Nevertheless, by defining the observed supply
+elasticity $\varepsilon_S(p)$ with respect to the list price $p$---which
+inherently accounts for the pass-through $\mu_p$ from $p$ to $\mu$---the
+denominator of the pass-through formula retains the textbook structure
+$\varepsilon_D - \varepsilon_S(p)$.
+
+The novelty therefore resides entirely in the numerator, which becomes
+$-\varepsilon_S(p)/\mu_p$ rather than $-\varepsilon_S(p)$.  This extra factor of
+$1/\mu_p$ arises because the cost shock shifts the supply curve in the
+$\mu$-space, not the $p$-space.  Since $d\mu = \mu_p\,dp$, a unit leftward
+shift of the effective supply curve translates into a shift of size $1/\mu_p$
+in the observed $p$--$Q$ plane.
+
+Consequently, the pass-through of production costs is amplified whenever
+$\mu_p<1$---that is, whenever a higher list price raises the seller's net
+revenue by less than one dollar due to higher expected refunds.  In the special
+case of no returns, $\mu_p=1$ and $\varepsilon_S(p)$ coincides with the standard
+supply elasticity, collapsing \eqref{eq:rho_c_elasticity_final} exactly to the
+textbook rule.  This decomposition reveals that the economic logic of
+competitive pass-through is unchanged; returns merely rescale the effective
+supply response through the lens of the net-revenue pass-through $\mu_p$.
 
 %=============================================================================
 \section{Incidence}
