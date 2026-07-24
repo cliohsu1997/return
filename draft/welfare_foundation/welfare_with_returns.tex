@@ -437,13 +437,29 @@ price.  Differentiating $\mu=p-r(p)(p+h)$ gives
 \[
 \mu_p=1-r(p)-r'(p)(p+h).
 \]
-\begin{result}[When $\mu_p>1$]
-  $\mu_p>1$ if and only if $r'(p)<-r(p)/(p+h)$.  If $r'\geq 0$, then
-  $\mu_p\leq 1-r(p)<1$ whenever some units are returned.
+Write $\varepsilon_r(p)\equiv p\,r'(p)/r(p)$ for the elasticity of the return rate
+in list price.  Then $\mu_p>1$ if and only if $\varepsilon_r(p)<-p/(p+h)$.
+That is, selection must outweigh the behavioral rise in individual return
+probabilities by enough that aggregate $r$ falls steeply in $p$.  When instead
+the behavioral response dominates, $\varepsilon_r$ is less negative (or
+positive) and $\mu_p<1$.  This comparison of $\mu_p$ with the classical
+benchmark $\mu_p=1$ implies a directional bias for an analyst who ignores
+returns.
+\begin{result}
+  Relative to the correct returns-adjusted $\rho_c$, the classical no-return
+  pass-through formula overestimates pass-through when
+  $\varepsilon_r(p)<-p/(p+h)$ and underestimates it when the behavioral
+  response dominates selection.
 \end{result}
-Thus $\mu_p>1$ requires selection to outweigh the behavioral rise in individual
-return probabilities by enough that aggregate $r$ declines steeply in $p$.
-Otherwise pass-through is amplified relative to the no-return benchmark.
+The Result is therefore an easy test for the direction of the bias from
+observables---the return-rate elasticity and the size of handling relative to
+list price.  Intuitively, effective revenue puts weight $p+h$ on each returned
+unit.  When selection lowers the return rate as price rises, a higher handling
+cost magnifies how much that decline in returns improves $\mu$, so $\mu_p$
+exceeds one more readily and the classical formula overstates pass-through.
+When handling is small, the return margin matters less for $\mu$, and the
+level effect of returns (the $-r$ term in $\mu_p$) is more likely to leave
+$\mu_p<1$, so the classical formula understates pass-through.
 
 %=============================================================================
 \section{Incidence}
