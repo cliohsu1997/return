@@ -105,7 +105,7 @@ $D'(p)=-f(p)$ gives
 which is the display in the text.}  The first term is behavioral: a
 higher keep threshold raises return probabilities among those who still buy.
 The second is selection: a higher price drops cutoff types at the purchase
-margin, and that term is negative when those cutoff types return more than
+margin, and that term would be negative if those cutoff types return more than
 the average purchaser.\footnote{Selection need not be negative for arbitrary
 $(\kappa_i,G_i)$.  It is signed under an additive match specification
 $u=v_i+\varepsilon$ with shock $\varepsilon$ of any distribution independent
@@ -296,15 +296,15 @@ alters equilibrium.
 \section{Pass-through}
 %=============================================================================
 
-Clearing through $\mu(p,h)$ likewise determines how cost shocks pass into list
-prices.  Write $Q\equiv D(p)$.  We study a uniform one-dollar parallel shift in
-every firm's marginal production cost and a one-dollar increase in handling
-cost $h$, then extend the same framework to a per-unit tax.  Production cost
-shifts market supply at a given $\mu$ without moving $\mu$ at fixed list price.
-Handling cost moves $\mu$ through effective marginal revenue at fixed list
-price without shifting supply at a given $\mu$.
+Equilibrium satisfies $D(p)=S(\mu(p,h))$.  Write $Q\equiv D(p)$.  We
+characterize pass-through into list price for three shocks: a uniform
+one-dollar parallel shift in every firm's marginal production cost (indexed by
+$c$), a one-dollar increase in handling cost $h$, and a unit tax under seller
+and buyer remittance.  Production cost shifts market supply at a given
+effective margin $\mu$, while handling lowers $\mu(p,h)$ at a fixed list
+price $p$.
 
-Equilibrium satisfies
+For production and handling, write the clearing condition as
 \begin{equation}
   m(p,x)\equiv D(p)-S(\mu(p,x),x)=0,
   \qquad x\in\{c,h\}.
@@ -314,26 +314,19 @@ Differentiating while keeping $m=0$ defines pass-through $\rho_x\equiv dp/dx$ by
   \rho_x=-\frac{m_x}{m_p},
   \label{eq:pass-through-general}
 \end{equation}
-where $m_p\equiv \partial m/\partial p$ and $m_x\equiv \partial m/\partial x$.
-Since $m=D-S$,
+and expanding $m=D-S$ gives
 \begin{align}
   m_p &= D'(p)-S'(\mu)\,\mu_p,
   &
   m_x &= -S'(\mu)\,\mu_x-S_x,
 \end{align}
-with $\mu_p\equiv d\mu/dp$,
-$\mu_x\equiv \partial\mu/\partial x$ at fixed $p$,
-$S'(\mu)\equiv dS/d\mu$, and
-$S_x\equiv \partial S/\partial x$ at fixed $\mu$.  Hence
+hence
 \begin{equation}
   \rho_x
-  = \frac{S'(\mu)\,\mu_x+S_x}{D'(p)-S'(\mu)\,\mu_p}.
+  = \frac{-S'(\mu)\,\mu_x-S_x}{S'(\mu)\,\mu_p-D'(p)}.
   \label{eq:pass-through}
 \end{equation}
-At fixed list price $p$, a one-dollar parallel rise in production cost shifts
-supply at fixed $\mu$, so $\mu_c=0$ and $S_c=-S'(\mu)$.  A one-dollar rise in
-handling cost moves $\mu$ by $r(p)$ per gross unit sold and does not shift
-supply at fixed $\mu$, so $\mu_h=-r(p)$ and $S_h=0$.  Hence
+The two shocks differ in which margin moves at fixed $p$ or fixed $\mu$,
 \begin{align}
   \mu_c &= 0,
   &
@@ -343,7 +336,9 @@ supply at fixed $\mu$, so $\mu_h=-r(p)$ and $S_h=0$.  Hence
   &
   S_h &= 0.
 \end{align}
-Substituting into \eqref{eq:pass-through} yields
+The production term is $S_c=-S'(\mu)$ because a one-dollar parallel rise in
+every firm's marginal cost is equivalent, at fixed $\mu$, to evaluating market
+supply at $\mu-1$.  Substituting into \eqref{eq:pass-through} yields
 \begin{result}[Pass-through of production and handling costs]
   \begin{equation}
     \frac{\rho_h}{\rho_c}=r(p),
@@ -352,32 +347,30 @@ Substituting into \eqref{eq:pass-through} yields
   with pass-through into list price
   \begin{equation}
     \rho_c
-    = \frac{-S'(\mu)}{D'(p)-S'(\mu)\,\mu_p},
+    = \frac{S'(\mu)}{S'(\mu)\,\mu_p-D'(p)},
     \qquad
     \rho_h = r(p)\,\rho_c.
     \label{eq:rho-c-h}
   \end{equation}
 \end{result}
-A one-dollar increase in production cost is equivalent to decreasing $\mu$ by
-one unit.  Market clearing $D(p)=S(\mu)$ translates a given change in $\mu$
-into list price through the same local comparative statics.  Handling moves
-$\mu$ by only $r(p)$ per dollar relative to that unit shift, so
-$\rho_h/\rho_c=r(p)$.  When $r\equiv 0$, handling does not move $\mu$ and
-$\rho_c$ coincides with the textbook competitive pass-through formula.
+Handling moves $\mu$ by only $r(p)$ per dollar relative to a unit production
+shift, so $\rho_h/\rho_c=r(p)$.  When $r\equiv 0$, handling does not move
+$\mu$ and $\rho_c$ coincides with the textbook competitive pass-through
+formula.
 
-Write $p^s$ for checkout price under seller remittance and $p^b$ for checkout
-price under buyer remittance; let $\rho^s_\tau\equiv dp^s/d\tau$ and
+Turning to the unit tax, because of the failure of tax neutrality we write
+$p^s$ for checkout price under seller remittance and $p^b$ for checkout price
+under buyer remittance; let $\rho^s_\tau\equiv dp^s/d\tau$ and
 $\rho^b_\tau\equiv dp^b/d\tau$.  For a local change at $\tau=0$, tax
 pass-through is \eqref{eq:pass-through} with $S_\tau=0$: the denominator uses
 the same $\mu_p$ as above, and the only difference across remittance regimes is
-$\mu^s_\tau\equiv \partial\mu^s/\partial\tau$ versus
-$\mu^b_\tau\equiv \partial\mu^b/\partial\tau$ at fixed checkout price:
+$\mu^s_\tau$ versus $\mu^b_\tau$ at fixed checkout price:
 \begin{equation}
   \rho^s_\tau
-  = \frac{S'(\mu)\,\mu^s_\tau}{D'(p^s)-S'(\mu)\,\mu_p},
+  = \frac{-S'(\mu)\,\mu^s_\tau}{S'(\mu)\,\mu_p-D'(p^s)},
   \qquad
   \rho^b_\tau
-  = \frac{S'(\mu)\,\mu^b_\tau}{D'(p^b)-S'(\mu)\,\mu_p}.
+  = \frac{-S'(\mu)\,\mu^b_\tau}{S'(\mu)\,\mu_p-D'(p^b)}.
 \end{equation}
 At $\tau=0$,
 \begin{align}
@@ -417,9 +410,9 @@ $S'(\mu)=dS/d\mu$ rather than $dS/dp$.  A one-dollar production-cost increase
 is equivalent to lowering $\mu$ by one dollar, so at fixed list price supply
 falls by $S'(\mu)$ units, again creating an excess-demand gap of that size.
 Raising list price by one dollar closes the gap at rate
-$|D'|+S'(\mu)\,\mu_p$, so
+$S'(\mu)\,\mu_p-D'(p)$, so
 \[
-\rho_c=\frac{S'(\mu)}{|D'|+S'(\mu)\,\mu_p}.
+\rho_c=\frac{S'(\mu)}{S'(\mu)\,\mu_p-D'(p)}.
 \]
 The cost shock lowers $\mu$ by one dollar, while a dollar of list price raises
 $\mu$ by $\mu_p$.  A higher $\mu_p$ means a one-dollar price increase restores
@@ -444,10 +437,13 @@ price.  Differentiating $\mu=p-r(p)(p+h)$ gives
 \[
 \mu_p=1-r(p)-r'(p)(p+h).
 \]
-Hence $\mu_p>1$ if and only if $r'(p)<-r(p)/(p+h)$: selection must outweigh
-the behavioral rise in individual return probabilities by enough that
-aggregate $r$ declines steeply in $p$.  If $r'\geq 0$, then
-$\mu_p\leq 1-r(p)<1$ whenever some units are returned.
+\begin{result}[When $\mu_p>1$]
+  $\mu_p>1$ if and only if $r'(p)<-r(p)/(p+h)$.  If $r'\geq 0$, then
+  $\mu_p\leq 1-r(p)<1$ whenever some units are returned.
+\end{result}
+Thus $\mu_p>1$ requires selection to outweigh the behavioral rise in individual
+return probabilities by enough that aggregate $r$ declines steeply in $p$.
+Otherwise pass-through is amplified relative to the no-return benchmark.
 
 %=============================================================================
 \section{Incidence}
