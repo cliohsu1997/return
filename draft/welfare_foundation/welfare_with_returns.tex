@@ -51,13 +51,14 @@ moves with the list price.  Tax neutrality fails for the same reason.  The
 keep-or-return decision depends on the refund price, which differs according
 to which party remits the tax.  An analyst who ignores returns and applies the
 classical formulas therefore misstates incidence and deadweight loss whenever
-the return margin is active.  List prices do not equal firm net revenue, and
-consumer surplus tracks kept units rather than gross sales.
+the return margin is active.
 
 %=============================================================================
 \section{Setting}
 %=============================================================================
 
+We begin with the market primitives: purchase and return behavior on the
+consumer side, and competitive supply with return handling on the firm side.
 A homogeneous product is sold at list price $p$.  Consumers indexed by $i$
 differ in return hassle $\kappa_i$, the disutility from returning the product,
 and in match distribution $G_i$ over post-purchase match quality $u$.  After
@@ -72,26 +73,61 @@ Buying at price $p$ yields expected surplus
 On the purchase margin, all consumer-side heterogeneity is summarized by
 willingness to pay $v_i$, defined by $s_i(v_i)=0$, so type $i$ buys if and
 only if $p\leq v_i$.  Across types, willingness to pay has distribution
-$F(v)=\Pr(v_i\leq v)$, so gross demand is $D(p)=1-F(p)$.  Of the gross units
-sold at price $p$, a share $r(p)$ are returned.
+$F(v)=\Pr(v_i\leq v)$ with density $f$, so gross demand is $D(p)=1-F(p)$.
+Of the units sold at price $p$, a share $r(p)$ are returned.
 
-We do not impose a sign on how $r(p)$ varies with $p$.  A higher price screens
-out low-value buyers and so tends to lower the average return rate among
-purchasers, but it also raises each buyer's keep threshold and therefore raises
-individual return probabilities.  These selection and behavioral effects pull
-in opposite directions.
+To understand how $r(p)$ changes with price, write type $i$'s return
+probability as $\rho_i(p)=\Pr(u<p-\kappa_i)$.  Willingness to pay is
+sufficient for purchase but not for returns: types with the same $v_i$ may
+still differ in $(\kappa_i,G_i)$.  Averaging within WTP cells,
+\[
+  \rho(v,p)\equiv\mathbb{E}\bigl[\rho_i(p)\bigm|v_i=v\bigr],
+\]
+so the aggregate return rate is the truncated mean
+\[
+  r(p)=\mathbb{E}\bigl[\rho(v_i,p)\bigm|v_i\geq p\bigr].
+\]
+Differentiating yields
+\[
+  r'(p)
+  =\mathbb{E}\bigl[\partial\rho(v_i,p)/\partial p\bigm|v_i\geq p\bigr]
+  +\frac{f(p)}{D(p)}\bigl(r(p)-\rho(p,p)\bigr),
+\]
+where $\rho(p,p)$ is the average return probability among types at the
+purchase margin $v_i=p$.\footnote{With $\rho(v,p)$ as defined in the text,
+$r(p)=D(p)^{-1}\int_p^\infty \rho(v,p)\,dF(v)$.  Differentiating and using
+$D'(p)=-f(p)$ gives
+\[
+  r'(p)
+  =D(p)^{-1}\int_p^\infty \partial\rho(v,p)/\partial p\,dF(v)
+  +\frac{f(p)}{D(p)}\bigl(r(p)-\rho(p,p)\bigr),
+\]
+which is the display in the text.}  The first term is behavioral: a
+higher keep threshold raises return probabilities among those who still buy.
+The second is selection: a higher price drops cutoff types at the purchase
+margin, and that term is negative when those cutoff types return more than
+the average purchaser.\footnote{Selection need not be negative for arbitrary
+$(\kappa_i,G_i)$.  It is signed under an additive match specification
+$u=v_i+\varepsilon$ with shock $\varepsilon$ of any distribution independent
+of willingness to pay, and with return hassle likewise independent of $v$:
+then $\rho(v,p)$ decreases in $v$, so $\rho(p,p)\geq r(p)$ and the selection
+term is non-positive.}  Behavioral and selection effects can therefore pull
+in opposite directions, and we do not impose a sign on $r'(p)$.
 
-The product market is perfectly competitive, producer $j$ takes $p$ as given,
-chooses output at cost $C_j(q_j)$, and pays handling cost $h>0$ on each returned
-unit.
+The product market is perfectly competitive.  Producer $j$ takes $p$ as given,
+chooses output at cost $C_j(q_j)$, and incurs a net return handling cost $h$ on
+each returned unit, equal to gross handling cost minus the scrap value of the
+returned product.  This net cost may be negative, but we maintain $p+h>0$,
+which holds whenever scrap value does not exceed list price.
 
 %=============================================================================
 \section{Consumer side}
 %=============================================================================
 
-Write $s(v,p)$ for expected surplus at list price $p$ among types with
-willingness to pay $v$, so $s(v,v)=0$.  Consumer surplus integrates surplus over
-all types who buy,
+We turn first to consumer surplus and show that only the aggregates $D$ and
+$r$ enter.  Write $s(v,p)$ for expected surplus at list price $p$ among types
+with willingness to pay $v$, so $s(v,v)=0$.  Consumer surplus integrates surplus
+over all types who buy,
 \begin{equation}
   CS(p)=\int_p^\infty s(v,p)\,dF(v).
 \end{equation}
@@ -102,9 +138,8 @@ among inframarginal buyers,
   CS'(p)
   = -s(p,p)\,f(p)+\int_p^\infty s_p(v,p)\,dF(v),
 \]
-where $s_p(v,p)\equiv \partial s(v,p)/\partial p$ and $f$ is the density of $v_i$
-when $F$ is differentiable.  On the extensive margin, $s(p,p)=0$, so entry and
-exit contribute nothing at first order.  On the intensive margin, $s_p(v,p)$
+where $s_p(v,p)\equiv \partial s(v,p)/\partial p$.  On the extensive margin,
+$s(p,p)=0$, so entry and exit contribute nothing at first order.  On the intensive margin, $s_p(v,p)$
 equals minus the keep probability, because a higher price harms the consumer
 only when she keeps the purchase,
 \[
@@ -147,11 +182,11 @@ rewrites consumer surplus as area under kept volume,
 \section{Supply side}
 %=============================================================================
 
-Returns make list price an imperfect summary of producer payoffs.  A gross sale
-brings revenue $p$ if the consumer keeps the item and costs refund $p$ plus
-handling $h$ if the item is returned.  Among gross sales at list price $p$,
-share $r(p)$ are returned, so expected revenue per gross unit---the
-\emph{effective marginal revenue}---is
+On the firm side, returns make list price an imperfect summary of producer
+payoffs.  A gross sale brings revenue $p$ if the consumer keeps the item and
+costs refund $p$ plus net handling $h$ if the item is returned.  Among gross
+sales at list price $p$, share $r(p)$ are returned, so expected revenue per
+gross unit---the \emph{effective marginal revenue}---is
 \begin{equation}
   \mu(p,h) \equiv p - r(p)(p+h).
   \label{eq:mu-def}
@@ -204,11 +239,13 @@ $PS=\int_0^{\mu(p,h)}S(z)\,dz$.
 %=============================================================================
 \label{sec:tax-neutrality}
 
-Weyl and Fabinger (2013) show that without returns, buyer and seller remittance
-deliver the same equilibrium.  With returns, we ask whether that equivalence
-survives by writing the two clearing conditions at a common checkout price
-$p$---the total payment at the register---and a per-unit tax $\tau$.  Fix $p$
-and $\tau$.  Seller remittance clears at
+With firms responding to $\mu$ rather than list price, a natural question is
+whether remittance of a unit tax remains neutral.  Weyl and Fabinger (2013)
+show that without returns, buyer and seller remittance deliver the same
+equilibrium.  With returns, we ask whether that equivalence survives by writing
+the two clearing conditions at a common checkout price $p$---the total payment
+at the register---and a per-unit tax $\tau$.  Fix $p$ and $\tau$.  Seller
+remittance clears at
 \begin{equation}
   D(p) = S\bigl(p - \tau - r(p)(p+h)\bigr),
 \end{equation}
@@ -259,15 +296,13 @@ alters equilibrium.
 \section{Pass-through}
 %=============================================================================
 
-Write $Q\equiv D(p)$.  We first study pass-through for two cost shocks: a uniform
-increase in marginal production cost (denoted $c$) and an increase in the
-per-unit handling cost $h$; the same framework is then extended to a per-unit
-tax.  A uniform production-cost increase means adding one dollar to each firm's
-marginal cost $C_j'(q_j)$ at every output level.
-Production cost and handling cost hit equilibrium on different margins.
-Production cost shifts market supply at a given $\mu$ without moving $\mu$ at
-fixed list price.  Handling cost moves $\mu$ through effective marginal revenue
-at fixed list price without shifting supply at a given $\mu$.
+Clearing through $\mu(p,h)$ likewise determines how cost shocks pass into list
+prices.  Write $Q\equiv D(p)$.  We study a uniform one-dollar parallel shift in
+every firm's marginal production cost and a one-dollar increase in handling
+cost $h$, then extend the same framework to a per-unit tax.  Production cost
+shifts market supply at a given $\mu$ without moving $\mu$ at fixed list price.
+Handling cost moves $\mu$ through effective marginal revenue at fixed list
+price without shifting supply at a given $\mu$.
 
 Equilibrium satisfies
 \begin{equation}
@@ -356,10 +391,10 @@ pass-through generally differs from $\rho_c$.
 
 \subsection{Elasticity representation}
 
-The level-form pass-through formulas above are exact, but the economic content
-is clearer in elasticities.  Write $\mu_p\equiv d\mu/dp$ for the response of
-effective revenue to list price, and define demand and supply elasticities with
-respect to list price as usual by
+The same pass-through formulas can be rewritten in elasticities, which makes
+the role of $\mu_p$ transparent.  Write $\mu_p\equiv d\mu/dp$ for the response
+of effective revenue to list price, and define demand and supply elasticities
+with respect to list price as usual by
 \[
 \varepsilon_D(p)\equiv\frac{p D'(p)}{D(p)}<0,
 \qquad
@@ -404,15 +439,25 @@ $\mu_p>1$ and amplified when $\mu_p<1$.  If returns are absent, $r\equiv 0$
 forces $\mu_p=1$, and \eqref{eq:rho_c_elasticity_final} collapses to the
 standard formula.
 
+Whether $\mu_p$ exceeds one depends on how steeply the return rate falls with
+price.  Differentiating $\mu=p-r(p)(p+h)$ gives
+\[
+\mu_p=1-r(p)-r'(p)(p+h).
+\]
+Hence $\mu_p>1$ if and only if $r'(p)<-r(p)/(p+h)$: selection must outweigh
+the behavioral rise in individual return probabilities by enough that
+aggregate $r$ declines steeply in $p$.  If $r'\geq 0$, then
+$\mu_p\leq 1-r(p)<1$ whenever some units are returned.
+
 %=============================================================================
 \section{Incidence}
 %=============================================================================
 
-With the pass-through results in hand, we can now compute the welfare effect of
-each cost shifter and the division of the loss between consumers and producers.
-Throughout, $Q\equiv D(p)$ and $r\equiv r(p)$ denote the equilibrium gross
-quantity and the return rate.  From the consumer-side analysis, a small
-increase in any shifter $x$ changes consumer surplus by
+Pass-through into list price determines the welfare loss from each cost shifter
+and how that loss is split between consumers and producers.  Throughout,
+$Q\equiv D(p)$ and $r\equiv r(p)$ denote the equilibrium gross quantity and the
+return rate.  From the consumer-side analysis, a small increase in any shifter
+$x$ changes consumer surplus by
 \begin{equation}
   \frac{dCS}{dx} = -Q\,(1-r)\,\rho_x,
   \label{eq:CSx}
