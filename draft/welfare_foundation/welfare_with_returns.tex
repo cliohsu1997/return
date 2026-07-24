@@ -266,8 +266,8 @@ tax.  A uniform production-cost increase means adding one dollar to each firm's
 marginal cost $C_j'(q_j)$ at every output level.
 Production cost and handling cost hit equilibrium on different margins.
 Production cost shifts market supply at a given $\mu$ without moving $\mu$ at
-fixed list price.  Handling cost moves $\mu$ through \eqref{eq:mu-def} at
-fixed list price without shifting supply at a given $\mu$.
+fixed list price.  Handling cost moves $\mu$ through effective marginal revenue
+at fixed list price without shifting supply at a given $\mu$.
 
 Equilibrium satisfies
 \begin{equation}
@@ -354,83 +354,55 @@ Under seller remittance, $\mu^s_\tau=-1$ at fixed checkout price, so
 $\rho^s_\tau=\rho_c$.  Under buyer remittance, $\mu^b_\tau$ differs, so tax
 pass-through generally differs from $\rho_c$.
 
-\paragraph{Elasticity representation and interpretation.}\mbox{}\\
-The level-form expression for production-cost pass-through in \eqref{eq:rho-c-h}
-is compact, but translating it into conventional elasticities reveals the
-precise economic mechanism.  Define the demand elasticity with respect to the
-list price,
+\subsection{Elasticity representation}
+
+The level-form pass-through formulas above are exact, but the economic content
+is clearer in elasticities.  Write $\mu_p\equiv d\mu/dp$ for the response of
+effective revenue to list price, and define demand and supply elasticities with
+respect to list price as usual by
 \[
-\varepsilon_D(p) \equiv \frac{p D'(p)}{D(p)} < 0,
+\varepsilon_D(p)\equiv\frac{p D'(p)}{D(p)}<0,
+\qquad
+\varepsilon_S(p)\equiv\frac{dS(\mu(p))}{dp}\frac{p}{S(\mu(p))}
+=S'(\mu)\,\mu_p\,\frac{p}{S(\mu)}>0.
 \]
-and, following the standard convention, define the supply elasticity with
-respect to the list price $p$:
+Here $\varepsilon_S(p)$ is the observed elasticity of market supply with
+respect to the clearing price.
+
+Without returns, supply is a function of list price, so $S'=dS/dp$.  A
+one-dollar cost increase cuts supply by $S'$ units at the original price,
+creating an excess-demand gap of that size.  Raising list price by one dollar
+closes the gap from both sides.  Demand falls by $|D'|$ and supply recovers by
+$S'$.  Closing a gap of size $S'$ therefore requires a price rise of
+$S'/(S'+|D'|)$, so standard pass-through equals
+$\varepsilon_S/(-\varepsilon_D+\varepsilon_S)$.
+
+With returns, supply is a function of effective revenue, so
+$S'(\mu)=dS/d\mu$ rather than $dS/dp$.  A one-dollar production-cost increase
+is equivalent to lowering $\mu$ by one dollar, so at fixed list price supply
+falls by $S'(\mu)$ units, again creating an excess-demand gap of that size.
+Raising list price by one dollar closes the gap at rate
+$|D'|+S'(\mu)\,\mu_p$, so
 \[
-\varepsilon_S(p) \equiv \frac{d S(\mu(p))}{d p}\frac{p}{S(\mu(p))}
-= S'(\mu)\,\mu_p\,\frac{p}{S(\mu)} > 0.
+\rho_c=\frac{S'(\mu)}{|D'|+S'(\mu)\,\mu_p}.
 \]
-This is the observed elasticity of market supply with respect to the price that
-clears the market.  From $\mu = p - r(p)(p+h)$, the sensitivity of effective
-revenue to the list price is
-\[
-\mu_p \equiv \frac{d\mu}{dp}
-= 1 - r(p) - r'(p)(p+h)
-\]
-where $r'(p)\equiv dr(p)/dp$.
-Substituting these definitions into $\rho_c$ in \eqref{eq:rho-c-h} and using
-$D(p)=S(\mu)$ at equilibrium gives
+The cost shock lowers $\mu$ by one dollar, while a dollar of list price raises
+$\mu$ by $\mu_p$.  A higher $\mu_p$ means a one-dollar price increase restores
+more effective revenue---and therefore more quantity supplied---than the
+one-dollar cost shock removes, so a smaller list-price movement closes the
+excess-demand gap.  Measuring supply against list price through
+$\varepsilon_S$ puts the factor $1/\mu_p$ in the numerator,
 \begin{equation}
   \rho_c
-  = \frac{-S'(\mu)}
-         {D'(p)-S'(\mu)\mu_p}.
-\end{equation}
-Multiplying the numerator and denominator by $p/S(\mu)$:
-\begin{align}
-  \rho_c
-  &= \frac{-S'(\mu)\,p/S(\mu)}
-         {\varepsilon_D - S'(\mu)\mu_p\,p/S(\mu)}.
-\end{align}
-Since $\varepsilon_S(p) = S'(\mu)\mu_p\,p/S(\mu)$, we have
-$S'(\mu)\,p/S(\mu) = \varepsilon_S(p)/\mu_p$.  Therefore,
-\begin{equation}
-  \boxed{
-    \rho_c =
-    \frac{-\varepsilon_S(p)/\mu_p}
-         {\varepsilon_D - \varepsilon_S(p)}
-  }
+  =
+  \frac{\varepsilon_S(p)/\mu_p}
+       {-\varepsilon_D(p)+\varepsilon_S(p)}.
   \label{eq:rho_c_elasticity_final}
 \end{equation}
-with $\mu_p$ as given above.
-
-The elasticity expression \eqref{eq:rho_c_elasticity_final} admits a sharp
-comparative interpretation.  In the textbook competitive model without returns,
-supply is written directly as a function of the list price $p$, and a uniform
-cost increase shifts that curve upward.  The standard formula is
-\[
-\rho_{\text{std}} = \frac{-\varepsilon_S}{\varepsilon_D - \varepsilon_S}.
-\]
-
-With returns, the supply curve is fundamentally a function of the seller's
-effective revenue $\mu$, not $p$.  Nevertheless, by defining the observed supply
-elasticity $\varepsilon_S(p)$ with respect to the list price $p$---which
-inherently accounts for the pass-through $\mu_p$ from $p$ to $\mu$---the
-denominator of the pass-through formula retains the textbook structure
-$\varepsilon_D - \varepsilon_S(p)$.
-
-The novelty therefore resides entirely in the numerator, which becomes
-$-\varepsilon_S(p)/\mu_p$ rather than $-\varepsilon_S(p)$.  This extra factor of
-$1/\mu_p$ arises because the cost shock shifts the supply curve in the
-$\mu$-space, not the $p$-space.  Since $d\mu = \mu_p\,dp$, a unit leftward
-shift of the effective supply curve translates into a shift of size $1/\mu_p$
-in the observed $p$--$Q$ plane.
-
-Consequently, the pass-through of production costs is amplified whenever
-$\mu_p<1$---that is, whenever a higher list price raises the seller's net
-revenue by less than one dollar due to higher expected refunds.  In the special
-case of no returns, $\mu_p=1$ and $\varepsilon_S(p)$ coincides with the standard
-supply elasticity, collapsing \eqref{eq:rho_c_elasticity_final} exactly to the
-textbook rule.  This decomposition reveals that the economic logic of
-competitive pass-through is unchanged; returns merely rescale the effective
-supply response through the lens of the net-revenue pass-through $\mu_p$.
+Pass-through is therefore dampened relative to the no-return benchmark when
+$\mu_p>1$ and amplified when $\mu_p<1$.  If returns are absent, $r\equiv 0$
+forces $\mu_p=1$, and \eqref{eq:rho_c_elasticity_final} collapses to the
+standard formula.
 
 %=============================================================================
 \section{Incidence}
