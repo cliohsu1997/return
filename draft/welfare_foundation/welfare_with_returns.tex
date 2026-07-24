@@ -204,7 +204,8 @@ Given $\mu$, firm $j$ chooses output to solve
   \text{FOC: } C_j'(q_j)=\mu \;\;(\text{if } q_j>0),
 \]
 with $C_j(0)=0$.  Write $q_j(\mu)$ for firm $j$'s supply, set to zero when
-$\mu$ is below its minimum marginal cost.
+$\mu$ is below its minimum marginal cost.  We assume each $C_j$ has strictly
+increasing marginal cost, so $q_j'(\mu)>0$ for active firms.
 
 Summing across firms defines market supply and industry profit,
 \begin{equation}
@@ -213,8 +214,11 @@ Summing across firms defines market supply and industry profit,
   PS(\mu) \equiv \sum_j \bigl[\mu\,q_j(\mu)-C_j\bigl(q_j(\mu)\bigr)\bigr].
   \label{eq:agg-def}
 \end{equation}
-Which firms are active at each $\mu$ determines both the market quantity and
-total profit.
+Under that assumption, $S'(\mu)>0$.  Market supply therefore rises with
+effective revenue, but not necessarily with list price.  Firms care about
+$\mu$, and $\mu(p,h)$ can fail to rise with $p$ when refunds and handling
+eat into the list-price gain.  Which firms are active at each $\mu$
+determines both the market quantity and total profit.
 
 Differentiating $PS(\mu)$ with respect to $\mu$ gives, for each firm,
 \[
@@ -380,10 +384,11 @@ with respect to list price as usual by
 \varepsilon_D(p)\equiv\frac{p D'(p)}{D(p)}<0,
 \qquad
 \varepsilon_S(p)\equiv\frac{dS(\mu(p))}{dp}\frac{p}{S(\mu(p))}
-=S'(\mu)\,\mu_p\,\frac{p}{S(\mu)}>0.
+=S'(\mu)\,\mu_p\,\frac{p}{S(\mu)}.
 \]
 Here $\varepsilon_S(p)$ is the observed elasticity of market supply with
-respect to the clearing price.
+respect to the clearing price.  Under $S'(\mu)>0$, it has the sign of
+$\mu_p$.
 
 Without returns, supply is a function of list price, so $S'=dS/dp$.  A
 one-dollar cost increase cuts supply by $S'$ units at the original price,
