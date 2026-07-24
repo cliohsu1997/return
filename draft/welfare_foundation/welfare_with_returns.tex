@@ -274,26 +274,13 @@ arguments of $S(\cdot)$ coincide.  Canceling $p-\tau$ yields
   define the same equilibrium.}
 \end{result}
 
-Tax neutrality breaks down with product returns because the refunded
-amount---and therefore the keep-or-return decision---depends on which side of
-the market remits the tax.  Under seller remittance, the checkout price (which
-includes the tax) is refunded, so consumers decide whether to return based on
-that tax-inclusive price.  Under buyer remittance, the seller posts a pre-tax
-list price, only that list price is refunded, and the return decision is based
-on this lower, tax-exclusive price.  Even though the total checkout price and
-the tax are identical in both regimes, the return rate and the seller's refund
-liability per return are evaluated at different prices ($p$ versus $p-\tau$).
-
-The direction in which the return rate changes is ambiguous---a higher price
-can make each individual more likely to return but can also select consumers
-with stronger purchase intentions who are less likely to return---so $r(p)$ may
-be above or below $r(p-\tau)$.  Regardless of the direction, the seller's
-effective marginal revenue generally differs, so the two tax regimes produce
-distinct market-clearing conditions and are not equivalent.  The fundamental
-cause is that the purchase decision is always based on the checkout price,
-while the return decision uses the tax-inclusive price under seller remittance
-and the tax-exclusive price under buyer remittance, creating a wedge that
-alters equilibrium.
+Tax neutrality breaks down because the refunded amount---and therefore the
+keep-or-return decision---depends on which party remits the tax.  Under seller
+remittance the tax-inclusive checkout price is refunded; under buyer remittance
+only the pre-tax list price is.  Purchase is always based on checkout price
+$p$, but returns are evaluated at $p$ under seller remittance and at $p-\tau$
+under buyer remittance, so effective revenue generally differs and the two
+clearing conditions are not equivalent.
 
 %=============================================================================
 \section{Pass-through}
@@ -341,33 +328,14 @@ The two shocks differ in which margin moves at fixed $p$ or fixed $\mu$,
 \end{align}
 The production term is $S_c=-S'(\mu)$ because a one-dollar parallel rise in
 every firm's marginal cost is equivalent, at fixed $\mu$, to evaluating market
-supply at $\mu-1$.  Substituting into \eqref{eq:pass-through} yields
-\begin{result}[Pass-through of production and handling costs]
-  \begin{equation}
-    \frac{\rho_h}{\rho_c}=r(p),
-    \label{eq:rho-ratio}
-  \end{equation}
-  with pass-through into list price
-  \begin{equation}
-    \rho_c
-    = \frac{S'(\mu)}{S'(\mu)\,\mu_p-D'(p)},
-    \qquad
-    \rho_h = r(p)\,\rho_c.
-    \label{eq:rho-c-h}
-  \end{equation}
-\end{result}
-Handling moves $\mu$ by only $r(p)$ per dollar relative to a unit production
-shift, so $\rho_h/\rho_c=r(p)$.  When $r\equiv 0$, handling does not move
-$\mu$ and $\rho_c$ coincides with the textbook competitive pass-through
-formula.
+supply at $\mu-1$.  Handling moves $\mu$ by only $r(p)$ per dollar relative to
+that unit production shift, so its numerator in \eqref{eq:pass-through} is the
+fraction $r(p)$ of the production numerator.
 
-Turning to the unit tax, because of the failure of tax neutrality we write
-$p^s$ for checkout price under seller remittance and $p^b$ for checkout price
-under buyer remittance; let $\rho^s_\tau\equiv dp^s/d\tau$ and
-$\rho^b_\tau\equiv dp^b/d\tau$.  For a local change at $\tau=0$, tax
-pass-through is \eqref{eq:pass-through} with $S_\tau=0$: the denominator uses
-the same $\mu_p$ as above, and the only difference across remittance regimes is
-$\mu^s_\tau$ versus $\mu^b_\tau$ at fixed checkout price:
+Turning to the unit tax, failure of tax neutrality requires separate checkout
+prices $p^s$ and $p^b$ under seller and buyer remittance.  Write
+$\rho^s_\tau\equiv dp^s/d\tau$ and $\rho^b_\tau\equiv dp^b/d\tau$.  At
+$\tau=0$, \eqref{eq:pass-through} with $S_\tau=0$ gives
 \begin{equation}
   \rho^s_\tau
   = \frac{-S'(\mu)\,\mu^s_\tau}{S'(\mu)\,\mu_p-D'(p^s)},
@@ -375,15 +343,32 @@ $\mu^s_\tau$ versus $\mu^b_\tau$ at fixed checkout price:
   \rho^b_\tau
   = \frac{-S'(\mu)\,\mu^b_\tau}{S'(\mu)\,\mu_p-D'(p^b)}.
 \end{equation}
-At $\tau=0$,
-\begin{align}
-  \mu^s_\tau &= -1,
-  &
-  \mu^b_\tau &= r(p^b) + (p^b+h)\,r'(p^b) - 1.
-\end{align}
-Under seller remittance, $\mu^s_\tau=-1$ at fixed checkout price, so
-$\rho^s_\tau=\rho_c$.  Under buyer remittance, $\mu^b_\tau$ differs, so tax
-pass-through generally differs from $\rho_c$.
+The regimes differ only through $\mu^s_\tau$ and $\mu^b_\tau$ at fixed
+checkout price.  At $\tau=0$, $\mu^s_\tau=-1$.  Under buyer remittance,
+$\tau$ enters effective revenue in the same way as $-p$, so
+$\mu^b_\tau=-\mu_p$.  Seller remittance therefore has the same format as a
+production-cost shock, while buyer remittance scales that format by $\mu_p$.
+Collecting these cases, we have
+\begin{result}[Pass-through into list price]
+  Production-cost pass-through is
+  \begin{equation}
+    \rho_c
+    = \frac{S'(\mu)}{S'(\mu)\,\mu_p-D'(p)}.
+    \label{eq:rho-c}
+  \end{equation}
+  The remaining shocks connect to this object by
+  \begin{align}
+    \rho_h &= r(p)\,\rho_c,
+    &
+    \rho^s_\tau &= \rho_c,
+    &
+    \rho^b_\tau &= \mu_p\,\rho_c.
+    \label{eq:rho-links}
+  \end{align}
+\end{result}
+When $r\equiv 0$, one has $\mu_p=1$ and therefore
+$\rho_c=\rho^s_\tau=\rho^b_\tau$, which equals the textbook competitive
+pass-through.
 
 \subsection{Elasticity representation}
 
