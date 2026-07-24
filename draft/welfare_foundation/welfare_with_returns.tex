@@ -38,20 +38,23 @@ characterize pass-through, incidence, and welfare losses with returns, compare
 them to the no-return benchmark, and identify where omitting the return margin
 changes conclusions.
 
-Consumer surplus depends only on two aggregates: gross demand and the return
+Consumer surplus depends only on two aggregates, gross demand and the return
 rate.  Heterogeneity in tastes, match values, and return costs enters welfare
-solely through these objects.  Producer surplus retains the usual
-geometry---area to the left of the supply curve---but evaluated at net revenue
-rather than at list price.  Net revenue is list price minus expected refunds
-and handling.
+solely through these aggregates.  Producer surplus retains the usual
+geometry---area to the left of the supply curve---but is evaluated at net
+revenue, list price minus expected refunds and handling, rather than at list
+price.
 
 Because consumers pay the list price while firms respond to net revenue,
 pass-through from cost shocks into list prices is governed by how net revenue
-moves with the list price.  Tax neutrality fails for the same reason.  The
+moves with the list price.  Tax neutrality fails for a different reason: the
 keep-or-return decision depends on the refund price, which differs according
-to which party remits the tax.  An analyst who ignores returns and applies the
-classical formulas therefore misstates incidence and deadweight loss whenever
-the return margin is active.
+to which party remits the tax.  An analyst who ignores these two differences
+and applies the classical formulas therefore misstates pass-through,
+incidence, and deadweight loss whenever the return margin is active.  We give
+conditions, in terms of the return-rate elasticity and the ratio of handling
+to list price, under which the classical no-return pass-through formula over-
+or underestimates the correct returns-adjusted pass-through.
 
 %=============================================================================
 \section{Setting}
@@ -442,24 +445,23 @@ in list price.  Then $\mu_p>1$ if and only if $\varepsilon_r(p)<-p/(p+h)$.
 That is, selection must outweigh the behavioral rise in individual return
 probabilities by enough that aggregate $r$ falls steeply in $p$.  When instead
 the behavioral response dominates, $\varepsilon_r$ is less negative (or
-positive) and $\mu_p<1$.  This comparison of $\mu_p$ with the classical
-benchmark $\mu_p=1$ implies a directional bias for an analyst who ignores
-returns.
+positive) and $\mu_p<1$.  Comparing $\mu_p$ with the classical benchmark
+$\mu_p=1$ then signs the bias for an analyst who ignores returns.
 \begin{result}
   Relative to the correct returns-adjusted $\rho_c$, the classical no-return
   pass-through formula overestimates pass-through when
-  $\varepsilon_r(p)<-p/(p+h)$ and underestimates it when the behavioral
-  response dominates selection.
+  $\varepsilon_r(p)<-p/(p+h)$ and underestimates it otherwise.
 \end{result}
-The Result is therefore an easy test for the direction of the bias from
-observables---the return-rate elasticity and the size of handling relative to
-list price.  Intuitively, effective revenue puts weight $p+h$ on each returned
-unit.  When selection lowers the return rate as price rises, a higher handling
-cost magnifies how much that decline in returns improves $\mu$, so $\mu_p$
-exceeds one more readily and the classical formula overstates pass-through.
-When handling is small, the return margin matters less for $\mu$, and the
-level effect of returns (the $-r$ term in $\mu_p$) is more likely to leave
-$\mu_p<1$, so the classical formula understates pass-through.
+The Result is an easy test for that bias from two observables: the return-rate
+elasticity and how large handling is beside list price.  When selection
+dominates, a higher list price lowers the return rate, so the refund-and-handling
+drag on effective revenue shrinks as price rises.  Effective revenue can then
+rise by more than one dollar per dollar of list price, and a smaller price
+movement closes the excess-demand gap than the classical formula predicts.
+Costly handling strengthens that channel and makes overestimation more likely.
+Otherwise, effective revenue rises by less than one dollar per dollar of list
+price, so list price must move by more than the classical formula predicts to
+close the gap, and the classical no-return formula underestimates pass-through.
 
 %=============================================================================
 \section{Incidence}
