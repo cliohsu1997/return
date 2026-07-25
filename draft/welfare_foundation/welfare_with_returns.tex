@@ -390,8 +390,10 @@ with respect to list price as usual by
 =S'(\mu)\,\mu_p\,\frac{p}{S(\mu)}.
 \]
 Here $\varepsilon_S(p)$ is the observed elasticity of market supply with
-respect to the clearing price.  Under $S'(\mu)>0$, it has the sign of
-$\mu_p$.
+respect to the clearing price.  Without returns, $\mu_p=1$ and
+$\varepsilon_S>0$.  With returns, $\mu_p$ can become negative when
+$r'(p)(p+h)>1-r(p)$, in which case $\varepsilon_S<0$ and a higher list price
+reduces the quantity firms are willing to supply.
 
 Without returns, supply is a function of list price, so $S'=dS/dp$.  A
 one-dollar cost increase cuts supply by $S'$ units at the original price,
@@ -423,11 +425,34 @@ $\varepsilon_S$ puts the factor $1/\mu_p$ in the numerator,
        {-\varepsilon_D(p)+\varepsilon_S(p)}.
   \label{eq:rho_c_elasticity_final}
 \end{equation}
-Pass-through is therefore dampened relative to the no-return benchmark when
-$\mu_p>1$ and amplified when $\mu_p<1$.  If returns are absent, $r\equiv 0$
-forces $\mu_p=1$, and \eqref{eq:rho_c_elasticity_final} collapses to the
-standard formula.
+When $\mu_p<0$, the supply curve expressed as a function of the list price
+$p$ is locally decreasing.  In that region the sign of $\rho_c$ is no longer
+guaranteed positive.  It depends on the relative magnitudes of $\varepsilon_S$
+and $\varepsilon_D$.  This opens the door to the counterintuitive outcome that
+an increase in marginal cost reduces the equilibrium price.
+\begin{result}[Negative pass-through]
+\label{res:negative-pt}
+  Suppose $\mu_p<0$ (i.e.\ $r'(p)(p+h)<-(1-r(p))$), so that
+  $\varepsilon_S<0$.  If, in addition, $|\varepsilon_S|>-\varepsilon_D$, then
+  $\rho_c<0$.
+\end{result}
+The logic is as follows.  With $\mu_p<0$, a higher list price lowers the
+quantity firms supply, so a leftward shift of supply---caused by a rise in
+$c$---creates excess demand at the initial $p$.  Raising the price to eliminate
+the excess would further contract supply and worsen the imbalance; instead,
+the price must fall.  A decline in $p$ increases both the quantity demanded
+and, because supply slopes downward, the quantity supplied.  When
+$|\varepsilon_S|>-\varepsilon_D$, the supply curve is steeper than the demand
+curve, meaning that the supply response to a price cut is larger than the
+demand response.  The price decline therefore eliminates the excess demand and
+leads to a new equilibrium at a lower list price.  This sign reversal cannot
+occur in the classical model, where $\mu_p=1$ and supply is everywhere
+upward-sloping, highlighting
+a qualitative failure of the no-return benchmark.
 
+Even when $\mu_p>0$ and pass-through stays positive, the returns-adjusted
+formula differs from the no-return case whenever $\mu_p\neq 1$.  Comparing the
+two signs the bias for an analyst who ignores returns.
 Whether $\mu_p$ exceeds one depends on how steeply the return rate falls with
 price.  Differentiating $\mu=p-r(p)(p+h)$ gives
 \[
@@ -438,8 +463,7 @@ in list price.  Then $\mu_p>1$ if and only if $\varepsilon_r(p)<-p/(p+h)$.
 That is, selection must outweigh the behavioral rise in individual return
 probabilities by enough that aggregate $r$ falls steeply in $p$.  When instead
 the behavioral response dominates, $\varepsilon_r$ is less negative (or
-positive) and $\mu_p<1$.  Comparing $\mu_p$ with the classical benchmark
-$\mu_p=1$ then signs the bias for an analyst who ignores returns.
+positive) and $\mu_p<1$.
 \begin{result}
   Relative to the correct returns-adjusted $\rho_c$, the classical no-return
   pass-through formula overestimates pass-through when
