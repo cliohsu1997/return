@@ -350,14 +350,20 @@ $\tau=0$, \eqref{eq:pass-through} with $S_\tau=0$ gives
   \rho^b_\tau
   = \frac{-S'(\mu)\,\mu^b_\tau}{S'(\mu)\,\mu_p-D'(p^b)}.
 \end{equation}
-The regimes differ only through $\mu^s_\tau$ and $\mu^b_\tau$ at fixed
+The regimes differ only through $\mu^s_\tau$ and $\mu^b_\tau$ at a fixed
 checkout price.  At $\tau=0$, $\mu^s_\tau=-1$.  Under buyer remittance,
-$\tau$ enters effective revenue in the same way as $-p$, so
-$\mu^b_\tau=-\mu_p$.  Seller remittance therefore has the same format as a
-production-cost shock, while buyer remittance scales that format by $\mu_p$.
-Collecting these cases, we have
-\begin{result}[Pass-through into list price]
-  Production-cost pass-through is
+$\tau$ enters effective revenue in the same way as $-p$: a tax increase
+lowers the pre-tax price entering $\mu(p-\tau,h)$ by one dollar, changing
+$\mu$ by $-\mu_p$.  Hence $\mu^b_\tau=-\mu_p$ and
+$\rho^b_\tau=\mu_p\,\rho_c$.  The sign of buyer-remitted pass-through is
+thus tied to that of seller-remitted pass-through by the sign of $\mu_p$.
+When returns are absent ($r=0$), $\mu_p=1$ and the two pass-through rates
+coincide, recovering the classical neutrality benchmark.  If $\mu_p<0$,
+however, the two rates always carry opposite signs---a striking reversal of
+that neutrality intuition.
+\begin{result}[Pass-through into list price and remittance-dependent sign]
+\label{res:pass-through}
+  \textbf{(i)} Production-cost pass-through is
   \begin{equation}
     \rho_c
     = \frac{S'(\mu)}{S'(\mu)\,\mu_p-D'(p)}.
@@ -372,10 +378,24 @@ Collecting these cases, we have
     \rho^b_\tau &= \mu_p\,\rho_c.
     \label{eq:rho-links}
   \end{align}
+  \textbf{(ii)} If $\mu_p<0$, then
+  \[
+  \operatorname{sgn}(\rho^b_\tau)=-\operatorname{sgn}(\rho_c)
+  \]
+  provided $\rho_c\neq 0$.  A unit tax therefore moves the equilibrium
+  checkout price in opposite directions depending on which side of the
+  market remits it.
 \end{result}
-When $r\equiv 0$, one has $\mu_p=1$ and therefore
-$\rho_c=\rho^s_\tau=\rho^b_\tau$, which equals the textbook competitive
-pass-through.
+The condition $\mu_p<0$ requires the behavioural response of returns to
+price to be strong enough that effective revenue falls when $p$ rises: from
+$\mu_p=1-r(p)-r'(p)(p+h)$, we have $\mu_p<0$ exactly when
+$r'(p)(p+h)>1-r(p)$.  In that case buyer remittance raises $\mu$ while
+seller remittance lowers it, shifting supply outward and inward
+respectively.  The checkout price must therefore adjust in opposite
+directions to restore equilibrium.  Which regime raises the price and which
+lowers it depends on the sign of $\rho_c$, which in turn hinges on the
+relative magnitudes of the supply and demand elasticities---a point
+developed in the next subsection.
 
 \subsection{Elasticity representation}
 
@@ -391,9 +411,9 @@ with respect to list price as usual by
 \]
 Here $\varepsilon_S(p)$ is the observed elasticity of market supply with
 respect to the clearing price.  Without returns, $\mu_p=1$ and
-$\varepsilon_S>0$.  With returns, $\mu_p$ can become negative when
-$r'(p)(p+h)>1-r(p)$, in which case $\varepsilon_S<0$ and a higher list price
-reduces the quantity firms are willing to supply.
+$\varepsilon_S>0$.  With returns, $\mu_p$ can become negative, in which case
+$\varepsilon_S<0$ and a higher list price reduces the quantity firms are
+willing to supply.
 
 Without returns, supply is a function of list price, so $S'=dS/dp$.  A
 one-dollar cost increase cuts supply by $S'$ units at the original price,
@@ -432,9 +452,8 @@ and $\varepsilon_D$.  This opens the door to the counterintuitive outcome that
 an increase in marginal cost reduces the equilibrium price.
 \begin{result}[Negative pass-through]
 \label{res:negative-pt}
-  Suppose $\mu_p<0$ (i.e.\ $r'(p)(p+h)<-(1-r(p))$), so that
-  $\varepsilon_S<0$.  If, in addition, $|\varepsilon_S|>-\varepsilon_D$, then
-  $\rho_c<0$.
+  Suppose $\mu_p<0$, so that $\varepsilon_S<0$.  If, in addition,
+  $|\varepsilon_S|>-\varepsilon_D$, then $\rho_c<0$.
 \end{result}
 The logic is as follows.  With $\mu_p<0$, a higher list price lowers the
 quantity firms supply, so a leftward shift of supply---caused by a rise in
@@ -484,7 +503,7 @@ the classical formula predicts to close the gap, and the classical no-return
 formula underestimates pass-through.
 
 %=============================================================================
-\section{Incidence}
+\section{Local Incidence}
 %=============================================================================
 
 Pass-through into list price determines the welfare loss from each cost shifter
