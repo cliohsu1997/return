@@ -575,16 +575,21 @@ For all four shocks, the local incidence ratio is identical:
 \end{equation}
 \end{result}
 
-Compared to the classical no-return benchmark, where $r=0$ and $\mu_p=1$, the
-incidence ratio becomes $I_x = \rho_c/(1-\rho_c)$.  With returns, the factor
-$1-r$ in the numerator reduces consumer losses because they only lose surplus
-on kept units.  The denominator contains $\mu_p$, which measures how much of a
-list-price change translates into effective producer revenue.  When $\mu_p<1$,
-producers receive less than a dollar of extra margin per dollar of price
-increase, shifting more burden onto them.  When $\mu_p<0$, the denominator
-changes sign, so the incidence ratio flips sign: a cost increase can make
-producers better off while consumers lose, or vice versa.  This sign reversal
-is impossible without returns.
+The denominator $1-\mu_p\rho_c$ is the per-unit loss borne by producers.  A
+\$1 cost shock initially costs firms $Q$.  The equilibrium list price rises by
+$\rho_c$, which raises the effective marginal revenue per unit by
+$\mu_p\rho_c$.  Because the envelope theorem implies $dPS/d\mu=Q$---each
+dollar increase in the effective margin increases aggregate producer surplus
+by equilibrium output $Q$---this price recovery adds $Q\mu_p\rho_c$ back to
+producer surplus.  The net loss is therefore $Q(1-\mu_p\rho_c)$.  The
+recovery term decomposes as
+$\mu_p\rho_c=\rho_c-r\rho_c-r'(p)(p+h)\rho_c$: the gross price gain, net of
+the mechanical refund drag and the change in expected return costs.  The
+numerator $(1-r)\rho_c$ is the analogous per-unit consumer loss on kept
+units.  The incidence ratio thus compares these two per-unit burdens: a
+small denominator implies consumers bear almost the entire shock, while a
+negative denominator---when $\mu_p\rho_c>1$---means producers actually gain
+from a cost increase, a reversal unique to the return margin.
 
 Summing (\ref{eq:CSx_incidence}) and (\ref{eq:PSx_incidence}) and substituting
 $\mu_p = 1 - r - r'(p)(p+h)$ gives the marginal deadweight loss:
