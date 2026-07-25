@@ -543,66 +543,54 @@ $\frac{d\mu}{dx} = \mu_p \rho_x + \mu_x$, yields
   \label{eq:PSx_incidence}
 \end{equation}
 
-Summing (\ref{eq:CSx_incidence}) and (\ref{eq:PSx_incidence}) gives the
-marginal change in total surplus.  Substituting the definition
-$\mu_p = 1 - r - r'(p)(p+h)$ and collecting terms yields the marginal
-deadweight loss:
+The local incidence ratio is $I_x \equiv (dCS/dx)/(dPS/dx)$, so
+\[
+  I_x = \frac{-Q(1-r)\rho_x}{Q(\mu_p \rho_x + \mu_x) + \Sigma_x}.
+\]
+The components needed to evaluate $I_x$ for each shock are reported in
+Table~\ref{tab:incidence_components}.
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}{lccccccc}
+\hline
+Shock $x$ & $\rho_x$ & $\mu_x$ & $\Sigma_x$ & $dCS/dx$ & $dPS/dx$ & $I_x$ \\
+\hline
+Production cost $c$ & $\rho_c$ & $0$ & $-Q$ & $-Q(1-r)\rho_c$ & $Q(\mu_p\rho_c - 1)$ & $\displaystyle \frac{(1-r)\rho_c}{1-\mu_p\rho_c}$ \\
+Handling cost $h$ & $r\rho_c$ & $-r$ & $0$ & $-Q(1-r)r\rho_c$ & $Qr(\mu_p\rho_c - 1)$ & $\displaystyle \frac{(1-r)\rho_c}{1-\mu_p\rho_c}$ \\
+Seller tax $\tau^s$ & $\rho_c$ & $-1$ & $0$ & $-Q(1-r)\rho_c$ & $Q(\mu_p\rho_c - 1)$ & $\displaystyle \frac{(1-r)\rho_c}{1-\mu_p\rho_c}$ \\
+Buyer tax $\tau^b$ & $\mu_p\rho_c$ & $-\mu_p$ & $0$ & $-Q(1-r)\mu_p\rho_c$ & $Q\mu_p(\mu_p\rho_c - 1)$ & $\displaystyle \frac{(1-r)\rho_c}{1-\mu_p\rho_c}$ \\
+\hline
+\end{tabular}
+\caption{Pass-through, direct effects, surplus changes, and incidence ratio for
+each shock.}
+\label{tab:incidence_components}
+\end{table}
+
+\begin{result}
+For all four shocks, the local incidence ratio is identical:
+\begin{equation}
+  I_x = \frac{(1-r)\rho_c}{1-\mu_p \rho_c}.
+  \label{eq:incidence_result}
+\end{equation}
+\end{result}
+
+Compared to the classical no-return benchmark, where $r=0$ and $\mu_p=1$, the
+incidence ratio becomes $I_x = \rho_c/(1-\rho_c)$.  With returns, the factor
+$1-r$ in the numerator reduces consumer losses because they only lose surplus
+on kept units.  The denominator contains $\mu_p$, which measures how much of a
+list-price change translates into effective producer revenue.  When $\mu_p<1$,
+producers receive less than a dollar of extra margin per dollar of price
+increase, shifting more burden onto them.  When $\mu_p<0$, the denominator
+changes sign, so the incidence ratio flips sign: a cost increase can make
+producers better off while consumers lose, or vice versa.  This sign reversal
+is impossible without returns.
+
+Summing (\ref{eq:CSx_incidence}) and (\ref{eq:PSx_incidence}) and substituting
+$\mu_p = 1 - r - r'(p)(p+h)$ gives the marginal deadweight loss:
 \begin{equation}
   \frac{dW}{dx} = Q\big[\mu_x - r'(p)(p+h)\rho_x\big] + \Sigma_x.
   \label{eq:DWL_incidence}
 \end{equation}
-
-The incidence of a shock on consumers relative to producers is the ratio of
-their respective surplus changes:
-\begin{equation}
-  I_x \equiv \frac{dCS/dx}{dPS/dx}.
-  \label{eq:incidence_ratio}
-\end{equation}
-
-Substituting the shock-specific values from Table~\ref{tab:shock_values}
-yields a striking result: all four shocks generate the same incidence ratio,
-\begin{equation}
-  I_x = \frac{-(1-r)\rho_c}{\mu_p \rho_c - 1}.
-  \label{eq:incidence_result}
-\end{equation}
-This uniformity arises because the direct mechanical effects $\mu_x$ and
-$\Sigma_x$ cancel in the ratio once the shock-specific pass-through
-relationships are applied.
-
-The incidence ratio in (\ref{eq:incidence_result}) reveals the role of returns.
-In the classical no-return case, $r=0$ and $\mu_p=1$, so $I_x = -\rho_c/(\rho_c - 1)$,
-which is the standard result: if $\rho_c=1/2$, consumers and producers split
-the burden equally.  With returns, two forces matter.  The term $1-r$ in the
-numerator captures that consumers only lose surplus on kept units, so a given
-price increase harms them less when return rates are high.  The term $\mu_p$ in
-the denominator captures how much of a list-price change translates into
-effective revenue for producers; when $\mu_p<1$, a price increase delivers less
-than a dollar of extra margin to firms, raising the price movement needed to
-restore equilibrium and shifting more of the burden onto producers.  When
-$\mu_p<0$, the denominator can change sign, so the incidence ratio flips sign:
-a cost increase can make producers better off while consumers lose, or vice
-versa.  This sign reversal is impossible in the classical model and
-illustrates a qualitative failure of the no-return benchmark.
-
-The shock-specific values of $\mu_x$ and $\Sigma_x$ are reported in
-Table~\ref{tab:shock_values}.  All entries follow directly from
-$\mu(p,h)=p-r(p)(p+h)$.
-
-\begin{table}[htbp]
-\centering
-\begin{tabular}{lcc}
-\hline
-Shock $x$ & $\mu_x$ & $\Sigma_x$ \\
-\hline
-Production cost $c$ & $0$ & $-Q$ \\
-Handling cost $h$ & $-r$ & $0$ \\
-Seller-remitted tax $\tau^s$ & $-1$ & $0$ \\
-Buyer-remitted tax $\tau^b$ & $-\mu_p$ & $0$ \\
-\hline
-\end{tabular}
-\caption{Direct effects of each shock on the effective margin and the supply
-curve.}
-\label{tab:shock_values}
-\end{table}
 
 \end{document}
