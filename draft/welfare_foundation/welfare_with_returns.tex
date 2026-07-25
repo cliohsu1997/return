@@ -84,10 +84,10 @@ $-\kappa_i$.
 
 Buying at price $p$ yields expected surplus
 \[
-  s_i(p)=\mathbb{E}_{u\sim G_i}\bigl[\max(u-p,\,-\kappa_i)\bigr].
+  cs_i(p)=\mathbb{E}_{u\sim G_i}\bigl[\max(u-p,\,-\kappa_i)\bigr].
 \]
 On the purchase margin, all consumer-side heterogeneity is summarized by
-willingness to pay $v_i$, defined by $s_i(v_i)=0$, so type $i$ buys if and
+willingness to pay $v_i$, defined by $cs_i(v_i)=0$, so type $i$ buys if and
 only if $p\leq v_i$.  Across types, willingness to pay has distribution
 $F(v)=\Pr(v_i\leq v)$ with density $f$, so gross demand is $D(p)=1-F(p)$.
 Of the units sold at price $p$, a share $r(p)$ are returned.
@@ -141,29 +141,29 @@ which holds whenever scrap value does not exceed list price.
 %=============================================================================
 
 We turn first to consumer surplus and show that only the aggregates $D$ and
-$r$ enter.  Write $s(v,p)$ for expected surplus at list price $p$ among types
-with willingness to pay $v$, so $s(v,v)=0$.  Consumer surplus integrates surplus
+$r$ enter.  Write $cs(v,p)$ for expected surplus at list price $p$ among types
+with willingness to pay $v$, so $cs(v,v)=0$.  Consumer surplus integrates surplus
 over all types who buy,
 \begin{equation}
-  CS(p)=\int_p^\infty s(v,p)\,dF(v).
+  CS(p)=\int_p^\infty cs(v,p)\,dF(v).
 \end{equation}
 Differentiating in $p$ gives an extensive-margin term from types entering or
 leaving the purchase margin and an intensive-margin term from lower surplus
 among inframarginal buyers,
 \[
   CS'(p)
-  = -s(p,p)\,f(p)+\int_p^\infty s_p(v,p)\,dF(v),
+  = -cs(p,p)\,f(p)+\int_p^\infty cs_p(v,p)\,dF(v),
 \]
-where $s_p(v,p)\equiv \partial s(v,p)/\partial p$.  On the extensive margin,
-$s(p,p)=0$, so entry and exit contribute nothing at first order.  On the intensive margin, $s_p(v,p)$
+where $cs_p(v,p)\equiv \partial cs(v,p)/\partial p$.  On the extensive margin,
+$cs(p,p)=0$, so entry and exit contribute nothing at first order.  On the intensive margin, $cs_p(v,p)$
 equals minus the keep probability, because a higher price harms the consumer
 only when she keeps the purchase,
 \[
-  s_p(v,p)=-\Pr(u\geq p-\kappa_i).
+  cs_p(v,p)=-\Pr(u\geq p-\kappa_i).
 \]
 Aggregating over buyers who purchase then gives
 \[
-  CS'(p)=\int_p^\infty s_p(v,p)\,dF(v)
+  CS'(p)=\int_p^\infty cs_p(v,p)\,dF(v)
   = -D(p)\bigl(1-r(p)\bigr),
 \]
 by the definitions of $D(p)$ and $r(p)$.  A small price change therefore satisfies
@@ -179,7 +179,7 @@ $r(p)$, both at each price and integrated along any path,
   \Delta CS = -\int_{p_0}^{p_1} D(p)\bigl(1-r(p)\bigr)\,dp.
 \]
 Micro heterogeneity in price responses can be rich.  Price $p$ enters each
-$s_i(p)$ nonlinearly and can shift participation, return decisions, and
+$cs_i(p)$ nonlinearly and can shift participation, return decisions, and
 inframarginal surplus differently across types.  Yet once $(D,r)$ are given, this
 microstructure is irrelevant for $dCS$ and $\Delta CS$.  Two economies with
 the same paths of $D(p)$ and $r(p)$ deliver the same consumer surplus loss,
