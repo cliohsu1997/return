@@ -69,6 +69,21 @@ return-rate elasticity and the ratio of handling to list price, for when the
 classical no-return pass-through formula over- or underestimates the correct
 returns-adjusted pass-through.
 
+A striking result emerges from the incidence analysis: despite pass-through of
+a cost shock potentially being negative, the incidence ratio is always
+positive and identical across all four shocks---production cost, handling
+cost, and both seller- and buyer-remitted taxes.  This uniformity implies
+that consumer surplus, producer surplus, and welfare always move in the same
+direction, similar to the classical model without returns.  Nevertheless, the
+welfare implications can be very different and hinge critically on the sign of
+pass-through.  When cost pass-through is negative ($\rho_c<0$), production
+cost, handling cost, and seller tax shocks increase both surpluses, yielding
+a Pareto improvement.  For buyer-remitted taxes under negative pass-through
+($\rho^b_\tau>0$), both surpluses unambiguously decline.  When pass-through is
+positive ($\rho_c>0$), all four shocks reduce both surpluses.  This stands in
+sharp contrast to the classical no-return benchmark, where pass-through is
+always positive and such welfare-improving outcomes are impossible.
+
 %=============================================================================
 \section{Setting}
 %=============================================================================
@@ -462,9 +477,25 @@ and $\varepsilon_D$.  This opens the door to the counterintuitive outcome that
 an increase in marginal cost reduces the equilibrium price.
 \begin{result}[Negative pass-through]
 \label{res:negative-pt}
-  We have $\rho_c<0$ if and only if $\varepsilon_S<0$ and
+  We have $\rho_c<0$ if and only if $\varepsilon_S<0$ ($\mu_p<0$) and
   $|\varepsilon_S|>-\varepsilon_D$.
 \end{result}
+\begin{proof}
+By (\ref{eq:rho_c_elasticity_final}),
+\[
+  \rho_c = \frac{\varepsilon_S/\mu_p}{-\varepsilon_D+\varepsilon_S}.
+\]
+Since
+$\varepsilon_S=S'(\mu)\mu_p\,p/S(\mu)$, the terms $\varepsilon_S$ and $\mu_p$
+have the same sign, so $\varepsilon_S/\mu_p>0$.  Hence $\rho_c<0$ if and only
+if
+\[
+  -\varepsilon_D+\varepsilon_S<0,
+\]
+which is equivalent to $\varepsilon_S<0$ and
+$|\varepsilon_S|>-\varepsilon_D$.  Because $\varepsilon_S$ and $\mu_p$ have the
+same sign, $\varepsilon_S<0$ is equivalent to $\mu_p<0$.
+\end{proof}
 The logic is as follows.  With $\varepsilon_S<0$ ($\mu_p<0$), a higher list price lowers the
 quantity firms supply, so a leftward shift of supply---caused by a rise in
 $c$---creates excess demand at the initial $p$.  Raising the price to eliminate
@@ -636,5 +667,19 @@ $\mu_p = 1 - r - r'(p)(p+h)$ gives the marginal deadweight loss:
   \frac{dW}{dx} = Q\big[\mu_x - r'(p)(p+h)\rho_x\big] + \Sigma_x.
   \label{eq:DWL_incidence}
 \end{equation}
+
+The uniform incidence ratio $I_x>0$ implies that consumer and producer
+surplus always move together.  However, the direction of that common movement
+depends on both the shock type and the sign of pass-through.  When
+$\rho_c<0$, production cost, handling cost, and seller tax shocks generate a
+welfare gain with both surpluses increasing.  Under the same condition,
+buyer-remitted taxes reduce both surpluses.  The two tax regimes therefore
+yield opposite welfare outcomes precisely when pass-through is negative, a
+sharp violation of classical tax neutrality.  When $\rho_c>0$, all four shocks
+reduce both surpluses.  The central asymmetry is twofold.  First, seller and
+buyer tax remittance can lead to divergent welfare consequences.  Second,
+welfare-improving shocks are possible only for a subset of shocks (cost,
+handling, seller tax) when pass-through is negative.  Neither possibility
+arises in the no-return benchmark, where pass-through is always positive.
 
 \end{document}
