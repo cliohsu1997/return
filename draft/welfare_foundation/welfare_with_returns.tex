@@ -819,29 +819,73 @@ where the common factor is defined as
   \Delta \equiv 1 + r'(p)(p+h)\,\rho_c.
   \label{eq:Delta}
 \end{equation}
-The unit term in $\Delta$ is the mechanical welfare effect that would operate
-even if returns did not respond to price, while $r'(p)(p+h)\rho_c$ captures
-the additional efficiency consequence of the price-induced reallocation
-between kept and returned units---each percentage-point change in the return
-rate, $r'(p)\rho_c$, imposes a real resource cost of $p+h$ per unit sold.
+The unit term in $\Delta$ is the mechanical welfare effect that remains even
+if returns do not respond to price.  The term $r'(p)(p+h)\rho_c$ is the extra
+efficiency cost of reallocating units between kept and returned states after
+the price moves.  Each change $r'(p)\rho_c$ in the return rate costs $p+h$
+per unit sold.  We decompose any of the welfare changes in
+\eqref{eq:DWL_shocks} into an ex-ante loss on the purchase margin and an
+ex-post loss on the keep-or-return margin.  This decomposition is simplest
+for a production-cost or seller-tax shock, where $dW/dx=-Q\Delta$.  Handling
+and buyer-remitted taxes then rescale the ex-ante and ex-post losses by $r$
+and $\mu_p$, respectively.
 
-The sign of $\Delta$ governs the direction of welfare effects for all shocks
-except the buyer-tax scaling.  Since the incidence analysis established that
-consumer and producer surplus always move together, $\Delta<0$ exactly when
-$\rho_c<0$.  The welfare implications that follow are exactly those already
-discussed in the incidence section.  The magnitude of these effects, not just
-their sign, also carries economic content.  From \eqref{eq:Delta}, that
-magnitude is large when the behavioral term $r'(p)(p+h)\rho_c$ is large in
-absolute value.
+To isolate the mechanical effect, hold the keep-or-return margin fixed while
+purchase can still adjust.  This is the natural benchmark because the true
+first-order change mixes two responses.  Quantity adjusts on the purchase
+margin, and the return rate reallocates units between kept and returned
+states.  Holding the return rate fixed shuts down only the second response,
+so the welfare change in the resulting economy is the ex-ante loss on the
+purchase margin.  The residual relative to the true change $dW/dx$ is the
+ex-post loss on the keep-or-return margin.
 
-When $\rho_c>0$, two distinct regimes are possible.  If $\mu_p>0$, the supply
-curve slopes upward in list-price space, so a cost increase raises $p$.
-Whenever $r'(p)>0$, that price increase raises the return rate, adds handling
-costs, and pushes $\Delta$ above one.  Whenever $r'(p)<0$, it lowers the
-return rate, partially offsets the mechanical loss, and yields $\Delta<1$.
-The welfare loss $Q\Delta$ is therefore larger when $r'(p)$ is positive and
-large, because each dollar of pass-through raises returns and wastes an
-additional $p+h$ per unit sold.
+Freeze the aggregate return rate at its initial value $r_0\equiv r(p_0)$.  In
+the resulting ex-ante economy the effective margin is \eqref{eq:mu-def} with
+$r(p)$ replaced by that constant,
+\begin{equation}
+  \mu^{\mathrm{EA}}(p)\equiv p-r_0(p+h).
+  \label{eq:mu-EA}
+\end{equation}
+Applying \eqref{eq:DWL_incidence} then yields
+$dW/dx\big|_{\mathrm{EA}}=-Q$, the classical rectangle from changing gross
+quantity alone.
+
+The ex-post change is that residual,
+$dW/dx\big|_{\mathrm{EP}}\equiv dW/dx-dW/dx\big|_{\mathrm{EA}}$.  Since
+$dW/dx=-Q\Delta$ for these shocks,
+\begin{equation}
+  \frac{dW}{dx}\Big|_{\mathrm{EP}}
+  =-Q\,r'(p)(p+h)\rho_c.
+  \label{eq:DWL-EP}
+\end{equation}
+\begin{result}[Ex-ante and ex-post decomposition]
+\label{res:EA-EP}
+  For a unit production-cost or seller-tax shock,
+  \begin{equation}
+    \frac{dW}{dx}
+    =-Q
+    -Q\,r'(p)(p+h)\rho_c.
+    \label{eq:DWL-decomp}
+  \end{equation}
+  The first term is the ex-ante loss on the purchase margin.  The second is
+  the ex-post loss on the keep-or-return margin: each unit switched from keep
+  to return costs $p+h$.  For a handling shock both terms become
+  $-Qr$ and $-Qr\,r'(p)(p+h)\rho_c$.  For a buyer-remitted tax both become
+  $-Q\mu_p$ and $-Q\mu_p\,r'(p)(p+h)\rho_c$, so the ex-ante piece is not
+  $-Q$ whenever $\mu_p\neq 1$.
+\end{result}
+When $\rho_c<0$, the list price falls and the ex-post term can dominate, so
+private surplus rises.  When $\rho_c>0$ and $r'(p)>0$, the ex-post term
+amplifies the loss and $-Q$ understates it.
+
+The magnitude of $\Delta$ is large when $|r'(p)(p+h)\rho_c|$ is large.  When
+$\rho_c>0$, two regimes are possible.  If $\mu_p>0$, supply slopes upward in
+list-price space, so a cost increase raises $p$.  Whenever $r'(p)>0$, that
+price increase raises the return rate and pushes $\Delta$ above one.  Whenever
+$r'(p)<0$, it lowers the return rate, partially offsets the ex-ante loss, and
+yields $\Delta<1$.  The welfare loss $Q\Delta$ is therefore larger when
+$r'(p)$ is positive and large, because each dollar of pass-through raises
+returns and wastes an additional $p+h$ per unit sold.
 
 If instead $\mu_p<0$ (which requires $|\varepsilon_S|<-\varepsilon_D$),
 supply itself slopes downward in list-price space.  A higher $p$ lowers $\mu$
@@ -850,9 +894,8 @@ Pass-through remains positive because demand is more price-responsive than
 this downward-sloping supply, so a price increase still reduces excess
 demand.  The return-rate response must already be steep in this region, since
 $\mu_p<0$ requires $r'(p)(p+h)>1-r$.  Even a modest $\rho_c$ can then make
-the behavioral contribution $r'(p)(p+h)\rho_c$ large relative to the
-mechanical unit term, and thus leave $\Delta$ substantially above one.  A
-small price rise still reallocates many purchases into costly returns.
+the ex-post term large relative to the ex-ante unit term, and thus leave
+$\Delta$ substantially above one.
 
 When $\rho_c<0$, necessarily $\Delta<0$, so cost or seller-tax increases raise
 private surplus by $Q|\Delta|$.  The gain is larger the more negative is
@@ -860,9 +903,9 @@ $\Delta$, which occurs when $r'(p)(p+h)\,|\rho_c|$ is large.  Because
 $\rho_c<0$, the cost increase lowers the list price, which reduces the return
 rate and saves $p+h$ on each unit that switches from return to keep.  Those
 savings can exceed the direct resource cost of the shock, generating a Pareto
-improvement.  The gain is amplified when $\mu_p$ is very negative and the
-behavioral response $r'(p)$ is strong, so that a small downward price
-adjustment delivers large handling-cost savings.
+improvement.  The gain is amplified when $\mu_p$ is very negative and
+$r'(p)$ is strong, so that a small downward price adjustment delivers large
+handling-cost savings.
 
 A similar discussion translates into a comparison with the no-return
 benchmark, which predicts a first-order private-surplus loss of exactly $Q$
