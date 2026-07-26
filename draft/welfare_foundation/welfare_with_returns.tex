@@ -688,11 +688,146 @@ welfare-improving shocks are possible only for a subset of shocks (cost,
 handling, seller tax) when pass-through is negative.  Neither possibility
 arises in the no-return benchmark, where pass-through is always positive.
 
-Summing (\ref{eq:CSx_incidence}) and (\ref{eq:PSx_incidence}) and substituting
-$\mu_p = 1 - r - r'(p)(p+h)$ gives the marginal deadweight loss:
+\subsection{Deadweight loss and the returns-augmented Harberger triangle}
+
+The marginal change in private surplus $W=CS+PS$ from a small shock $x$
+follows by summing (\ref{eq:CSx_incidence}) and (\ref{eq:PSx_incidence}) and
+substituting $\mu_p=1-r-r'(p)(p+h)$,
 \begin{equation}
-  \frac{dW}{dx} = Q\big[\mu_x - r'(p)(p+h)\rho_x\big] + \Sigma_x.
+  \frac{dW}{dx}
+  = Q\bigl[\mu_x - r'(p)(p+h)\rho_x\bigr] + \Sigma_x,
   \label{eq:DWL_incidence}
 \end{equation}
+with $\mu_x$ and $\Sigma_x$ as in Table~\ref{tab:incidence_components}.
+The term $-Q\,r'(p)(p+h)\rho_x$ is new relative to the classical model.  It
+captures the efficiency consequence of the price-induced change in the return
+rate.  Each returned unit consumes real handling resources $h$, so a change in
+the return rate has a first-order welfare impact that is absent when returns
+are shut down.
+
+Without returns, $r=0$ and $r'=0$, so \eqref{eq:DWL_incidence} reduces to
+\[
+  \frac{dW}{dx} = Q\,\mu_x + \Sigma_x.
+\]
+For a unit production-cost increase, $\mu_c=0$ and $\Sigma_c=-Q$, giving
+$dW/dc=-Q$: a pure rectangle of lost surplus, as society must devote an
+additional $Q$ units of resources to produce the same output.  For a unit tax
+$\tau$ with tax revenue excluded from $W$, one likewise obtains $dW/d\tau=-Q$,
+the transfer from private agents to the government.  Adding tax revenue back,
+total surplus $V=W+\tau Q$ has a zero first-order change at $\tau=0$.  The
+inefficiency of the tax appears only at second order, giving the classic
+Harberger triangle $\Delta V\approx -\tfrac12\tau^2 Q'(0)$.  Cost shocks
+therefore generate a first-order rectangle and taxes a second-order triangle.
+The two efficiency concepts are cleanly separated.
+
+Product returns destroy this separation.  The return-rate term in
+\eqref{eq:DWL_incidence} is generally nonzero for every shock, so cost,
+handling, and both remittance regimes of a unit tax all carry a first-order
+welfare change that is not a simple transfer.  Using
+Table~\ref{tab:incidence_components} and the pass-through links in
+Result~\ref{res:pass-through}, write
+\[
+  \Delta \equiv 1+r'(p)(p+h)\,\rho_c.
+\]
+Then
+\begin{align}
+  \frac{dW}{dc}
+  &= -Q\,\Delta,
+  &
+  \frac{dW}{dh}
+  &= -Q\,r\,\Delta,
+  &
+  \frac{dW}{d\tau^s}
+  &= -Q\,\Delta,
+  &
+  \frac{dW}{d\tau^b}
+  &= -Q\,\mu_p\,\Delta.
+  \label{eq:DWL_shocks}
+\end{align}
+When $\Delta<0$, which coincides with negative pass-through $\rho_c<0$, a rise
+in production cost, handling cost, or a seller-remitted tax increases private
+surplus---a first-order Pareto improvement that is impossible in the no-return
+benchmark.  A buyer-remitted tax is scaled by $\mu_p$.  If additionally
+$\mu_p<0$, its first-order effect has the opposite sign of the seller-tax
+effect.
+
+The displays in \eqref{eq:DWL_shocks} are local.  The global welfare change
+from a discrete shock $\Delta x$ integrates from the initial equilibrium to
+$\Delta x$,
+\[
+  \Delta W = \int_0^{\Delta x} \frac{dW}{dx}\,dx.
+\]
+Expanding the integrand around $x=0$, the first-order term is the marginal
+loss at zero times the shock size, and the second-order term is the
+returns-augmented Harberger triangle,
+\begin{equation}
+  \Delta W
+  \approx
+  \left.\frac{dW}{dx}\right|_{x=0}\Delta x
+  + \text{second-order triangle}.
+  \label{eq:DeltaW_approx}
+\end{equation}
+Let $\varepsilon_D=p D'(p)/Q$, and write $\varepsilon_\mu=\mu\,S'(\mu)/Q$ for
+the elasticity of supply with respect to effective revenue.  The observed
+list-price supply elasticity is then
+$\varepsilon_S=\varepsilon_\mu\,\mu_p\,(p/\mu)$, which reduces to the ordinary
+supply elasticity when $\mu_p=1$.  With returns, $\mu_p$ may be negative, so
+$\varepsilon_S$ may be negative and the triangle can change sign.
+
+For a production-cost shock $\Delta c$ (a parallel shift of effective supply),
+\begin{equation}
+  \mathrm{Triangle}_c
+  \approx
+  \tfrac12(\Delta c)^2\,
+  \frac{-\varepsilon_D\,\varepsilon_S}{\varepsilon_S-\varepsilon_D}\,
+  \frac{Q}{p}.
+  \label{eq:triangle-c}
+\end{equation}
+A handling-cost increase $\Delta h$ shifts effective supply by $r\,\Delta h$,
+so
+\begin{equation}
+  \mathrm{Triangle}_h
+  \approx
+  \tfrac12(r\,\Delta h)^2\,
+  \frac{-\varepsilon_D\,\varepsilon_S}{\varepsilon_S-\varepsilon_D}\,
+  \frac{Q}{p}
+  = r^2\,\mathrm{Triangle}_c\big|_{\Delta c=\Delta h}.
+  \label{eq:triangle-h}
+\end{equation}
+A seller-remitted tax $\tau^s$ is identical to a production-cost increase in
+$\mu$-space,
+\begin{equation}
+  \mathrm{Triangle}_{\tau^s}
+  \approx
+  \tfrac12(\tau^s)^2\,
+  \frac{-\varepsilon_D\,\varepsilon_S}{\varepsilon_S-\varepsilon_D}\,
+  \frac{Q}{p}.
+  \label{eq:triangle-taus}
+\end{equation}
+A buyer-remitted tax $\tau^b$ wedges the buyer price against the pre-tax price
+that enters effective revenue, with pass-through $\rho^b_\tau=\mu_p\rho_c$.
+Its triangle is
+\begin{equation}
+  \mathrm{Triangle}_{\tau^b}
+  \approx
+  \tfrac12(\tau^b)^2\,
+  \frac{-\varepsilon_D\,(\varepsilon_S/\mu_p)}{\varepsilon_S/\mu_p-\varepsilon_D}\,
+  \frac{Q}{p}
+  =
+  \tfrac12(\tau^b)^2\,
+  \frac{-\varepsilon_D\,\varepsilon_\mu\,(p/\mu)}{\varepsilon_\mu\,(p/\mu)-\varepsilon_D}\,
+  \frac{Q}{p},
+  \label{eq:triangle-taub}
+\end{equation}
+using $\varepsilon_S/\mu_p=\varepsilon_\mu\,(p/\mu)$.  If $\mu_p<0$, this
+triangle has the opposite sign of the seller-tax triangle.
+
+Combining the first-order rectangles in \eqref{eq:DWL_shocks} with these
+second-order triangles gives the efficiency cost of each shock.  Unlike the
+classical model, the rectangle can dominate the triangle even for small
+shocks, and both components can change sign with the return-rate response.
+When $\Delta<0$, the first-order gain from a cost increase or seller tax may
+be large enough that private surplus rises even after the (possibly negative)
+triangle---a stark reversal of standard intuition.
 
 \end{document}
