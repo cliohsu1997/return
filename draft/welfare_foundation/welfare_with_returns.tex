@@ -6,6 +6,7 @@
 \usepackage{hyperref}
 
 \newtheorem{result}{Result}
+\newtheorem{corollary}{Corollary}
 
 \title{Pass-Through, Welfare, and Incidence under Product Returns\\
   in Perfect Competition}
@@ -778,85 +779,76 @@ The sign of $\Delta$ governs the direction of welfare effects for all shocks
 except the buyer-tax scaling.  Since the incidence analysis established that
 consumer and producer surplus always move together, $\Delta<0$ exactly when
 $\rho_c<0$.  The welfare implications that follow are exactly those already
-discussed in the incidence section.
+discussed in the incidence section.  The magnitude of these effects, not just
+their sign, also carries economic content.  From \eqref{eq:Delta}, that
+magnitude is large when the behavioral term $r'(p)(p+h)\rho_c$ is large in
+absolute value.
 
-The displays in \eqref{eq:DWL_shocks} are local.  The global welfare change
-from a discrete shock $\Delta x$ integrates from the initial equilibrium to
-$\Delta x$,
-\[
-  \Delta W = \int_0^{\Delta x} \frac{dW}{dx}\,dx.
-\]
-Expanding the integrand around $x=0$, the first-order term is the marginal
-loss at zero times the shock size, and the second-order term is the
-returns-augmented Harberger triangle,
-\begin{equation}
-  \Delta W
-  \approx
-  \left.\frac{dW}{dx}\right|_{x=0}\Delta x
-  + \text{second-order triangle}.
-  \label{eq:DeltaW_approx}
-\end{equation}
-Let $\varepsilon_D=p D'(p)/Q$, and write $\varepsilon_\mu=\mu\,S'(\mu)/Q$ for
-the elasticity of supply with respect to effective revenue.  The observed
-list-price supply elasticity is then
-$\varepsilon_S=\varepsilon_\mu\,\mu_p\,(p/\mu)$, which reduces to the ordinary
-supply elasticity when $\mu_p=1$.  With returns, $\mu_p$ may be negative, so
-$\varepsilon_S$ may be negative and the triangle can change sign.
+When $\rho_c>0$, two distinct regimes are possible.  If $\mu_p>0$, the supply
+curve slopes upward in list-price space, so a cost increase raises $p$.
+Whenever $r'(p)>0$, that price increase raises the return rate, adds handling
+costs, and pushes $\Delta$ above one.  Whenever $r'(p)<0$, it lowers the
+return rate, partially offsets the mechanical loss, and yields $\Delta<1$.
+The welfare loss $Q\Delta$ is therefore larger when $r'(p)$ is positive and
+large, because each dollar of pass-through raises returns and wastes an
+additional $p+h$ per unit sold.
 
-For a production-cost shock $\Delta c$ (a parallel shift of effective supply),
-\begin{equation}
-  \mathrm{Triangle}_c
-  \approx
-  \tfrac12(\Delta c)^2\,
-  \frac{-\varepsilon_D\,\varepsilon_S}{\varepsilon_S-\varepsilon_D}\,
-  \frac{Q}{p}.
-  \label{eq:triangle-c}
-\end{equation}
-A handling-cost increase $\Delta h$ shifts effective supply by $r\,\Delta h$,
-so
-\begin{equation}
-  \mathrm{Triangle}_h
-  \approx
-  \tfrac12(r\,\Delta h)^2\,
-  \frac{-\varepsilon_D\,\varepsilon_S}{\varepsilon_S-\varepsilon_D}\,
-  \frac{Q}{p}
-  = r^2\,\mathrm{Triangle}_c\big|_{\Delta c=\Delta h}.
-  \label{eq:triangle-h}
-\end{equation}
-A seller-remitted tax $\tau^s$ is identical to a production-cost increase in
-$\mu$-space,
-\begin{equation}
-  \mathrm{Triangle}_{\tau^s}
-  \approx
-  \tfrac12(\tau^s)^2\,
-  \frac{-\varepsilon_D\,\varepsilon_S}{\varepsilon_S-\varepsilon_D}\,
-  \frac{Q}{p}.
-  \label{eq:triangle-taus}
-\end{equation}
-A buyer-remitted tax $\tau^b$ wedges the buyer price against the pre-tax price
-that enters effective revenue, with pass-through $\rho^b_\tau=\mu_p\rho_c$.
-Its triangle is
-\begin{equation}
-  \mathrm{Triangle}_{\tau^b}
-  \approx
-  \tfrac12(\tau^b)^2\,
-  \frac{-\varepsilon_D\,(\varepsilon_S/\mu_p)}{\varepsilon_S/\mu_p-\varepsilon_D}\,
-  \frac{Q}{p}
-  =
-  \tfrac12(\tau^b)^2\,
-  \frac{-\varepsilon_D\,\varepsilon_\mu\,(p/\mu)}{\varepsilon_\mu\,(p/\mu)-\varepsilon_D}\,
-  \frac{Q}{p},
-  \label{eq:triangle-taub}
-\end{equation}
-using $\varepsilon_S/\mu_p=\varepsilon_\mu\,(p/\mu)$.  If $\mu_p<0$, this
-triangle has the opposite sign of the seller-tax triangle.
+If instead $\mu_p<0$ (which requires $|\varepsilon_S|<-\varepsilon_D$),
+supply itself slopes downward in list-price space.  A higher $p$ lowers $\mu$
+and therefore contracts quantity supplied as well as quantity demanded.
+Pass-through remains positive because demand is more price-responsive than
+this downward-sloping supply, so a price increase still reduces excess
+demand.  The return-rate response must already be steep in this region, since
+$\mu_p<0$ requires $r'(p)(p+h)>1-r$.  Even a modest $\rho_c$ can then make
+the behavioral contribution $r'(p)(p+h)\rho_c$ large relative to the
+mechanical unit term, and thus leave $\Delta$ substantially above one.  A
+small price rise still reallocates many purchases into costly returns.
 
-Combining the first-order rectangles in \eqref{eq:DWL_shocks} with these
-second-order triangles gives the efficiency cost of each shock.  Unlike the
-classical model, the rectangle can dominate the triangle even for small
-shocks, and both components can change sign with the return-rate response.
-When $\Delta<0$, the first-order gain from a cost increase or seller tax may
-be large enough that private surplus rises even after the (possibly negative)
-triangle---a stark reversal of standard intuition.
+When $\rho_c<0$, necessarily $\Delta<0$, so cost or seller-tax increases raise
+private surplus by $Q|\Delta|$.  The gain is larger the more negative is
+$\Delta$, which occurs when $r'(p)(p+h)\,|\rho_c|$ is large.  Because
+$\rho_c<0$, the cost increase lowers the list price, which reduces the return
+rate and saves $p+h$ on each unit that switches from return to keep.  Those
+savings can exceed the direct resource cost of the shock, generating a Pareto
+improvement.  The gain is amplified when $\mu_p$ is very negative and the
+behavioral response $r'(p)$ is strong, so that a small downward price
+adjustment delivers large handling-cost savings.
+
+These cases translate directly into a comparison with the no-return
+benchmark, which predicts a first-order private-surplus loss of exactly $Q$
+for a unit production-cost or seller-tax increase.  The correct
+returns-adjusted change is $dW/dc=-Q\Delta$, so the classical rectangle
+over- or understates the true effect according to whether $\Delta$ lies below
+or above one.
+\begin{result}[Bias from ignoring returns in first-order welfare]
+\label{res:welfare-bias}
+  Consider a unit production-cost or seller-tax increase.  Relative to the
+  correct returns-adjusted change $dW/dc=-Q\Delta$, the no-return formula
+  $dW/dc=-Q$
+  \begin{enumerate}
+  \item[(i)] underestimates the welfare loss when $\rho_c>0$ and $r'(p)>0$
+  (hence $\Delta>1$);
+  \item[(ii)] overestimates the welfare loss when $\rho_c>0$ and $r'(p)<0$
+  (hence $0<\Delta<1$);
+  \item[(iii)] predicts a loss of $Q$ when $\rho_c<0$, whereas private
+  surplus in fact rises by $Q|\Delta|$.
+  \end{enumerate}
+\end{result}
+For a buyer-remitted tax the first-order change is instead
+$dW/d\tau^b=-Q\mu_p\Delta$.  Compared with the no-return benchmark $-Q$, this
+scaling by $\mu_p\Delta$ gives the following corollary.
+\begin{corollary}[Bias under buyer remittance]
+\label{cor:welfare-bias-buyer}
+  Relative to the no-return prediction $dW/d\tau=-Q$, a unit buyer-remitted
+  tax satisfies $dW/d\tau^b=-Q\mu_p\Delta$.
+  \begin{enumerate}
+  \item[(i)] If $\mu_p>0$, the no-return formula underestimates the welfare
+  loss when $\mu_p\Delta>1$ and overestimates it when $0<\mu_p\Delta<1$.
+  \item[(ii)] If $\mu_p<0$, the buyer-tax effect has the opposite sign of
+  the seller-tax effect $-Q\Delta$.  The no-return formula then predicts a
+  loss of $Q$, whereas private surplus rises by $Q\,|\mu_p|\Delta$ when
+  $\rho_c>0$ and falls by $Q\,|\mu_p\Delta|$ when $\rho_c<0$.
+  \end{enumerate}
+\end{corollary}
 
 \end{document}
