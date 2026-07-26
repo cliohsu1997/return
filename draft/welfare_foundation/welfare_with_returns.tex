@@ -717,27 +717,38 @@ Without returns, $r=0$ and $r'=0$, so \eqref{eq:DWL_incidence} reduces to
 \[
   \frac{dW}{dx} = Q\,\mu_x + \Sigma_x.
 \]
-For a unit production-cost increase, $\mu_c=0$ and $\Sigma_c=-Q$, giving
-$dW/dc=-Q$: a pure rectangle of lost surplus, as society must devote an
-additional $Q$ units of resources to produce the same output.  For a unit tax
-$\tau$ with tax revenue excluded from $W$, one likewise obtains $dW/d\tau=-Q$,
-the transfer from private agents to the government.  Adding tax revenue back,
-total surplus $V=W+\tau Q$ has a zero first-order change at $\tau=0$.  The
-inefficiency of the tax appears only at second order, giving the classic
-Harberger triangle $\Delta V\approx -\tfrac12\tau^2 Q'(0)$.  Cost shocks
-therefore generate a first-order rectangle and taxes a second-order triangle.
-The two efficiency concepts are cleanly separated.
+For a unit production-cost increase, the supply curve shifts vertically upward
+by one dollar at every quantity.  The immediate surplus loss is therefore the
+area of that shift---a rectangle of height one and width $Q$.  Algebraically,
+private surplus is $W=CS(p)+PS(p-c)$.  Differentiating, the price-change terms
+$-Q\rho_c$ and $+Q\rho_c$ cancel, leaving $dW/dc=-Q$: a pure resource drain
+that begins at once.
 
-Product returns destroy this separation.  The return-rate term in
-\eqref{eq:DWL_incidence} is generally nonzero for every shock, so cost,
-handling, and both remittance regimes of a unit tax all carry a first-order
-welfare change that is not a simple transfer.  Using
-Table~\ref{tab:incidence_components} and the pass-through links in
-Result~\ref{res:pass-through}, write
-\[
-  \Delta \equiv 1+r'(p)(p+h)\,\rho_c.
-\]
-Then
+A unit tax has the same initial impact on private surplus:
+$W=CS(p)+PS(p-\tau)$ gives $dW/d\tau=-Q$, with the same cancellation of
+price-change terms.  The difference is that the government now collects
+revenue $\tau Q$.  Adding it back, total surplus is $V=W+\tau Q$, whose
+derivative $dV/d\tau=\tau Q'(\tau)$ is zero at $\tau=0$.  Hence an
+infinitesimal tax creates no net loss; the loss appears only as the tax
+grows, accumulating quadratically as the classic Harberger triangle
+$\Delta V\approx -\tfrac12\tau^2 Q'(0)$.
+
+Without returns, cost shocks therefore produce an immediate rectangle of real
+resource loss, while taxes produce a triangle of distortionary loss that
+starts from zero.  The two are cleanly separated by whether the dollar is
+lost or merely transferred.
+
+Product returns overturn the clean dichotomy between resource drains and pure
+transfers that characterizes the textbook model.  The return-rate term in
+\eqref{eq:DWL_incidence} is generally nonzero for every shock, so
+production-cost increases, handling-cost increases, and unit taxes under both
+remittance regimes all generate first-order welfare changes that cannot be
+written as mere transfers.
+
+Plugging the values of $\mu_x$ and $\Sigma_x$ from
+Table~\ref{tab:incidence_components} into the general welfare expression
+$dW/dx=Q\bigl[\mu_x-r'(p)(p+h)\rho_x\bigr]+\Sigma_x$, and using the
+pass-through links from Result~\ref{res:pass-through}, yields
 \begin{align}
   \frac{dW}{dc}
   &= -Q\,\Delta,
@@ -749,15 +760,40 @@ Then
   &= -Q\,\Delta,
   &
   \frac{dW}{d\tau^b}
-  &= -Q\,\mu_p\,\Delta.
+  &= -Q\,\mu_p\,\Delta,
   \label{eq:DWL_shocks}
 \end{align}
-When $\Delta<0$, which coincides with negative pass-through $\rho_c<0$, a rise
-in production cost, handling cost, or a seller-remitted tax increases private
-surplus---a first-order Pareto improvement that is impossible in the no-return
-benchmark.  A buyer-remitted tax is scaled by $\mu_p$.  If additionally
-$\mu_p<0$, its first-order effect has the opposite sign of the seller-tax
-effect.
+where the common factor is defined as
+\begin{equation}
+  \Delta \equiv 1 + r'(p)(p+h)\,\rho_c.
+  \label{eq:Delta}
+\end{equation}
+The unit term in $\Delta$ is the mechanical welfare effect that would operate
+even if returns did not respond to price, while $r'(p)(p+h)\rho_c$ captures
+the additional efficiency consequence of the price-induced reallocation
+between kept and returned units---each percentage-point change in the return
+rate, $r'(p)\rho_c$, imposes a real resource cost of $p+h$ per unit sold.
+
+The sign of $\Delta$ therefore governs the direction of welfare effects for
+all shocks except the buyer-tax scaling.  To sign it, substitute the identity
+$\mu_p=1-r-r'(p)(p+h)$, which gives $\Delta=1+(1-r-\mu_p)\rho_c$.  Using the
+pass-through formula $\rho_c=S'/(S'\mu_p-D')$ with $S'>0$ and $D'<0$, this
+simplifies to
+\[
+  \Delta = \frac{S'(1-r)-D'}{S'\mu_p-D'}.
+\]
+The numerator is strictly positive because $S'(1-r)>0$ and $-D'>0$.  Hence
+$\Delta$ shares its sign with the denominator $S'\mu_p-D'$.  Since that same
+denominator determines the sign of $\rho_c$ (recall $S'>0$), we obtain
+\[
+  \Delta<0 \iff \rho_c<0.
+\]
+No additional condition is needed.  Negative pass-through already requires
+$\mu_p<0$ and $|\varepsilon_S|>-\varepsilon_D$ from
+Result~\ref{res:negative-pt}, and these same fundamentals are therefore
+necessary and sufficient for a negative $\Delta$.  The welfare implications
+that follow from this sign equivalence are exactly those already discussed in
+the incidence section, so we need not revisit them here.
 
 The displays in \eqref{eq:DWL_shocks} are local.  The global welfare change
 from a discrete shock $\Delta x$ integrates from the initial equilibrium to
