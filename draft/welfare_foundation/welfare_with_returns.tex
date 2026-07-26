@@ -690,9 +690,17 @@ arises in the no-return benchmark, where pass-through is always positive.
 
 \subsection{Deadweight loss and the returns-augmented Harberger triangle}
 
-The marginal change in private surplus $W=CS+PS$ from a small shock $x$
-follows by summing (\ref{eq:CSx_incidence}) and (\ref{eq:PSx_incidence}) and
-substituting $\mu_p=1-r-r'(p)(p+h)$,
+Private surplus is $W=CS+PS$.  Summing (\ref{eq:CSx_incidence}) and
+(\ref{eq:PSx_incidence}) gives
+\[
+  \frac{dW}{dx}
+  = -Q(1-r)\rho_x
+    + Q(\mu_p\rho_x + \mu_x)
+    + \Sigma_x
+  = Q\bigl[\mu_x + \bigl(\mu_p-(1-r)\bigr)\rho_x\bigr]
+    + \Sigma_x.
+\]
+Substituting $\mu_p=1-r-r'(p)(p+h)$ directly yields
 \begin{equation}
   \frac{dW}{dx}
   = Q\bigl[\mu_x - r'(p)(p+h)\rho_x\bigr] + \Sigma_x,
