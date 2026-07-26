@@ -550,20 +550,6 @@ occur in the classical model, where $\mu_p=1$ and supply is everywhere
 upward-sloping, highlighting
 a qualitative failure of the no-return benchmark.
 
-At first glance, it may seem puzzling why the price drop---which raises
-the effective margin ($\mu_p<0$ and $\rho_c<0$)---necessarily more than offsets
-the original one-dollar cost increase.  The key is that the price fall must do
-double duty to clear the market.  A one-dollar cost increase shifts the supply
-curve left, creating an initial excess demand gap.  To fill this gap, quantity
-supplied must increase.  Since quantity supplied increases with the
-effective margin $\mu$, restoring enough supply to cover the original gap
-already requires $\mu$ to rise by one dollar.  But the price fall also
-increases quantity demanded, creating additional excess demand on top of the
-initial gap.  To satisfy both the original supply shortfall and this new
-demand, supply must increase by more than the original shift, so the
-effective margin must rise by more than one dollar.  Thus, $\mu_p\rho_c>1$ is
-precisely the market-clearing requirement when pass-through is negative.
-
 Even when $\mu_p>0$ and pass-through stays positive, the returns-adjusted
 formula differs from the no-return case whenever $\mu_p\neq 1$.  Comparing the
 two signs the bias for an analyst who ignores returns.
@@ -579,6 +565,7 @@ probabilities by enough that aggregate $r$ falls steeply in $p$.  When instead
 the behavioral response dominates, $\varepsilon_r$ is less negative (or
 positive) and $\mu_p<1$.
 \begin{result}
+\label{res:pt-bias-er}
   Relative to the correct returns-adjusted $\rho_c$, the classical no-return
   pass-through formula overestimates pass-through when
   $\varepsilon_r(p)<-p/(p+h)$ and underestimates it otherwise.
@@ -868,51 +855,49 @@ $dW/dx=-Q\Delta$ for these shocks,
     \label{eq:DWL-decomp}
   \end{equation}
   The first term is the ex-ante loss on the purchase margin.  The second is
-  the ex-post loss on the keep-or-return margin: each unit switched from keep
-  to return costs $p+h$.  For a handling shock both terms become
-  $-Qr$ and $-Qr\,r'(p)(p+h)\rho_c$.  For a buyer-remitted tax both become
-  $-Q\mu_p$ and $-Q\mu_p\,r'(p)(p+h)\rho_c$, so the ex-ante piece is not
-  $-Q$ whenever $\mu_p\neq 1$.
+  the ex-post loss on the keep-or-return margin.  Each unit switched from keep
+  to return costs $p+h$.  For a handling shock the two losses become $-Qr$ and
+  $-Qr\,r'(p)(p+h)\rho_c$.  For a buyer-remitted tax they become $-Q\mu_p$ and
+  $-Q\mu_p\,r'(p)(p+h)\rho_c$, so the ex-ante loss is not $-Q$ whenever
+  $\mu_p\neq 1$.
 \end{result}
-When $\rho_c<0$, the list price falls and the ex-post term can dominate, so
-private surplus rises.  When $\rho_c>0$ and $r'(p)>0$, the ex-post term
-amplifies the loss and $-Q$ understates it.
+Because consumer and producer surplus always move together, $\Delta$ has the
+same sign as $\rho_c$.  The no-return formula retains only the ex-ante
+rectangle $-Q$ and omits the ex-post loss $-Q\,r'(p)(p+h)\rho_c$, so the
+comparison with that rectangle is governed by the size and sign of the
+ex-post term.
 
-The magnitude of $\Delta$ is large when $|r'(p)(p+h)\rho_c|$ is large.  When
-$\rho_c>0$, two regimes are possible.  If $\mu_p>0$, supply slopes upward in
-list-price space, so a cost increase raises $p$.  Whenever $r'(p)>0$, that
-price increase raises the return rate and pushes $\Delta$ above one.  Whenever
-$r'(p)<0$, it lowers the return rate, partially offsets the ex-ante loss, and
-yields $\Delta<1$.  The welfare loss $Q\Delta$ is therefore larger when
-$r'(p)$ is positive and large, because each dollar of pass-through raises
-returns and wastes an additional $p+h$ per unit sold.
+When $\rho_c>0$, two regimes are possible.  If $\mu_p>0$, supply slopes
+upward in list-price space, so a cost increase raises $p$.  Whenever
+$r'(p)>0$, that price increase raises the return rate, adds handling costs,
+and makes the ex-post loss amplify the ex-ante rectangle, so $\Delta>1$.
+Whenever $r'(p)<0$, the return rate falls and the ex-post term partially
+offsets the ex-ante loss, yielding $0<\Delta<1$.  The welfare loss $Q\Delta$
+is larger when $r'(p)$ is positive and large or when $h$ is large, because
+each dollar of pass-through raises returns and wastes an additional $p+h$
+per unit sold.
 
-If instead $\mu_p<0$ (which requires $|\varepsilon_S|<-\varepsilon_D$),
-supply itself slopes downward in list-price space.  A higher $p$ lowers $\mu$
-and therefore contracts quantity supplied as well as quantity demanded.
-Pass-through remains positive because demand is more price-responsive than
-this downward-sloping supply, so a price increase still reduces excess
-demand.  The return-rate response must already be steep in this region, since
-$\mu_p<0$ requires $r'(p)(p+h)>1-r$.  Even a modest $\rho_c$ can then make
-the ex-post term large relative to the ex-ante unit term, and thus leave
+If instead $\rho_c>0$ and $\mu_p<0$ (so $|\varepsilon_S|<-\varepsilon_D$),
+supply slopes downward in list-price space.  A higher $p$ lowers $\mu$ and
+contracts both quantity supplied and quantity demanded, yet pass-through
+remains positive because demand is more price-responsive than this
+downward-sloping supply.  The return-rate response must already be steep,
+since $\mu_p<0$ requires $r'(p)(p+h)>1-r$.  Even a modest $\rho_c$ can then
+make the ex-post loss large relative to the ex-ante rectangle, leaving
 $\Delta$ substantially above one.
 
-When $\rho_c<0$, necessarily $\Delta<0$, so cost or seller-tax increases raise
-private surplus by $Q|\Delta|$.  The gain is larger the more negative is
-$\Delta$, which occurs when $r'(p)(p+h)\,|\rho_c|$ is large.  Because
-$\rho_c<0$, the cost increase lowers the list price, which reduces the return
-rate and saves $p+h$ on each unit that switches from return to keep.  Those
-savings can exceed the direct resource cost of the shock, generating a Pareto
-improvement.  The gain is amplified when $\mu_p$ is very negative and
-$r'(p)$ is strong, so that a small downward price adjustment delivers large
-handling-cost savings.
+When $\rho_c<0$, pass-through is negative.  A production-cost or seller-tax
+increase then lowers the list price.  That fall in $p$ reduces the return
+rate, so units that would have been returned are instead kept.  Each such
+switch saves $p+h$, and the ex-post term turns into a gain.  Those savings
+can exceed the ex-ante resource cost of the shock, so private surplus rises
+by $Q|\Delta|$ and a Pareto improvement is possible.  The ex-post gain is
+larger when $r'(p)(p+h)\,|\rho_c|$ is large.
 
-A similar discussion translates into a comparison with the no-return
-benchmark, which predicts a first-order private-surplus loss of exactly $Q$
-for a unit production-cost or seller-tax increase.  The correct
-returns-adjusted change is $dW/dc=-Q\Delta$, so the classical rectangle
-over- or understates the true effect according to whether $\Delta$ lies below
-or above one.
+Relative to the no-return benchmark that keeps only the ex-ante rectangle,
+the true change $-Q\Delta$ under- or overstates according to whether the
+omitted ex-post term adds to or offsets that rectangle, and predicts a loss
+when surplus in fact rises if and only if the ex-post gain dominates.
 \begin{result}[Bias from ignoring returns in first-order welfare]
 \label{res:welfare-bias}
   Consider a unit production-cost or seller-tax increase.  Relative to the
@@ -927,24 +912,51 @@ or above one.
   and only if $\rho_c<0$, in which case the rise is $Q|\Delta|$.
   \end{enumerate}
 \end{result}
-For a buyer-remitted tax the first-order change is instead
-$dW/d\tau^b=-Q\mu_p\Delta$.  Compared with the no-return benchmark $-Q$, this
-scaling by $\mu_p\Delta$ gives the following corollary.
+For production-cost and seller-tax shocks that bias is purely ex-post.  The
+no-return formula counts the ex-ante rectangle correctly and errs only by
+omitting the keep-or-return term.  Under buyer remittance both margins are
+scaled by $\mu_p$,
+\begin{equation}
+  \frac{dW}{d\tau^b}
+  =-Q\mu_p
+  -Q\mu_p\,r'(p)(p+h)\rho_c
+  =-Q\mu_p\Delta,
+\end{equation}
+so relative to $-Q$ the bias is both ex-ante ($-Q\mu_p$ vs $-Q$) and
+ex-post (the omitted keep-or-return term, also scaled by $\mu_p$),
+interacting through $\mu_p\Delta$.  When $\mu_p>0$, the no-return formula underestimates the ex-ante loss if and
+only if $\mu_p>1$, and overestimates it otherwise.  That cut is the same
+threshold as Result~\ref{res:pt-bias-er}: $\mu_p>1$ if and only if
+$\varepsilon_r(p)<-p/(p+h)$.  Whenever the classical formula overestimates
+pass-through, it therefore underestimates the ex-ante loss, and whenever it
+underestimates pass-through it overestimates that loss.
+
+For the ex-post piece, as in Result~\ref{res:welfare-bias}(ii), $r'(p)<0$
+pins the term as a gain.  Selection improves the composition of buyers, so a
+higher list price lowers the return rate and raises the effective margin more
+steeply: $\mu_p>0$ and hence $\rho_c>0$.  When $r'(p)>0$, the sign of the
+ex-post term depends on $\rho_c$ and has no succinct formula.  The corollary
+below records when the joint effect $\mu_p\Delta$ under- or overstates
+relative to $-Q$.
 \begin{corollary}[Bias under buyer remittance]
 \label{cor:welfare-bias-buyer}
   Relative to the no-return prediction $dW/d\tau=-Q$, a unit buyer-remitted
-  tax satisfies $dW/d\tau^b=-Q\mu_p\Delta$.
+  tax has true change $-Q\mu_p\Delta$.
   \begin{enumerate}
   \item[(i)] If $\mu_p>0$ (which implies $\rho_c>0$ and hence $\Delta>0$),
-  the no-return formula underestimates the welfare loss if and only if
+  both components keep the seller-remittance signs but scale with $\mu_p$.
+  The no-return formula underestimates the welfare loss if and only if
   $\mu_p\Delta>1$ and overestimates it if and only if $0<\mu_p\Delta<1$.
-  \item[(ii)] If $\mu_p<0$, the no-return formula predicts a loss of $Q$,
+  \item[(ii)] If $\mu_p<0$, the ex-ante piece flips relative to $-Q$ and the
+  ex-post piece flips with it.  The no-return formula predicts a loss of $Q$,
   whereas private surplus rises by $Q\,|\mu_p|\Delta$ if and only if
   $\rho_c>0$ and falls by $Q\,|\mu_p\Delta|$ if and only if $\rho_c<0$.
   \end{enumerate}
 \end{corollary}
-Appendix~\ref{app:welfare-bias-primitives} restates these cases in return and
-supply primitives---the form most useful for empirical checks.
+Appendix~\ref{app:welfare-bias-primitives} restates these cases in the
+return-rate elasticity $\varepsilon_r(p)$ and the observed supply and demand
+elasticities $\varepsilon_S(p)$ and $\varepsilon_D(p)$---the form most useful
+for empirical checks.
 
 \input{appendix_welfare_bias_primitives}
 
