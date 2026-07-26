@@ -814,7 +814,7 @@ improvement.  The gain is amplified when $\mu_p$ is very negative and the
 behavioral response $r'(p)$ is strong, so that a small downward price
 adjustment delivers large handling-cost savings.
 
-These cases translate directly into a comparison with the no-return
+A similar discussion translates into a comparison with the no-return
 benchmark, which predicts a first-order private-surplus loss of exactly $Q$
 for a unit production-cost or seller-tax increase.  The correct
 returns-adjusted change is $dW/dc=-Q\Delta$, so the classical rectangle
@@ -826,12 +826,12 @@ or above one.
   correct returns-adjusted change $dW/dc=-Q\Delta$, the no-return formula
   $dW/dc=-Q$
   \begin{enumerate}
-  \item[(i)] underestimates the welfare loss when $\rho_c>0$ and $r'(p)>0$
-  (hence $\Delta>1$);
-  \item[(ii)] overestimates the welfare loss when $\rho_c>0$ and $r'(p)<0$
-  (hence $0<\Delta<1$);
-  \item[(iii)] predicts a loss of $Q$ when $\rho_c<0$, whereas private
-  surplus in fact rises by $Q|\Delta|$.
+  \item[(i)] underestimates the welfare loss if and only if $\rho_c>0$ and
+  $r'(p)>0$ (hence $\Delta>1$);
+  \item[(ii)] overestimates the welfare loss if and only if $r'(p)<0$
+  (which implies $\mu_p>0$ and hence $\rho_c>0$, so $0<\Delta<1$);
+  \item[(iii)] predicts a loss of $Q$ when private surplus in fact rises if
+  and only if $\rho_c<0$, in which case the rise is $Q|\Delta|$.
   \end{enumerate}
 \end{result}
 For a buyer-remitted tax the first-order change is instead
@@ -842,13 +842,17 @@ scaling by $\mu_p\Delta$ gives the following corollary.
   Relative to the no-return prediction $dW/d\tau=-Q$, a unit buyer-remitted
   tax satisfies $dW/d\tau^b=-Q\mu_p\Delta$.
   \begin{enumerate}
-  \item[(i)] If $\mu_p>0$, the no-return formula underestimates the welfare
-  loss when $\mu_p\Delta>1$ and overestimates it when $0<\mu_p\Delta<1$.
-  \item[(ii)] If $\mu_p<0$, the buyer-tax effect has the opposite sign of
-  the seller-tax effect $-Q\Delta$.  The no-return formula then predicts a
-  loss of $Q$, whereas private surplus rises by $Q\,|\mu_p|\Delta$ when
-  $\rho_c>0$ and falls by $Q\,|\mu_p\Delta|$ when $\rho_c<0$.
+  \item[(i)] If $\mu_p>0$ (which implies $\rho_c>0$ and hence $\Delta>0$),
+  the no-return formula underestimates the welfare loss if and only if
+  $\mu_p\Delta>1$ and overestimates it if and only if $0<\mu_p\Delta<1$.
+  \item[(ii)] If $\mu_p<0$, the no-return formula predicts a loss of $Q$,
+  whereas private surplus rises by $Q\,|\mu_p|\Delta$ if and only if
+  $\rho_c>0$ and falls by $Q\,|\mu_p\Delta|$ if and only if $\rho_c<0$.
   \end{enumerate}
 \end{corollary}
+Appendix~\ref{app:welfare-bias-primitives} restates these cases in return and
+supply primitives---the form most useful for empirical checks.
+
+\input{appendix_welfare_bias_primitives}
 
 \end{document}

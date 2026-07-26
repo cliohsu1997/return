@@ -1,0 +1,76 @@
+\clearpage
+\appendix
+\section{Welfare bias in primitives}
+\label{app:welfare-bias-primitives}
+Recall $\varepsilon_r(p)\equiv p\,r'(p)/r(p)$ and
+$\mu_p=1-r(p)-r'(p)(p+h)$.  Then
+$r'(p)(p+h)=\varepsilon_r(p)\,r(p)\,(p+h)/p$, so
+\begin{equation}
+  \mu_p>0
+  \;\iff\;
+  \varepsilon_r(p)
+  <
+  \frac{p}{p+h}\,\frac{1-r(p)}{r(p)},
+  \label{eq:app-mu-er}
+\end{equation}
+$\mu_p<0$ is the reverse strict inequality, and $\varepsilon_r$ has the same
+sign as $r'$ (throughout, $r(p)\in(0,1)$).
+
+Result~\ref{res:welfare-bias} becomes:
+\begin{enumerate}
+\item[(i)] underestimation iff $\varepsilon_r(p)>0$ and either $\mu_p>0$,
+or both $\mu_p<0$ and $|\varepsilon_S|\le -\varepsilon_D$;
+\item[(ii)] overestimation iff $\varepsilon_r(p)<0$;
+\item[(iii)] wrong sign (predicted loss, actual gain) iff $\mu_p<0$ and
+$|\varepsilon_S|>-\varepsilon_D$.
+\end{enumerate}
+\begin{proof}
+By Result~\ref{res:welfare-bias}, underestimation is $\rho_c>0$ with
+$r'>0$, overestimation is $r'<0$, and the wrong-sign case is $\rho_c<0$.
+Since $\varepsilon_r$ has the same sign as $r'$, write these in
+$\varepsilon_r$.  Result~\ref{res:negative-pt} translates the sign of
+$\rho_c$ into conditions on $\mu_p$ and $|\varepsilon_S|\gtrless -\varepsilon_D$:
+with $\varepsilon_r>0$ this is~(i), and $\rho_c<0$ is~(iii).
+For~(ii), $\varepsilon_r<0$ forces $\mu_p>1-r>0$ and hence $\rho_c>0$, so
+$0<\Delta<1$.
+\end{proof}
+Corollary~\ref{cor:welfare-bias-buyer} becomes:
+\begin{enumerate}
+\item[(i)] If $\mu_p>0$, underestimation iff
+$\displaystyle\frac{\varepsilon_S-\varepsilon_D}{\varepsilon_D}
+>\varepsilon_r(p)\frac{p+h}{p}$,
+and overestimation iff
+$\displaystyle\frac{\varepsilon_S-\varepsilon_D}{\varepsilon_D}
+<\varepsilon_r(p)\frac{p+h}{p}$;
+\item[(ii)] If $\mu_p<0$, surplus rises iff
+$|\varepsilon_S|\le -\varepsilon_D$ and falls iff
+$|\varepsilon_S|>-\varepsilon_D$.
+\end{enumerate}
+\begin{proof}
+Under $\mu_p>0$ we have $\varepsilon_S>0$, so
+$\varepsilon_S-\varepsilon_D>0$, and also $\rho_c>0$, $\Delta>0$.  Write
+$\mu_p=1-r(p)-r'(p)(p+h)$ and $\Delta=1+r'(p)(p+h)\rho_c$.  Using
+$\mu_p\rho_c=\varepsilon_S/(\varepsilon_S-\varepsilon_D)$,
+\begin{align*}
+  \mu_p\Delta-1
+  &=\mu_p\bigl(1+r'(p)(p+h)\rho_c\bigr)-1
+  \\
+  &=\mu_p-1+r'(p)(p+h)\,(\mu_p\rho_c)
+  \\
+  &=-r(p)-r'(p)(p+h)
+    +r'(p)(p+h)\,\frac{\varepsilon_S}{\varepsilon_S-\varepsilon_D}
+  \\
+  &=-r(p)+r'(p)(p+h)\,\frac{\varepsilon_D}{\varepsilon_S-\varepsilon_D}
+  \\
+  &=-r(p)\Biggl(1-\varepsilon_r(p)\,\frac{p+h}{p}\,
+       \frac{\varepsilon_D}{\varepsilon_S-\varepsilon_D}\Biggr).
+\end{align*}
+Hence $\mu_p\Delta>1$ iff
+$\varepsilon_r(p)\frac{p+h}{p}\frac{\varepsilon_D}{\varepsilon_S-\varepsilon_D}>1$.
+Since $\varepsilon_D/(\varepsilon_S-\varepsilon_D)<0$, multiplying through
+reverses the inequality and yields the underestimation cut in~(i).  The
+overestimation cut is the reverse; under $\mu_p>0$ and $\Delta>0$ it is
+exactly $0<\mu_p\Delta<1$.  Part~(ii): under $\mu_p<0$, surplus rises iff
+$\rho_c>0$ and falls iff $\rho_c<0$, which is Result~\ref{res:negative-pt}.
+Regions may be read in $\varepsilon_r$ via~\eqref{eq:app-mu-er}.
+\end{proof}
