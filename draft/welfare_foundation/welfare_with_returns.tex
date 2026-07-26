@@ -462,10 +462,10 @@ and $\varepsilon_D$.  This opens the door to the counterintuitive outcome that
 an increase in marginal cost reduces the equilibrium price.
 \begin{result}[Negative pass-through]
 \label{res:negative-pt}
-  Suppose $\mu_p<0$, so that $\varepsilon_S<0$.  If, in addition,
-  $|\varepsilon_S|>-\varepsilon_D$, then $\rho_c<0$.
+  We have $\rho_c<0$ if and only if $\varepsilon_S<0$ and
+  $|\varepsilon_S|>-\varepsilon_D$.
 \end{result}
-The logic is as follows.  With $\mu_p<0$, a higher list price lowers the
+The logic is as follows.  With $\varepsilon_S<0$ ($\mu_p<0$), a higher list price lowers the
 quantity firms supply, so a leftward shift of supply---caused by a rise in
 $c$---creates excess demand at the initial $p$.  Raising the price to eliminate
 the excess would further contract supply and worsen the imbalance; instead,
@@ -548,7 +548,9 @@ The local incidence ratio is $I_x \equiv (dCS/dx)/(dPS/dx)$, so
   I_x = \frac{-Q(1-r)\rho_x}{Q(\mu_p \rho_x + \mu_x) + \Sigma_x}.
 \]
 The components needed to evaluate $I_x$ for each shock are reported in
-Table~\ref{tab:incidence_components}.
+Table~\ref{tab:incidence_components}.  Across the four shocks the last column
+collapses to the same expression in $\rho_c$ and $\mu_p$: the shock-specific
+pass-through and direct effects cancel in the ratio.
 
 \begin{table}[htbp]
 \centering
@@ -575,21 +577,20 @@ For all four shocks, the local incidence ratio is identical:
 \end{equation}
 \end{result}
 
-The denominator $1-\mu_p\rho_c$ is the per-unit loss borne by producers.  A
-\$1 cost shock initially costs firms $Q$.  The equilibrium list price rises by
-$\rho_c$, which raises the effective marginal revenue per unit by
-$\mu_p\rho_c$.  Because the envelope theorem implies $dPS/d\mu=Q$---each
-dollar increase in the effective margin increases aggregate producer surplus
-by equilibrium output $Q$---this price recovery adds $Q\mu_p\rho_c$ back to
-producer surplus.  The net loss is therefore $Q(1-\mu_p\rho_c)$.  The
-recovery term decomposes as
-$\mu_p\rho_c=\rho_c-r\rho_c-r'(p)(p+h)\rho_c$: the gross price gain, net of
-the mechanical refund drag and the change in expected return costs.  The
-numerator $(1-r)\rho_c$ is the analogous per-unit consumer loss on kept
-units.  The incidence ratio thus compares these two per-unit burdens: a
-small denominator implies consumers bear almost the entire shock, while a
-negative denominator---when $\mu_p\rho_c>1$---means producers actually gain
-from a cost increase, a reversal unique to the return margin.
+The denominator $1-\mu_p\rho_c$ is the per-unit loss in producer surplus.  A
+\$1 cost shock initially reduces producer surplus by $Q$.  The equilibrium
+list-price rise $\rho_c$ increases effective marginal revenue per unit by
+$\mu_p\rho_c$.  Because $dPS/d\mu=Q$ by the envelope theorem, this marginal
+gain translates into a total recovery of $Q\mu_p\rho_c$ in producer surplus.
+The net loss is therefore $Q(1-\mu_p\rho_c)$.  The numerator $(1-r)\rho_c$ is
+the corresponding per-unit consumer loss on kept units.  The incidence ratio
+compares these two per-unit burdens.  A small denominator leaves consumers
+bearing almost the entire shock, while a negative denominator, $\mu_p\rho_c>1$,
+means the recovery exceeds the cost, so producers are net gainers.  This
+recovery factor can be written as
+$\mu_p\rho_c=\varepsilon^S/(\varepsilon^S-\varepsilon^D)$.  The condition
+$\mu_p\rho_c>1$ therefore requires $\varepsilon^S<0$ and
+$|\varepsilon^S|>-\varepsilon^D$.
 
 Summing (\ref{eq:CSx_incidence}) and (\ref{eq:PSx_incidence}) and substituting
 $\mu_p = 1 - r - r'(p)(p+h)$ gives the marginal deadweight loss:
