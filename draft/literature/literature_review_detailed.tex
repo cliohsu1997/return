@@ -1,0 +1,119 @@
+\documentclass[11pt]{article}
+
+\usepackage{amsmath,amssymb}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\usepackage[round,authoryear]{natbib}
+
+\title{Literature Review Detailed:\\
+Key Results and Intuition}
+\author{Draft notes}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\noindent
+This note records, paper by paper, the key results and the intuition behind
+them.  It is more detailed than the positioning note
+(\texttt{literature\_view}).
+
+%=============================================================================
+\section{Public finance and deadweight loss}
+%=============================================================================
+
+\subsection{The Measurement of Waste (Harberger, 1964)}
+
+\citet{harberger_measurement_1964} develops a linearized framework for measuring
+aggregate efficiency losses from taxes and related price distortions.  The paper
+emphasizes six results.
+
+\begin{itemize}
+    \item \textbf{Measuring deadweight loss ($\Delta W$) as a policy tool}
+    \begin{itemize}
+        \item \textbf{Key result:} Deadweight loss can be calculated with a
+        linearized aggregate framework that measures efficiency changes across
+        distorted markets:
+        \[
+        \Delta W = \frac{1}{2} \sum_{i} \sum_{j} R_{ij} T_i T_j.
+        \]
+        \item \textbf{Intuition:} Rather than only asking whether an allocation
+        is Pareto optimal, policymakers need a quantitative measure of
+        efficiency loss to weigh tax reforms, tariffs, and other real-world
+        trade-offs.
+    \end{itemize}
+
+    \item \textbf{Neutrality of uniform value-added taxes}
+    \begin{itemize}
+        \item \textbf{Key result:} An equal percentage tax on value added across
+        all productive activities yields zero net efficiency loss:
+        \[
+        \sum_{j} v_j R_{ij} = 0
+        \implies
+        \Delta W = 0
+        \quad\text{when } t_i = t \text{ for all } i.
+        \]
+        \item \textbf{Intuition:} Uniform value-added taxation leaves relative
+        price ratios across activities unchanged, so it does not induce
+        distortionary factor substitution.
+    \end{itemize}
+
+    \item \textbf{Equivalence of product taxes and value-added taxes}
+    \begin{itemize}
+        \item \textbf{Key result:} Product taxes can be translated into
+        equivalent taxes on value added when intermediate inputs enter output
+        in fixed proportions.
+        \item \textbf{Intuition:} Taxing final output creates the same
+        behavioral incentives and equilibrium as taxing all factor inputs
+        (labor, capital, materials) at the same effective rate.
+    \end{itemize}
+
+    \item \textbf{Cross-tax distortions and welfare-improving tax increases}
+    \begin{itemize}
+        \item \textbf{Key result:} Introducing or raising a tax on a good can
+        raise total social welfare if that good is a substitute for another
+        already heavily taxed good:
+        \[
+        \frac{\partial (\Delta W)}{\partial T_k} > 0
+        \quad\text{when } T_j > 0 \text{ and } R_{kj} > 0.
+        \]
+        \item \textbf{Intuition:} If Good~$A$ is heavily taxed, consumers
+        substitute toward Good~$B$.  Taxing Good~$B$ shifts demand back toward
+        Good~$A$, reducing the preexisting distortion in Sector~$A$ by enough
+        to offset the new distortion in Sector~$B$.
+    \end{itemize}
+
+    \item \textbf{Distortion of the labor--leisure choice}
+    \begin{itemize}
+        \item \textbf{Key result:} A uniform tax on all market labor is
+        non-neutral unless leisure (non-market activity) can also be taxed:
+        \[
+        \sum_{j=1}^{n+1} M_{ji} = 0.
+        \]
+        \item \textbf{Intuition:} Leisure is hard to tax.  Taxing all market
+        labor therefore induces substitution into untaxed leisure and creates
+        an efficiency loss in labor supply.
+    \end{itemize}
+
+    \item \textbf{Capital--labor cross-factor interaction effects}
+    \begin{itemize}
+        \item \textbf{Key result:} When taxes distort both capital ($B_i$) and
+        labor ($E_i$), cross-factor interaction terms
+        ($H_{ij}=\partial K_i/\partial E_j$) must be included to measure total
+        efficiency loss:
+        \[
+        \Delta W
+        = \frac{1}{2}\sum_{i}\sum_{j} M_{ij} E_i E_j
+        + \frac{1}{2}\sum_{i}\sum_{j} G_{ij} B_i B_j
+        + \sum_{i}\sum_{j} H_{ij} B_i E_j.
+        \]
+        \item \textbf{Intuition:} A tax on capital in one industry reallocates
+        both capital and labor across sectors.  Ignoring how labor responds to
+        capital taxation (and vice versa) misstates total efficiency loss.
+    \end{itemize}
+\end{itemize}
+
+\bibliographystyle{plainnat}
+\bibliography{references}
+
+\end{document}
