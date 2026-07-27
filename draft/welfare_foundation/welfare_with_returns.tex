@@ -4,6 +4,7 @@
 \usepackage{amsthm}
 \usepackage[margin=1in]{geometry}
 \usepackage{hyperref}
+\usepackage[round,authoryear]{natbib}
 
 \newtheorem{result}{Result}
 \newtheorem{corollary}{Corollary}
@@ -328,7 +329,7 @@ $PS=\int_0^{\mu(p,h)}S(z)\,dz$.
 
 With firms responding to the effective margin rather than the list price, a
 natural question is whether the classical result---that it does not matter
-which party remits a unit tax---survives.  Weyl and Fabinger (2013)
+which party remits a unit tax---survives.  \citet{weyl2013pass}
 establish this neutrality without returns.  With returns, the refund amount
 depends on the checkout price, and the answer is regime-dependent.  To see
 the contrast, write the two clearing conditions at a common checkout price
@@ -789,6 +790,7 @@ revenue $\tau Q$.  Adding it back, total surplus is $V=W+\tau Q$, whose
 derivative $dV/d\tau=\tau Q'(\tau)$ is zero at $\tau=0$.  Hence an
 infinitesimal tax creates no net loss; the loss appears only as the tax
 grows, accumulating quadratically as the classic Harberger triangle
+\citep{harberger1964taxation},
 $\Delta V\approx -\tfrac12\tau^2 Q'(0)$.
 
 Without returns, cost shocks therefore produce an immediate rectangle of real
@@ -979,5 +981,8 @@ elasticities $\varepsilon_S(p)$ and $\varepsilon_D(p)$---the form most useful
 for empirical checks.
 
 \input{appendix_welfare_bias_primitives}
+
+\bibliographystyle{plainnat}
+\bibliography{references}
 
 \end{document}
