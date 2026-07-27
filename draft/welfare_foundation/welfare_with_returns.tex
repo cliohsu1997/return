@@ -41,7 +41,7 @@ changes conclusions.
 
 Even with a return margin, surplus continues to rest on a small set of market
 aggregates.  What changes is which aggregates matter and at which prices they
-are evaluated.  Consumer surplus depends only on two aggregates, gross demand
+are evaluated.  Consumer surplus depends on only two aggregates: gross demand
 and the return rate.  Heterogeneity in tastes, match values, and return costs
 enters welfare solely through these aggregates.  Producer surplus retains the
 usual geometry---area to the left of the supply curve---but is evaluated at
@@ -49,16 +49,13 @@ the effective margin, list price minus expected refunds and handling, rather
 than at list price.
 
 Because consumers pay the list price while firms respond to the effective
-margin, pass-through from cost shocks into list prices is governed by how
-that margin moves with the list price.  The response of the effective margin
-to the list price reflects two forces.  First, a higher price directly raises
-revenue on kept units.  Second, the return rate itself may change with price,
-which alters the expected refund and handling costs the seller incurs.
-Whether the return rate rises or falls depends on a behavioral
-channel---higher prices make consumers more likely to return---and a
-selection channel---price changes alter the composition of buyers.  When the
-behavioral channel dominates, a higher list price actually lowers the
-effective margin, making supply slope downward in the list price.
+margin, how that margin moves with the list price governs pass-through from
+cost shocks into list prices.  The response of the effective margin to the
+list price reflects two forces.  First, a higher price directly raises
+revenue on kept units.  Second, the return rate itself may change with price.
+When the behavioral channel dominates---consumers become more likely to return
+as price rises---the effective margin can actually fall with the list price.
+This creates a downward-sloping supply curve in list-price space.
 
 A related departure concerns tax remittance.  In the standard model, it does
 not matter which party remits a tax.  With returns, this neutrality fails
@@ -74,10 +71,10 @@ We show that pass-through of a one-dollar production-cost shock equals that
 of a seller-remitted unit tax, but differs under buyer remittance.  The ratio
 of handling to production-cost pass-through equals the aggregate return rate.
 When the behavioral response of returns to price is strong enough that the
-effective margin falls in list price, buyer- and seller-remitted pass-through
-carry opposite signs, a sharp reversal of the classical tax-neutrality
-intuition.  Which regime yields a negative pass-through depends on the
-relative magnitudes of the supply and demand elasticities.  Intuitively,
+effective margin falls in the list price, buyer- and seller-remitted
+pass-through carry opposite signs.  This is a sharp reversal of the classical
+tax-neutrality intuition.  Which regime yields a negative pass-through depends
+on the relative magnitudes of the supply and demand elasticities.  Intuitively,
 negative pass-through arises when the list-price supply curve slopes
 downward---a higher price lowers the effective margin and hence quantity
 supplied---and more steeply than demand.  In this region, a cost increase
@@ -101,9 +98,10 @@ precisely when pass-through is negative.
 
 These welfare effects also reshape first-order changes in total private
 surplus.  We decompose the change from a cost or tax increase into an
-ex-ante loss on the purchase margin and an ex-post loss on the keep-or-return
-margin.  For a production-cost or seller-tax shock, the ex-ante loss is the
-classical rectangle from fewer units sold.  The ex-post loss captures how the
+ex-ante piece on the purchase margin and an ex-post piece on the
+keep-or-return margin.  For a production-cost or seller-tax shock, the
+ex-ante piece is the classical rectangle from fewer units sold.  The
+ex-post piece captures how the
 price change reallocates units between kept and returned states, with each
 additional return wasting the list price plus handling cost.  Without returns, private surplus falls by exactly the market quantity.
 With returns, that fall is joined by an ex-post adjustment that the
@@ -137,68 +135,73 @@ impossible.
 \section{Setting}
 %=============================================================================
 
-We begin with the market primitives: purchase and return behavior on the
-consumer side, and competitive supply with return handling on the firm side.
-A homogeneous product is sold at list price $p$.  Consumers indexed by $i$
-differ in return hassle $\kappa_i$, the disutility from returning the product,
-and in match distribution $G_i$ over post-purchase match quality $u$.  After
-purchase, type $i$ draws $u\sim G_i$ and keeps the item whenever
-$u-p\geq -\kappa_i$, earning surplus $u-p$, and returns it otherwise, earning
+A homogeneous product sells at list price $p$.  Consumers indexed by $i$ differ
+in return hassle $\kappa_i$, the disutility of sending the good back, and in
+the post-purchase match distribution $G_i$ over match quality $u$.  After
+buying, type $i$ draws $u\sim G_i$ and keeps the item when
+$u-p\geq -\kappa_i$, earning $u-p$, and returns it otherwise, earning
 $-\kappa_i$.
 
-Buying at price $p$ yields expected surplus
+Expected surplus from buying at price $p$ is therefore
 \[
   cs_i(p)=\mathbb{E}_{u\sim G_i}\bigl[\max(u-p,\,-\kappa_i)\bigr].
 \]
-On the purchase margin, all consumer-side heterogeneity is summarized by
-willingness to pay $v_i$, defined by $cs_i(v_i)=0$, so type $i$ buys if and
-only if $p\leq v_i$.  Across types, willingness to pay has distribution
-$F(v)=\Pr(v_i\leq v)$ with density $f$, so gross demand is $D(p)=1-F(p)$.
-Of the units sold at price $p$, a share $r(p)$ are returned.
+On the purchase margin, all of this consumer-side heterogeneity collapses into
+willingness to pay $v_i$, defined by $cs_i(v_i)=0$: type $i$ buys if and only
+if $p\leq v_i$.  Across types, $v_i$ has distribution $F$ with density $f$, so
+gross demand is $D(p)=1-F(p)$.  Of the units sold at $p$, a share $r(p)$ are
+returned.
 
-To understand how $r(p)$ changes with price, write type $i$'s return
-probability as $\rho_i(p)=\Pr(u<p-\kappa_i)$.  Willingness to pay is
-sufficient for purchase but not for returns: types with the same $v_i$ may
-still differ in $(\kappa_i,G_i)$.  Averaging within WTP cells,
+How $r(p)$ responds to price is central for what follows, so we unpack its
+derivative.  Type $i$'s return probability is
 \[
-  \rho(v,p)\equiv\mathbb{E}\bigl[\rho_i(p)\bigm|v_i=v\bigr],
+  \phi_i(p)=\Pr(u<p-\kappa_i).
 \]
-so the aggregate return rate is the truncated mean
+Willingness to pay settles who buys, but not who returns: buyers with the same
+$v_i$ may still differ in $\kappa_i$ and $G_i$.  Averaging within WTP cells
+gives
 \[
-  r(p)=\mathbb{E}\bigl[\rho(v_i,p)\bigm|v_i\geq p\bigr].
+  \phi(v,p)\equiv\mathbb{E}\bigl[\phi_i(p)\bigm|v_i=v\bigr],
 \]
-Differentiating yields
+which depends on $v$ whenever the joint distribution of $(\kappa_i,G_i)$ varies
+across valuation levels.  The aggregate return rate is the mean of these cell
+averages among those who buy at $p$,
+\[
+  r(p)=\frac{1}{D(p)}\int_p^\infty \phi(v,p)\,dF(v).
+\]
+Differentiating and using $D'(p)=-f(p)$ splits the response into two terms,
 \[
   r'(p)
-  =\mathbb{E}\bigl[\partial\rho(v_i,p)/\partial p\bigm|v_i\geq p\bigr]
-  +\frac{f(p)}{D(p)}\bigl(r(p)-\rho(p,p)\bigr),
+  =
+  \underbrace{
+    \frac{1}{D(p)}\int_p^\infty \frac{\partial \phi(v,p)}{\partial p}\,dF(v)
+  }_{\text{Behavioral channel}}
+  +
+  \underbrace{
+    \frac{f(p)}{D(p)}\bigl(r(p)-\phi(p,p)\bigr)
+  }_{\text{Selection channel}},
 \]
-where $\rho(p,p)$ is the average return probability among types at the
-purchase margin $v_i=p$.\footnote{With $\rho(v,p)$ as defined in the text,
-$r(p)=D(p)^{-1}\int_p^\infty \rho(v,p)\,dF(v)$.  Differentiating and using
-$D'(p)=-f(p)$ gives
-\[
-  r'(p)
-  =D(p)^{-1}\int_p^\infty \partial\rho(v,p)/\partial p\,dF(v)
-  +\frac{f(p)}{D(p)}\bigl(r(p)-\rho(p,p)\bigr),
-\]
-which is the display in the text.}  The first term is behavioral: a
-higher keep threshold raises return probabilities among those who still buy.
-The second is selection: a higher price drops cutoff types at the purchase
-margin, and that term would be negative if those cutoff types return more than
-the average purchaser.\footnote{Selection need not be negative for arbitrary
-$(\kappa_i,G_i)$.  It is signed under an additive match specification
-$u=v_i+\varepsilon$ with shock $\varepsilon$ of any distribution independent
-of willingness to pay, and with return hassle likewise independent of $v$:
-then $\rho(v,p)$ decreases in $v$, so $\rho(p,p)\geq r(p)$ and the selection
-term is non-positive.}  Behavioral and selection effects can therefore pull
-in opposite directions, and we do not impose a sign on $r'(p)$.
+where $\phi(p,p)$ is the average return probability among types at the
+purchase margin $v_i=p$.
 
-The product market is perfectly competitive.  Producer $j$ takes $p$ as given,
-chooses output at cost $C_j(q_j)$, and incurs a net return handling cost $h$ on
-each returned unit, equal to gross handling cost minus the scrap value of the
-returned product.  This net cost may be negative, but we maintain $p+h>0$,
-which holds whenever scrap value does not exceed list price.
+The first term is behavioral.  Among consumers who remain in the market, a
+higher $p$ raises the keep threshold and makes return strictly more likely.
+The second is selection.  A higher price truncates the buyer pool at the
+margin, so composition changes whenever marginal buyers differ in return
+propensity from the average inframarginal buyer.  For arbitrary
+$(\kappa_i,G_i)$ that selection term is unsigned.  Under the additive match
+$u=v_i+\varepsilon$ with $\varepsilon$ and return hassle both independent of
+$v_i$, however, $\phi(v,p)$ decreases in $v$.  Marginal buyers at $v_i=p$ then
+return more often than inframarginal buyers, so $\phi(p,p)\geq r(p)$ and
+selection is non-positive.  The two forces therefore pull opposite ways.
+Which dominates is empirical, and we impose no sign restriction on $r'(p)$
+below.
+
+On the firm side the market is perfectly competitive.  Producer $j$ takes $p$
+as given, chooses output at cost $C_j(q_j)$, and incurs a net return handling
+cost $h$ on each returned unit---gross handling cost minus scrap value.  Net
+handling may be negative, but we maintain $p+h>0$, which holds whenever scrap
+value does not exceed list price.
 
 %=============================================================================
 \section{Consumer side}
@@ -323,13 +326,14 @@ $PS=\int_0^{\mu(p,h)}S(z)\,dz$.
 %=============================================================================
 \label{sec:tax-neutrality}
 
-With firms responding to $\mu$ rather than list price, a natural question is
-whether remittance of a unit tax remains neutral.  Weyl and Fabinger (2013)
-show that without returns, buyer and seller remittance deliver the same
-equilibrium.  With returns, we ask whether that equivalence survives by writing
-the two clearing conditions at a common checkout price $p$---the total payment
-at the register---and a per-unit tax $\tau$.  Fix $p$ and $\tau$.  Seller
-remittance clears at
+With firms responding to the effective margin rather than the list price, a
+natural question is whether the classical result---that it does not matter
+which party remits a unit tax---survives.  Weyl and Fabinger (2013)
+establish this neutrality without returns.  With returns, the refund amount
+depends on the checkout price, and the answer is regime-dependent.  To see
+the contrast, write the two clearing conditions at a common checkout price
+$p$---the total payment at the register---and a per-unit tax $\tau$.  Fix
+$p$ and $\tau$.  Seller remittance clears at
 \begin{equation}
   D(p) = S\bigl(p - \tau - r(p)(p+h)\bigr),
 \end{equation}
@@ -433,8 +437,8 @@ $\rho^b_\tau=\mu_p\,\rho_c$.  The sign of buyer-remitted pass-through is
 thus tied to that of seller-remitted pass-through by the sign of $\mu_p$.
 When returns are absent ($r=0$), $\mu_p=1$ and the two pass-through rates
 coincide, recovering the classical neutrality benchmark.  If $\mu_p<0$,
-however, the two rates always carry opposite signs---a striking reversal of
-that neutrality intuition.
+however, the two rates always carry opposite signs.  This is a striking
+reversal of that neutrality intuition.
 \begin{result}[Pass-through into list price and remittance-dependent sign]
 \label{res:pass-through}
   \textbf{(i)} Production-cost pass-through is
@@ -529,6 +533,11 @@ an increase in marginal cost reduces the equilibrium price.
   We have $\rho_c<0$ if and only if $\varepsilon_S<0$ ($\mu_p<0$) and
   $|\varepsilon_S|>-\varepsilon_D$.
 \end{result}
+In words, negative pass-through occurs when supply slopes downward in list
+price---the behavioral return response dominates---and supply is steeper than
+demand.  Under these conditions, a cost increase creates excess demand that
+can only be resolved by lowering the price, an outcome impossible in the
+classical model.
 \begin{proof}
 By (\ref{eq:rho_c_elasticity_final}),
 \[
@@ -597,8 +606,9 @@ no-return formula underestimates pass-through.
 \section{Local incidence}
 %=============================================================================
 
-Pass-through into list price determines the welfare loss from each cost shifter
-and how that loss is split between consumers and producers.  Throughout,
+Having established how prices respond to different shocks, we now turn to how
+those price changes affect welfare.  The same pass-through objects determine
+the distribution of surplus between consumers and producers.  Throughout,
 $Q\equiv D(p)$ and $r\equiv r(p)$ denote the equilibrium gross quantity and the
 return rate.  From the consumer-side analysis in Section~3, a small increase in
 any shifter $x$ changes consumer surplus by
@@ -705,8 +715,9 @@ $|\varepsilon^S|>-\varepsilon^D$, which gives $\mu_p\rho_c>1$.  Therefore, the
 condition governing producer gain from an increase in production cost is
 exactly the same as that governing negative pass-through.
 
-At first glance, it may seem puzzling why the price drop---which raises
-the effective margin ($\mu_p<0$ and $\rho_c<0$)---necessarily more than offsets
+At first glance, the price drop may seem puzzling.  It raises
+the effective margin ($\mu_p<0$ and $\rho_c<0$) and necessarily more than
+offsets
 the original one-dollar cost increase.  The key is that the price fall must do
 double duty to clear the market.  A one-dollar cost increase shifts the supply
 curve left, creating an initial excess demand gap.  To fill this gap, quantity
@@ -720,20 +731,20 @@ effective margin must rise by more than one dollar.  Thus, $\mu_p\rho_c>1$ is
 precisely the market-clearing requirement when pass-through is negative.
 
 The preceding observation implies a striking result: the uniformly positive
-incidence ratio implies that consumer and producer surplus always move
-together, regardless of the sign of pass-through.  The
-direction of that common movement
-depends on both the shock type and the sign of pass-through.  When
-$\rho_c<0$, production cost, handling cost, and seller tax shocks generate a
-welfare gain with both surpluses increasing.  Under the same condition,
-buyer-remitted taxes reduce both surpluses.  The two tax regimes therefore
-yield opposite welfare outcomes precisely when pass-through is negative, a
-sharp violation of classical tax neutrality.  When $\rho_c>0$, all four shocks
-reduce both surpluses.  The central asymmetry is twofold.  First, seller and
-buyer tax remittance can lead to divergent welfare consequences.  Second,
-welfare-improving shocks are possible only for a subset of shocks (cost,
-handling, seller tax) when pass-through is negative.  Neither possibility
-arises in the no-return benchmark, where pass-through is always positive.
+incidence ratio means consumer and producer surplus always move together,
+regardless of the sign of pass-through.  The direction of that common
+movement nevertheless depends on both the shock type and the sign of
+pass-through.  This yields a remarkable implication: a cost increase can be
+Pareto-improving.  When $\rho_c<0$, raising production costs, handling costs,
+or seller-remitted taxes lowers the list price, reduces return rates, and
+saves enough handling costs to more than offset the direct resource drain;
+both consumers and producers benefit.  Under the same condition,
+buyer-remitted taxes reduce both surpluses, so the two tax regimes yield
+opposite welfare outcomes.  This is a sharp violation of classical tax
+neutrality.
+When $\rho_c>0$, all four shocks reduce both surpluses.  Such gains are
+impossible in the classical model, where pass-through is always positive,
+underscoring how profoundly returns alter standard welfare analysis.
 
 \subsection{Deadweight loss and the returns-augmented Harberger triangle}
 
