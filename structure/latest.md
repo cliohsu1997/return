@@ -52,6 +52,7 @@ return/
 | `draft/literature/` | Literature PDFs and notes stored alongside draft materials |
 | `draft/literature/paper/` | Linked paper attachments for Zotero-backed reading folders |
 | `draft/welfare_foundation/` | Welfare with returns: local CS sufficiency of $(D,r)$; second-order needs types |
+| `doc/` | Project documentation (including Zotero welfare collection linking how-to) |
 | `figuretable/` | Figure and table fragments for the draft |
 | `R/` | R package code and estimation scripts |
 | `src/` | C++ implementations |
