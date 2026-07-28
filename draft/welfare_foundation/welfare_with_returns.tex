@@ -1014,112 +1014,119 @@ for empirical checks.
 \label{sec:global-incidence}
 %=============================================================================
 
-The local derivatives derived in Sections~\ref{sec:tax-neutrality}--\ref{sec:DWL}
-describe the response of welfare to an infinitesimal change in a shock
-$x\in\{c,h,\tau^s,\tau^b\}$.  For a finite change from $x_0$ to $x_1$, the
-associated global changes are obtained by integrating these local expressions
-along the equilibrium path.  Because the equilibrium list price $p(x)$ and all
-aggregates vary with $x$, the integrands are evaluated at the prevailing
-$p(x)$.
+The local derivatives of Sections~4--6 give the welfare response to an
+infinitesimal change in a shock $x\in\{c,h,\tau^s,\tau^b\}$.  For a finite
+change from $x_0$ to $x_1$, the global welfare effects are the path integrals
+of those local derivatives.  All aggregates are evaluated at the equilibrium
+that prevails at each $x$; the equilibrium list price $p(x)$ and the
+effective-margin derivative $\mu_p$ may depend on $x$ both indirectly through
+$p$ and, for some shocks, directly.
 
 \subsection{Global changes in consumer surplus, producer surplus, and private surplus}
 
-From (\ref{eq:CSx_incidence}) and (\ref{eq:PSx_incidence}), the global change
-in consumer surplus is
-\begin{equation}
-\Delta CS = -\int_{x_0}^{x_1} Q(x)\,\bigl(1-r(p(x))\bigr)\,\rho_x(x)\,dx,
-\label{eq:global-CS}
-\end{equation}
-and the global change in producer surplus is
-\begin{equation}
-\Delta PS = \int_{x_0}^{x_1} \Bigl[\,Q(x)\bigl(\mu_p(p(x))\,\rho_x(x)+\mu_x(x)\bigr)+\Sigma_x(x)\Bigr]dx,
-\label{eq:global-PS}
-\end{equation}
-where $Q(x)\equiv D(p(x))$, $r(p(x))$ is the return rate,
-$\mu_p(p)\equiv d\mu/dp$, and $\rho_x(x)\equiv dp/dx$ is the pass-through rate
-for shock $x$.  The shock-specific terms $\mu_x$ and $\Sigma_x$ are given in
-Table~\ref{tab:incidence_components}; for production cost, $\mu_c=0$,
-$\Sigma_c=-Q$; for handling cost, $\mu_h=-r$, $\Sigma_h=0$; for seller tax,
-$\mu_\tau=-1$, $\Sigma_\tau=0$; for buyer tax, $\mu_\tau=-\mu_p$,
-$\Sigma_\tau=0$.  The pass-through rates follow from
-Result~\ref{res:pass-through}: $\rho_c$ is as in (\ref{eq:rho-c}),
-$\rho_h=r\rho_c$, $\rho^s_\tau=\rho_c$, $\rho^b_\tau=\mu_p\rho_c$.
+Integrating (\ref{eq:CSx_incidence}) and (\ref{eq:PSx_incidence}) gives
+\begin{align}
+\Delta CS &= -\int_{x_0}^{x_1} Q(x)\,\bigl(1-r(p(x))\bigr)\,\rho_x(x)\,dx,
+\label{eq:global-CS-final} \\[2mm]
+\Delta PS &= \int_{x_0}^{x_1} \Bigl[\,Q(x)\bigl(\mu_p(p(x),x)\,\rho_x(x)+\mu_x(x)\bigr)+\Sigma_x(x)\Bigr]\,dx,
+\label{eq:global-PS-final}
+\end{align}
+where $Q(x)=D(p(x))$, $r(p)$ is the return rate, and $\rho_x(x)=dp/dx$ is the
+pass-through of shock $x$.  The shock-specific terms $\mu_x$ and $\Sigma_x$ are
+taken from Table~\ref{tab:incidence_components}:
+\[
+\begin{array}{c|ccc}
+x & \mu_x & \Sigma_x & \rho_x \\ \hline
+c & 0 & -Q & \rho_c \\
+h & -r & 0 & r\rho_c \\
+\tau^s & -1 & 0 & \rho_c \\
+\tau^b & -\mu_p & 0 & \mu_p\,\rho_c
+\end{array}
+\]
+The pass-through $\rho_c$ is given by (\ref{eq:rho-c}), and $\mu_p(p,x)$
+denotes the derivative of the effective margin with respect to list price,
+evaluated at $(p(x),x)$.  For handling cost and buyer tax, $\mu_p$ depends
+explicitly on $x$:
+\[
+\mu_p(p,h)=1-r(p)-r'(p)(p+h),\qquad
+\mu_p(p,\tau^b)=1-r(p-\tau^b)-r'(p-\tau^b)(p-\tau^b+h).
+\]
+For production cost and seller tax, $\mu_p$ depends only on $p$, so
+$\mu_p(p(x),x)=\mu_p(p(x))$.
 
 Private surplus $W=CS+PS$ changes by
 \begin{equation}
-\Delta W = \int_{x_0}^{x_1} \Bigl[\,Q(x)\bigl(\mu_x(x)-r'(p(x))(p(x)+h)\rho_x(x)\bigr)+\Sigma_x(x)\Bigr]dx.
-\label{eq:global-W}
+\Delta W = \int_{x_0}^{x_1} \Bigl[\,Q(x)\bigl(\mu_x(x)-r'(p(x))(p(x)+h)\rho_x(x)\bigr)+\Sigma_x(x)\Bigr]\,dx.
+\label{eq:global-W-final}
 \end{equation}
-For a seller tax or a production-cost shock, this simplifies to
+For a production-cost or seller-tax shock this simplifies to
 \[
 \Delta W = -\int_{x_0}^{x_1} Q(x)\,\Delta(x)\,dx,
 \qquad
-\Delta(x)\equiv 1+r'(p(x))(p(x)+h)\rho_c(x).
+\Delta(x)\equiv 1+r'(p(x))(p(x)+h)\,\rho_c(x).
 \]
-For a buyer tax the integrand is multiplied by $\mu_p(p(x))$, and for a
-handling shock by $r(p(x))$.
+For a buyer tax the integrand is multiplied by $\mu_p(p(x),x)$, and for a
+handling shock by $r(p(x))$:
+\[
+\Delta W^{\tau^b} = -\int Q\,\mu_p\,\Delta\,dx,\qquad
+\Delta W^{h} = -\int Q\,r\,\Delta\,dx.
+\]
 
 \subsection{Global incidence ratio}
 
-The global incidence ratio $I_{x_0}^{x_1}\equiv\Delta CS/\Delta PS$ no longer
-collapses to a single average pass-through as it does in the no-return model.
-Nevertheless, a simple representation exists in terms of the local incidence
-ratio $I(x)$ derived in Result~\ref{res:incidence-ratio}.  Because $dPS/dx$ and
-$\Delta PS$ share the same sign (both are positive when $\rho_c<0$ and negative
-when $\rho_c>0$), we can define the weight
+The global incidence ratio is defined as
+$I_{x_0}^{x_1}\equiv \Delta CS/\Delta PS$, provided $\Delta PS\neq 0$.
+From the local relation $dCS/dx = I(x)\,dPS/dx$ with $I(x)$ given in
+(\ref{eq:incidence_result}), we have
 \[
-\omega(x)\equiv \frac{dPS/dx}{\Delta PS},
-\qquad \int_{x_0}^{x_1}\omega(x)\,dx = 1.
+\Delta CS = \int_{x_0}^{x_1} I(x)\,\frac{dPS}{dx}\,dx.
 \]
-Then
-\[
-\Delta CS = \int_{x_0}^{x_1} I(x)\,\frac{dPS}{dx}\,dx
-= \Delta PS \int_{x_0}^{x_1} I(x)\,\omega(x)\,dx,
-\]
-so the global incidence ratio is a weighted average of local incidence ratios:
+Hence, whenever $\Delta PS\neq 0$,
 \begin{equation}
 \boxed{\, I_{x_0}^{x_1} = \int_{x_0}^{x_1} I(x)\,\omega(x)\,dx \,},
 \qquad
-I(x)=\frac{(1-r(p(x)))\rho_c(x)}{1-\mu_p(p(x))\rho_c(x)}.
-\label{eq:global-incidence}
+\omega(x)\equiv\frac{dPS/dx}{\Delta PS},\quad \int_{x_0}^{x_1}\omega(x)\,dx=1.
+\label{eq:global-incidence-final}
 \end{equation}
-Because $I(x)>0$ everywhere (Result~\ref{res:incidence-ratio}), the global
-incidence ratio is strictly positive regardless of the sign of pass-through.
-Consumers and producers always share the burden (or the gain) in the same
-direction, just as they do locally.  This stands in sharp contrast to the
-no-return formula $I=\bar\rho/(1-\bar\rho)$, which can become negative if the
-average pass-through exceeds one; returns prevent such perverse outcomes.
+This is an exact algebraic identity; it does not require $\omega(x)$ to be
+non-negative.  If, however, $dPS/dx$ does not change sign along the path (as is
+the case for ``small'' shocks or when the pass-through sign is constant), then
+$\omega(x)\ge 0$ and $I_{x_0}^{x_1}$ is a convex combination of the local
+ratios $I(x)>0$.  In that case the global incidence ratio is strictly
+positive, and consumers and producers share the burden (or the gain) in the
+same direction globally, just as they do locally.
 
 \subsection{Deadweight loss of taxation}
 
-For a unit tax, government revenue is $G=\tau Q$, with $Q=D(p)$ evaluated at
-the appropriate checkout price.  Total surplus $V=W+G$ changes by
+Government revenue from a unit tax is $G=\tau Q$, with $Q$ evaluated at the
+checkout price.  Total surplus is $V=W+G$.  For a seller tax, using
+$dW/d\tau^s = -Q\Delta$,
 \[
-\Delta V = \Delta W + \tau_1 Q_1 - \tau_0 Q_0.
+\frac{dV}{d\tau^s} = -Q(\Delta-1) + \tau\,\frac{dQ}{d\tau^s}.
 \]
-Differentiating and using the expressions above yields, for a seller tax,
-\[
-\frac{dV}{d\tau^s} = -Q\bigl(\Delta-1\bigr) + \tau\,\frac{dQ}{d\tau^s}.
-\]
-At an infinitesimal tax ($\tau_0=0$, $\tau_1\approx 0$), the first-order
-deadweight loss is
-\[
-\frac{dV}{d\tau^s}\Big|_{\tau=0} = -Q(0)\,r'(p(0))(p(0)+h)\,\rho_c(0),
-\]
-which is non-zero whenever the return rate responds to the list price
-($r'\neq 0$).  The classic Harberger triangle, which starts from zero at
-$\tau=0$, is recovered only when $r'=0$; with returns, the tax system generates
-a first-order efficiency cost (or benefit, if $r'\rho_c<0$) from the
-reallocation of units between the kept and returned states.  For a finite tax
-change, the total excess burden is
-\[
+At an infinitesimal tax ($\tau=0$), the first-order deadweight loss is
+\begin{equation}
+\frac{dV}{d\tau^s}\Big|_{\tau=0} = -Q(0)\,r'(p(0))(p(0)+h)\,\rho_c(0).
+\end{equation}
+The classic Harberger triangle, which starts at zero, is recovered only when
+$r'=0$; with a price-sensitive return rate, the tax creates a first-order
+efficiency cost (or benefit, if $r'\rho_c<0$) from the reallocation of units
+between kept and returned states.
+
+For a finite seller-tax change,
+\begin{equation}
 \Delta V = \int_{\tau_0}^{\tau_1} \Bigl[-Q(\tau)\bigl(\Delta(\tau)-1\bigr)
-+ \tau\,Q'(\tau)\Bigr]d\tau,
++ \tau\,Q'(\tau)\Bigr]d\tau.
+\end{equation}
+The first term captures the keep-or-return reallocation, the second is the
+conventional quantity-distortion triangle.  For a buyer tax the expressions
+are scaled by $\mu_p$:
+\[
+\frac{dV}{d\tau^b} = -Q(\mu_p\Delta-1) + \tau\,\frac{dQ}{d\tau^b},
+\qquad
+\frac{dV}{d\tau^b}\Big|_{\tau=0} = -Q(0)\bigl(\mu_p(0)\Delta(0)-1\bigr).
 \]
-where the first term captures the first-order keep-or-return reallocation and
-the second term is the conventional quantity-distortion triangle.  Similar
-expressions hold for buyer-remitted taxes with the appropriate scaling by
-$\mu_p$.
+The finite-change formula follows analogously.
 
 \input{appendix_welfare_bias_primitives}
 
