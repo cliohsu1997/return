@@ -113,6 +113,133 @@ emphasizes six results.
     \end{itemize}
 \end{itemize}
 
+\subsection{Salience and Taxation: Theory and Evidence (Chetty, Looney, \& Kroft, 2009)}
+
+\citet{chetty_salience_2009} show that consumer responses to taxation depend on
+whether the tax is salient at the point of choice.  The paper combines a field
+experiment with evidence from alcohol taxation to argue that standard tax
+theory misses an important channel when buyers do not fully perceive
+non-salient taxes.
+
+\begin{itemize}
+    \item \textbf{Underreaction to non-salient taxes}
+    \begin{itemize}
+        \item \textbf{Key result:} Consumers consistently underreact to taxes
+        that are not explicitly included in posted price tags.
+        \item \textbf{Intuition:} Standard models assume buyers continuously
+        compute the full final price.  In practice, doing so requires active
+        mental effort, so many consumers fail to fully incorporate taxes that
+        are added only at checkout.
+    \end{itemize}
+
+    \item \textbf{The salience parameter $\theta$}
+    \begin{itemize}
+        \item \textbf{Key result:} The paper summarizes attention with a
+        salience parameter $\theta \in [0,1]$, so consumers behave as if they
+        face the perceived price $\tilde{p}=p+\theta t$ rather than the true
+        price $p+t$.
+        \item \textbf{Intuition:} When $\theta=1$, the model collapses to the
+        standard full-optimization benchmark and consumers treat a tax increase
+        like a base-price increase.  When $\theta=0$, consumers ignore the tax
+        completely while shopping.  The empirically relevant case is
+        $0<\theta<1$, where consumers notice the tax but underreact to it.
+    \end{itemize}
+
+    \item \textbf{Grocery store field experiment}
+    \begin{itemize}
+        \item \textbf{Key result:} Posting tax-inclusive shelf tags reduced
+        demand by about 8 percent.
+        \item \textbf{Intuition:} Consumers rely heavily on the visible shelf
+        price as a decision shortcut.  Making the tax visible at the moment of
+        choice changes behavior because it converts a hidden cost into an
+        immediately attended price signal.
+    \end{itemize}
+
+    \item \textbf{Excise tax versus sales tax impact}
+    \begin{itemize}
+        \item \textbf{Key result:} State-level increases in alcohol excise
+        taxes, which are embedded in posted prices, reduced beer consumption by
+        an order of magnitude more than equivalent increases in general sales
+        taxes, which are added at checkout.
+        \item \textbf{Intuition:} Taxes that are already incorporated in shelf
+        prices affect the price consumers actually see while shopping, whereas
+        register-added taxes remain less salient until after most purchase
+        decisions are made.
+    \end{itemize}
+
+    \item \textbf{Economic incidence depends on statutory form}
+    \begin{itemize}
+        \item \textbf{Key result:} Economic incidence depends on the statutory
+        form of the tax once salience matters, so excise taxes and register-added
+        sales taxes need not place the same burden on consumers and producers.
+        \item \textbf{Intuition:} When a tax is non-salient, consumers do not
+        reduce demand as much as they would under full attention.  Because
+        quantity demanded remains artificially high, producers do not need to
+        cut pre-tax prices as much to sustain sales, and inattentive consumers
+        bear a larger share of the burden.  This overturns the standard view
+        that statutory form is irrelevant for incidence.
+    \end{itemize}
+
+    \item \textbf{Incidence formula adjustment under inattention}
+    \begin{itemize}
+        \item \textbf{Key result:} In the standard model, the producer burden
+        depends on relative elasticities, with
+        $\text{Burden on producers} \propto \epsilon_D/(\epsilon_S+\epsilon_D)$.
+        In the behavioral model, the demand response to a tax is attenuated to
+        $\theta \epsilon_D$.
+        \item \textbf{Intuition:} Because consumers react only to the salient
+        fraction of the tax, demand falls less after a tax increase than a
+        standard model predicts.  Producers therefore do not need to lower
+        pre-tax prices as much, so more of the tax is shifted onto consumers.
+        In the limiting case $\theta=0$, demand does not respond to the tax at
+        all and producers can pass through the full tax without absorbing any
+        of the burden through lower prices.
+    \end{itemize}
+
+    \item \textbf{Decision miscalculation and overconsumption}
+    \begin{itemize}
+        \item \textbf{Key result:} Consumers choose based on a perceived price
+        $\tilde{p}=p+\theta t$ with $\theta<1$, rather than the true tax-inclusive
+        price $p+t$, so non-salient taxes can generate excess burden even if
+        observed demand barely moves.
+        \item \textbf{Intuition:} Consumers buy extra units whose marginal
+        benefit is below their true marginal cost because the tax is only
+        partially internalized at the time of choice.  Section~V of the paper
+        formalizes this point: decision errors themselves generate deadweight
+        loss, even when observed quantity responses are very small or zero.
+    \end{itemize}
+
+    \item \textbf{Deadweight-loss formula adjustment}
+    \begin{itemize}
+        \item \textbf{Key result:} Welfare loss from demand distortion shrinks
+        with tax inattention, so a useful generalized Harberger benchmark is
+        $\text{DWL}_{\text{behavioral}} \approx \tfrac12 pQ\epsilon_D \theta t^2$.
+        But total consumer welfare still falls because inattentive consumers
+        make costly decision errors even when observed demand changes very
+        little ($\Delta Q \approx 0$).
+        \item \textbf{Intuition:} Standard tax analysis measures harm mainly by
+        how many purchases are canceled.  When taxes are hidden, a small
+        $\Delta Q$ does not mean the tax is harmless; it means consumers are
+        being induced to buy goods whose true cost exceeds their value.
+        Welfare losses therefore arise through optimization mistakes and
+        unexpected budget squeezes, not only through the usual demand-drop
+        channel.
+    \end{itemize}
+
+    \item \textbf{Unexpected budget squeezes and suboptimal cutbacks}
+    \begin{itemize}
+        \item \textbf{Key result:} Non-salient taxes can worsen welfare by
+        causing consumers to violate their intended budget allocation while
+        browsing and then forcing unplanned adjustments at checkout.
+        \item \textbf{Intuition:} Because the omitted tax is not reflected in
+        the posted price, consumers do not initially choose bundles that satisfy
+        their true budget constraint $Z=(p+t)x+y$.  Once the tax is charged,
+        they must cut spending on other goods unexpectedly, ending up with a
+        worse overall consumption bundle than they would have chosen under full
+        information.
+    \end{itemize}
+\end{itemize}
+
 \bibliographystyle{plainnat}
 \bibliography{references}
 
