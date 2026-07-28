@@ -782,53 +782,8 @@ When $\rho_c>0$, all four shocks reduce both surpluses.  Such gains are
 impossible in the classical model, where pass-through is always positive,
 underscoring how profoundly returns alter standard welfare analysis.
 
-\subsection{Deadweight loss and the returns-augmented Harberger triangle}
+\subsection{First-order deadweight loss}
 \label{sec:DWL}
-
-Total surplus is $V = CS + PS + G$, where government revenue $G$ depends on
-the tax regime.  For a seller-remitted unit tax the tax is fully refunded on
-returned units, so $G^{\mathrm{s}}=\tau(1-r)Q$.  For a buyer-remitted tax the
-buyer does not recover the tax, so $G^{\mathrm{b}}=\tau Q$.  Both cases differ
-from the classic no-return benchmark where $G=\tau Q$ but returns are absent;
-here returns make the two regimes yield different local deadweight loss
-\citep{harberger_measurement_1964}.
-
-From Table~\ref{tab:incidence_components} the local change in private surplus
-is $dW/dx$ for any shock $x$, with the common welfare factor
-\begin{equation}
-\Lambda \equiv 1 + r'(p)(p+h)\,\rho_c.
-\label{eq:Lambda}
-\end{equation}
-For an infinitesimal tax the deadweight loss is no longer zero:
-\[
-\frac{dV}{d\tau^{\mathrm{s}}}\Big|_{\tau=0} = -Q\bigl(\Lambda-(1-r)\bigr),\qquad
-\frac{dV}{d\tau^{\mathrm{b}}}\Big|_{\tau=0} = -Q\bigl(\mu_p\Lambda-1\bigr).
-\]
-Both are non-zero whenever $r'\neq0$, in contrast to the classic Harberger
-triangle that starts at zero.  The term $r'(p)(p+h)\rho_c$ captures the
-efficiency cost of reallocating units between kept and returned states.  For a
-buyer-remitted tax this effect is scaled by $\mu_p$, the response of the
-effective margin to the list price.
-
-The same logic applies to a handling-cost shock: a small increase $dh$ changes
-private surplus by $dW = -Q\,r\,\Lambda\,dh$, so even a pure cost shock
-generates a first-order keep-or-return reallocation that is absent without
-returns.
-
-For a finite tax change the excess burden is
-\[
-\Delta V^{\mathrm{s}} = \int_{\tau_0}^{\tau_1} \Bigl[ -Q\bigl(\Lambda-(1-r)\bigr)
-+ \tau\frac{d}{d\tau}\bigl((1-r)Q\bigr) \Bigr] d\tau,
-\qquad
-\Delta V^{\mathrm{b}} = \int_{\tau_0}^{\tau_1} \Bigl[ -Q(\mu_p\Lambda-1)
-+ \tau Q'(\tau) \Bigr] d\tau.
-\]
-The first term inside each integral is the keep-or-return reallocation effect,
-the second the conventional quantity-distortion triangle.  For a buyer-remitted
-tax, note that a non-refundable unit tax is equivalent to an increase in
-handling cost of size $\tau$ on returned units, plus the tax revenue $\tau Q$;
-the formula above can be obtained by adding $\tau Q$ to the integrated private
-surplus change from a handling-cost increase of magnitude $\tau$.
 
 Private surplus is $W=CS+PS$.  Summing (\ref{eq:CSx_incidence}) and
 (\ref{eq:PSx_incidence}) gives
@@ -858,24 +813,18 @@ Without returns, $r=0$ and $r'=0$, so \eqref{eq:DWL_incidence} reduces to
   \frac{dW}{dx} = Q\,\mu_x + \Sigma_x.
 \]
 For a unit production-cost increase, the supply curve shifts vertically upward
-by one dollar at every quantity.  The immediate surplus loss is therefore the
-area of that shift---a rectangle of height one and width $Q$.  Algebraically,
-private surplus is $W=CS(p)+PS(p-c)$.  Differentiating, the price-change terms
-$-Q\rho_c$ and $+Q\rho_c$ cancel, leaving $dW/dc=-Q$: a pure resource drain
-that begins at once.
+by one dollar at every quantity.  The surplus loss is therefore the area of
+that shift---a rectangle of height one and width $Q$.  Algebraically, private
+surplus is $W=CS(p)+PS(p-c)$.  Differentiating, the price-change terms
+$-Q\rho_c$ and $+Q\rho_c$ cancel, leaving $dW/dc=-Q$: a first-order real
+resource loss of $Q$ dollars.
 
-For a unit tax, the same cancellation gives $dW/d\tau=-Q$.  The difference is that the government now collects
-revenue $\tau Q$.  Adding it back, total surplus is $V=W+\tau Q$, whose
-derivative $dV/d\tau=\tau Q'(\tau)$ is zero at $\tau=0$.  Hence an
-infinitesimal tax creates no net loss; the loss appears only as the tax
-grows, accumulating quadratically as the classic Harberger triangle
-\citep{harberger_measurement_1964},
-$\Delta V\approx -\tfrac12\tau^2 Q'(0)$.
-
-Without returns, cost shocks therefore produce an immediate rectangle of real
-resource loss, while taxes produce a triangle of distortionary loss that
-starts from zero.  The two are cleanly separated by whether the dollar is
-lost or merely transferred.
+For a unit tax the same cancellation gives $dW/d\tau=-Q$, but government
+revenue $\tau Q$ is transferred rather than lost.  Total surplus
+$V=W+\tau Q$ therefore satisfies $dV/d\tau=\tau Q'(\tau)$, which is zero at
+$\tau=0$.  Locally, a cost shock has a first-order welfare effect of $-Q$,
+while an infinitesimal tax has none---the dollar is lost in one case and
+merely transferred in the other.
 
 Product returns overturn the clean dichotomy between resource drains and pure
 transfers that characterizes the textbook model.  The return-rate term in
@@ -902,9 +851,21 @@ pass-through links from Result~\ref{res:pass-through}, yields
   &= -Q\,\mu_p\,\Lambda,
   \label{eq:DWL_shocks}
 \end{align}
-
-
-\subsection{Ex-ante and ex-post decomposition}
+where the common factor is defined as
+\begin{equation}
+  \Lambda \equiv 1 + r'(p)(p+h)\,\rho_c.
+  \label{eq:Lambda}
+\end{equation}
+The unit term in $\Lambda$ is the mechanical welfare effect that remains even
+if returns do not respond to price.  The term $r'(p)(p+h)\rho_c$ is the extra
+efficiency cost of reallocating units between kept and returned states after
+the price moves.  Each change $r'(p)\rho_c$ in the return rate costs $p+h$
+per unit sold.  We decompose any of the welfare changes in
+\eqref{eq:DWL_shocks} into an ex-ante loss on the purchase margin and an
+ex-post loss on the keep-or-return margin.  This decomposition is simplest
+for a production-cost or seller-tax shock, where $dW/dx=-Q\Lambda$.  Handling
+and buyer-remitted taxes then rescale the ex-ante and ex-post losses by $r$
+and $\mu_p$, respectively.
 
 To isolate the mechanical effect, hold the keep-or-return margin fixed while
 purchase can still adjust.  This is the natural benchmark because the true
