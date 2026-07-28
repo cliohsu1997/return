@@ -776,6 +776,7 @@ impossible in the classical model, where pass-through is always positive,
 underscoring how profoundly returns alter standard welfare analysis.
 
 \subsection{Deadweight loss and the returns-augmented Harberger triangle}
+\label{sec:DWL}
 
 Private surplus is $W=CS+PS$.  Summing (\ref{eq:CSx_incidence}) and
 (\ref{eq:PSx_incidence}) gives
@@ -1007,6 +1008,118 @@ Appendix~\ref{app:welfare-bias-primitives} restates these cases in the
 return-rate elasticity $\varepsilon_r(p)$ and the observed supply and demand
 elasticities $\varepsilon_S(p)$ and $\varepsilon_D(p)$---the form most useful
 for empirical checks.
+
+%=============================================================================
+\section{Global Incidence}
+\label{sec:global-incidence}
+%=============================================================================
+
+The local derivatives derived in Sections~\ref{sec:tax-neutrality}--\ref{sec:DWL}
+describe the response of welfare to an infinitesimal change in a shock
+$x\in\{c,h,\tau^s,\tau^b\}$.  For a finite change from $x_0$ to $x_1$, the
+associated global changes are obtained by integrating these local expressions
+along the equilibrium path.  Because the equilibrium list price $p(x)$ and all
+aggregates vary with $x$, the integrands are evaluated at the prevailing
+$p(x)$.
+
+\subsection{Global changes in consumer surplus, producer surplus, and private surplus}
+
+From (\ref{eq:CSx_incidence}) and (\ref{eq:PSx_incidence}), the global change
+in consumer surplus is
+\begin{equation}
+\Delta CS = -\int_{x_0}^{x_1} Q(x)\,\bigl(1-r(p(x))\bigr)\,\rho_x(x)\,dx,
+\label{eq:global-CS}
+\end{equation}
+and the global change in producer surplus is
+\begin{equation}
+\Delta PS = \int_{x_0}^{x_1} \Bigl[\,Q(x)\bigl(\mu_p(p(x))\,\rho_x(x)+\mu_x(x)\bigr)+\Sigma_x(x)\Bigr]dx,
+\label{eq:global-PS}
+\end{equation}
+where $Q(x)\equiv D(p(x))$, $r(p(x))$ is the return rate,
+$\mu_p(p)\equiv d\mu/dp$, and $\rho_x(x)\equiv dp/dx$ is the pass-through rate
+for shock $x$.  The shock-specific terms $\mu_x$ and $\Sigma_x$ are given in
+Table~\ref{tab:incidence_components}; for production cost, $\mu_c=0$,
+$\Sigma_c=-Q$; for handling cost, $\mu_h=-r$, $\Sigma_h=0$; for seller tax,
+$\mu_\tau=-1$, $\Sigma_\tau=0$; for buyer tax, $\mu_\tau=-\mu_p$,
+$\Sigma_\tau=0$.  The pass-through rates follow from
+Result~\ref{res:pass-through}: $\rho_c$ is as in (\ref{eq:rho-c}),
+$\rho_h=r\rho_c$, $\rho^s_\tau=\rho_c$, $\rho^b_\tau=\mu_p\rho_c$.
+
+Private surplus $W=CS+PS$ changes by
+\begin{equation}
+\Delta W = \int_{x_0}^{x_1} \Bigl[\,Q(x)\bigl(\mu_x(x)-r'(p(x))(p(x)+h)\rho_x(x)\bigr)+\Sigma_x(x)\Bigr]dx.
+\label{eq:global-W}
+\end{equation}
+For a seller tax or a production-cost shock, this simplifies to
+\[
+\Delta W = -\int_{x_0}^{x_1} Q(x)\,\Delta(x)\,dx,
+\qquad
+\Delta(x)\equiv 1+r'(p(x))(p(x)+h)\rho_c(x).
+\]
+For a buyer tax the integrand is multiplied by $\mu_p(p(x))$, and for a
+handling shock by $r(p(x))$.
+
+\subsection{Global incidence ratio}
+
+The global incidence ratio $I_{x_0}^{x_1}\equiv\Delta CS/\Delta PS$ no longer
+collapses to a single average pass-through as it does in the no-return model.
+Nevertheless, a simple representation exists in terms of the local incidence
+ratio $I(x)$ derived in Result~\ref{res:incidence-ratio}.  Because $dPS/dx$ and
+$\Delta PS$ share the same sign (both are positive when $\rho_c<0$ and negative
+when $\rho_c>0$), we can define the weight
+\[
+\omega(x)\equiv \frac{dPS/dx}{\Delta PS},
+\qquad \int_{x_0}^{x_1}\omega(x)\,dx = 1.
+\]
+Then
+\[
+\Delta CS = \int_{x_0}^{x_1} I(x)\,\frac{dPS}{dx}\,dx
+= \Delta PS \int_{x_0}^{x_1} I(x)\,\omega(x)\,dx,
+\]
+so the global incidence ratio is a weighted average of local incidence ratios:
+\begin{equation}
+\boxed{\, I_{x_0}^{x_1} = \int_{x_0}^{x_1} I(x)\,\omega(x)\,dx \,},
+\qquad
+I(x)=\frac{(1-r(p(x)))\rho_c(x)}{1-\mu_p(p(x))\rho_c(x)}.
+\label{eq:global-incidence}
+\end{equation}
+Because $I(x)>0$ everywhere (Result~\ref{res:incidence-ratio}), the global
+incidence ratio is strictly positive regardless of the sign of pass-through.
+Consumers and producers always share the burden (or the gain) in the same
+direction, just as they do locally.  This stands in sharp contrast to the
+no-return formula $I=\bar\rho/(1-\bar\rho)$, which can become negative if the
+average pass-through exceeds one; returns prevent such perverse outcomes.
+
+\subsection{Deadweight loss of taxation}
+
+For a unit tax, government revenue is $G=\tau Q$, with $Q=D(p)$ evaluated at
+the appropriate checkout price.  Total surplus $V=W+G$ changes by
+\[
+\Delta V = \Delta W + \tau_1 Q_1 - \tau_0 Q_0.
+\]
+Differentiating and using the expressions above yields, for a seller tax,
+\[
+\frac{dV}{d\tau^s} = -Q\bigl(\Delta-1\bigr) + \tau\,\frac{dQ}{d\tau^s}.
+\]
+At an infinitesimal tax ($\tau_0=0$, $\tau_1\approx 0$), the first-order
+deadweight loss is
+\[
+\frac{dV}{d\tau^s}\Big|_{\tau=0} = -Q(0)\,r'(p(0))(p(0)+h)\,\rho_c(0),
+\]
+which is non-zero whenever the return rate responds to the list price
+($r'\neq 0$).  The classic Harberger triangle, which starts from zero at
+$\tau=0$, is recovered only when $r'=0$; with returns, the tax system generates
+a first-order efficiency cost (or benefit, if $r'\rho_c<0$) from the
+reallocation of units between the kept and returned states.  For a finite tax
+change, the total excess burden is
+\[
+\Delta V = \int_{\tau_0}^{\tau_1} \Bigl[-Q(\tau)\bigl(\Delta(\tau)-1\bigr)
++ \tau\,Q'(\tau)\Bigr]d\tau,
+\]
+where the first term captures the first-order keep-or-return reallocation and
+the second term is the conventional quantity-distortion triangle.  Similar
+expressions hold for buyer-remitted taxes with the appropriate scaling by
+$\mu_p$.
 
 \input{appendix_welfare_bias_primitives}
 
