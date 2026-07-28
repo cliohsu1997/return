@@ -812,9 +812,7 @@ private surplus is $W=CS(p)+PS(p-c)$.  Differentiating, the price-change terms
 $-Q\rho_c$ and $+Q\rho_c$ cancel, leaving $dW/dc=-Q$: a pure resource drain
 that begins at once.
 
-A unit tax has the same initial impact on private surplus:
-$W=CS(p)+PS(p-\tau)$ gives $dW/d\tau=-Q$, with the same cancellation of
-price-change terms.  The difference is that the government now collects
+For a unit tax, the same cancellation gives $dW/d\tau=-Q$.  The difference is that the government now collects
 revenue $\tau Q$.  Adding it back, total surplus is $V=W+\tau Q$, whose
 derivative $dV/d\tau=\tau Q'(\tau)$ is zero at $\tau=0$.  Hence an
 infinitesimal tax creates no net loss; the loss appears only as the tax
@@ -840,31 +838,31 @@ $dW/dx=Q\bigl[\mu_x-r'(p)(p+h)\rho_x\bigr]+\Sigma_x$, and using the
 pass-through links from Result~\ref{res:pass-through}, yields
 \begin{align}
   \frac{dW}{dc}
-  &= -Q\,\Delta,
+  &= -Q\,\Lambda,
   &
   \frac{dW}{dh}
-  &= -Q\,r\,\Delta,
+  &= -Q\,r\,\Lambda,
   &
   \frac{dW}{d\tau^s}
-  &= -Q\,\Delta,
+  &= -Q\,\Lambda,
   &
   \frac{dW}{d\tau^b}
-  &= -Q\,\mu_p\,\Delta,
+  &= -Q\,\mu_p\,\Lambda,
   \label{eq:DWL_shocks}
 \end{align}
 where the common factor is defined as
 \begin{equation}
-  \Delta \equiv 1 + r'(p)(p+h)\,\rho_c.
-  \label{eq:Delta}
+  \Lambda \equiv 1 + r'(p)(p+h)\,\rho_c.
+  \label{eq:Lambda}
 \end{equation}
-The unit term in $\Delta$ is the mechanical welfare effect that remains even
+The unit term in $\Lambda$ is the mechanical welfare effect that remains even
 if returns do not respond to price.  The term $r'(p)(p+h)\rho_c$ is the extra
 efficiency cost of reallocating units between kept and returned states after
 the price moves.  Each change $r'(p)\rho_c$ in the return rate costs $p+h$
 per unit sold.  We decompose any of the welfare changes in
 \eqref{eq:DWL_shocks} into an ex-ante loss on the purchase margin and an
 ex-post loss on the keep-or-return margin.  This decomposition is simplest
-for a production-cost or seller-tax shock, where $dW/dx=-Q\Delta$.  Handling
+for a production-cost or seller-tax shock, where $dW/dx=-Q\Lambda$.  Handling
 and buyer-remitted taxes then rescale the ex-ante and ex-post losses by $r$
 and $\mu_p$, respectively.
 
@@ -890,7 +888,7 @@ quantity alone.
 
 The ex-post change is that residual,
 $dW/dx\big|_{\mathrm{EP}}\equiv dW/dx-dW/dx\big|_{\mathrm{EA}}$.  Since
-$dW/dx=-Q\Delta$ for these shocks,
+$dW/dx=-Q\Lambda$ for these shocks,
 \begin{equation}
   \frac{dW}{dx}\Big|_{\mathrm{EP}}
   =-Q\,r'(p)(p+h)\rho_c.
@@ -912,7 +910,7 @@ $dW/dx=-Q\Delta$ for these shocks,
   $-Q\mu_p\,r'(p)(p+h)\rho_c$, so the ex-ante loss is not $-Q$ whenever
   $\mu_p\neq 1$.
 \end{result}
-Because consumer and producer surplus always move together, $\Delta$ has the
+Because consumer and producer surplus always move together, $\Lambda$ has the
 same sign as $\rho_c$.  The no-return formula retains only the ex-ante
 rectangle $-Q$ and omits the ex-post loss $-Q\,r'(p)(p+h)\rho_c$, so the
 comparison with that rectangle is governed by the size and sign of the
@@ -921,9 +919,9 @@ ex-post term.
 When $\rho_c>0$, two regimes are possible.  If $\mu_p>0$, supply slopes
 upward in list-price space, so a cost increase raises $p$.  Whenever
 $r'(p)>0$, that price increase raises the return rate, adds handling costs,
-and makes the ex-post loss amplify the ex-ante rectangle, so $\Delta>1$.
+and makes the ex-post loss amplify the ex-ante rectangle, so $\Lambda>1$.
 Whenever $r'(p)<0$, the return rate falls and the ex-post term partially
-offsets the ex-ante loss, yielding $0<\Delta<1$.  The welfare loss $Q\Delta$
+offsets the ex-ante loss, yielding $0<\Lambda<1$.  The welfare loss $Q\Lambda$
 is larger when $r'(p)$ is positive and large or when $h$ is large, because
 each dollar of pass-through raises returns and wastes an additional $p+h$
 per unit sold.
@@ -935,32 +933,32 @@ remains positive because demand is more price-responsive than this
 downward-sloping supply.  The return-rate response must already be steep,
 since $\mu_p<0$ requires $r'(p)(p+h)>1-r$.  Even a modest $\rho_c$ can then
 make the ex-post loss large relative to the ex-ante rectangle, leaving
-$\Delta$ substantially above one.
+$\Lambda$ substantially above one.
 
 When $\rho_c<0$, pass-through is negative.  A production-cost or seller-tax
 increase then lowers the list price.  That fall in $p$ reduces the return
 rate, so units that would have been returned are instead kept.  Each such
 switch saves $p+h$, and the ex-post term turns into a gain.  Those savings
 can exceed the ex-ante resource cost of the shock, so private surplus rises
-by $Q|\Delta|$ and a Pareto improvement is possible.  The ex-post gain is
+by $Q|\Lambda|$ and a Pareto improvement is possible.  The ex-post gain is
 larger when $r'(p)(p+h)\,|\rho_c|$ is large.
 
 Relative to the no-return benchmark that keeps only the ex-ante rectangle,
-the true change $-Q\Delta$ under- or overstates according to whether the
+the true change $-Q\Lambda$ under- or overstates according to whether the
 omitted ex-post term adds to or offsets that rectangle, and predicts a loss
 when surplus in fact rises if and only if the ex-post gain dominates.
 \begin{result}[Bias from ignoring returns in first-order welfare]
 \label{res:welfare-bias}
   Consider a unit production-cost or seller-tax increase.  Relative to the
-  correct returns-adjusted change $dW/dc=-Q\Delta$, the no-return formula
+  correct returns-adjusted change $dW/dc=-Q\Lambda$, the no-return formula
   $dW/dc=-Q$
   \begin{enumerate}
   \item[(i)] underestimates the welfare loss if and only if $\rho_c>0$ and
-  $r'(p)>0$ (hence $\Delta>1$);
+  $r'(p)>0$ (hence $\Lambda>1$);
   \item[(ii)] overestimates the welfare loss if and only if $r'(p)<0$
-  (which implies $\mu_p>0$ and hence $\rho_c>0$, so $0<\Delta<1$);
+  (which implies $\mu_p>0$ and hence $\rho_c>0$, so $0<\Lambda<1$);
   \item[(iii)] predicts a loss of $Q$ when private surplus in fact rises if
-  and only if $\rho_c<0$, in which case the rise is $Q|\Delta|$.
+  and only if $\rho_c<0$, in which case the rise is $Q|\Lambda|$.
   \end{enumerate}
 \end{result}
 For production-cost and seller-tax shocks that bias is purely ex-post.  The
@@ -971,11 +969,11 @@ scaled by $\mu_p$,
   \frac{dW}{d\tau^b}
   =-Q\mu_p
   -Q\mu_p\,r'(p)(p+h)\rho_c
-  =-Q\mu_p\Delta,
+  =-Q\mu_p\Lambda,
 \end{equation}
 so relative to $-Q$ the bias is both ex-ante ($-Q\mu_p$ vs $-Q$) and
 ex-post (the omitted keep-or-return term, also scaled by $\mu_p$),
-interacting through $\mu_p\Delta$.  When $\mu_p>0$, the no-return formula underestimates the ex-ante loss if and
+interacting through $\mu_p\Lambda$.  When $\mu_p>0$, the no-return formula underestimates the ex-ante loss if and
 only if $\mu_p>1$, and overestimates it otherwise.  That cut is the same
 threshold as Result~\ref{res:pt-bias-er}: $\mu_p>1$ if and only if
 $\varepsilon_r(p)<-p/(p+h)$.  Whenever the classical formula overestimates
@@ -987,21 +985,21 @@ pins the term as a gain.  Selection improves the composition of buyers, so a
 higher list price lowers the return rate and raises the effective margin more
 steeply: $\mu_p>0$ and hence $\rho_c>0$.  When $r'(p)>0$, the sign of the
 ex-post term depends on $\rho_c$ and has no succinct formula.  The corollary
-below records when the joint effect $\mu_p\Delta$ under- or overstates
+below records when the joint effect $\mu_p\Lambda$ under- or overstates
 relative to $-Q$.
 \begin{corollary}[Bias under buyer remittance]
 \label{cor:welfare-bias-buyer}
   Relative to the no-return prediction $dW/d\tau=-Q$, a unit buyer-remitted
-  tax has true change $-Q\mu_p\Delta$.
+  tax has true change $-Q\mu_p\Lambda$.
   \begin{enumerate}
-  \item[(i)] If $\mu_p>0$ (which implies $\rho_c>0$ and hence $\Delta>0$),
+  \item[(i)] If $\mu_p>0$ (which implies $\rho_c>0$ and hence $\Lambda>0$),
   both components keep the seller-remittance signs but scale with $\mu_p$.
   The no-return formula underestimates the welfare loss if and only if
-  $\mu_p\Delta>1$ and overestimates it if and only if $0<\mu_p\Delta<1$.
+  $\mu_p\Lambda>1$ and overestimates it if and only if $0<\mu_p\Lambda<1$.
   \item[(ii)] If $\mu_p<0$, the ex-ante piece flips relative to $-Q$ and the
   ex-post piece flips with it.  The no-return formula predicts a loss of $Q$,
-  whereas private surplus rises by $Q\,|\mu_p|\Delta$ if and only if
-  $\rho_c>0$ and falls by $Q\,|\mu_p\Delta|$ if and only if $\rho_c<0$.
+  whereas private surplus rises by $Q\,|\mu_p|\Lambda$ if and only if
+  $\rho_c>0$ and falls by $Q\,|\mu_p\Lambda|$ if and only if $\rho_c<0$.
   \end{enumerate}
 \end{corollary}
 Appendix~\ref{app:welfare-bias-primitives} restates these cases in the
@@ -1014,119 +1012,38 @@ for empirical checks.
 \label{sec:global-incidence}
 %=============================================================================
 
-The local derivatives of Sections~4--6 give the welfare response to an
-infinitesimal change in a shock $x\in\{c,h,\tau^s,\tau^b\}$.  For a finite
-change from $x_0$ to $x_1$, the global welfare effects are the path integrals
-of those local derivatives.  All aggregates are evaluated at the equilibrium
-that prevails at each $x$; the equilibrium list price $p(x)$ and the
-effective-margin derivative $\mu_p$ may depend on $x$ both indirectly through
-$p$ and, for some shocks, directly.
-
-\subsection{Global changes in consumer surplus, producer surplus, and private surplus}
-
-Integrating (\ref{eq:CSx_incidence}) and (\ref{eq:PSx_incidence}) gives
-\begin{align}
-\Delta CS &= -\int_{x_0}^{x_1} Q(x)\,\bigl(1-r(p(x))\bigr)\,\rho_x(x)\,dx,
-\label{eq:global-CS-final} \\[2mm]
-\Delta PS &= \int_{x_0}^{x_1} \Bigl[\,Q(x)\bigl(\mu_p(p(x),x)\,\rho_x(x)+\mu_x(x)\bigr)+\Sigma_x(x)\Bigr]\,dx,
-\label{eq:global-PS-final}
-\end{align}
-where $Q(x)=D(p(x))$, $r(p)$ is the return rate, and $\rho_x(x)=dp/dx$ is the
-pass-through of shock $x$.  The shock-specific terms $\mu_x$ and $\Sigma_x$ are
-taken from Table~\ref{tab:incidence_components}:
-\[
-\begin{array}{c|ccc}
-x & \mu_x & \Sigma_x & \rho_x \\ \hline
-c & 0 & -Q & \rho_c \\
-h & -r & 0 & r\rho_c \\
-\tau^s & -1 & 0 & \rho_c \\
-\tau^b & -\mu_p & 0 & \mu_p\,\rho_c
-\end{array}
-\]
-The pass-through $\rho_c$ is given by (\ref{eq:rho-c}), and $\mu_p(p,x)$
-denotes the derivative of the effective margin with respect to list price,
-evaluated at $(p(x),x)$.  For handling cost and buyer tax, $\mu_p$ depends
-explicitly on $x$:
-\[
-\mu_p(p,h)=1-r(p)-r'(p)(p+h),\qquad
-\mu_p(p,\tau^b)=1-r(p-\tau^b)-r'(p-\tau^b)(p-\tau^b+h).
-\]
-For production cost and seller tax, $\mu_p$ depends only on $p$, so
-$\mu_p(p(x),x)=\mu_p(p(x))$.
-
-Private surplus $W=CS+PS$ changes by
+Integrating the local derivatives $\frac{dCS}{dx}$ and $\frac{dPS}{dx}$ listed
+in Table~\ref{tab:incidence_components} from $x_0$ to $x_1$ gives the global
+surplus changes $\Delta CS$ and $\Delta PS$ for any shock
+$x\in\{c,h,\tau^s,\tau^b\}$.  The global incidence ratio
+$I_{x_0}^{x_1}\equiv \Delta CS/\Delta PS$ (when $\Delta PS\neq0$) follows from
+the local relation $dCS/dx = I(x)\,dPS/dx$:
 \begin{equation}
-\Delta W = \int_{x_0}^{x_1} \Bigl[\,Q(x)\bigl(\mu_x(x)-r'(p(x))(p(x)+h)\rho_x(x)\bigr)+\Sigma_x(x)\Bigr]\,dx.
-\label{eq:global-W-final}
-\end{equation}
-For a production-cost or seller-tax shock this simplifies to
-\[
-\Delta W = -\int_{x_0}^{x_1} Q(x)\,\Delta(x)\,dx,
-\qquad
-\Delta(x)\equiv 1+r'(p(x))(p(x)+h)\,\rho_c(x).
-\]
-For a buyer tax the integrand is multiplied by $\mu_p(p(x),x)$, and for a
-handling shock by $r(p(x))$:
-\[
-\Delta W^{\tau^b} = -\int Q\,\mu_p\,\Delta\,dx,\qquad
-\Delta W^{h} = -\int Q\,r\,\Delta\,dx.
-\]
-
-\subsection{Global incidence ratio}
-
-The global incidence ratio is defined as
-$I_{x_0}^{x_1}\equiv \Delta CS/\Delta PS$, provided $\Delta PS\neq 0$.
-From the local relation $dCS/dx = I(x)\,dPS/dx$ with $I(x)$ given in
-(\ref{eq:incidence_result}), we have
-\[
-\Delta CS = \int_{x_0}^{x_1} I(x)\,\frac{dPS}{dx}\,dx.
-\]
-Hence, whenever $\Delta PS\neq 0$,
-\begin{equation}
-\boxed{\, I_{x_0}^{x_1} = \int_{x_0}^{x_1} I(x)\,\omega(x)\,dx \,},
-\qquad
-\omega(x)\equiv\frac{dPS/dx}{\Delta PS},\quad \int_{x_0}^{x_1}\omega(x)\,dx=1.
+I_{x_0}^{x_1} = \int_{x_0}^{x_1} I(x)\,\omega(x)\,dx,
 \label{eq:global-incidence-final}
 \end{equation}
-This is an exact algebraic identity; it does not require $\omega(x)$ to be
-non-negative.  If, however, $dPS/dx$ does not change sign along the path (as is
-the case for ``small'' shocks or when the pass-through sign is constant), then
-$\omega(x)\ge 0$ and $I_{x_0}^{x_1}$ is a convex combination of the local
-ratios $I(x)>0$.  In that case the global incidence ratio is strictly
-positive, and consumers and producers share the burden (or the gain) in the
-same direction globally, just as they do locally.
+where $\omega(x)\equiv (dPS/dx)/\Delta PS$.  Although $I(x)>0$ at every point,
+the global ratio need \emph{not} be positive: if $dPS/dx$ changes sign along
+the path, the weights $\omega(x)$ take both signs, and the weighted average
+can become negative.  Hence the classical sign-preserving property of local
+incidence does not extend globally.
 
-\subsection{Deadweight loss of taxation}
-
-Government revenue from a unit tax is $G=\tau Q$, with $Q$ evaluated at the
-checkout price.  Total surplus is $V=W+G$.  For a seller tax, using
-$dW/d\tau^s = -Q\Delta$,
+The same integrals also deliver total surplus once tax revenue is restored.
+Total surplus is $V = CS + PS + \tau Q$, where $Q$ is evaluated at the
+checkout price.  For a seller tax, differentiating and evaluating at $\tau=0$
+gives a first-order deadweight loss
 \[
-\frac{dV}{d\tau^s} = -Q(\Delta-1) + \tau\,\frac{dQ}{d\tau^s}.
+\frac{dV}{d\tau^s}\Big|_{\tau=0} = -Q(0)\,r'(p(0))(p(0)+h)\,\rho_c(0),
 \]
-At an infinitesimal tax ($\tau=0$), the first-order deadweight loss is
-\begin{equation}
-\frac{dV}{d\tau^s}\Big|_{\tau=0} = -Q(0)\,r'(p(0))(p(0)+h)\,\rho_c(0).
-\end{equation}
-The classic Harberger triangle, which starts at zero, is recovered only when
-$r'=0$; with a price-sensitive return rate, the tax creates a first-order
-efficiency cost (or benefit, if $r'\rho_c<0$) from the reallocation of units
-between kept and returned states.
-
-For a finite seller-tax change,
-\begin{equation}
-\Delta V = \int_{\tau_0}^{\tau_1} \Bigl[-Q(\tau)\bigl(\Delta(\tau)-1\bigr)
-+ \tau\,Q'(\tau)\Bigr]d\tau.
-\end{equation}
-The first term captures the keep-or-return reallocation, the second is the
-conventional quantity-distortion triangle.  For a buyer tax the expressions
-are scaled by $\mu_p$:
+which is nonzero whenever the return rate responds to price.  The classic
+Harberger triangle starting at zero is recovered only when $r'=0$.  The
+finite-change excess burden follows by inserting the entries for
+$dCS/d\tau^s$, $dPS/d\tau^s$, and the revenue term.  For a buyer tax the
+formulas are scaled by $\mu_p$:
 \[
-\frac{dV}{d\tau^b} = -Q(\mu_p\Delta-1) + \tau\,\frac{dQ}{d\tau^b},
-\qquad
-\frac{dV}{d\tau^b}\Big|_{\tau=0} = -Q(0)\bigl(\mu_p(0)\Delta(0)-1\bigr).
+\frac{dV}{d\tau^b}\Big|_{\tau=0} = -Q(0)\bigl(\mu_p(0)\Lambda(0)-1\bigr),
+\qquad \Lambda\equiv 1+r'(p)(p+h)\rho_c.
 \]
-The finite-change formula follows analogously.
 
 \input{appendix_welfare_bias_primitives}
 
