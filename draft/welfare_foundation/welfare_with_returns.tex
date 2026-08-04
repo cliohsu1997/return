@@ -41,24 +41,21 @@ nexus.\footnote{Since the 2018 \emph{Wayfair} decision, nearly every state
 When the transaction is final and the good is kept, these remittance rules
 are economically equivalent.  The treasury receives the same revenue, and
 which party remits is only an administrative detail.  A return changes that
-picture, because it requires the tax itself to be reversed.  Under seller
-remittance, the seller issues a credit note for the full tax-inclusive price
-and refunds that amount to the buyer.  Under buyer remittance, the seller's
-credit note covers only the pre-tax price, and the buyer must separately
-reverse the tax previously accounted for on its own tax filing.  The same
-split arises between sales tax and use tax.  If that buyer-side adjustment is
-costless, the buyer recovers the tax in full under either regime.  When
-recovery instead requires extra filing, delay, or carries a risk of
-rejection, buyer remittance yields a smaller net refund than seller
-remittance.  In what follows we therefore treat buyer remittance as the
-regime where the buyer recovers only the pre-tax price on a return, while
-under seller remittance the full tax-inclusive price is refunded.%
-\footnote{Under buyer remittance the buyer must reverse the tax separately
-  after a return---a step that is often costly or overlooked. Under seller
-  remittance the tax is automatically refunded with the credit note. We
-  therefore assume the buyer recovers none of the tax, capturing the regime
-  asymmetry in its starkest form.}
-Remittance therefore matters for the return decision.
+picture, because the tax paid to the government must itself be unwound.
+Reclaiming that tax typically requires filing and can involve delay or
+incomplete recovery, so the remitter's effective tax refund is smaller than
+the statutory amount.  We take the extreme case in which the remitter
+recovers none of the tax from the government on a returned unit---whether
+the seller or the buyer remitted.\footnote{Partial reclaim from the
+  government would lie between full recovery of $\tau$ and this zero-reclaim
+  benchmark.  We use the extreme to put both remittance regimes on the same
+  footing with respect to treasury friction.}
+Even so, the private refund between buyer and seller still differs by
+regime.  Under seller remittance the seller refunds the full tax-inclusive
+checkout price, while under buyer remittance the seller refunds only the
+pre-tax price and the buyer does not recover the tax.  The keep-or-return
+decision and the seller's effective margin therefore depend on which party
+remits.
 
 Most incidence and pass-through analysis abstracts from this difference.  It
 assumes remittance neutrality and treats a return as undoing the purchase, so
@@ -395,13 +392,14 @@ arguments of $S(\cdot)$ coincide.  Canceling $p-\tau$ yields
   define the same equilibrium.}
 \end{result}
 
-Tax neutrality breaks down because the refunded amount---and therefore the
-keep-or-return decision---depends on which party remits the tax.  Under seller
-remittance the tax-inclusive checkout price is refunded; under buyer remittance
-only the pre-tax list price is.  Purchase is always based on checkout price
-$p$, but returns are evaluated at $p$ under seller remittance and at $p-\tau$
-under buyer remittance, so the effective margin generally differs and the two
-clearing conditions are not equivalent.
+Tax neutrality breaks down because the private refund, and therefore the
+keep-or-return decision, depends on which party remits the tax.  Under seller
+remittance the tax-inclusive checkout price is refunded.  Under buyer
+remittance only the pre-tax list price is.  In either case the remitter
+recovers none of $\tau$ from the government.  Purchase is always based on
+checkout price $p$, but returns are evaluated at $p$ under seller remittance
+and at $p-\tau$ under buyer remittance, so the effective margin generally
+differs and the two clearing conditions are not equivalent.
 
 %=============================================================================
 \section{Pass-through}
