@@ -13,8 +13,6 @@ $r'(p)(p+h)=\varepsilon_r(p)\,r(p)\,(p+h)/p$, so
   \frac{p}{p+h}\,\frac{1-r(p)}{r(p)},
   \label{eq:app-mu-er}
 \end{equation}
-$\mu_p<0$ is the reverse strict inequality, and $\varepsilon_r$ has the same
-sign as $r'$ (throughout, $r(p)\in(0,1)$).
 
 Result~\ref{res:welfare-bias} becomes:
 \begin{enumerate}
@@ -34,21 +32,11 @@ with $\varepsilon_r>0$ this is~(i), and $\rho_c<0$ is~(iii).
 For~(ii), $\varepsilon_r<0$ forces $\mu_p>1-r>0$ and hence $\rho_c>0$, so
 $0<\Lambda<1$.
 \end{proof}
-Corollary~\ref{cor:welfare-bias-buyer} becomes:
-\begin{enumerate}
-\item[(i)] If $\mu_p>0$, underestimation iff
-$\displaystyle\frac{\varepsilon_S-\varepsilon_D}{\varepsilon_D}
->\varepsilon_r(p)\frac{p+h}{p}$,
-and overestimation iff
-$\displaystyle\frac{\varepsilon_S-\varepsilon_D}{\varepsilon_D}
-<\varepsilon_r(p)\frac{p+h}{p}$;
-\item[(ii)] If $\mu_p<0$, surplus rises iff
-$|\varepsilon_S|\le -\varepsilon_D$ and falls iff
-$|\varepsilon_S|>-\varepsilon_D$.
-\end{enumerate}
-\begin{proof}
-Under $\mu_p>0$ we have $\varepsilon_S>0$, so
-$\varepsilon_S-\varepsilon_D>0$, and also $\rho_c>0$, $\Lambda>0$.  Write
+\begin{proof}[Proof of Corollary~\ref{cor:welfare-bias-buyer}]
+The true change is $-Q\mu_p\Lambda$ and the no-return prediction is $-Q$, so
+the no-return loss figure $Q$ understates the returns-adjusted figure
+$Q\mu_p\Lambda$ if and only if $\mu_p\Lambda>1$ and overstates it if and only
+if $\mu_p\Lambda<1$.  Write
 $\mu_p=1-r(p)-r'(p)(p+h)$ and $\Lambda=1+r'(p)(p+h)\rho_c$.  Using
 $\mu_p\rho_c=\varepsilon_S/(\varepsilon_S-\varepsilon_D)$,
 \begin{align*}
@@ -65,12 +53,14 @@ $\mu_p\rho_c=\varepsilon_S/(\varepsilon_S-\varepsilon_D)$,
   &=-r(p)\Biggl(1-\varepsilon_r(p)\,\frac{p+h}{p}\,
        \frac{\varepsilon_D}{\varepsilon_S-\varepsilon_D}\Biggr).
 \end{align*}
-Hence $\mu_p\Lambda>1$ iff
-$\varepsilon_r(p)\frac{p+h}{p}\frac{\varepsilon_D}{\varepsilon_S-\varepsilon_D}>1$.
-Since $\varepsilon_D/(\varepsilon_S-\varepsilon_D)<0$, multiplying through
-reverses the inequality and yields the underestimation cut in~(i).  The
-overestimation cut is the reverse; under $\mu_p>0$ and $\Lambda>0$ it is
-exactly $0<\mu_p\Lambda<1$.  Part~(ii): under $\mu_p<0$, surplus rises iff
-$\rho_c>0$ and falls iff $\rho_c<0$, which is Result~\ref{res:negative-pt}.
-Regions may be read in $\varepsilon_r$ via~\eqref{eq:app-mu-er}.
+Hence $\mu_p\Lambda>1$ if and only if
+$\varepsilon_r(p)\frac{p+h}{p}\frac{\varepsilon_D}{\varepsilon_S-\varepsilon_D}
+>1$, and $\mu_p\Lambda<1$ if and only if the reverse strict inequality holds.
+When $\mu_p>0$, one has $\varepsilon_D/(\varepsilon_S-\varepsilon_D)<0$, so
+these cuts are equivalent to
+\[
+  \frac{\varepsilon_S-\varepsilon_D}{\varepsilon_D}
+  \gtrless
+  \varepsilon_r(p)\frac{p+h}{p}.
+\]
 \end{proof}

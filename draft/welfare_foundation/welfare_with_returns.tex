@@ -911,7 +911,7 @@ $dW/dx=-Q\Lambda$ for these shocks,
 Because consumer and producer surplus always move together, $\Lambda$ has the
 same sign as $\rho_c$.  The no-return formula retains only the ex-ante
 rectangle $-Q$, so the comparison with that benchmark is governed only by the
-ex-post term $-Q\,r'(p)(p+h)\rho_c$: that term may amplify the rectangle,
+ex-post term $-Q\,r'(p)(p+h)\rho_c$.  That term may amplify the rectangle,
 partially offset it, or reverse the private-surplus change.
 
 When $\rho_c>0$ and $\mu_p>0$, a cost increase raises the list price.  If
@@ -925,17 +925,19 @@ wastes more $p+h$ per unit sold.
 When $\rho_c>0$ but $\mu_p<0$ (so $|\varepsilon_S|<-\varepsilon_D$), supply
 slopes downward in list-price space and pass-through remains positive only
 because demand is more price-responsive than supply.  The return-rate
-response must already be steep---$\mu_p<0$ requires $r'(p)(p+h)>1-r$---so
-even a modest $\rho_c$ can make the ex-post loss large relative to the
+response must already be steep, since $\mu_p<0$ requires $r'(p)(p+h)>1-r$.
+Even a modest $\rho_c$ can then make the ex-post loss large relative to the
 ex-ante rectangle and push $\Lambda$ well above one.
 
-When $\rho_c<0$, a production-cost or seller-tax increase lowers the list
-price and, with it, the return rate.  Units that would have been returned are
-kept instead; each such switch saves $p+h$, and the ex-post term becomes a
-gain.  Those savings can exceed the ex-ante resource cost, so private surplus
-rises by $Q|\Lambda|$ and a Pareto improvement is possible.  The gain is
-larger when $r'(p)(p+h)\,|\rho_c|$ is large.
-\begin{result}[Bias from ignoring returns in first-order private surplus]
+When $\rho_c<0$ (which implies $r'(p)>0$), a production-cost or seller-tax
+increase lowers the list price.  Because returns rise with price, that fall in
+$p$ lowers the return rate.  Units that would have been returned are kept
+instead.  Each such switch saves $p+h$, so the ex-post term becomes a gain.
+Those savings can exceed the ex-ante resource cost, so the shock in fact
+raises private surplus by $Q|\Lambda|$ and a Pareto improvement is possible.
+The gain is larger when $r'(p)(p+h)\,|\rho_c|$ is large.  These three
+comparisons are summarized in Result~\ref{res:welfare-bias}.
+\begin{result}[No-return private-surplus bias]
 \label{res:welfare-bias}
   Consider a unit production-cost or seller-tax increase.  Relative to the
   correct returns-adjusted change $dW/dc=-Q\Lambda$, the no-return formula
@@ -946,41 +948,54 @@ larger when $r'(p)(p+h)\,|\rho_c|$ is large.
   \item[(ii)] overestimates the private-surplus loss if and only if
   $r'(p)<0$ (which implies $\mu_p>0$ and hence $\rho_c>0$, so
   $0<\Lambda<1$);
-  \item[(iii)] predicts a loss of $Q$ when private surplus in fact rises if
-  and only if $\rho_c<0$, in which case the rise is $Q|\Lambda|$.
+  \item[(iii)] predicts a loss of $Q$ when the shock in fact raises private
+  surplus if and only if $\rho_c<0$ (which implies $r'(p)>0$), in which case
+  the gain is $Q|\Lambda|$.
   \end{enumerate}
 \end{result}
-Under buyer remittance both margins scale by $\mu_p$, so the comparison with
-$-Q$ mixes an ex-ante factor $\mu_p$ and an ex-post term scaled by $\mu_p$.
-\begin{corollary}[Bias under buyer remittance]
+For production-cost and seller-tax shocks that bias is purely ex-post.  The
+no-return formula counts the ex-ante rectangle correctly and errs only by
+omitting the keep-or-return term.  Under buyer remittance both margins are
+scaled by $\mu_p$,
+\begin{equation}
+  \frac{dW}{d\tau^b}
+  =-Q\mu_p
+  -Q\mu_p\,r'(p)(p+h)\rho_c
+  =-Q\mu_p\Lambda,
+\end{equation}
+so relative to the returns-adjusted change $-Q\mu_p\Lambda$, the no-return
+formula $-Q$ errs on both the ex-ante piece ($-Q$ vs $-Q\mu_p$) and the
+ex-post piece.  When $\mu_p>0$, the no-return formula underestimates the
+ex-ante loss if and only if $\mu_p>1$, and overestimates it otherwise.  That
+cut is the same threshold as Result~\ref{res:pt-bias-er}: $\mu_p>1$ if and
+only if $\varepsilon_r(p)<-p/(p+h)$.  Classical overestimation of
+pass-through is therefore underestimation of the ex-ante loss.
+
+For the ex-post piece, as in Result~\ref{res:welfare-bias}(ii), $r'(p)<0$
+pins the term as a gain.  Selection improves the composition of buyers, so a
+higher list price lowers the return rate, raises the effective margin, and
+gives positive pass-through.  When $r'(p)>0$, the sign of the ex-post term
+depends on $\rho_c$ and has no succinct formula.
+\begin{corollary}[Buyer-remittance no-return bias]
 \label{cor:welfare-bias-buyer}
-  Relative to the no-return prediction $dW/d\tau=-Q$, a unit buyer-remitted
-  tax has true change $-Q\mu_p\Lambda$.
-  \begin{enumerate}
-  \item[(i)] If $\mu_p>0$ (which implies $\rho_c>0$ and hence $\Lambda>0$),
-  both components keep the seller-remittance signs but scale with $\mu_p$.
-  The no-return formula underestimates the private-surplus loss if and only if
-  $\mu_p\Lambda>1$ and overestimates it if and only if $0<\mu_p\Lambda<1$.
-  \item[(ii)] If $\mu_p<0$, the ex-ante piece flips relative to $-Q$ and the
-  ex-post piece flips with it.  The no-return formula predicts a loss of $Q$,
-  whereas private surplus rises by $Q\,|\mu_p|\Lambda$ if and only if
-  $\rho_c>0$ and falls by $Q\,|\mu_p\Lambda|$ if and only if $\rho_c<0$.
-  \end{enumerate}
+  Relative to the correct returns-adjusted change $-Q\mu_p\Lambda$, the
+  no-return prediction $dW/d\tau=-Q$ underestimates the private-surplus loss
+  if and only if $\mu_p\Lambda>1$ and overestimates it if and only if
+  $\mu_p\Lambda<1$.  The latter cut is equivalent to
+  \begin{equation}
+    \varepsilon_r(p)\frac{p+h}{p}\,
+    \frac{\varepsilon_D}{\varepsilon_S-\varepsilon_D}
+    <1.
+    \label{eq:V-buyer-cut}
+  \end{equation}
 \end{corollary}
-Appendix~\ref{app:welfare-bias-primitives} restates these cases in the
-return-rate elasticity $\varepsilon_r(p)$ and the observed supply and demand
-elasticities $\varepsilon_S(p)$ and $\varepsilon_D(p)$---the form most useful
-for empirical checks.
+Appendix~\ref{app:welfare-bias-primitives} proves the corollary.
 
 For tax shocks, social surplus adds back treasury revenue.  Because the
 remitter recovers none of $\tau$ from the government on a return, revenue is
 $G=\tau Q(\tau)$ under both remittance regimes, with $Q$ the equilibrium
 gross quantity at that tax.  Write $V=W+G$.  Differentiating the product
-gives $dG/d\tau=Q+\tau Q'$, so at $\tau=0$
-\[
-  \frac{dV}{d\tau}
-  = \frac{dW}{d\tau}+Q.
-\]
+gives $dG/d\tau=Q+\tau Q'$, so at $\tau=0$ we have $dV/d\tau=dW/d\tau+Q$.
 Using \eqref{eq:DWL_shocks},
 \begin{align}
   \frac{dV}{d\tau^s}
@@ -991,13 +1006,9 @@ Using \eqref{eq:DWL_shocks},
   &= Q\bigl(1-\mu_p\Lambda\bigr).
   \label{eq:DWL_V_tax}
 \end{align}
-The first-order deadweight loss of an infinitesimal seller-remitted tax is
-therefore only the ex-post private-surplus piece: the revenue term $+Q$
-cancels the ex-ante rectangle, and the $\tau Q'$ contribution vanishes at
-$\tau=0$.  Without returns, $\Lambda=1$ and that loss is zero.  Under buyer
-remittance the private change is scaled by $\mu_p$, so $+Q$ does not cancel
-one-for-one unless $\mu_p=1$.  Cost and handling shocks have $G=0$, so their
-social first-order effects coincide with \eqref{eq:DWL_shocks}.
+Whether an infinitesimal tax creates a first-order social loss or gain
+follows the same cuts as Result~\ref{res:welfare-bias} and
+Corollary~\ref{cor:welfare-bias-buyer}.
 
 %=============================================================================
 \section{Global Incidence}
