@@ -141,7 +141,10 @@ With returns, that fall is joined by an ex-post adjustment that the
 classical no-return formula omits entirely.  The same two pieces
 appear for the other shocks after a simple rescaling.  A handling-cost shock
 scales both by the return rate, and under buyer remittance both are scaled by
-the response of the effective margin to list price.
+the response of the effective margin to list price.  For taxes we then add
+treasury revenue $G=\tau Q(\tau)$ back to obtain social surplus, so the
+first-order deadweight loss of a seller-remitted tax is only the ex-post
+return-margin term.
 
 Whether the omitted ex-post term adds to or offsets that market-quantity fall
 hinges on how the return rate responds to the price change.  When
@@ -781,10 +784,12 @@ When $\rho_c>0$, all four shocks reduce both surpluses.  Such gains are
 impossible in the classical model, where pass-through is always positive,
 underscoring how profoundly returns alter standard welfare analysis.
 
-\subsection{First-order deadweight loss}
+\subsection{First-order private surplus and deadweight loss}
 \label{sec:DWL}
 
-Private surplus is $W=CS+PS$.  Summing (\ref{eq:CSx_incidence}) and
+Local incidence separates the burden between consumers and producers.  Their
+joint payoff---private surplus---is the sum of consumer and producer surplus,
+$W\equiv CS+PS$.  Summing (\ref{eq:CSx_incidence}) and
 (\ref{eq:PSx_incidence}) gives
 \[
   \frac{dW}{dx}
@@ -804,8 +809,8 @@ with $\mu_x$ and $\Sigma_x$ as in Table~\ref{tab:incidence_components}.
 The term $-Q\,r'(p)(p+h)\rho_x$ is new relative to the classical model.  It
 captures the efficiency consequence of the price-induced change in the return
 rate.  Each returned unit consumes real handling resources $h$, so a change in
-the return rate has a first-order welfare impact that is absent when returns
-are shut down.
+the return rate has a first-order effect on private surplus that is absent
+when returns are shut down.
 
 Without returns, $r=0$ and $r'=0$, so \eqref{eq:DWL_incidence} reduces to
 \[
@@ -819,21 +824,24 @@ $-Q\rho_c$ and $+Q\rho_c$ cancel, leaving $dW/dc=-Q$: a first-order real
 resource loss of $Q$ dollars.
 
 For a unit tax the same cancellation gives $dW/d\tau=-Q$, but government
-revenue $\tau Q$ is transferred rather than lost.  Total surplus
-$V=W+\tau Q$ therefore satisfies $dV/d\tau=\tau Q'(\tau)$, which is zero at
-$\tau=0$.  Locally, a cost shock has a first-order welfare effect of $-Q$,
-while an infinitesimal tax has none---the dollar is lost in one case and
-merely transferred in the other.
+revenue $G=\tau Q(\tau)$ is transferred rather than lost.  Total surplus
+$V=W+G$ therefore satisfies
+$dV/d\tau=dW/d\tau+Q(\tau)+\tau Q'(\tau)=\tau Q'(\tau)$, which is zero at
+$\tau=0$.  Locally, a cost shock has a first-order private-surplus effect of
+$-Q$, while an infinitesimal tax has no first-order social loss---the dollar
+is lost in one case and merely transferred in the other.
 
-Product returns overturn the clean dichotomy between resource drains and pure
-transfers that characterizes the textbook model.  The return-rate term in
-\eqref{eq:DWL_incidence} is generally nonzero for every shock, so
-production-cost increases, handling-cost increases, and unit taxes under both
-remittance regimes all generate first-order welfare changes that cannot be
-written as mere transfers.
+Product returns overturn that clean private-versus-transfer contrast.  The
+return-rate term in \eqref{eq:DWL_incidence} is generally nonzero for every
+shock, so production-cost increases, handling-cost increases, and unit taxes
+under both remittance regimes all change private surplus at first order in a
+way that is not a pure transfer between buyers and sellers.  We first track
+these private-surplus changes for all four shocks.  For taxes, treasury
+revenue remains a transfer; we add $G=\tau Q(\tau)$ back when measuring
+deadweight loss below.
 
 Plugging the values of $\mu_x$ and $\Sigma_x$ from
-Table~\ref{tab:incidence_components} into the general welfare expression
+Table~\ref{tab:incidence_components} into
 $dW/dx=Q\bigl[\mu_x-r'(p)(p+h)\rho_x\bigr]+\Sigma_x$, and using the
 pass-through links from Result~\ref{res:pass-through}, yields
 \begin{align}
@@ -855,38 +863,28 @@ where the common factor is defined as
   \Lambda \equiv 1 + r'(p)(p+h)\,\rho_c.
   \label{eq:Lambda}
 \end{equation}
-The unit term in $\Lambda$ is the mechanical welfare effect that remains even
-if returns do not respond to price.  The term $r'(p)(p+h)\rho_c$ is the extra
-efficiency cost of reallocating units between kept and returned states after
-the price moves.  Each change $r'(p)\rho_c$ in the return rate costs $p+h$
-per unit sold.  We decompose any of the welfare changes in
-\eqref{eq:DWL_shocks} into an ex-ante loss on the purchase margin and an
-ex-post loss on the keep-or-return margin.  This decomposition is simplest
-for a production-cost or seller-tax shock, where $dW/dx=-Q\Lambda$.  Handling
-and buyer-remitted taxes then rescale the ex-ante and ex-post losses by $r$
-and $\mu_p$, respectively.
+Private surplus moves because consumers change either how much they buy or
+whether they return what they bought.  The unit term in $\Lambda$ is the
+mechanical effect on the purchase margin that remains even if the return rate
+does not respond to price.  The term $r'(p)(p+h)\rho_c$ is the extra
+efficiency cost on the keep-or-return margin after the price moves: each
+change $r'(p)\rho_c$ in the return rate costs $p+h$ per unit sold.  We
+therefore decompose the private-surplus changes in \eqref{eq:DWL_shocks} into
+an ex-ante loss on the purchase margin and an ex-post loss on the
+keep-or-return margin.  That split is simplest for a production-cost or
+seller-tax shock, where $dW/dx=-Q\Lambda$; handling and buyer-remitted taxes
+rescale both pieces by $r$ and $\mu_p$, respectively.
 
-To isolate the mechanical effect, hold the keep-or-return margin fixed while
-purchase can still adjust.  This is the natural benchmark because the true
-first-order change mixes two responses.  Quantity adjusts on the purchase
-margin, and the return rate reallocates units between kept and returned
-states.  Holding the return rate fixed shuts down only the second response,
-so the welfare change in the resulting economy is the ex-ante loss on the
-purchase margin.  The residual relative to the true change $dW/dx$ is the
-ex-post loss on the keep-or-return margin.
-
-Freeze the aggregate return rate at its initial value $r_0\equiv r(p_0)$.  In
-the resulting ex-ante economy the effective margin is \eqref{eq:mu-def} with
-$r(p)$ replaced by that constant,
+Freeze the aggregate return rate at its initial value $r_0\equiv r(p_0)$.
+In the resulting ex-ante economy the effective margin is
+\eqref{eq:mu-def} with $r(p)$ replaced by that constant,
 \begin{equation}
   \mu^{\mathrm{EA}}(p)\equiv p-r_0(p+h).
   \label{eq:mu-EA}
 \end{equation}
 Applying \eqref{eq:DWL_incidence} then yields
 $dW/dx\big|_{\mathrm{EA}}=-Q$, the classical rectangle from changing gross
-quantity alone.
-
-The ex-post change is that residual,
+quantity alone.  The ex-post change is that residual,
 $dW/dx\big|_{\mathrm{EP}}\equiv dW/dx-dW/dx\big|_{\mathrm{EA}}$.  Since
 $dW/dx=-Q\Lambda$ for these shocks,
 \begin{equation}
@@ -912,81 +910,48 @@ $dW/dx=-Q\Lambda$ for these shocks,
 \end{result}
 Because consumer and producer surplus always move together, $\Lambda$ has the
 same sign as $\rho_c$.  The no-return formula retains only the ex-ante
-rectangle $-Q$ and omits the ex-post loss $-Q\,r'(p)(p+h)\rho_c$, so the
-comparison with that rectangle is governed by the size and sign of the
-ex-post term.
+rectangle $-Q$, so the comparison with that benchmark is governed only by the
+ex-post term $-Q\,r'(p)(p+h)\rho_c$: that term may amplify the rectangle,
+partially offset it, or reverse the private-surplus change.
 
-When $\rho_c>0$, two regimes are possible.  If $\mu_p>0$, supply slopes
-upward in list-price space, so a cost increase raises $p$.  Whenever
-$r'(p)>0$, that price increase raises the return rate, adds handling costs,
-and makes the ex-post loss amplify the ex-ante rectangle, so $\Lambda>1$.
-Whenever $r'(p)<0$, the return rate falls and the ex-post term partially
-offsets the ex-ante loss, yielding $0<\Lambda<1$.  The welfare loss $Q\Lambda$
-is larger when $r'(p)$ is positive and large or when $h$ is large, because
-each dollar of pass-through raises returns and wastes an additional $p+h$
-per unit sold.
+When $\rho_c>0$ and $\mu_p>0$, a cost increase raises the list price.  If
+$r'(p)>0$, that price rise raises the return rate and adds handling costs, so
+the ex-post loss amplifies the ex-ante rectangle and $\Lambda>1$.  If instead
+$r'(p)<0$, the return rate falls and the ex-post term partially offsets the
+ex-ante loss, yielding $0<\Lambda<1$.  The private-surplus loss $Q\Lambda$ is
+larger when $r'(p)$ or $h$ is large, because each dollar of pass-through then
+wastes more $p+h$ per unit sold.
 
-If instead $\rho_c>0$ and $\mu_p<0$ (so $|\varepsilon_S|<-\varepsilon_D$),
-supply slopes downward in list-price space.  A higher $p$ lowers $\mu$ and
-contracts both quantity supplied and quantity demanded, yet pass-through
-remains positive because demand is more price-responsive than this
-downward-sloping supply.  The return-rate response must already be steep,
-since $\mu_p<0$ requires $r'(p)(p+h)>1-r$.  Even a modest $\rho_c$ can then
-make the ex-post loss large relative to the ex-ante rectangle, leaving
-$\Lambda$ substantially above one.
+When $\rho_c>0$ but $\mu_p<0$ (so $|\varepsilon_S|<-\varepsilon_D$), supply
+slopes downward in list-price space and pass-through remains positive only
+because demand is more price-responsive than supply.  The return-rate
+response must already be steep---$\mu_p<0$ requires $r'(p)(p+h)>1-r$---so
+even a modest $\rho_c$ can make the ex-post loss large relative to the
+ex-ante rectangle and push $\Lambda$ well above one.
 
-When $\rho_c<0$, pass-through is negative.  A production-cost or seller-tax
-increase then lowers the list price.  That fall in $p$ reduces the return
-rate, so units that would have been returned are instead kept.  Each such
-switch saves $p+h$, and the ex-post term turns into a gain.  Those savings
-can exceed the ex-ante resource cost of the shock, so private surplus rises
-by $Q|\Lambda|$ and a Pareto improvement is possible.  The ex-post gain is
+When $\rho_c<0$, a production-cost or seller-tax increase lowers the list
+price and, with it, the return rate.  Units that would have been returned are
+kept instead; each such switch saves $p+h$, and the ex-post term becomes a
+gain.  Those savings can exceed the ex-ante resource cost, so private surplus
+rises by $Q|\Lambda|$ and a Pareto improvement is possible.  The gain is
 larger when $r'(p)(p+h)\,|\rho_c|$ is large.
-
-Relative to the no-return benchmark that keeps only the ex-ante rectangle,
-the true change $-Q\Lambda$ under- or overstates according to whether the
-omitted ex-post term adds to or offsets that rectangle, and predicts a loss
-when surplus in fact rises if and only if the ex-post gain dominates.
-\begin{result}[Bias from ignoring returns in first-order welfare]
+\begin{result}[Bias from ignoring returns in first-order private surplus]
 \label{res:welfare-bias}
   Consider a unit production-cost or seller-tax increase.  Relative to the
   correct returns-adjusted change $dW/dc=-Q\Lambda$, the no-return formula
   $dW/dc=-Q$
   \begin{enumerate}
-  \item[(i)] underestimates the welfare loss if and only if $\rho_c>0$ and
-  $r'(p)>0$ (hence $\Lambda>1$);
-  \item[(ii)] overestimates the welfare loss if and only if $r'(p)<0$
-  (which implies $\mu_p>0$ and hence $\rho_c>0$, so $0<\Lambda<1$);
+  \item[(i)] underestimates the private-surplus loss if and only if
+  $\rho_c>0$ and $r'(p)>0$ (hence $\Lambda>1$);
+  \item[(ii)] overestimates the private-surplus loss if and only if
+  $r'(p)<0$ (which implies $\mu_p>0$ and hence $\rho_c>0$, so
+  $0<\Lambda<1$);
   \item[(iii)] predicts a loss of $Q$ when private surplus in fact rises if
   and only if $\rho_c<0$, in which case the rise is $Q|\Lambda|$.
   \end{enumerate}
 \end{result}
-For production-cost and seller-tax shocks that bias is purely ex-post.  The
-no-return formula counts the ex-ante rectangle correctly and errs only by
-omitting the keep-or-return term.  Under buyer remittance both margins are
-scaled by $\mu_p$,
-\begin{equation}
-  \frac{dW}{d\tau^b}
-  =-Q\mu_p
-  -Q\mu_p\,r'(p)(p+h)\rho_c
-  =-Q\mu_p\Lambda,
-\end{equation}
-so relative to $-Q$ the bias is both ex-ante ($-Q\mu_p$ vs $-Q$) and
-ex-post (the omitted keep-or-return term, also scaled by $\mu_p$),
-interacting through $\mu_p\Lambda$.  When $\mu_p>0$, the no-return formula underestimates the ex-ante loss if and
-only if $\mu_p>1$, and overestimates it otherwise.  That cut is the same
-threshold as Result~\ref{res:pt-bias-er}: $\mu_p>1$ if and only if
-$\varepsilon_r(p)<-p/(p+h)$.  Whenever the classical formula overestimates
-pass-through, it therefore underestimates the ex-ante loss, and whenever it
-underestimates pass-through it overestimates that loss.
-
-For the ex-post piece, as in Result~\ref{res:welfare-bias}(ii), $r'(p)<0$
-pins the term as a gain.  Selection improves the composition of buyers, so a
-higher list price lowers the return rate and raises the effective margin more
-steeply: $\mu_p>0$ and hence $\rho_c>0$.  When $r'(p)>0$, the sign of the
-ex-post term depends on $\rho_c$ and has no succinct formula.  The corollary
-below records when the joint effect $\mu_p\Lambda$ under- or overstates
-relative to $-Q$.
+Under buyer remittance both margins scale by $\mu_p$, so the comparison with
+$-Q$ mixes an ex-ante factor $\mu_p$ and an ex-post term scaled by $\mu_p$.
 \begin{corollary}[Bias under buyer remittance]
 \label{cor:welfare-bias-buyer}
   Relative to the no-return prediction $dW/d\tau=-Q$, a unit buyer-remitted
@@ -994,7 +959,7 @@ relative to $-Q$.
   \begin{enumerate}
   \item[(i)] If $\mu_p>0$ (which implies $\rho_c>0$ and hence $\Lambda>0$),
   both components keep the seller-remittance signs but scale with $\mu_p$.
-  The no-return formula underestimates the welfare loss if and only if
+  The no-return formula underestimates the private-surplus loss if and only if
   $\mu_p\Lambda>1$ and overestimates it if and only if $0<\mu_p\Lambda<1$.
   \item[(ii)] If $\mu_p<0$, the ex-ante piece flips relative to $-Q$ and the
   ex-post piece flips with it.  The no-return formula predicts a loss of $Q$,
@@ -1006,6 +971,33 @@ Appendix~\ref{app:welfare-bias-primitives} restates these cases in the
 return-rate elasticity $\varepsilon_r(p)$ and the observed supply and demand
 elasticities $\varepsilon_S(p)$ and $\varepsilon_D(p)$---the form most useful
 for empirical checks.
+
+For tax shocks, social surplus adds back treasury revenue.  Because the
+remitter recovers none of $\tau$ from the government on a return, revenue is
+$G=\tau Q(\tau)$ under both remittance regimes, with $Q$ the equilibrium
+gross quantity at that tax.  Write $V=W+G$.  Differentiating the product
+gives $dG/d\tau=Q+\tau Q'$, so at $\tau=0$
+\[
+  \frac{dV}{d\tau}
+  = \frac{dW}{d\tau}+Q.
+\]
+Using \eqref{eq:DWL_shocks},
+\begin{align}
+  \frac{dV}{d\tau^s}
+  &= -Q(\Lambda-1)
+  = -Q\,r'(p)(p+h)\rho_c,
+  &
+  \frac{dV}{d\tau^b}
+  &= Q\bigl(1-\mu_p\Lambda\bigr).
+  \label{eq:DWL_V_tax}
+\end{align}
+The first-order deadweight loss of an infinitesimal seller-remitted tax is
+therefore only the ex-post private-surplus piece: the revenue term $+Q$
+cancels the ex-ante rectangle, and the $\tau Q'$ contribution vanishes at
+$\tau=0$.  Without returns, $\Lambda=1$ and that loss is zero.  Under buyer
+remittance the private change is scaled by $\mu_p$, so $+Q$ does not cancel
+one-for-one unless $\mu_p=1$.  Cost and handling shocks have $G=0$, so their
+social first-order effects coincide with \eqref{eq:DWL_shocks}.
 
 %=============================================================================
 \section{Global Incidence}
