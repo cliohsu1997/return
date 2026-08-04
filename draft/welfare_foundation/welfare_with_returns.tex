@@ -981,14 +981,18 @@ depends on $\rho_c$ and has no succinct formula.
   Relative to the correct returns-adjusted change $-Q\mu_p\Lambda$, the
   no-return prediction $dW/d\tau=-Q$ underestimates the private-surplus loss
   if and only if $\mu_p\Lambda>1$ and overestimates it if and only if
-  $\mu_p\Lambda<1$.  The latter cut is equivalent to
+  $\mu_p\Lambda<1$.  The former cut is equivalent to
   \begin{equation}
-    \varepsilon_r(p)\frac{p+h}{p}\,
-    \frac{\varepsilon_D}{\varepsilon_S-\varepsilon_D}
-    <1.
+    \varepsilon_r(p)\,
+    \frac{\varepsilon_D}{\varepsilon_D-\varepsilon_S}
+    <
+    -\frac{p}{p+h}.
     \label{eq:V-buyer-cut}
   \end{equation}
 \end{corollary}
+Relative to the pass-through cut $\varepsilon_r(p)<-p/(p+h)$ in
+Result~\ref{res:pt-bias-er}, the return-rate elasticity is scaled by the
+producer-incidence share $\varepsilon_D/(\varepsilon_D-\varepsilon_S)$.
 Appendix~\ref{app:welfare-bias-primitives} proves the corollary.
 
 For tax shocks, social surplus adds back treasury revenue.  Because the
