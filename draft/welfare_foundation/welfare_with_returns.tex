@@ -642,12 +642,12 @@ no-return formula underestimates pass-through.
 \section{Local incidence}
 %=============================================================================
 
-Having established how prices respond to different shocks, we now turn to how
-those price changes affect welfare.  The same pass-through objects determine
-the distribution of surplus between consumers and producers.  Throughout,
-$Q\equiv D(p)$ and $r\equiv r(p)$ denote the equilibrium gross quantity and the
-return rate.  From the consumer-side analysis in Section~3, a small increase in
-any shifter $x$ changes consumer surplus by
+Having established how prices respond to different shocks, we turn to local
+incidence: how each shock's pass-through $\rho_x$ splits the resulting surplus
+change between consumers and producers.  Throughout, $Q\equiv D(p)$ and
+$r\equiv r(p)$ denote the equilibrium gross quantity and the return rate.
+From the consumer-side analysis in Section~3, a small increase in any shifter
+$x$ changes consumer surplus by
 \begin{equation}
   \frac{dCS}{dx} = -Q(1-r)\rho_x,
   \label{eq:CSx_incidence}
@@ -675,9 +675,10 @@ The local incidence ratio is $I_x \equiv (dCS/dx)/(dPS/dx)$, so
   I_x = \frac{-Q(1-r)\rho_x}{Q(\mu_p \rho_x + \mu_x) + \Sigma_x}.
 \]
 The components needed to evaluate $I_x$ for each shock are reported in
-Table~\ref{tab:incidence_components}.  Across the four shocks the last column
-collapses to the same expression in $\rho_c$ and $\mu_p$: the shock-specific
-pass-through and direct effects cancel in the ratio.
+Table~\ref{tab:incidence_components}.  For every shock the incidence ratio
+reduces to the same expression in $\rho_c$ and $\mu_p$, because the
+shock-specific pass-through and direct effects cancel when $dCS/dx$ is
+divided by $dPS/dx$.
 
 \begin{table}[htbp]
 \centering
@@ -744,7 +745,7 @@ means the recovery exceeds the cost, so producers are net gainers.  This
 recovery factor can be written as
 $\mu_p\rho_c=\varepsilon^S/(\varepsilon^S-\varepsilon^D)$.  This expression
 closely mirrors the pass-through formula, and now we argue that
-$\rho_c<0$ if and only if $\mu_p\rho_c>1$.  The condition
+$\mu_p\rho_c>1$ if and only if $\rho_c<0$.  The condition
 $\mu_p\rho_c>1$ requires $\varepsilon^S<0$, which implies $\mu_p<0$, and hence
 $\rho_c<0$.  Conversely, $\rho_c<0$ requires $\varepsilon^S<0$ and
 $|\varepsilon^S|>-\varepsilon^D$, which gives $\mu_p\rho_c>1$.  Therefore, the
