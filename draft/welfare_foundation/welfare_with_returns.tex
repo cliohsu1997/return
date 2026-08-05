@@ -995,14 +995,14 @@ and on pass-through.  Table~\ref{tab:buyer-bias-cases} summarizes the four
 cases.  The first columns record the primitives and the two pass-throughs:
 $\rho_c$ is cost pass-through, and buyer-tax pass-through into the checkout
 price is $\rho^b_\tau=\mu_p\rho_c$.  The last three columns split the private
-change $-Q\mu_p\Lambda$.  EA is the ex-ante (frozen-return) piece $-Q\mu_p$: a
+change $-Q\mu_p\Lambda$.  EA is the ex-ante (frozen-return) term $-Q\mu_p$: a
 loss when $\mu_p>0$ and a gain when $\mu_p<0$.  EP is the ex-post keep-or-return
-piece $-Q\mu_p\,r'(p)(p+h)\rho_c$.  Bias vs $-Q$ reports the corollary cut:
+term $-Q\mu_p\,r'(p)(p+h)\rho_c$.  Bias vs $-Q$ reports the corollary cut:
 overestimate when $\mu_p\Lambda<1$ and underestimate when $\mu_p\Lambda>1$.
-Wrong sign is not a third category: it is the subcase of overestimation in
-which private surplus rises.  The no-return formula still reports a loss of
-$Q$, while the true change is a gain, so $-Q$ both overestimates the loss and
-gets its direction wrong.
+Wrong sign is not a third category: it is the extreme case of overestimation
+in which private surplus rises.  The no-return formula still reports a loss
+of $Q$, while the true change is a gain, so $-Q$ both overestimates the loss
+and gets its direction wrong.
 \begin{table}[htbp]
 \centering
 \begin{tabular}{llccccc}
@@ -1033,30 +1033,34 @@ Case & Primitives & $\rho_c$ & $\rho^b_\tau$ & EA & EP & Bias vs $-Q$ \\
   enough for the fall in the return rate to deliver a sufficient $p+h$
   saving.  When demand is very elastic, small positive pass-through weakens
   equilibrium screening and reduces this ex-post gain.
-  \item Case~2 (mild behavioral).  Again $\mu_p>0$, so the ex-ante piece is
-  a loss, but now $\mu_p<1-r<1$.  Pass-through is positive and $\Lambda>1$,
-  so the ex-post piece is also a loss, yet $\mu_p\Lambda<1$: the first-round
-  bite on the effective margin is already smaller than one, and the
-  behavioral rise in returns does not restore a full loss of $Q$.
+  \item Case~2 (mild behavioral).  Returns rise in price, but not enough to
+  flip the effective-margin slope: $0<\mu_p<1-r$.  The ex-ante term is
+  therefore a loss smaller than $Q$.  With $\rho_c>0$ we also have
+  $\Lambda>1$, so the ex-post term is a loss as well.  The combined loss is
+  nevertheless smaller than $Q$: writing
+  $\mu_p\Lambda-1=-r-r'(p)(p+h)(1-\mu_p\rho_c)$,
+  both summands are negative when $r'>0$ and $\rho_c>0$
+  (hence $\mu_p\rho_c<1$).
   \item Case~3 (strong behavioral, positive cost pass-through).
-  Returns rise in price, and strongly enough that $\mu_p<0$: at a fixed
+  Returns rise in price strongly enough that $\mu_p<0$, so at a fixed
   checkout price a buyer-remitted tax \emph{raises} the seller's effective
-  margin, so the ex-ante private change is a gain rather than a loss.
-  Demand is steeper than supply, so cost pass-through $\rho_c$ is positive;
-  buyer-tax pass-through $\rho^b_\tau=\mu_p\rho_c$ is then negative, and the
-  checkout price falls.  Because $r'>0$, that lower price reduces the return
-  rate, so the ex-post term is a gain as well.  Private surplus rises on both
-  margins ($\mu_p\Lambda<0$), so $-Q$ overestimates the private-surplus loss
-  and in fact has the wrong sign.
+  margin and the ex-ante term is a gain.  Demand is steeper than supply, so
+  cost pass-through is positive and buyer-tax pass-through
+  $\rho^b_\tau=\mu_p\rho_c$ is negative.  The checkout price therefore falls,
+  and with $r'>0$ returns fall as well, making the ex-post term a gain.
+  Private surplus rises ($\mu_p\Lambda<0$), while $-Q$ still reports a loss
+  of $Q$---the extreme wrong-sign overestimate.
   \item Case~4 (strong behavioral, negative cost pass-through).
-  The same strong behavioral force keeps $\mu_p<0$, so the ex-ante piece is
-  again a gain.  Now supply is steeper than demand, so cost pass-through is
-  negative.  Multiplying by $\mu_p<0$ flips the sign: buyer-tax pass-through
-  is positive, and the checkout price rises.  With $r'>0$ that higher price
-  raises returns, so the ex-post term is a loss.  The two margins pull in
-  opposite directions, so $\mu_p\Lambda$ may lie below or above one: $-Q$ may
-  overestimate the private-surplus loss (including the wrong-sign subcase
-  when the ex-ante gain wins and private surplus rises) or underestimate it.
+  Supply is steeper than demand, so cost pass-through is negative and
+  buyer-tax pass-through $\rho^b_\tau=\mu_p\rho_c$ is positive.  The
+  checkout price therefore rises, and with $r'>0$ returns rise as well,
+  making the ex-post term a loss that opposes the ex-ante gain from
+  $\mu_p<0$.  From the Case~2 identity
+  $\mu_p\Lambda-1=-r-r'(p)(p+h)(1-\mu_p\rho_c)$,
+  negative cost pass-through forces $\mu_p\rho_c>1$, so the second summand
+  is positive and offsets $-r$.  The Case~4 primitives alone therefore do
+  not pin whether $\mu_p\Lambda$ lies below or above one, nor whether
+  private surplus falls or rises.
 \end{itemize}
 
 For tax shocks, social surplus adds back treasury revenue.  Because the
