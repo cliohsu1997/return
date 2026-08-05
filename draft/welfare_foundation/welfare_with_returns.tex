@@ -753,20 +753,18 @@ $|\varepsilon^S|>-\varepsilon^D$, which gives $\mu_p\rho_c>1$.  Therefore, the
 condition governing producer gain from an increase in production cost is
 exactly the same as that governing negative pass-through.
 
-At first glance, the price drop may seem puzzling.  It raises
-the effective margin ($\mu_p<0$ and $\rho_c<0$) and necessarily more than
-offsets
-the original one-dollar cost increase.  The key is that the price fall must do
-double duty to clear the market.  A one-dollar cost increase shifts the supply
-curve left, creating an initial excess demand gap.  To fill this gap, quantity
-supplied must increase.  Since quantity supplied increases with the
-effective margin $\mu$, restoring enough supply to cover the original gap
-already requires $\mu$ to rise by one dollar.  But the price fall also
-increases quantity demanded, creating additional excess demand on top of the
-initial gap.  To satisfy both the original supply shortfall and this new
-demand, supply must increase by more than the original shift, so the
-effective margin must rise by more than one dollar.  Thus, $\mu_p\rho_c>1$ is
-precisely the market-clearing requirement when pass-through is negative.
+At first glance it may seem puzzling that, under negative pass-through, the
+effective-margin recovery more than offsets the initial producer-surplus
+loss of $Q$.  The price fall must do double duty to clear the market.  A one-dollar cost increase shifts the supply curve upward, creating
+an initial excess demand gap.  To fill this gap, quantity supplied must
+increase.  Since quantity supplied increases with the effective margin
+$\mu$, restoring enough supply to cover the original gap already requires
+$\mu$ to rise by one dollar.  But the price fall also increases quantity
+demanded, creating additional excess demand on top of the initial gap.  To
+satisfy both the original supply shortfall and this new demand, supply must
+increase by more than the original shift, so the effective margin must rise
+by more than one dollar.  Thus, $\mu_p\rho_c>1$ is precisely the
+market-clearing requirement when pass-through is negative.
 
 The preceding observation implies a striking result: the uniformly positive
 incidence ratio means consumer and producer surplus always move together,
@@ -911,46 +909,46 @@ $dW/dx=-Q\Lambda$ for these shocks,
 Because consumer and producer surplus always move together, $\Lambda$ has the
 same sign as $\rho_c$.  The no-return formula retains only the ex-ante
 rectangle $-Q$, so the comparison with that benchmark is governed only by the
-ex-post term $-Q\,r'(p)(p+h)\rho_c$.  That term may amplify the rectangle,
-partially offset it, or reverse the private-surplus change.
+ex-post term $-Q\,r'(p)(p+h)\rho_c$.  That term may partially offset the
+rectangle, amplify it, or reverse the private-surplus change.
 
-When $\rho_c>0$ and $\mu_p>0$, a cost increase raises the list price.  If
-$r'(p)>0$, that price rise raises the return rate and adds handling costs, so
-the ex-post loss amplifies the ex-ante rectangle and $\Lambda>1$.  If instead
-$r'(p)<0$, the return rate falls and the ex-post term partially offsets the
-ex-ante loss, yielding $0<\Lambda<1$.  The private-surplus loss $Q\Lambda$ is
-larger when $r'(p)$ or $h$ is large, because each dollar of pass-through then
-wastes more $p+h$ per unit sold.
+The simplest case is when the selection channel in the return rate
+dominates, so $r'(p)<0$.  A cost increase raises the list price (since
+$r'<0$ forces $\mu_p>0$ and hence $\rho_c>0$), screens out frequent
+returners, and lowers the return rate.  The ex-post term is then a gain that
+partially offsets the ex-ante rectangle, so $0<\Lambda<1$.  It cannot reverse
+the private-surplus change: $\rho_c>0$ keeps both consumer and producer
+surplus falling, hence $\Lambda>0$.
 
-When $\rho_c>0$ but $\mu_p<0$ (so $|\varepsilon_S|<-\varepsilon_D$), supply
-slopes downward in list-price space and pass-through remains positive only
-because demand is more price-responsive than supply.  The return-rate
-response must already be steep, since $\mu_p<0$ requires $r'(p)(p+h)>1-r$.
-Even a modest $\rho_c$ can then make the ex-post loss large relative to the
-ex-ante rectangle and push $\Lambda$ well above one.
+When instead $r'(p)>0$, the bias hinges on the sign of pass-through.  If
+$\rho_c>0$, the higher list price raises returns and adds handling costs, so
+the ex-post loss amplifies the ex-ante rectangle and $\Lambda>1$.  That
+amplification is larger when $r'(p)$ or $h$ is large.
+% The same qualitative conclusion holds when $\mu_p<0$ but pass-through
+% remains positive ($|\varepsilon_S|<-\varepsilon_D$): $\mu_p<0$ already
+% requires a steep return response, so even a modest $\rho_c$ can push
+% $\Lambda$ well above one.
 
-When $\rho_c<0$ (which implies $r'(p)>0$), a production-cost or seller-tax
-increase lowers the list price.  Because returns rise with price, that fall in
-$p$ lowers the return rate.  Units that would have been returned are kept
-instead.  Each such switch saves $p+h$, so the ex-post term becomes a gain.
-Those savings can exceed the ex-ante resource cost, so the shock in fact
-raises private surplus by $Q|\Lambda|$ and a Pareto improvement is possible.
-The gain is larger when $r'(p)(p+h)\,|\rho_c|$ is large.  These three
-comparisons are summarized in Result~\ref{res:welfare-bias}.
+If instead $\rho_c<0$, a production-cost or seller-tax increase lowers the
+list price, so consumer surplus rises.  Positive incidence then raises
+producer surplus as well---a Pareto improvement---and private surplus rises
+by $Q|\Lambda|$ ($\Lambda<0$).  The gain is larger when
+$r'(p)(p+h)\,|\rho_c|$ is large.  These three comparisons are summarized in
+Result~\ref{res:welfare-bias}.
 \begin{result}[No-return private-surplus bias]
 \label{res:welfare-bias}
   Consider a unit production-cost or seller-tax increase.  Relative to the
   correct returns-adjusted change $dW/dc=-Q\Lambda$, the no-return formula
   $dW/dc=-Q$
   \begin{enumerate}
-  \item[(i)] underestimates the private-surplus loss if and only if
-  $\rho_c>0$ and $r'(p)>0$ (hence $\Lambda>1$);
-  \item[(ii)] overestimates the private-surplus loss if and only if
+  \item[(i)] overestimates the private-surplus loss if and only if
   $r'(p)<0$ (which implies $\mu_p>0$ and hence $\rho_c>0$, so
   $0<\Lambda<1$);
-  \item[(iii)] predicts a loss of $Q$ when the shock in fact raises private
-  surplus if and only if $\rho_c<0$ (which implies $r'(p)>0$), in which case
-  the gain is $Q|\Lambda|$.
+  \item[(ii)] underestimates the private-surplus loss if and only if
+  $r'(p)>0$ and $\rho_c>0$ (hence $\Lambda>1$);
+  \item[(iii)] overestimates the private-surplus loss with the wrong
+  sign---reporting a loss of $Q$ when the shock in fact raises private
+  surplus by $Q|\Lambda|$---if and only if $r'(p)>0$ and $\rho_c<0$.
   \end{enumerate}
 \end{result}
 For production-cost and seller-tax shocks that bias is purely ex-post.  The
@@ -971,29 +969,95 @@ cut is the same threshold as Result~\ref{res:pt-bias-er}: $\mu_p>1$ if and
 only if $\varepsilon_r(p)<-p/(p+h)$.  Overestimation of pass-through by the
 no-return formula is therefore underestimation of the ex-ante loss.
 
-For the ex-post piece, as in Result~\ref{res:welfare-bias}(ii), $r'(p)<0$
-pins the term as a gain.  Selection improves the composition of buyers, so a
-higher list price lowers the return rate, raises the effective margin, and
-gives positive pass-through.  When $r'(p)>0$, the sign of the ex-post term
-depends on $\rho_c$ and has no succinct formula.
+For the ex-post piece, as in Result~\ref{res:welfare-bias}(i), $r'(p)<0$
+pins the term as a gain.  When selection dominates the behavioral response, the
+higher list price from cost pass-through screens out consumers who return
+frequently, so the return rate and the associated refund-and-handling cost
+fall.  When $r'(p)>0$, the sign of the ex-post term depends on $\rho_c$ and
+has no succinct formula.
 \begin{corollary}[Buyer-remittance no-return bias]
 \label{cor:welfare-bias-buyer}
   Relative to the correct returns-adjusted change $-Q\mu_p\Lambda$, the
   no-return prediction $dW/d\tau=-Q$ underestimates the private-surplus loss
   if and only if $\mu_p\Lambda>1$ and overestimates it if and only if
-  $\mu_p\Lambda<1$.  The former cut is equivalent to
+  $\mu_p\Lambda<1$.  The latter cut is equivalent to
   \begin{equation}
     \varepsilon_r(p)\,
     \frac{-\varepsilon_D}{\varepsilon_S-\varepsilon_D}
-    <
+    >
     -\frac{p}{p+h}.
     \label{eq:V-buyer-cut}
   \end{equation}
 \end{corollary}
-The cut has the same right-hand side as Result~\ref{res:pt-bias-er}, with
-$\varepsilon_r(p)$ multiplied by
-$-\varepsilon_D/(\varepsilon_S-\varepsilon_D)$.
 Appendix~\ref{app:welfare-bias-primitives} proves the corollary.
+Which sign of $\mu_p\Lambda-1$ obtains depends on the return-rate slope
+and on pass-through.  Table~\ref{tab:buyer-bias-cases} summarizes the four
+cases.  The first columns record the primitives and the two pass-throughs:
+$\rho_c$ is cost pass-through, and buyer-tax pass-through into the checkout
+price is $\rho^b_\tau=\mu_p\rho_c$.  The last three columns split the private
+change $-Q\mu_p\Lambda$.  EA is the ex-ante (frozen-return) piece $-Q\mu_p$: a
+loss when $\mu_p>0$ and a gain when $\mu_p<0$.  EP is the ex-post keep-or-return
+piece $-Q\mu_p\,r'(p)(p+h)\rho_c$.  Bias vs $-Q$ reports the corollary cut:
+overestimate when $\mu_p\Lambda<1$ and underestimate when $\mu_p\Lambda>1$.
+Wrong sign is not a third category: it is the subcase of overestimation in
+which private surplus rises.  The no-return formula still reports a loss of
+$Q$, while the true change is a gain, so $-Q$ both overestimates the loss and
+gets its direction wrong.
+\begin{table}[htbp]
+\centering
+\begin{tabular}{llccccc}
+\hline
+Case & Primitives & $\rho_c$ & $\rho^b_\tau$ & EA & EP & Bias vs $-Q$ \\
+\hline
+1 & $r'<0$ ($\Rightarrow\mu_p>0$) & $>0$ & $>0$ &
+  loss & gain & over- or under-estimate \\
+2 & $r'>0$, $\mu_p>0$ & $>0$ & $>0$ &
+  loss & loss & overestimate \\
+3 & $r'>0$, $\mu_p<0$, $|\varepsilon_S|<-\varepsilon_D$ & $>0$ & $<0$ &
+  gain & gain & overestimate (wrong sign) \\
+4 & $r'>0$, $\mu_p<0$, $|\varepsilon_S|>-\varepsilon_D$ & $<0$ & $>0$ &
+  gain & loss & over- or under-estimate \\
+\hline
+\end{tabular}
+\caption{Buyer-remittance bias relative to $-Q$.}
+\label{tab:buyer-bias-cases}
+\end{table}
+\begin{itemize}
+  \item Case~1 (selection).  Because $\mu_p>0$, a buyer-remitted tax lowers
+  the effective margin at a fixed checkout price, so the ex-ante
+  (frozen-return) private change $-Q\mu_p$ is a loss---larger than $-Q$ when
+  $\mu_p>1$ and smaller when $\mu_p<1$.  The ex-post term is a gain as above.
+  Overestimation ($\mu_p\Lambda<1$) further requires that
+  $-\varepsilon_D/(\varepsilon_S-\varepsilon_D)$ not be too large---demand
+  not too elastic relative to supply---so that pass-through remains large
+  enough for the fall in the return rate to deliver a sufficient $p+h$
+  saving.  When demand is very elastic, small positive pass-through weakens
+  equilibrium screening and reduces this ex-post gain.
+  \item Case~2 (mild behavioral).  Again $\mu_p>0$, so the ex-ante piece is
+  a loss, but now $\mu_p<1-r<1$.  Pass-through is positive and $\Lambda>1$,
+  so the ex-post piece is also a loss, yet $\mu_p\Lambda<1$: the first-round
+  bite on the effective margin is already smaller than one, and the
+  behavioral rise in returns does not restore a full loss of $Q$.
+  \item Case~3 (strong behavioral, positive cost pass-through).
+  Returns rise in price, and strongly enough that $\mu_p<0$: at a fixed
+  checkout price a buyer-remitted tax \emph{raises} the seller's effective
+  margin, so the ex-ante private change is a gain rather than a loss.
+  Demand is steeper than supply, so cost pass-through $\rho_c$ is positive;
+  buyer-tax pass-through $\rho^b_\tau=\mu_p\rho_c$ is then negative, and the
+  checkout price falls.  Because $r'>0$, that lower price reduces the return
+  rate, so the ex-post term is a gain as well.  Private surplus rises on both
+  margins ($\mu_p\Lambda<0$), so $-Q$ overestimates the private-surplus loss
+  and in fact has the wrong sign.
+  \item Case~4 (strong behavioral, negative cost pass-through).
+  The same strong behavioral force keeps $\mu_p<0$, so the ex-ante piece is
+  again a gain.  Now supply is steeper than demand, so cost pass-through is
+  negative.  Multiplying by $\mu_p<0$ flips the sign: buyer-tax pass-through
+  is positive, and the checkout price rises.  With $r'>0$ that higher price
+  raises returns, so the ex-post term is a loss.  The two margins pull in
+  opposite directions, so $\mu_p\Lambda$ may lie below or above one: $-Q$ may
+  overestimate the private-surplus loss (including the wrong-sign subcase
+  when the ex-ante gain wins and private surplus rises) or underestimate it.
+\end{itemize}
 
 For tax shocks, social surplus adds back treasury revenue.  Because the
 remitter recovers none of $\tau$ from the government on a return, revenue is

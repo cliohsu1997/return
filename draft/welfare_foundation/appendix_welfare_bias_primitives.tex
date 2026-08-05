@@ -16,21 +16,22 @@ $r'(p)(p+h)=\varepsilon_r(p)\,r(p)\,(p+h)/p$, so
 
 Result~\ref{res:welfare-bias} becomes:
 \begin{enumerate}
-\item[(i)] underestimation iff $\varepsilon_r(p)>0$ and either $\mu_p>0$,
+\item[(i)] overestimation iff $\varepsilon_r(p)<0$;
+\item[(ii)] underestimation iff $\varepsilon_r(p)>0$ and either $\mu_p>0$,
 or both $\mu_p<0$ and $|\varepsilon_S|\le -\varepsilon_D$;
-\item[(ii)] overestimation iff $\varepsilon_r(p)<0$;
-\item[(iii)] wrong sign (predicted loss, actual gain) iff $\mu_p<0$ and
-$|\varepsilon_S|>-\varepsilon_D$.
+\item[(iii)] overestimation with wrong sign (predicted loss, actual gain)
+iff $\mu_p<0$ and $|\varepsilon_S|>-\varepsilon_D$.
 \end{enumerate}
 \begin{proof}
-By Result~\ref{res:welfare-bias}, underestimation is $\rho_c>0$ with
-$r'>0$, overestimation is $r'<0$, and the wrong-sign case is $\rho_c<0$.
+By Result~\ref{res:welfare-bias}, overestimation with $0<\Lambda<1$ is
+$r'<0$, underestimation is $r'>0$ with $\rho_c>0$, and overestimation with
+wrong sign is $r'>0$ with $\rho_c<0$.
 Since $\varepsilon_r$ has the same sign as $r'$, write these in
-$\varepsilon_r$.  Result~\ref{res:negative-pt} translates the sign of
-$\rho_c$ into conditions on $\mu_p$ and $|\varepsilon_S|\gtrless -\varepsilon_D$:
-with $\varepsilon_r>0$ this is~(i), and $\rho_c<0$ is~(iii).
-For~(ii), $\varepsilon_r<0$ forces $\mu_p>1-r>0$ and hence $\rho_c>0$, so
-$0<\Lambda<1$.
+$\varepsilon_r$.  For~(i), $\varepsilon_r<0$ forces $\mu_p>1-r>0$ and hence
+$\rho_c>0$, so $0<\Lambda<1$.
+Result~\ref{res:negative-pt} translates the sign of $\rho_c$ into conditions
+on $\mu_p$ and $|\varepsilon_S|\gtrless -\varepsilon_D$: with
+$\varepsilon_r>0$ this is~(ii), and $\rho_c<0$ is~(iii).
 \end{proof}
 \begin{proof}[Proof of Corollary~\ref{cor:welfare-bias-buyer}]
 The true change is $-Q\mu_p\Lambda$ and the no-return prediction is $-Q$, so
@@ -53,15 +54,15 @@ $\mu_p\rho_c=\varepsilon_S/(\varepsilon_S-\varepsilon_D)$,
   &=-r(p)\Biggl(1-\varepsilon_r(p)\,\frac{p+h}{p}\,
        \frac{\varepsilon_D}{\varepsilon_S-\varepsilon_D}\Biggr).
 \end{align*}
-Hence $\mu_p\Lambda>1$ if and only if
-$\varepsilon_r(p)\,\varepsilon_D/(\varepsilon_S-\varepsilon_D)>p/(p+h)$.
+Hence $\mu_p\Lambda<1$ if and only if
+$\varepsilon_r(p)\,\varepsilon_D/(\varepsilon_S-\varepsilon_D)<p/(p+h)$.
 Multiplying by $-1$ gives
 \[
   \varepsilon_r(p)\,
   \frac{-\varepsilon_D}{\varepsilon_S-\varepsilon_D}
-  <
+  >
   -\frac{p}{p+h},
 \]
 which is \eqref{eq:V-buyer-cut}.  The reverse strict inequality is
-$\mu_p\Lambda<1$.
+$\mu_p\Lambda>1$.
 \end{proof}
