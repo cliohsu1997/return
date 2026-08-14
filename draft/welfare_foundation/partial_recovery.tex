@@ -34,8 +34,7 @@ reclaims $\alpha\tau$ from the treasury on a return.
 Demand $D(p)$, return rate $r(\cdot)$, handling $h$, and market supply
 $S(\mu)$ are as in the companion note.  Equilibrium clears at
 $D(p)=S(\mu)$, with $\mu$ the remitter- and $\alpha$-dependent effective
-margin derived below.  Write $Q\equiv D(p)$ and evaluate local derivatives at
-$\tau=0$, where checkout and list prices coincide.
+margin derived below.  Write $Q\equiv D(p)$.
 
 %=============================================================================
 \section{Effective margins}
@@ -96,14 +95,44 @@ leaves a wedge between the seller's return cost and the buyer's
 keep-or-return price, so which party remits continues to matter.
 
 %=============================================================================
-\section{Pass-through at \texorpdfstring{$\tau=0$}{tau=0}}
+\section{Pass-through}
 %=============================================================================
 
-Write $\mu_p\equiv 1-r(p)-r'(p)(p+h)$ for the no-tax response of the
-effective margin to list price, and let $\rho_c$ denote production-cost
-pass-through as in the companion note.  Differentiating
-\eqref{eq:mu-s-alpha}--\eqref{eq:mu-b-alpha} at fixed $p$ and evaluating at
-$\tau=0$,
+Production-cost and handling pass-through $\rho_c$ and $\rho_h$ are as in the
+companion note and are unchanged by reclaim.  What changes is the tax wedge.
+Failure of neutrality requires separate checkout prices $p^{s}$ and $p^{b}$.
+With $S_{\tau}=0$,
+\begin{equation}
+  \rho^{s}_{\tau}
+  = \frac{-S'(\mu)\,\mu^{s}_{\tau}}{S'(\mu)\,\mu^{s}_{p}-D'(p^{s})},
+  \qquad
+  \rho^{b}_{\tau}
+  = \frac{-S'(\mu)\,\mu^{b}_{\tau}}{S'(\mu)\,\mu^{b}_{p}-D'(p^{b})}.
+  \label{eq:rho-tau-general}
+\end{equation}
+Differentiating \eqref{eq:mu-s-alpha}--\eqref{eq:mu-b-alpha} at fixed checkout
+price, and writing $z\equiv p-(1-\alpha)\tau$,
+\begin{align}
+  \mu^{s}_{p}
+  &= 1-r(p)-r'(p)\bigl(p+h-\alpha\tau\bigr),
+  &
+  \mu^{s}_{\tau}
+  &= -(1-\alpha r(p)),
+  \label{eq:mu-s-partials}
+  \\
+  \mu^{b}_{p}
+  &= 1-r(z)-r'(z)\,(p-\tau+h),
+  &
+  \mu^{b}_{\tau}
+  &= -\bigl(1-r(z)\bigr)+r'(z)\,(1-\alpha)\,(p-\tau+h).
+  \label{eq:mu-b-partials}
+\end{align}
+Seller remittance lowers $\mu$ by the unclaimed expected tax $1-\alpha r(p)$.
+Buyer remittance lowers the keep-or-return price by only $1-\alpha$, so the
+return-rate channel in $\mu^{b}_{\tau}$ is scaled by that factor.
+
+At $\tau=0$, both list-price slopes collapse to the companion object
+$\mu_p\equiv 1-r(p)-r'(p)(p+h)$, and
 \begin{align}
   \mu^{s}_{\tau}
   &= -(1-\alpha r(p)),
@@ -112,9 +141,7 @@ $\tau=0$,
   &= -\mu_p-\alpha\,r'(p)(p+h).
   \label{eq:mu-tau-alpha}
 \end{align}
-At $\tau=0$ the seller-side list-price derivative remains $\mu_p$, because
-the reclaim term $\alpha\tau$ vanishes from $\partial\mu^{s}/\partial p$ when
-$\tau=0$.  Pass-through into checkout price is therefore
+Comparing with $\rho_c$ then yields
 \begin{equation}
   \rho^{s}_{\tau}
   = (1-\alpha r(p))\,\rho_c,
@@ -123,12 +150,56 @@ $\tau=0$.  Pass-through into checkout price is therefore
   = \bigl(\mu_p+\alpha\,r'(p)(p+h)\bigr)\,\rho_c.
   \label{eq:rho-alpha}
 \end{equation}
-When $\alpha=0$, \eqref{eq:rho-alpha} collapses to $\rho^{s}_{\tau}=\rho_c$ and
-$\rho^{b}_{\tau}=\mu_p\rho_c$.  A larger reclaim rate shrinks the seller-tax
-wedge by the factor $1-\alpha r(p)$: only the unclaimed share of expected tax
-$(1-\alpha r)\tau$ acts like a resource cost on the supply side.  Under buyer
-remittance, reclaim shifts the return-rate argument and adds the term
-$\alpha r'(p)(p+h)$ to the companion-note factor $\mu_p$.
+\begin{result}[Tax pass-through under partial reclaim]
+\label{res:rho-alpha}
+  At $\tau=0$, tax pass-through is \eqref{eq:rho-alpha}.  The formulas nest the
+  companion note at $\alpha=0$, where $\rho^{s}_{\tau}=\rho_c$ and
+  $\rho^{b}_{\tau}=\mu_p\rho_c$.  They coincide at $(1-r(p))\rho_c$ when
+  $\alpha=1$, so remittance ceases to matter for pass-through exactly when
+  neutrality holds.  For $\alpha\in[0,1)$,
+  $\operatorname{sgn}(\rho^{b}_{\tau})=-\operatorname{sgn}(\rho^{s}_{\tau})$
+  if and only if $\mu_p+\alpha\,r'(p)(p+h)<0$ and $\rho_c\neq 0$.
+\end{result}
+How $\alpha$ moves the two tax rates follows from the resource wedge each
+regime leaves on the supply side.  Under seller remittance the firm remits
+$\tau$ on every gross sale and recovers only $\alpha\tau$ on returns, so the
+expected net tax cost per unit is $(1-\alpha r)\tau$.  A larger reclaim rate
+shrinks that cost toward the keep-rate burden $(1-r)\tau$, and therefore
+scales $\rho^{s}_{\tau}$ from $\rho_c$ toward $(1-r)\rho_c$.  Cost and
+handling pass-through are untouched because they never enter the reclaim
+term.
+
+Under buyer remittance the firm never remits $\tau$, but reclaim changes the
+buyer's keep-or-return price $z=p-(1-\alpha)\tau$.  Raising $\alpha$ makes $z$
+less sensitive to $\tau$, so the return-rate response to the tax is weaker.
+At $\tau=0$ that shows up as the additive term $\alpha r'(p)(p+h)$ on top of
+the companion factor $\mu_p$.  If $r'>0$, a larger $\alpha$ raises the buyer
+factor and pulls $\rho^{b}_{\tau}$ toward $(1-r)\rho_c$ from below (when
+$\mu_p<1-r$).  If $r'<0$, reclaim works in the opposite direction: softer
+tax pressure on $z$ means less equilibrium screening, so the buyer factor
+falls as $\alpha$ rises.  In either case $\alpha=1$ forces both regimes to
+$(1-r)\rho_c$, which is why full reclaim restores remittance neutrality for
+pass-through.
+
+The companion note also signs the classical bias for $\rho_c$: the no-return
+formula overestimates pass-through if and only if $\mu_p>1$.  That comparison
+does not involve $\alpha$.  At $\tau=0$ the list-price slope is
+$\mu_p=1-r(p)-r'(p)(p+h)$ under either remittance regime, because reclaim
+enters only through terms in $\alpha\tau$ that drop out of
+$\partial\mu/\partial p$.  Production-cost pass-through is
+$\rho_c=S'(\mu)/(S'(\mu)\mu_p-D'(p))$, again with no $\alpha$.  The classical
+formula sets $\mu_p=1$ in that expression, so whether it over- or
+underestimates $\rho_c$ is pinned entirely by whether $\mu_p\gtrless 1$---the
+same $\varepsilon_r(p)<-p/(p+h)$ cut as in the companion note, for every
+$\alpha\in[0,1]$.  Full reclaim is no exception: it equalizes the two tax
+rates at $(1-r)\rho_c$ but leaves $\rho_c$ and its bias untouched.
+\begin{result}[Pass-through bias under partial reclaim]
+\label{res:pt-bias-alpha}
+  The companion bias cut for $\rho_c$ relative to the classical no-return
+  formula is unchanged by $\alpha$, including at full reclaim $\alpha=1$.
+  Tax pass-through inherits that bias only through the reclaim factors in
+  \eqref{eq:rho-alpha}.
+\end{result}
 
 %=============================================================================
 \section{Revenue and first-order surplus}
