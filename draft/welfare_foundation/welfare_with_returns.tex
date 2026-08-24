@@ -52,7 +52,7 @@ the seller or the buyer remitted.\footnote{Partial reclaim from the
   footing with respect to treasury friction.}
 Even so, the private refund between buyer and seller still differs by
 regime.  Under seller remittance the seller refunds the full tax-inclusive
-checkout price, while under buyer remittance the seller refunds only the
+list price, while under buyer remittance the seller refunds only the
 pre-tax price and the buyer does not recover the tax.  The keep-or-return
 decision and the seller's effective margin therefore depend on which party
 remits.
@@ -119,7 +119,7 @@ incidence ratio---the burden on consumers relative to producers---is always
 positive and identical across production cost, handling cost, and
 seller-remitted taxes.  For those shocks, consumer and producer surplus
 therefore always move together, as in the classical model without returns.
-Buyer remittance adds a direct loss to returners at fixed checkout, so its
+Buyer remittance adds a direct loss to returners at fixed $p$, so its
 incidence ratio differs and need not inherit that common value.
 
 The common direction of those price-only surpluses nevertheless hinges on the
@@ -368,12 +368,12 @@ $PS=\int_0^{\mu(p,h)}S(z)\,dz$.
 With firms responding to the effective margin rather than the list price, a
 natural question is whether the classical result---that it does not matter
 which party remits a unit tax---survives.  \citet{weyl2013pass}
-establish this neutrality without returns.  Write $p$ for the checkout
-price---the total payment at the register---and $\tau$ for a per-unit tax.
+establish this neutrality without returns.  Write $p$ for the list
+price and $\tau$ for a per-unit tax.
 Write superscripts $s$ and $b$ for seller and buyer remittance respectively.
-Under seller remittance the seller refunds the tax-inclusive checkout price
+Under seller remittance the seller refunds the tax-inclusive list price
 and recovers none of $\tau$ from the government, so purchase price and return
-recovery both equal checkout $p$.  The return rate is therefore the earlier
+recovery both equal list price $p$.  The return rate is therefore the earlier
 $r(p)$, while the seller's effective margin subtracts the unreclaimed tax,
 \[
   \mu^{s}(p,\tau,h)=p-\tau-r(p)(p+h)=\mu(p,h)-\tau,
@@ -383,14 +383,14 @@ and clearing is
   D(p) = S\bigl(\mu^{s}(p,\tau,h)\bigr).
   \label{eq:clear-seller}
 \end{equation}
-Consumer surplus depends on checkout $p$ alone, as in Section~3, and producer
+Consumer surplus depends on list price $p$ alone, as in Section~3, and producer
 surplus is the area under supply at $\mu^{s}$,
 \[
   CS^{s}=CS(p),
   \qquad
   PS^{s}=\int_0^{\mu^{s}}S(z)\,dz.
 \]
-A tax therefore reaches consumers only by moving the equilibrium checkout
+A tax therefore reaches consumers only by moving the equilibrium list
 price.  Differentiating at $\tau=0$, where $\mu^{s}_{\tau}=-1$ at fixed $p$ and
 $\rho^{s}_{\tau}\equiv dp^{s}/d\tau$,
 \begin{equation}
@@ -404,10 +404,10 @@ $\rho^{s}_{\tau}\equiv dp^{s}/d\tau$,
 
 \subsection{Buyer remittance: purchase price and recovery}
 
-Buyer remittance breaks that coincidence.  At checkout the buyer pays $p$ in
+Buyer remittance breaks that coincidence.  The buyer pays $p$ in
 total, of which $\tau$ goes to the government and $p-\tau$ to the seller.  On
 a return the seller refunds that same pre-tax amount $p-\tau$, and the buyer
-recovers none of $\tau$ from the government.  Purchase is still at checkout
+recovers none of $\tau$ from the government.  Purchase is still at list price
 $p$, but the buyer's recovery is only
 \[
   R=p-\tau.
@@ -425,7 +425,7 @@ Differentiating the identity $cs_i\bigl(v_i(\tau),\tau\bigr)=0$ gives
   v_i'(\tau)
   =-\frac{\partial cs_i/\partial\tau}{\partial cs_i/\partial p}.
 \]
-At checkout $p$, $\partial cs_i/\partial p=-\Pr(\text{keep})$ and
+At list price $p$, $\partial cs_i/\partial p=-\Pr(\text{keep})$ and
 $\partial cs_i/\partial\tau=-\Pr(\text{return})$, so
 \[
   v_i'(\tau)
@@ -437,7 +437,7 @@ returns).  A higher tax weakly lowers every type's willingness to pay by
 worsening the return option.
 
 Across types, $v_i(\tau)$ has distribution $F(\,\cdot\,;\tau)$.  At $\tau=0$,
-recovery equals checkout, $cs_i(p,0)$ coincides with the earlier $cs_i(p)$, and
+recovery equals the list price, $cs_i(p,0)$ coincides with the earlier $cs_i(p)$, and
 $v_i(0)$ recovers the earlier $v_i$, so $F(\,\cdot\,;0)=F$ with density $f$.
 Because $v_i'(\tau)\leq 0$ for every $i$, a rise in $\tau$ shifts the law of
 willingness to pay down in the first-order stochastic dominance (FOSD) sense:
@@ -461,7 +461,7 @@ Gross demand is the upper tail of this distribution,
 \[
   D(p,\tau)=1-F(p;\tau),
 \]
-so $D(p,0)=D(p)$ and, at fixed checkout,
+so $D(p,0)=D(p)$ and, at fixed $p$,
 \[
   D_\tau
   \equiv\frac{\partial D}{\partial\tau}
@@ -474,7 +474,7 @@ so $D(p,0)=D(p)$ and, at fixed checkout,
 \]
 
 Type $i$ keeps if and only if $u\geq R-\kappa_i$.  Write $\tilde{r}(p,R)$ for
-the return rate among buyers when checkout is $p$ and recovery is $R$, with
+the return rate among buyers when the list price is $p$ and recovery is $R$, with
 the buyer set allowed to depend on both.  Under buyer remittance,
 \begin{equation}
   \tilde{r}(p,p-\tau)
@@ -485,12 +485,12 @@ The earlier return rate is the special case $r(p)=\tilde{r}(p,p)$.  Write
   r_R\equiv \tilde{r}_R(p,p)
 \]
 for the partial of $\tilde{r}$ with respect to recovery $R$, holding the
-checkout price $p$ fixed, evaluated at $R=p$.  The total derivative $r'(p)$
+list price $p$ fixed, evaluated at $R=p$.  The total derivative $r'(p)$
 defined earlier raises purchase price and recovery together along $R=p$, so
 \[
   r'(p)=\tilde{r}_p(p,p)+r_R.
 \]
-A buyer tax shifts $R$ but not the checkout price, so the relevant return
+A buyer tax shifts $R$ but not the list price, so the relevant return
 response is $r_R$, not $r'(p)$.
 
 On the firm side, producer surplus is still the area under supply, but
@@ -515,12 +515,17 @@ Differentiating at $\tau=0$, where $D(p,0)=D(p)$ and $Q\equiv D(p)$,
   \label{eq:dPS-buyer}
 \end{equation}
 where $\rho^{b}_{\tau}\equiv dp^{b}/d\tau$ is the pass-through of the tax into
-checkout and
+list price and
 \begin{equation}
   \tilde{\mu}^{b}_{\tau}
   =-\bigl(1-r-(p+h)\,r_R\bigr)
 \end{equation}
-is the partial of $\tilde{\mu}^{b}$ with respect to $\tau$ at fixed checkout.
+is the partial of $\tilde{\mu}^{b}$ with respect to $\tau$ at fixed
+$p$.\footnote{At $\tau=0$, $\tilde{\mu}^{b}(p,0,h)=\mu(p,h)$.  Holding
+  $\tau$ fixed, recovery $R=p-\tau$ rises one-for-one with the list price, so
+  $\partial\tilde{\mu}^{b}/\partial p|_{\tau=0}=1-r-r'(p)(p+h)=\mu_p$.  The
+  $\tau$-partial at fixed $p$ instead shifts only $R$, which is why it
+  involves $r_R$ rather than $r'(p)$.}
 
 Write $cs(v,p,\tau)$ for expected surplus among types with willingness to pay
 $v_i(\tau)=v$, and set
@@ -538,11 +543,15 @@ For the price partial, differentiating the integral in $p$ yields an
 extensive-margin term from types entering or leaving the purchase margin
 and an intensive-margin term among remaining buyers.  As before, surplus is
 zero at the margin, so the extensive-margin effect is zero at first order;
-the intensive term harms keepers only.  For the tax partial at fixed
-checkout, the distribution $F(\,\cdot\,;\tau)$ of willingness to pay may shift
-as the return option changes, but types who enter or leave still have zero
-surplus, so that extensive-margin term is likewise zero; among remaining
-buyers the tax lowers return payoffs one-for-one.  At $\tau=0$,\begin{equation}
+the intensive term harms keepers only.
+
+For the tax partial at fixed list price, sum $cs_i(p,\tau)$ over buyers
+($v_i(\tau)\ge p$).  Types who enter or leave the purchase margin have
+$cs_i(p,\tau)=0$, so they contribute nothing at first order.  Among buyers,
+$\partial cs_i/\partial\tau=-\Pr_i(\text{return})$: the tax lowers the return
+payoff one-for-one.  Aggregating over buyers gives
+$\partial CS/\partial\tau=-D(p,\tau)\,\tilde{r}(p,p-\tau)$.  At
+$\tau=0$,\begin{equation}
   \frac{\partial CS}{\partial p}\Bigm|_{\tau}
   =-D(p)\bigl(1-r(p)\bigr),
   \qquad
@@ -558,23 +567,29 @@ and therefore
 Compared with \eqref{eq:dCS-dPS-seller}, the producer formula differs only in
 the direct tax effect on the effective margin:
 $\tilde{\mu}^{b}_{\tau}$ replaces $-1$.  The consumer formula adds the
-direct returner term $-Qr$, because a tax at fixed checkout lowers recovery
+direct returner term $-Qr$, because a tax at fixed $p$ lowers recovery
 one-for-one and therefore harms those who return.
 
 \subsection{Neutrality fails}
 
-The clearing conditions \eqref{eq:clear-seller}--\eqref{eq:clear-buyer}
-coincide at a common checkout if and only if both demand and the effective
-margins coincide, $D(p)=D(p,\tau)$ and
-$\mu^{s}(p,\tau,h)=\tilde{\mu}^{b}(p,\tau,h)$.  Canceling $p-\tau$ in the
-margins,
+The two regimes clear through different equations,
+$D(p)=S(\mu^{s})$ and $D(p,\tau)=S(\tilde{\mu}^{b})$.  Those equations are the
+same---and remittance is therefore neutral---only if both demand and the
+effective margins match at the common list price,
+$D(p)=D(p,\tau)$ and $\mu^{s}(p,\tau,h)=\tilde{\mu}^{b}(p,\tau,h)$.  Canceling
+$p-\tau$ in the margins,
 \begin{result}[Failure of tax neutrality with returns]
   Seller and buyer taxes define the same equilibrium if and only if
   $D(p)=D(p,\tau)$ and
   $r(p)(p+h)=\tilde{r}(p,p-\tau)\,(p-\tau+h)$.
 \end{result}
-Seller remittance keeps purchase and recovery together at checkout $p$; buyer
-remittance splits them ($R=p-\tau$), so neither equality generally holds.
+For any $\tau>0$, buyer remittance worsens the return option and shifts
+willingness to pay down in the FOSD sense, so $D(p,\tau)\leq D(p)$ at every
+$p$, with a strict inequality whenever some types return with positive
+probability.  The demand sides of the two clearing equations already differ,
+and neutrality therefore fails for any positive tax.  The return-cost
+equality fails as well whenever purchase and recovery split
+($R=p-\tau$), but the demand wedge alone is enough.
 
 %=============================================================================
 \section{Pass-through}
@@ -626,7 +641,7 @@ supply at $\mu-1$.  Handling moves $\mu$ by only $r(p)$ per dollar relative to
 that unit production shift, so its numerator in \eqref{eq:pass-through} is the
 fraction $r(p)$ of the production numerator.
 
-Turning to the unit tax, failure of tax neutrality requires separate checkout
+Turning to the unit tax, failure of tax neutrality requires separate list
 prices $p^s$ and $p^b$ under seller and buyer remittance.  Write
 $\rho^s_\tau\equiv dp^s/d\tau$ and $\rho^b_\tau\equiv dp^b/d\tau$.  Seller
 remittance keeps demand at $D(p)$, so at $\tau=0$ \eqref{eq:pass-through}
@@ -682,15 +697,15 @@ coincide, recovering the classical neutrality benchmark.
   \operatorname{sgn}(\rho^{b}_{\tau})=-\operatorname{sgn}(\rho_c)
   \]
   provided $\rho_c\neq 0$.  A unit tax therefore moves the equilibrium
-  checkout price in opposite directions depending on which side of the
+  list price in opposite directions depending on which side of the
   market remits it.
 \end{result}
 The condition $\tilde{\mu}^{b}_{\tau}>0$ requires the recovery response of
 returns to be strong enough that $\tilde{\mu}^{b}$ rises when $\tau$ rises at
-fixed checkout: $\tilde{\mu}^{b}_{\tau}>0$ exactly when $r_R(p+h)>1-r$.  When
+fixed $p$: $\tilde{\mu}^{b}_{\tau}>0$ exactly when $r_R(p+h)>1-r$.  When
 also $D_\tau=0$, buyer remittance raises the effective margin while seller
 remittance lowers it, shifting supply outward and inward respectively.  The
-checkout price must therefore adjust in opposite directions to restore
+list price must therefore adjust in opposite directions to restore
 equilibrium.  Which regime raises the price and which lowers it depends on
 the sign of $\rho_c$, which in turn hinges on the relative magnitudes of the
 supply and demand elasticities---a point developed in the next subsection.
@@ -829,7 +844,7 @@ Having established how prices respond to different shocks, we turn to local
 incidence: how each shock's pass-through $\rho_x$ splits the resulting surplus
 change between consumers and producers.  Throughout, $Q\equiv D(p)$ and
 $r\equiv r(p)$ denote the equilibrium gross quantity and the return rate.
-For shocks that reach consumers only through the checkout price---production
+For shocks that reach consumers only through the list price---production
 cost, handling cost, and seller remittance---the consumer-side analysis in
 Section~3 gives
 \begin{equation}
@@ -922,9 +937,9 @@ $\mu$ down by one unit.  Handling cost shifts it down by $r$ units.  Locally,
 the equilibrium condition $D(p)=S(\mu)$ is linear in the shock's direct effect
 on $\mu$.  The resulting supply shift is proportional to $\mu_x$, and the price
 adjustment $\rho_x$ that restores market clearing inherits that same
-proportionality.  A buyer tax replaces the unit fixed-checkout response
+proportionality.  A buyer tax replaces the unit fixed-price response
 $-1$ with $\tilde{\mu}^{b}_{\tau}$, but it also taxes returners directly at
-fixed checkout, so the consumer side is no longer a pure multiple of $\rho_x$
+fixed $p$, so the consumer side is no longer a pure multiple of $\rho_x$
 and the common ratio breaks.
 
 Because both $S(\mu)$ and $PS(\mu)$ are locally linear in $\mu$, the entire
@@ -1203,7 +1218,7 @@ Appendix~\ref{app:welfare-bias-primitives} proves the corollary.
 Which sign of $\mu_p\Lambda-1$ obtains depends on the return-rate slope
 and on pass-through.  Table~\ref{tab:buyer-bias-cases} summarizes the four
 cases.  The first columns record the primitives and the two pass-throughs:
-$\rho_c$ is cost pass-through, and buyer-tax pass-through into the checkout
+$\rho_c$ is cost pass-through, and buyer-tax pass-through into the list
 price is $\rho^b_\tau=\mu_p\rho_c$.  The last three columns split the private
 change $-Q\mu_p\Lambda$.  EA is the ex-ante (frozen-return) term $-Q\mu_p$: a
 loss when $\mu_p>0$ and a gain when $\mu_p<0$.  EP is the ex-post keep-or-return
@@ -1234,7 +1249,7 @@ Case & Primitives & $\rho_c$ & $\rho^b_\tau$ & EA & EP & Bias vs $-Q$ \\
 \end{table}
 \begin{itemize}
   \item Case~1 (selection).  Because $\mu_p>0$, a buyer-remitted tax lowers
-  the effective margin at a fixed checkout price, so the ex-ante
+  the effective margin at a fixed list price, so the ex-ante
   (frozen-return) private change $-Q\mu_p$ is a loss---larger than $-Q$ when
   $\mu_p>1$ and smaller when $\mu_p<1$.  The ex-post term is a gain as above.
   Overestimation ($\mu_p\Lambda<1$) further requires that
@@ -1253,17 +1268,17 @@ Case & Primitives & $\rho_c$ & $\rho^b_\tau$ & EA & EP & Bias vs $-Q$ \\
   (hence $\mu_p\rho_c<1$).
   \item Case~3 (strong behavioral, positive cost pass-through).
   Returns rise in price strongly enough that $\mu_p<0$, so at a fixed
-  checkout price a buyer-remitted tax \emph{raises} the seller's effective
+  list price a buyer-remitted tax \emph{raises} the seller's effective
   margin and the ex-ante term is a gain.  Demand is steeper than supply, so
   cost pass-through is positive and buyer-tax pass-through
-  $\rho^b_\tau=\mu_p\rho_c$ is negative.  The checkout price therefore falls,
+  $\rho^b_\tau=\mu_p\rho_c$ is negative.  The list price therefore falls,
   and with $r'>0$ returns fall as well, making the ex-post term a gain.
   Private surplus rises ($\mu_p\Lambda<0$), while $-Q$ still reports a loss
   of $Q$---the extreme wrong-sign overestimate.
   \item Case~4 (strong behavioral, negative cost pass-through).
   Supply is steeper than demand, so cost pass-through is negative and
   buyer-tax pass-through $\rho^b_\tau=\mu_p\rho_c$ is positive.  The
-  checkout price therefore rises, and with $r'>0$ returns rise as well,
+  list price therefore rises, and with $r'>0$ returns rise as well,
   making the ex-post term a loss that opposes the ex-ante gain from
   $\mu_p<0$.  From the Case~2 identity
   $\mu_p\Lambda-1=-r-r'(p)(p+h)(1-\mu_p\rho_c)$,
