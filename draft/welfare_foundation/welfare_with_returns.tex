@@ -550,7 +550,11 @@ For the tax partial at fixed list price, sum $cs_i(p,\tau)$ over buyers
 $cs_i(p,\tau)=0$, so they contribute nothing at first order.  Among buyers,
 $\partial cs_i/\partial\tau=-\Pr_i(\text{return})$: the tax lowers the return
 payoff one-for-one.  Aggregating over buyers gives
-$\partial CS/\partial\tau=-D(p,\tau)\,\tilde{r}(p,p-\tau)$.  At
+$\partial CS/\partial\tau=-D(p,\tau)\,\tilde{r}(p,p-\tau)$.\footnote{Differentiating
+  $\int cs\,dF(v;\tau)$ appears to add a term from $F(\,\cdot\,;\tau)$ shifting
+  among buyers with $v>p$.  That is only a relabeling of types.  Among buyers
+  the tax changes surplus only through return probabilities, already averaged
+  into $-D\tilde{r}$.}  At
 $\tau=0$,\begin{equation}
   \frac{\partial CS}{\partial p}\Bigm|_{\tau}
   =-D(p)\bigl(1-r(p)\bigr),
