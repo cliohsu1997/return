@@ -261,11 +261,11 @@ among inframarginal buyers,
   = -cs(p,p)\,f(p)+\int_p^\infty cs_p(v,p)\,dF(v),
 \]
 where $cs_p(v,p)\equiv \partial cs(v,p)/\partial p$.  On the extensive margin,
-$cs(p,p)=0$, so entry and exit contribute nothing at first order.  On the intensive margin, $cs_p(v,p)$
-equals minus the keep probability, because a higher price harms the consumer
-only when she keeps the purchase,
+$cs(p,p)=0$, so entry and exit contribute nothing at first order.  On the intensive margin, a higher price harms a buyer only when she keeps, so the cell average is minus the keep probability in that WTP cell,
 \[
-  cs_p(v,p)=-\Pr(u\geq p-\kappa_i).
+  cs_p(v,p)
+  =
+  -\Pr(\text{keep}\mid v_i=v).
 \]
 Aggregating over buyers who purchase then gives
 \[
@@ -576,24 +576,21 @@ one-for-one and therefore harms those who return.
 
 \subsection{Neutrality fails}
 
-The two regimes clear through different equations,
-$D(p)=S(\mu^{s})$ and $D(p,\tau)=S(\tilde{\mu}^{b})$.  Those equations are the
-same---and remittance is therefore neutral---only if both demand and the
-effective margins match at the common list price,
-$D(p)=D(p,\tau)$ and $\mu^{s}(p,\tau,h)=\tilde{\mu}^{b}(p,\tau,h)$.  Canceling
-$p-\tau$ in the margins,
+The two regimes clear through $D(p)=S(\mu^{s})$ and
+$D(p,\tau)=S(\tilde{\mu}^{b})$.  Remittance is therefore neutral only if
+demand and the effective margins match at a common list price,
+$D(p)=D(p,\tau)$ and $\mu^{s}(p,\tau,h)=\tilde{\mu}^{b}(p,\tau,h)$.
+Canceling $p-\tau$ in the margins,
 \begin{result}[Failure of tax neutrality with returns]
   Seller and buyer taxes define the same equilibrium if and only if
   $D(p)=D(p,\tau)$ and
   $r(p)(p+h)=\tilde{r}(p,p-\tau)\,(p-\tau+h)$.
 \end{result}
-For any $\tau>0$, buyer remittance worsens the return option and shifts
-willingness to pay down in the FOSD sense, so $D(p,\tau)\leq D(p)$ at every
-$p$, with a strict inequality whenever some types return with positive
-probability.  The demand sides of the two clearing equations already differ,
-and neutrality therefore fails for any positive tax.  The return-cost
-equality fails as well whenever purchase and recovery split
-($R=p-\tau$), but the demand wedge alone is enough.
+Demand matches locally if and only if $D_{\tau}=0$.  That partial is in
+general nonzero unless types at the purchase margin $v_i(\tau)=p$ never
+return.  If the marginal buyer returns, $D_{\tau}<0$, so
+$D(p,\tau)<D(p)$ for a small positive tax, the demand sides of the two
+clearing equations differ, and neutrality fails.
 
 %=============================================================================
 \section{Pass-through}
