@@ -430,26 +430,31 @@ $\partial cs_i/\partial\tau=-\Pr(\text{return})$, so
 \[
   v_i'(\tau)
   =-\frac{\Pr(\text{return})}{\Pr(\text{keep})}
-  \leq 0
+  \leq 0.
 \]
 A higher tax weakly lowers every type's willingness to pay by
 worsening the return option.
 
-Across types, $v_i(\tau)$ has distribution $F(\,\cdot\,;\tau)$.  At $\tau=0$,
+Across types, $v_i(\tau)$ has distribution $F(\,\cdot\,;\tau)$ with density
+$f(\,\cdot\,;\tau)$.  At $\tau=0$,
 recovery equals the list price, $cs_i(p,0)$ coincides with the earlier $cs_i(p)$, and
-$v_i(0)$ recovers the earlier $v_i$, so $F(\,\cdot\,;0)=F$ with density $f$.
+$v_i(0)$ recovers the earlier $v_i$, so $F(\,\cdot\,;0)=F$ and $f(\,\cdot\,;0)=f$.
 Because $v_i'(\tau)\leq 0$ for every $i$, a rise in $\tau$ shifts the distribution of
 willingness to pay down in the first-order stochastic dominance (FOSD) sense:
 for $\tau'>\tau$ and every $p$,
 \[
   F(p;\tau')\geq F(p;\tau).
 \]
-Demand is $D(p,\tau)=1-F(p;\tau)$, with tax partial
+Demand is $D(p,\tau)=1-F(p;\tau)$.  If the list price is unchanged, a higher
+tax reduces demand only because types with $v_i(\tau)=p$ stop buying.  Those
+types have density $f(p;\tau)$, and each of them has willingness to pay falling
+at rate $v_i'(\tau)$, so
 \[
   D_\tau
-  =-\frac{\partial F(p;\tau)}{\partial\tau}
+  =f(p;\tau)\,\mathbb{E}\bigl[v_i'(\tau)\bigm|v_i(\tau)=p\bigr]
   \leq 0.
 \]
+Because $v_i'=-\Pr(\text{return})/\Pr(\text{keep})$, this is not $-f(p;\tau)$.
 
 Among those who buy, the return decision depends on recovery $R=p-\tau$.
 The average return rate is
@@ -457,6 +462,26 @@ The average return rate is
   \tilde{r}(p,\tau)
   =\frac{1}{D(p,\tau)}\int_p^\infty \phi(v,p-\tau)\,dF(v;\tau).
 \end{equation}
+A higher tax at fixed list price lowers recovery, so remaining buyers are
+less likely to return.  It also causes types with the lowest willingness to
+pay to stop buying.
+Differentiating at $\tau=0$,
+\[
+  \tilde{r}_{\tau}
+  =
+  \underbrace{
+    -\frac{1}{D(p)}\int_p^\infty \frac{\partial\phi(v,p)}{\partial p}\,dF(v)
+  }_{\text{Behavioral channel}}
+  +
+  \underbrace{
+    \frac{-D_{\tau}}{D(p)}\bigl(r(p)-\phi(p,p)\bigr)
+  }_{\text{Selection channel}}.
+\]
+The first term is the behavioral effect.  Remaining buyers face lower recovery
+and become strictly less likely to return, so that channel is negative.  The
+second is selection, with outflow $f(p)$ replaced by $-D_{\tau}$.  Selection is
+unsigned in general, as in $r'(p)$.  When $\phi(v,p)$ decreases in $v$, both
+channels are non-positive, so $\tilde{r}_{\tau}\le 0$.
 
 On the firm side, producer surplus is still the area under supply, but
 evaluated at the effective margin under buyer remittance
@@ -642,10 +667,8 @@ Summarizing, the pass-through rates are collected in the following result.
   directions depending on which side of the market remits it.
 \end{result}
 Because $D_{\tau}\le 0$ and $S'(\mu)>0$, the inequality holds whenever
-$\tilde{\mu}^{b}_{\tau}>0$.  That condition requires the recovery response of
-returns to be strong enough that $\tilde{\mu}^{b}$ rises when $\tau$ rises at
-fixed $p$: $\tilde{\mu}^{b}_{\tau}>0$ exactly when
-$-\tilde{r}_{\tau}(p+h)>1-r$.  Buyer
+$\tilde{\mu}^{b}_{\tau}>0$.  That requires the return rate to fall in
+$\tau$, and to fall fast enough that $-\tilde{r}_{\tau}(p+h)>1-r$.  Buyer
 remittance then raises the effective margin and weakly contracts demand,
 while seller remittance lowers the effective margin along unchanged demand.
 The list price must therefore adjust in opposite directions to restore

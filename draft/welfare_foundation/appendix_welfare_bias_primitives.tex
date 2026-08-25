@@ -66,3 +66,42 @@ Multiplying by $-1$ gives
 which is \eqref{eq:V-buyer-cut}.  The reverse strict inequality is
 $\mu_p\Lambda>1$.
 \end{proof}
+
+\section{Tax partial of the return rate}
+\label{app:rtau}
+
+The average return rate is $\tilde{r}(p,\tau)=N/D$ with
+\[
+  N=\int_p^\infty \phi(v,p-\tau)\,dF(v;\tau),
+  \qquad
+  D=1-F(p;\tau).
+\]
+Differentiating at fixed $p$,
+\[
+  \tilde{r}_{\tau}
+  =\frac{N_{\tau}D-ND_{\tau}}{D^{2}}
+  =\frac{N_{\tau}}{D}-\tilde{r}\,\frac{D_{\tau}}{D}.
+\]
+At $\tau=0$, $D=D(p)$ and $\tilde{r}=r(p)$.  Among remaining buyers, recovery
+falls one-for-one, which contributes
+$-\int_p^\infty \partial\phi(v,p)/\partial p\,dF(v)$ to $N_{\tau}$.  Buyer mass
+changes at rate $D_{\tau}\le 0$.  The types who leave are those at $v=p$.  Over
+an interval $d\tau$ they have measure $-D_{\tau}\,d\tau$ and cell return
+probability $\phi(p,p)$, so $N$ changes by
+\[
+  -\phi(p,p)\,(-D_{\tau})\,d\tau
+  =\phi(p,p)\,D_{\tau}\,d\tau.
+\]
+Collecting the two pieces,
+\[
+  N_{\tau}
+  =-\int_p^\infty \frac{\partial\phi(v,p)}{\partial p}\,dF(v)
+  +\phi(p,p)\,D_{\tau}.
+\]
+Substituting yields
+\begin{equation}
+  \tilde{r}_{\tau}
+  =-\frac{1}{D(p)}\int_p^\infty \frac{\partial\phi(v,p)}{\partial p}\,dF(v)
+  +\frac{-D_{\tau}}{D(p)}\bigl(r(p)-\phi(p,p)\bigr).
+  \label{eq:rtau-split}
+\end{equation}
