@@ -503,23 +503,17 @@ The total derivative with respect to $\tau$ is
   =\frac{\partial CS}{\partial p}\Bigm|_{\tau}\rho^{b}_{\tau}
   +\frac{\partial CS}{\partial \tau}\Bigm|_{p}.
 \]
-For the price partial, differentiating the integral in $p$ yields an
-extensive-margin term from types entering or leaving the purchase margin
-and an intensive-margin term among remaining buyers.  As before, surplus is
-zero at the margin, so the extensive-margin effect is zero at first order;
-the intensive term harms keepers only.
-
-For the tax partial at fixed list price, sum $cs_i(p,\tau)$ over buyers
-($v_i(\tau)\ge p$).  Types who enter or leave the purchase margin have
-$cs_i(p,\tau)=0$, so they contribute nothing at first order.  Among buyers,
-$\partial cs_i/\partial\tau=-\Pr_i(\text{return})$: the tax lowers the return
-payoff one-for-one.  Aggregating over buyers gives
+The marginal buyer included or excluded by $p$ or $\tau$ has surplus
+zero, so the extensive-margin contribution is zero at first order.  The
+price partial then harms keepers only, as before.  At fixed list
+price, the direct effect of a buyer tax harms returners only, so
 $\partial CS/\partial\tau=-D(p,\tau)\,\tilde{r}(p,\tau)$.\footnote{Differentiating
   $\int cs\,dF(v;\tau)$ appears to add a term from $F(\,\cdot\,;\tau)$ shifting
   among buyers with $v>p$.  That is only a relabeling of types.  Among buyers
   the tax changes surplus only through return probabilities, already averaged
-  into $-D\tilde{r}$.}  At
-$\tau=0$,\begin{equation}
+  into $-D\tilde{r}$.}
+At $\tau=0$,
+\begin{equation}
   \frac{\partial CS}{\partial p}\Bigm|_{\tau}
   =-D(p)\bigl(1-r(p)\bigr),
   \qquad
@@ -535,8 +529,7 @@ and therefore
 Compared with \eqref{eq:dCS-dPS-seller}, the producer formula differs only in
 the direct tax effect on the effective margin:
 $\tilde{\mu}^{b}_{\tau}$ replaces $-1$.  The consumer formula adds the
-direct returner term $-Qr$, because a tax at fixed $p$ lowers recovery
-one-for-one and therefore harms those who return.
+direct returner term $-Qr$.
 
 \subsection{Neutrality fails}
 
