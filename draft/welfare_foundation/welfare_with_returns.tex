@@ -391,8 +391,8 @@ surplus is the area under supply at $\mu^{s}$,
   PS^{s}=\int_0^{\mu^{s}}S(z)\,dz.
 \]
 A tax therefore reaches consumers only by moving the equilibrium list
-price.  Differentiating at $\tau=0$, where $\mu^{s}_{\tau}=-1$ at fixed $p$ and
-$\rho^{s}_{\tau}\equiv dp^{s}/d\tau$,
+price.  Write $Q\equiv D(p)$.  Differentiating at $\tau=0$, where
+$\mu^{s}_{\tau}=-1$ at fixed $p$ and $\rho^{s}_{\tau}\equiv dp^{s}/d\tau$,
 \begin{equation}
   \frac{dCS^{s}}{d\tau}
   =-Q\bigl(1-r\bigr)\rho^{s}_{\tau},
@@ -432,72 +432,37 @@ $\partial cs_i/\partial\tau=-\Pr(\text{return})$, so
   =-\frac{\Pr(\text{return})}{\Pr(\text{keep})}
   \leq 0
 \]
-when evaluated at $p=v_i(\tau)$ (and $v_i'(\tau)=0$ if type $i$ never
-returns).  A higher tax weakly lowers every type's willingness to pay by
+A higher tax weakly lowers every type's willingness to pay by
 worsening the return option.
 
 Across types, $v_i(\tau)$ has distribution $F(\,\cdot\,;\tau)$.  At $\tau=0$,
 recovery equals the list price, $cs_i(p,0)$ coincides with the earlier $cs_i(p)$, and
 $v_i(0)$ recovers the earlier $v_i$, so $F(\,\cdot\,;0)=F$ with density $f$.
-Because $v_i'(\tau)\leq 0$ for every $i$, a rise in $\tau$ shifts the law of
+Because $v_i'(\tau)\leq 0$ for every $i$, a rise in $\tau$ shifts the distribution of
 willingness to pay down in the first-order stochastic dominance (FOSD) sense:
 for $\tau'>\tau$ and every $p$,
 \[
   F(p;\tau')\geq F(p;\tau).
 \]
-Locally, writing $f(\,\cdot\,;\tau)$ for the density of $F(\,\cdot\,;\tau)$, the
-CDF rises by the flux of types across $p$.  Substituting
-$v_i'(\tau)=-\Pr(\text{return})/\Pr(\text{keep})$ at the purchase margin
-$v_i(\tau)=p$,
-\[
-  \frac{\partial F(p;\tau)}{\partial\tau}
-  =\mathbb{E}\!\left[
-    \frac{\Pr_i(\text{return})}{\Pr_i(\text{keep})}
-    \,\middle|\,v_i(\tau)=p
-  \right]f(p;\tau)
-  \geq 0.
-\]
-Gross demand is the upper tail of this distribution,
-\[
-  D(p,\tau)=1-F(p;\tau),
-\]
-so $D(p,0)=D(p)$ and, at fixed $p$,
+Demand is $D(p,\tau)=1-F(p;\tau)$, with tax partial
 \[
   D_\tau
-  \equiv\frac{\partial D}{\partial\tau}
   =-\frac{\partial F(p;\tau)}{\partial\tau}
-  =-\mathbb{E}\!\left[
-    \frac{\Pr_i(\text{return})}{\Pr_i(\text{keep})}
-    \,\middle|\,v_i(\tau)=p
-  \right]f(p;\tau)
   \leq 0.
 \]
 
-Type $i$ keeps if and only if $u\geq R-\kappa_i$.  Write $\tilde{r}(p,R)$ for
-the return rate among buyers when the list price is $p$ and recovery is $R$, with
-the buyer set allowed to depend on both.  Under buyer remittance,
+Among those who buy, the return decision depends on recovery $R=p-\tau$.
+The average return rate is
 \begin{equation}
-  \tilde{r}(p,p-\tau)
+  \tilde{r}(p,\tau)
   =\frac{1}{D(p,\tau)}\int_p^\infty \phi(v,p-\tau)\,dF(v;\tau).
 \end{equation}
-The earlier return rate is the special case $r(p)=\tilde{r}(p,p)$.  Write
-\[
-  r_R\equiv \tilde{r}_R(p,p)
-\]
-for the partial of $\tilde{r}$ with respect to recovery $R$, holding the
-list price $p$ fixed, evaluated at $R=p$.  The total derivative $r'(p)$
-defined earlier raises purchase price and recovery together along $R=p$, so
-\[
-  r'(p)=\tilde{r}_p(p,p)+r_R.
-\]
-A buyer tax shifts $R$ but not the list price, so the relevant return
-response is $r_R$, not $r'(p)$.
 
 On the firm side, producer surplus is still the area under supply, but
-evaluated at the buyer-remittance effective margin
+evaluated at the effective margin under buyer remittance
 \begin{equation}
   \tilde{\mu}^{b}(p,\tau,h)
-  =(p-\tau)-\tilde{r}(p,p-\tau)\,(p-\tau+h),
+  =(p-\tau)-\tilde{r}(p,\tau)\,(p-\tau+h),
   \label{eq:mu-tilde}
 \end{equation}
 rather than at $\mu(p,h)$.  Clearing and producer surplus are therefore
@@ -508,7 +473,8 @@ rather than at $\mu(p,h)$.  Clearing and producer surplus are therefore
   =\int_0^{\tilde{\mu}^{b}(p,\tau,h)}S(z)\,dz.
   \label{eq:clear-buyer}
 \end{equation}
-Differentiating at $\tau=0$, where $D(p,0)=D(p)$ and $Q\equiv D(p)$,
+The derivative of producer surplus with respect to $\tau$, evaluated at
+$\tau=0$, is
 \begin{equation}
   \frac{dPS}{d\tau}
   =Q\bigl(\mu_p\rho^{b}_{\tau}+\tilde{\mu}^{b}_{\tau}\bigr),
@@ -518,14 +484,12 @@ where $\rho^{b}_{\tau}\equiv dp^{b}/d\tau$ is the pass-through of the tax into
 list price and
 \begin{equation}
   \tilde{\mu}^{b}_{\tau}
-  =-\bigl(1-r-(p+h)\,r_R\bigr)
+  =-\bigl(1-r+(p+h)\,\tilde{r}_{\tau}\bigr)
 \end{equation}
 is the partial of $\tilde{\mu}^{b}$ with respect to $\tau$ at fixed
-$p$.\footnote{At $\tau=0$, $\tilde{\mu}^{b}(p,0,h)=\mu(p,h)$.  Holding
-  $\tau$ fixed, recovery $R=p-\tau$ rises one-for-one with the list price, so
-  $\partial\tilde{\mu}^{b}/\partial p|_{\tau=0}=1-r-r'(p)(p+h)=\mu_p$.  The
-  $\tau$-partial at fixed $p$ instead shifts only $R$, which is why it
-  involves $r_R$ rather than $r'(p)$.}
+$p$.\footnote{At $\tau=0$, $\tilde{\mu}^{b}(p,0,h)=\mu(p,h)$ and
+  $\partial\tilde{\mu}^{b}/\partial p=\mu_p$.  The tax partial at fixed $p$
+  uses $\tilde{r}_{\tau}$, not $r'(p)$.}
 
 Write $cs(v,p,\tau)$ for expected surplus among types with willingness to pay
 $v_i(\tau)=v$, and set
@@ -550,7 +514,7 @@ For the tax partial at fixed list price, sum $cs_i(p,\tau)$ over buyers
 $cs_i(p,\tau)=0$, so they contribute nothing at first order.  Among buyers,
 $\partial cs_i/\partial\tau=-\Pr_i(\text{return})$: the tax lowers the return
 payoff one-for-one.  Aggregating over buyers gives
-$\partial CS/\partial\tau=-D(p,\tau)\,\tilde{r}(p,p-\tau)$.\footnote{Differentiating
+$\partial CS/\partial\tau=-D(p,\tau)\,\tilde{r}(p,\tau)$.\footnote{Differentiating
   $\int cs\,dF(v;\tau)$ appears to add a term from $F(\,\cdot\,;\tau)$ shifting
   among buyers with $v>p$.  That is only a relabeling of types.  Among buyers
   the tax changes surplus only through return probabilities, already averaged
@@ -584,7 +548,7 @@ Canceling $p-\tau$ in the margins,
 \begin{result}[Failure of tax neutrality with returns]
   Seller and buyer taxes define the same equilibrium if and only if
   $D(p)=D(p,\tau)$ and
-  $r(p)(p+h)=\tilde{r}(p,p-\tau)\,(p-\tau+h)$.
+  $r(p)(p+h)=\tilde{r}(p,\tau)\,(p-\tau+h)$.
 \end{result}
 Demand matches locally if and only if $D_{\tau}=0$.  That partial is in
 general nonzero unless types at the purchase margin $v_i(\tau)=p$ never
@@ -638,42 +602,26 @@ The two shocks differ in which margin moves at fixed $p$ or fixed $\mu$,
 \end{align}
 The production term is $S_c=-S'(\mu)$ because a one-dollar parallel rise in
 every firm's marginal cost is equivalent, at fixed $\mu$, to evaluating market
-supply at $\mu-1$.  Handling moves $\mu$ by only $r(p)$ per dollar relative to
-that unit production shift, so its numerator in \eqref{eq:pass-through} is the
-fraction $r(p)$ of the production numerator.
+supply at $\mu-1$.  Handling instead lowers the effective margin at a fixed
+list price.  Only returned units incur $h$, so a one-dollar rise lowers that
+margin by $r(p)$.  Supply then falls by $r(p)\,S'(\mu)$, the fraction $r(p)$
+of the production numerator.
 
-Turning to the unit tax, failure of tax neutrality requires separate list
-prices $p^s$ and $p^b$ under seller and buyer remittance.  Write
-$\rho^s_\tau\equiv dp^s/d\tau$ and $\rho^b_\tau\equiv dp^b/d\tau$.  Seller
-remittance keeps demand at $D(p)$, so at $\tau=0$ \eqref{eq:pass-through}
-with $S_\tau=0$ gives
-\begin{equation}
-  \rho^s_\tau
-  = \frac{-S'(\mu)\,\mu^s_\tau}{S'(\mu)\,\mu_p-D'(p^s)}.
-\end{equation}
-Buyer remittance clears through $D(p,\tau)=S(\tilde{\mu}^{b})$.  Differentiating
-at $\tau=0$, with $D_p\equiv\partial D/\partial p$ and
-$D_\tau\equiv\partial D/\partial\tau$ evaluated at $\tau=0$,
-\begin{equation}
-  \rho^{b}_{\tau}
-  =\frac{-S'(\mu)\,\tilde{\mu}^{b}_{\tau}+D_\tau}
-  {S'(\mu)\,\mu_p-D_p}.
-\end{equation}
-At $\tau=0$ one has $D_p=D'(p)$ and $\mu^{s}_{\tau}=-1$, so
-$\rho^{s}_{\tau}=\rho_c$.  The buyer rate is
-\[
-  \rho^{b}_{\tau}
-  =-\tilde{\mu}^{b}_{\tau}\,\rho_c
-  +\frac{D_\tau}{S'(\mu)\,\mu_p-D'(p)}.
-\]
-When demand does not respond directly to the tax ($D_\tau=0$), this collapses
-to $\rho^{b}_{\tau}=-\tilde{\mu}^{b}_{\tau}\,\rho_c$.  When the purchase-price
-selection channel in $r'(p)$ vanishes, $\tilde{\mu}^{b}_{\tau}=-\mu_p$ and the
-older identification of a buyer tax with $-p$ returns (again if $D_\tau=0$).
-If $\tilde{\mu}^{b}_{\tau}>0$ and $D_\tau=0$, buyer- and seller-remitted
-pass-through carry opposite signs.  When returns are absent ($r=0$ and
-$r_R=0$) and $D_\tau=0$, $\tilde{\mu}^{b}_{\tau}=-1$ and the two rates
-coincide, recovering the classical neutrality benchmark.
+Turning to the unit tax, seller and buyer remittance support different list
+prices $p^{s}$ and $p^{b}$.  Seller remittance keeps purchase and recovery
+together at $p$, so demand remains $D(p)$.  At a fixed list price the
+unreclaimed tax lowers the effective margin by one dollar along an
+unchanged $S(\mu)$.  Quantity supplied then falls by $S'(\mu)$, the same
+gap as a one-dollar production-cost rise, so $\rho^{s}_{\tau}=\rho_c$ at
+$\tau=0$.
+
+Buyer remittance clears through
+$D(p,\tau)=S\bigl(\tilde{\mu}^{b}(p,\tau,h)\bigr)$.  At
+$\tau=0$, $\partial\tilde{\mu}^{b}/\partial p=\mu_p$, so the denominator
+$S'(\mu)\,\mu_p-D'(p)$ is the same as for production.  The numerator is
+$-S'(\mu)\,\tilde{\mu}^{b}_{\tau}+D_{\tau}$.  The additional term $D_{\tau}$
+captures how demand is shifted by the tax at a fixed list price.
+Summarizing, the pass-through rates are collected in the following result.
 \begin{result}[Pass-through into list price and remittance-dependent sign]
 \label{res:pass-through}
   \textbf{(i)} Production-cost pass-through is
@@ -690,26 +638,31 @@ coincide, recovering the classical neutrality benchmark.
     &
     \rho^{b}_{\tau}
     &= -\tilde{\mu}^{b}_{\tau}\,\rho_c
-    +\frac{D_\tau}{S'(\mu)\,\mu_p-D'(p)}.
+    +\frac{D_{\tau}}{S'(\mu)}\,\rho_c.
     \label{eq:rho-links}
   \end{align}
-  \textbf{(ii)} If $D_\tau=0$ and $\tilde{\mu}^{b}_{\tau}>0$, then
+  \textbf{(ii)} If $\tilde{\mu}^{b}_{\tau}>D_{\tau}/S'(\mu)$ and
+  $\rho_c\neq 0$, then
   \[
-  \operatorname{sgn}(\rho^{b}_{\tau})=-\operatorname{sgn}(\rho_c)
+  \operatorname{sgn}(\rho^{b}_{\tau})=-\operatorname{sgn}(\rho_c).
   \]
-  provided $\rho_c\neq 0$.  A unit tax therefore moves the equilibrium
-  list price in opposite directions depending on which side of the
-  market remits it.
+  A unit tax therefore moves the equilibrium list price in opposite
+  directions depending on which side of the market remits it.
 \end{result}
-The condition $\tilde{\mu}^{b}_{\tau}>0$ requires the recovery response of
+Because $D_{\tau}\le 0$ and $S'(\mu)>0$, the inequality holds whenever
+$\tilde{\mu}^{b}_{\tau}>0$.  That condition requires the recovery response of
 returns to be strong enough that $\tilde{\mu}^{b}$ rises when $\tau$ rises at
-fixed $p$: $\tilde{\mu}^{b}_{\tau}>0$ exactly when $r_R(p+h)>1-r$.  When
-also $D_\tau=0$, buyer remittance raises the effective margin while seller
-remittance lowers it, shifting supply outward and inward respectively.  The
-list price must therefore adjust in opposite directions to restore
+fixed $p$: $\tilde{\mu}^{b}_{\tau}>0$ exactly when
+$-\tilde{r}_{\tau}(p+h)>1-r$.  Buyer
+remittance then raises the effective margin and weakly contracts demand,
+while seller remittance lowers the effective margin along unchanged demand.
+The list price must therefore adjust in opposite directions to restore
 equilibrium.  Which regime raises the price and which lowers it depends on
 the sign of $\rho_c$, which in turn hinges on the relative magnitudes of the
-supply and demand elasticities---a point developed in the next subsection.
+supply and demand elasticities, a point developed in the next subsection.
+When returns are absent, $\tilde{\mu}^{b}_{\tau}=-1$ and $D_{\tau}=0$, so
+$\rho^{b}_{\tau}=\rho_c$.
+
 \subsection{Elasticity representation}
 
 The same pass-through formulas can be rewritten in elasticities, which makes
