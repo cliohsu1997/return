@@ -2,7 +2,6 @@
 
 \usepackage{amsmath,amssymb}
 \usepackage[margin=1in]{geometry}
-\usepackage{booktabs}
 \usepackage{hyperref}
 
 \title{U.S.\ Sales Tax and Use Tax}
@@ -13,112 +12,115 @@
 \maketitle
 
 \begin{abstract}
-Institutional notes on U.S.\ sales and use taxes: remittance channels,
-\emph{Wayfair}, rates, verified collection sizes, and returns.
+Institutional notes on U.S.\ sales and use taxes: physical versus economic
+nexus after \emph{Wayfair}, who remits, the high-value misconception, refunds
+on returns, and the mapping to seller versus buyer remittance in models of
+taxation with product returns.
 \end{abstract}
 
 \section{U.S.\ Sales Tax and Use Tax}
 
-There is no federal sales or use tax. Both are state and local consumption
-taxes at the same rate within a location; they differ by who remits.
+There is no federal sales or use tax.  Both are state and local consumption
+taxes levied at the same statutory rate within a location.  They differ by who
+remits the money, not by the rate or by the price of the good.
+
+\subsection{Physical Presence versus Economic Presence}
+
+Before 2018, remote sellers generally collected tax only if they had a physical
+presence---an office, warehouse, or similar nexus---in the destination
+state.\footnote{\emph{Quill Corp.\ v.\ North Dakota}, 504 U.S.\ 298 (1992).}
+Most online platform sales were therefore untaxed at checkout.  Buyers were
+legally required to self-report the same amount as use tax, but household
+compliance was low.
+
+\emph{South Dakota v.\ Wayfair} (2018) replaced physical presence with
+economic presence as a sufficient basis for collection.\footnote{\emph{South
+  Dakota v.\ Wayfair, Inc.}, 585 U.S.\ 162 (2018).}
+States then passed marketplace-facilitator laws that require the platform
+(Amazon, eBay, Etsy), rather than the individual third-party seller, to
+calculate, collect, and remit tax at checkout.  For the bulk of U.S.\
+e-commerce, remittance has therefore moved onto the seller path.
 
 \subsection{Sales Tax versus Use Tax}
 
-\paragraph{Sales tax.}
-A registered retailer adds tax at checkout and remits it to the government.
+A sales tax is charged by a retailer (or marketplace facilitator) registered
+in the buyer's state.  The store adds the tax to the bill at checkout and
+sends it to the government.
 
-\paragraph{Use tax.}
-If the seller charges no tax, the buyer must self-report and pay the home
-state. Use tax is the backstop when sales tax was not collected at sale.
+A use tax is the backstop.  If the buyer purchases from an out-of-state seller
+who charges no tax, the buyer must track the purchase and remit the same rate
+directly to the home state.  The two instruments are the same levy.  The
+difference is the remittance channel.
 
-Neither instrument depends on item value. States track titled goods
-(vehicles, boats, aircraft) closely, so unpaid use tax is often collected at
-registration even though a \$5 book can trigger the same statutory tax.
+Rates are not trivial.  Population-weighted average combined state and local
+rates are about 7.53~percent.\footnote{Tax Foundation, ``State and Local Sales
+  Tax Rates, Midyear 2026,''
+  \url{https://taxfoundation.org/data/all/state/2026-sales-tax-rates-midyear/}.}
+Among taxing states, combined averages are highest in Louisiana, Tennessee,
+Washington, and Arkansas.  Alaska, Delaware, Montana, New Hampshire, and
+Oregon have no statewide sales or use tax.
 
-\subsection{History: Physical Presence versus Economic Presence}
+Remitted dollars do not split evenly between the two channels.  State retail
+sales taxes raised \$444.5~billion in FY~2022, about 31~percent of state tax
+collections, in the Census Bureau's broad sales category rather than a
+sales-versus-use split.\footnote{Tax Foundation, ``Sales Tax Revenue by
+  State,''
+  \url{https://taxfoundation.org/data/all/state/sales-tax-revenue-reliance-breadth/}.}
+Mikesell and Ross (2019) compiled use tax from the 24 states that report it
+separately.\footnote{John L.\ Mikesell and Justin M.\ Ross, ``After Wayfair:
+  What Are State Use Taxes Worth?'' National Tax Association, 2019, Table~2,
+  \url{https://ntanet.org/wp-content/uploads/2019/05/AFTER-WAYFAIR-WHAT-ARE-STATE-USE-TAXES-WORTH-PAPER.pdf}.}
+Across that FY~2017 panel, use tax averaged 8.19~percent of sales-plus-use
+(median 8.22~percent).  Seller collection is automatic.  Buyer self-assessment
+is small except where the state can attach a registration event.
 
-Before 2018, remote sellers generally collected only with physical presence
-in the destination state. Online platform sales were often untaxed at
-checkout; buyers owed use tax but rarely remitted it.
+\subsection{Not a High-Value Tax}
 
-After \emph{South Dakota v.\ Wayfair} (2018), states may require collection
-based on economic presence. Marketplace facilitator laws shift collection to
-the platform, which remits at checkout.
+Liability does not depend on the price of the item.  A \$5 book and a \$50,000
+car can each trigger sales tax or use tax at the same local rate.  The
+association with expensive goods is an enforcement pattern, not a statutory
+threshold.  States track titled property---vehicles, boats, aircraft---through
+the DMV or similar registries, so unpaid use tax is often collected at
+registration or on an annual filing even though the same tax applies to
+ordinary remote purchases that are never observed.
 
-\subsection{Rates}
+\subsection{Returns and Refund Delay}
 
-Population-weighted average combined (state + local) rates are about
-7.53\%.\footnote{Tax Foundation, State and Local Sales Tax Rates (midyear
-2026 update),
-\url{https://taxfoundation.org/data/all/state/2026-sales-tax-rates-midyear/}.}
-Highest average combined rates include Louisiana (10.13\%), Tennessee
-(9.61\%), Washington (9.57\%), and Arkansas (9.48\%). Colorado has the lowest
-statewide rate among taxing states (2.90\%), before local add-ons. Five
-states---Alaska, Delaware, Montana, New Hampshire, and Oregon---have no
-statewide sales or use tax.
+When the buyer returns an item, the tax paid on that unit is supposed to be
+unwound, but the path depends on whom the buyer paid.
 
-\subsection{Collection Size}
+If sales tax was collected at checkout, the store refunds the tax-inclusive
+price.  The delay is ordinary payment processing, typically a few business
+days rather than a statutory waiting period.
 
-Rates match; remitted dollars do not. The Census Bureau does not publish a
-national total that separates use tax from general sales tax, so there is no
-verified U.S.-wide use-tax dollar figure. Verified evidence is as follows.
+If use tax was already remitted to the state---for example at the DMV or on a
+tax return---the store cannot refund it.  The buyer must file a claim or an
+amended return with the tax authority.  Processing is a government workflow
+and often takes weeks or months.  That delay, and the possibility of
+incomplete recovery, is the institution behind treating reclaim of $\tau$ on a
+returned unit as frictional.
 
-\paragraph{Scale of general sales.}
-State retail sales taxes raised \$444.5~billion in FY~2022 (about 31\% of
-state tax collections).\footnote{Tax Foundation, ``Sales Tax Revenue by State,''
-\url{https://taxfoundation.org/data/all/state/sales-tax-revenue-reliance-breadth/}.}
-That is the broad sales category, not a sales-versus-use split.
+\subsection{Why This Matters for Models with Returns}
 
-\paragraph{Multi-state use-tax shares.}
-Mikesell and Ross (2019) compiled use tax from states that report it
-separately (not all 45 sales-tax states).\footnote{John L.\ Mikesell and
-Justin M.\ Ross, ``After Wayfair: What Are State Use Taxes Worth?'' NTA, 2019,
-Table~2,
-\url{https://ntanet.org/wp-content/uploads/2019/05/AFTER-WAYFAIR-WHAT-ARE-STATE-USE-TAXES-WORTH-PAPER.pdf}.}
-Their FY~2017 panel covers \textbf{24} states: Alabama, Arizona, Arkansas,
-Colorado, Connecticut, Florida, Hawaii, Indiana, Iowa, Kansas, Maryland,
-Michigan, Minnesota, Mississippi, Nebraska, New Jersey, Oklahoma,
-Pennsylvania, South Carolina, Tennessee, Vermont, Washington, West Virginia,
-and Wyoming. (Connecticut and Pennsylvania lack FY~2010 figures; the rest
-appear in both years.) Across that FY~2017 panel, use tax averaged 8.19\% of
-sales-plus-use (median 8.22\%) and 2.77\% of all state tax. Sales tax was
-therefore about 92\% of the combined pot. FY~2010 means are nearly identical.
-Shares vary by state (examples: Michigan 14.8\%, Indiana 13.7\%, Iowa 16.7\%,
-Florida 2.7\%, Hawaii 1.1\%).
-
-\paragraph{Recent state breakdowns.}
-Iowa FY~2025: of \$4.156~billion, retail sales 72.0\%, retailer's use 17.4\%,
-remote sellers 9.4\%, consumer's use 1.3\%.\footnote{Iowa Department of
-Revenue, \textit{Retail Sales and Use Taxes Annual Report, FY 2025},
-\url{https://revenue.iowa.gov/media/4462/download?inline=}.}
-Retailer's use and remote sellers are still seller-collected; buyer
-self-assessment (consumer's use) is only 1.3\%. Kansas FY~2023 actuals:
-\$2.777~billion retail sales and \$803~million compensating use
-(22.4\% of sales-plus-use).\footnote{Kansas Legislative Research Department,
-CRE long memo, Spring 2024, Table~1,
-\url{https://klrd.gov/wp-content/uploads/2024/05/CRE_Long_Memo_05-08-2024.pdf}.}
-
-Seller collection is automatic. Buyer use tax relies on self-reporting, with
-low household compliance except for titled goods.
-
-\subsection{Returns and Refund Timing}
-
-\paragraph{Sales tax paid to a store.}
-The store refunds tax with the purchase price (days).
-
-\paragraph{Use tax paid to the government.}
-The store cannot refund it. The buyer must claim with the tax authority
-(often months).
-
-\subsection{Why This Matters}
-
-Sales tax is seller remittance; use tax is buyer remittance when the seller
-does not collect. Marketplace laws push remote sales onto the seller path.
-Refunds follow the remitting party. That remittance split parallels seller
-versus buyer tax regimes in models with product returns. In dollars, the
-buyer-remittance channel is small relative to seller collection.
+Sales tax is seller remittance.  The retailer collects $\tau$ at checkout and,
+on a return, refunds the tax-inclusive list price $p$.  Use tax is buyer
+remittance when the seller did not collect.  The seller then refunds only the
+pre-tax amount $p-\tau$, and reclaim of the tax is a claim on the government
+rather than on the store.  Marketplace-facilitator laws push remote sales onto
+the seller path, so use tax is the residual channel.  In dollars it is small
+relative to seller collection.  The remittance split is the same object as
+seller versus buyer tax regimes in welfare notes with product returns.  Those
+notes take the extreme of zero reclaim from the government on a returned unit.
+This note records the institution.  It does not re-derive pass-through or the
+effective margin.
 
 \begin{thebibliography}{99}
+
+\bibitem{quill1992}
+\emph{Quill Corp.\ v.\ North Dakota}, 504 U.S.\ 298 (1992).
+
+\bibitem{wayfair2018}
+\emph{South Dakota v.\ Wayfair, Inc.}, 585 U.S.\ 162 (2018).
 
 \bibitem{taxfoundation_rates}
 Tax Foundation, ``State and Local Sales Tax Rates, Midyear 2026.''
@@ -132,15 +134,6 @@ Tax Foundation, ``Sales Tax Revenue by State.''
 John L.\ Mikesell and Justin M.\ Ross, ``After Wayfair: What Are State Use Taxes
 Worth?'' National Tax Association, 2019.
 \url{https://ntanet.org/wp-content/uploads/2019/05/AFTER-WAYFAIR-WHAT-ARE-STATE-USE-TAXES-WORTH-PAPER.pdf}.
-
-\bibitem{iowa2025}
-Iowa Department of Revenue, \textit{Retail Sales and Use Taxes Annual Report,
-FY 2025}.
-\url{https://revenue.iowa.gov/media/4462/download?inline=}.
-
-\bibitem{kansas_cre2024}
-Kansas Legislative Research Department, CRE long memo (Spring 2024).
-\url{https://klrd.gov/wp-content/uploads/2024/05/CRE_Long_Memo_05-08-2024.pdf}.
 
 \end{thebibliography}
 

@@ -1,0 +1,940 @@
+\documentclass[11pt]{article}
+
+\usepackage{amsmath,amssymb}
+\usepackage{amsthm}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\usepackage[round,authoryear]{natbib}
+
+\newtheorem{result}{Result}
+
+\title{Pass-Through, Welfare, and Incidence under Product Returns\\
+  in Perfect Competition}
+\author{Draft notes}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+%=============================================================================
+\section{Introduction}
+%=============================================================================
+
+In the United States a sales tax is collected by the retailer at checkout and
+remitted to the state.  Since \emph{South Dakota v.\ Wayfair} (2018),
+marketplace-facilitator laws have made platforms such as Amazon, eBay, and
+Etsy the statutory remittance agents for most third-party e-commerce, so the
+tax is added at checkout rather than left for the buyer to self-assess.
+
+When the transaction is final and the good is kept, who remits is only an
+administrative detail.  A return changes that picture, because the tax paid
+to the government must itself be unwound.  Reclaiming that tax typically
+requires filing and can involve delay or incomplete recovery.  We take the
+extreme case in which the seller recovers none of the tax from the government
+on a returned unit.\footnote{Partial reclaim from the government would lie
+  between full recovery of $\tau$ and this zero-reclaim benchmark.}
+The seller still refunds the full tax-inclusive list price, so purchase and
+recovery both equal list price $p$, while the unreclaimed tax sits on the
+seller.  Consumers pay $p$.  Firms supply against the effective margin, list
+price minus expected refunds, handling, and the unreclaimed tax.
+
+Most incidence and pass-through analysis treats a return as undoing the
+purchase, so pass-through, incidence, and deadweight loss are read off demand
+and supply alone.  That abstraction is hard to justify in practice.  About one
+in five online purchases is
+returned,\footnote{National Retail Federation and Happy Returns, \emph{2025
+  Retail Returns Landscape}, October 15, 2025,
+  \url{https://nrf.com/research/2025-retail-returns-landscape}.
+  The report estimates that 19.3\,\% of online sales will be returned in 2025.}
+and a return is not a free reversal of the transaction.  Never buying and buying then returning leave the same final
+allocation---the consumer does not keep the good---yet a returned purchase
+incurs shipping, hassle, and handling that a non-purchase avoids.  Demand and
+supply alone therefore omit a margin between purchase and final ownership that
+matters for welfare.
+
+What objects then replace the classical demand and supply curves, and how
+misleading is tax analysis that omits returns?  We study these questions
+under perfect competition with product returns and seller handling costs,
+for a seller-remitted sales tax.  We characterize pass-through, incidence, and
+welfare losses with returns, compare them to the no-return benchmark, and
+identify where omitting the return margin changes conclusions.
+
+Even with a return margin, surplus continues to rest on a small set of market
+aggregates.  What changes is which aggregates matter and at which prices they
+are evaluated.  Consumer surplus depends on only two aggregates: gross demand
+and the return rate.  Heterogeneity in tastes, match values, and return costs
+enters welfare solely through these aggregates.  Producer surplus retains the
+usual geometry---area to the left of the supply curve---but is evaluated at
+the effective margin, list price minus expected refunds and handling, rather
+than at list price.
+
+Because consumers pay the list price while firms respond to the effective
+margin, how that margin moves with the list price governs pass-through from
+cost shocks into list prices.  The response of the effective margin to the
+list price reflects two forces.  First, a higher price directly raises
+revenue on kept units.  Second, the return rate itself may change with price.
+When the behavioral response dominates---consumers become more likely to return
+as price rises---the effective margin can actually fall with the list price.
+This creates a downward-sloping supply curve in list-price space.
+
+We show that pass-through of a one-dollar production-cost shock equals that
+of a seller-remitted sales tax.  The ratio of handling to production-cost
+pass-through equals the aggregate return rate.  When the behavioral response
+of returns to price is strong enough that the effective margin falls in the
+list price, pass-through can be negative.  That outcome arises when the
+list-price supply curve slopes downward---a higher price lowers the effective
+margin and hence quantity supplied---and more steeply than demand.  In this
+region, a cost increase creates excess demand, and the equilibrium price must
+fall so that supply expands by more than demand.
+
+Despite pass-through of a cost shock potentially being negative, the
+incidence ratio---the burden on consumers relative to producers---is always
+positive and identical across production cost, handling cost, and the sales
+tax.  For those shocks, consumer and producer surplus therefore always move
+together, as in the classical model without returns.  When cost pass-through
+is negative, the three shocks raise both surpluses, yielding a Pareto
+improvement.  When pass-through is positive, they reduce both surpluses.
+
+These welfare effects also reshape first-order changes in total private
+surplus.  We decompose the change from a cost or tax increase into an
+ex-ante piece on the purchase margin and an ex-post piece on the
+keep-or-return margin.  For a production-cost or sales-tax shock, the
+ex-ante piece is the classical rectangle from fewer units sold.  The
+ex-post piece captures how the
+price change reallocates units between kept and returned states, with each
+additional return wasting the list price plus handling cost.  Without returns, private surplus falls by exactly the market quantity.
+With returns, that fall is joined by an ex-post adjustment that the
+classical no-return formula omits entirely.  A handling-cost shock
+scales both pieces by the return rate.  For taxes we then add
+treasury revenue $G=\tau Q(\tau)$ back to obtain social surplus, so the
+first-order deadweight loss of a sales tax is only the ex-post
+return-margin term.
+
+Whether the omitted ex-post term adds to or offsets that market-quantity fall
+hinges on how the return rate responds to the price change.  When
+pass-through is positive and the return rate rises with price, more units are
+returned and handling costs rise, so the classical formula underestimates the
+welfare loss.  When the return rate instead falls with price, the ex-post
+term is a gain that partially offsets the ex-ante loss, so the classical
+formula overestimates it.  When pass-through is negative, that same omitted
+ex-post gain is what delivers the Pareto improvement above.  An analyst who
+ignores returns then not only mismeasures the magnitude but gets the wrong
+sign.
+
+To sign that bias, we provide a simple diagnostic, from the return-rate
+elasticity and the ratio of handling to list price, for when the classical
+no-return pass-through formula over- or underestimates the correct
+returns-adjusted pass-through.  Parallel conditions in the return-rate,
+supply, and demand elasticities sign when the classical welfare formula over-
+or understates the true first-order welfare change, or reverses its sign.
+Those welfare-improving outcomes stand in sharp contrast to the classical
+no-return benchmark, where pass-through is always positive and such gains are
+impossible.
+
+%=============================================================================
+\section{Setting}
+%=============================================================================
+
+A homogeneous product sells at list price $p$.  Consumers indexed by $i$ differ
+in return hassle $\kappa_i$, the disutility of sending the good back, and in
+the post-purchase match distribution $G_i$ over match quality $u$.  After
+buying, type $i$ draws $u\sim G_i$ and keeps the item when
+$u-p\geq -\kappa_i$, earning $u-p$, and returns it otherwise, earning
+$-\kappa_i$.  The refund on a return equals the purchase price.
+
+Expected surplus from buying at price $p$ is therefore
+\[
+  cs_i(p)=\mathbb{E}_{u\sim G_i}\bigl[\max(u-p,\,-\kappa_i)\bigr].
+\]
+On the purchase margin, all of this consumer-side heterogeneity collapses into
+willingness to pay $v_i$, defined by $cs_i(v_i)=0$: type $i$ buys if and only
+if $p\leq v_i$.  Across types, $v_i$ has distribution $F$ with density $f$, so
+gross demand is $D(p)=1-F(p)$.  Of the units sold at $p$, a share $r(p)$ are
+returned.
+
+How $r(p)$ responds to price is central for what follows, so we unpack its
+derivative.  Type $i$'s return probability is
+\[
+  \phi_i(p)=\Pr(u<p-\kappa_i).
+\]
+Willingness to pay settles who buys, but not who returns: buyers with the same
+$v_i$ may still differ in $\kappa_i$ and $G_i$.  Averaging within WTP cells
+gives
+\[
+  \phi(v,p)\equiv\mathbb{E}\bigl[\phi_i(p)\bigm|v_i=v\bigr],
+\]
+which depends on $v$ whenever the joint distribution of $(\kappa_i,G_i)$ varies
+across valuation levels.  The aggregate return rate is the mean of these cell
+averages among those who buy at $p$,
+\[
+  r(p)=\frac{1}{D(p)}\int_p^\infty \phi(v,p)\,dF(v).
+\]
+Differentiating and using $D'(p)=-f(p)$ splits the response into two terms,
+\[
+  r'(p)
+  =
+  \underbrace{
+    \frac{1}{D(p)}\int_p^\infty \frac{\partial \phi(v,p)}{\partial p}\,dF(v)
+  }_{\text{Behavioral channel}}
+  +
+  \underbrace{
+    \frac{f(p)}{D(p)}\bigl(r(p)-\phi(p,p)\bigr)
+  }_{\text{Selection channel}},
+\]
+where $\phi(p,p)$ is the average return probability among types at the
+purchase margin $v_i=p$.
+
+The first term is behavioral.  Among consumers who remain in the market, a
+higher $p$ raises the keep threshold and makes return strictly more likely.
+The second is selection.  A higher price truncates the buyer pool at the
+margin, so composition changes whenever marginal buyers differ in return
+propensity from the average inframarginal buyer.  For arbitrary
+$(\kappa_i,G_i)$ that selection term is unsigned.  Under the additive match
+$u=v_i+\varepsilon$ with $\varepsilon$ and return hassle both independent of
+$v_i$, however, $\phi(v,p)$ decreases in $v$.  Marginal buyers at $v_i=p$ then
+return more often than inframarginal buyers, so $\phi(p,p)\geq r(p)$ and
+selection is non-positive.  The two forces therefore pull opposite ways.
+Which dominates is empirical, and we impose no sign restriction on $r'(p)$
+below.
+
+On the firm side the market is perfectly competitive.  Producer $j$ takes $p$
+as given, chooses output at cost $C_j(q_j)$, and incurs a net return handling
+cost $h$ on each returned unit---gross handling cost minus scrap value.  Net
+handling may be negative, but we maintain $p+h>0$, which holds whenever scrap
+value does not exceed list price.
+
+%=============================================================================
+\section{Consumer side}
+%=============================================================================
+
+We turn first to consumer surplus and show that only the aggregates $D$ and
+$r$ enter.  Write $cs(v,p)$ for expected surplus at list price $p$ among types
+with willingness to pay $v$, so $cs(v,v)=0$.  Consumer surplus integrates surplus
+over all types who buy,
+\begin{equation}
+  CS(p)=\int_p^\infty cs(v,p)\,dF(v).
+\end{equation}
+Differentiating in $p$ gives an extensive-margin term from types entering or
+leaving the purchase margin and an intensive-margin term from lower surplus
+among inframarginal buyers,
+\[
+  CS'(p)
+  = -cs(p,p)\,f(p)+\int_p^\infty cs_p(v,p)\,dF(v),
+\]
+where $cs_p(v,p)\equiv \partial cs(v,p)/\partial p$.  On the extensive margin,
+$cs(p,p)=0$, so entry and exit contribute nothing at first order.  On the intensive margin, a higher price harms a buyer only when she keeps, so the cell average is minus the keep probability in that WTP cell,
+\[
+  cs_p(v,p)
+  =
+  -\Pr(\text{keep}\mid v_i=v).
+\]
+Aggregating over buyers who purchase then gives
+\[
+  CS'(p)=\int_p^\infty cs_p(v,p)\,dF(v)
+  = -D(p)\bigl(1-r(p)\bigr),
+\]
+by the definitions of $D(p)$ and $r(p)$.  A small price change therefore satisfies
+\begin{equation}
+  dCS = -D(p)\bigl(1-r(p)\bigr)\,dp.
+  \label{eq:dCS}
+\end{equation}
+
+The extensive- and intensive-margin decomposition makes the local formula
+transparent.  Consumer surplus changes depend only on the aggregates $D(p)$ and
+$r(p)$, both at each price and integrated along any path,
+\[
+  \Delta CS = -\int_{p_0}^{p_1} D(p)\bigl(1-r(p)\bigr)\,dp.
+\]
+Micro heterogeneity in price responses can be rich.  Price $p$ enters each
+$cs_i(p)$ nonlinearly and can shift participation, return decisions, and
+inframarginal surplus differently across types.  Yet once $(D,r)$ are given, this
+microstructure is irrelevant for $dCS$ and $\Delta CS$.  Two economies with
+the same paths of $D(p)$ and $r(p)$ deliver the same consumer surplus loss,
+whether high-$v_i$ types adjust return behavior more steeply than low-$v_i$
+types or not.  Only kept units enter at first order, through $1-r(p)$, not
+gross purchases $D(p)$ alone.
+
+Let $\bar{p}$ denote the highest willingness to pay in the population, so
+$D(\bar{p})=0$ and $CS(\bar{p})=0$.  Integrating the local formula then
+rewrites consumer surplus as area under kept volume,
+\begin{equation}
+  CS(p)=\int_p^{\bar{p}} D(z)\bigl(1-r(z)\bigr)\,dz.
+\end{equation}
+
+%=============================================================================
+\section{Supply side}
+%=============================================================================
+
+On the firm side, returns make list price an imperfect summary of producer
+payoffs.  A gross sale brings revenue $p$ if the consumer keeps the item and
+costs refund $p$ plus net handling $h$ if the item is returned.  Among gross
+sales at list price $p$, share $r(p)$ are returned, so expected revenue per
+gross unit---the \emph{effective margin}---is
+\begin{equation}
+  \mu(p,h) \equiv p - r(p)(p+h).
+  \label{eq:mu-def}
+\end{equation}
+Under perfect competition, firm $j$ takes $p$ as given and therefore faces a
+fixed number $\mu$ in its supply decision.  At equilibrium, $\mu=\mu(p,h)$.
+
+Given $\mu$, firm $j$ chooses output to solve
+\[
+  \max_{q_j \geq 0}\;\; \mu\,q_j - C_j(q_j),
+  \qquad
+  \text{FOC: } C_j'(q_j)=\mu \;\;(\text{if } q_j>0),
+\]
+with $C_j(0)=0$.  Write $q_j(\mu)$ for firm $j$'s supply, set to zero when
+$\mu$ is below its minimum marginal cost.  We assume each $C_j$ has strictly
+increasing marginal cost, so $q_j'(\mu)>0$ for active firms.
+
+Summing across firms defines market supply and industry profit,
+\begin{equation}
+  S(\mu) \equiv \sum_j q_j(\mu),
+  \qquad
+  PS(\mu) \equiv \sum_j \bigl[\mu\,q_j(\mu)-C_j\bigl(q_j(\mu)\bigr)\bigr].
+  \label{eq:agg-def}
+\end{equation}
+Under that assumption, $S'(\mu)>0$.  Market supply therefore rises with the
+effective margin, but not necessarily with list price.  Firms care about
+$\mu$, and $\mu(p,h)$ can fail to rise with $p$ when refunds and handling
+eat into the list-price gain.  Which firms are active at each $\mu$
+determines both the market quantity and total profit.
+
+Differentiating the profit of firm $j$ with respect to $\mu$ gives
+\[
+  \frac{d}{d\mu}\Bigl[\mu\,q_j-C_j(q_j)\Bigr]
+  = q_j + q_j'(\mu)\,\bigl[\mu-C_j'(q_j)\bigr].
+\]
+Active firms satisfy $C_j'(q_j)=\mu$ at their chosen output, so the adjustment
+term $q_j'(\mu)\,[\mu-C_j'(q_j)]$ is zero---equivalently, the envelope theorem
+applied to firm $j$'s profit problem gives $d\pi_j/d\mu=q_j(\mu)$.  Summing
+over firms,
+\[
+  PS'(\mu)=\sum_j q_j(\mu)=S(\mu).
+\]
+With no production at $\mu=0$, it follows that industry profit equals the area
+to the left of the market supply curve,
+\begin{equation}
+  PS(\mu)=\int_0^\mu S(z)\,dz.
+  \label{eq:PS-integral}
+\end{equation}
+At equilibrium $\mu=\mu(p,h)$,
+$PS=\int_0^{\mu(p,h)}S(z)\,dz$.
+
+%=============================================================================
+\section{A seller-remitted sales tax}
+%=============================================================================
+\label{sec:sales-tax}
+
+Write $p$ for the list price and $\tau$ for a per-unit sales tax remitted by
+the seller.  Without returns, a unit tax and a unit cost shock have the same
+pass-through \citep{weyl2013pass}.  With returns the seller refunds the
+tax-inclusive list price and recovers none of $\tau$ from the government, so
+purchase price and return recovery both equal list price $p$.  The return rate
+is therefore the earlier $r(p)$, while the seller's effective margin subtracts
+the unreclaimed tax,
+\[
+  \mu^{s}(p,\tau,h)=p-\tau-r(p)(p+h)=\mu(p,h)-\tau,
+\]
+and clearing is
+\begin{equation}
+  D(p) = S\bigl(\mu^{s}(p,\tau,h)\bigr).
+  \label{eq:clear-seller}
+\end{equation}
+Consumer surplus depends on list price $p$ alone, and producer surplus is the
+area under supply at $\mu^{s}$,
+\[
+  CS=CS(p),
+  \qquad
+  PS=\int_0^{\mu^{s}}S(z)\,dz.
+\]
+A tax therefore reaches consumers only by moving the equilibrium list
+price.  Write $Q\equiv D(p)$.  Differentiating at $\tau=0$, where
+$\mu^{s}_{\tau}=-1$ at fixed $p$ and $\rho_{\tau}\equiv dp/d\tau$,
+\begin{equation}
+  \frac{dCS}{d\tau}
+  =-Q\bigl(1-r\bigr)\rho_{\tau},
+  \qquad
+  \frac{dPS}{d\tau}
+  =Q\bigl(\mu_p\rho_{\tau}-1\bigr).
+  \label{eq:dCS-dPS-seller}
+\end{equation}
+
+%=============================================================================
+\section{Pass-through}
+%=============================================================================
+
+Equilibrium satisfies $D(p)=S(\mu(p,h))$.  Write $Q\equiv D(p)$.  We
+characterize pass-through into list price for three shocks: a uniform
+one-dollar parallel shift in every firm's marginal production cost (indexed by
+$c$), a one-dollar increase in handling cost $h$, and a unit sales tax $\tau$.
+Production cost shifts market supply at a given effective margin $\mu$, while
+handling lowers $\mu(p,h)$ at a fixed list price $p$.
+
+For production and handling, write the clearing condition as
+\begin{equation}
+  m(p,x)\equiv D(p)-S(\mu(p,x),x)=0,
+  \qquad x\in\{c,h\}.
+\end{equation}
+Differentiating while keeping $m=0$ defines pass-through $\rho_x\equiv dp/dx$ by
+\begin{equation}
+  \rho_x=-\frac{m_x}{m_p},
+  \label{eq:pass-through-general}
+\end{equation}
+and expanding $m=D-S$ gives
+\begin{align}
+  m_p &= D'(p)-S'(\mu)\,\mu_p,
+  &
+  m_x &= -S'(\mu)\,\mu_x-S_x,
+\end{align}
+hence
+\begin{equation}
+  \rho_x
+  = \frac{-S'(\mu)\,\mu_x-S_x}{S'(\mu)\,\mu_p-D'(p)}.
+  \label{eq:pass-through}
+\end{equation}
+The two shocks differ in which margin moves at fixed $p$ or fixed $\mu$,
+\begin{align}
+  \mu_c &= 0,
+  &
+  S_c &= -S'(\mu),
+  &
+  \mu_h &= -r(p),
+  &
+  S_h &= 0.
+\end{align}
+The production term is $S_c=-S'(\mu)$ because a one-dollar parallel rise in
+every firm's marginal cost is equivalent, at fixed $\mu$, to evaluating market
+supply at $\mu-1$.  Handling instead lowers the effective margin at a fixed
+list price.  Only returned units incur $h$, so a one-dollar rise lowers that
+margin by $r(p)$.  Supply then falls by $r(p)\,S'(\mu)$, the fraction $r(p)$
+of the production numerator.
+
+The sales tax keeps purchase and recovery together at $p$, so demand remains
+$D(p)$.  At a fixed list price the unreclaimed tax lowers the effective margin
+by one dollar along an unchanged $S(\mu)$.  Quantity supplied then falls by
+$S'(\mu)$, the same gap as a one-dollar production-cost rise, so
+$\rho_{\tau}=\rho_c$ at $\tau=0$.
+\begin{result}[Pass-through into list price]
+\label{res:pass-through}
+  Production-cost pass-through is
+  \begin{equation}
+    \rho_c
+    = \frac{S'(\mu)}{S'(\mu)\,\mu_p-D'(p)}.
+    \label{eq:rho-c}
+  \end{equation}
+  The remaining shocks connect to this object by
+  \begin{align}
+    \rho_h &= r(p)\,\rho_c,
+    &
+    \rho_{\tau} &= \rho_c.
+    \label{eq:rho-links}
+  \end{align}
+\end{result}
+
+\subsection{Elasticity representation}
+
+The same pass-through formulas can be rewritten in elasticities, which makes
+the role of $\mu_p$ transparent.  Write $\mu_p\equiv d\mu/dp$ for the response
+of the effective margin to list price, and define demand and supply elasticities
+with respect to list price as usual by
+\[
+\varepsilon_D(p)\equiv\frac{p D'(p)}{D(p)}<0,
+\qquad
+\varepsilon_S(p)\equiv\frac{dS(\mu(p))}{dp}\frac{p}{S(\mu(p))}
+=S'(\mu)\,\mu_p\,\frac{p}{S(\mu)}.
+\]
+Here $\varepsilon_S(p)$ is the observed elasticity of market supply with
+respect to the clearing price.  Without returns, $\mu_p=1$ and
+$\varepsilon_S>0$.  With returns, $\mu_p$ can become negative, in which case
+$\varepsilon_S<0$ and a higher list price reduces the quantity firms are
+willing to supply.
+
+Without returns, supply is a function of list price, so $S'=dS/dp$.  A
+one-dollar cost increase cuts supply by $S'$ units at the original price,
+creating an excess-demand gap of that size.  Raising list price by one dollar
+closes the gap from both sides.  Demand falls by $|D'|$ and supply recovers by
+$S'$.  Closing a gap of size $S'$ therefore requires a price rise of
+$S'/(S'+|D'|)$, so standard pass-through equals
+$\varepsilon_S/(-\varepsilon_D+\varepsilon_S)$.
+
+With returns, supply is a function of the effective margin, so
+$S'(\mu)=dS/d\mu$ rather than $dS/dp$.  A one-dollar production-cost increase
+is equivalent to lowering $\mu$ by one dollar, so at fixed list price supply
+falls by $S'(\mu)$ units, again creating an excess-demand gap of that size.
+Raising list price by one dollar closes the gap at rate
+$S'(\mu)\,\mu_p-D'(p)$, so
+\[
+\rho_c=\frac{S'(\mu)}{S'(\mu)\,\mu_p-D'(p)}.
+\]
+The cost shock lowers $\mu$ by one dollar, while a dollar of list price raises
+$\mu$ by $\mu_p$.  A higher $\mu_p$ means a one-dollar price increase restores
+more of the effective margin---and therefore more quantity supplied---than the
+one-dollar cost shock removes, so a smaller list-price movement closes the
+excess-demand gap.  Measuring supply against list price through
+$\varepsilon_S$ puts the factor $1/\mu_p$ in the numerator,
+\begin{equation}
+  \rho_c
+  =
+  \frac{\varepsilon_S(p)/\mu_p}
+       {-\varepsilon_D(p)+\varepsilon_S(p)}.
+  \label{eq:rho_c_elasticity_final}
+\end{equation}
+When $\mu_p<0$, the supply curve expressed as a function of the list price
+$p$ is locally decreasing.  In that region the sign of $\rho_c$ is no longer
+guaranteed positive.  It depends on the relative magnitudes of $\varepsilon_S$
+and $\varepsilon_D$.  This opens the door to the counterintuitive outcome that
+an increase in marginal cost reduces the equilibrium price.
+\begin{result}[Negative pass-through]
+\label{res:negative-pt}
+  We have $\rho_c<0$ if and only if $\varepsilon_S<0$ ($\mu_p<0$) and
+  $|\varepsilon_S|>-\varepsilon_D$.
+\end{result}
+In words, negative pass-through occurs when supply slopes downward in list
+price---the behavioral return response dominates---and supply is steeper than
+demand.  Under these conditions, a cost increase creates excess demand that
+can only be resolved by lowering the price, an outcome impossible in the
+classical model.
+\begin{proof}
+By (\ref{eq:rho_c_elasticity_final}),
+\[
+  \rho_c = \frac{\varepsilon_S/\mu_p}{-\varepsilon_D+\varepsilon_S}.
+\]
+Since
+$\varepsilon_S=S'(\mu)\mu_p\,p/S(\mu)$, the terms $\varepsilon_S$ and $\mu_p$
+have the same sign, so $\varepsilon_S/\mu_p>0$.  Hence $\rho_c<0$ if and only
+if
+\[
+  -\varepsilon_D+\varepsilon_S<0,
+\]
+which is equivalent to $\varepsilon_S<0$ and
+$|\varepsilon_S|>-\varepsilon_D$.  Because $\varepsilon_S$ and $\mu_p$ have the
+same sign, $\varepsilon_S<0$ is equivalent to $\mu_p<0$.
+\end{proof}
+The logic is as follows.  With $\varepsilon_S<0$ ($\mu_p<0$), a higher list price lowers the
+quantity firms supply, so a leftward shift of supply---caused by a rise in
+$c$---creates excess demand at the initial $p$.  Raising the price to eliminate
+the excess would further contract supply and worsen the imbalance; instead,
+the price must fall.  A decline in $p$ increases both the quantity demanded
+and, because supply slopes downward, the quantity supplied.  When
+$|\varepsilon_S|>-\varepsilon_D$, the supply curve is steeper than the demand
+curve, meaning that the supply response to a price cut is larger than the
+demand response.  The price decline therefore eliminates the excess demand and
+leads to a new equilibrium at a lower list price.  This sign reversal cannot
+occur in the classical model, where $\mu_p=1$ and supply is everywhere
+upward-sloping, highlighting
+a qualitative failure of the no-return benchmark.
+
+Even when $\mu_p>0$ and pass-through stays positive, the returns-adjusted
+formula differs from the no-return case whenever $\mu_p\neq 1$.  Comparing the
+two signs the bias for an analyst who ignores returns.
+Whether $\mu_p$ exceeds one depends on how steeply the return rate falls with
+price.  Differentiating $\mu=p-r(p)(p+h)$ gives
+\[
+\mu_p=1-r(p)-r'(p)(p+h).
+\]
+Write $\varepsilon_r(p)\equiv p\,r'(p)/r(p)$ for the elasticity of the return rate
+in list price.  Then $\mu_p>1$ if and only if $\varepsilon_r(p)<-p/(p+h)$.
+That is, selection must outweigh the behavioral rise in individual return
+probabilities by enough that aggregate $r$ falls steeply in $p$.  When instead
+the behavioral response dominates, $\varepsilon_r$ is less negative (or
+positive) and $\mu_p<1$.
+\begin{result}
+\label{res:pt-bias-er}
+  Relative to the correct returns-adjusted $\rho_c$, the classical no-return
+  pass-through formula overestimates pass-through when
+  $\varepsilon_r(p)<-p/(p+h)$ and underestimates it otherwise.
+\end{result}
+The practical value is that the bias can be signed without estimating the full
+returns-adjusted model.  The return-rate elasticity and the ratio of handling
+to list price are enough.  The economics behind the threshold is familiar from
+the selection and behavioral forces already in $\varepsilon_r$.  When selection
+dominates, a higher list price lowers the return rate, so the
+refund-and-handling drag on the effective margin shrinks as price rises.
+The effective margin can then rise by more than one dollar per dollar of
+list price, and a smaller price movement closes the excess-demand gap than
+the classical formula predicts.  Costly handling strengthens that channel and
+makes overestimation more likely.  Otherwise, the effective margin rises by
+less than one dollar per dollar of list price, so list price must move by more
+than the classical formula predicts to close the gap, and the classical
+no-return formula underestimates pass-through.
+
+%=============================================================================
+\section{Local incidence}
+%=============================================================================
+
+Having established how prices respond to different shocks, we turn to local
+incidence: how each shock's pass-through $\rho_x$ splits the resulting surplus
+change between consumers and producers.  Throughout, $Q\equiv D(p)$ and
+$r\equiv r(p)$ denote the equilibrium gross quantity and the return rate.
+Production cost, handling cost, and the sales tax reach consumers only through
+the list price, so
+\begin{equation}
+  \frac{dCS}{dx} = -Q(1-r)\rho_x,
+  \label{eq:CSx_incidence}
+\end{equation}
+where $\rho_x\equiv dp/dx$.
+
+Producer surplus is $PS(\mu,x)=\int_0^{\mu} S(z,x)\,dz$.  Differentiating with
+respect to $x$ and applying the equilibrium condition $S(\mu,x)=Q$ gives
+\[
+  \frac{dPS}{dx}
+  = Q\frac{d\mu}{dx} + \Sigma_x,
+\]
+where $\Sigma_x\equiv\int_0^\mu (\partial S(z,x)/\partial x)\,dz$ captures the
+direct shift in the area under the supply curve.  Expanding the total
+derivative of the effective margin via the chain rule,
+$\frac{d\mu}{dx} = \mu_p \rho_x + \mu_x$, yields
+\begin{equation}
+  \frac{dPS}{dx} = Q(\mu_p \rho_x + \mu_x) + \Sigma_x.
+  \label{eq:PSx_incidence}
+\end{equation}
+
+The local incidence ratio is $I_x \equiv (dCS/dx)/(dPS/dx)$.  For the three
+price-only shocks,
+\[
+  I_x = \frac{-Q(1-r)\rho_x}{Q(\mu_p \rho_x + \mu_x) + \Sigma_x},
+\]
+and the components in Table~\ref{tab:incidence_components} reduce to a common
+expression in $\rho_c$ and $\mu_p$.
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}{lccccccc}
+\hline
+Shock $x$ & $\rho_x$ & $\mu_x$ & $\Sigma_x$ & $dCS/dx$ & $dPS/dx$ & $I_x$ \\
+\hline
+Production cost $c$ & $\rho_c$ & $0$ & $-Q$ & $-Q(1-r)\rho_c$ & $Q(\mu_p\rho_c - 1)$ & $\displaystyle \frac{(1-r)\rho_c}{1-\mu_p\rho_c}$ \\
+Handling cost $h$ & $r\rho_c$ & $-r$ & $0$ & $-Q(1-r)r\rho_c$ & $Qr(\mu_p\rho_c - 1)$ & $\displaystyle \frac{(1-r)\rho_c}{1-\mu_p\rho_c}$ \\
+Sales tax $\tau$ & $\rho_c$ & $-1$ & $0$ & $-Q(1-r)\rho_c$ & $Q(\mu_p\rho_c - 1)$ & $\displaystyle \frac{(1-r)\rho_c}{1-\mu_p\rho_c}$ \\
+\hline
+\end{tabular}
+\caption{Pass-through, direct effects, surplus changes, and incidence ratio for
+each shock.}
+\label{tab:incidence_components}
+\end{table}
+
+\begin{result}
+\label{res:incidence-ratio}
+For production cost, handling cost, and the sales tax, the local incidence
+ratio is identical:
+\begin{equation}
+  I_x = \frac{(1-r)\rho_c}{1-\mu_p \rho_c}>0.
+  \label{eq:incidence_result}
+\end{equation}
+\end{result}
+
+Result~\ref{res:incidence-ratio} establishes that the incidence ratio is
+identical across the three price-only shocks, but the algebra alone can obscure
+the deeper economic mechanism.  The key to understanding this result is that
+each of those shocks is a scaled perturbation of the same equilibrium
+geometry.  Production cost and sales-tax shocks shift the effective margin
+$\mu$ down by one unit.  Handling cost shifts it down by $r$ units.  Locally,
+the equilibrium condition $D(p)=S(\mu)$ is linear in the shock's direct effect
+on $\mu$.  The resulting supply shift is proportional to $\mu_x$, and the price
+adjustment $\rho_x$ that restores market clearing inherits that same
+proportionality.
+
+Because both $S(\mu)$ and $PS(\mu)$ are locally linear in $\mu$, the entire
+equilibrium response to a price-only shock scales with the shock's effect on
+the effective margin.  The shock's scalar therefore multiplies both consumer
+and producer surplus changes in the same proportion and cancels out in the
+incidence ratio.  The shock determines how far the equilibrium moves.  How that
+movement is split between consumers and producers depends on the local demand
+and supply slopes and on local $\mu_p$.\footnote{Consumers care about the
+list-price change $\rho_x$.
+Producers recover only through the effective margin, which a list-price rise
+moves by $\mu_p\rho_x$.  Thus $\mu_p$ governs how much of each dollar of $p$
+feeds into producer surplus.}
+Incidence for those shocks is therefore fixed by market structure, not by
+which side of the market is hit first.  What remains is why that common ratio
+is positive.
+
+The denominator $1-\mu_p\rho_c$ in \eqref{eq:incidence_result} is the per-unit
+loss in producer surplus.  A \$1 cost shock initially reduces producer surplus
+by $Q$.  The equilibrium list-price rise $\rho_c$ increases the effective
+margin per unit by $\mu_p\rho_c$.  Because $dPS/d\mu=Q$ by the envelope
+theorem, this marginal gain translates into a total recovery of
+$Q\mu_p\rho_c$ in producer surplus.  The net loss is therefore
+$Q(1-\mu_p\rho_c)$.  The numerator $(1-r)\rho_c$ is the corresponding
+per-unit consumer loss on kept units.  The incidence ratio compares these two
+per-unit burdens.  A small denominator leaves consumers
+bearing almost the entire shock, while a negative denominator, $\mu_p\rho_c>1$,
+means the recovery exceeds the cost, so producers are net gainers.  This
+recovery factor can be written as
+$\mu_p\rho_c=\varepsilon^S/(\varepsilon^S-\varepsilon^D)$.  This expression
+closely mirrors the pass-through formula, and now we argue that
+$\mu_p\rho_c>1$ if and only if $\rho_c<0$.  The condition
+$\mu_p\rho_c>1$ requires $\varepsilon^S<0$, which implies $\mu_p<0$, and hence
+$\rho_c<0$.  Conversely, $\rho_c<0$ requires $\varepsilon^S<0$ and
+$|\varepsilon^S|>-\varepsilon^D$, which gives $\mu_p\rho_c>1$.  Therefore, the
+condition governing producer gain from an increase in production cost is
+exactly the same as that governing negative pass-through.
+
+At first glance it may seem puzzling that, under negative pass-through, the
+effective-margin recovery more than offsets the initial producer-surplus
+loss of $Q$.  The price fall must do double duty to clear the market.  A one-dollar cost increase shifts the supply curve upward, creating
+an initial excess demand gap.  To fill this gap, quantity supplied must
+increase.  Since quantity supplied increases with the effective margin
+$\mu$, restoring enough supply to cover the original gap already requires
+$\mu$ to rise by one dollar.  But the price fall also increases quantity
+demanded, creating additional excess demand on top of the initial gap.  To
+satisfy both the original supply shortfall and this new demand, supply must
+increase by more than the original shift, so the effective margin must rise
+by more than one dollar.  Thus, $\mu_p\rho_c>1$ is precisely the
+market-clearing requirement when pass-through is negative.
+
+The preceding observation implies a striking result: the uniformly positive
+incidence ratio means consumer and producer surplus always move together,
+regardless of the sign of pass-through.  The direction of that common
+movement nevertheless depends on the sign of pass-through.  When $\rho_c<0$,
+raising production costs, handling costs, or the sales tax lowers the list
+price, reduces return rates, and saves enough handling costs to more than
+offset the direct resource drain; both consumers and producers benefit.
+When $\rho_c>0$, all three shocks reduce both surpluses.  Such gains are
+impossible in the classical model, where pass-through is always positive,
+underscoring how profoundly returns alter standard welfare analysis.
+
+\subsection{First-order private surplus and deadweight loss}
+\label{sec:DWL}
+
+Local incidence separates the burden between consumers and producers.  Their
+joint payoff---private surplus---is the sum of consumer and producer surplus,
+$W\equiv CS+PS$.  Summing (\ref{eq:CSx_incidence}) and
+(\ref{eq:PSx_incidence}) gives
+\[
+  \frac{dW}{dx}
+  = -Q(1-r)\rho_x
+    + Q(\mu_p\rho_x + \mu_x)
+    + \Sigma_x
+  = Q\bigl[\mu_x + \bigl(\mu_p-(1-r)\bigr)\rho_x\bigr]
+    + \Sigma_x.
+\]
+Substituting $\mu_p=1-r-r'(p)(p+h)$ directly yields
+\begin{equation}
+  \frac{dW}{dx}
+  = Q\bigl[\mu_x - r'(p)(p+h)\rho_x\bigr] + \Sigma_x,
+  \label{eq:DWL_incidence}
+\end{equation}
+with $\mu_x$ and $\Sigma_x$ as in Table~\ref{tab:incidence_components}.
+The term $-Q\,r'(p)(p+h)\rho_x$ is new relative to the classical model.  It
+captures the efficiency consequence of the price-induced change in the return
+rate.  Each returned unit consumes real handling resources $h$, so a change in
+the return rate has a first-order effect on private surplus that is absent
+when returns are shut down.
+
+Without returns, $r=0$ and $r'=0$, so \eqref{eq:DWL_incidence} reduces to
+\[
+  \frac{dW}{dx} = Q\,\mu_x + \Sigma_x.
+\]
+For a unit production-cost increase, the supply curve shifts vertically upward
+by one dollar at every quantity.  The surplus loss is therefore the area of
+that shift---a rectangle of height one and width $Q$.  Algebraically, private
+surplus is $W=CS(p)+PS(p-c)$.  Differentiating, the price-change terms
+$-Q\rho_c$ and $+Q\rho_c$ cancel, leaving $dW/dc=-Q$: a first-order real
+resource loss of $Q$ dollars.
+
+For a unit tax the same cancellation gives $dW/d\tau=-Q$, but government
+revenue $G=\tau Q(\tau)$ is transferred rather than lost.  Total surplus
+$V=W+G$ therefore satisfies
+$dV/d\tau=dW/d\tau+Q(\tau)+\tau Q'(\tau)=\tau Q'(\tau)$, which is zero at
+$\tau=0$.  Locally, a cost shock has a first-order private-surplus effect of
+$-Q$, while an infinitesimal tax has no first-order social loss---the dollar
+is lost in one case and merely transferred in the other.
+
+Product returns overturn that clean private-versus-transfer contrast.  The
+return-rate term in \eqref{eq:DWL_incidence} is generally nonzero for every
+shock, so production-cost increases, handling-cost increases, and the sales
+tax all change private surplus at first order in a way that is not a pure
+transfer between buyers and sellers.  We first track these private-surplus
+changes for all three shocks.  For the tax, treasury revenue remains a
+transfer; we add $G=\tau Q(\tau)$ back when measuring deadweight loss below.
+
+Plugging the values of $\mu_x$ and $\Sigma_x$ from
+Table~\ref{tab:incidence_components} into
+$dW/dx=Q\bigl[\mu_x-r'(p)(p+h)\rho_x\bigr]+\Sigma_x$, and using the
+pass-through links from Result~\ref{res:pass-through}, yields
+\begin{align}
+  \frac{dW}{dc}
+  &= -Q\,\Lambda,
+  &
+  \frac{dW}{dh}
+  &= -Q\,r\,\Lambda,
+  &
+  \frac{dW}{d\tau}
+  &= -Q\,\Lambda,
+  \label{eq:DWL_shocks}
+\end{align}
+where the common factor is defined as
+\begin{equation}
+  \Lambda \equiv 1 + r'(p)(p+h)\,\rho_c.
+  \label{eq:Lambda}
+\end{equation}
+Private surplus moves because consumers change either how much they buy or
+whether they return what they bought.  The unit term in $\Lambda$ is the
+mechanical effect on the purchase margin that remains even if the return rate
+does not respond to price.  The term $r'(p)(p+h)\rho_c$ is the extra
+efficiency cost on the keep-or-return margin after the price moves: each
+change $r'(p)\rho_c$ in the return rate costs $p+h$ per unit sold.  We
+therefore decompose the private-surplus changes in \eqref{eq:DWL_shocks} into
+an ex-ante loss on the purchase margin and an ex-post loss on the
+keep-or-return margin.  That split is simplest for a production-cost or
+sales-tax shock, where $dW/dx=-Q\Lambda$.  A handling shock rescales both
+pieces by $r$.
+
+Freeze the aggregate return rate at its initial value $r_0\equiv r(p_0)$.
+In the resulting ex-ante economy the effective margin is
+\eqref{eq:mu-def} with $r(p)$ replaced by that constant,
+\begin{equation}
+  \mu^{\mathrm{EA}}(p)\equiv p-r_0(p+h).
+  \label{eq:mu-EA}
+\end{equation}
+Applying \eqref{eq:DWL_incidence} then yields
+$dW/dx\big|_{\mathrm{EA}}=-Q$, the classical rectangle from changing gross
+quantity alone.  The ex-post change is that residual,
+$dW/dx\big|_{\mathrm{EP}}\equiv dW/dx-dW/dx\big|_{\mathrm{EA}}$.  Since
+$dW/dx=-Q\Lambda$ for these shocks,
+\begin{equation}
+  \frac{dW}{dx}\Big|_{\mathrm{EP}}
+  =-Q\,r'(p)(p+h)\rho_c.
+  \label{eq:DWL-EP}
+\end{equation}
+\begin{result}[Ex-ante and ex-post decomposition]
+\label{res:EA-EP}
+  For a unit production-cost or sales-tax shock,
+  \begin{equation}
+    \frac{dW}{dx}
+    =-Q
+    -Q\,r'(p)(p+h)\rho_c.
+    \label{eq:DWL-decomp}
+  \end{equation}
+  The first term is the ex-ante loss on the purchase margin.  The second is
+  the ex-post loss on the keep-or-return margin.  Each unit switched from keep
+  to return costs $p+h$.  For a handling shock the two losses become $-Qr$ and
+  $-Qr\,r'(p)(p+h)\rho_c$.
+\end{result}
+Because consumer and producer surplus always move together, $\Lambda$ has the
+same sign as $\rho_c$.  The no-return formula retains only the ex-ante
+rectangle $-Q$, so the comparison with that benchmark is governed only by the
+ex-post term $-Q\,r'(p)(p+h)\rho_c$.  That term may partially offset the
+rectangle, amplify it, or reverse the private-surplus change.
+
+The simplest case is when the selection channel in the return rate
+dominates, so $r'(p)<0$.  A cost increase raises the list price (since
+$r'<0$ forces $\mu_p>0$ and hence $\rho_c>0$), screens out frequent
+returners, and lowers the return rate.  The ex-post term is then a gain that
+partially offsets the ex-ante rectangle, so $0<\Lambda<1$.  It cannot reverse
+the private-surplus change: $\rho_c>0$ keeps both consumer and producer
+surplus falling, hence $\Lambda>0$.
+
+When instead $r'(p)>0$, the bias hinges on the sign of pass-through.  If
+$\rho_c>0$, the higher list price raises returns and adds handling costs, so
+the ex-post loss amplifies the ex-ante rectangle and $\Lambda>1$.  That
+amplification is larger when $r'(p)$ or $h$ is large.
+
+If instead $\rho_c<0$, a production-cost or sales-tax increase lowers the
+list price, so consumer surplus rises.  Positive incidence then raises
+producer surplus as well---a Pareto improvement---and private surplus rises
+by $Q|\Lambda|$ ($\Lambda<0$).  The gain is larger when
+$r'(p)(p+h)\,|\rho_c|$ is large.  These three comparisons are summarized in
+Result~\ref{res:welfare-bias}.
+\begin{result}[No-return private-surplus bias]
+\label{res:welfare-bias}
+  Consider a unit production-cost or sales-tax increase.  Relative to the
+  correct returns-adjusted change $dW/dc=-Q\Lambda$, the no-return formula
+  $dW/dc=-Q$
+  \begin{enumerate}
+  \item[(i)] overestimates the private-surplus loss if and only if
+  $r'(p)<0$ (which implies $\mu_p>0$ and hence $\rho_c>0$, so
+  $0<\Lambda<1$);
+  \item[(ii)] underestimates the private-surplus loss if and only if
+  $r'(p)>0$ and $\rho_c>0$ (hence $\Lambda>1$);
+  \item[(iii)] overestimates the private-surplus loss with the wrong
+  sign---reporting a loss of $Q$ when the shock in fact raises private
+  surplus by $Q|\Lambda|$---if and only if $r'(p)>0$ and $\rho_c<0$.
+  \end{enumerate}
+\end{result}
+For production-cost and sales-tax shocks that bias is purely ex-post.  The
+no-return formula counts the ex-ante rectangle correctly and errs only by
+omitting the keep-or-return term.  For the ex-post piece, as in
+Result~\ref{res:welfare-bias}(i), $r'(p)<0$ pins the term as a gain.  When
+selection dominates the behavioral response, the higher list price from cost
+pass-through screens out consumers who return frequently, so the return rate
+and the associated refund-and-handling cost fall.  When $r'(p)>0$, the sign of
+the ex-post term depends on $\rho_c$.
+
+For the sales tax, social surplus adds back treasury revenue.  Because the
+seller recovers none of $\tau$ from the government on a return, revenue is
+$G=\tau Q(\tau)$, with $Q$ the equilibrium gross quantity at that tax.  Write
+$V=W+G$.  Differentiating the product gives $dG/d\tau=Q+\tau Q'$, so at
+$\tau=0$ we have $dV/d\tau=dW/d\tau+Q$.  Using \eqref{eq:DWL_shocks},
+\begin{equation}
+  \frac{dV}{d\tau}
+  = -Q(\Lambda-1)
+  = -Q\,r'(p)(p+h)\rho_c.
+  \label{eq:DWL_V_tax}
+\end{equation}
+Whether an infinitesimal tax creates a first-order social loss or gain
+follows the same cuts as Result~\ref{res:welfare-bias}.
+
+%=============================================================================
+\section{Global Incidence}
+\label{sec:global-incidence}
+%=============================================================================
+
+Integrating the local derivatives $\frac{dCS}{dx}$ and $\frac{dPS}{dx}$ listed
+in Table~\ref{tab:incidence_components} from $x_0$ to $x_1$ gives the global
+surplus changes $\Delta CS$ and $\Delta PS$ for any shock
+$x\in\{c,h,\tau\}$.  The global incidence ratio
+$I_{x_0}^{x_1}\equiv \Delta CS/\Delta PS$ (when $\Delta PS\neq0$) follows from
+the local relation $dCS/dx = I(x)\,dPS/dx$:
+\begin{equation}
+I_{x_0}^{x_1} = \int_{x_0}^{x_1} I(x)\,\omega(x)\,dx,
+\label{eq:global-incidence-final}
+\end{equation}
+where $\omega(x)\equiv (dPS/dx)/\Delta PS$.  Although $I(x)>0$ at every point,
+the global ratio need \emph{not} be positive: if $dPS/dx$ changes sign along
+the path, the weights $\omega(x)$ take both signs, and the weighted average
+can become negative.  Hence the classical sign-preserving property of local
+incidence does not extend globally.
+
+\clearpage
+\appendix
+\section{Welfare bias in primitives}
+\label{app:welfare-bias-primitives}
+Recall $\varepsilon_r(p)\equiv p\,r'(p)/r(p)$ and
+$\mu_p=1-r(p)-r'(p)(p+h)$.  Then
+$r'(p)(p+h)=\varepsilon_r(p)\,r(p)\,(p+h)/p$, so
+\begin{equation}
+  \mu_p>0
+    \;\iff\;
+  \varepsilon_r(p)
+  <
+  \frac{p}{p+h}\,\frac{1-r(p)}{r(p)},
+  \label{eq:app-mu-er}
+\end{equation}
+
+Result~\ref{res:welfare-bias} becomes:
+\begin{enumerate}
+\item[(i)] overestimation iff $\varepsilon_r(p)<0$;
+\item[(ii)] underestimation iff $\varepsilon_r(p)>0$ and either $\mu_p>0$,
+or both $\mu_p<0$ and $|\varepsilon_S|\le -\varepsilon_D$;
+\item[(iii)] overestimation with wrong sign (predicted loss, actual gain)
+iff $\mu_p<0$ and $|\varepsilon_S|>-\varepsilon_D$.
+\end{enumerate}
+\begin{proof}
+By Result~\ref{res:welfare-bias}, overestimation with $0<\Lambda<1$ is
+$r'<0$, underestimation is $r'>0$ with $\rho_c>0$, and overestimation with
+wrong sign is $r'>0$ with $\rho_c<0$.
+Since $\varepsilon_r$ has the same sign as $r'$, write these in
+$\varepsilon_r$.  For~(i), $\varepsilon_r<0$ forces $\mu_p>1-r>0$ and hence
+$\rho_c>0$, so $0<\Lambda<1$.
+Result~\ref{res:negative-pt} translates the sign of $\rho_c$ into conditions
+on $\mu_p$ and $|\varepsilon_S|\gtrless -\varepsilon_D$: with
+$\varepsilon_r>0$ this is~(ii), and $\rho_c<0$ is~(iii).
+\end{proof}
+
+\bibliographystyle{plainnat}
+\bibliography{references}
+
+\end{document}
