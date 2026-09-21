@@ -1,0 +1,138 @@
+\documentclass[11pt]{article}
+
+\usepackage{amsmath,amssymb}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+
+\title{Product Returns under Perfect Competition}
+\author{Draft notes}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+This note records a competitive private-ownership economy with a continuum
+of buyers and a continuum of identical price-taking firms. The first section
+is the environment without returns. The second allows inspection and a refund.
+Unlike the incidence notes, the refund is not restricted to equal the list
+price.
+
+\section{No returns}
+
+\subsection{Setting}
+
+The economy has a continuum of consumers, each with a numeraire endowment
+$\omega_i$, and a continuum of identical price-taking firms. Consumer $i$'s
+income is $\omega_i$ plus her share of industry profit.
+
+Each firm produces at constant unit cost $c$. The good cannot be returned.
+
+Consumers have unit demand, quasi-linear preferences, and an outside option
+of zero. They differ in their value $v_i$ for the good, known when they buy.
+
+Consumers take a price $p$ as given. Each buys at most one unit, or not at
+all. Buying yields $v_i-p$. She buys when $v_i\geq p$.
+
+A firm that sells $y$ units earns $(p-c)y$. A price-taker then compares $p$
+with $c$.
+
+Industry output equals the measure of purchases.
+
+\subsection{Equilibrium}
+
+A competitive equilibrium is a price $p$, purchases, and industry output
+$y$ such that consumers optimize given $p$ and their income, firms maximize
+profit given $p$, and the market clears. Both sides see the same $p$.
+
+Consumer $i$ buys if and only if $v_i\geq p$. A firm that takes $p$ as given
+earns $(p-c)y$, so it supplies nothing if $p<c$, any scale if $p=c$, and
+infinite output if $p>c$. Market clearing requires $y$ to equal the measure
+of buyers. Infinite supply cannot clear against a finite mass of consumers,
+and zero supply cannot clear if a positive measure wants to buy. Whenever
+demand is positive, therefore $p=c$ and industry profit is zero. Firms then
+meet that demand.
+
+\section{Returns}
+
+\subsection{Setting}
+
+The good can now be purchased, inspected, and returned. Checkout price and
+refund are two prices. Each firm still produces at cost $c$ and now incurs
+a unit handling cost $h$ on every returned item. Returned units are salvaged
+rather than restocked.
+
+Consumers still have unit demand, quasi-linear risk-neutral preferences, and
+an outside option of zero. They differ in return hassle $\kappa_i$, the
+disutility of sending the good back, and in the distribution $G_i$ of match
+value $v$ realized after purchase. Consumer $i$ knows $(\kappa_i,G_i)$ when
+she buys, but not $v$.
+
+Consumers take a checkout price $p$ and a refund $R$ as given. Each buys at
+most one unit, or not at all, then draws $v\sim G_i$ and decides whether to
+keep the item or return it.
+
+If she has bought at $(p,R)$, keeping yields $v-p$ and returning yields
+$R-p-\kappa_i$. She therefore keeps if and only if $v\geq R-\kappa_i$. The
+keep rule depends on the refund and on hassle, not on the checkout price.
+Expected surplus from buying is
+\[
+  cs_i(p,R)
+  =
+  \mathbb{E}_{v\sim G_i}\bigl[\max(v-p,\,R-p-\kappa_i)\bigr]
+  =
+  -p+\mathbb{E}_{v\sim G_i}\bigl[\max(v,\,R-\kappa_i)\bigr].
+\]
+She buys when that value is nonnegative. The reservation checkout price for
+a given refund, $p_i(R)=\mathbb{E}[\max(v,R-\kappa_i)]$, is the largest $p$
+at which she is willing to buy. Heterogeneity therefore cannot be collapsed
+into a single willingness to pay that is independent of the refund. Consumer
+$i$'s return probability at refund $R$ is $\phi_i(R)=G_i(R-\kappa_i)$.
+
+A firm that sells $y$ units collects $p$ on each sale, refunds $R$ and
+incurs $h$ on the share $r$ that come back, and therefore earns
+\[
+  \pi=\bigl(\mu-c\bigr)y,
+  \qquad
+  \mu=p-r(R+h),
+\]
+where $\mu$ is the effective margin. A price-taker then compares $\mu$ with
+$c$.
+
+Industry output equals the measure of purchases. The returned share $r$ is
+the mean of $\phi_i(R)$ among those who buy, and who buys depends on $(p,R)$.
+
+\subsection{Equilibrium}
+
+A competitive equilibrium is a pair $(p,R)$, purchases, a return rate $r$,
+and industry output $y$ such that consumers optimize given $(p,R)$ and their
+income, firms maximize profit given $(p,R)$ and $r$, and the market clears.
+Both sides see the same $(p,R)$.
+
+Consumer $i$ buys if and only if $cs_i(p,R)\geq 0$, and returns with
+probability $\phi_i(R)$. The return rate $r(p,R)$ is the mean of
+$\phi_i(R)$ among those buyers. A firm takes $(p,R)$ and $r$ as given and
+earns $(\mu-c)y$, so it supplies nothing if $\mu<c$, any scale if $\mu=c$,
+and infinite output if $\mu>c$.
+
+Market clearing requires $y$ to equal the measure of buyers, and the $r$ in
+the effective margin must be $r(p,R)$. Infinite supply cannot clear against
+a finite mass of consumers, and zero supply cannot clear if a positive
+measure wants to buy. Whenever demand is positive, therefore
+\begin{equation}
+  \label{eq:returns_ce}
+  p-r(p,R)\,(R+h)=c.
+\end{equation}
+As long as this holds, the pair is a competitive equilibrium. Consumers take
+$(p,R)$ as given and follow the buy and keep rules, which determines demand
+and $r(p,R)$. Then $\mu=c$, so every firm is willing to sell any scale, and
+industry can meet that demand. Buyers optimize, sellers optimize, and the
+market clears.
+
+\eqref{eq:returns_ce} is one equation in two prices, so many pairs are
+competitive equilibria. Consumers keep if and only if $v\geq R-\kappa_i$,
+while a return costs $h$. Efficiency therefore requires $R=-h$ and $p=c$.
+That pair satisfies \eqref{eq:returns_ce}, so the efficient allocation can
+be sustained as a competitive equilibrium. At other pairs satisfying
+\eqref{eq:returns_ce} consumers return too often or too rarely.
+
+\end{document}
