@@ -13,44 +13,29 @@
 
 This note records a competitive private-ownership economy with a continuum
 of buyers and a continuum of identical price-taking firms. The first section
-is the environment without returns. The second allows inspection and a refund,
-and the third extends that environment to two products. Unlike the incidence
-notes, the refund is not restricted to equal the list price.
+is the environment without returns. The second allows inspection and a refund.
+Unlike the incidence notes, the refund is not restricted to equal the list
+price.
 
 \section{No returns}
 
 \subsection{Setting}
 
-The economy has a continuum of consumers, each with a numeraire endowment
-$\omega_i$, and a continuum of identical price-taking firms. Consumer $i$'s
-income is $\omega_i$ plus her share of industry profit.
+A continuum of consumers and a continuum of identical price-taking firms
+trade one good that cannot be returned. Each firm produces at constant unit
+cost $c$. Consumers have unit demand and quasi-linear preferences, with an
+outside option of zero, and differ in the value $v_i$ they know when they
+buy.
 
-Each firm produces at constant unit cost $c$. The good cannot be returned.
-
-Consumers have unit demand, quasi-linear preferences, and an outside option
-of zero. They differ in their value $v_i$ for the good, known when they buy.
-
-Consumers take a price $p$ as given. Each buys at most one unit, or not at
-all. Buying yields $v_i-p$. She buys when $v_i\geq p$.
-
-A firm that sells $y$ units earns $(p-c)y$. A price-taker then compares $p$
-with $c$.
-
-Industry output equals the measure of purchases.
+They take a price $p$ as given. Consumer $i$ buys when $v_i\geq p$. A firm
+that sells $y$ units earns $(p-c)y$.
 
 \subsection{Equilibrium}
 
-A competitive equilibrium is a price $p$, purchases, and industry output
-$y$ such that consumers optimize given $p$ and their income, firms maximize
-profit given $p$, and the market clears. Both sides see the same $p$.
-
-Consumer $i$ buys if and only if $v_i\geq p$. A firm that takes $p$ as given
-earns $(p-c)y$, so it supplies nothing if $p<c$, any scale if $p=c$, and
-infinite output if $p>c$. Market clearing requires $y$ to equal the measure
-of buyers. Infinite supply cannot clear against a finite mass of consumers,
-and zero supply cannot clear if a positive measure wants to buy. Whenever
-demand is positive, therefore $p=c$ and industry profit is zero. Firms then
-meet that demand.
+The firm supplies nothing if $p<c$, any scale if $p=c$, and infinite output
+if $p>c$. Demand is the measure of consumers with $v_i\geq p$, and that
+measure is finite. Positive demand therefore clears only at $p=c$. Profit
+is zero, and firms meet that demand.
 
 \section{Returns}
 
@@ -104,8 +89,8 @@ the mean of $\phi_i(R)$ among those who buy, and who buys depends on $(p,R)$.
 \subsection{Equilibrium}
 
 A competitive equilibrium is a pair $(p,R)$, purchases, a return rate $r$,
-and industry output $y$ such that consumers optimize given $(p,R)$ and their
-income, firms maximize profit given $(p,R)$ and $r$, and the market clears.
+and industry output $y$ such that consumers optimize given $(p,R)$,
+firms maximize profit given $(p,R)$ and $r$, and the market clears.
 Both sides see the same $(p,R)$.
 
 Consumer $i$ buys if and only if $cs_i(p,R)\geq 0$, and returns with
@@ -153,74 +138,7 @@ returned unit, so it is willing to produce any quantity and to take back any
 quantity. Any demand for the new good and any supply of used goods can
 therefore clear.
 
-\section{Two products}
-
-\subsection{Setting}
-
-There are now two products, indexed by $j\in\{1,2\}$, and a separate
-competitive industry for each product. Industry $j$ contains a continuum of
-identical price-taking firms. Its firms produce at constant unit cost $c_j$
-and incur handling cost $h_j$ whenever a unit of product $j$ is returned.
-Returned units are salvaged rather than restocked. Consumer $i$ has numeraire
-endowment $\omega_i$, together with shares of the profits earned in both
-industries.
-
-Consumers are risk neutral, have quasi-linear preferences, and can buy at
-most one product. Before choosing, consumer $i$ knows her return hassle
-$\kappa_{ij}$ and the distribution $G_{ij}$ of her match value for each
-product. She does not yet know either match value. If she buys product $j$,
-she then draws $v_j\sim G_{ij}$, inspects that product, and either keeps or
-returns it. A return ends the transaction, so she cannot use the refund to
-switch to the other product.
-
-The checkout price and refund for product $j$ are $p_j$ and $R_j$. Consumers
-and firms take all four prices as given. If consumer $i$ buys product $j$,
-keeping yields $v_j-p_j$, while returning yields
-$R_j-p_j-\kappa_{ij}$. She keeps if and only if
-$v_j\geq R_j-\kappa_{ij}$, and her expected surplus from choosing that
-product is
-\[
-  cs_{ij}(p_j,R_j)
-  =
-  -p_j+
-  \mathbb{E}_{v_j\sim G_{ij}}
-  \bigl[\max(v_j,\,R_j-\kappa_{ij})\bigr].
-\]
-She chooses the product with the larger nonnegative expected surplus and
-buys neither when both surpluses are negative. Assume ties are resolved by a
-fixed rule. Conditional on buying product $j$, her return probability is
-\[
-  \phi_{ij}(R_j)=G_{ij}(R_j-\kappa_{ij}).
-\]
-
-Let $B_j(\mathbf p,\mathbf R)$ be the set of consumers who choose product
-$j$ at checkout prices $\mathbf p=(p_1,p_2)$ and refunds
-$\mathbf R=(R_1,R_2)$. Industry demand $D_j$ is the measure of this set.
-When $D_j>0$, its return rate is the mean return probability among those
-buyers,
-\[
-  r_j(\mathbf p,\mathbf R)
-  =
-  \frac{1}{D_j}
-  \int_{B_j(\mathbf p,\mathbf R)}
-  \phi_{ij}(R_j)\,di.
-\]
-Although a buyer's keep decision depends only on the refund for the product
-she chose, each return rate depends on all four prices because those prices
-determine who selects each product.
-
-A firm in industry $j$ takes $(p_j,R_j)$ and the market return rate $r_j$ as
-given. If it sells $q_j$ units, it earns
-\[
-  \pi_j
-  =
-  \bigl(\mu_j-c_j\bigr)q_j,
-  \qquad
-  \mu_j=p_j-r_j(R_j+h_j).
-\]
-The firm chooses only its scale. The return rate is not another price or a
-choice of the firm. It is determined by consumers and must agree with the
-market return rate that firms take as given. Industry output for product $j$
-equals $D_j$.
+Adding a resale market can raise welfare. Used units then trade at a price
+the firm can bid for, and clearing selects only the efficient allocation.
 
 \end{document}
