@@ -18,6 +18,7 @@ return/
 │   ├── institution/      → Institutional notes (e.g. VAT reverse charge)
 │   ├── literature/       → Literature PDFs and notes stored with draft materials
 │   │   └── paper/        → Linked paper attachments for Zotero-backed reading folders
+│   ├── FWT/              → First Welfare Theorem notes (no-return benchmark; returns setting)
 │   └── welfare_foundation/ → Consumer surplus with returns (local sufficiency of D,r)
 ├── figuretable/          → Figures and tables (draft inputs)
 ├── doc/                  → Project documentation
@@ -53,6 +54,7 @@ return/
 | `draft/institution/` | Institutional notes (VAT reverse charge and related remittance institutions) |
 | `draft/literature/` | Literature PDFs and notes stored alongside draft materials |
 | `draft/literature/paper/` | Linked paper attachments for Zotero-backed reading folders |
+| `draft/FWT/` | FWT with production (no returns); competitive returns setting (two prices, two segments) |
 | `draft/welfare_foundation/` | Welfare with returns: local CS sufficiency of $(D,r)$; second-order needs types |
 | `figuretable/` | Figure and table fragments for the draft |
 | `R/` | R package code and estimation scripts |
