@@ -10,9 +10,9 @@ Spelling only is cleaned above (`referee` to referral, `burder` to burden, and t
 
 ## Polished questions
 
-A platform referral fee works like a tax on the sale. On a return the buyer is refunded in full, and the platform keeps part of the referral fee (the refund administration fee). With returns, the tax passes through into the price, and that price changes whether the buyer keeps the good.
+We first evaluate a seller-remitted tax, the usual tax on a platform. The buyer pays the tax-inclusive price. On a return the seller refunds that full price, so the buyer's net payment is zero, and a share $\beta$ of the tax is not returned. The seller also pays the handling cost. Amazon's refund administration fee is this case for a referral fee: Amazon keeps the lesser of \$5 or 20 percent of the referral fee, and returns the rest. When the \$5 cap does not bind, 20 percent is not returned, so $\beta=0.2$. None of the tax comes back when $\beta=1$. All of it comes back when $\beta=0$.
 
-1. How does this fee pass through into the price, how does that price change return behavior, and how is the burden split between buyer and seller?
+1. How do a production-cost increase and a handling-cost increase pass through into the price, and how does the seller tax compare with those two costs? The price change then changes whether the buyer keeps the good. How is the burden split between buyer and seller?
 2. A tax usually creates a wedge between the seller's production cost and the buyer's willingness to pay, so some efficient trades do not happen. The usual loss is too few purchases. With returns the tax changes the price, and that price change creates a wedge on the purchase margin and a wedge on the return margin. Is the loss mostly on purchases or mostly on returns, and is it too many or too few purchases, or too many or too few returns?
 3. What changes if returns are ignored and the same fee is treated as an ordinary tax? With returns, only part of the fee comes back.
 4. Is it good for society to let the platform keep part of the fee when the good is refunded?

@@ -204,6 +204,17 @@ cost $h$ on each returned unit---gross handling cost minus scrap value.  Net
 handling may be negative, but we maintain $p+h>0$, which holds whenever scrap
 value does not exceed list price.
 
+We consider the case in which a platform imposes a referral fee of $\tau$
+per unit on the seller.  The buyer pays the list price $p$.  When the good
+is kept, the seller pays the fee to the platform and keeps $p-\tau$.  When
+the good is returned, the seller refunds that full price, so the buyer's net
+payment is zero.  A share $\beta\in[0,1]$ of the fee is not returned, so the
+seller pays $\beta\tau$ on the returned unit, together with the handling
+cost $h$.  None of the fee comes back when $\beta=1$.  All of it comes back
+when $\beta=0$.  Amazon's refund administration fee is this arrangement.  On
+a return Amazon keeps the lesser of \$5 or 20 percent of the referral fee.
+When the \$5 cap does not bind, $\beta=0.2$.
+
 %=============================================================================
 \section{Consumer side}
 %=============================================================================
