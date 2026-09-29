@@ -26,17 +26,18 @@ marketplace-facilitator laws have made platforms such as Amazon, eBay, and
 Etsy the statutory remittance agents for most third-party e-commerce, so the
 tax is added at checkout rather than left for the buyer to self-assess.
 
-When the transaction is final and the good is kept, who remits is only an
-administrative detail.  A return changes that picture, because the tax paid
-to the government must itself be unwound.  Reclaiming that tax typically
-requires filing and can involve delay or incomplete recovery.  We take the
-extreme case in which the seller recovers none of the tax from the government
-on a returned unit.\footnote{Partial reclaim from the government would lie
-  between full recovery of $\tau$ and this zero-reclaim benchmark.}
-The seller still refunds the full tax-inclusive list price, so purchase and
-recovery both equal list price $p$, while the unreclaimed tax sits on the
-seller.  Consumers pay $p$.  Firms supply against the effective margin, list
-price minus expected refunds, handling, and the unreclaimed tax.
+When the good is kept, who remits is only an administrative detail.  The
+buyer pays the tax-inclusive list price $p$.  The seller receives $p$,
+remits the per-unit tax $\tau$ to the state, and keeps $p-\tau$.  A return
+refunds that same $p$ to the buyer, so her net payment is zero.  Reclaiming
+$\tau$ from the government typically requires filing and can involve delay
+or incomplete recovery.  We take the extreme case in which the seller
+recovers none of $\tau$ on a returned unit.\footnote{Partial reclaim from
+  the government would lie between full recovery of $\tau$ and this
+  zero-reclaim benchmark.}
+The unreclaimed tax stays with the seller, who also incurs handling cost
+$h$.  If a share $r$ of units is returned, the effective margin is
+$p-\tau-r(p+h)$.
 
 Most incidence and pass-through analysis treats a return as undoing the
 purchase, so pass-through, incidence, and deadweight loss are read off demand
@@ -157,15 +158,15 @@ derivative.  Type $i$'s return probability is
 \[
   \phi_i(p)=\Pr(u<p-\kappa_i).
 \]
-Willingness to pay settles who buys, but not who returns: buyers with the same
-$v_i$ may still differ in $\kappa_i$ and $G_i$.  Averaging within WTP cells
-gives
+Willingness to pay settles who buys.  Buyers with the same willingness to
+pay $v$ may still differ in $\kappa_i$ and $G_i$, so they need not share a
+return probability.  The average return probability in that group is
 \[
   \phi(v,p)\equiv\mathbb{E}\bigl[\phi_i(p)\bigm|v_i=v\bigr],
 \]
-which depends on $v$ whenever the joint distribution of $(\kappa_i,G_i)$ varies
-across valuation levels.  The aggregate return rate is the mean of these cell
-averages among those who buy at $p$,
+which depends on $v$ whenever the joint distribution of $(\kappa_i,G_i)$
+varies with willingness to pay.  The aggregate return rate is the mean of
+these averages among those who buy at $p$,
 \[
   r(p)=\frac{1}{D(p)}\int_p^\infty \phi(v,p)\,dF(v).
 \]
@@ -222,7 +223,10 @@ among inframarginal buyers,
   = -cs(p,p)\,f(p)+\int_p^\infty cs_p(v,p)\,dF(v),
 \]
 where $cs_p(v,p)\equiv \partial cs(v,p)/\partial p$.  On the extensive margin,
-$cs(p,p)=0$, so entry and exit contribute nothing at first order.  On the intensive margin, a higher price harms a buyer only when she keeps, so the cell average is minus the keep probability in that WTP cell,
+$cs(p,p)=0$, so entry and exit contribute nothing at first order.  On the
+intensive margin, a higher price harms a buyer only when she keeps.  Among
+buyers with willingness to pay $v$, the average response of surplus is
+therefore minus the probability that such a buyer keeps,
 \[
   cs_p(v,p)
   =
@@ -233,11 +237,7 @@ Aggregating over buyers who purchase then gives
   CS'(p)=\int_p^\infty cs_p(v,p)\,dF(v)
   = -D(p)\bigl(1-r(p)\bigr),
 \]
-by the definitions of $D(p)$ and $r(p)$.  A small price change therefore satisfies
-\begin{equation}
-  dCS = -D(p)\bigl(1-r(p)\bigr)\,dp.
-  \label{eq:dCS}
-\end{equation}
+by the definitions of $D(p)$ and $r(p)$.
 
 The extensive- and intensive-margin decomposition makes the local formula
 transparent.  Consumer surplus changes depend only on the aggregates $D(p)$ and
@@ -245,18 +245,14 @@ $r(p)$, both at each price and integrated along any path,
 \[
   \Delta CS = -\int_{p_0}^{p_1} D(p)\bigl(1-r(p)\bigr)\,dp.
 \]
-Micro heterogeneity in price responses can be rich.  Price $p$ enters each
-$cs_i(p)$ nonlinearly and can shift participation, return decisions, and
-inframarginal surplus differently across types.  Yet once $(D,r)$ are given, this
-microstructure is irrelevant for $dCS$ and $\Delta CS$.  Two economies with
-the same paths of $D(p)$ and $r(p)$ deliver the same consumer surplus loss,
-whether high-$v_i$ types adjust return behavior more steeply than low-$v_i$
-types or not.  Only kept units enter at first order, through $1-r(p)$, not
-gross purchases $D(p)$ alone.
+A kept unit loses the price increase, and a returned unit loses nothing.
+Buyers differ in how often they keep, so the same price increase reduces
+surplus by different amounts for different buyers.  Those differences drop
+out of the aggregate.  Once the paths of $D(p)$ and $r(p)$ are known,
+$CS'(p)$ and $\Delta CS$ are determined.
 
-Let $\bar{p}$ denote the highest willingness to pay in the population, so
-$D(\bar{p})=0$ and $CS(\bar{p})=0$.  Integrating the local formula then
-rewrites consumer surplus as area under kept volume,
+Consumer surplus equals kept volume integrated up to a price $\bar{p}$ high
+enough that nobody buys,
 \begin{equation}
   CS(p)=\int_p^{\bar{p}} D(z)\bigl(1-r(z)\bigr)\,dz.
 \end{equation}
@@ -275,7 +271,7 @@ gross unit---the \emph{effective margin}---is
   \label{eq:mu-def}
 \end{equation}
 Under perfect competition, firm $j$ takes $p$ as given and therefore faces a
-fixed number $\mu$ in its supply decision.  At equilibrium, $\mu=\mu(p,h)$.
+fixed number $\mu$ in its supply decision.
 
 Given $\mu$, firm $j$ chooses output to solve
 \[
@@ -296,19 +292,11 @@ Summing across firms defines market supply and industry profit,
 \end{equation}
 Under that assumption, $S'(\mu)>0$.  Market supply therefore rises with the
 effective margin, but not necessarily with list price.  Firms care about
-$\mu$, and $\mu(p,h)$ can fail to rise with $p$ when refunds and handling
-eat into the list-price gain.  Which firms are active at each $\mu$
-determines both the market quantity and total profit.
+$\mu$, and $\mu(p,h)$ can decrease with price.  Which firms are active at each
+$\mu$ determines both the market quantity and total profit.
 
-Differentiating the profit of firm $j$ with respect to $\mu$ gives
-\[
-  \frac{d}{d\mu}\Bigl[\mu\,q_j-C_j(q_j)\Bigr]
-  = q_j + q_j'(\mu)\,\bigl[\mu-C_j'(q_j)\bigr].
-\]
-Active firms satisfy $C_j'(q_j)=\mu$ at their chosen output, so the adjustment
-term $q_j'(\mu)\,[\mu-C_j'(q_j)]$ is zero---equivalently, the envelope theorem
-applied to firm $j$'s profit problem gives $d\pi_j/d\mu=q_j(\mu)$.  Summing
-over firms,
+The envelope theorem implies that firm $j$'s profit rises with $\mu$ at rate
+$q_j(\mu)$.  Summing over firms,
 \[
   PS'(\mu)=\sum_j q_j(\mu)=S(\mu).
 \]
@@ -318,7 +306,7 @@ to the left of the market supply curve,
   PS(\mu)=\int_0^\mu S(z)\,dz.
   \label{eq:PS-integral}
 \end{equation}
-At equilibrium $\mu=\mu(p,h)$,
+At equilibrium,
 $PS=\int_0^{\mu(p,h)}S(z)\,dz$.
 
 %=============================================================================
