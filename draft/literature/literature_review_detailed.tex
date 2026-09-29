@@ -13,10 +13,166 @@ Key Results and Intuition}
 \begin{document}
 \maketitle
 
-\noindent
-This note records, paper by paper, the key results and the intuition behind
-them.  It is more detailed than the positioning note
-(\texttt{literature\_view}).
+%=============================================================================
+\section{Introduction}
+%=============================================================================
+
+A platform referral fee acts like a tax on the sale.  The platform charges
+the seller a share of the transaction price, and that charge can be passed
+through into the price the buyer pays.  Earlier work asks whether a platform
+should be allowed to charge this fee.  \citet{wang_advalorem_2018} study an
+ad valorem fee and connect it to third-degree price discrimination.  They
+evaluate the welfare consequences of banning such fees.  The use of ad
+valorem fees generally increases welfare, including in calibrated versions of
+the model based on data from Amazon's marketplace and Visa's signature debit
+cards.
+
+%=============================================================================
+\section{Platform fees}
+%=============================================================================
+
+\subsection{Should Platforms Be Allowed to Charge Ad Valorem Fees? (Wang \& Wright, 2018)}
+
+\citet{wang_advalorem_2018} ask whether a platform should be allowed to charge
+a fee that depends on the transaction price.
+
+\begin{itemize}
+    \item \textbf{Background.}
+    Marketplaces, card networks, and booking platforms charge sellers a
+    percentage of the price even though the platform's cost is largely fixed
+    or per transaction.  Critics treat that fee as not cost-reflective and
+    ask whether it should be banned.
+
+    \item \textbf{Setting.}
+    A monopoly platform carries many goods that differ in cost and value.
+    Sellers of a given good are identical Bertrand competitors, so the model
+    shuts down double marginalization.  Demand belongs to the generalized
+    Pareto class, which has constant curvature of inverse demand.
+
+    \item \textbf{Problem.}
+    What happens to welfare if a policymaker bans any fee that depends on
+    transaction value, while leaving the level of the fee unregulated?
+
+    \item \textbf{Methodology.}
+    Banning the ad valorem fee is the same problem as banning third-degree
+    price discrimination across goods.  The paper compares welfare
+    analytically for two goods and for a continuum of goods, then calibrates
+    the model to the distribution of prices and sales on Amazon's marketplace
+    and to Visa signature debit transactions.
+
+    \item \textbf{Perspective.}
+    The paper evaluates social welfare.  The platform maximizes profit.  A
+    tax-revenue-maximizing government is formally the same agent.
+
+    \item \textbf{Ad valorem fees raise welfare when goods differ in value.}
+    \begin{itemize}
+        \item \textbf{Key result:} Within this demand class, welfare is higher
+        when the platform may use an ad valorem fee if demand is exponential
+        or log-convex, and also if demand is log-concave and the goods are
+        sufficiently dispersed in cost and value.  When goods are close,
+        discrimination raises welfare under log-convex demand and can lower it
+        under log-concave demand.
+        \item \textbf{Intuition:} The platform's fee is separate from the
+        price the seller sets.  A single dollar fee is set near the large fee
+        that is best for the expensive good, because cutting it gives up
+        revenue on every expensive sale.  Under log-convex demand, sales never
+        hit zero, so the cheap good still sells a trickle, and that trickle is
+        too small to justify the cut.  A percentage fee leaves seller prices
+        unchanged and makes the dollar fee large on the expensive good and
+        small on the cheap good.  Sales of the cheap good recover, and that
+        expansion is the welfare gain.
+        \item \textbf{Log-concave demand, when values differ a lot:}
+        Sales hit zero once the fee passes a threshold.  The fee that suits
+        the expensive good is already past that threshold for the cheap good,
+        so the cheap good does not sell.  Cutting the uniform fee far enough
+        to run a low-fee, high-sales strategy on the cheap good gives up too
+        much on every expensive sale, so the uniform fee stays high.  A
+        percentage fee keeps the high dollar fee on the expensive good and
+        puts a low dollar fee on the cheap good.  The cheap good's market
+        opens.  When values are close instead, both goods already sell, and
+        the percentage fee mostly moves buyers from the expensive good to the
+        cheap one.
+    \end{itemize}
+
+    \item \textbf{Calibration.}
+    \begin{itemize}
+        \item \textbf{Key result:} On the skewed distributions of Amazon DVD
+        sales and Visa signature debit transactions, banning ad valorem fees
+        lowers welfare in most cases.
+        \item \textbf{Intuition:} Real platforms trade many goods whose prices
+        and sales are highly skewed.  A uniform fee then falls especially
+        hard on low-cost, low-value goods.
+    \end{itemize}
+
+    \item \textbf{Policy.}
+    A ban on ad valorem fees, adopted so that fees track cost without a
+    regulator setting the fee level, tends to reduce welfare.  The same logic
+    says that a revenue-maximizing government raises welfare by using an ad
+    valorem tax rather than a unit tax.
+\end{itemize}
+
+\subsection{Asymmetric Price Competition on Hybrid Platforms: Theory and Evidence from Amazon (Eisfeld, Yan, \& Yu, 2026)}
+
+\citet{eisfeld_asymmetric_2026} study a platform that sells on its own
+marketplace and charges third-party sellers an ad valorem commission.
+
+\begin{itemize}
+    \item \textbf{Background.}
+    Hybrid platforms such as Amazon compete with the third-party sellers from
+    whom they collect a commission.  Commission rates can be large.  Antitrust
+    cases have focused on self-preferencing and data use.  This paper asks how
+    the commission itself changes price competition.
+
+    \item \textbf{Setting.}
+    The platform and third-party sellers set retail prices.  The commission is
+    taken as given.  The empirical setting is Amazon's U.S.\ marketplace,
+    including entry and exit of offers and commodity-cost shocks in coffee and
+    cocoa.
+
+    \item \textbf{Problem.}
+    Does platform entry put as much downward pressure on third-party prices as
+    entry by another third-party seller, and do common cost shocks pass
+    through more strongly for third-party sellers than for the platform?
+
+    \item \textbf{Methodology.}
+    An oligopoly model isolates two channels of the ad valorem commission.
+    Third-party sellers face a double markup.  The platform earns a share of
+    third-party revenue, so it internalizes diversion toward those sellers.
+    The empirical part uses event studies of entry and exit and distributed-lag
+    pass-through of coffee- and cocoa-bean prices.
+
+    \item \textbf{Perspective.}
+    The paper is a positive study of pricing incentives.  It does not rank
+    commission regimes by social welfare.  That comparison is left for later
+    structural work.
+
+    \item \textbf{Platform entry presses third-party prices less than third-party entry.}
+    \begin{itemize}
+        \item \textbf{Key result:} Amazon entry is followed by a 6 percent
+        fall in the prices of third-party sellers of the same product, and
+        Amazon exit by a 3 percent rise.  Third-party prices move modestly
+        more after third-party entry or exit than after Amazon entry or exit.
+        \item \textbf{Intuition:} Platform entry still intensifies competition
+        relative to no entry.  Revenue sharing offsets part of the platform's
+        advantage from avoiding the double markup, so the platform competes
+        less aggressively than an otherwise identical third-party seller.
+    \end{itemize}
+
+    \item \textbf{Third-party sellers pass through common costs more than the platform.}
+    \begin{itemize}
+        \item \textbf{Key result:} Commodity-cost pass-through is higher for
+        third-party sellers than for Amazon at every horizon in coffee, with
+        a statistically significant gap at 12, 24, and 48 weeks.  Cocoa has
+        the same ordering, significant at 48 weeks.  Amazon's own response is
+        often indistinguishable from zero or negative.
+        \item \textbf{Intuition:} The double markup amplifies a common cost
+        shock for third-party sellers.  The platform, which is vertically
+        integrated on its own sales and also earns commission revenue, raises
+        its retail price by less.  That cushions buyers on the platform's own
+        offers when costs rise, and it puts more of the cost increase onto
+        third-party prices.
+    \end{itemize}
+\end{itemize}
 
 %=============================================================================
 \section{Public finance and deadweight loss}
