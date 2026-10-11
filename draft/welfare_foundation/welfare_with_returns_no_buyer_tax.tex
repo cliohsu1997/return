@@ -72,7 +72,7 @@ does society gain or lose? The answers depend only on the return rate and on
 how demand, supply, and returns respond to the price.
 
 %=============================================================================
-\section{Setting}
+\section{Model}
 %=============================================================================
 
 We study a homogeneous-good market under perfect competition with product
@@ -84,7 +84,7 @@ type $i$ draws $u\sim G_i$. The consumer keeps the item when
 $u-p\geq -\kappa_i$, and then earns $u-p$. Otherwise the consumer returns
 the item and earns $-\kappa_i$. The refund equals the purchase price.
 
-Expected surplus from buying at price $p$ is
+Individual consumer surplus from buying at price $p$ is
 \[
   cs_i(p)=\mathbb{E}_{u\sim G_i}\bigl[\max(u-p,\,-\kappa_i)\bigr].
 \]
@@ -93,21 +93,14 @@ $v_i$, defined as the price solving $cs_i(v_i)=0$. Type $i$ buys if and
 only if $p\leq v_i$. Across types, $v_i$ has distribution $F$ with density
 $f$, so gross demand is $D(p)=1-F(p)$.
 
-Consumer $i$'s return probability is
+Consumer $i$ returns the item with probability
+$\phi_i(p)=\Pr(u<p-\kappa_i)$.
+Averaging it over consumers with the same willingness to pay $v$ gives
+$\phi(v,p)\equiv\mathbb{E}\bigl[\phi_i(p)\bigm|v_i=v\bigr]$.
+The aggregate return rate $r(p)$ is derived by further taking the
+average over consumers who make a purchase at $p$, equal to
 \[
-  \phi_i(p)=\Pr(u<p-\kappa_i).
-\]
-Buyers with the same willingness to pay $v$ can differ in $\kappa_i$ and
-$G_i$, so they need not share a return probability. Their average return
-probability is
-\[
-  \phi(v,p)\equiv\mathbb{E}\bigl[\phi_i(p)\bigm|v_i=v\bigr],
-\]
-which depends on $v$ when the joint distribution of $(\kappa_i,G_i)$ varies
-with willingness to pay. Averaging over buyers who purchase at $p$ gives
-the aggregate return rate
-\[
-  r(p)=\frac{1}{D(p)}\int_p^\infty \phi(v,p)\,dF(v).
+  \frac{1}{D(p)}\int_p^\infty \phi(v,p)\,dF(v).
 \]
 How the return rate changes with price splits into a behavioral term and a
 selection term,
@@ -133,145 +126,67 @@ buyers at the margin return more often than the average buyer and
 $\phi(p,p)\geq r(p)$. The two channels then move $r'(p)$ in opposite
 directions. Below, $r'(p)$ is left unsigned.
 
-Under perfect competition, producer $j$ takes the list price $p$ and the
-return rate $r$ as given and chooses output at cost $C_j(q_j)$, with
-strictly increasing marginal cost. The buyer pays the seller $p$, and the
-platform charges an ad valorem fee at rate $\tau$. On a kept unit the
-seller keeps $(1-\tau)p$. On a returned unit the seller refunds the full
+Producer $j$ takes the list price $p$ and the
+return rate $r$ as given and chooses quantity $q_j$ at cost $C_j(q_j)$, with
+strictly increasing marginal cost. The platform charges an ad valorem
+tax at rate $\tau$, so the seller keeps $(1-\tau)p$ on a kept unit. On a returned unit the seller refunds the full
 price, so the buyer pays nothing. The seller pays net handling $h$ on
-the good, which is gross handling cost minus scrap value and may be
-negative, and a share $\beta\in[0,1]$ of the referral fee is retained by
-the platform even when the product is returned. The seller therefore
+the good, which is gross handling cost minus scrap value, and a share $\beta\in[0,1]$ of the tax is retained by
+the platform on each returned unit. The seller therefore
 loses $\beta\tau p + h$ on that returned unit.\footnote{Amazon's refund
   administration fee is this rule for a referral fee.  On a return Amazon
   keeps the lesser of \$5 or 20 percent of the referral fee, and gives
   the rest back to the seller.  When the \$5 cap does not bind,
   $\beta=0.2$.}  We maintain $p+h>0$, which holds whenever scrap value
 does not exceed list price. With
-return rate $r$, expected payoff per unit sold is
+return rate $r$, the seller's expected payoff per unit is the effective
+margin
 \begin{equation}
-  (1-r)(1-\tau)p - r(\beta\tau p + h).
-  \label{eq:seller-payoff}
-\end{equation}
-
-%=============================================================================
-\section{Consumer side}
-%=============================================================================
-
-Consumer surplus at list price $p$ integrates expected surplus over buyers.
-Write $cs(v,p)$ for expected surplus among types with willingness to pay
-$v$, so $cs(v,v)=0$. Then
-\begin{equation}
-  CS(p)=\int_p^\infty cs(v,p)\,dF(v).
-\end{equation}
-
-The price derivative of consumer surplus equals minus kept demand.
-Differentiating in $p$ gives an extensive-margin term, from types at the
-purchase margin, and an intensive-margin term, from surplus among
-inframarginal buyers,
-\[
-  CS'(p)
-  = -cs(p,p)\,f(p)+\int_p^\infty cs_p(v,p)\,dF(v),
-\]
-where $cs_p(v,p)\equiv \partial cs(v,p)/\partial p$. The extensive margin is
-zero because $cs(p,p)=0$. On the intensive margin, a higher price lowers a
-buyer's surplus only when she keeps the good. Among buyers with willingness
-to pay $v$,
-\[
-  cs_p(v,p)
+  \mu^{s}
   =
-  -\Pr(\text{keep}\mid v_i=v).
-\]
-Aggregating over buyers gives
-\[
-  CS'(p)=\int_p^\infty cs_p(v,p)\,dF(v)
-  = -D(p)\bigl(1-r(p)\bigr),
-\]
-by the definitions of $D(p)$ and $r(p)$.
-
-A price path from $p_0$ to $p_1$ therefore changes consumer surplus by
-\[
-  \Delta CS = -\int_{p_0}^{p_1} D(p)\bigl(1-r(p)\bigr)\,dp.
-\]
-A kept unit loses the price increase. A returned unit loses nothing. Buyers
-differ in how often they keep, so the same price increase cuts surplus by
-different amounts for different buyers. Those differences average into
-$r(p)$. $CS'(p)$ is then determined by $D(p)$ and $r(p)$, and $\Delta CS$ by the
-paths of those two aggregates.
-
-Integrating that derivative from $p$ up to a price $\bar{p}$ at which nobody
-buys gives the level of consumer surplus,
-\begin{equation}
-  CS(p)=\int_p^{\bar{p}} D(z)\bigl(1-r(z)\bigr)\,dz.
+  (1-r)(1-\tau)p - r(\beta\tau p + h).
+  \label{eq:mu-s}
 \end{equation}
 
 %=============================================================================
-\section{Supply side}
+\subsection{Welfare measure}
 %=============================================================================
 
-Set the fee aside. A gross sale brings revenue $p$ if the consumer keeps the
-item, and it costs the refund $p$ plus net handling $h$ if the item is
-returned. Among gross sales at list price $p$, share $r(p)$ are returned, so
-expected revenue per gross unit, the \emph{effective margin}, is
+Consumer surplus is the sum of individual consumer surplus over buyers who
+purchase. A tax or a cost shock affects consumer surplus only through
+the list price, and a higher list price changes it only through the
+units that are kept. The effect of the price through the selection
+channel is zero because a buyer at the purchase margin has zero
+individual consumer surplus.
+Its effect through the behavioral channel is also zero because keeping
+and returning give the same utility at the keep threshold. What remains
+is the direct effect of the price, and therefore
 \begin{equation}
-  \mu(p,h) \equiv p - r(p)(p+h).
-  \label{eq:mu-def}
-\end{equation}
-Firm $j$ takes $p$ as given, so this margin enters the supply decision as a
-fixed number $\mu$.
-
-Given $\mu$, firm $j$ chooses output to solve
-\[
-  \max_{q_j \geq 0}\;\; \mu\,q_j - C_j(q_j),
-  \qquad
-  \text{FOC: } C_j'(q_j)=\mu \;\;(\text{if } q_j>0),
-\]
-with $C_j(0)=0$. Write $q_j(\mu)$ for firm $j$'s supply, equal to zero when
-$\mu$ is below its minimum marginal cost. Strictly increasing marginal cost
-implies $q_j'(\mu)>0$ for active firms.
-
-Market supply and industry profit sum these choices.
-\begin{equation}
-  S(\mu) \equiv \sum_j q_j(\mu),
-  \qquad
-  PS(\mu) \equiv \sum_j \bigl[\mu\,q_j(\mu)-C_j\bigl(q_j(\mu)\bigr)\bigr].
-  \label{eq:agg-def}
+  CS'(p)=-D(p)\bigl(1-r(p)\bigr).
 \end{equation}
 
-Strictly increasing marginal cost implies $S'(\mu)>0$, so quantity supplied
-rises with the effective margin. Market supply therefore falls in the list
-price whenever $\mu(p,h)$ falls in $p$.
-
-Industry profit is the area to the left of market supply. The envelope
-theorem implies that firm $j$'s profit rises with $\mu$ at rate
-$q_j(\mu)$. Summing over firms,
-\[
-  PS'(\mu)=\sum_j q_j(\mu)=S(\mu).
-\]
-With no production at $\mu=0$, that derivative integrates to
+Producer surplus is the sum of firm profits
+$\mu^{s} q_j-C_j(q_j)$. A tax or a cost shock affects producer surplus
+only through the effective margin, and by the envelope theorem a
+one-dollar rise in the effective margin raises a firm's profit by the
+quantity it chooses. Aggregating quantity supplied over firms gives
 \begin{equation}
-  PS(\mu)=\int_0^\mu S(z)\,dz.
-  \label{eq:PS-integral}
+  \frac{dPS}{d\mu^{s}}=S(\mu^{s}),
 \end{equation}
-At equilibrium,
-$PS=\int_0^{\mu(p,h)}S(z)\,dz$.
+where $S(\mu^{s})$ is market supply.
 
 %=============================================================================
 \section{A seller-remitted ad valorem tax}
 %=============================================================================
 \label{sec:sales-tax}
 
-The expected payoff \eqref{eq:seller-payoff} is the seller's effective margin
-once the fee is included,
+At a zero fee, with the equilibrium return rate $r(p)$, the effective
+margin is
 \begin{equation}
-  \mu^{s}(p,\tau,\beta,h)
-  =
-  (1-r(p))(1-\tau)p - r(p)(\beta\tau p + h).
-  \label{eq:mu-s}
+  \mu(p,h)\equiv p-r(p)(p+h).
+  \label{eq:mu-def}
 \end{equation}
-The buyer's return decision depends only on $p$, so $r=r(p)$. The refund on
-a return is the list price, and the fee is remitted by the seller. Rewriting
-\eqref{eq:mu-s} in the pre-fee margin gives
+Rewriting \eqref{eq:mu-s} in this margin gives
 \begin{equation}
   \mu^{s}
   =
@@ -282,16 +197,8 @@ The term in brackets is the share of the fee the seller expects to pay. That
 share is the whole fee on a kept unit, and the share $\beta$ on a returned
 unit.
 
-The fee reaches consumers only by moving the equilibrium list price.
-Market clearing is $D(p)=S(\mu^{s})$. Consumer surplus depends on the list
-price. Producer surplus is the area under supply at $\mu^{s}$,
-\[
-  CS=CS(p),
-  \qquad
-  PS=\int_0^{\mu^{s}}S(z)\,dz.
-\]
-
-Tax derivatives are taken at $\tau=0$. At that rate, the fee term in
+Market clearing is $D(p)=S(\mu^{s})$. Tax derivatives are taken at $\tau=0$.
+At that rate, the fee term in
 \eqref{eq:mu-s-split} has derivative zero with respect to $p$, so $\mu_p$ is
 the pre-fee derivative of $\mu(p,h)$. Holding $p$ fixed, one percentage point
 lowers the margin by the expected fee share times the list price,
