@@ -21,73 +21,66 @@
 %=============================================================================
 
 Who bears a tax, and how much of it passes through into the price, is the
-classic question of tax incidence \citep{weyl2013pass}. A platform's commission
-is one example. Amazon deducts a referral fee from each sale, a commission of 15
+question of tax incidence \citep{weyl2013pass}. A platform's commission is one
+example. Amazon deducts a referral fee from each sale, a commission of 15
 percent of the sale price in many categories, so the seller receives the price
-net of the fee. The fee therefore works like a sales tax, and without returns
-its pass-through and incidence are well studied in the literature. Online sales, however, are often
-returned, with retailers expecting about one in five to come
-back.\footnote{National Retail Federation and Happy Returns,
-  \emph{2025 Retail Returns Landscape}, October 15, 2025,
-  \url{https://nrf.com/research/2025-retail-returns-landscape}.
+net of the fee. This commission works like a sales tax, and we call it a tax
+from here on. Without returns, the pass-through and incidence of such a tax are
+well studied in the literature. Online sales, however, are often returned, with
+retailers expecting about one in five to come back.\footnote{National Retail
+  Federation and Happy Returns, \emph{2025 Retail Returns Landscape}, October
+  15, 2025, \url{https://nrf.com/research/2025-retail-returns-landscape}.
   The report estimates that 19.3 percent of online sales will be returned in
-  2025.} On a kept sale the seller pays the whole commission. On a return the
-seller refunds the price in full and gets most of the commission back, but
-Amazon keeps part of it, at most 20 percent, or 3 percent of the price at a 15
-percent fee.\footnote{Amazon, \emph{Selling on Amazon pricing},
+  2025.} On a kept sale the seller pays the whole tax. On a return the seller
+refunds the price in full and gets most of the tax back, but Amazon keeps part
+of it, at most 20 percent, or 3 percent of the price at a 15 percent
+rate.\footnote{Amazon, \emph{Selling on Amazon pricing},
   \url{https://sell.amazon.com/pricing}, and \emph{North America selling fees},
   \url{https://sell.amazon.com.sg/north-america/pricing}. Amazon calls the
   amount it keeps the refund administration fee, the lesser of five dollars or
-  20 percent of the referral fee.} The seller also bears the cost of handling
-the return. Returns thus change what the fee costs the seller. It is not clear
-how that changes the pass-through and the burden borne by sellers and
-consumers, or whether the platform should refund only part of the commission on
-a return. We study this in a competitive market, taking the fee schedule as
-given. Each buyer decides whether to buy and, after learning the fit, whether
-to keep the good, and the fee reaches both decisions only through the price.
+  20 percent of the referral fee.} Therefore the tax costs the seller different
+amounts on a kept sale and on a returned one. How much of this cost the seller
+can pass on to consumers depends on how purchases and returns respond to the
+price, and on how costly it is for the seller to handle a return. It is not
+clear how the pass-through and the burden borne by sellers and consumers
+change, or whether the platform should refund only part of the tax on a return.
+We study this in a competitive market, taking the tax schedule as given. Each
+buyer decides whether to buy and, after learning the fit, whether to keep the
+good, and the tax reaches both decisions only through the price.
 
-The standard case against a tax is that it opens a gap between what the buyer
-will pay and what the good costs the seller, so some beneficial trades do not
-happen. That argument has one margin, the decision to buy. Returns add a
-second, the decision to keep the good. What the seller pays in fees also
-depends on how many units come back. A higher price makes the buyers who remain more likely to return, because the
-good must fit better to be worth keeping. It also changes who buys, and the
-buyers it deters may return more often or less often than those who remain. So
-returns can rise or fall with the price, and no-return formulas, which hold the
-return rate fixed, do not carry over.
+A tax creates a wedge between what the buyer will pay and what the good costs
+the seller. Without returns, the wedge leads to underprovision on the purchase
+margin, because some beneficial trades do not happen. Returns add a second
+margin, the decision to keep the good, and a higher price can raise returns,
+because buyers who remain need a better fit to keep the good, or lower them,
+because the price changes who buys. It is therefore not clear whether the tax is
+still costly to society, as it is without returns, or in which direction the
+no-return results are biased when returns are ignored.
 
-Counting the platform's revenue as part of social surplus, a small fee is only
-a transfer when nothing is returned, so it leaves social surplus unchanged at
-the margin. Returns break this benchmark. The fee changes the price, the price
-changes how often the good comes back, and a return uses real resources in
-handling while the refund itself is only a transfer. The share of the fee that
-the platform keeps on a refund changes how much the price moves, not whether it
-moves, since even a fee that is fully paid back on a return is still paid on
-every unit the buyer keeps. Whether society gains or loses is therefore open,
-and it is a different question from whether buyers and sellers lose.
-
-The paper asks who bears a fee that is partly refunded on returns and whether
-it is socially costly. It does so for a small change in the fee, in four steps.
-First, how does the fee pass through into the price, and how do buyers and
+The paper asks who bears a tax that is partly refunded on returns and whether
+it is socially costly, for a small change in the tax. It takes four steps.
+First, how does the tax pass through into the price, and how do buyers and
 sellers divide the change in their own surplus? A rise in production cost and a
 rise in handling cost serve as benchmarks, since the first lowers the seller's
-margin on every unit, the second only on returned units, and the fee lies
-between the two. Second, counting the platform's revenue, does any loss to
-society come from the decision to buy or from the decision to keep the good,
-and in which direction does that decision go wrong? Third, what is missed by
-ignoring returns and treating the fee as an ordinary tax? Fourth, if the
-platform keeps a larger share of the fee on a refund, does society gain or
-lose? The answers depend only on the return rate and on how demand, supply, and
-returns respond to the price.
+margin on every unit, the second only on returned units, and the tax lies
+between the two. Second, counting the platform's revenue as part of social
+surplus, does any loss to society come from the decision to buy or from the
+decision to keep the good, and in which direction does that decision go wrong?
+Third, what is missed by ignoring returns and using the no-return results for
+this tax? Fourth, if the platform keeps a larger share of the tax on a refund,
+does society gain or lose? The answers depend only on the return rate and on
+how demand, supply, and returns respond to the price.
 
 %=============================================================================
 \section{Setting}
 %=============================================================================
 
-A homogeneous product sells at list price $p$. Consumers indexed by $i$
-differ in return hassle $\kappa_i$, the disutility of sending the good back,
-and in the distribution $G_i$ of post-purchase match quality $u$. After
-buying, type $i$ draws $u\sim G_i$. The consumer keeps the item when
+We study a homogeneous-good market under perfect competition with product
+returns, intermediated by a platform that charges sellers a referral fee.
+The product sells at list price $p$. Consumers indexed by $i$ differ in
+return hassle $\kappa_i$, the disutility of sending the good back, and in
+the distribution $G_i$ of post-purchase match quality $u$. After buying,
+type $i$ draws $u\sim G_i$. The consumer keeps the item when
 $u-p\geq -\kappa_i$, and then earns $u-p$. Otherwise the consumer returns
 the item and earns $-\kappa_i$. The refund equals the purchase price.
 
@@ -95,12 +88,12 @@ Expected surplus from buying at price $p$ is
 \[
   cs_i(p)=\mathbb{E}_{u\sim G_i}\bigl[\max(u-p,\,-\kappa_i)\bigr].
 \]
-Willingness to pay $v_i$ is defined by $cs_i(v_i)=0$. Type $i$ buys if and
+Consumer $i$'s purchase decision can be summarized by willingness to pay
+$v_i$, defined as the price solving $cs_i(v_i)=0$. Type $i$ buys if and
 only if $p\leq v_i$. Across types, $v_i$ has distribution $F$ with density
 $f$, so gross demand is $D(p)=1-F(p)$.
 
-The aggregate return rate $r(p)$ is the average return probability among
-buyers at price $p$. Type $i$'s return probability is
+Consumer $i$'s return probability is
 \[
   \phi_i(p)=\Pr(u<p-\kappa_i).
 \]
@@ -111,13 +104,13 @@ probability is
   \phi(v,p)\equiv\mathbb{E}\bigl[\phi_i(p)\bigm|v_i=v\bigr],
 \]
 which depends on $v$ when the joint distribution of $(\kappa_i,G_i)$ varies
-with willingness to pay. Averaging over buyers at $p$ gives
+with willingness to pay. Averaging over buyers who purchase at $p$ gives
+the aggregate return rate
 \[
   r(p)=\frac{1}{D(p)}\int_p^\infty \phi(v,p)\,dF(v).
 \]
-
-Differentiating $r(p)$ and using $D'(p)=-f(p)$ splits the price response
-into a behavioral term and a selection term,
+How the return rate changes with price splits into a behavioral term and a
+selection term,
 \[
   r'(p)
   =
@@ -130,47 +123,32 @@ into a behavioral term and a selection term,
   }_{\text{Selection channel}},
 \]
 where $\phi(p,p)$ is the average return probability among types at the
-purchase margin $v_i=p$.
+purchase margin $v_i=p$. The behavioral term is the change in return
+probability among buyers who continue to purchase after a price increase.
+A higher price raises their keep threshold, so they return more often. The
+selection term is the change in who buys. When $u=v_i+\varepsilon$, with
+$\varepsilon$ and return hassle independent of $v_i$, selection is
+non-positive. Higher willingness to pay lowers the return probability, so
+buyers at the margin return more often than the average buyer and
+$\phi(p,p)\geq r(p)$. The two channels then move $r'(p)$ in opposite
+directions. Below, $r'(p)$ is left unsigned.
 
-The behavioral term is the change in return probability among buyers who
-remain in the market. A higher $p$ raises the keep threshold, so a return
-becomes strictly more likely for those buyers.
-
-The selection term is the change in who buys. A higher price drops buyers at
-the margin $v_i=p$. For arbitrary $(\kappa_i,G_i)$ this term is unsigned,
-because marginal buyers may return more or less often than the average
-inframarginal buyer.
-
-An additive match signs that term. Under $u=v_i+\varepsilon$, with
-$\varepsilon$ and return hassle both independent of $v_i$, $\phi(v,p)$
-decreases in $v$. Marginal buyers then return more often than inframarginal
-buyers, so $\phi(p,p)\geq r(p)$ and selection is non-positive. Behavioral
-and selection then move $r'(p)$ in opposite directions. Below, $r'(p)$ is
-left unsigned.
-
-Sellers face that return rate under perfect competition. Producer $j$ takes
-$p$ as given, chooses output at cost $C_j(q_j)$, and pays a net handling
-cost $h$ on each
-returned unit. Net handling is gross handling cost minus scrap value. Net
-handling may be negative. We maintain $p+h>0$, which holds whenever scrap
-value does not exceed list price.
-
-The list price is what the buyer pays the seller. The platform charges an
-ad valorem fee on that receipt at rate $\tau$. When the good is kept, a
-share $\tau$ of $p$ goes to the platform and the seller keeps $(1-\tau)p$.
-
-When the good is returned, the seller refunds the full price, so the buyer's
-net payment is zero. A share $\beta\in[0,1]$ of the fee is not returned to
-the seller. The seller pays $\beta\tau p$ on that unit and pays the handling
-cost $h$.\footnote{Amazon's refund
+Under perfect competition, producer $j$ takes the list price $p$ and the
+return rate $r$ as given and chooses output at cost $C_j(q_j)$, with
+strictly increasing marginal cost. The buyer pays the seller $p$, and the
+platform charges an ad valorem fee at rate $\tau$. On a kept unit the
+seller keeps $(1-\tau)p$. On a returned unit the seller refunds the full
+price, so the buyer pays nothing. The seller pays net handling $h$ on
+the good, which is gross handling cost minus scrap value and may be
+negative, and a share $\beta\in[0,1]$ of the referral fee is retained by
+the platform even when the product is returned. The seller therefore
+loses $\beta\tau p + h$ on that returned unit.\footnote{Amazon's refund
   administration fee is this rule for a referral fee.  On a return Amazon
-  keeps the lesser of \$5 or 20 percent of the referral fee, and gives the
-  rest back to the seller.  When the \$5 cap does not bind, $\beta=0.2$.}
-None of the fee comes back to the seller when $\beta=1$. All of it comes
-back when $\beta=0$.
-
-The seller's payoff is $(1-\tau)p$ on a kept unit and $-\beta\tau p-h$ on a
-returned unit. With return rate $r$, expected payoff per unit sold is
+  keeps the lesser of \$5 or 20 percent of the referral fee, and gives
+  the rest back to the seller.  When the \$5 cap does not bind,
+  $\beta=0.2$.}  We maintain $p+h>0$, which holds whenever scrap value
+does not exceed list price. With
+return rate $r$, expected payoff per unit sold is
 \begin{equation}
   (1-r)(1-\tau)p - r(\beta\tau p + h).
   \label{eq:seller-payoff}
