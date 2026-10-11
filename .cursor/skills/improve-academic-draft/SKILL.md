@@ -7,7 +7,7 @@ description: Reviews and improves academic draft text by checking notation defin
 
 When invoked on draft text, perform these checks systematically.
 
-For **writing or rewriting** model/derivation sections (continuous prose, derive-don't-announce, minimal notation), apply **academic-note-prose** instead of or before this review skill.
+For **writing or rewriting** model or derivation sections, apply **academic-note-prose** instead of or before this review skill.
 
 - **Introduction only** (`\section{Introduction}`): run **§1b** in full, plus relevant parts of checks 1–4.
 - **Pre-model sections** (institutional background, data, stylized facts): run **§1c** in full, plus checks 4–5.
@@ -227,9 +227,9 @@ Scope: sections that state what is identified from which variation (e.g., §6 Id
 
 ## 1f. Model, setting, and derivation sections
 
-Scope: `\section{Setting}`, model blocks, consumer/supply derivations, welfare and incidence notes—especially `draft/**`. For **edits**, follow **academic-note-prose** in full (mandatory pre-edit pass + pre-compile checklist). This block is **review-only**.
+Scope: `\section{Setting}`, model blocks, consumer/supply derivations, welfare and incidence notes—especially `draft/**`. For **edits**, follow **academic-note-prose**. This block is **review-only**.
 
-Run **academic-note-prose** checklists and flag:
+Run that sequence and flag:
 
 | Area | Flag if |
 |------|---------|
