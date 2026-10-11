@@ -75,14 +75,15 @@ how demand, supply, and returns respond to the price.
 \section{Model}
 %=============================================================================
 
-We study a homogeneous-good market under perfect competition with product
-returns, intermediated by a platform that charges sellers a referral fee.
-The product sells at list price $p$. Consumers indexed by $i$ differ in
+We study the pass-through of a tax charged by the platform and of a
+cost increase, such as a rise in return handling cost or in production
+cost, in a homogeneous-good market under perfect competition with
+product returns. The product sells at list price $p$. Consumers indexed by $i$ differ in
 return hassle $\kappa_i$, the disutility of sending the good back, and in
 the distribution $G_i$ of post-purchase match quality $u$. After buying,
-type $i$ draws $u\sim G_i$. The consumer keeps the item when
-$u-p\geq -\kappa_i$, and then earns $u-p$. Otherwise the consumer returns
-the item and earns $-\kappa_i$. The refund equals the purchase price.
+type $i$ draws $u\sim G_i$. In the baseline model, the refund is restricted
+to equal the list price, so the consumer's utility is $u-p$ when he keeps
+the product and $-\kappa_i$ when he returns it.
 
 Individual consumer surplus from buying at price $p$ is
 \[
@@ -102,8 +103,10 @@ average over consumers who make a purchase at $p$, equal to
 \[
   \frac{1}{D(p)}\int_p^\infty \phi(v,p)\,dF(v).
 \]
-How the return rate changes with price splits into a behavioral term and a
-selection term,
+The return rate depends on how consumers purchase and on how each
+purchaser returns. The price shapes the return rate through both.
+Therefore, the effect of the price can be decomposed into a behavioral
+channel and a selection channel,
 \[
   r'(p)
   =
@@ -115,15 +118,15 @@ selection term,
     \frac{f(p)}{D(p)}\bigl(r(p)-\phi(p,p)\bigr)
   }_{\text{Selection channel}},
 \]
-where $\phi(p,p)$ is the average return probability among types at the
-purchase margin $v_i=p$. The behavioral term is the change in return
-probability among buyers who continue to purchase after a price increase.
-A higher price raises their keep threshold, so they return more often. The
-selection term is the change in who buys. When $u=v_i+\varepsilon$, with
-$\varepsilon$ and return hassle independent of $v_i$, selection is
-non-positive. Higher willingness to pay lowers the return probability, so
-buyers at the margin return more often than the average buyer and
-$\phi(p,p)\geq r(p)$. The two channels then move $r'(p)$ in opposite
+The behavioral channel is the change in return probability holding the
+purchase cutoff fixed. A higher price lowers the utility of keeping, so
+purchasers return more often. The selection channel captures the change in
+who buys. Its sign is undetermined without additional assumptions. In
+general, this channel is non-positive because higher willingness to pay
+lowers the return probability, so buyers at the margin return more often
+than the average buyer and $\phi(p,p)\geq r(p)$.\footnote{As when
+$u=v_i+\varepsilon$, with $\varepsilon$ independent of $v_i$ and return
+hassle independent of $v_i$.} The two channels then move $r'(p)$ in opposite
 directions. Below, $r'(p)$ is left unsigned.
 
 Producer $j$ takes the list price $p$ and the
