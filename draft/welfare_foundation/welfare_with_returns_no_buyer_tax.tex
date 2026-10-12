@@ -213,135 +213,88 @@ $\mu^{s}_{h}=-r(p)$. The tax reduces $\mu^{s}$ by
 $p\bigl[1-r(p)+\beta r(p)\bigr]$ through the tax on kept units and the
 share retained on returned units, so
 $\mu^{s}_{\tau}=-p\bigl[1-r(p)+\beta r(p)\bigr]$. Substituting these into
-\eqref{eq:pass-through} gives the three pass-throughs summarized in the next
-result.
-\begin{result}[Pass-through into list price]
-\label{res:pass-through}
-  \begin{align}
-    \rho_c
-    &= \frac{S'(\mu^{s})}{S'(\mu^{s})\,\mu^{s}_{p}-D'(p)},
-    \label{eq:rho-c}
-    \\
-    \rho_h &= r(p)\,\rho_c,
-    &
-    \rho_{\tau} &= p\bigl[1-r(p)+\beta r(p)\bigr]\,\rho_c.
-    \label{eq:rho-links}
-  \end{align}
-\end{result}
+\eqref{eq:pass-through} gives the three pass-throughs,
+\begin{equation}
+  \rho_c
+  = \frac{S'(\mu^{s})}{S'(\mu^{s})\,\mu^{s}_{p}-D'(p)},
+  \qquad
+  \rho_h = r(p)\,\rho_c,
+  \qquad
+  \rho_{\tau} = p\bigl[1-r(p)+\beta r(p)\bigr]\,\rho_c,
+  \label{eq:rho-links}
+\end{equation}
 
-\subsection{Elasticity representation}
-
-The same pass-through formulas can be written in list-price elasticities.
-Write $\mu_p\equiv\mu^{s}_{p}$ for the response of
-$\mu^{s}(p,h,0,\beta)$ to the list price. Demand and supply elasticities with respect to list price are
+These pass-throughs take a more transparent form in list-price
+elasticities, which also exposes the role of returns. Write
+$\mu_p^0\equiv\mu^{s}_{p}\big|_{\tau=0}$ for the response of the effective
+margin to the list price at the no-tax baseline. Demand and the observed supply
+elasticity with respect to the list price are
 \[
 \varepsilon_D(p)\equiv\frac{p D'(p)}{D(p)}<0,
 \qquad
-\varepsilon_S(p)\equiv\frac{dS(\mu(p))}{dp}\frac{p}{S(\mu(p))}
-=S'(\mu)\,\mu_p\,\frac{p}{S(\mu)}.
+\varepsilon_S(p)\equiv S'(\mu)\,\mu_p^0\,\frac{p}{S(\mu)}.
 \]
-Here $\varepsilon_S(p)$ is the observed elasticity of market supply with
-respect to the clearing price. It has the sign of $\mu_p$. With no returns,
-$\mu_p=1$ and $\varepsilon_S>0$. With returns, $\mu_p$ can be negative. Then
-$\varepsilon_S<0$, and a higher list price reduces the quantity firms supply.
+The supply elasticity $\varepsilon_S$ has the sign of $\mu_p^0$. With no
+returns, $\mu_p^0=1$ and the supply elasticity is positive. With returns,
+the supply elasticity can be negative if the return rate is an
+increasing function of price. When the behavioral channel dominates, a
+higher price raises the return rate, reduces the effective margin, and
+lowers quantity supplied.
 
-With no returns, pass-through equals
-$\varepsilon_S/(-\varepsilon_D+\varepsilon_S)$. Supply is then a function of
-the list price, so $S'=dS/dp$. A one-dollar cost increase cuts supply by
-$S'$ units at the original price and opens an excess-demand gap of that
-size. A one-dollar rise in the list price closes the gap from both sides.
-Demand falls by $|D'|$ and supply rises by $S'$. Closing a gap of size $S'$
-therefore takes a price rise of $S'/(S'+|D'|)$.
-
-Under the return margin, supply depends on the effective margin, so
-$S'(\mu)=dS/d\mu$. A one-dollar production-cost increase leaves $\mu$
-unchanged at a fixed list price. It is equivalent to evaluating supply at
-$\mu-1$, so supply falls by $S'(\mu)$ units and opens an excess-demand gap
-of that size. A one-dollar rise in the list price
-closes the gap at rate $S'(\mu)\,\mu_p-D'(p)$, so
-\[
-\rho_c=\frac{S'(\mu)}{S'(\mu)\,\mu_p-D'(p)}.
-\]
-A larger $\mu_p$ means that one dollar of list price restores more of the
-effective margin, and therefore more quantity supplied, so a smaller
-list-price movement closes the gap. Writing the same formula with
-$\varepsilon_S$ places $1/\mu_p$ in the numerator,
+Multiplying numerator and denominator of $\rho_c$ by $p/S(\mu)$
+gives the elasticity form,
 \begin{equation}
   \rho_c
   =
-  \frac{\varepsilon_S(p)/\mu_p}
+  \frac{\varepsilon_S(p)/\mu_p^0}
        {-\varepsilon_D(p)+\varepsilon_S(p)}.
   \label{eq:rho_c_elasticity_final}
 \end{equation}
-
-The sign of $\rho_c$ is the sign of the denominator
-$-\varepsilon_D+\varepsilon_S$. The numerator $\varepsilon_S/\mu_p$ is
-positive, because $\varepsilon_S$ and $\mu_p$ have the same sign.
+The pass-through $\rho_c$ is the ratio of the excess-demand gap a
+cost increase opens to the rate at which a price change closes it. A
+production-cost increase reduces supply by $S'(\mu)$ and opens excess
+demand of that size. An increase in the list price closes that gap at
+rate $S'(\mu)\,\mu_p^0-D'(p)$. Compared to the classical no-return
+formula, which sets $\mu_p^0=1$, the returns formula scales the
+pass-through by $1/\mu_p^0$. When $\mu_p^0$ is above unity, one dollar
+of list price restores more than one dollar of effective margin, so a
+smaller price movement closes the gap. When $0<\mu_p^0<1$, the return
+rate rises in price and one dollar of list price restores less than
+one dollar of effective margin, so the price must move more and
+pass-through is larger than the classical value. When $\mu_p^0$ is
+negative, the effective margin decreases in the list price, and the
+sign of pass-through depends on the magnitudes of the elasticities. In
+particular, negative pass-through can happen when supply is more
+elastic than demand in absolute value, so lowering the price raises
+supply by more than it raises demand and clears the excess demand.
+This is in sharp contrast to the model without returns, where
+pass-through is always positive. The following two results summarize
+the findings.
 \begin{result}[Negative pass-through]
 \label{res:negative-pt}
-  We have $\rho_c<0$ if and only if $\varepsilon_S<0$ ($\mu_p<0$) and
+  We have $\rho_c<0$ if and only if $\varepsilon_S<0$ ($\mu_p^0<0$) and
   $|\varepsilon_S|>-\varepsilon_D$.
 \end{result}
-A cost increase is then cleared by a lower list price. With
-$\varepsilon_S<0$, so $\mu_p<0$, a higher list price lowers the quantity
-firms supply. A rise in $c$ shifts that supply curve to the left and creates
-excess demand at the initial $p$. A higher price would shrink supply further
-and widen the gap. The price falls. A lower $p$ raises quantity demanded
-and, because supply slopes down, raises quantity supplied. When
-$|\varepsilon_S|>-\varepsilon_D$, supply is steeper than demand, so the
-supply response to the price cut exceeds the demand response, and the excess
-demand clears at a lower list price. In the classical model, $\mu_p=1$,
-supply slopes up in the list price, and $\rho_c>0$.
-\begin{proof}
-By (\ref{eq:rho_c_elasticity_final}),
-\[
-  \rho_c = \frac{\varepsilon_S/\mu_p}{-\varepsilon_D+\varepsilon_S}.
-\]
-Since
-$\varepsilon_S=S'(\mu)\mu_p\,p/S(\mu)$, the terms $\varepsilon_S$ and $\mu_p$
-have the same sign, so $\varepsilon_S/\mu_p>0$.  Hence $\rho_c<0$ if and only
-if
-\[
-  -\varepsilon_D+\varepsilon_S<0,
-\]
-which is equivalent to $\varepsilon_S<0$ and
-$|\varepsilon_S|>-\varepsilon_D$.  Because $\varepsilon_S$ and $\mu_p$ have the
-same sign, $\varepsilon_S<0$ is equivalent to $\mu_p<0$.
-\end{proof}
-
-The effective margin rises by more than one dollar per dollar of list price
-when the return rate falls steeply enough. Differentiating
-$\mu=p-r(p)(p+h)$ gives
-\[
-\mu_p=1-r(p)-r'(p)(p+h).
-\]
-Write $\varepsilon_r(p)\equiv p\,r'(p)/r(p)$ for the elasticity of the return
-rate in list price. Then $\mu_p>1$ if and only if
-$\varepsilon_r(p)<-p/(p+h)$. Selection must then outweigh the behavioral rise
-in individual return probabilities by enough that the aggregate return rate
-falls steeply in $p$. When the behavioral response dominates,
-$\varepsilon_r$ is less negative, or positive, and $\mu_p<1$.
-
-The classical no-return formula treats the observed list-price slope of
-supply as if the effective margin moved one for one with price. That slope
-is $S'(\mu)\,\mu_p$, so the formula returns $\mu_p\rho_c$.
 \begin{result}
 \label{res:pt-bias-er}
-  Relative to the correct returns-adjusted $\rho_c$, the classical no-return
-  pass-through formula overestimates pass-through when $\mu_p>1$, agrees
-  with it when $\mu_p=1$, and underestimates it when $0\leq\mu_p<1$. When
-  $\mu_p<0$, the classical formula has the opposite sign of $\rho_c$. The
-  condition $\mu_p>1$ is equivalent to $\varepsilon_r(p)<-p/(p+h)$.
+  Relative to the correct returns-adjusted $\rho_c$, the classical
+  no-return pass-through formula overestimates pass-through when
+  $\mu_p^0>1$, agrees with it when $\mu_p^0=1$, and underestimates it
+  when $0\leq\mu_p^0<1$.
 \end{result}
-When $\mu_p>1$, one dollar of list price restores more than one dollar of
-effective margin, so a smaller price movement closes the excess-demand gap
-than the classical formula predicts. Higher handling cost widens the set of
-$\varepsilon_r$ for which that overestimation occurs, because the threshold
-$-p/(p+h)$ moves toward zero. When $0\leq\mu_p<1$, one dollar of list price
-restores less than one dollar of effective margin, so the list price must
-move by more than the classical formula predicts. When $\mu_p<0$, the
-effective margin falls in the list price, and the classical formula predicts
-a price change of the wrong sign.
+
+Result~\ref{res:pt-bias-er} can be linked to the handling
+cost and which channel of $r'(p)$ dominates.
+The effective margin is likely to be above one when the selection
+channel dominates and the handling cost is large, and to fall
+below one when the behavioral channel dominates and the handling
+cost is large. Differentiating the effective margin at $\tau=0$
+gives $\mu_p^0=1-r(p)-(p+h)\,r'(p)$. A strong selection channel has $r'(p)<0$, so a higher price
+lowers the return rate and saves handling cost, pushing
+$\mu_p^0$ above one, whereas a strong behavioral channel has
+$r'(p)>0$, so a higher price raises the return rate and adds
+handling cost, pushing $\mu_p^0$ below one. A larger handling cost
+amplifies both effects.
 
 %=============================================================================
 \section{Local incidence}
@@ -364,19 +317,19 @@ $x$ and using the equilibrium condition $S(\mu,x)=Q$ gives
 \]
 where $\Sigma_x\equiv\int_0^\mu (\partial S(z,x)/\partial x)\,dz$ is the
 direct shift in the area under the supply curve. The chain rule is
-$\frac{d\mu}{dx} = \mu_p \rho_x + \mu_x$, so
+$\frac{d\mu}{dx} = \mu_p^0 \rho_x + \mu_x$, so
 \begin{equation}
-  \frac{dPS}{dx} = Q(\mu_p \rho_x + \mu_x) + \Sigma_x.
+  \frac{dPS}{dx} = Q(\mu_p^0 \rho_x + \mu_x) + \Sigma_x.
   \label{eq:PSx_incidence}
 \end{equation}
 
 The local incidence ratio is $I_x \equiv (dCS/dx)/(dPS/dx)$. For these three
 shocks,
 \[
-  I_x = \frac{-Q(1-r)\rho_x}{Q(\mu_p \rho_x + \mu_x) + \Sigma_x},
+  I_x = \frac{-Q(1-r)\rho_x}{Q(\mu_p^0 \rho_x + \mu_x) + \Sigma_x},
 \]
 and the rows of Table~\ref{tab:incidence_components} reduce to one expression
-in $\rho_c$ and $\mu_p$.
+in $\rho_c$ and $\mu_p^0$.
 
 \begin{table}[htbp]
 \centering
@@ -384,9 +337,9 @@ in $\rho_c$ and $\mu_p$.
 \hline
 Shock $x$ & $\rho_x$ & $\mu_x$ & $\Sigma_x$ & $dCS/dx$ & $dPS/dx$ & $I_x$ \\
 \hline
-Production cost $c$ & $\rho_c$ & $0$ & $-Q$ & $-Q(1-r)\rho_c$ & $Q(\mu_p\rho_c - 1)$ & $\displaystyle \frac{(1-r)\rho_c}{1-\mu_p\rho_c}$ \\
-Handling cost $h$ & $r\rho_c$ & $-r$ & $0$ & $-Q(1-r)r\rho_c$ & $Qr(\mu_p\rho_c - 1)$ & $\displaystyle \frac{(1-r)\rho_c}{1-\mu_p\rho_c}$ \\
-Fee $\tau$ & $\theta\rho_c$ & $-\theta$ & $0$ & $-Q(1-r)\theta\rho_c$ & $\theta Q(\mu_p\rho_c - 1)$ & $\displaystyle \frac{(1-r)\rho_c}{1-\mu_p\rho_c}$ \\
+Production cost $c$ & $\rho_c$ & $0$ & $-Q$ & $-Q(1-r)\rho_c$ & $Q(\mu_p^0\rho_c - 1)$ & $\displaystyle \frac{(1-r)\rho_c}{1-\mu_p^0\rho_c}$ \\
+Handling cost $h$ & $r\rho_c$ & $-r$ & $0$ & $-Q(1-r)r\rho_c$ & $Qr(\mu_p^0\rho_c - 1)$ & $\displaystyle \frac{(1-r)\rho_c}{1-\mu_p^0\rho_c}$ \\
+Fee $\tau$ & $\theta\rho_c$ & $-\theta$ & $0$ & $-Q(1-r)\theta\rho_c$ & $\theta Q(\mu_p^0\rho_c - 1)$ & $\displaystyle \frac{(1-r)\rho_c}{1-\mu_p^0\rho_c}$ \\
 \hline
 \end{tabular}
 \caption{Pass-through, direct effects, surplus changes, and incidence ratio for
@@ -400,7 +353,7 @@ $\theta\equiv p\bigl[1-(1-\beta)r\bigr]$.}
 For production cost, handling cost, and the fee, the local incidence
 ratio is identical:
 \begin{equation}
-  I_x = \frac{(1-r)\rho_c}{1-\mu_p \rho_c}>0.
+  I_x = \frac{(1-r)\rho_c}{1-\mu_p^0 \rho_c}>0.
   \label{eq:incidence_result}
 \end{equation}
 \end{result}
@@ -418,18 +371,18 @@ $\rho_{\tau}=p\bigl[1-(1-\beta)r\bigr]\rho_c$ at $\tau=0$.
 The scalar cancels in the incidence ratio. How far the equilibrium moves
 depends on the shock. How the movement splits between consumers and
 producers depends on the local slopes of demand and supply and on
-$\mu_p$.\footnote{Consumers lose or gain through the list-price change
+$\mu_p^0$.\footnote{Consumers lose or gain through the list-price change
 $\rho_x$. Producers' receipt moves with the effective margin, which changes
-by $\mu_p\rho_x$ when the list price changes by $\rho_x$. Thus $\mu_p$
+by $\mu_p^0\rho_x$ when the list price changes by $\rho_x$. Thus $\mu_p^0$
 governs how much of each dollar of $p$ feeds into producer surplus.}
 
-The denominator $1-\mu_p\rho_c$ in \eqref{eq:incidence_result} is the
+The denominator $1-\mu_p^0\rho_c$ in \eqref{eq:incidence_result} is the
 per-unit producer loss on a one-dollar cost shock. Before the price
 adjusts, producer surplus falls by $Q$. The list-price change moves the
-effective margin by $\mu_p\rho_c$ per unit, and the envelope $dPS/d\mu=Q$
-turns that movement into a recovery of $Q\mu_p\rho_c$. The net change in
-producer surplus is $Q(\mu_p\rho_c-1)$, so the loss per unit is
-$1-\mu_p\rho_c$. The numerator $(1-r)\rho_c$ is the per-unit consumer loss
+effective margin by $\mu_p^0\rho_c$ per unit, and the envelope $dPS/d\mu=Q$
+turns that movement into a recovery of $Q\mu_p^0\rho_c$. The net change in
+producer surplus is $Q(\mu_p^0\rho_c-1)$, so the loss per unit is
+$1-\mu_p^0\rho_c$. The numerator $(1-r)\rho_c$ is the per-unit consumer loss
 on kept units. The incidence ratio compares these two per-unit burdens. When
 the denominator is small and positive, consumers bear most of the loss.
 When the denominator is negative, the recovery exceeds the direct cost and
@@ -437,7 +390,7 @@ producers gain.
 
 Producer surplus rises with a production-cost increase exactly when
 pass-through is negative. The recovery factor equals
-$\mu_p\rho_c=\varepsilon_S/(\varepsilon_S-\varepsilon_D)$. It exceeds one if
+$\mu_p^0\rho_c=\varepsilon_S/(\varepsilon_S-\varepsilon_D)$. It exceeds one if
 and only if $\varepsilon_S<0$ and $|\varepsilon_S|>-\varepsilon_D$.
 Result~\ref{res:negative-pt} states that this is the condition for
 $\rho_c<0$.
@@ -449,14 +402,14 @@ supplied increases with the effective margin, so covering the original gap
 requires $\mu$ to rise by one dollar. The price fall also raises quantity
 demanded and opens a further gap. Supply must increase by more than the
 original shift, so the effective margin must rise by more than one dollar.
-Thus $\mu_p\rho_c>1$ is the market-clearing requirement when pass-through is
+Thus $\mu_p^0\rho_c>1$ is the market-clearing requirement when pass-through is
 negative.
 
 The incidence ratio is positive, so consumer and producer surplus move
 together. When $\rho_c<0$, an increase in production cost, handling cost, or
 the fee lowers the list price. Consumer surplus rises, and producer
 surplus rises as well. When $\rho_c>0$, all three shocks reduce both
-surpluses. In the classical model, $\mu_p=1$ and pass-through is positive,
+surpluses. In the classical model, $\mu_p^0=1$ and pass-through is positive,
 so both surpluses fall.
 
 \subsection{First-order private surplus and deadweight loss}
@@ -468,12 +421,12 @@ $W\equiv CS+PS$. Adding (\ref{eq:CSx_incidence}) and
 \[
   \frac{dW}{dx}
   = -Q(1-r)\rho_x
-    + Q(\mu_p\rho_x + \mu_x)
+    + Q(\mu_p^0\rho_x + \mu_x)
     + \Sigma_x
-  = Q\bigl[\mu_x + \bigl(\mu_p-(1-r)\bigr)\rho_x\bigr]
+  = Q\bigl[\mu_x + \bigl(\mu_p^0-(1-r)\bigr)\rho_x\bigr]
     + \Sigma_x.
 \]
-Substituting $\mu_p=1-r-r'(p)(p+h)$ gives
+Substituting $\mu_p^0=1-r-r'(p)(p+h)$ gives
 \begin{equation}
   \frac{dW}{dx}
   = Q\bigl[\mu_x - r'(p)(p+h)\rho_x\bigr] + \Sigma_x,
@@ -513,7 +466,7 @@ $G=\tau p\bigl[1-(1-\beta)r\bigr]Q$.
 
 Substituting $\mu_x$ and $\Sigma_x$ from
 Table~\ref{tab:incidence_components} into \eqref{eq:DWL_incidence}, and using
-the pass-through links in Result~\ref{res:pass-through}, gives the following
+the pass-through links in \eqref{eq:rho-links}, gives the following
 derivatives. The tax derivative is evaluated at a zero rate.
 \begin{align}
   \frac{dW}{dc}
@@ -594,7 +547,7 @@ The gap between that formula and $dW/dc=-Q\Lambda$ is the ex-post term
 $-Q\,r'(p)(p+h)\rho_c$. That term can offset the rectangle, amplify it, or
 reverse the sign of the private-surplus change.
 
-When selection dominates, $r'(p)<0$. Then $\mu_p>0$ and hence $\rho_c>0$, so
+When selection dominates, $r'(p)<0$. Then $\mu_p^0>0$ and hence $\rho_c>0$, so
 a cost increase raises the list price. The higher price screens out frequent
 returners and lowers the return rate. The ex-post term is then a gain, and
 $0<\Lambda<1$. The private-surplus change stays negative, because
@@ -621,7 +574,7 @@ Result~\ref{res:welfare-bias} records these three comparisons.
   $dW/dc=-Q$
   \begin{enumerate}
   \item[(i)] overestimates the private-surplus loss if and only if
-  $r'(p)<0$ (which implies $\mu_p>0$ and hence $\rho_c>0$, so
+  $r'(p)<0$ (which implies $\mu_p^0>0$ and hence $\rho_c>0$, so
   $0<\Lambda<1$);
   \item[(ii)] underestimates the private-surplus loss if and only if
   $r'(p)>0$ and $\rho_c>0$ (hence $\Lambda>1$);
@@ -694,10 +647,10 @@ therefore need not preserve the sign of local incidence.
 \label{app:welfare-bias-primitives}
 Result~\ref{res:welfare-bias} has an equivalent statement in elasticities.
 Recall $\varepsilon_r(p)\equiv p\,r'(p)/r(p)$ and
-$\mu_p=1-r(p)-r'(p)(p+h)$. Then
+$\mu_p^0=1-r(p)-r'(p)(p+h)$. Then
 $r'(p)(p+h)=\varepsilon_r(p)\,r(p)\,(p+h)/p$, so
 \begin{equation}
-  \mu_p>0
+  \mu_p^0>0
     \;\iff\;
   \varepsilon_r(p)
   <
@@ -708,22 +661,22 @@ $r'(p)(p+h)=\varepsilon_r(p)\,r(p)\,(p+h)/p$, so
 In these elasticities, Result~\ref{res:welfare-bias} reads as follows.
 \begin{enumerate}
 \item[(i)] overestimation iff $\varepsilon_r(p)<0$;
-\item[(ii)] underestimation iff $\varepsilon_r(p)>0$ and either $\mu_p\geq 0$,
-or both $\mu_p<0$ and $|\varepsilon_S|< -\varepsilon_D$;
+\item[(ii)] underestimation iff $\varepsilon_r(p)>0$ and either $\mu_p^0\geq 0$,
+or both $\mu_p^0<0$ and $|\varepsilon_S|< -\varepsilon_D$;
 \item[(iii)] overestimation with wrong sign (predicted loss, actual gain)
-iff $\mu_p<0$ and $|\varepsilon_S|>-\varepsilon_D$.
+iff $\mu_p^0<0$ and $|\varepsilon_S|>-\varepsilon_D$.
 \end{enumerate}
 \begin{proof}
 By Result~\ref{res:welfare-bias}, overestimation with $0<\Lambda<1$ is
 $r'<0$, underestimation is $r'>0$ with $\rho_c>0$, and overestimation with
 wrong sign is $r'>0$ with $\rho_c<0$.
 Since $\varepsilon_r$ has the same sign as $r'$, write these in
-$\varepsilon_r$.  For~(i), $\varepsilon_r<0$ forces $\mu_p>1-r>0$ and hence
+$\varepsilon_r$.  For~(i), $\varepsilon_r<0$ forces $\mu_p^0>1-r>0$ and hence
 $\rho_c>0$, so $0<\Lambda<1$.
-When $\mu_p=0$ and $r(p)<1$, the derivative $r'(p)$ is positive,
+When $\mu_p^0=0$ and $r(p)<1$, the derivative $r'(p)$ is positive,
 $\varepsilon_S=0$, and $\rho_c=S'(\mu)/(-D'(p))>0$, so that case is in~(ii).
 Result~\ref{res:negative-pt} translates the sign of $\rho_c$ into conditions
-on $\mu_p$ and $|\varepsilon_S|\gtrless -\varepsilon_D$: with
+on $\mu_p^0$ and $|\varepsilon_S|\gtrless -\varepsilon_D$: with
 $\varepsilon_r>0$ this is~(ii), and $\rho_c<0$ is~(iii).
 \end{proof}
 
