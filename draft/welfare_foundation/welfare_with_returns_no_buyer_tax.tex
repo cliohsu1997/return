@@ -42,8 +42,9 @@ rate.\footnote{Amazon, \emph{Selling on Amazon pricing},
 amounts on a kept sale and on a returned one. How much of this cost the seller
 can pass on to consumers depends on how purchases and returns respond to the
 price, and on how costly it is for the seller to handle a return. It is not
-clear how the pass-through and the burden borne by sellers and consumers
-change, or whether the platform should refund only part of the tax on a return.
+clear how the pass-through and incidence change when the consumer's
+return decision is taken into account, and whether the platform should
+refund only part of the tax on a return.
 We study this in a competitive market, taking the tax schedule as given. Each
 buyer decides whether to buy and, after learning the fit, whether to keep the
 good, and the tax reaches both decisions only through the price.
@@ -141,13 +142,12 @@ loses $\beta\tau p + h$ on that returned unit.\footnote{Amazon's refund
   keeps the lesser of \$5 or 20 percent of the referral fee, and gives
   the rest back to the seller.  When the \$5 cap does not bind,
   $\beta=0.2$.}  We maintain $p+h>0$, which holds whenever scrap value
-does not exceed list price. With
-return rate $r$, the seller's expected payoff per unit is the effective
-margin
+does not exceed list price. With return rate $r(p)$, the seller's
+expected payoff per unit is the effective margin
 \begin{equation}
-  \mu^{s}
+  \mu^{s}(p,h,\tau,\beta)
   =
-  (1-r)(1-\tau)p - r(\beta\tau p + h).
+  \bigl(1-r(p)\bigr)(1-\tau)p - r(p)(\beta\tau p + h).
   \label{eq:mu-s}
 \end{equation}
 
@@ -179,119 +179,54 @@ quantity it chooses. Aggregating quantity supplied over firms gives
 where $S(\mu^{s})$ is market supply.
 
 %=============================================================================
-\section{A seller-remitted ad valorem tax}
-%=============================================================================
-\label{sec:sales-tax}
-
-At a zero fee, with the equilibrium return rate $r(p)$, the effective
-margin is
-\begin{equation}
-  \mu(p,h)\equiv p-r(p)(p+h).
-  \label{eq:mu-def}
-\end{equation}
-Rewriting \eqref{eq:mu-s} in this margin gives
-\begin{equation}
-  \mu^{s}
-  =
-  \mu(p,h) - \tau p\bigl[1-(1-\beta)r(p)\bigr].
-  \label{eq:mu-s-split}
-\end{equation}
-The term in brackets is the share of the fee the seller expects to pay. That
-share is the whole fee on a kept unit, and the share $\beta$ on a returned
-unit.
-
-Market clearing is $D(p)=S(\mu^{s})$. Tax derivatives are taken at $\tau=0$.
-At that rate, the fee term in
-\eqref{eq:mu-s-split} has derivative zero with respect to $p$, so $\mu_p$ is
-the pre-fee derivative of $\mu(p,h)$. Holding $p$ fixed, one percentage point
-lowers the margin by the expected fee share times the list price,
-\[
-  \mu^{s}_{\tau}=-p\bigl[1-(1-\beta)r(p)\bigr].
-\]
-Write $Q\equiv D(p)$ and $\rho_{\tau}\equiv dp/d\tau$. Then
-\begin{equation}
-  \frac{dCS}{d\tau}
-  =-Q\bigl(1-r\bigr)\rho_{\tau},
-  \qquad
-  \frac{dPS}{d\tau}
-  =Q\Bigl(\mu_p\rho_{\tau}-p\bigl[1-(1-\beta)r\bigr]\Bigr).
-  \label{eq:dCS-dPS-seller}
-\end{equation}
-
-%=============================================================================
 \section{Pass-through}
 %=============================================================================
 
-At a zero rate, $\mu^{s}=\mu(p,h)$, so equilibrium satisfies
-$D(p)=S(\mu(p,h))$. Write $Q\equiv D(p)$. A uniform one-dollar parallel shift
-in every firm's marginal production cost, indexed by $c$, shifts market
-supply at a given effective margin. A one-dollar increase in handling cost
-$h$ lowers $\mu(p,h)$ at a fixed list price. The third shock is the ad
-valorem fee at rate $\tau$.
+We study pass-through of a production-cost increase, a handling-cost
+increase, and the platform's ad valorem tax, and denote these pass-throughs
+by the subscripts $c$, $h$, and $\tau$. For the production-cost increase, we
+consider a parallel increase in marginal production cost, so marginal
+production cost is $C_j'(q_j)+c$. These three shocks change supply but not
+demand, because consumers' purchase and return decisions are affected only by
+the list price $p$. The effect of a unit increase in $c$ on
+supply is equivalent to $\mu^{s}$ falling by one unit, so $S_c=-S'(\mu^{s})$. The handling-cost
+increase affects supply only through $\mu^{s}$, and it reduces the effective
+margin on returned units. An increase in the tax lowers supply through
+reducing the effective margin by $p\bigl[1-r(p)+\beta r(p)\bigr]$.
 
-For production and handling, market clearing is
+Pass-through $\rho_x\equiv dp/dx$, for $x\in\{c,h,\tau\}$, is determined by the
+market clearing condition. Its general form is
 \begin{equation}
-  m(p,x)\equiv D(p)-S(\mu(p,x),x)=0,
-  \qquad x\in\{c,h\}.
+  m(p,x)\equiv D(p)-S\bigl(\mu^{s}(p,x)\bigr).
 \end{equation}
-Differentiating $m=0$ defines pass-through $\rho_x\equiv dp/dx$.
-\begin{equation}
-  \rho_x=-\frac{m_x}{m_p},
-  \label{eq:pass-through-general}
-\end{equation}
-Expanding $m=D-S$ gives
-\begin{align}
-  m_p &= D'(p)-S'(\mu)\,\mu_p,
-  &
-  m_x &= -S'(\mu)\,\mu_x-S_x,
-\end{align}
-hence
+Market clearing requires $m(p,x)=0$. For the production cost and the
+handling cost the tax rate is zero. Differentiating $m=0$ gives
 \begin{equation}
   \rho_x
-  = \frac{-S'(\mu)\,\mu_x-S_x}{S'(\mu)\,\mu_p-D'(p)}.
+  =
+  \frac{-S'(\mu^{s})\,\mu^{s}_{x}}{S'(\mu^{s})\,\mu^{s}_{p}-D'(p)}.
   \label{eq:pass-through}
 \end{equation}
-
-The two shocks differ in which margin moves at fixed $p$ or fixed $\mu$.
-\begin{align}
-  \mu_c &= 0,
-  &
-  S_c &= -S'(\mu),
-  &
-  \mu_h &= -r(p),
-  &
-  S_h &= 0.
-\end{align}
-The production term is $S_c=-S'(\mu)$. A one-dollar parallel rise in every
-firm's marginal cost is equivalent, at fixed $\mu$, to evaluating market
-supply at $\mu-1$. Handling lowers the effective margin at a fixed list
-price. Only returned units incur $h$, so a one-dollar rise lowers that
-margin by $r(p)$. Quantity supplied then falls by $r(p)\,S'(\mu)$, the
-fraction $r(p)$ of the production-cost numerator.
-
-At a zero rate, pass-through of the fee equals
-$p\bigl[1-(1-\beta)r\bigr]$ times production-cost pass-through. The fee
-leaves the buyer's payment and the refund at $p$, so demand remains $D(p)$
-and the return rate remains $r(p)$. At a fixed list price, the fee lowers the
-effective margin by $p\bigl[1-(1-\beta)r\bigr]$ dollars along an unchanged
-$S(\mu)$. Quantity supplied then falls by that amount times $S'(\mu)$. The
-same gap is a production-cost rise of $p\bigl[1-(1-\beta)r\bigr]$ dollars,
-so $\rho_{\tau}=p\bigl[1-(1-\beta)r\bigr]\rho_c$ at $\tau=0$. With no
-returns, $r=0$, so $\beta$ drops out, the factor equals $p$, and
-pass-through is $p$ times unit-cost pass-through \citep{weyl2013pass}.
+Here $\mu^{s}_{p}$ and $\mu^{s}_{x}$ are partial derivatives of
+$\mu^{s}(p,x)$. Because a unit increase in $c$ is equivalent to $\mu^{s}$
+falling by one unit, $\mu^{s}_{c}=-1$. Because the handling-cost increase
+reduces the effective margin on returned units, $\mu^{s}_{h}=-r(p)$. A unit
+increase in $\tau$ lowers $\mu^{s}$ by $p\bigl[1-r(p)+\beta r(p)\bigr]$, so
+its partial is the negative of that amount. Substituting the production-cost
+derivative into \eqref{eq:pass-through} gives production-cost pass-through.
+The handling-cost numerator is the return rate times that production-cost
+numerator. At a zero rate, the tax opens the same excess-demand gap as a
+production-cost increase of $p\bigl[1-r(p)+\beta r(p)\bigr]$ dollars.
 \begin{result}[Pass-through into list price]
 \label{res:pass-through}
-  Production-cost pass-through is
-  \begin{equation}
-    \rho_c
-    = \frac{S'(\mu)}{S'(\mu)\,\mu_p-D'(p)}.
-    \label{eq:rho-c}
-  \end{equation}
-  The remaining shocks connect to this object by
   \begin{align}
+    \rho_c
+    &= \frac{S'(\mu^{s})}{S'(\mu^{s})\,\mu^{s}_{p}-D'(p)},
+    \label{eq:rho-c}
+    \\
     \rho_h &= r(p)\,\rho_c,
     &
-    \rho_{\tau} &= p\bigl[1-(1-\beta)r(p)\bigr]\,\rho_c
+    \rho_{\tau} &= p\bigl[1-r(p)+\beta r(p)\bigr]\,\rho_c
     \quad\text{at }\tau=0.
     \label{eq:rho-links}
   \end{align}
@@ -300,8 +235,8 @@ pass-through is $p$ times unit-cost pass-through \citep{weyl2013pass}.
 \subsection{Elasticity representation}
 
 The same pass-through formulas can be written in list-price elasticities.
-Write $\mu_p\equiv d\mu/dp$ for the response of the effective margin to the
-list price. Demand and supply elasticities with respect to list price are
+Write $\mu_p\equiv\mu^{s}_{p}$ for the response of
+$\mu^{s}(p,h,0,\beta)$ to the list price. Demand and supply elasticities with respect to list price are
 \[
 \varepsilon_D(p)\equiv\frac{p D'(p)}{D(p)}<0,
 \qquad
@@ -611,7 +546,7 @@ derivative by $r$.
 
 Freeze the aggregate return rate at its initial value $r_0\equiv r(p_0)$.
 In that ex-ante economy the effective margin is
-\eqref{eq:mu-def} with $r(p)$ replaced by the constant $r_0$,
+$\mu^{s}(p,h,0,\beta)$ with $r(p)$ replaced by the constant $r_0$,
 \begin{equation}
   \mu^{\mathrm{EA}}(p)\equiv p-r_0(p+h).
   \label{eq:mu-EA}
