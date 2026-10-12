@@ -35,12 +35,13 @@ pdflatex -interaction=nonstopmode main.tex
 
 ### Quick Compilation (No Citation Changes)
 
-If no bibliography changes, run pdflatex twice to stabilize cross-references:
+If no bibliography changes, one `pdflatex` pass is enough:
 
 ```
 pdflatex -interaction=nonstopmode main.tex
-pdflatex -interaction=nonstopmode main.tex
 ```
+
+Run a second pass only when the log warns that labels or cross-references need another run, or when the user asks for it.
 
 ## Auxiliary Files
 
@@ -99,7 +100,7 @@ Or use the Delete tool to remove each file individually.
 
 ### Undefined References
 
-1. Run pdflatex twice to resolve cross-references
+1. Run one more `pdflatex` pass if the log asks for a rerun
 2. Check that all `\label{}` commands are defined before `\ref{}` calls
 
 ### BibTeX Errors

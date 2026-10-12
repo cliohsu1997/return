@@ -28,7 +28,7 @@ This project uses a structured workflow to track tasks and proposals systematica
 
 ## LaTeX: compile after `.tex` edits
 
-Whenever an agent **modifies any `.tex` file under `draft/`** (including `\input` fragments under `draft/figuretable/` and similar), **recompile the affected PDF before finishing the turn**. Default: from `draft/`, run `pdflatex -interaction=nonstopmode main.tex` **twice** so cross-references settle (use the full `pdflatex` → `bibtex` → `pdflatex` ×2 cycle when bibliography inputs changed). For the AER layout in `draft/aer/`, compile from `draft/aer/` with `main.tex` (same bibtex cycle; bibliography is `../references.bib`). On Windows PowerShell, run commands **separately** (do not chain with `&&`).
+Whenever an agent **modifies any `.tex` file under `draft/`** (including `\input` fragments under `draft/figuretable/` and similar), **recompile the affected PDF before finishing the turn**. Default: one `pdflatex -interaction=nonstopmode` pass on the affected `.tex` (from `draft/` for `main.tex`, or the standalone draft folder). Use the full `pdflatex` → `bibtex` → `pdflatex` cycle when bibliography inputs changed. Run a second `pdflatex` only if the log asks for a rerun or the user asks for it. For the AER layout in `draft/aer/`, compile from `draft/aer/` with `main.tex` (bibliography is `../references.bib`). On Windows PowerShell, run commands **separately** (do not chain with `&&`).
 
 ## Folder Organization
 
