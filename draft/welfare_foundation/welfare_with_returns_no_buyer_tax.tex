@@ -186,37 +186,35 @@ We study pass-through of a production-cost increase, a handling-cost
 increase, and the platform's ad valorem tax, and denote these pass-throughs
 by the subscripts $c$, $h$, and $\tau$. For the production-cost increase, we
 consider a parallel increase in marginal production cost, so marginal
-production cost is $C_j'(q_j)+c$. These three shocks change supply but not
-demand, because consumers' purchase and return decisions are affected only by
-the list price $p$. The effect of a unit increase in $c$ on
-supply is equivalent to $\mu^{s}$ falling by one unit, so $S_c=-S'(\mu^{s})$. The handling-cost
-increase affects supply only through $\mu^{s}$, and it reduces the effective
-margin on returned units. An increase in the tax lowers supply through
-reducing the effective margin by $p\bigl[1-r(p)+\beta r(p)\bigr]$.
+production cost is $C_j'(q_j)+c$. These three shocks shift supply but not
+demand, because consumers' purchase and return decisions respond only to
+the list price $p$.
 
 Pass-through $\rho_x\equiv dp/dx$, for $x\in\{c,h,\tau\}$, is determined by the
 market clearing condition. Its general form is
 \begin{equation}
-  m(p,x)\equiv D(p)-S\bigl(\mu^{s}(p,x)\bigr).
+  m(p,x)\equiv D(p)-S\bigl(\mu^{s}(p,x),x\bigr).
 \end{equation}
-Market clearing requires $m(p,x)=0$. For the production cost and the
-handling cost the tax rate is zero. Differentiating $m=0$ gives
+Market clearing requires $m(p,x)=0$. All three pass-throughs are
+evaluated at $\tau=0$. Differentiating $m=0$ gives
 \begin{equation}
   \rho_x
   =
-  \frac{-S'(\mu^{s})\,\mu^{s}_{x}}{S'(\mu^{s})\,\mu^{s}_{p}-D'(p)}.
+  \frac{-S'(\mu^{s})\,\mu^{s}_{x}-S_x}{S'(\mu^{s})\,\mu^{s}_{p}-D'(p)}.
   \label{eq:pass-through}
 \end{equation}
 Here $\mu^{s}_{p}$ and $\mu^{s}_{x}$ are partial derivatives of
-$\mu^{s}(p,x)$. Because a unit increase in $c$ is equivalent to $\mu^{s}$
-falling by one unit, $\mu^{s}_{c}=-1$. Because the handling-cost increase
-reduces the effective margin on returned units, $\mu^{s}_{h}=-r(p)$. A unit
-increase in $\tau$ lowers $\mu^{s}$ by $p\bigl[1-r(p)+\beta r(p)\bigr]$, so
-its partial is the negative of that amount. Substituting the production-cost
-derivative into \eqref{eq:pass-through} gives production-cost pass-through.
-The handling-cost numerator is the return rate times that production-cost
-numerator. At a zero rate, the tax opens the same excess-demand gap as a
-production-cost increase of $p\bigl[1-r(p)+\beta r(p)\bigr]$ dollars.
+$\mu^{s}(p,x)$, and $S_x$ is the direct shift of supply at a fixed
+effective margin. The production-cost shock does not enter $\mu^{s}$, so
+$\mu^{s}_{c}=0$, yet a unit increase in $c$ shifts supply as if $\mu^{s}$
+fell by one unit, so $S_c=-S'(\mu^{s})$. The handling-cost increase raises
+the cost on returned units and reduces $\mu^{s}$ by $r(p)$, so
+$\mu^{s}_{h}=-r(p)$. The tax reduces $\mu^{s}$ by
+$p\bigl[1-r(p)+\beta r(p)\bigr]$ through the tax on kept units and the
+share retained on returned units, so
+$\mu^{s}_{\tau}=-p\bigl[1-r(p)+\beta r(p)\bigr]$. Substituting these into
+\eqref{eq:pass-through} gives the three pass-throughs summarized in the next
+result.
 \begin{result}[Pass-through into list price]
 \label{res:pass-through}
   \begin{align}
@@ -226,8 +224,7 @@ production-cost increase of $p\bigl[1-r(p)+\beta r(p)\bigr]$ dollars.
     \\
     \rho_h &= r(p)\,\rho_c,
     &
-    \rho_{\tau} &= p\bigl[1-r(p)+\beta r(p)\bigr]\,\rho_c
-    \quad\text{at }\tau=0.
+    \rho_{\tau} &= p\bigl[1-r(p)+\beta r(p)\bigr]\,\rho_c.
     \label{eq:rho-links}
   \end{align}
 \end{result}
