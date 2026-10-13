@@ -1,11 +1,7 @@
-## CS/PS figure: mu_p^0 > 0 vs mu_p^0 < 0 (with supply shift / pass-through)
-## Graph 1 (mu_p^0 > 0): supply S(mu^s(p)) is increasing (curved).
-## Graph 2 (mu_p^0 < 0): supply is a CURVED, MONOTONE DECREASING, elastic
-## line; a cost increase shifts it left and the equilibrium price FALLS
-## (negative pass-through). D(p)r(p) is curved in both panels. The shaded
-## CS and PS regions are the CHANGES (Delta CS, Delta PS) between the two
-## equilibria. See
-## conversation_cursor/202610/20261013/revise_cs_ps_supply_shift_figure.md.
+## CS/PS figure: mu_p^0 > 0 vs mu_p^0 < 0 (with a production-cost shift).
+## Left: supply slopes up. Right: supply is hump-shaped because mu_p^0
+## changes sign, and the equilibrium is on the downward branch, so a cost
+## increase lowers p. Shaded regions are absolute CS and PS at baseline p.
 
 script_arg <- grep("^--file=", commandArgs(trailingOnly = FALSE), value = TRUE)
 script_path <- normalizePath(sub("^--file=", "", script_arg), winslash = "/")
@@ -32,46 +28,90 @@ effective_margin <- function(price, return_rate) {
   (1 - r) * price - r * handling_cost
 }
 
-quantity_supplied <- function(price, return_rate, cost = 0) {
-  gap <- effective_margin(price, return_rate) - cost
-  (pmax(gap, 0) / a_supply)^b_supply
+quantity_supplied <- function(
+  price,
+  return_rate,
+  cost = 0,
+  supply_a = a_supply
+) {
+  gap <- effective_margin(
+    price,
+    return_rate
+  ) -
+    cost
+  (
+    pmax(gap, 0) /
+      supply_a
+  )^b_supply
 }
 
-## Curved, monotone DECREASING, elastic supply for the mu_p^0 < 0 panel:
-## Q_s(p) = A * (1 - (p/B)^c), c > 1 for curvature, zero at p = B.
-supply_A <- 1.7
-supply_B <- 0.65
-supply_c <- 1.6
-supply_down <- function(price) {
-  pmax(supply_A * (1 - (price / supply_B)^supply_c), 0)
-}
-## Cost increase shifts this supply LEFT (less Q at each price).
-supply_down_after <- function(price, shift) {
-  pmax(supply_down(price) - shift, 0)
-}
+## PS fill, distinct from the light-gray CS region.
+ps_fill <- rgb(0.68, 0.84, 0.95)
 
-crossing_price <- function(price_grid, supply_fn) {
-  excess <- demand_quantity(price_grid) - supply_fn(price_grid)
-  sign_change <- which(excess[-1] * excess[-length(excess)] <= 0)
-  if (length(sign_change) < 1) return(NA)
-  price_grid[sign_change[1]]
+crossing_price <- function(
+  price_grid,
+  supply_fn,
+  decreasing = FALSE
+) {
+  excess <- demand_quantity(price_grid) -
+    supply_fn(price_grid)
+  sign_change <- which(
+    excess[-1] *
+      excess[-length(excess)] <=
+      0
+  )
+  if (length(sign_change) < 1) {
+    return(NA_real_)
+  }
+  if (!decreasing) {
+    return(price_grid[sign_change[1]])
+  }
+  quantity <- supply_fn(price_grid)
+  supply_diff <- diff(quantity)
+  falling <- sign_change[supply_diff[sign_change] < 0]
+  if (length(falling) < 1) {
+    return(NA_real_)
+  }
+  price_grid[falling[length(falling)]]
 }
 
 ## ---- Drawing ----------------------------------------------------------
-draw_panel <- function(return_rate, panel_title, supply_type = "up",
-                       cost_shift = 0.08, shift_qty = 0.15, label = "") {
+draw_panel <- function(
+  panel_title,
+  return_rate,
+  cost_shift = 0.08,
+  decreasing = FALSE,
+  label = "",
+  supply_a = a_supply
+) {
   price_grid <- seq(0.02, 1.45, length.out = 1500)
 
-  if (supply_type == "up") {
-    supply_fn  <- function(p) quantity_supplied(p, return_rate)
-    supply_new <- function(p) quantity_supplied(p, return_rate, cost = cost_shift)
-  } else {
-    supply_fn  <- supply_down
-    supply_new <- function(p) supply_down_after(p, shift_qty)
+  supply_fn <- function(p) {
+    quantity_supplied(
+      p,
+      return_rate,
+      supply_a = supply_a
+    )
+  }
+  supply_new <- function(p) {
+    quantity_supplied(
+      p,
+      return_rate,
+      cost = cost_shift,
+      supply_a = supply_a
+    )
   }
 
-  price_eq  <- crossing_price(price_grid, supply_fn)
-  price_new <- crossing_price(price_grid, supply_new)
+  price_eq <- crossing_price(
+    price_grid,
+    supply_fn,
+    decreasing = decreasing
+  )
+  price_new <- crossing_price(
+    price_grid,
+    supply_new,
+    decreasing = decreasing
+  )
   cat("  ", label, " equilibrium: p* =", round(price_eq, 3),
       " Q* =", round(demand_quantity(price_eq), 3), "\n")
   cat("  ", label, " after-cost equilibrium: p* =", round(price_new, 3),
@@ -98,16 +138,16 @@ draw_panel <- function(return_rate, panel_title, supply_type = "up",
     col = gray(0.82), border = NA
   )
 
-  ## Absolute PS: area between the baseline supply curve and the price line p*.
-  if (supply_type == "up") {
-    ps_idx <- which(quantity_supply > 0 & price_grid <= price_eq)
-  } else {
-    ps_idx <- which(quantity_supply > 0 & price_grid >= price_eq)
-  }
+  ## PS: left of baseline supply and below p, between zero and p.
+  ps_idx <- which(
+    quantity_supply > 0 &
+      price_grid <= price_eq
+  )
   polygon(
     x = c(quantity_supply[ps_idx], 0),
     y = c(price_grid[ps_idx], price_eq),
-    col = gray(0.55), border = NA
+    col = ps_fill,
+    border = NA
   )
 
   ## Supply curves (blue solid, red dashed after cost), where Q > 0.
@@ -150,7 +190,7 @@ draw_legend <- function() {
     lwd = c(2.5, 2, 2.5, 2.5, NA, NA),
     pch = c(NA, NA, NA, NA, 15, 15),
     pt.cex = c(NA, NA, NA, NA, 1.8, 1.8),
-    col = c("black", gray(0.4), "dodgerblue3", "red", gray(0.82), gray(0.55)),
+    col = c("black", gray(0.4), "dodgerblue3", "red", gray(0.82), ps_fill),
     bty = "n", cex = 1.25
   )
 }
@@ -168,14 +208,22 @@ save_figure <- function() {
   par(mar = c(4.2, 4.2, 4.2, 1), family = "sans", las = 1)
 
   mu_p_diagnostic(return_rate_pos, "mu_p^0 > 0 panel:")
-  draw_panel(return_rate = return_rate_pos,
-             panel_title = expression(mu[p]^0 > 0 ~ "(strong selection channel)"),
-             supply_type = "up", cost_shift = 0.08, label = "mu_p>0")
+  draw_panel(
+    cost_shift = 0.08,
+    label = "mu_p>0",
+    panel_title = expression(mu[p]^0 > 0 ~ "(strong selection channel)"),
+    return_rate = return_rate_pos
+  )
 
   mu_p_diagnostic(return_rate_neg, "mu_p^0 < 0 panel:")
-  draw_panel(return_rate = return_rate_neg,
-             panel_title = expression(mu[p]^0 < 0 ~ "(strong behavioral channel)"),
-             supply_type = "down", shift_qty = 0.15, label = "mu_p<0")
+  draw_panel(
+    cost_shift = 0.03,
+    decreasing = TRUE,
+    label = "mu_p<0",
+    panel_title = expression(mu[p]^0 < 0 ~ "(strong behavioral channel)"),
+    return_rate = return_rate_neg,
+    supply_a = 0.16
+  )
   draw_legend()
 }
 

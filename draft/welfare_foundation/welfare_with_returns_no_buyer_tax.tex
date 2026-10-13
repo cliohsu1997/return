@@ -311,33 +311,52 @@ amplifies both effects.
 
 Having established how prices respond to different shocks, we turn to
 local incidence, defined as the ratio of the change in consumer
-surplus to the change in producer surplus for a small shock $x$. This ratio is the same for
-the three shocks because the changes in consumer surplus and producer
-surplus are both locally linear in how far the supply curve shifts,
-and that distance cancels in the ratio. Let $Q\equiv D(p)$ and
-$r\equiv r(p)$ denote the equilibrium gross quantity and the return
-rate. The effect of a small shock $x$ on consumer surplus is
-$Q(1-r)\rho_x$, which scales with $\rho_x$ and hence with the local supply shift.
-For producer surplus, an increase in production cost has the same
-impact as reducing the effective margin $\mu$ by one unit at a fixed
-$p$, and the change in producer surplus is $Q\,d\mu/dx$, where $d\mu/dx$ scales with the local supply shift.
+surplus to the change in producer surplus for a small shock $x$. Before a
+discussion of the incidence, it is useful to visualize consumer
+surplus and producer surplus in a graph.
+Figure~\ref{fig:cs_ps_mu_sign} shows demand, supply, consumer surplus, and
+producer surplus. Consumer surplus is the area between
+gross demand $D(p)$ and returns $D(p)r(p)$ above $p$. Producer surplus is the
+area to the left of the supply curve and below $p$, between zero and $p$.
 
-Figure~\ref{fig:cs_ps_mu_sign} shows consumer surplus, producer surplus, and
-supply after a production-cost increase, when $\mu_p^0>0$ and when
-$\mu_p^0<0$. Consumer surplus is the area between $D(p)$ and $D(p)r(p)$
-above $p$, and producer surplus is the area between supply and $p$. The
-left panel is a strong selection channel, so $\mu_p^0>0$, supply slopes
-up, and the cost increase raises $p$. The right panel is a strong
-behavioral channel, so $\mu_p^0<0$, supply slopes down, and the cost
-increase lowers $p$.
+The left panel shows the case where the selection channel of the return rate
+is stronger than the behavioral channel, so that $r(p)$ falls with $p$. This
+can be seen from the graph as returns $D(p)r(p)$ taking a smaller share of
+gross demand $D(p)$ at a higher $p$. A higher $p$ screens out consumers with a high return probability,
+so the effective margin improves and the seller supplies more. When the supply
+curve has a positive slope, a cost increase raises $p$.
+
+The right panel shows
+the case where the behavioral channel of the return rate is stronger than the
+selection channel, so that $r(p)$ rises with $p$. This can be seen from the
+graph as returns $D(p)r(p)$ taking a larger share of gross demand $D(p)$ at a
+higher $p$. A higher $p$ raises the return probability of
+purchasers, so the effective margin falls and the seller supplies less. The supply curve
+is hump-shaped. It is not profitable to supply at a high $p$, since the
+return rate is so high that almost any sale leads to a return. It is also
+not profitable to supply at a low $p$, where the low profit margin is not
+enough to cover the production cost. When supply intersects demand on the
+downward-sloping region, a cost increase lowers $p$.
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=0.95\textwidth]{../../figuretable/output/cs_ps_mu_sign.png}
 \caption{Consumer surplus, producer surplus, and supply after a
-production-cost increase, when $\mu_p^0>0$ and when $\mu_p^0<0$.}
+production-cost increase.}
 \label{fig:cs_ps_mu_sign}
 \end{figure}
+
+One observation is that the incidence is the same for the three shocks. The
+changes in consumer surplus and producer surplus are both locally linear in
+how far the supply curve shifts, and that distance cancels in the ratio.
+Let $Q\equiv D(p)$ and
+$r\equiv r(p)$ denote the equilibrium gross quantity and the return
+rate. The effect of a small shock $x$ on consumer surplus is
+$Q(1-r)\rho_x$, which scales with $\rho_x$ and hence with the local supply shift.
+The effect on producer surplus from an inward shift of the supply curve is
+$\int_0^{\mu}(\partial S(z,x)/\partial x)\,dz$.
+The shift enters $\partial S/\partial x$ as a common factor, so the integral is
+proportional to the local supply shift.
 
 Consumer surplus changes by
 \begin{equation}
