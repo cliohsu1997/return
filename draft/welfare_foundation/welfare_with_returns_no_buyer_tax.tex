@@ -146,10 +146,10 @@ loses $\beta\tau p + h$ on that returned unit.\footnote{Amazon's refund
 does not exceed list price. With return rate $r(p)$, the seller's
 expected payoff per unit is the effective margin
 \begin{equation}
-  \mu^{s}(p,h,\tau,\beta)
+  \mu(p,h,\tau,\beta)
   =
   \bigl(1-r(p)\bigr)(1-\tau)p - r(p)(\beta\tau p + h).
-  \label{eq:mu-s}
+  \label{eq:mu}
 \end{equation}
 
 %=============================================================================
@@ -170,14 +170,14 @@ is the direct effect of the price, and therefore
 \end{equation}
 
 Producer surplus is the sum of firm profits
-$\mu^{s} q_j-C_j(q_j)$. A tax or a cost shock affects producer surplus
+$\mu q_j-C_j(q_j)$. A tax or a cost shock affects producer surplus
 only through the effective margin, and by the envelope theorem a
 one-dollar rise in the effective margin raises a firm's profit by the
 quantity it chooses. Aggregating quantity supplied over firms gives
 \begin{equation}
-  \frac{dPS}{d\mu^{s}}=S(\mu^{s}),
+  \frac{dPS}{d\mu}=S(\mu),
 \end{equation}
-where $S(\mu^{s})$ is market supply.
+where $S(\mu)$ is market supply.
 
 %=============================================================================
 \section{Pass-through}
@@ -194,41 +194,43 @@ the list price $p$.
 Pass-through $\rho_x\equiv dp/dx$, for $x\in\{c,h,\tau\}$, is determined by the
 market clearing condition. Its general form is
 \begin{equation}
-  m(p,x)\equiv D(p)-S\bigl(\mu^{s}(p,x),x\bigr).
+  m(p,x)\equiv D(p)-S\bigl(\mu(p,x),x\bigr).
 \end{equation}
 Market clearing requires $m(p,x)=0$. All three pass-throughs are
 evaluated at $\tau=0$. Differentiating $m=0$ gives
 \begin{equation}
   \rho_x
   =
-  \frac{-S'(\mu^{s})\,\mu^{s}_{x}-S_x}{S'(\mu^{s})\,\mu^{s}_{p}-D'(p)}.
+  \frac{-S'(\mu)\,\mu_{x}-S_x}{S'(\mu)\,\mu_{p}-D'(p)}.
   \label{eq:pass-through}
 \end{equation}
-Here $\mu^{s}_{p}$ and $\mu^{s}_{x}$ are partial derivatives of
-$\mu^{s}(p,x)$, and $S_x$ is the direct shift of supply at a fixed
-effective margin. The production-cost shock does not enter $\mu^{s}$, so
-$\mu^{s}_{c}=0$, yet a unit increase in $c$ shifts supply as if $\mu^{s}$
-fell by one unit, so $S_c=-S'(\mu^{s})$. The handling cost and the tax have no
+Here $\mu_{p}$ and $\mu_{x}$ are partial derivatives of
+$\mu(p,x)$, and $S_x$ is the direct shift of supply at a fixed
+effective margin. The production-cost shock does not enter $\mu$, so
+$\mu_{c}=0$, yet a unit increase in $c$ shifts supply as if $\mu$
+fell by one unit, so $S_c=-S'(\mu)$. The handling cost and the tax have no
 direct effect on supply at a fixed effective margin, so $S_h=S_{\tau}=0$.
-The handling cost reduces $\mu^{s}$ by $r(p)$, so $\mu^{s}_{h}=-r(p)$. The
-tax reduces $\mu^{s}$ by $p\bigl[1-r(p)+\beta r(p)\bigr]$, so
-$\mu^{s}_{\tau}=-p\bigl[1-r(p)+\beta r(p)\bigr]$. Substituting these into
+The handling cost reduces the effective margin when a consumer returns the
+product, so $\mu_{h}=-r(p)$. The tax reduces the seller's effective margin
+on each purchase, but a return restores the share $1-\beta$ of that tax, so
+$\mu_{\tau}=-\theta$ where
+$\theta\equiv p\bigl[1-(1-\beta)r(p)\bigr]$. Substituting these into
 \eqref{eq:pass-through} gives the three pass-throughs,
 \begin{equation}
   \rho_c
-  = \frac{S'(\mu^{s})}{S'(\mu^{s})\,\mu^{s}_{p}-D'(p)},
+  = \frac{S'(\mu)}{S'(\mu)\,\mu_{p}-D'(p)},
   \qquad
   \rho_h = r(p)\,\rho_c,
   \qquad
-  \rho_{\tau} = p\bigl[1-r(p)+\beta r(p)\bigr]\,\rho_c,
+  \rho_{\tau} = \theta\,\rho_c,
   \label{eq:rho-links}
 \end{equation}
 In the classical model without returns, a unit tax rate and a unit
 production-cost increase create the same per-dollar wedge, so
 $\rho_{\tau}=p\,\rho_c$ differs from $\rho_c$ only by the ad valorem
 scaling $p$. With returns, each shock shifts the supply curve to the left
-by $S'(\mu^{s})$ times a scale factor. The factor is $1$ for production
-cost, $r$ for handling cost, and $p\bigl[1-(1-\beta)r\bigr]$ for the tax.
+by $S'(\mu)$ times a scale factor. The factor is $1$ for production
+cost, $r$ for handling cost, and $\theta$ for the tax.
 Since supply and demand are locally linear, pass-through depends only
 on how far the supply curve shifts. That shift is proportional to the
 factor, so each pass-through is $\rho_c$ scaled by its factor. Since $\rho_h$ and $\rho_{\tau}$ are scalings of $\rho_c$, below we
@@ -236,7 +238,7 @@ focus on $\rho_c$. The signs of $\rho_h$ and $\rho_{\tau}$ are the same.
 
 These pass-throughs take a more transparent form in price
 elasticities, which also exposes the role of returns. Let
-$\mu_p^0\equiv\mu^{s}_{p}\big|_{\tau=0}$ be the slope of the effective
+$\mu_p^0\equiv\mu_{p}\big|_{\tau=0}$ be the slope of the effective
 margin with respect to price at zero tax. The demand and supply elasticities are
 \[
 \varepsilon_D(p)\equiv\frac{p D'(p)}{D(p)}<0,
@@ -326,17 +328,17 @@ gross demand $D(p)$ at a higher $p$. A higher $p$ screens out consumers with a h
 so the effective margin improves and the seller supplies more. When the supply
 curve has a positive slope, a cost increase raises $p$.
 
-The right panel shows
-the case where the behavioral channel of the return rate is stronger than the
-selection channel, so that $r(p)$ rises with $p$. This can be seen from the
-graph as returns $D(p)r(p)$ taking a larger share of gross demand $D(p)$ at a
-higher $p$. A higher $p$ raises the return probability of
-purchasers, so the effective margin falls and the seller supplies less. The supply curve
-is hump-shaped. It is not profitable to supply at a high $p$, since the
-return rate is so high that almost any sale leads to a return. It is also
-not profitable to supply at a low $p$, where the low profit margin is not
-enough to cover the production cost. When supply intersects demand on the
-downward-sloping region, a cost increase lowers $p$.
+The right panel shows the case where the behavioral channel of the return
+rate is stronger than the selection channel, so that $r(p)$ rises with $p$.
+This can be seen from the graph as returns $D(p)r(p)$ taking a larger share
+of gross demand $D(p)$ at a higher $p$. A higher $p$ raises the return
+probability for purchasers, which lowers the effective margin and reduces
+the quantity the seller supplies. The supply curve is hump-shaped. It is not profitable to
+supply at a high $p$, because the return rate is so high that almost any
+sale leads to a return. It is also not profitable to supply at a low $p$,
+because the low profit margin is not enough to cover the production cost.
+When supply intersects demand on the downward-sloping region, a cost
+increase lowers $p$.
 
 \begin{figure}[htbp]
 \centering
@@ -348,43 +350,32 @@ production-cost increase.}
 
 One observation is that the incidence is the same for the three shocks. The
 changes in consumer surplus and producer surplus are both locally linear in
-how far the supply curve shifts, and that distance cancels in the ratio.
+how far the supply curve shifts, and that magnitude cancels in the ratio.
 Let $Q\equiv D(p)$ and
 $r\equiv r(p)$ denote the equilibrium gross quantity and the return
 rate. The effect of a small shock $x$ on consumer surplus is
-$Q(1-r)\rho_x$, which scales with $\rho_x$ and hence with the local supply shift.
-The effect on producer surplus from an inward shift of the supply curve is
-$\int_0^{\mu}(\partial S(z,x)/\partial x)\,dz$.
-The shift enters $\partial S/\partial x$ as a common factor, so the integral is
-proportional to the local supply shift.
-
-Consumer surplus changes by
-\begin{equation}
-  \frac{dCS}{dx} = -Q(1-r)\rho_x,
-  \label{eq:CSx_incidence}
-\end{equation}
-
-Producer surplus is $PS(\mu,x)=\int_0^{\mu} S(z,x)\,dz$. Differentiating in
-$x$ and using the equilibrium condition $S(\mu,x)=Q$ gives
+$\frac{dCS}{dx}=-Q(1-r)\rho_x$, which scales with $\rho_x$ and hence with
+the local supply shift.
+Producer surplus is the area to the left of the supply curve and below
+$p$. Written in terms of the effective margin $\mu(p,x)$, it is
 \[
-  \frac{dPS}{dx}
-  = Q\frac{d\mu}{dx} + \Sigma_x,
+  PS(p,x)=\int_0^{\mu(p,x)} S(z,x)\,dz.
 \]
-where $\Sigma_x\equiv\int_0^\mu (\partial S(z,x)/\partial x)\,dz$ is the
-direct shift in the area under the supply curve. The chain rule is
-$\frac{d\mu}{dx} = \mu_p^0 \rho_x + \mu_x$, so
+Differentiating in $x$ and using
+$S\bigl(\mu(p,x),x\bigr)=Q$ gives
+$dPS/dx=Q\,d\mu(p,x)/dx+\Sigma_x$, where
+$\Sigma_x\equiv\int_0^{\mu(p,x)}(\partial S(z,x)/\partial x)\,dz$
+is the shift in that area at a fixed margin. Because
+$d\mu(p,x)/dx=\mu_p^0\rho_x+\mu_x$, we have
 \begin{equation}
-  \frac{dPS}{dx} = Q(\mu_p^0 \rho_x + \mu_x) + \Sigma_x.
+  \frac{dPS}{dx} = Q\mu_p^0\rho_x + Q\mu_x + \Sigma_x.
   \label{eq:PSx_incidence}
 \end{equation}
-
-The local incidence ratio is $I_x \equiv (dCS/dx)/(dPS/dx)$. For these three
-shocks,
-\[
-  I_x = \frac{-Q(1-r)\rho_x}{Q(\mu_p^0 \rho_x + \mu_x) + \Sigma_x},
-\]
-and the rows of Table~\ref{tab:incidence_components} reduce to one expression
-in $\rho_c$ and $\mu_p^0$.
+A shock $x$ affects producer surplus in three ways: through the price $p$,
+which moves the effective margin ($Q\mu_p^0\rho_x$); through the effective
+margin directly, holding $p$ fixed ($Q\mu_x$); and through the supply curve,
+shifting it at a fixed margin ($\Sigma_x$). Table~\ref{tab:incidence_components}
+summarizes these three channels for each shock.
 
 \begin{table}[htbp]
 \centering
@@ -394,66 +385,82 @@ Shock $x$ & $\rho_x$ & $\mu_x$ & $\Sigma_x$ & $dCS/dx$ & $dPS/dx$ & $I_x$ \\
 \hline
 Production cost $c$ & $\rho_c$ & $0$ & $-Q$ & $-Q(1-r)\rho_c$ & $Q(\mu_p^0\rho_c - 1)$ & $\displaystyle \frac{(1-r)\rho_c}{1-\mu_p^0\rho_c}$ \\
 Handling cost $h$ & $r\rho_c$ & $-r$ & $0$ & $-Q(1-r)r\rho_c$ & $Qr(\mu_p^0\rho_c - 1)$ & $\displaystyle \frac{(1-r)\rho_c}{1-\mu_p^0\rho_c}$ \\
-Fee $\tau$ & $\theta\rho_c$ & $-\theta$ & $0$ & $-Q(1-r)\theta\rho_c$ & $\theta Q(\mu_p^0\rho_c - 1)$ & $\displaystyle \frac{(1-r)\rho_c}{1-\mu_p^0\rho_c}$ \\
+Tax $\tau$ & $\theta\rho_c$ & $-\theta$ & $0$ & $-Q(1-r)\theta\rho_c$ & $\theta Q(\mu_p^0\rho_c - 1)$ & $\displaystyle \frac{(1-r)\rho_c}{1-\mu_p^0\rho_c}$ \\
 \hline
 \end{tabular}
 \caption{Pass-through, direct effects, surplus changes, and incidence ratio for
-each shock.  The fee column is evaluated at a zero rate, with
-$\theta\equiv p\bigl[1-(1-\beta)r\bigr]$.}
+each shock. The tax column is evaluated at a zero rate.}
 \label{tab:incidence_components}
 \end{table}
 
+Production cost affects producer surplus only through the supply curve. With
+$\partial S(z,c)/\partial c=-S'(z)$,
+\[
+  \int_0^{\mu}\frac{\partial S(z,c)}{\partial c}\,dz
+  =\int_0^{\mu}-S'(z)\,dz
+  =-\bigl(S(\mu)-S(0)\bigr)
+  =-Q.
+\]
+On the other hand, the handling cost and the tax affect producer surplus
+only through the effective margin. As the joint effect of these three
+channels scales producer surplus with the local supply shift, the local
+incidence ratio $I_x \equiv (dCS/dx)/(dPS/dx)$ is the same across the three
+shocks. The next result records this and shows that the common ratio is
+positive.
+
 \begin{result}
 \label{res:incidence-ratio}
-For production cost, handling cost, and the fee, the local incidence
-ratio is identical:
+For production cost, handling cost, and the tax, the local incidence
+ratio is identical and positive.
 \begin{equation}
   I_x = \frac{(1-r)\rho_c}{1-\mu_p^0 \rho_c}>0.
   \label{eq:incidence_result}
 \end{equation}
 \end{result}
+\begin{proof}
+Since $1-r>0$, the ratio is positive if $\rho_c$ has the same sign as
+$1-\mu_p^0\rho_c$. Multiplying the pass-through formula
+\eqref{eq:rho_c_elasticity_final} by $\mu_p^0$ gives
+$\mu_p^0\rho_c=\varepsilon_S/(\varepsilon_S-\varepsilon_D)$.
+This exceeds one if and only if $\varepsilon_S<0$ and $|\varepsilon_S|>-\varepsilon_D$.
+Result~\ref{res:negative-pt} states that this is the necessary and sufficient
+condition for $\rho_c<0$.
+\end{proof}
 
-The common ratio is positive. The denominator $1-\mu_p^0\rho_c$ in \eqref{eq:incidence_result} is the
-per-unit producer loss on a one-dollar cost shock. Before the price
-adjusts, producer surplus falls by $Q$. The list-price change moves the
-effective margin by $\mu_p^0\rho_c$ per unit, and the envelope $dPS/d\mu=Q$
-turns that movement into a recovery of $Q\mu_p^0\rho_c$. The net change in
-producer surplus is $Q(\mu_p^0\rho_c-1)$, so the loss per unit is
-$1-\mu_p^0\rho_c$. The numerator $(1-r)\rho_c$ is the per-unit consumer loss
-on kept units. The incidence ratio compares these two per-unit burdens. When
-the denominator is small and positive, consumers bear most of the loss.
-When the denominator is negative, the recovery exceeds the direct cost and
-producers gain.
+For a unit increase in production cost, the numerator $(1-r)\rho_c$ is the
+per-unit consumer loss on kept units. The denominator $1-\mu_p^0\rho_c$ is
+the per-unit producer loss. Before the price adjusts, the direct effect
+through the supply curve shift lowers producer surplus by $Q$. The indirect price
+pass-through effect moves the effective margin by $\mu_p^0\rho_c$ per unit,
+and the envelope $dPS/d\mu=Q$ restores producer surplus by $Q\mu_p^0\rho_c$.
+Together, the net change in producer surplus is $Q(\mu_p^0\rho_c-1)$.
 
-Producer surplus rises with a production-cost increase exactly when
-pass-through is negative. The recovery factor equals
-$\mu_p^0\rho_c=\varepsilon_S/(\varepsilon_S-\varepsilon_D)$. It exceeds one if
-and only if $\varepsilon_S<0$ and $|\varepsilon_S|>-\varepsilon_D$.
-Result~\ref{res:negative-pt} states that this is the condition for
-$\rho_c<0$.
+The incidence is positive even when pass-through is negative because the
+recovery from the indirect price pass-through effect more than offsets the
+direct loss from the supply curve shift. With negative pass-through, the
+new equilibrium price is lower and quantity demanded is higher. Market clearing requires the new equilibrium
+quantity supplied to exceed the original quantity. The price channel must
+therefore raise quantity supplied by more than the initial decrease caused
+by the inward shift of the supply curve. This implies that the price
+channel raises the effective margin by more than one unit, so the
+denominator is negative when pass-through is negative. The reasoning in
+the opposite direction holds for positive pass-through.
 
-When pass-through is negative, clearing requires the effective margin to
-rise by more than one dollar. A one-dollar cost increase shifts the supply
-curve upward and opens an excess-demand gap at the initial price. Quantity
-supplied increases with the effective margin, so covering the original gap
-requires $\mu$ to rise by one dollar. The price fall also raises quantity
-demanded and opens a further gap. Supply must increase by more than the
-original shift, so the effective margin must rise by more than one dollar.
-Thus $\mu_p^0\rho_c>1$ is the market-clearing requirement when pass-through is
-negative.
-
-The incidence ratio is positive, so consumer and producer surplus move
-together. When $\rho_c<0$, an increase in production cost, handling cost, or
-the fee lowers the list price. Consumer surplus rises, and producer
-surplus rises as well. When $\rho_c>0$, all three shocks reduce both
-surpluses. In the classical model, $\mu_p^0=1$ and pass-through is positive,
-so both surpluses fall.
+The result has a striking implication that a production cost increase can be
+Pareto-improving. The uniformly positive incidence ratio means consumer and
+producer surplus always move together, regardless of the sign of
+pass-through. When pass-through is negative, raising production cost,
+handling cost, or the tax lowers the price, reduces return rates, and saves
+enough handling costs to more than offset the direct resource drain. Both
+consumers and producers benefit. When pass-through is positive, all three
+shocks reduce both surpluses, as in the classical model, where $\mu_p^0=1$
+and $\rho_c>0$.
 
 \subsection{First-order private surplus and deadweight loss}
 \label{sec:DWL}
 
 Private surplus is the sum of consumer and producer surplus,
-$W\equiv CS+PS$. Adding (\ref{eq:CSx_incidence}) and
+$W\equiv CS+PS$. Adding the consumer-surplus derivative $-Q(1-r)\rho_x$ and
 (\ref{eq:PSx_incidence}) gives
 \[
   \frac{dW}{dx}
@@ -491,13 +498,14 @@ drops out. The same cancellation gives $dW/d\tau=-pQ$. One percentage point
 is a wedge of $p$ dollars on every unit, and the price-change terms cancel.
 Platform revenue $G=\tau p Q$ is a transfer. At $\tau=0$,
 $dV/d\tau=dW/d\tau+pQ=0$. A one-dollar cost shock destroys $Q$ dollars of
-private surplus. An infinitesimal fee moves $pQ$ dollars from private
+private surplus. An infinitesimal tax moves $pQ$ dollars from private
 surplus to the platform, so social surplus is unchanged at first order.
+
 
 With returns, the return-rate term in \eqref{eq:DWL_incidence} is generally
 nonzero for a production-cost increase, a handling-cost increase, and the
-the fee. Private surplus then changes through the keep-or-return margin as
-well as through the direct wedge. For the fee, platform revenue is still a
+tax. Private surplus then changes through the keep-or-return margin as
+well as through the direct wedge. For the tax, platform revenue is still a
 transfer. It is added back below, with
 $G=\tau p\bigl[1-(1-\beta)r\bigr]Q$.
 
@@ -523,7 +531,7 @@ where
 \end{equation}
 
 The unit term in $\Lambda$ is the direct wedge on units already sold. For a
-production-cost shock that wedge is one dollar. For the fee it is
+production-cost shock that wedge is one dollar. For the tax it is
 $p\bigl[1-(1-\beta)r\bigr]$ dollars. List-price terms cancel, so the change
 in the number of buyers does not enter at first order. The term
 $r'(p)(p+h)\rho_c$ is the further change on the keep-or-return margin after
@@ -533,7 +541,7 @@ derivative by $r$.
 
 Freeze the aggregate return rate at its initial value $r_0\equiv r(p_0)$.
 In that ex-ante economy the effective margin is
-$\mu^{s}(p,h,0,\beta)$ with $r(p)$ replaced by the constant $r_0$,
+$\mu(p,h,0,\beta)$ with $r(p)$ replaced by the constant $r_0$,
 \begin{equation}
   \mu^{\mathrm{EA}}(p)\equiv p-r_0(p+h).
   \label{eq:mu-EA}
@@ -548,7 +556,7 @@ $dW/dc=-Q\Lambda$,
   =-Q\,r'(p)(p+h)\rho_c.
   \label{eq:DWL-EP}
 \end{equation}
-For the fee at a zero rate, both pieces are multiplied by
+For the tax at a zero rate, both pieces are multiplied by
 $p\bigl[1-(1-\beta)r\bigr]$. The ex-ante piece is
 $-p\bigl[1-(1-\beta)r\bigr]Q$. The ex-post piece is
 $-p\bigl[1-(1-\beta)r\bigr]Q\,r'(p)(p+h)\rho_c$.
@@ -563,7 +571,7 @@ $-p\bigl[1-(1-\beta)r\bigr]Q\,r'(p)(p+h)\rho_c$.
   \end{equation}
   The first term is the ex-ante change on the purchase margin.  The second is
   the ex-post change on the keep-or-return margin.  Each unit switched from keep
-  to return costs $p+h$.  For the fee at a zero rate both terms
+  to return costs $p+h$.  For the tax at a zero rate both terms
   are multiplied by $p\bigl[1-(1-\beta)r\bigr]$.  For a handling shock the two terms become $-Qr$ and
   $-Qr\,r'(p)(p+h)\rho_c$.
   The ex-ante term is the direct cost on units already sold. The change in the
@@ -594,14 +602,14 @@ When $r'(p)>0$ and $\rho_c>0$, the higher list price raises the return rate.
 Extra returns cost $p+h$ each, so the ex-post term amplifies the rectangle
 and $\Lambda>1$. That amplification is larger when $r'(p)$ or $h$ is large.
 
-When $\rho_c<0$, a production-cost, handling-cost, or fee increase
+When $\rho_c<0$, a production-cost, handling-cost, or tax increase
 lowers the list price, so consumer surplus rises. The incidence ratio is
 positive, so producer surplus rises as well, a Pareto improvement. Negative
 pass-through requires $r'(p)>0$, so the fall in the list price lowers the
 return rate. Each unit that switches from return to keep saves $p+h$, and
 that saving more than offsets the direct wedge. Private surplus rises by
 $Q|\Lambda|$ under the cost shock and by
-$p\bigl[1-(1-\beta)r\bigr]Q|\Lambda|$ under the fee, with $\Lambda<0$. The
+$p\bigl[1-(1-\beta)r\bigr]Q|\Lambda|$ under the tax, with $\Lambda<0$. The
 gain is larger when $r'(p)(p+h)\,|\rho_c|$ is large.
 Result~\ref{res:welfare-bias} records these three comparisons.
 \begin{result}[No-return private-surplus bias]
@@ -619,12 +627,12 @@ Result~\ref{res:welfare-bias} records these three comparisons.
   sign---reporting a loss of $Q$ when the shock in fact raises private
   surplus by $Q|\Lambda|$---if and only if $r'(p)>0$ and $\rho_c<0$.
   \end{enumerate}
-  For the fee at a zero rate the same three comparisons apply to the ex-ante
+  For the tax at a zero rate the same three comparisons apply to the ex-ante
   benchmark $-p\bigl[1-(1-\beta)r\bigr]Q$, which holds the return rate fixed.
   A formula that also sets the return rate to zero uses $-pQ$. The two agree
   when $\beta=1$ or $r=0$. When $\beta<1$ and $r>0$, $-pQ$ is a larger private
   loss, because the ex-ante benchmark gives the seller back the share
-  $1-\beta$ of the fee on each returned unit.
+  $1-\beta$ of the tax on each returned unit.
 \end{result}
 
 Social surplus adds back the revenue the platform keeps.
@@ -646,9 +654,9 @@ At a zero rate,
   = -p\bigl[1-(1-\beta)r\bigr]Q\,r'(p)(p+h)\rho_c.
   \label{eq:DWL_V_tax}
 \end{equation}
-An infinitesimal fee raises social surplus when $r'(p)\rho_c<0$ and lowers
+An infinitesimal tax raises social surplus when $r'(p)\rho_c<0$ and lowers
 it when $r'(p)\rho_c>0$. The factor $p\bigl[1-(1-\beta)r\bigr]$ scales this
-change, so a larger share of the fee kept on a refund enlarges the gain or
+change, so a larger share of the tax kept on a refund enlarges the gain or
 the loss.
 \end{result}
 
@@ -657,7 +665,7 @@ the loss.
 \label{sec:global-incidence}
 %=============================================================================
 
-The fee row of Table~\ref{tab:incidence_components} is the derivative at a
+The tax row of Table~\ref{tab:incidence_components} is the derivative at a
 zero rate. It is not the integrand for a finite change in $\tau$.
 
 A finite production-cost or handling-cost change integrates that shock's row
