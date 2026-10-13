@@ -168,11 +168,13 @@ save_figure <- function() {
   par(mar = c(4.2, 4.2, 4.2, 1), family = "sans", las = 1)
 
   mu_p_diagnostic(return_rate_pos, "mu_p^0 > 0 panel:")
-  draw_panel(return_rate = return_rate_pos, panel_title = expression(mu[p]^0 > 0),
+  draw_panel(return_rate = return_rate_pos,
+             panel_title = expression(mu[p]^0 > 0 ~ "(strong selection channel)"),
              supply_type = "up", cost_shift = 0.08, label = "mu_p>0")
 
   mu_p_diagnostic(return_rate_neg, "mu_p^0 < 0 panel:")
-  draw_panel(return_rate = return_rate_neg, panel_title = expression(mu[p]^0 < 0),
+  draw_panel(return_rate = return_rate_neg,
+             panel_title = expression(mu[p]^0 < 0 ~ "(strong behavioral channel)"),
              supply_type = "down", shift_qty = 0.15, label = "mu_p<0")
   draw_legend()
 }

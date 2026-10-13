@@ -208,11 +208,10 @@ Here $\mu^{s}_{p}$ and $\mu^{s}_{x}$ are partial derivatives of
 $\mu^{s}(p,x)$, and $S_x$ is the direct shift of supply at a fixed
 effective margin. The production-cost shock does not enter $\mu^{s}$, so
 $\mu^{s}_{c}=0$, yet a unit increase in $c$ shifts supply as if $\mu^{s}$
-fell by one unit, so $S_c=-S'(\mu^{s})$. The handling-cost increase raises
-the cost on returned units and reduces $\mu^{s}$ by $r(p)$, so
-$\mu^{s}_{h}=-r(p)$. The tax reduces $\mu^{s}$ by
-$p\bigl[1-r(p)+\beta r(p)\bigr]$ through the tax on kept units and the
-share retained on returned units, so
+fell by one unit, so $S_c=-S'(\mu^{s})$. The handling cost and the tax have no
+direct effect on supply at a fixed effective margin, so $S_h=S_{\tau}=0$.
+The handling cost reduces $\mu^{s}$ by $r(p)$, so $\mu^{s}_{h}=-r(p)$. The
+tax reduces $\mu^{s}$ by $p\bigl[1-r(p)+\beta r(p)\bigr]$, so
 $\mu^{s}_{\tau}=-p\bigl[1-r(p)+\beta r(p)\bigr]$. Substituting these into
 \eqref{eq:pass-through} gives the three pass-throughs,
 \begin{equation}
@@ -227,25 +226,18 @@ $\mu^{s}_{\tau}=-p\bigl[1-r(p)+\beta r(p)\bigr]$. Substituting these into
 In the classical model without returns, a unit tax rate and a unit
 production-cost increase create the same per-dollar wedge, so
 $\rho_{\tau}=p\,\rho_c$ differs from $\rho_c$ only by the ad valorem
-scaling $p$. With returns the three shocks shift the supply curve by different
-magnitudes. A unit production-cost increase shifts supply as if the effective
-margin fell by one dollar. A unit handling-cost increase lowers the
-effective margin by one dollar on each returned unit, so by $r$ on
-average. A unit tax rate lowers it by $p\bigl[1-(1-\beta)r\bigr]$
-dollars on average, since the seller recovers the share $1-\beta$ on
-each return.
-Since supply and demand are locally linear, pass-through depends
-only on how far the supply curve shifts. That shift is proportional
-to the per-unit wedge, so each pass-through is $\rho_c$ scaled by
-its per-unit wedge.
-Below we focus on $\rho_c$; the signs of $\rho_h$ and $\rho_{\tau}$
-are the same.
+scaling $p$. With returns, each shock shifts the supply curve to the left
+by $S'(\mu^{s})$ times a scale factor. The factor is $1$ for production
+cost, $r$ for handling cost, and $p\bigl[1-(1-\beta)r\bigr]$ for the tax.
+Since supply and demand are locally linear, pass-through depends only
+on how far the supply curve shifts. That shift is proportional to the
+factor, so each pass-through is $\rho_c$ scaled by its factor. Since $\rho_h$ and $\rho_{\tau}$ are scalings of $\rho_c$, below we
+focus on $\rho_c$. The signs of $\rho_h$ and $\rho_{\tau}$ are the same.
 
-These pass-throughs take a more transparent form in list-price
-elasticities, which also exposes the role of returns. Write
-$\mu_p^0\equiv\mu^{s}_{p}\big|_{\tau=0}$ for the response of the effective
-margin to the list price at the no-tax baseline. Demand and the observed supply
-elasticity with respect to the list price are
+These pass-throughs take a more transparent form in price
+elasticities, which also exposes the role of returns. Let
+$\mu_p^0\equiv\mu^{s}_{p}\big|_{\tau=0}$ be the slope of the effective
+margin with respect to price at zero tax. The demand and supply elasticities are
 \[
 \varepsilon_D(p)\equiv\frac{p D'(p)}{D(p)}<0,
 \qquad
@@ -322,25 +314,28 @@ local incidence, defined as the ratio of the change in consumer
 surplus to the change in producer surplus for a small shock $x$. This ratio is the same for
 the three shocks because the changes in consumer surplus and producer
 surplus are both locally linear in how far the supply curve shifts,
-and that distance cancels in the ratio. Throughout, $Q\equiv D(p)$ and
+and that distance cancels in the ratio. Let $Q\equiv D(p)$ and
 $r\equiv r(p)$ denote the equilibrium gross quantity and the return
-rate. Figure~\ref{fig:cs_ps_mu_sign} illustrates the surplus regions:
-consumer surplus is the area under kept demand $D(p)(1-r)$, i.e.\ the
-area between $D(p)$ and $D(p)r(p)=rQ$ above the list price $p$; producer
-surplus is the area between the supply curve and the price $p$. The two
-panels contrast $\mu_p^0>0$, where supply slopes up and a production-cost
-increase raises $p$, with $\mu_p^0<0$, where supply slopes down and a
-production-cost increase lowers $p$ (negative pass-through).
+rate. The effect of a small shock $x$ on consumer surplus is
+$Q(1-r)\rho_x$, which scales with $\rho_x$ and hence with the local supply shift.
+For producer surplus, an increase in production cost has the same
+impact as reducing the effective margin $\mu$ by one unit at a fixed
+$p$, and the change in producer surplus is $Q\,d\mu/dx$, where $d\mu/dx$ scales with the local supply shift.
+
+Figure~\ref{fig:cs_ps_mu_sign} shows consumer surplus, producer surplus, and
+supply after a production-cost increase, when $\mu_p^0>0$ and when
+$\mu_p^0<0$. Consumer surplus is the area between $D(p)$ and $D(p)r(p)$
+above $p$, and producer surplus is the area between supply and $p$. The
+left panel is a strong selection channel, so $\mu_p^0>0$, supply slopes
+up, and the cost increase raises $p$. The right panel is a strong
+behavioral channel, so $\mu_p^0<0$, supply slopes down, and the cost
+increase lowers $p$.
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=0.95\textwidth]{../../figuretable/output/cs_ps_mu_sign.png}
-\caption{Consumer surplus (CS) and producer surplus (PS) under returns.
-Left: $\mu_p^0>0$ (selection channel dominates), supply slopes up and a
-production-cost increase raises the list price. Right: $\mu_p^0<0$
-(behavioral channel dominates), supply slopes down and a
-production-cost increase lowers the list price. $Q=D(p)$ is gross
-quantity, $rQ=D(p)r(p)$ is returned quantity, and $p$ is the list price.}
+\caption{Consumer surplus, producer surplus, and supply after a
+production-cost increase, when $\mu_p^0>0$ and when $\mu_p^0<0$.}
 \label{fig:cs_ps_mu_sign}
 \end{figure}
 

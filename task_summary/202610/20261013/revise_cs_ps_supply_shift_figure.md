@@ -67,10 +67,20 @@ line for visual clarity rather than the full backward-bending curve.)
 
 - Added `\usepackage{graphicx}` to the preamble of
   `draft/welfare_foundation/welfare_with_returns_no_buyer_tax.tex`.
-- Inserted the figure in the **Local incidence** section, right after the
-  `Q\equiv D(p)` and `r\equiv r(p)` definition, with a caption explaining
-  CS, PS, `Q`, `rQ`, `p`, and the two regimes (`mu_p^0 > 0` vs `mu_p^0 < 0`).
-  Label: `fig:cs_ps_mu_sign`.
+- In the **Local incidence** section, the figure now has its own
+  dedicated paragraph (separate from the `Q\equiv D(p)` / `r\equiv r(p)`
+  definition) that: (i) defines CS as the area under kept demand
+  `D(p)(1-r)` between `D(p)` and `D(p)r(p)=rQ` above `p`, and PS as the
+  area between supply and `p`; (ii) explains how `D(p)r(p)` and the kept
+  share `1-r(p)` connect to the selection and behavioral channels; (iii)
+  explains the supply slope — when the behavioral channel is strong,
+  `mu_p^0<0`, a higher price lowers the effective margin and contracts
+  supply, so supply slopes down and a production-cost increase lowers
+  `p` (negative pass-through); when `mu_p^0>0` supply slopes up and the
+  cost increase raises `p`.
+- Panel titles updated to `mu_p^0 > 0 (strong selection channel)` and
+  `mu_p^0 < 0 (strong behavioral channel)`. Caption uses the same
+  labels. Label: `fig:cs_ps_mu_sign`.
 
 ## Supply shift direction (mu_p^0 < 0 panel)
 
