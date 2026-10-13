@@ -2,6 +2,7 @@
 
 \usepackage{amsmath,amssymb}
 \usepackage{amsthm}
+\usepackage{graphicx}
 \usepackage[margin=1in]{geometry}
 \usepackage{hyperref}
 \usepackage[round,authoryear]{natbib}
@@ -316,10 +317,34 @@ amplifies both effects.
 \section{Local incidence}
 %=============================================================================
 
-Production cost, handling cost, and the fee reach consumers only
-through the list price. Throughout, $Q\equiv D(p)$ and $r\equiv r(p)$ denote
-equilibrium gross quantity and the return rate, and $\rho_x\equiv dp/dx$.
-Consumer surplus therefore changes by
+Having established how prices respond to different shocks, we turn to
+local incidence, defined as the ratio of the change in consumer
+surplus to the change in producer surplus for a small shock $x$. This ratio is the same for
+the three shocks because the changes in consumer surplus and producer
+surplus are both locally linear in how far the supply curve shifts,
+and that distance cancels in the ratio. Throughout, $Q\equiv D(p)$ and
+$r\equiv r(p)$ denote the equilibrium gross quantity and the return
+rate. Figure~\ref{fig:cs_ps_mu_sign} illustrates the surplus regions:
+consumer surplus is the area under kept demand $D(p)(1-r)$, i.e.\ the
+area between $D(p)$ and $D(p)r(p)=rQ$ above the list price $p$; producer
+surplus is the area between the supply curve and the price $p$. The two
+panels contrast $\mu_p^0>0$, where supply slopes up and a production-cost
+increase raises $p$, with $\mu_p^0<0$, where supply slopes down and a
+production-cost increase lowers $p$ (negative pass-through).
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.95\textwidth]{../../figuretable/output/cs_ps_mu_sign.png}
+\caption{Consumer surplus (CS) and producer surplus (PS) under returns.
+Left: $\mu_p^0>0$ (selection channel dominates), supply slopes up and a
+production-cost increase raises the list price. Right: $\mu_p^0<0$
+(behavioral channel dominates), supply slopes down and a
+production-cost increase lowers the list price. $Q=D(p)$ is gross
+quantity, $rQ=D(p)r(p)$ is returned quantity, and $p$ is the list price.}
+\label{fig:cs_ps_mu_sign}
+\end{figure}
+
+Consumer surplus changes by
 \begin{equation}
   \frac{dCS}{dx} = -Q(1-r)\rho_x,
   \label{eq:CSx_incidence}
@@ -374,25 +399,7 @@ ratio is identical:
 \end{equation}
 \end{result}
 
-Handling cost and the fee shift the effective margin by a scalar, and that
-scalar multiplies the changes in consumer and producer surplus. At a fixed
-list price a production-cost shock leaves $\mu$ unchanged. It shifts supply,
-and the producer loss before the price adjusts is $Q$, the same loss as a
-one-dollar fall in the effective margin. Handling shifts $\mu$ down by $r$
-dollars. At a zero rate the fee shifts it down by
-$p\bigl[1-(1-\beta)r\bigr]$ dollars. For a small shock that direct shift
-scales pass-through, so $\rho_h=r\rho_c$ and
-$\rho_{\tau}=p\bigl[1-(1-\beta)r\bigr]\rho_c$ at $\tau=0$.
-
-The scalar cancels in the incidence ratio. How far the equilibrium moves
-depends on the shock. How the movement splits between consumers and
-producers depends on the local slopes of demand and supply and on
-$\mu_p^0$.\footnote{Consumers lose or gain through the list-price change
-$\rho_x$. Producers' receipt moves with the effective margin, which changes
-by $\mu_p^0\rho_x$ when the list price changes by $\rho_x$. Thus $\mu_p^0$
-governs how much of each dollar of $p$ feeds into producer surplus.}
-
-The denominator $1-\mu_p^0\rho_c$ in \eqref{eq:incidence_result} is the
+The common ratio is positive. The denominator $1-\mu_p^0\rho_c$ in \eqref{eq:incidence_result} is the
 per-unit producer loss on a one-dollar cost shock. Before the price
 adjusts, producer surplus falls by $Q$. The list-price change moves the
 effective margin by $\mu_p^0\rho_c$ per unit, and the envelope $dPS/d\mu=Q$
