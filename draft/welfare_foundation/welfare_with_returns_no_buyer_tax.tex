@@ -359,34 +359,36 @@ production-cost increase.}
 \label{fig:cs_ps_mu_sign}
 \end{figure}
 
-One observation is that the incidence is the same for the three shocks. The
-changes in consumer surplus and producer surplus are both locally linear in
-how far the supply curve shifts, and that magnitude cancels in the ratio.
-Let $Q\equiv D(p)$ and
+One observation is that the incidence is the same for the three shocks.
+Intuitively, at a fixed price each shock reduces quantity supplied as if the
+effective margin had fallen. The three falls differ only in magnitude. Supply and demand are locally
+linear, so pass-through and the quantity change depend only on that magnitude.
+The changes in consumer surplus and producer surplus are both locally linear
+in how far the supply curve shifts, and that magnitude cancels in the ratio.
+Mathematically, let $Q\equiv D(p)$ and
 $r\equiv r(p)$ denote the equilibrium gross quantity and the return
-rate. The effect of a small shock $x$ on consumer surplus is
-$\frac{dCS}{dx}=-Q(1-r)\rho_x$, which scales with $\rho_x$ and hence with
-the local supply shift.
-Producer surplus is the area to the left of the supply curve and below
-$p$. Written in terms of the effective margin $\mu(p,x)$, it is
+rate. A shock $x$ affects consumer surplus only through the price, so
+$\frac{dCS}{dx}=-Q(1-r)\rho_x$. This change scales with $\rho_x$ and hence
+with the local supply shift.
+Producer surplus, written as a function of $x$, is
 \[
-  PS(p,x)=\int_0^{\mu(p,x)} S(z,x)\,dz.
+  PS(x)=\int_0^{\mu(p(x),x)} S(z,x)\,dz.
 \]
+A shock $x$ affects producer surplus through pass-through, through the direct
+effect on the effective margin, holding the price fixed, and through a shift
+of the supply curve, holding the price and the margin fixed.
 Differentiating in $x$ and using
-$S\bigl(\mu(p,x),x\bigr)=Q$ gives
-$dPS/dx=Q\,d\mu(p,x)/dx+\Sigma_x$, where
-$\Sigma_x\equiv\int_0^{\mu(p,x)}(\partial S(z,x)/\partial x)\,dz$
-is the shift in that area at a fixed margin. Because
-$d\mu(p,x)/dx=\mu_p^0\rho_x+\mu_x$, we have
+$S\bigl(\mu(p(x),x),x\bigr)=Q$ gives
+$dPS/dx=Q\,d\mu(p(x),x)/dx+\Sigma_x$, where
+$\Sigma_x\equiv\int_0^{\mu(p(x),x)}(\partial S(z,x)/\partial x)\,dz$.
+Because $d\mu(p(x),x)/dx=\mu_p^0\rho_x+\mu_x$,
 \begin{equation}
   \frac{dPS}{dx} = Q\mu_p^0\rho_x + Q\mu_x + \Sigma_x.
   \label{eq:PSx_incidence}
 \end{equation}
-A shock $x$ affects producer surplus in three ways: through the price $p$,
-which moves the effective margin ($Q\mu_p^0\rho_x$); through the effective
-margin directly, holding $p$ fixed ($Q\mu_x$); and through the supply curve,
-shifting it at a fixed margin ($\Sigma_x$). Table~\ref{tab:incidence_components}
-summarizes these three channels for each shock.
+Table~\ref{tab:incidence_components} shows that the joint effect of these three
+channels is also proportional to pass-through and to the degree of the local
+supply shift.
 
 \begin{table}[htbp]
 \centering
@@ -399,25 +401,12 @@ Handling cost $h$ & $r\rho_c$ & $-r$ & $0$ & $-Q(1-r)r\rho_c$ & $Qr(\mu_p^0\rho_
 Tax $\tau$ & $\theta\rho_c$ & $-\theta$ & $0$ & $-Q(1-r)\theta\rho_c$ & $\theta Q(\mu_p^0\rho_c - 1)$ & $\displaystyle \frac{(1-r)\rho_c}{1-\mu_p^0\rho_c}$ \\
 \hline
 \end{tabular}
-\caption{Pass-through, direct effects, surplus changes, and incidence ratio for
-each shock. The tax column is evaluated at a zero rate.}
+\caption{Local incidence for each shock. The tax column is evaluated at a zero rate.}
 \label{tab:incidence_components}
 \end{table}
 
-Production cost affects producer surplus only through the supply curve. With
-$\partial S(z,c)/\partial c=-S'(z)$,
-\[
-  \int_0^{\mu}\frac{\partial S(z,c)}{\partial c}\,dz
-  =\int_0^{\mu}-S'(z)\,dz
-  =-\bigl(S(\mu)-S(0)\bigr)
-  =-Q.
-\]
-On the other hand, the handling cost and the tax affect producer surplus
-only through the effective margin. As the joint effect of these three
-channels scales producer surplus with the local supply shift, the local
-incidence ratio $I_x \equiv (dCS/dx)/(dPS/dx)$ is the same across the three
-shocks. The next result records this and shows that the common ratio is
-positive.
+The local incidence ratio is therefore the same for the three shocks. The next
+result formalizes this and shows that the common ratio is positive.
 
 \begin{result}
 \label{res:incidence-ratio}
