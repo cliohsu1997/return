@@ -457,6 +457,164 @@ shocks reduce both surpluses, as in the classical model, where $\mu_p^0=1$
 and $\rho_c>0$.
 
 %=============================================================================
+\subsection{First-order effect on joint surplus and ex-ante ex-post decomposition}
+\label{sec:private-surplus}
+%=============================================================================
+
+A unit rise in production cost changes joint surplus, the sum of consumer and
+producer surplus $W\equiv CS+PS$, by $-Q\Lambda$. The factor $\Lambda$ adjusts
+quantity sold for the return rate's response to price. This change is the sum
+of the consumer and producer changes in
+Table~\ref{tab:incidence_components}, namely $-Q(1-r)\rho_c$ and
+$Q(\mu_p^0\rho_c-1)$. Adding them gives
+\begin{equation}
+  \frac{dW}{dc}
+  =
+  -Q(1-r)\rho_c+Q(\mu_p^0\rho_c-1).
+  \label{eq:dW-c-raw}
+\end{equation}
+At a zero tax, $\mu_p^0=1-r(p)-(p+h)r'(p)$. The kept-unit pieces
+$(1-r)\rho_c$ therefore cancel, and what remains is
+\begin{equation}
+  \frac{dW}{dc}=-Q\Lambda,
+  \qquad
+  \Lambda\equiv 1+r'(p)(p+h)\rho_c.
+  \label{eq:Lambda}
+\end{equation}
+The one in $\Lambda$ is the loss from units that are no longer sold. The term
+$r'(p)(p+h)\rho_c$ is the further change from units switched between keep and
+return. The induced change in the return rate is $r'(p)\rho_c$, and each
+switched unit costs $p+h$. That second term is zero when returns are shut
+down, so with returns it is a first-order effect that the classical formula
+misses.
+
+Handling cost and the tax scale this change by $r$ and by $\theta$. In the same
+table, their consumer and producer changes equal the production-cost changes
+multiplied by those factors. Both pieces of $\Lambda$ therefore scale, and
+\begin{equation}
+  \frac{dW}{dh}=-Qr\Lambda,
+  \qquad
+  \frac{dW}{d\tau}=-Q\theta\Lambda.
+  \label{eq:dW-shocks}
+\end{equation}
+
+Freezing the return rate separates an ex-ante rectangle on the purchase margin
+from an ex-post term on the keep-or-return margin. With $r'(p)=0$, the factor
+$\Lambda$ equals one. A unit production-cost increase then shifts supply up by
+one dollar at every quantity. The price changes in consumer and producer
+surplus cancel, and joint surplus falls by the rectangle of height one and
+width $Q$. Handling cost leaves the rectangle $Qr$, and the tax leaves the
+rectangle $Q\theta$. The gap between the actual change $-Q\Lambda$ and this
+rectangle is the ex-post term $-Q\,r'(p)(p+h)\rho_c$, scaled by $r$ or by
+$\theta$ for the other two shocks.
+\begin{result}[Ex-ante and ex-post decomposition]
+\label{res:EA-EP}
+\begin{align}
+  \frac{dW}{dc}
+  &=
+  -Q-Q\,r'(p)(p+h)\rho_c,
+  \label{eq:dW-decomp} \\
+  \frac{dW}{dh}
+  &=
+  -Qr-Qr\,r'(p)(p+h)\rho_c, \\
+  \frac{dW}{d\tau}
+  &=
+  -Q\theta-Q\theta\,r'(p)(p+h)\rho_c.
+\end{align}
+The first term in each line is the ex-ante rectangle. The second term is the
+ex-post return-rate term.
+\end{result}
+
+The ex-post term offsets the rectangle, amplifies it, or reverses the change
+in joint surplus, and these cases line up with the sign of pass-through.
+Offsetting means $0<\Lambda<1$, amplification means $\Lambda>1$, and reversal
+means $\Lambda<0$. Because $dW/dc=-Q\Lambda$, joint surplus falls when
+$\Lambda$ is positive and rises when $\Lambda$ is negative.
+Result~\ref{res:incidence-ratio} says that the two surpluses move together.
+They fall when $\rho_c>0$ and rise when $\rho_c<0$, so $\Lambda$ has the same
+sign as $\rho_c$.
+
+When the selection channel dominates, the ex-post term offsets part of the
+rectangle and cannot reverse the loss. Then $r'(p)<0$, so $\mu_p^0>0$.
+Strictly increasing marginal cost gives $\rho_c>0$, and the list price rises.
+The higher price screens out frequent returners, so the return rate falls.
+The product $r'(p)\rho_c$ is therefore negative, and the ex-post term
+$-Q\,r'(p)(p+h)\rho_c$ is a gain. The gain cuts the loss from $Q$ to $Q\Lambda$
+with $0<\Lambda<1$. Both surpluses still fall, so the gain cannot overturn the
+loss.
+
+When the behavioral channel dominates and pass-through is positive, the
+ex-post term amplifies the rectangle. Then $r'(p)>0$ and $\rho_c>0$. The list
+price rises and the return rate rises with it, so $r'(p)(p+h)\rho_c$ is
+positive, $\Lambda>1$, and $-Q\,r'(p)(p+h)\rho_c$ is a further loss. The added
+loss is larger when $r'(p)$ or $h$ is larger.
+
+When pass-through is negative, the ex-post term reverses the rectangle and
+joint surplus rises. Result~\ref{res:negative-pt} requires $\mu_p^0<0$ and
+therefore $r'(p)>0$. The list price falls and the return rate falls with it,
+so $-Q\,r'(p)(p+h)\rho_c$ is again a gain. Because $\Lambda<0$, the gain is
+larger than the rectangle $Q$, and joint surplus rises by $Q|\Lambda|$. The
+rise is larger when $r'(p)(p+h)|\rho_c|$ is larger.
+
+The no-return formula keeps the rectangle and omits the ex-post term, so its
+entire error is that omission. For a production-cost increase it reports a
+loss of $Q$ against the true change $-Q\Lambda$. The report overestimates the
+loss when selection dominates, because $Q\Lambda$ is smaller than $Q$ and
+still positive. It underestimates the loss when the behavioral channel
+dominates and pass-through is positive, because $Q\Lambda$ exceeds $Q$. It
+has the wrong sign when pass-through is negative, because joint surplus rises
+by $Q|\Lambda|$.
+\begin{result}[No-return joint-surplus bias]
+\label{res:welfare-bias}
+Consider a unit production-cost increase. Relative to the returns-adjusted
+change $dW/dc=-Q\Lambda$, the ex-ante formula $dW/dc=-Q$
+\begin{enumerate}
+\item[(i)] overestimates the joint-surplus loss if and only if $r'(p)<0$,
+in which case $0<\Lambda<1$;
+\item[(ii)] underestimates the joint-surplus loss if and only if
+$r'(p)>0$ and $\rho_c>0$, in which case $\Lambda>1$;
+\item[(iii)] overestimates the joint-surplus loss with the wrong sign if
+and only if $r'(p)>0$ and $\rho_c<0$. It reports a loss of $Q$ when joint
+surplus rises by $Q|\Lambda|$.
+\end{enumerate}
+For a handling-cost shock the same cuts compare $-Qr\Lambda$ with $-Qr$. For
+the tax they compare $-Q\theta\Lambda$ with $-Q\theta$.
+\end{result}
+\begin{proof}
+The three cases above give the direct statements. For the converses, suppose
+$0<\Lambda<1$. Then $\rho_c>0$ and $r'(p)\rho_c<0$, so $r'(p)<0$. This is
+(i). Suppose $\Lambda>1$. Then $r'(p)\rho_c>0$, and $\Lambda>0$ forces
+$\rho_c>0$, so $r'(p)>0$. This is (ii). Suppose $\Lambda<0$. Then
+$\rho_c<0$ and therefore $r'(p)>0$. This is (iii). The tax multiplies the
+true change and the benchmark by $\theta$. This factor is positive because
+$\theta=p[1-(1-\beta)r]\geq p(1-r)$ and $1-r>0$. The handling-cost comparison
+is unchanged when $r>0$.
+\end{proof}
+
+For the tax, adding platform revenue cancels the ex-ante rectangle and leaves
+the ex-post term as the social effect. The platform receives $\tau p$ on a
+kept sale and $\beta\tau p$ on a return, so revenue is $G=\tau\theta Q$.
+Social surplus is $V\equiv W+G$. At a zero tax, marginal revenue equals the
+rectangle $\theta Q$. Adding it to $dW/d\tau=-Q\theta\Lambda$ gives
+\begin{equation}
+  \frac{dV}{d\tau}
+  =
+  -Q\theta\Lambda+\theta Q
+  =
+  -Q\theta\,r'(p)(p+h)\rho_c.
+  \label{eq:dV}
+\end{equation}
+The surviving term is $\theta$ times the ex-post term. Without returns,
+$r'(p)=0$ and $\theta=p$, so an infinitesimal tax only transfers $pQ$ to the
+platform and social surplus does not change. With returns, society gains when
+the tax lowers the return rate and loses when the tax raises it. The gain
+occurs when selection dominates and when pass-through is negative. The loss
+occurs when the behavioral channel dominates and pass-through is positive.
+At a zero tax, $\beta$ does not enter $\rho_c$, because the retained share
+multiplies $\tau$ in the effective margin. A larger $\beta$ raises $\theta$
+and scales the social effect. The sign does not change.
+
+%=============================================================================
 \section{Global Incidence}
 \label{sec:global-incidence}
 %=============================================================================
