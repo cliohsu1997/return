@@ -14,5 +14,5 @@ We first evaluate a seller-remitted tax, the usual tax on a platform. The buyer 
 
 1. How do a production-cost increase and a handling-cost increase pass through into the price, and how does the seller tax compare with those two costs? The price change then changes whether the buyer keeps the good. How is the burden split between buyer and seller?
 2. A tax usually creates a wedge between the seller's production cost and the buyer's willingness to pay, so some efficient trades do not happen. The usual loss is too few purchases. With returns the tax changes the price, and that price change creates a wedge on the purchase margin and a wedge on the return margin. Is the loss mostly on purchases or mostly on returns, and is it too many or too few purchases, or too many or too few returns?
-3. What changes if returns are ignored and the same fee is treated as an ordinary tax? With returns, only part of the fee comes back.
-4. Is it good for society to let the platform keep part of the fee when the good is refunded?
+3. What changes if returns are ignored and the same fee is treated as an ordinary tax? how is the result of pass through and incidecne differs form the case 
+4. Is it good for society to let the platform keep part of the fee when the good is returned? ON amazon, when return happens, platfrom still charge 20% of the refund administration fee, IS IT OKAY FOR HTE PLATFORM FORM THE WELFARE PERSPECTIVE TO CHARGE THIS FEE EVNE IF THE TRANSACITON IS NOT SUCCESSFUL? 

@@ -396,6 +396,58 @@ non-salient taxes.
     \end{itemize}
 \end{itemize}
 
+%=============================================================================
+\section{Product returns and pricing}
+%=============================================================================
+
+\subsection{Optimal Pricing and Product Returns (Cakmak, Bronnenberg, \& Klein, 2022)}
+
+\citet{cakmak_optimal_2022} study how a seller should set prices when buyers can return the good and the return rate depends on the price. The claims below are the paper's own estimates. The descriptive price--return link is in Section~4, the elasticity gap is in Section~7.3, and the equilibrium changes are in Table~6 and the conclusion.
+
+\begin{itemize}
+    \item \textbf{Background.}
+    Online apparel is often returned. Historical retail return rates are about 5 to 8 percent. A typical e-commerce rate is 15 to 20 percent, and apparel can reach about 40 percent. The authors cite industry figures that only 20 to 40 percent of return costs are recovered. Sellers often price from orders. Orders are observed before the return is linked to the sale, and the usual pricing formula treats the sale as final.
+
+    \item \textbf{Setting.}
+    Sellers on a large Turkish apparel marketplace set prices. Buyers order, then keep or return. The seller pays a constant handling cost on each return. The structural exercise is the top 100 women's jeans, which account for the products in the pricing table. Five apparel categories appear in the descriptive evidence. Prices in the raw data are rescaled.
+
+    \item \textbf{Problem.}
+    How should the multi-product pricing rule change once kept sales and return costs replace orders, and which of the two forces dominates the price?
+
+    \item \textbf{Methodology.}
+    Transactions and clickstreams cover 105 days from June 29 to October 11, 2019, about 1.4 million users and 1.3 million transactions. Orders are a multinomial logit with observed consideration sets from five days of clickstream data. Buyers without clickstreams get simulated consideration sets drawn from that distribution. Returns are a binary logit. The price coefficient is identified from within-product price changes, which the authors attribute to seller experiments and sales campaigns, together with variation in choice sets. Marginal cost is recovered from the standard pricing rule under the assumption that observed prices ignore returns. The counterfactual then resolves a Nash equilibrium in which every firm uses the returns-adjusted rule. A one-firm best response, holding rivals' prices fixed, gives similar price changes.
+
+    \item \textbf{Perspective.}
+    The paper approaches the problem from the \textit{seller's} perspective, evaluating \textit{profit and equilibrium prices}. Welfare is not the object. The return policy and the handling cost are taken as given.
+
+    \item \textbf{Return rates differ across products and rise with price.}
+    \begin{itemize}
+        \item \textbf{Key result:} Among the 100 best-selling women's jeans, product return rates run from about 5 percent to about 46 percent. The market-level average in that category is about 21 percent unweighted and about 17 percent weighted by sales. A kernel regression of return rates on a product's price relative to its category mean shows a higher return rate for more expensive products. Over the interquartile range of those price deviations, the return rate is about 30 percent higher, or 4.7 percentage points. The same 30 percent gap appears when the regression uses only within-product price changes. In logits with product and week fixed effects, the price coefficient on the return decision stays positive. Better-rated products are less likely to be returned. The most common stated reason for a return is a size mismatch.
+        \item \textbf{Intuition:} A higher price raises the money the buyer gives up by keeping a poor fit, so the buyer is more willing to send the good back. The within-product evidence is the cleaner check, because the comparison is the same product sold at a lower price and at a higher price. Confirmation bias would have predicted the opposite sign. In these data the mismatch-cost effect is the one that shows up.
+    \end{itemize}
+
+    \item \textbf{Kept sales are more price-elastic than orders.}
+    \begin{itemize}
+        \item \textbf{Key result:} For the same 100 products, the elasticity of sales net of returns is 1 to 6 percent larger than the elasticity of orders, and about 2 percent larger on average. The introduction states the average gap as 2.1 percent.
+        \item \textbf{Intuition:} Kept sales equal orders times \(1-r(p)\). The elasticity of that product is the elasticity of orders minus \(p\,r'(p)/(1-r(p))\). With \(r'(p)>0\), the second term is positive and is subtracted, so kept sales respond more to price. Under their logit return function the add-on simplifies to \(\alpha_r\, r(p)\, p\), where \(\alpha_r\) is the price coefficient in the return logit. An elasticity fit to orders alone misses it and is biased toward zero.
+    \end{itemize}
+
+    \item \textbf{The handling-cost force dominates the markup force.}
+    \begin{itemize}
+        \item \textbf{Key result:} The introduction and conclusion report a counterfactual with handling cost set to zero. Equilibrium prices then fall by 1.5 percent on average, and by as much as 5 percent. That fall is only the extra elasticity. With the marketplace's handling cost, the conclusion reports prices higher by 2.1 percent on average. The authors decompose that into a 1.5 percent smaller markup and a 3.6 percent higher effective marginal cost. Table~6 is the with-cost equilibrium, at the firm level. The two large sellers, with 53 and 36 products, raise prices by 1.3 percent and 1.8 percent. Smaller sellers rise by more. The largest entry in the table is 7.9 percent, for a one-product seller. Products with higher baseline return rates get larger price increases.
+        \item \textbf{Intuition:} Revenue is earned on kept units. A higher price cuts orders and raises the return rate, so the quantity that earns the markup is more elastic and the optimal markup shrinks. That is the downward force, and it is the whole effect when handling cost is zero. Handling cost is the upward force. If a share \(r\) of orders comes back, each kept sale is bundled with \(r/(1-r)\) returns. That bundle sits next to production cost. A higher baseline return rate loads more handling cost onto each kept sale, which is why the price increase in Figure~6 rises with the product's return rate. In this market the bundled-cost term is the larger of the two.
+    \end{itemize}
+
+    \item \textbf{Orders and total return costs fall. Profit rises a little.}
+    \begin{itemize}
+        \item \textbf{Key result:} In Table~6, initial orders fall by 3.2 percent and 2.4 percent at the two large sellers, and by as much as 22 percent at a one-product seller. Total return cost falls by 3.3 percent and 2.8 percent at the two large sellers. Profit rises by 0.42 percent and 0.40 percent there, and by 0.4 percent to 6.3 percent across all sellers in the table. The authors' sales-weighted average profit gain is 0.6 percent. Weighted return rates fall by 0.15 percent and 0.39 percent at the two large sellers and rise at the smaller ones, by as much as 1.7 percent.
+        \item \textbf{Intuition:} The higher price cuts orders, and that is what cuts the number of units shipped back. The return rate on the orders that remain can move either way. At the large sellers the mix shifts toward products with lower return rates, so their weighted return rate falls. At small sellers the higher price raises the return rate on the products they have. Either way, fewer orders mean less handling cost in total, and that cost saving is what raises profit.
+    \end{itemize}
+
+    \item \textbf{Managerial implication.}
+    A seller who prices from orders understates how elastic kept sales are. With handling costs shut off, the correction is a lower price, by about 1.5 percent in this market. Once the marketplace's handling costs are counted, the correction is a higher price, fewer orders, and lower total return cost. The two large sellers move by about 1 to 2 percent on price and about 0.4 percent on profit. The large price and profit changes in the table belong to sellers with one or two products.
+\end{itemize}
+
 \bibliographystyle{plainnat}
 \bibliography{references}
 
