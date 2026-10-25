@@ -470,7 +470,7 @@ Table~\ref{tab:incidence_components},
   -Q(1-r)\rho_c+Q(\mu_p^0\rho_c-1).
   \label{eq:dW-c-raw}
 \end{equation}
-At a zero tax, $\mu_p^0=1-r(p)-(p+h)r'(p)$. Substituting this slope
+At a zero tax, $\mu_p^0=1-r(p)-(p+h)r'(p)$. Substituting $\mu_p^0$
 into \eqref{eq:dW-c-raw} gives
 \begin{equation}
   \frac{dW}{dc}=-Q\Lambda,
@@ -478,10 +478,27 @@ into \eqref{eq:dW-c-raw} gives
   \Lambda\equiv 1+r'(p)(p+h)\rho_c.
   \label{eq:Lambda}
 \end{equation}
-The one in $\Lambda$ is the resource cost on units that continue to sell.
-The second term is the cost of units that switch between keep and return.
-The price moves the return rate by $r'(p)\rho_c$, and each switched unit
-costs $p+h$. Without returns, the change reduces to $-Q$.
+Pass-through of the production cost changes the price by $\rho_c$ on each
+unit. Without returns, buyers lose $\rho_c$ on each of the $Q$ units sold, so
+they lose $Q\rho_c$. Sellers gain $\rho_c$ on each of those units, so they
+gain the same amount. These price effects cancel, so what remains is the
+direct effect of the higher production cost on the equilibrium quantity
+sold, a change of $-Q$.
+
+With returns, hold fixed who buys and who returns. Buyers then lose
+$\rho_c$ on each kept unit and lose nothing on a returned unit, because the
+refund equals the price. There are $Q(1-r)$ kept units, so buyers lose
+$Q(1-r)\rho_c$. Sellers gain the same amount on those units. These price
+effects still cancel, and the direct loss $-Q$ remains.
+
+A change in who buys or who returns does not add a further consumer loss. A
+buyer who stops buying had zero surplus. The higher price lowers the value
+of keeping, but the buyer who switches from keep to return was indifferent
+between the two, so the switch offsets that lower value. The cost of the
+switch falls on the seller, who gives up the price $p$ and pays the handling
+cost $h$. The price moves the return rate by $r'(p)\rho_c$, so these
+switches change joint surplus by $-Q(p+h)r'(p)\rho_c$. Added to the direct
+loss $-Q$, the change is $-Q\Lambda$.
 
 Handling cost and the tax scale this change by $r$ and by $\theta$. In
 Table~\ref{tab:incidence_components}, their consumer and producer changes are
