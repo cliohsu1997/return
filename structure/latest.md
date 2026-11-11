@@ -13,7 +13,9 @@ return/
 ├── task_summary/         → Task summaries and deliverables
 ├── progress/             → Active and completed task tracking (latest.md)
 ├── structure/            → Project structure documentation (this file)
+├── papers/               → Literature PDFs copied from RSI/draft/papers
 ├── draft/                → LaTeX manuscript and paper drafts
+│   ├── complementarity/  → Substitutes and complements under returns
 │   ├── incidence/        → Incidence / pass-through notes (baseline and under returns)
 │   ├── institution/      → Institutional notes (e.g. VAT reverse charge)
 │   ├── literature/       → Literature PDFs and notes stored with draft materials
@@ -49,7 +51,9 @@ return/
 
 | Folder | Purpose |
 |--------|---------|
+| `papers/` | Literature PDFs copied from `RSI/draft/papers` |
 | `draft/` | LaTeX draft (`main.tex`, sections, bibliography) |
+| `draft/complementarity/` | Substitutes and complements under product returns |
 | `draft/incidence/` | Incidence / pass-through notes (Weyl–Fabinger baseline; under product returns) |
 | `draft/institution/` | Institutional notes (VAT reverse charge and related remittance institutions) |
 | `draft/literature/` | Literature PDFs and notes stored alongside draft materials |

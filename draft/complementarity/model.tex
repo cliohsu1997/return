@@ -16,16 +16,16 @@
 A seller offers two goods separately and as a bundle. The price of good
 $i\in\{1,2\}$ is $p_i$. The bundle price is $p_B$, with
 $\max(p_1,p_2)\le p_B\le p_1+p_2$. Selling each good alone and selling the
-two together is mixed bundling. Producing a unit costs $c$. A returned unit
-costs $h$ to handle.
+two together is mixed bundling. Producing good $i$ costs $c_i$. Handling a
+return of good $i$ costs the seller $h_i$.
 
-A unit mass of consumers each value good $i$ at $v_i$. The values are drawn
-independently from the uniform distribution on $[0,1]$ and are known before
-buying. Good $i$ works with probability $\alpha_i$. Let $W_i$ be the indicator
-that equals $1$ when good $i$ works and equals $0$ otherwise, so
+There is a unit mass of consumers. Each consumer values good $i$ at $v_i$.
+The values are drawn independently from the uniform distribution on $[0,1]$
+and are known before buying. Let $W_i$ be the indicator that equals $1$ when
+good $i$ works and equals $0$ otherwise. Good $i$ works with probability
 $\alpha_i=\mathbb{E}[W_i]$. If good $i$ works, the consumer receives $v_i$.
-If it does not work, the value is zero. The values are independent of
-$(W_1,W_2)$.
+If it does not work, the consumer receives zero. The values are independent
+of $(W_1,W_2)$.
 
 Let $\sigma_i=\sqrt{\alpha_i(1-\alpha_i)}$ be the standard deviation of
 $W_i$, and let $\rho$ be the correlation of $W_1$ and $W_2$. The probability
@@ -36,29 +36,61 @@ $2$ works is $\alpha_2(1-\alpha_1)-\rho\sigma_1\sigma_2$. The probability
 that neither works is $(1-\alpha_1)(1-\alpha_2)+\rho\sigma_1\sigma_2$. These
 four probabilities are positive. When $\rho=0$ the goods work independently.
 A positive $\rho$ means the goods are complements. They tend to work
-together. A negative $\rho$ means the goods are substitutes. One tends to
-work when the other does not.
+together. A negative $\rho$ means the goods are substitutes. One good tends
+to work when the other does not.
 
 The consumer buys good $1$, good $2$, the bundle, or nothing, before learning
-$(W_1,W_2)$. A consumer who keeps only good $i$ pays $p_i$. A consumer who
-keeps both pays $p_B$. A consumer who keeps nothing pays nothing. The payoff
-from buying good $i$ alone is $\max(W_i v_i-p_i,\,0)$. The payoff from buying
-the bundle is
+$(W_1,W_2)$. Returning a good costs the consumer nothing. A consumer who keeps
+only good $i$ pays $p_i$. A consumer who keeps both pays $p_B$. A consumer
+who keeps nothing pays nothing. The payoff from buying good $i$ alone is
+$\max(W_i v_i-p_i,\,0)$. The payoff from buying the bundle is
 \[
   \max\bigl(W_1 v_1+W_2 v_2-p_B,\;
   W_1 v_1-p_1,\;
   W_2 v_2-p_2,\;
   0\bigr).
 \]
-The consumer chooses the option with the highest expected payoff, and buys
-nothing when that payoff is negative.
+The consumer chooses the option with the highest expected payoff. The
+consumer buys nothing when that payoff is negative.
 
-Buying the bundle and then keeping one good is bracketing. It is more
-attractive when $\rho$ is low, because one good then works when the other
-does not.
+The seller collects the price the consumer pays. The seller pays $c_i$ for
+each good $i$ the consumer buys and $h_i$ for each good $i$ the consumer
+returns. Profit is expected revenue minus these costs.
 
-The seller pays $c$ for each good the consumer buys and $h$ for each good the
-consumer returns, and collects the payment above. Profit is the expected
-value of revenue minus these costs.
+\section{Consumer's decision}
+
+The expected payoff from buying nothing is zero. The expected payoff from
+buying good $1$ is
+\[
+  \mathrm{EV}^{1}(v_1,v_2,p_1,p_2)=\alpha_1\max(v_1-p_1,\,0).
+\]
+The expected payoff from buying good $2$ is
+\[
+  \mathrm{EV}^{2}(v_1,v_2,p_1,p_2)=\alpha_2\max(v_2-p_2,\,0).
+\]
+
+Suppose the consumer buys the bundle and only good $i$ works. Keeping both
+pays $v_i-p_B$. This is no larger than $v_i-p_i$, because $p_B\ge p_i$.
+The good that does not work has value zero, and returning it pays nothing.
+Returning both goods pays zero. The payoff in this state is therefore $\max(v_i-p_i,\,0)$. If
+neither good works, the payoff is zero. The expected payoff from the bundle
+is
+\begin{align*}
+  \mathrm{EV}^{b}(v_1,v_2,p_1,p_2)
+  ={}&(\alpha_1\alpha_2+\rho\sigma_1\sigma_2)
+  \max(v_1+v_2-p_B,\,v_1-p_1,\,v_2-p_2,\,0)\\
+  &+(\alpha_1(1-\alpha_2)-\rho\sigma_1\sigma_2)\max(v_1-p_1,\,0)\\
+  &+(\alpha_2(1-\alpha_1)-\rho\sigma_1\sigma_2)\max(v_2-p_2,\,0).
+\end{align*}
+
+In every state, the bundle payoff is at least the payoff from having bought
+only one good. The consumer can keep that good and return the other when it
+works and is worth the price, and can return every good otherwise. When both
+goods work, keeping both can pay more. Thus
+$\mathrm{EV}^{b}(v_1,v_2,p_1,p_2)$ is at least as large as
+$\mathrm{EV}^{1}(v_1,v_2,p_1,p_2)$ and at least as large as
+$\mathrm{EV}^{2}(v_1,v_2,p_1,p_2)$. The consumer buys the bundle when
+$\mathrm{EV}^{b}(v_1,v_2,p_1,p_2)$ is positive. The consumer buys nothing
+when that value is zero.
 
 \end{document}
