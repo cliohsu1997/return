@@ -1,0 +1,38 @@
+\documentclass[12pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+
+\title{Literature Review: Bundling}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\subsection{Commodity Bundling and the Burden of Monopoly (Adams \& Yellen, 1976)}
+
+\begin{itemize}
+  \item \textbf{Background:} Firms often sell goods in packages (season tickets, fixed-price dinners, software suites). Standard explanations for bundling appeal to cost savings in production, transactions, or information, or to complementarity in consumption. This paper asks whether bundling can be profitable when neither force is present, and what its welfare consequences are.
+  \item \textbf{Setting:} A two-good monopolist. Marginal cost of each good is constant ($c_1$, $c_2$) and the bundle costs the sum ($c_B = c_1 + c_2$), so there are no cost economies from bundling. Each consumer buys at most one unit of each good (indivisibility) and values the bundle at the sum of separate reservation prices ($r_B = r_1 + r_2$), so there is no consumption complementarity. The monopolist knows the joint distribution of $(r_1, r_2)$ over consumers, not each individual's values.
+  \item \textbf{Problem:} Which of three pricing strategies maximizes profit: \textit{pure components} (separate prices $p_1, p_2$), \textit{pure bundling} (only the package at $p_B$), or \textit{mixed bundling} (both, at $(p_1, p_2, p_B)$ with the bundle at a discount)? And does the resulting allocation violate Pareto efficiency?
+  \item \textbf{Methodology:} Theory. Consumers are points in $(r_1, r_2)$ space and each strategy partitions that space into purchase regions. Profit and welfare are compared across strategies through discrete-consumer examples and simulations over continuous distributions (joint normal, uniform, chi-square).
+  \item \textbf{Perspective:} The paper evaluates \textit{profit} across strategies and then \textit{social welfare} (Pareto efficiency and deadweight loss), not consumer surplus alone. It explicitly compares monopoly outcomes to first-best allocation and to first-degree price discrimination.
+  \item Main results and intuition:
+    \begin{itemize}
+      \item \textbf{Bundling as surplus extraction (the central idea):} Bundling can be profitable purely as a \textit{self-selection device} that sorts consumers by reservation price, with no cost or complementarity motive. The benchmark for judging any strategy is first-degree (Pigouvian) price discrimination, which satisfies three conditions: \textit{Complete Extraction} (no consumer surplus left), \textit{Exclusion} (no one consumes a good whose cost exceeds their value), and \textit{Inclusion} (everyone whose value exceeds cost consumes). Each real strategy violates some conditions; profit depends on which violations it tolerates.
+      \item \textbf{Pure components violates Inclusion:} A single monopoly price on each good leaves some consumers with value above cost unserved (the standard deadweight-loss margin). It never violates Exclusion, because price is never set below cost.
+      \item \textbf{Pure bundling violates Exclusion:} Selling only the package forces some consumers to take a component they value below its cost (a consumer who wants only good 1 must pay for good 2 too). Its strength is that, when reservation prices for the bundle are similar across consumers even though component values differ, the bundle demand curve is more elastic than component demand curves, so the monopolist extracts surplus and includes more consumers. The more negligible costs are relative to reservation prices, the smaller the Exclusion problem, so pure bundling does best when marginal cost is low.
+      \item \textbf{Mixed bundling dominates pure bundling when Exclusion binds:} Adding separate component markets lets the monopolist peel off consumers who value one good above cost but the other below cost. Whenever the pure-bundling equilibrium serves someone a component below cost, mixed bundling is strictly more profitable: it keeps those consumers in the market for the good they value while no longer forcing the unwanted component on them.
+      \item \textbf{Negative correlation helps bundling:} Mixed bundling beats pure components most clearly when valuations are negatively correlated across goods. Negative correlation creates consumers with extreme tastes (high value for one good, low for the other) who keep large surplus under separate pricing. A bundle at a discount captures these consumers, while high separate prices extract surplus from those who want only one good. The bundle also lets the monopolist \textit{raise} component prices without driving single-good buyers out entirely, because the bundle catches them.
+      \item \textbf{Cost determines whether components win:} When marginal cost is high, Exclusion matters most and pure components (which never sells below cost) can beat both bundling strategies. When cost is low relative to values, bundling's superior extraction and inclusion dominate. Across their simulations, some form of bundling was more profitable than pure components under a wide range of cost and taste configurations.
+      \item \textbf{Welfare: two distinct inefficiencies:} \textit{Allocative inefficiency}---output can be too high \textit{or} too low, unlike simple monopoly which only underproduces. Bundling can oversupply a good when its shadow price inside the bundle is below cost. \textit{Distributive inefficiency}---goods go to the wrong people, so unexploited gains from trade remain among consumers (a consumer who values good 1 highly may not get it while one who values it less does). Neither first-degree discrimination nor simple monopoly creates distributive inefficiency.
+      \item \textbf{Banning bundling can backfire (second best):} Because one distortion (monopoly) already exists, removing a second distortion (bundling) need not raise welfare. In their examples the deadweight loss under mixed bundling can be \textit{lower} than under pure components, so prohibiting bundling while leaving monopoly power in place can make society worse off. The remedy is to attack monopoly itself, not the bundling conduct.
+      \item \textbf{Bundling breaks standard welfare tools:} Consumer--producer surplus analysis (the Harberger triangle) can miss the loss entirely. If consumers are uniformly distributed along $r_1 + r_2 = 1$ and the monopolist pure-bundles at $p_B = 1$, everyone buys, the bundle demand curve is perfectly inelastic, and the measured deadweight-loss triangle vanishes---yet resources are misallocated because some consumers take a component they value below cost. Hedonic price indices are similarly compromised, because a buyer of a bundled quality improvement need not value it.
+    \end{itemize}
+  \item \textbf{Managerial / policy implication:} For a multiproduct seller, bundling is a way to approximate price discrimination without knowing individual reservation prices and without violating price-discrimination law, since every customer faces the same menu. For a policymaker, conduct remedies that ban bundling are unreliable; only structural remedies that reduce monopoly power reliably raise welfare.
+\end{itemize}
+
+\end{document}
