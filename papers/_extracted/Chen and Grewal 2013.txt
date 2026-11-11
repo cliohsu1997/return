@@ -1,0 +1,1902 @@
+--- PAGE 1 ---
+Competing in a supply chain via full-refund and no-refund customer
+returns policies
+Jing Chen n, Ravneet Grewal
+Faculty of Business and Economics, University of Winnipeg, 515 Portage Avenue, Winnipeg, Canada R3B 2E9
+article info
+Article history:
+Received 22 September 2012
+Accepted 6 July 2013
+Available online 18 July 2013
+Keywords:
+Hotelling model
+Customer returns policy
+Pricing
+Game equilibrium
+abstract
+In this paper, we address the problem in which a manufacturer in a supply chain supplies a product to
+two competing retailers. Both retailers, facing customer returns, must decide on prices for the product.
+The manufacturer is a Stackelberg leader in the supply chain and the two retailers decide prices after the
+manufacturer announces the wholesale price. One retailer is well established, offering a full-refund
+policy, while the other retailer is a new entrant into the market place. The new entrant retailer needs to
+decide whether to implement a full-refund policy or a no-refund policy, in order to compete with the
+well-established retailer under two games: Nash game and Stackelberg game. We show that customer
+returns policies can be used as competing marketing strategies. Numerical examples are included to
+illustrate the major results of the paper. The analysis generates insights about how the degree to which
+the customer accepts the no-refund product affects the new entrant retailer ′s choice of customer returns
+policies in a competitive market.
+& 2013 Elsevier B.V. All rights reserved.
+1. Introduction
+Handling customer returns has become critical as the volume
+of products ﬂowing back from customers increases ( Guide et al.,
+2006). Using survey data, the National Retail Federation reports
+the value of products being returned as around an estimated $194
+billion, or 8.12% of total sales, in 2010. Toktay (2003) states that
+customer return rates range from 5% to 9% of sales for most
+retailers. Mostard and Teunter (2006) report that for catalog
+retailers, return rates on fashion items “are generally around
+35– 40%, but can be as high as 75% ” of sales. When product returns
+occur, handling the returned merchandise can impose substantial
+costs on retailers. This has a substantive impact on retailer pro ﬁt-
+ability, because returned products are used products to some
+extent and are expected to have lower value than new products.
+Chen and Bell (2009) show that a retailer who fails to account for
+customer returns in price and ordering decisions will suffer
+excessive inventory and a signi ﬁcant drop in pro ﬁtability. In fact,
+Lawton (2008) points out that it is estimated that the U.S.
+electronics industry spent $13.8 billion to repackage, restock, and
+resell returned products in 2007 . Among returned products, only
+about 5% of returns were because a product was truly defective.
+Instead, most consumers reject products for other reasons, such as
+the device being too confusing to use. Grimaldi (2008) notes that it
+is estimated that managing product returns costs U.S. companies
+over $200 billion annually.
+Usually, a retailer receives returned products from customers
+through a speciﬁed customer returns policy. In practice, there is no
+law that requires any retail merchant to have a speci ﬁc refund,
+credit or exchange policy. Customer returns policies can range
+from “100% money back guarantees ” to “no refunds or exchanges ”
+whatsoever. Several studies have examined how customer returns
+policies affect the customer purchase and return decision, and the
+consequences for retailers ' proﬁts (for example, Che, 1996; Davis
+et al., 1995, 1998). In practice, many retail stores in North America
+implement a liberal customer returns policy, because refusing to
+accept the returned product is viewed as risking offending a
+customer and losing a stream of revenue from repeated sales
+(Davis et al., 1995 ). The Hudson 's Bay Company, Sears, and
+Wal-Mart, for example, offer full refund policies for most of the
+products they sell. For customers, of course, a full-refund customer
+returns policy can eliminate the risk of having to keep an
+unwanted product.
+Some retailers, however, do not allow customer to return
+products. Many retailers conduct periodic “sales” with an “all sales
+are ﬁ
+nal” statement (essentially, the no-refund case), implying that
+the price mark-down is accompanied by a loss of product return
+ability. It is common that Wal-Mart and Hudson 's Bay do not
+provide refunds for food or fashion product effectively disallowing
+the return of these products. When retailers provide no-refund
+policies, they can save costs of having to keep returned product
+and costs that are associated with handling customer returns.
+Contents lists available at ScienceDirect
+journal homepage: www.elsevier.com/locate/ijpe
+Int. J. Production Economics
+0925-5273/$ - see front matter & 2013 Elsevier B.V. All rights reserved.
+http://dx.doi.org/10.1016/j.ijpe.2013.07.005
+n Corresponding author. Tel.: +1 204 7891425; fax: +1 204 774 8057.
+E-mail address: je.chen@uwinnipeg.ca (J. Chen) .
+Int. J. Production Economics 146 (2013) 246 – 258
+
+--- PAGE 2 ---
+The customers, on the other hand, will take the risk of keeping
+mismatched product.
+As compared to products with a full-refund policy, customers
+perceive the same products sold with a no-refund policy as being
+of lower value, due to the risk of having to keep the unwanted
+products ( Heiman et al., 2005 ). In practice, some retailers offer a
+full-refund policy to customers on products sold at a higher price
+in regular stores, while offering no-returns policy on ﬁnal sales at a
+lower price in “factory outlets. ” Davis et al. (1995) provide a
+rationale for higher prices for returnable products: “money back
+guarantees may allow the retailer to charge higher prices because
+the reduction in the risk from the products being a poor match
+with their tastes may increase a consumer 's willingness to pay. ”
+In this paper, we model that customers perceived values are low
+for the product with a no-refund policy and are high for the
+product with a full-refund policy.
+In this paper, we examine how a new entrant retailer can use a
+full-refund returns policy or a no-refund returns policy to compete
+with an established retailer who offers a full-refund customer
+returns policy. The existing literature suggests that in a duopoly
+setting money-back guarantees (MBGs) can be utilized by ﬁrms
+with a low likelihood of returns to signal product quality to unin-
+formed customers (for example, Moorthy and Srinivasan, 1995 ;
+McWilliams, 2012). McWilliams (2012) shows that MBGs can help
+the low-quality retailer in a duopoly model. In addition, some
+products, such as durable products, have a relatively stable returns
+rate, due to the nature of the products, suggesting that their returns
+have little relation to the brand of the retailer. These previous
+studies, however, do not include the conditions under which a
+retailer can use customer returns policies as a means of competition
+with other retailers. In our paper, we will identify these conditions.
+2. Literature review
+In the literature, returns are typically assumed to be a propor-
+tion of product sold (sales), which implies that if more items are
+sold, more products will be returned from customers (for example,
+Vlachos and Dekker, 2003 ). To mitigate the negative impact of
+customer returns on the retailer 'sp r o ﬁt, some research has
+factored customer returns into pricing and ordering decisions.
+Based on the assumptions that a ﬁxed percentage of sold products
+will be returned and that products can be resold at most once in a
+single period, Vlachos and Dekker (2003) investigate optimization
+of order quantities for a newsvendor-style problem in which the
+retail price is exogenous. Chen and Bell (2009) examine the impact
+of customer returns on a ﬁrm's pricing and ordering decisions as
+well as on the ﬁrm'sp r oﬁt. Xiao et al. (2010) consider a manu-
+facturer and a retailer supply chain where the retailer faces
+customer returns. They focus on the coordination mechanism in
+a supply chain considering product returns. Su (2009) studies the
+impact of returns polices (full-refund and partial-refund) on
+supply chain performance and proposes a mechanism to coordi-
+nate the supply chain in the presence of customer returns.
+Shulman et al. (2009) describe how consumer purchase and return
+decisions are affected by a seller 's pricing and restocking fee policy.
+They identify conditions under which it is (or is not) optimal to
+provide product ﬁt information to consumers. None of these
+papers considers how a retailer can use different returns policies
+as a competitive marketing strategy.
+Although accepting customer returns reduces the retailer 's
+proﬁt, it provides a valuable service to customers. Not accepting
+customer returns saves the retailer expenditure, but customers
+take the risk of keeping unwanted product after the purchase.
+Offering different customer returns policies allows retailers to
+differentiate themselves and discriminate prices, such that the
+retailer can charge a higher price for a product that allows for
+return but a lower price for the same product without the
+possibility of return. Customers also have different preferences
+on customer returns policies. Some customers, who are price
+sensitive, prefer a low price at the expense of a no-refund policy,
+while other customers prefer a liberal return policy, even if the
+product price is higher. Heiman et al. (2005) show empirically that
+a product with a more lenient customer returns policy results in a
+higher value, as perceived by customers. Chen and Bell (2012)
+consider the options of a retailer selling product through a
+returnable channel, a non-returnable channel, or a dual channel
+consisting of a returnable channel and a nonreturnable channel.
+They show that using different returns policies to segment a
+market and differentiate prices is a good way to enhance the
+ﬁrm's pro ﬁt, while serving distinct customer bases with various
+needs and purchase preferences. Making use of the results from
+the empirical study ( Heiman et al., 2005 ) and as in Chen and Bell
+(2012), in this paper, we suggest that customers perceive a higher
+value for the product with a full-refund policy and a lower value
+for the product with a no-refund policy. We investigate how a new
+entrant retailer can implement a full-refund customer returns
+policy or a no-refund customer returns policy to compete with an
+established retailer offering a full-refund customer returns policy,
+in a supply chain setting.
+In many industries, retailers distribute substitutable products and
+compete in markets that are limited in extent. The game-theoretic
+models are typically based on the assumption that demand depends
+on price. The nature of this dependence, however, varies from model
+to model (for example, Savaskan and Van Wassenhove, 2006 ).
+Anderson et al. (1996) p r o v i d ear e v i e wo ft h ea n a l y t i c a ll i t e r a t u r e
+on product and price c ompetition between ﬁrms.
+Economists have been interested in differentiated markets since
+t h el a t e1 9 2 0 s .Hotelling (1929)uses a linear city model, while Salop
+(1979) uses a city circular model (Spatial model) to formulate the
+problem in which a ﬁrm competes directly only with its neighbor.
+They assume that conditional on neighbor prices,ﬂuctuations in prices
+of more distant competitors have no effect on own sales. Consumer
+preferences determine the location of the ideal product. Spatial models
+are now widely used in marketing and economics research literature
+(for example, Bakos, 1991; Pinkse et al., 2002 ; Chun and Kim 2005 ;
+Moorthy and Zhang, 2007). Hauser and Shugan (1983)examine how
+an existing brand should respond to a competitive new product entry.
+In the present paper, we use Hotelling's linear city model to model two
+competing retailers facing customer returns at locations a unit
+distance apart. The model of two competing retailers locating a unit
+distance apart has been widely used in the marketing and economics
+literature. Both retailers are supplied by a single manufacturer. One is
+an established retailer offering a full-refund policy, while the other is a
+new entrant. We examine under what conditions a full-refund policy
+or a no-refund policy is a good option for the new entrant retailer, and
+whether Nash game or Stackelberg game is a better equilibrium
+between the two competing retailers, from the perspectives of the
+new entrant retailer and as well as those of the manufacturer; we also
+consider supply chain efﬁciency.
+For the duopoly competing model in the presence of customer
+returns, Shulman et al. (201 1)examine the pricing and restocking fee
+decisions of two competingﬁrms facing customer returns and selling
+horizontally differentiated products to customers who have hetero-
+g e n e o u st a s t e sf o rt h ep r o d u c t s .T h e yﬁnd that in the partial refund
+returns policies, restocking fees are more severe when consumers are
+less informed about productﬁt and when consumers place a greater
+importance on how well products ' attributes ﬁt with their prefer-
+ences. McWilliams (2012)has developed a model for high- and low-
+quality retailers. He ﬁnds that the low-quality retailer gains, while
+the high-quality retailer loses, relative to cases in which MBGs are
+not offered, when consumer's reservation price is heterogeneous.
+J. Chen, R. Grewal / Int. J. Production Economics 146 (2013) 246 –258 247
+
+--- PAGE 3 ---
+Here, we will examine the conditions under which a new
+entrant into the market can use a full-refund or a no-refund
+returns policy to compete with an existing retailer with a full-
+refund policy, if both retailers sell the same products. We model
+product value as higher with a full-refund policy and lower with a
+no-refund policy. Our two competing ﬁrms differentiate by loca-
+tion. We focus on the role of returns policies as a marketing
+competitive advantage.
+Therefore, the paper contributes to the literature by examining
+the impact of customer returns, returns policies, and customer
+purchasing behavior on pricing decisions in a supply chain that
+consists of two competing retailers and a manufacturer. The paper
+also generates new insights into the consideration of customer
+returns policies for a new entrant in a competitive market.
+The rest of the paper is organized as follows. In the following
+section, the model framework and assumptions are described.
+Sections 4 and 5 discuss the case in which the new entrant
+competes with a full-refund policy and with a no-refund policy,
+respectively. Section 6 identiﬁes the boundary conditions for when
+the entrant retailer should use a full-refund policy or use a no-
+refund policy as a competing marketing strategy. Numerical
+examples are given in Section 7 . Conclusions and the direction of
+future work are given in Section 8 . All proofs are in the Appendix.
+3. Model framework and assumptions
+In this paper, we consider a supply chain in which a manufacturer
+supplies a product to two competing retailers. Both retailers, facing
+customer returns, must set prices for the product. The manufacturer is
+a Stackelberg leader in the supply chain and the two retailers decide
+prices after the manufacturer announces the wholesale price. One
+retailer is established, and offers a full-refund returns policy, while the
+other retailer is a new entrant. The new entrant retailer needs to
+decide which customer returns policy, full-refund or no-refund, should
+be implemented as a marketing strategy to compete with the
+established retailer. In practice, retailers offer various customer returns
+policies, including full-refund, partial refund, or no-refund, to balance
+customer satisfaction and the loss resulting from customer returns.
+On the other hand, customers have different purchasing behaviors
+based on familiarity with the product, sensitivity to the product'sp r i c e ,
+and probability of returning the product (Chen and Bell, 2012). In this
+paper, we use the framework of Hotelling (1929),b e c a u s eo fi t s
+analytical tractability, considering two retailers who are located at a
+certain distance from each other, which is normalized to one unit.
+They may have different marketing power. We examine how a new
+entrant retailer can compete with the established retailer by using
+different customer returns policies.
+Let two retailers be at the two ends of a unit length, as shown
+in Fig. 1 . We assume that the customer 's transportation cost is t
+(0ot o1) per unit distance. A customer whose position is x to the
+retailer 1 incurs a transportation cost of xt if he purchases the
+product at retailer 1 and incurs a transportation cost of (1 /C0 x)t if
+he purchases the product at retailer 2.
+The manufacturer, as a Stackberg leader, should determine the
+wholesale price (w) in anticipation of the retailers' selling prices, given
+ap r o d u c t i o nc o s to fc per unit. After the manufacturer announcesw,
+retailers decide selling prices. Without loss of generality, we assume
+that in a local market, retailer 1 is an established retailer offering a
+full-refund customer returns policy to its customer. Retailer 2 is a new
+entrant, needing to decide which customer returns policy, a full-
+refund or a no-refund policy, should be implemented to compete with
+retailer 1. In reality, there are two different possible situations for the
+new entrant. For example, a well-known brand retailer (for example,
+Sears) will open a new store to compete with an existing retailer (for
+example, Wal-Mart) in a local market. In such a case, the retailer'ss i z e
+is competitive to that of the existing retailer. The new entrant can
+compete with the existing retailer in a Nash game. In the literature,
+several papers model the new entrant to compete with the existing
+competitors in a Nash game (for example, Xie and Sirbu, 1995; Shiau
+and Michalek, 2009; Choi et al., 1990). On the other hand, if the new
+entrant is a retailer with such as a small size in business, it can be a
+pricing follower in the market to compete with the existing retailer.
+Such case is likely a common case in business (for example, Steiner,
+2010; Ginevičius and Krivka, 2008). Several papers discuss both games
+for the comparison purpose (for example, Xie and Sirbu, 1995; Choi
+et al., 1990). Since both games are possible in practice, in this paper, we
+thus consider two equilibrium games – Nash equilibrium and Stack-
+elberg equilibrium– between the two retailers in deciding their retail
+prices. In a Nash equilibrium (denoted with a superscript N), both
+retailers have equal marketing powers, representing the case that two
+retailers are competitive. In a Stackelberg equilibrium (denoted with a
+superscript S), retailer 1 is the Stackelberg leader, who has an
+established business or has a large size in business, while retailer
+2 is a follower who might have a small size in business.
+Following the studies of Heiman et al. (2005) and Chen and Bell
+(2012), we assume that the reservation price of the customer for the
+product with a full-refund policy isv, following the uniform distribu-
+tion. Without affecting the results, for simplicity, as the widely used
+assumption in the literature, we assume thatv is in the range of [0, 1]
+(for example,Chiang et al., 2003). The reservation price of the customer
+for the product with a no-refund policy isθ,w h e r e0oθo1( Chen and
+Bell, 2012). θ reﬂects the discount that customers expect to compensate
+for the lack of returns service, or the degree to which the customer
+accepts the no-refund product on an aggregate level. When the
+retailers accept customer returns, although the returned product has
+a salvage value, the retailers incur a cost per unit in handling customer
+returns. This handling cost includes the cost of the staff time for
+receiving a returned product and updating records. We deﬁne the net
+salvage value,sr per unit as the revenue from salvaging of the product
+minus any cost of handling the returned product.sr can be interpreted
+as the efﬁciency of handling customer returns. We follow the assump-
+tion in McWilliams (2012)in which he assumes the identical salvage
+values and customer returns handli ng costs (thus the identical net
+salvage values) at two retailers who sell a product with different
+qualities. Without affecting the results of the paper while keeping
+analytical tractability, we assume that both retailers have the same
+efﬁciency in handling in customer returns ( sr) due to selling the
+identical product. In the numericalexample section, we will conduct
+a sensitivity study to illustrate the impact of the different net salvage
+value on pricing decisions and proﬁts of the two retailers. To ensure
+that the manufacturer bene ﬁts from selling products to retailers
+instead of from salvaging them, it is reasonable to assume that 1 4c
+4sr. Also, we assume that sr40 so that retailers have the motivation
+to handle customer returns, which gives 14c4sr40.
+Anderson et al. (2009) and Hess and Mayhew (1997) conducted
+empirical studies and showed that the number of returns has a
+strong positive linear relationship with the quantity sold, while
+Vlachos and Dekker (2003) assumed that customer returns were a
+ﬁxed proportion of quantity sold. Following the results of these
+empirical studies and the assumption used in the literature, we
+assume that the retailers face customer returns that are propor-
+tional to their sales, i.e., the customer returns rate is α. α reﬂects
+the portion of product that does not ﬁt or match the expectation of
+customers, which mainly depends on the nature or the quality of
+10
+A customer Retailer 2Retailer 1
+x 1-x
+Fig. 1. Positions of two competing retailers.
+J. Chen, R. Grewal / Int. J. Production Economics 146 (2013) 246 –258248
+
+--- PAGE 4 ---
+the product (for example, Davis et al., 1995; Hsiao and Chen, 2012).
+We thus assume that both retailers expect same α, because they
+sell the same product. The customer returns rate aggregately
+reﬂects the level of the product that cannot meet customer 's
+needs. We also assume that returned products cannot be resold
+in this single-period problem due to the need for inspection and
+repackaging. Not reselling returned product is also in the line with
+the product manufacturer 's preference, because the quality of
+returned product is uncertain, which could result in high customer
+dissatisfaction. We denote price, demand, cost, and pro ﬁt of the
+retailer with a full-refund policy with the subscript r and of the
+retailer with a no-refund policy with the subscript n. We also use
+subscripts R and M to denote the retailers and the manufacturer,
+respectively. We summarize notations that will be used in this
+paper in Table 1.
+We ﬁrst discuss the case in which both retailers offer a full-
+refund policy.
+4. A full-refund policy at both retailers
+Let p1r and p2r be the prices set by retailers 1 and 2. A customer
+who is x units away from retailer 1 will buy a product from retailer
+1 if he has a positive utility, i.e., 1 /C0 pr1/C0 tx 4 0, which gives
+xo ð1/C0 pr1Þ=t. He will buy the product from retailer 2 if
+1/C0 pr2/C0 tð1/C0 xÞ4 0o r1 /C0 x oð1/C0 pr2Þ=t. He prefers to purchase from
+retailer 1 rather than from retailer 2 if 1 /C0 pr1/C0 tx 4 1/C0 pr2/C0 tð1/C0 xÞ
+or xo ðt þ pr2/C0 pr1Þ=ð2tÞ.I f ð1/C0 pr1Þ=t o ðt þ pr2/C0 pr1Þ=ð2tÞ or t 4 2
+/C0 pr1/C0 pr2, the market is partially covered, suggesting that only
+when transportation cost is suf ﬁciently low will the market be
+fully covered. Let this threshold value of transportation cost be t1,
+i.e., t1 ¼ 2/C0 pr1/C0 pr2. Thus, the demands for retailers 1 and 2 are
+When t 4 t1,
+Dr1 ¼ð 1/C0 pr1Þ=t; and
+Dr2 ¼ð 1/C0 pr2Þ=t:
+(
+ð1Þ
+when t≤t1,
+Dr1 ¼ð t þ pr2/C0 pr1Þ=ð2tÞ; and
+Dr2 ¼ð t þ pr1/C0 pr2Þ=ð2tÞ:
+(
+ð2Þ
+Retailers maximize their pro ﬁts ( ΠR1,ΠR2) by setting retail prices
+(pr1,pr2):
+ΠR1 ¼ Dr1½pr1ð1/C0 αÞ/C0 w/C138þ αsr Dr1; ð3Þ
+and
+ΠR2 ¼ Dr2½pr2ð1/C0 αÞ/C0 w/C138þ αsr Dr2 ð4Þ
+The manufacturer decides the wholesale price in anticipation of
+retailers' pricing decisions. Its pro ﬁt function is
+ΠM ¼ð w/C0 cÞðDr1 þ Dr2Þð 5Þ
+we now discuss two cases, a partially covered market (high
+transportation cost, where t 4t1) and a fully covered market
+(low transportation cost, where t≤t1).
+4.1. Partially-covered market
+Eqs. (1), (3) and (4) suggest that when both retailers offer a full-
+refund customer returns policy and the transportation cost t is
+sufﬁciently high ( t 4 t1), one retailer 's choice of selling price will
+not affect the other. We denote the wholesale price for this case as
+wrr. Thus, we have the following result:
+Proposition 1. If both retailers offer full-refund policies and if t 4 t1,
+there exists an equilibrium, and the optimal pricing decisions for the
+supply chain (w n
+rr ,pn
+r1,pn
+r2) are given by
+wn
+rr ¼ð 1/C0 α þ αsr þ cÞ=2; and
+pn
+r1 ¼ pn
+r2 ¼ 3ð1/C0 αÞ/C0 αsr þc
+4ð1/C0 αÞ :
+(
+ð6Þ
+With (6), we have Dr1 ¼ Dr2 ¼½ 1/C0 α þ αsr /C0 c/C138 =½4ð1/C0 αÞt/C138 . In the
+presence of customer returns, only when α o αrr ¼ð 1/C0 cÞ=ð1/C0 sr Þ,
+both retailers can generate demands from the market and
+demands decrease with transportation cost ( t).
+With (6), the pro ﬁts of the retailers and the manufacturer are
+ΠR1ðpn
+r1; pn
+r2; wn
+rr Þ¼ ΠR2ðpn
+r1; pn
+r2; wn
+rr Þ¼ ð1/C0 αþαsr /C0 cÞ2
+16ð1/C0 αÞt and
+ΠM ðpn
+r1; pn
+r2; wn
+rr Þ¼ ð1/C0 αþαsr /C0 cÞ2
+4ð1/C0 αÞt :
+8
+><
+>:
+ð7Þ
+With pn
+r1 and pn
+r2 in (6), t1 is given by
+t1 ¼ 1/C0 α þ αsr /C0 c
+2ð1/C0 αÞ ð8Þ
+Eq. (8) gives when α o αrr , t1≥0. We also have ∂pn
+r1=∂α ¼
+∂pn
+r2=∂α 4 0; ∂Dr1=∂α ¼ ∂Dr2=∂α o 0, ∂wn
+rr =∂α o0, ∂ΠM ðpn
+r1; pn
+r2; wn
+rr Þ=
+∂α o 0, and ∂ΠR1ðpn
+r1; pn
+r2; wn
+rr Þ=∂α ¼ ∂ΠR2ðpn
+r1; pn
+r2; wn
+rr Þ= ∂α o 0. As
+customer returns rate ( α) increases, if both retailers offer a full-
+refund customer returns policy and t 4 t1≥0, both retailers raise
+pn
+r1 and pn
+r2 and the manufacturer reduces wn
+rr . Demands for both
+retailers decrease, however, which results in a decrease in the
+proﬁts of both the manufacturer and the retailers. Further,
+∂t1=∂α o 0, suggesting that a larger α, a smaller transportation
+cost ( t) can lead to the case of partially-covered market. When
+α 4 αrr , the market cannot be fully covered.
+4.2. Fully-covered market
+When t≤t1, where t1is given in (8), the market is fully covered.
+Demand function in (2) suggests that when t≤t1, the total demand
+of the two retailers is equal to 1. In such a case, the manufacturer 's
+proﬁt( ΠM ) increases with its wholesale price ( w).
+A positive t1 requires α o αrr . We consider two equilibrium
+games, Nash equilibrium and Stackelberg equilibrium, between
+the two retailers. In Nash equilibrium, each retailer considers the
+other's pricing decision in pricing decisions and announces retail
+prices ( pN
+r1,pN
+r2) simultaneously. In Stackelberg equilibrium, after
+retailer 1 announces the selling price ( pS
+r1), retailer 2 decides the
+selling price ( pS
+r2). With demands given in (2) and pro ﬁts functions
+given in (3) – (4), for a given w, we have the results as follows.
+Table 1
+Notations.
+Notation Description
+pr1 and Dr1 Retailer 1 's price and demand, respectively
+pr2 and Dr2 Retailer 2 's price and demand when it offers a full-refund policy
+pn2 and Dn2 Retailer 2 's price and demand when it offers a no-refund policy
+ΠRi and ΠM Retailer i's pro ﬁt, i¼1, 2 and manufacturer 's pro ﬁt, respectively
+t Transportation cost
+w Manufacturer's wholesale price per unit
+c Manufacturer's production cost per unit
+α Customer returns rate
+sr Net salvage value
+J. Chen, R. Grewal / Int. J. Production Economics 146 (2013) 246 –258 249
+
+--- PAGE 5 ---
+Corollary 1. If both retailers offer a full-refund policy and if t ≤t1, the
+market is fully covered.
+(i) If the two retailers compete in Nash game, there exists a unique
+optimal retail price pair (pNn
+r1 ,pNn
+r2 ), which is given by
+pNn
+r1 ¼ pNn
+r2 ¼ tð1/C0 αÞ/C0 αsr þ w
+1/C0 α ; ð9Þ
+(ii) if the two retailers compete in Stackelbeg game, there exists a
+unique optimal retail price pair (pSn
+r1 ,pSn
+r2 ), which is given by
+pSn
+r1 ¼ 3tð1/C0 αÞ/C0 2αsr þ2w
+2ð1/C0 αÞ and
+pSn
+r2 ¼ 5tð1/C0 αÞ/C0 4αsr þ4w
+4ð1/C0 αÞ :
+8
+<
+: ð10Þ
+with demands in (2) and retailers' proﬁts in (3)– (4), (9) and (10) give
+In Nash game,
+DNn
+r1 ¼ DNn
+r2 ¼ 1=2 ð11Þ
+and
+ΠNn
+R1 ¼ ΠNn
+R2 ¼ tð1/C0 αÞ
+2 ð12Þ
+In Stackelberg game
+DSn
+r1 ¼ 3=8; and
+DSn
+r2 ¼ 5=8;
+(
+ð13Þ
+ΠSn
+R1 ¼ 9tð1/C0 αÞ
+16 and
+ΠSn
+R2 ¼ 25tð1/C0 αÞ
+32 :
+8
+<
+: ð14Þ
+The results suggest that for both Nash and Stackelberg games
+between the two retailers, demands and proﬁts for the two retailers
+are independent of the wholesale price, since the wholesale price
+has the same impact on pNn
+r1 and pNn
+r2 [from (9)], pSn
+r1 and pSn
+r2 [from
+(10)]. If retailer 2 is a new entrant to the market, as a Stackelberg
+follower, it can set a lower price and gain a higher market share and
+proﬁt, as compared to those of retailer 1. Comparing two games
+between two retailers, we can conclude
+Corollary 2.
+DSn
+r1 oDNn
+r1 ; DSn
+r2 4 DNn
+r2 ; ΠSn
+R1 4 ΠNn
+R1 ; and ΠSn
+R2 4 ΠNn
+R2
+Corollary 2 suggests that if retailer 2 offers a full-refund policy
+to compete with retailer 1, retailer 1 prefers to be a leader, while
+retailer 2 prefers to be a follower. Considering the manufacturer 's
+wholesale price ( wrr), (9), and (10), we have
+Proposition 2. When both retailers offer a full-refund policy
+and when t ≤t1,
+(i) if the two retailers compete in Nash game, the best action for the
+manufacturer is to set w Nn
+rr at
+wNn
+rr ¼½ ð2/C0 3tÞð1/C0 αÞþ 2αsr /C138 =2; ð15Þ
+the optimal pricing decisions for the two retailers(pNn
+r1 ,pNn
+r2 ) become
+pNn
+r1 ¼ pNn
+r2 ¼ð 2/C0 tÞ=2; ð16Þ
+(ii) if the two retailers compete in Stackelbeg game, the manufacturer
+will set w Sn
+rr at
+wSn
+rr ¼½ ð8/C0 15tÞð1/C0 αÞþ 8αsr /C138 =8; ð17Þ
+the optimal pricing decisions for two retailers (pSn
+r1 ,pSn
+r2 ) become
+pSn
+r1 ¼ð 8/C0 3tÞ=8 and
+pSn
+r2 ¼ð 8/C0 5tÞ=8:
+(
+ð18Þ
+With (15) and (17), the manufacturer's respective proﬁts in the two
+games are
+ΠNn
+M ¼½ ð2/C0 3tÞð1/C0 αÞþ 2αsr /C0 2c/C138 =2 ð19Þ
+and
+ΠSn
+M ¼½ ð8/C0 15tÞð1/C0 αÞþ 8αsr /C0 8c/C138 =8 ð20Þ
+In addition, for both Nash and Stackelberg games between the two
+retailers, we see that retailers ' pricing decisions and corresponding
+demands are independent of customer returns rate ( α) and the net
+salvage value ( sr). This implies that when retailer 2 knows that
+retailer 1 implements a full-refund policy and the transportation
+cost is low ( t≤t1), if it decides to compete with a full-refund policy,
+the pricing decisions for both retailers depend only on transporta-
+tion cost ( t). Therefore, both retailers can decide the retail price
+without considering α and sr.
+Ap o s i t i v ep r oﬁta tt h em a n u f a c t u r e rr e q u i r e swNn
+rr 4 c and wSn
+rr 4c,
+i.e., t o tN
+1 ¼ 2½ð1/C0 αÞþ αsr /C0 c/C138 =½3ð1/C0 αÞ/C138 and t o tS
+1 ¼ 8 ½ð1/C0 αÞþ
+αsr /C0 c/C138 = ½15ð1/C0 αÞ/C138 , respectively. Since tN
+1 4 t1 and tS
+1 4 t1,w ec a n
+conclude that ∂wNn
+rr =∂α o0, ∂wSn
+rr =∂α o 0, ∂ΠNn
+M =∂α o 0, and ∂ΠSn
+M =
+∂α o 0, suggesting that as customer returns rate (α)i n c r e a s e s ,i nb o t h
+equilibriums, the manufacturer should reduce the wholesale price and
+incur a loss in pro ﬁt. Further, the pro ﬁts of the two retailers also
+decrease with α.
+Comparing two games between two retailers, we can conclude
+Corollary 3. As compared to Nash game, in Stackelberg game, the
+manufacturer sets lower wholesale prices and gains less pro ﬁt. Also,
+the supply chain ef ﬁciency is lower.
+Corollaries 2 and 3 imply that if retailer 2 is a new entrant as a
+follower and uses a full-refund policy to compete with retailer 1,
+both retailers are better off, but the manufacturer incurs a
+signiﬁcant loss in pro ﬁt. The above analysis raises a cautionary
+note for the manufacturer. Since the manufacturer cannot in ﬂu-
+ence the pro ﬁts of the two retailers by setting a lower wholesale
+price, it needs other incentives (such as sharing a portion of its
+proﬁt) to incentivize retailer 2 to compete with retailer 1 in Nash
+equilibrium, rather than in Stackelberg equilibrium as a follower.
+We now discuss the case if retailer 2 competes with retailer
+1 via a no-refund policy.
+5. A full refund policy at retailer 1 and a no-refund policy
+at retailer 2
+When retailer 1 offers a full-refund policy while retailer 2 does
+not allow for customer returns, a customer who is x units away
+from retailer 1 will buy a product from retailer 1 if xo ð1/C0 pr1Þ=t.
+He will buy the product from retailer 2 if θ/C0 pn2/C0 tð1/C0 xÞ 40o r
+1/C0 xo ðθ/C0 pn2Þ=t. He prefers to purchase from retailer 1 rather than
+from retailer 2 if xo ð1/C0 pr1/C0 θ þ t þ pn2Þ=ð2tÞ.I f ð1/C0 pr1Þ=ðtÞo
+ð1/C0 pr1/C0 θ þ t þ pn2Þ=ð2tÞ or t 4 t2 ¼ 1/C0 pr1 þ θ/C0 pn2, the market is
+partially covered. Only when the transportation cost ( t) is suf ﬁ-
+ciently low ( t≤t2) can the market be fully covered. The demand for
+retailers 1 and 2 are
+When t 4 t2,
+Dr1 ¼ð 1/C0 pr1Þ=t; and
+Dn2 ¼ð θ/C0 pn2Þ=t:
+(
+ð21Þ
+When t≤t2,
+Dr1 ¼ð 1/C0 pr1/C0 θ þ t þ pn2Þ=ð2tÞ; and
+Dn2 ¼ð t/C0 1 þ pr1 þ θ/C0 pn2Þ=ð2tÞ:
+(
+ð22Þ
+J. Chen, R. Grewal / Int. J. Production Economics 146 (2013) 246 –258250
+
+--- PAGE 6 ---
+Each retailer maximizes its pro ﬁt by setting its own retail price:
+ΠR1 ¼ Dr1½pr1ð1/C0 αÞ/C0 w/C138þ αsr Dr1; and
+ΠR2 ¼ Dn2ðpn2/C0 wÞ:
+(
+ð23Þ
+The manufacturer maximizes pro ﬁt by deciding the wholesale
+price:
+ΠM ¼ð w/C0 cÞðDr1 þ Dn2Þð 24Þ
+5.1. Partially-covered market
+The retailers ' decisions on selling prices will not affect each
+other if t 4 t2. We denote the optimal wholesale price as wn
+rn . Thus,
+we have the following result:
+Proposition 3. When the transportation cost (t) is suf ﬁciently high
+(t 4 t2), if retailer 1 offers a full-refund policy and retailer 2 offers a
+no-refund policy, there exists Nash equilibrium and the optimal
+pricing decisions for the supply chain (wn
+rn ,pn
+r1,pn
+n2):
+wn
+rn ¼ ð1/C0 αÞð1þθÞþαsr þcð2/C0 αÞ
+2ð2/C0 αÞ ;
+pn
+r1 ¼ ð1/C0 αÞð2þθÞþ½ð1/C0 αÞ/C0 αsr /C138ð 3/C0 2αÞþcð2/C0 αÞ
+4ð2/C0 αÞð1/C0 αÞ ; and
+pn
+n2 ¼ ð1/C0 αÞþθð5/C0 3αÞþαsr þcð2/C0 αÞ
+4ð2/C0 αÞ :
+8
+>>
+>
+<
+>>
+>
+:
+ð25Þ
+With demand in (21), we have
+D
+r1 ¼ 2ð1/C0 αÞ2 þð 1/C0 αÞð1/C0 θÞþ αsr ð3/C0 2αÞ/C0 cð2/C0 αÞ
+4ð2/C0 αÞð1/C0 αÞt
+Dn2 ¼½ ð3/C0 αÞθ/C0ð 1/C0 αÞ/C0 αsr ð3/C0 2αÞ/C0 cð2/C0 αÞ/C138 =½4ð2/C0 αÞt/C138
+In addition,
+t2 ¼ ð1/C0 αÞð1 þ θÞþ αsr /C0 cð2/C0 αÞ
+4ð1/C0 αÞ ð26Þ
+Since Dr1 4 Dn2, only when
+α o α1 ¼
+5/C0 θ/C0 3sr /C0 c/C0
+ﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃ
+ð1/C0 θÞ2 þð c/C0 sr Þ½6/C0 9sr þ 2θ þ cÞ
+q
+4ð1/C0 sr Þ ; ð27Þ
+both retailers can generate demand from the market and demand
+decreases with the transportation cost ( t). Comparing to αrr in
+Section 4.1,w e ﬁnd that αrr 4 α1, suggesting that it allows a larger
+returns rate ( α) for having market shares for both retailers when
+both retailers offer a full-refund policy. A positive t2 requires
+α o αrn ¼ð 1 þ θ/C0 2cÞ=ð1 þ θ/C0 c/C0 sr Þ. Also, t1 4 t2 if 0 o α o α2 while
+t1 ot2 if α2 o α o minðαrr ; αrn Þ, where α2 ¼ð 1/C0 θÞ=ð1/C0 θ þ c/C0 sr Þ. The
+proﬁts of retailers and the manufacturer are
+ΠR1ðpn
+r1; pn
+n2; wn
+rn Þ¼ ½ð1/C0 αÞð3/C0 2α/C0 θÞþαð3/C0 2αÞsr /C0 cð2/C0 αÞ/C138 2
+16ð1/C0 αÞð2/C0 αÞ2 t
+ΠR2ðpn
+r1; pn
+n2; wn
+rn Þ¼ ½ð1/C0 αÞ/C0 θð3/C0 αÞþαsr þcð2/C0 αÞ/C138 2
+16ð2/C0 αÞ2 t and
+ΠM ðpn
+r1; pn
+n2; wn
+rn Þ¼ ½ð1/C0 αÞð1þθÞþαsr /C0 cð2/C0 αÞ/C138 2
+8ð1/C0 αÞð2/C0 αÞt :
+8
+>>
+>
+>
+<
+>>
+>
+>
+:
+ð28Þ
+5.2. Fully-covered market
+When t≤t
+2, the market is fully covered. With demand in (22),
+we have the results as follows.
+Proposition 4. If retailer 1 offers a full-refund policy and retailer
+2 offers a no-refund policy, and if the transportation cost t is
+sufﬁciently low (t≤t2),
+(i) if the two retailers compete in Nash game, the manufacturer sets
+wNn
+rn at
+wNn
+rn ¼ ð1/C0 3t þ θÞð1/C0 αÞþ αsr
+2/C0 α ; ð29Þ
+the optimal pricing decisions for the two retailers (pNn
+r1 ,pNn
+n2 )
+become
+pNn
+r1 ¼ ð5/C0 2α/C0 3tþθÞ/C0 αsr
+3ð2/C0 αÞ and
+pNn
+n2 ¼ ð1/C0 3tþ3θÞð1/C0 αÞþ2θþαsr
+3ð2/C0 αÞ ;
+8
+<
+: ð30Þ
+(ii) if the two retailers compete in Stackelbeg game, the manufacturer
+sets w Sn
+rn at
+wSn
+rn ¼ ð3/C0 15t þ 5θÞð1/C0 αÞþ 3αsr
+8/C0 5α ; ð31Þ
+the optimal pricing decisions for two retailers (pSn
+r1 ,pSn
+n2) become
+pSn
+r1 ¼ ð7/C0 4α/C0 3tþθÞ/C0 αsr
+8/C0 5α and
+pSn
+n2 ¼ ð1/C0 5tþ5θÞð1/C0 αÞþ2θþαsr
+8/C0 5α :
+8
+<
+: ð32Þ
+With Proposition 4 , demands are DNn
+r1 ¼½ ð1/C0 α þ 3t/C0 θÞþ
+αsr /C138 =½3tð2/C0 αÞ/C138 and DNn
+n2 ¼½ ð3t/C0 1Þð1/C0 αÞþ θ/C0 αsr /C138 =½3tð2/C0 αÞ/C138 in Nash
+game, which gives when θN o θ o θ
+N
+, then DNn
+r1 40 and DNn
+n2 4 0;
+when 0 o θ o θN , then DNn
+n2 ¼ 0 and DNn
+r1 ¼ 0 when 1 4 θ 4 θ
+N
+;
+where θN ¼ð 1/C0 αÞð1/C0 3tÞþ αsr and θ
+N
+¼ 1/C0 α þ 3t þ αsr . In Stackel-
+berg game, demand is DSn
+r1 ¼½ ð1/C0 α þ 3t/C0 θÞþ αsr /C138 =½tð8/C0 5αÞ/C138 and
+DSn
+n2 ¼½ ð5t/C0 1Þð1/C0 αÞþ θ/C0 αsr /C138 =½tð8/C0 5αÞ/C138 , which gives when θS o θ
+o θ
+S
+, then DSn
+r1 4 0 and DSn
+n2 40; when 0 o θ o θS, then DSn
+n2 ¼ 0
+and DSn
+r1 ¼ 0 when 1 4 θ 4 θ
+S
+, where θS ¼ð 1/C0 αÞð1/C0 5tÞþ αsr and
+θ
+S
+¼ 1/C0 α þ 3t þ αsr . This suggests that in both games, when the
+degree to which the customer accepts the no-refund product ( θ)i s
+sufﬁciently low (0 oθ o θN in Nash game or 0 o θ o θS in Stackel-
+berg game), no demand will be realized at retailer 2 if it offers a
+no-refund policy; when θ is moderately high ( θN o θ o θ
+N
+in Nash
+game or θS oθ o θ
+S
+in Stackelberg game), retailers 1 and 2 compete
+in the market and provide product to customers who prefer a full-
+refund policy and who prefer a no-refund policy, respectively;
+retailer 1 's demand decreases while retailer 2 's demand increases
+with θ; when θ is suf ﬁciently high (1 4 θ 4 θ
+N
+in Nash game or
+14 θ 4 θ
+S
+in Stackelberg game), no demand will be realized at
+retailer 1 if retailer 2 offers a no-refund policy.
+The pro ﬁts for retailers and the manufacturer are
+If two retailers compete in Nash game,
+ΠNn
+R1 ¼ 2ð1/C0 αÞ½ð1/C0 α/C0 θþ3tÞþαsr /C138 2
+9tð2/C0 αÞ2 ;
+ΠNn
+R2 ¼ 2½ð1/C0 αÞð1/C0 3tÞ/C0 θþαsr /C138 2
+9tð2/C0 αÞ2 ; and
+ΠNn
+M ¼ ð1/C0 3tþθÞð1/C0 αÞþαsr /C0 cð2/C0 αÞ
+2/C0 α :
+8
+>>
+>
+>
+<
+>>
+>
+>
+:
+ð33Þ
+If two retailers compete in Stackelberg game,
+Π
+Sn
+R1 ¼ 4ð1/C0 αÞ½ð1/C0 α/C0 θþ3tÞþαsr /C138 2
+tð8/C0 5αÞ2 ;
+ΠSn
+R2 ¼ 2½ð1/C0 αÞð1/C0 5tÞ/C0 θþαsr /C138 2
+tð8/C0 5αÞ2 ; and
+ΠSn
+M ¼ ð3/C0 15tþ5θÞð1/C0 αÞþ3αsr /C0 cð8/C0 5αÞ
+8/C0 5α :
+8
+>>
+>
+>
+<
+>>
+>
+>
+:
+ð34Þ
+Comparing the two games between the two retailers, we can
+conclude
+Corollary 4. When 0≤t≤t
+2, DSn
+r1 oDNn
+r1 and ΠSn
+R1 4 ΠNn
+R1 ; DSn
+n2 4 DNn
+n2 and
+ΠSn
+R2 o ΠNn
+R2 if θ o ~θn2 while ΠSn
+R2 4 ΠNn
+R2 if θ 4 ~θn2; wSn
+rn o wNn
+rn and
+ΠSn
+M o ΠNn
+M , where ~θn2 ¼ ð1/C0 αÞð7/C0 4αÞ/C0 3tð9/C0 5αÞð1/C0 αÞþαð7/C0 4αÞsr
+7/C0 4α .
+Corollary 4 implies that if retailer 2 as a follower uses a no-
+refund policy to compete with retailer 1, it will be better off only
+J. Chen, R. Grewal / Int. J. Production Economics 146 (2013) 246 –258 251
+
+--- PAGE 7 ---
+when θ is sufﬁciently high ðθ 4 ~θn2Þ.I f θ o ~θn2, retailer 2 is better off
+if it competes with retailer 1 in Nash game, which also bene ﬁts the
+manufacturer. Since ΠNn
+R2 þ ΠNn
+M 4 ΠSn
+R2 þ ΠSn
+M , the result in corollary
+4 suggests that when retailer 2 is competitive in marketing power
+as compared to retailer 1, if the manufacturer is aware that θ 4 ~θn2,
+it can share a portion of its pro ﬁt so that βðΠNn
+M /C0 ΠSn
+M Þ 4 ΠSn
+R2/C0 ΠNn
+R2 to
+incentivize retailer 2 to compete with retailer 1 in Nash game,
+rather than as a retailer 1 's follower.
+6. The impact of θ on retailer 2's returns policy
+We now compare the case that both retailers offer a full-refund
+customer returns policy to the case that retailer 1 offers a full-
+refund policy while retailer 2 offers a no-refund policy. For both
+cases, if t 4 maxðt1; t2Þ, the market is partially-covered while is
+full-covered if t o minðt1; t2Þ, where t1 and t2 are given in (8) and
+(26), respectively. Our discussion in Section 6.1 is for t 4 maxðt1; t2Þ
+and in Section 6.2 is for t o minðt1; t2Þ.
+6.1. Partially-covered market
+Comparing (28) to (7), we have
+Corollary 5. As compared to the case in which both retailers offer a
+full-refund customer returns policy, when θ o θR1, both retailers and
+the manufacturer will set lower prices (pn
+r1, pn
+n2and wn
+rn ), and
+ΠR1ðpn
+r1; pn
+n2; wn
+rn Þ 4ΠR1ðpn
+r1; pn
+n2; wn
+rn Þ, where
+θR1 ¼ 1/C0 α þ αsr ð35Þ
+Corollary 5 implies that only when the degree to which the
+customer accepts the no-refund product ( θ) is suf ﬁciently low
+(θ o θR1), retailer 1 can bene ﬁt from a no-refund policy that is
+implemented by retailer 2.
+Comparing retailer 2 's pro ﬁt in (28) to (7), we have
+Proposition 5. Only when customer 's perceived value of the non-
+refund product ( θ) is higher than a threshold value θR2,
+ΠR2ðpn
+r1; pn
+n2; wn
+rn Þ 4ΠR2ðpn
+r1; pn
+n2; wn
+rn Þ, where
+θR2 ¼ ð1/C0 αÞ½1/C0 α þ αsr þ cð2/C0 αÞ/C138 þ
+ﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃ
+1/C0 α
+p
+ð2/C0 αÞð1/C0 α þ αsr /C0 cÞ/C138
+ð1/C0 αÞð3/C0 αÞ
+ð36Þ
+Also, when θ 4 θR2, ΠR1ðpn
+r1; pn
+n2; wn
+rn Þo ΠR1ðpn
+r1; pn
+n2; wn
+rn Þ. Further,
+θR2 4 θR1.
+Proposition 5 suggests that if retailer 2 is aware of product
+returns rate ( α) and the net salvage value ( sr) at retailer 1,
+production cost ( c) at the manufacturer, and the degree to which
+the customer accepts the non-refund product in the market ( θ),
+when θ 4θR2, it is a good option for retailer 2 to implement a no-
+refund policy to compete with retailer 1; otherwise, implementing
+a full-refund policy to compete with retailer 1 is a good option. The
+implication of the above analysis is that when the retailers sell a
+product with which the customer is very familiar, such as printer
+cartridges, θ is usually high. If t 4 maxðt1; t2Þ, offering a no-refund
+policy might be a good option for retailer 2.
+For the manufacturer 's pro ﬁt, we have
+Corollary 6. when θ 4θM , ΠM ðpn
+r1; pn
+n2; wn
+rn Þ 4 ΠM ðpn
+r1; pn
+n2; wn
+rn Þ,
+where θM 4θR2 and
+θM ¼ ð1/C0 α þ αsr /C0 cÞð
+ﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃ
+4/C0 2α
+p
+/C0 1Þþ cð1/C0 αÞ
+1/C0 α ð37Þ
+Corollary 6 and Proposition 5 suggest that when θ 4 θM , both
+retailer 2 and the manufacturer can be better off, but retailer
+1 loses pro ﬁt if retailer 2 offers a no-refund policy, as compared to
+the case if retailer 2 offers a full-refund policy. Corollary 5 and
+Proposition 5 show that there exists a range in the degree to which
+the customer accepts the non-refund product, θR1 o θ o θR2, such
+that both retailers gain less pro ﬁt if retailer 2 offers a no-refund
+policy. With Corollary 6 , we see in this range ( θR1 o θ oθR2), both
+retailers, as well as the manufacturer, are better off if retailer
+2 offers a full-refund policy to compete with retailer 1.
+Corollaries 5 and 6, and Proposition 5 give boundary conditions
+to deﬁne when the new entrant should use a full-refund policy or
+a no-refund policy to compete with the established retailer and
+which conditions will bene ﬁt the new entrant, the established
+retailer, or the manufacturer.
+6.2. Fully-covered market
+For tomin(t1,t2), we denote RR and RN with brackets as cases
+in which both retailers offer a full-refund policy and in which
+retailer 1 offers a full-refund policy while retailer 2 offers a no-
+refund policy, respectively. To identify boundary conditions for
+when the new entrant should use a full-refund policy or a no-
+refund policy to compete with the established retailer, we ﬁrst
+deﬁne several boundary values as follows.
+(i) Letting θN
+1 be the boundary value of ΠN
+R2ðRRÞ¼ ΠN
+R2ðRNÞ,
+(12) and (33) give
+θN
+1 ¼½ 2ð1/C0 3tÞð1/C0 αÞþ 2αsr þ 3tð2/C0 αÞ
+ﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃ
+1/C0 α
+p
+/C138 =2 ð38Þ
+(ii) Letting θS
+1 be the boundary value of ΠS
+R2ðRRÞ¼ ΠS
+R2ðRNÞ,
+(14) and (34) give
+θS
+1 ¼½ 8ð1/C0 5tÞð1/C0 αÞþ 8αsr þ 5tð8/C0 5αÞ
+ﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃ
+1/C0 α
+p
+/C138 =8 ð39Þ
+(iii) Letting θN
+2 be the boundary value of ΠN
+R1ðRRÞ¼ ΠN
+R1ðRNÞ,
+(12) and (33) give
+θN
+2 ¼½ 2ð1/C0 αÞþ 2αsr þ 3tα/C138 =2 ð40Þ
+(iv) Letting θS
+2 be the boundary value of ΠS
+R1ðRRÞ¼ ΠS
+R1ðRNÞ,
+(14) and (34) give
+θS
+2 ¼½ 8ð1/C0 αÞþ 15tα þ 8αsr /C138 =8 ð41Þ
+(v) Letting θN
+3 be the boundary value of ΠN
+M ðRRÞ¼ ΠN
+M ðRNÞ,
+(19) and (33) give
+θN
+3 ¼½ 2ð1/C0 αÞþ 2αsr þ 3tα/C138 =2 ð42Þ
+(vi) Letting θS
+3 be the boundary value of ΠS
+M ðRRÞ¼ ΠS
+M ðRNÞ,
+(20) and (34) give
+θS
+3 ¼½ 8ð1/C0 αÞþ 15tα þ 8αsr /C138 =8 ð43Þ
+Notice that θN
+2 ¼ θN
+3 and θS
+2 ¼ θS
+3. We can conclude
+Corollary 7.
+(i) if θ oθN
+2 , then ΠN
+R1ðRNÞ 4ΠN
+R1ðRRÞ while ΠS
+R1ðRNÞ 4 ΠS
+R1ðRRÞ if
+θ o θS
+2;
+(ii) if θ 4 θN
+1 , then ΠN
+R2ðRNÞ4 ΠN
+R2ðRRÞ while ΠS
+R2ðRNÞ4 ΠS
+R2ðRRÞ if
+θ 4 θS
+2;
+(iii) if θ 4 θN
+2 ¼ θN
+3 , then ΠN
+M ðRNÞ4 ΠN
+M ðRRÞ while ΠS
+M ðRNÞ4 ΠS
+M ðRRÞ if
+θ 4 θS
+2 ¼ θS
+3.
+(38)– (41) give θN
+1 /C0 θN
+2 ¼/C0 ½ 3tð2/C0 αÞð1/C0
+ﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃ
+1/C0 α
+p
+Þ/C138 =2o 0, and θS
+1/C0 θS
+2
+¼/C0 ½ 5tð8/C0 5αÞð1/C0
+ﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃ
+1/C0 α
+p
+Þ/C138 =8o 0. Therefore, we have θN
+1 oθN
+2 ¼ θN
+3 ,
+θS
+1 o θS
+2 ¼ θS
+3. With Corollary 7 , we can have the following results.
+J. Chen, R. Grewal / Int. J. Production Economics 146 (2013) 246 –258252
+
+--- PAGE 8 ---
+Proposition 6.
+(i) if 0o θ o θN
+1 , then ΠN
+R1ðRNÞ 4ΠN
+R1ðRRÞ while ΠS
+R1ðRNÞ 4ΠS
+R1ðRRÞ
+if 0o θ o θS
+1;
+(ii) if θN
+1 o θ o θN
+2 , then ΠN
+R2ðRNÞ4 ΠN
+R2ðRRÞ and ΠN
+R1ðRNÞ 4 ΠN
+R1ðRRÞ;
+if θS
+1 o θ oθS
+2, then ΠS
+R2ðRNÞ 4 ΠS
+R2ðRRÞ and ΠS
+R1ðRNÞ4 ΠS
+R1ðRRÞ;
+(iii) if θN
+2 o θ o 1, then ΠN
+R2ðRNÞ 4ΠN
+R2ðRRÞ and ΠN
+M ðRNÞ4 ΠN
+M ðRRÞ;i f
+θS
+2 o θ o1, then ΠS
+R2ðRNÞ4 ΠS
+R2ðRRÞ and ΠS
+M ðRNÞ4 ΠS
+M ðRRÞ.
+Proposition 6 suggests that, as compared to the case in which
+both retailers offer a full-refund customer returns policy, only
+retailer 1 gains more pro ﬁt if retailer 2 competes with retailer 1 by
+offering a no-refund policy when 0 oθ o θN
+1 for Nash game and
+when 0 o θ o θS
+1 for Stackelberg game. This implies that when the
+market is fully covered (i.e., t is suf ﬁciently low), if the customer 's
+view of the value of the product sold with a no-refund policy ( θ)i s
+low, more customers will buy the product from retailer 1 (i.e.,
+demand decreases in θ for retailer 1). Therefore, retailer 1 bene ﬁts
+from retailer 2 's no-refund policy. As the customer 's value of the
+no-refund product increases, both retailers pro ﬁt, while the
+manufacturer gains less pro ﬁti f θN
+1 o θ o θN
+2 for Nash game and if
+θS
+1 o θ o θS
+2 for Stackelberg game between two retailers. Retailer
+2 enhances pro ﬁt through savings from not handling returns or
+paying refunds to customers, although it sets a lower retail price,
+which bene ﬁts customers who purchase the product. Retailer
+2 obtains extra pro ﬁt through setting a lower retail price to attract
+more customers. Pro ﬁts increase for retailer 2 and the manufac-
+turer but not for retailer 1 if retailer 2 offers a no-refund policy
+when θN
+2 o θ o1 for Nash game and when θS
+2 o θ o 1 for Stackel-
+berg game. This implies that when customers ' view on the value of
+product sold with a no-refund policy ( θ) is higher than θN
+2 for Nash
+game or higher than θS
+2 for Stackelberg game, the manufacturer
+will set a higher wholesale price, which enhances its pro ﬁt. Both
+retailers raise selling price; retailer 2 's demand increases, which
+increases its pro ﬁt.
+7. Numerical examples
+We use numerical examples to illustrate the impact of custo-
+mer returns on retailer 2 's returns policy, and the pro ﬁts of the
+two retailers and the manufacturer. We set θ ¼ 0:8, sr ¼ 0:05,
+c ¼0.15. Fig. 2 shows the change in t1 and t2 with α. Since
+t1
+/C12/C12/C12 α ¼ 0 4 t2
+/C12/C12/C12 α ¼ 0 for θ o1 and both t1 and t2 decrease with α [from
+(8) and (26)], t1 4 t2 until α ¼0.667 in this example.
+Fig. 3 shows the change in θR1 [in (35)], θR2 [in (36)], and θM [in
+(37)] with α for t¼ 0.44max(t1, t2). As compared to the case when
+both retailers offer a full-refund policy, for t ¼0.44max(t1, t2), and
+θ ¼ 0:8 in this example, when customer returns rate is small
+(α o0.21), retailer 1 is better off if retailer 2 offers a no-refund
+policy; when 0:21 o α o 0:28, proﬁt increases for both retailers and
+the manufacturer if retailer 2 implements a full-refund policy;
+when 0.28 oα o0.35, only retailer 2 bene ﬁts if it offers a no-
+refund policy; when α 40:35, both retailer 2 and the manufacturer
+gain more pro ﬁt, but retailer 1 gains less pro ﬁt if retailer 2 offers a
+no-refund policy. The example illustrates that when retailer 2 is
+aware of θ, based on information on customer returns rate ( α), it
+should carefully check if θ 4 θR2 (Proposition 5 ) before deciding
+which customer returns policy, a full-refund or a no-refund policy,
+should be offered as a strategy to compete with retailer 1.
+For t¼0.2≤min(t
+1,t2), Fig. 4(a) shows the change in θN
+1 , θN
+2 ,a n dθN
+3 ,
+and Fig. 4 (b) shows the change of θS
+1, θS
+2,a n d θS
+3 with customer
+returns rate (α). For α ¼ 0:8, t1 ¼0.225 and t2 ¼ 0:275. Fig. 5(a) shows
+t h ec h a n g ei nθN
+1 , θN
+2 ,a n dθN
+3 ,a n dFig. 5(b) shows the change in θS
+1, θS
+2,
+and θS
+3 with transportation cost (t), where t≤min(t1,t2)¼0.225.
+As compared to the case in which both retailers offer a full-refund
+customer returns policy,Figs. 4 and 5 show that if retailer 2 knows
+that θ falls in the shadowed region I, both retailer 2 and the
+manufacturer can increase their proﬁts, but retailer 1 gains less proﬁt;
+if retailer 2 knows thatθ falls in the shadowed region II, both retailers
+can increase pro ﬁts, but the manufacturer gains less pro ﬁt; if the
+retailer 2 is aware that θ falls in the shadowed region III, only retailer
+1c a ni n c r e a s ep r oﬁt. Fig. 4 s h o w st h a ta sc u s t o m e rr e t u r n sr a t e(α)
+increases, both regions I and II expand, but region III shrinks
+signiﬁcantly. This implies that as α i n c r e a s e s ,t h e r ei sm o r es p a c ei n
+which both retailer 2 and the manufacturer increase proﬁts; there is
+also more space in which both retailers increase proﬁts, but less space
+in which only retailer 1 gains more pro ﬁt. Fig. 5 shows that as t
+increases, region I shrinks while r egion II expands, suggesting that
+t h e r ei sm o r es p a c ei nt for both retailers to gain more proﬁts, and less
+space int for both retailer 2 and the manufacturer to gain more proﬁts.
+In this paper, we assume that two retailers have identical
+returns rates ( α) and net salvage values ( sr). We now use a
+numerical example to illustrate the impact of different net salvage
+values of retailer 1 ( sr1) and of retailer 2 ( sr2) as well as different
+customer returns rates ( α1 and α2 for retailers 1 and 2, respec-
+tively) on their pricing decisions and pro ﬁts. We set sr1 ¼ 0:05,
+c¼ 0.15, t¼0.3 and α1 ¼ 0:25. Figs. 6 – 8 show the change in prices
+and pro ﬁts for the manufacturer and two retailers with sr2 for
+different customer returns rate at retailer 2 ( α2) when both
+retailers offer full-refund policies, for both Stackelberg game and
+Nash game.
+0.1
+0.2
+0.3
+0.4
+0.5
+0 0.2 0.4 0.6 0.8
+t1
+t1 and t2
+t2
+α
+Fig. 2. The changes of t1 and t2 with α.
+0.2
+0.4
+0.6
+0.8
+1.0
+0 0.2 0.4 0.6 0.8
+12,,RR M
+1R
+2R
+M
+0.21 0.28 0.35
+α
+θ
+θ
+θ
+θθθ
+Fig. 3. Changes of θR1, θR2 , and θM with α for t¼0.4.
+J. Chen, R. Grewal / Int. J. Production Economics 146 (2013) 246 –258 253
+
+--- PAGE 9 ---
+Figs. 6 and 7 show that for both Stackelberg and Nash games, as
+sr2 increases (i.e., as the retailer 2 is getting more ef ﬁcient in
+handling customer returns), retailer 2 will set a slightly lower
+price and gain slightly high pro ﬁt. To respond the increasing in sr2,
+retailer 1 will slightly raise price and incur a loss in pro ﬁt. In
+addition, as the increase of customer returns rate at retailer 2 ( α2),
+retailer 2 will raise price and reduce the order quantity to mitigate
+the negative impact of customer returns. In the same time, retail
+1 will cut price to attract more customers and thus bene ﬁt from
+the increased customer returns at retailer 2. Both retailers prefer
+Stackelberg game to Nash game. Furthermore, this numerical
+study ( Fig. 8 ) also shows that as sr2 increases, the manufacturer
+will raise the wholesale price, resulting in more pro ﬁt. The
+manufacturer incurs a pro ﬁt loss when retailer 2 faces more
+customer returns. The manufacturer can set a higher wholesale
+price when two retailers compete in Nash game than when they
+compete in Stackelberg game which leads to a more pro ﬁt.
+8. Conclusion
+In this paper, we discuss how a new entrant retailer can use
+customer returns policies, speci ﬁcally a full-refund policy or a no-
+refund policy, to compete with an established retailer who offers a
+full-refund customer returns policy.
+0.2
+0.3
+0.4
+0.5
+0.6
+0.7
+0.8
+0.9
+1
+0 0.2 0.4 0.6 0.8
+,
+23
+NN
+1
+N
+I
+IIIII
+0.2
+0.3
+0.4
+0.5
+0.6
+0.7
+0.8
+0.9
+1
+0 0.2 0.4 0.6 0.8
+123,,SN N N SS
+2
+S S
+1
+S
+I
+IIIII
+θ3θ
+θ
+θθθ
+θθ
+θ
+θθθ
+αα
+1 2 3
+= =
+Fig. 4. Change in θN
+1 , θN
+2 , θN
+3 , θS
+1 , θS
+2, and θS
+3 with α. (a) Change in θN
+1 , θN
+2 and θN
+3 with α and (b) Change in θS
+1 , θS
+2 , and θS
+3 with α.
+0.4
+0.5
+0.6
+0.7
+0.8
+0.9
+1
+0 0.1 0.2 0.3
+123,,NNN
+1
+N
+I
+II
+III
+t 0.4
+0.5
+0.6
+0.7
+0.8
+0.9
+1
+0 0.1 0.2 0.3
+123,,SSS
+23
+1
+S
+I
+II
+III
+t
+θθθ
+θ
+θθθ
+θ
+2 3
+N N
+SS θθ
+θθ =
+=
+Fig. 5. Change in θN
+1 , θN
+2 , θN
+3 , θS
+1 , θS
+2 , and θS
+3 with t. (a) Change in θN
+1 , θN
+2 , and θN
+3 with t. (b) Change in θS
+1 , θS
+2 , and θS
+3 with t.
+Fig. 6. The changes in prices with retailer 2 's net salvage value ( sr2 ) for different customer returns rate ( α2 ) when both retailers offer full-refund policies. (a) Stackelberg
+game and (b) Nash game.
+J. Chen, R. Grewal / Int. J. Production Economics 146 (2013) 246 –258254
+
+--- PAGE 10 ---
+Providing a customer returns policy is usually regarded as a
+service to customers. This research, however, provides new insights
+for competing retailers facing customer returns in a supply chain.
+We show that implementing different customer returns policies can
+be used as a competitive strategy in the market to enhance a
+retailer'sp r o ﬁt, while meeting the needs of distinct customer
+groups. Speciﬁcally, we indentify the boundary conditions for when
+the new entrant retailer should use a full-refund policy or a no-
+refund policy to compete with an established retailer.
+We show that, using a no-refund policy is a good option for the
+new entrant retailer when the transportation cost is sufﬁciently high
+(i.e., the market is partially-covered), only when the degree to which
+the customer accepts the no-refund product is higher than a thresh-
+old value. In addition, there exists a range of customer acceptance of
+the no-refund productðθR1 o θ oθR2Þ such that both retailers, as well
+as the manufacturer, are better off if new entrant retailer offers a full-
+refund policy to compete with the established retailer.
+We also show when the transportation cost is suf ﬁciently low
+(i.e., the market is fully-covered), if the new entrant retailer
+decides to use a full-refund policy to compete with the established
+retailer, both retailers ' pricing decisions are independent of cus-
+tomer returns rate and net salvage value.
+The present research also has implications for pricing based on
+type of product. For example, our results suggest that when a new
+or unfamiliar product is marketed in the face of uncertain
+customer expectations (the lower θ case), the new entrant retailer
+should use a full-refund policy and set a higher retail price. If the
+product is mature and the uncertainty of meeting the customer 's
+expectations is lower (the higher θ case), selling the product using
+a no-refund policy is a competitive strategy for the new entrant
+retailer, allowing competition with the established retailer. In this
+way, the new entrant retailer can attract customers who are
+familiar with the product but prefer a lower price.
+The research shows that it is critical for the new entrant retailer
+competing with an established retailer to understand the degree
+to which the customer accepts the no-refund product ( θ) before
+deciding on a customer returns policy. Comprehensive marketing
+research is needed to understand the customer 's preference (a low
+price with a no-refund policy vs. a high price with a full-refund
+policy) so that the new entrant retailer can obtain a relatively
+precise measure of the degree to which the customer accepts the
+no-refund product.
+This research also shows that competing using customer
+returns policies can be a pro ﬁt enhancement strategy and high-
+lights the need for the supply chain that is facing customer returns
+to take customer returns into consideration in pricing decisions.
+In this paper, we raise some notes of caution for the manu-
+facturer; the decision of the new entrant retailer on customer
+returns policies and pricing games may not bene ﬁt the manufac-
+turer. The manufacturer might need a side contract instead of the
+wholesale price only contract to incentivize the new entrant
+retailer, so that both can bene ﬁt from the decision of the new
+entrant retailer. This situation should be addressed in future
+research.
+Fig. 7. The changes in pro ﬁts with retailer 2 's net salvage value ( sr2 ) for different customer returns rate ( α2) when both retailers offer full-refund policies. (a) Stackelberg
+game and (b) Nash game.
+Fig. 8. The changes in wholesale prices and manufacturer 's pro ﬁts with retailer 2 's net salvage value ( sr2) for different α2 when both retailers offer full-refund policies.
+(a) wholesale prices and (b) pro ﬁts.
+J. Chen, R. Grewal / Int. J. Production Economics 146 (2013) 246 –258 255
+
+--- PAGE 11 ---
+Acknowledgments
+The authors gratefully acknowledge ﬁnancial support from the
+Natural Sciences and Engineering Research Council of Canada,
+Undergraduate Student Research Award (USRA) and NSERC Dis-
+covery Grant.
+Appendix
+Proof of Proposition 1 :
+Proof. With demands in (1), for a given w, taking partial deriva-
+tives of (3) and (4) w.r.t. pr1and pr2, respectively:
+∂ΠR1=∂pr1 ¼½ 1/C0 α/C0 2pr1ð1/C0 αÞ/C0 αsr þ w/C138 =t and
+∂ΠR2=∂pr2 ¼½ 1/C0 α/C0 2pr2ð1/C0 αÞ/C0 αsr þ w/C138 =t
+∂ΠR1
+2=∂2pr1 ¼/C0 2ð1/C0 αÞ=t o 0 and
+∂ΠR2
+2=∂2pr2 ¼/C0 2ð1/C0 αÞ=t o 0
+implying that there exist unique optimal solutions to pr1
+and pr2 which are given by setting ∂ΠR1=∂pr1 and ∂ΠR2=∂pr2 to be
+equal to 0:
+pr1 ¼ pr2 ¼ð 1/C0 α/C0 αsr þ wÞ=½2ð1/C0 αÞ/C138 ð A1Þ
+with (1) and substituting (A1) into (5)
+ΠM ¼½ ðw/C0 cÞð1/C0 α þ αsr /C0 wÞ/C138 =t ðA2Þ
+Taking partial derivatives of (A2) w.r.t. w:
+∂ΠM =∂w ¼½ ð1/C0 αÞð1/C0 α þ αsr /C0 2w þ cÞ/C138 =t and
+∂ΠM 2=∂2w ¼/C0 2ð1/C0 αÞ=t o 0
+∂ΠM 2=∂2w o0
+suggesting that there exists a unique optimalwn
+rr by setting ∂ΠM =∂w
+to be 0, which gives
+wn
+rr ¼½ 1/C0 α þ αsr þ c/C138 =2 ðA3Þ
+With (A3), pn
+r1 and pn
+r2 in (A1) are pn
+r1 ¼ pn
+r2 ¼½ 3ð1/C0 αÞ/C0 αsr þ c/C138
+=½4ð1/C0 αÞ/C138 .
+Proof of Corollary 1
+Proof. In Nash equilibrium, for a given w, with demand in (2),
+taking partial derivatives of pro ﬁt functions of two retailers in
+(3) and (4) w.r.t. pr1 and pr2, respectively:
+∂ΠR1=∂pr1 ¼ ½/C0ð 2pr1/C0 pr2/C0 tÞð1/C0 αÞ/C0 αsr þ w/C138 =ð2tÞ and
+∂ΠR2
+∂pr2
+¼ /C0ð 2pr2 /C0 pr1 /C0 tÞð1/C0 αÞ/C0 αsr þw
+2t
+∂ΠR1 2
+∂2 pr1
+¼ ∂ΠR2 2
+∂2 pr2
+¼/C0 ð 1/C0 αÞ=t o0 and
+∂ΠR1 2
+∂pr1 ∂pr2
+¼ ∂ΠR2 2
+∂pr2 ∂pr1
+¼ð 1/C0 αÞ=ð2tÞ give
+∂ΠR1 2
+∂2 pr1
+∂ΠR2 2
+∂2 pr2
+/C0 ∂ΠR2 2
+∂pr2 ∂pr1
+∂ΠR1 2
+∂pr1 ∂pr2
+¼ 3
+4ð1/C0 αÞ2 t2 4 0
+implying that there exists a unique optimal pair ( pr1,pr2) which is
+given by setting ∂ΠR1=∂pr1 and ∂ΠR2=∂pr2 to be equal to 0 simulta-
+neously:
+pNn
+r1 ¼ pNn
+r2 ¼½ tð1/C0 αÞ/C0 αsr þ w/C138 =ð1/C0 αÞð A4Þ
+In Stackelberg equilibrium, for a given w, with demand in (2),
+taking partial derivatives of pro ﬁt function of retailer 2 w.r.t. pr2:
+∂ΠR2=∂pr2 ¼ ½/C0ð 2pr2/C0 pr1/C0 tÞð1/C0 αÞ/C0 αsr þ w/C138 =2t and
+∂ΠR12=∂2pr1 o 0
+suggesting that for a given pr1, there exists a unique pSn
+r2 which is
+given by setting ∂ΠR2=∂pr2 ¼ 0:
+pSn
+r2 ¼½ ðpr1 þ tÞð1/C0 αÞ/C0 αsr þ w/C138 =½2ð1/C0 αÞ/C138 ð A5Þ
+with (A5), demand in (2), taking partial derivatives of (3) w.r.t. pr1:
+∂ΠR1
+∂pr1
+¼ /C0ð 2pr1 þ3tÞð1/C0 αÞ/C0 2αsr þ2w
+4t and
+∂ΠR1 2
+∂2 pr1
+¼/C0 1/C0 α
+2t o 0
+implying that there exists a unique optimal pSn
+r2 which is given by
+setting ∂ΠR1=∂pr1 ¼ 0:
+pSn
+r1 ¼½ 3tð1/C0 αÞ/C0 2sr α þ 2w/C138 =½2ð1/C0 αÞ/C138 ð A6Þ
+With pSn
+r2 in (A6), (A5) becomes
+pSn
+r2 ¼½ 5tð1/C0 αÞ/C0 4sr α þ 4w/C138 =½4ð1/C0 αÞ/C138 ð A7Þ
+Proof of Proposition 2 :
+Proof. In Nash equilibrium, with respective demands given in
+(1 1), from the manufacturer 's pro ﬁt function given in (5), we see
+that demands in (1 1) are independent of w. From t≤t1 ¼ 2/C0 pr1
+/C0 pr2,w eh a v e w≤½ð2/C0 3tÞð1/C0 αÞþ 2αsr /C138 =2. Since manufacturer 's
+proﬁt increases with w, thus we have
+wNn
+rr ¼½ ð2/C0 3tÞð1/C0 αÞþ 2αsr /C138 =2 ðA8Þ
+Substituting (A8) into (A4), we have pNn
+r1 ¼ pNn
+r2 ¼ð 2/C0 tÞ=2.
+In Stackelberg equilibrium, with respective demands given in
+(13), from the manufacturer 'sp r oﬁt function given in (5), we see
+that demands in (1 1) are independent of w.F r o m t≤t1 ¼ 2/C0 pr1
+/C0 pr2, we have w≤½ð8/C0 15tÞð1/C0 αÞþ 8αsr /C138 =8. Since manufacturer 's
+proﬁti n c r e a s e sw i t hw, thus we have
+wSn
+rr ¼½ ð8/C0 15tÞð1/C0 αÞþ 8αsr /C138 =8 ðA9Þ
+Substituting (A9) into (A6) and (A7), we have pSn
+r1 ¼ð 8/C0 3tÞ
+=8a n d pSn
+r2 ¼ð 8/C0 5tÞ=8.
+Proof of Proposition 3 :
+Proof. With demands in (21), for a given w, taking
+partial derivatives of ΠR1 and ΠR2 in (23) w.r.t. pr1 and pn2,
+respectively.
+∂ΠR1=∂pr1 ¼½ 1/C0 α/C0 2pr1ð1/C0 αÞ/C0 αsr þ w/C138 =t and
+∂ΠR2=∂pr2 ¼½ /C0 2pn2 þ θ þ w/C138 =t
+∂ΠR1
+2=∂2pr1 ¼/C0 2ð1/C0 αÞ=t o0 and ∂ΠR2
+2=∂2pr2 ¼/C0 2=t o 0
+implying that there exist unique optimal solutions to pr1 and
+pn2,w h i c ha r eg i v e nb ys e t t i n g∂ΠR1=∂pr1 and ∂ΠR2=∂pr2 to be
+equal to 0:
+pr1 ¼ 1/C0 α/C0 αsr þw
+2ð1/C0 αÞ and
+pn2 ¼ θþw
+2 :
+8
+<
+: ðA10Þ
+With (21) and substituting (A10) into (24):
+ΠM ¼½ ðw/C0 cÞð1/C0 α þ αsr þð θ/C0 wÞð1/C0 αÞ/C0 wÞ/C138 =½2tð1/C0 αÞ/C138 ð A11Þ
+Taking partial derivatives of (A1 1) w.r.t.
+w : ∂ΠM =∂w ¼½ ð1/C0 αÞð1 þ θÞþ αsr /C0ð 2w/C0 cÞð2/C0 αÞ/C138 =½2tð1/C0 αÞ/C138 and
+∂ΠM
+2=∂2w ¼/C0 2ð1/C0 αÞð1/C0 αÞ=t o 0 ∂ΠM
+2=∂2w o 0
+suggests that there exists a unique optimal wn
+rn by setting
+∂ΠM =∂w ¼ 0, which gives
+wn
+rn ¼½ ð1/C0 αÞð1 þ θÞþ αsr þ cð2/C0 αÞ/C138 =½2ð2/C0 αÞ/C138 ð A12Þ
+With (A12), we have pn
+r1 and pn
+n2 in (A10):
+pn
+r1 ¼½ ð1/C0 αÞð2 þ θÞþ½ ð 1/C0 αÞ/C0 αsr /C138ð 3/C0 2αÞþ cð2/C0 αÞ/C138 =½4ð2/C0 αÞð1/C0 αÞ/C138 ; and
+pn
+n2 ¼½ ð1/C0 αÞþ θð5/C0 3αÞþ αsr þ cð2/C0 αÞ/C138 =½4ð2/C0 αÞ/C138 :
+(
+J. Chen, R. Grewal / Int. J. Production Economics 146 (2013) 246 –258256
+
+--- PAGE 12 ---
+Proof of Corollary 4 :
+Proof.
+DSn
+r1 /C0 DNn
+r1 ¼/C0 2ð1/C0 αÞ½ð1/C0 α/C0 θ þ 3tÞþ αsr /C138 =½3tð8/C0 5αÞð2/C0 αÞ/C138 o 0
+ΠSn
+R1/C0 ΠNn
+R1 ¼ 2ð1/C0 αÞð8 þ 8α/C0 7α2Þ½ð1/C0 α/C0 θ þ 3tÞ
+þαsr /C138 2=½9tð8/C0 5αÞ2ð2/C0 αÞ2/C138 40
+DSn
+n2/C0 DNn
+n2 ¼ 2ð1/C0 αÞ½ð1/C0 α/C0 θ þ 3tÞþ αsr /C138 =½3tð8/C0 5αÞð2/C0 αÞ/C138 4 0
+ΠSn
+R2/C0 ΠNn
+R2 ¼
+8ð1/C0 αÞ½ð/C0 1 þ α þ θ/C0 αsr Þð7/C0 4αÞþ 3tð9/C0 5αÞð1/C0 αÞ/C138
+/C2½ð 1/C0 α/C0 θ þ 3tÞþ αsr /C138
+ !
+9tð8/C0 5αÞ2ð2/C0 αÞ2
+gives that when
+θ o ~θn2 ¼½ ð1/C0 αÞð7/C0 4αÞ/C0 3tð9/C0 5αÞð1/C0 αÞþ αð7/C0 4αÞsr /C138 =ð7/C0 4αÞ
+otherwise
+ΠSn
+R2 4 ΠNn
+R2
+wSn
+rn /C0 wNn
+rn ¼/C0 2ð1/C0 αÞ½ð1/C0 α/C0 θ þ 3tÞþ αsr /C138 =½3ð8/C0 5αÞð2/C0 αÞ/C138 o 0
+ΠSn
+M /C0 ΠNn
+M ¼/C0 2ð1/C0 αÞ½ð1/C0 α/C0 θ þ 3tÞþ αsr /C138 =½ð8/C0 5αÞð2/C0 αÞ/C138 o 0
+Proof of Proposition 4:
+Proof. In Nash equilibrium, for a given w, with respective
+demands given in (22), taking partial derivatives of ΠR1 and
+ΠR2in (23) w.r.t. pr1 and pn2, respectively:
+∂ΠR1=∂pr1 ¼½ ð1/C0 θ þ t þ pn2Þð1/C0 αÞ/C0 2pr1ð1/C0 αÞ/C0 αsr þ w/C138 =ð2tÞ and
+∂ΠR2=∂pn2 ¼½ /C0 2pn2 þ pr1 þ θ þ t/C0 1 þ w/C138 =ð2tÞ
+∂ΠR1
+2=∂2pr1 ¼/C0 ð 1/C0 αÞ=t o 0; ∂ΠR2
+2=∂2pn2 ¼/C0 1=t o 0
+∂ΠR1
+2=ð∂pr1∂pn2Þ¼ ∂ΠR2
+2=ð∂pn2∂pr1Þ¼ð 1/C0 αÞ=ð2tÞ; and
+∂ΠR12
+∂2pr1
+∂ΠR22
+∂2pn2
+/C0 ∂ΠR12
+∂pr1∂pn2
+∂ΠR22
+∂pn2∂pr1
+¼ð 3/C0 αÞð1/C0 αÞ=ð4t2Þ4 0
+implying that there exists a unique optimal solution pair ( pn
+r1, pn
+n2)
+which are given by solving ∂ΠR1
+∂pr1
+¼ 0 and ∂ΠR2
+∂pn2
+¼ 0:
+pr1 ¼½ ð1/C0 θ þ 3tÞð1/C0 αÞ/C0 2αsr þ wð3/C0 αÞ/C138 =½3ð1/C0 αÞ/C138 and
+pn2 ¼ ½/C0ð 1/C0 θ/C0 3tÞð1/C0 αÞ/C0 αsr þ wð3/C0 2αÞ/C138 =½3ð1/C0 αÞ/C138 :
+(
+ðA13Þ
+Since when t≤t2, the market is fully-covered and the total demand
+is 1. Eq. (24) gives that the manufacturer 's proﬁt increases with w.
+From t≤t2 ¼ 1/C0 pr1 þ θ/C0 pn2,w eh a v e w≤½ð1/C0 3t þ θÞð1/C0 αÞþ αsr /C138 =
+ð2/C0 αÞ. Thus we have
+wNn
+rn ¼½ ð1/C0 3t þ θÞð1/C0 αÞþ αsr /C138 =ð2/C0 αÞð A14Þ
+Substituting (A14) into (A13), we have pNn
+r1 ¼½ ð5/C0 2α/C0 3t þ
+θÞ/C0 αsr /C138 =½3ð2/C0 αÞ/C138 and
+pNn
+n2 ¼½ ð1/C0 3t þ 3θÞð1/C0 αÞþ 2θ þ αsr /C138 =½3ð2/C0 αÞ/C138 :
+In Stackelberg equilibrium, for a given w, with respective demands
+given in (22), taking partial derivatives of ΠR2 in (23) w.r.t. pn2:
+∂ΠR2=∂pn2 ¼½ /C0 2pn2 þ pr1 þ θ þ t/C0 1 þ w/C138 =ð2tÞ.
+∂ΠR22=∂2pn2 ¼/C0 1=t o 0, suggesting that for a given pr1, there exists
+a unique pn2 which is given by setting ∂ΠR2=∂pn2 ¼ 0:
+pSn
+n2 ¼ð pr1 þ w/C0 1 þ t þ θÞ=2 ðA15Þ
+With pNn
+n2 in (A15), for a given w, taking partial derivatives of ΠR1
+in (23) w.r.t. pr1:
+∂ΠR1=∂pr1 ¼½ ð1/C0 θ þ 3t/C0 2pr1Þð1/C0 αÞþ wð2/C0 αÞ/C0 αsr /C138 =ð4tÞ and ∂Π
+R12=∂2pr1 ¼/C0 ð 1/C0 αÞ=ð2tÞ o0, implying that there exists a unique
+optimal solution pn
+r1 which is given by setting ∂ΠR2=∂pn2 ¼ 0:
+pSn
+r1 ¼½ ð1/C0 θ þ 3tÞð1/C0 αÞþ wð2/C0 αÞ/C0 αsr /C138 =½2ð1/C0 αÞ/C138 ð A16Þ
+With (A16), (A15) becomes
+pSn
+n2 ¼ ½ð/C0 1 þ θ þ 5tÞð1/C0 αÞþ wð4/C0 3αÞ/C0 αsr /C138 =½4ð1/C0 αÞ/C138 ð A17Þ
+Since when t≤t2, the market is fully-covered and the total demand
+is 1. Eq. (24) shows that the manufacturer 's proﬁt increases with w.
+From t≤t2 ¼ 1/C0 pr1 þ θ/C0 pn2,w eh a v ew≤½ð3/C0 15t þ 5θÞð1/C0 αÞþ 3αsr /C138
+=ð8/C0 5αÞ, leading to
+wSn
+rn ¼½ ð3/C0 15t þ 5θÞð1/C0 αÞþ 3αsr /C138 =ð8/C0 5αÞð A18Þ
+Substituting (A18) into (A16) and (A17), then pS
+r1n ¼½ ð7/C0 4α/C0 3t þ
+θÞ/C0 αsr /C138 =½8/C0 5α/C138 and
+pSn
+n2 ¼½ ð1/C0 5t þ 5θÞð1/C0 αÞþ 2θ þ αsr /C138 =½8/C0 5α/C138 :
+Proof of Corollary 5:
+Proof. comparing (7) and (28), we see that when
+θ oθR1 ¼ 1/C0 α þ αsr , ΠR1ðpn
+r1; pn
+n2; wn
+rn Þ 4ΠR1ðpn
+r1; pn
+n2; wn
+rn Þ.
+Proof of Proposition 5:
+Proof. comparing (7) to (28), it is easy to see that when
+θ 4θR2,ΠR2ðpn
+r1; pn
+n2; wn
+rn Þ4 ΠR2ðpn
+r1; pn
+n2; wn
+rn Þ. In addition, θR2/C0 θR1 ¼
+½ð1/C0 αÞð
+ﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃ
+1/C0 α
+p
+/C0 1 þ αÞð1/C0 α þ αsr /C0 cÞ/C138 =½ð1/C0 αÞð3/C0 αÞ/C138 4 0i f α oαrr ¼
+ð1/C0 cÞ=ð1/C0 sr Þ, which is a suf ﬁcient condition for generating posi-
+tive demand in Section 4.1.
+Proof of Corollary 6:
+Proof. Comparing θM to θ, θM 4 θ if, which is a suf ﬁcient condition
+for generating positive demand in Section 4.1.
+References
+Anderson, S.P., de Palma, A., Thisse, J.F, 1996. Discrete Choice Theory of Product
+Differentiation. MIT, Cambridge .
+Anderson, E.T., Hansen, K., Simister, D., Wang, L.K., 2009. How are Demand and
+Returns Related? Theory and Empirical Evidence. Working paper, Kellogg
+School of Management, Northwestern University.
+Bakos, J.Y., 1991. A strategic analysis of electronic marketplaces. MIS Quarterly 15,
+295– 310.
+Che, Y., 1996. Customer return policies for experience goods. Journal of Industrial
+Economics 44, 17 – 24.
+Chen, J., Bell, P.C., 2009. The impact of customer returns on pricing and order
+decisions. European Journal of Operational Research 195, 280 – 295.
+Chen, J., Bell, P.C., 2012. Implementing market segmentation using full-refund and
+no-refund customer returns policies in a dual-channel supply chain structure.
+International Journal of Production Economics 136 (1), 56 – 66.
+Chiang, W.K., Chhajed, D., Hess, J.D., 2003. Direct marketing, indirect pro ﬁts: a
+strategic analysis of dual-channel supply-chain design. Management Science
+49, 1 – 20.
+Choi, C., Desarbo, W.S., Patrick, T., 1990. Product positioning under price competi-
+tion. Management Science 36, 175 – 199.
+Chun, S.H., Kim, J., 2005. Pricing strategies in B2C electronic commerce: analytical
+and empirical approaches. Decision Support Systems 40, 375 – 388.
+Davis, S., Gerstner, E., Hagerty, M., 1995. Money back guarantees in retailing:
+matching products to consumer tastes. Journal of Retailing 71, 7 – 22.
+Davis, S., Hagerty, M., Gerstner, E., 1998. Return policies and the optimal level of
+‘hassle.’. Journal of Economics and Business 50, 445 – 460.
+Ginevičius, R., Krivka, A., 2008. Application of game theory for duopoly market
+analysis. Journal of Business Economics and Management 9, 207 – 217.
+Grimaldi, P., 2008. Day of Rejects: Store Clerks Gear Up for Gift Exchanges.
+Providence J. (December 26), 〈http://www.projo.com/seasonal/holidays/con
+tent/BZ_RETURNS_1226_12-26-08_88CO6AO_v22.314fb6b.html〉.
+Guide, D.R., Souza Jr., G.C., Van Wassenhove, L.N., Blackburn, J.D., 2006. Time value
+of commercial product returns. Management Science 52, 1200 – 1214.
+Hauser, J.R., Shugan, S., 1983. Defensive marketing strategies. Marketing Science 2,
+319– 360.
+Heiman, A., Just, D.R., McWilliams, B., Zilberman, S., 2005. Money-Back Guarantees
+and the Value of Decision Time: An Empirical Analysis. Working Paper,
+University of California.
+Hess, J., Mayhew, G., 1997. Modeling merchandise returns in direct marketing.
+Journal of Direct Marketing 1 1, 20 – 35.
+Hotelling, H., 1929. Stability in competition. Journal of Economics 39, 41 – 57.
+Hsiao, L., Chen, Y., 2012. Returns policy and quality risk in e-business. Production
+and Operations Management 21, 489 – 503.
+J. Chen, R. Grewal / Int. J. Production Economics 146 (2013) 246 –258 257
+
+--- PAGE 13 ---
+Lawton, C., 2008. The war on returns. Wall Street Journal, D1. (May 8) .
+McWilliams, 2012. Money-back guarantees: helping the low-quality retailer.
+Management Science 58, 1521 – 1524.
+Moorthy, S., Srinivasan, K., 1995. Signalling quality with a money back guarantee:
+the role of transaction costs. Marketing Science 14, 442 – 466.
+Moorthy, S., Zhang, X., 2007. Multichannel Retailing: Bricks-and Mortar, Clicks, or
+Bricks-and-Clicks? Working Paper, University of Toronto, Toronto.
+Mostard, J., Teunter, R., 2006. The newsboy problem with resalable returns: a single
+period model and case study. European Journal of Operational Research 169,
+81– 96.
+Pinkse, J., Slade, M.E., Brett, C., 2002. Spatial price competition: a semiparametric
+approach. Econometrica 70, 1 1 1 1– 115 3.
+Salop, S., 1979. Monopolistic competition with outside goods. Bell Journal of
+Economics 10, 141 – 156.
+Savaskan, C., Van Wassenhove, L.N., 2006. Reverse channel design: the case of
+competing retailers. Management Science 52, 1 – 14.
+Shiau, C.S.N., Michalek, J., 2009. Optimal product design under price competition.
+Journal of Mechanics Design 131, 1 – 10.
+Shulman, J.D., Coughlan, A.T., Savaskan, R.C., 2009. Optimal restocking fees and
+information provision in an integrated demand-supply model of product
+returns. Manufacturing & Service Operations Management 1 1, 577 – 594.
+Shulman, J.D., Coughlan, A.T., Savaskan, R.C., 201 1. Managing consumer returns in a
+competitive environment. Management Science 57, 347 – 362.
+Steiner, W.J., 2010. A Stackelberg – Nash model for new product design. OR
+Spectrum 32, 21 – 48.
+Su, X., 2009. Consumer returns policies and supply chain performance. Manufac-
+turing & Service Operations Management 1 1, 595 – 612.
+Toktay, L.B., 2003. Forecasting product returns. In: Guide Jr., V.D., Van Wassenhove,
+L.N. (Eds.), Business Aspects of Closed-Loop Supply Chains. Carnegie Mellon
+University Press, Pittsburgh, Pennsylvania .
+Vlachos, D., Dekker, R., 2003. Return handling options and order quantities for
+single period products. European Journal of Operational Research 151, 38 – 52.
+Xiao, T., Shi, K., Yang, D., 2010. Coordination of a supply chain with consumer return
+under demand uncertainty. International Journal of Production Economics 124,
+171– 180.
+Xie, J., Sirbu, M., 1995. Price competition and compatibility in the presence of
+positive demand externalities. Management Science 41, 909 – 926.
+J. Chen, R. Grewal / Int. J. Production Economics 146 (2013) 246 –258258

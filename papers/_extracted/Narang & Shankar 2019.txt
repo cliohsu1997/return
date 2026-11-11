@@ -1,0 +1,1049 @@
+                                                                                                                 MARKETING SCIENCE
+                                                                                                 Vol. 38, No. 5, September–October 2019, pp. 756–772
+http://pubsonline.informs.org/journal/mksc                                                             ISSN 0732-2399 (print), ISSN 1526-548X (online)
+
+
+
+
+Mobile App Introduction and Online and Ofﬂine Purchases and
+Product Returns
+Unnati Narang,a Venkatesh Shankarb
+a
+  Department of Marketing, Mays Business School, Texas A&M University, College Station, Texas 77843; b Center for Retailing Studies,
+Mays Business School, Texas A&M University, College Station, Texas 77843
+Contact: unarang@mays.tamu.edu (UN); vshankar@mays.tamu.edu,       https://orcid.org/0000-0001-5476-3052 (VS)
+
+Received: September 30, 2017                 Abstract. How do a retailer’s mobile app adopters differ from nonadopters in their shopping
+Revised: July 21, 2018; January 31, 2019;    outcomes, such as online and ofﬂine purchases and product returns? In this paper, we
+March 24, 2019                               model the relationship between a retailer’s mobile app launch and the frequency, quantity,
+Accepted: March 25, 2019                     and monetary value of purchases in its online and ofﬂine channels, as well as product
+Published Online in Articles in Advance:     returns. We leverage data on a large retailer’s launch of a mobile app and use a difference-
+August 29, 2019
+                                             in-differences approach. Our results show that app adopters buy 33% more frequently, buy
+https://doi.org/10.1287/mksc.2019.1169       34% more items, and spend 37% more than non-adopters in the period after app in-
+                                             troduction. At the same time, they return 35% more frequently, 35% more items, and 41%
+Copyright: © 2019 INFORMS                    more in dollar value. Combined, app adopters spend 36% more in net monetary value.
+                                             Furthermore, app adopters’ purchases in both the online and ofﬂine channels increase after
+                                             app launch. The time, location, and features of app use provide descriptive evidence of
+                                             how the app aids shopping in other channels. App-linked shoppers (those who make a
+                                             purchase within 48 hours of app use) use the app when they are close to the store of
+                                             purchase and access the app for loyalty rewards, product details, and notiﬁcations. These
+                                             insights offer important substantive implications.
+
+                                             History: K. Sudhir served as the editor-in-chief and Catherine Tucker served as associate editor for
+                                               this article. This paper has been accepted for the Marketing Science Special Section on Mobile
+                                               Technologies.
+                                             Supplemental Material: Data and the web appendix are available at https://doi.org/10.1287/mksc.2019.1169.
+
+Keywords: mobile marketing • mobile apps • channels • returns • difference-in-differences
+
+
+1. Introduction                                                                 ofﬂine shopping behavior for app adopters relative
+In recent years, the penetration of mobile devices has                          to nonadopters, and we examine the app use pat-
+reached unprecedented levels. In 2018, 77% of the                               terns associated with purchases and returns in all
+U.S. population owned a smartphone (Pew Research                                the channels. We deﬁne app adopters as those who
+Center 2018). Mobile apps are increasingly domi-                                download and use the app. A mobile app may prompt
+nating mobile device use. Mobile apps account for                               shoppers to purchase more often, purchase more
+87% of mobile usage at 2.5 daily hours for an average                           items, and spend more through the app. However, is
+adult in the United States (eMarketer 2017), which                              app introduction and adoption linked to purchases
+constitutes the bulk of digital media time (Comscore                            in stores and online through the retailer’s website?
+2016). Retail apps are among the fastest-growing app                            Furthermore, although a mobile app can prompt shop-
+categories (Williams 2018), and the average U.S. adult                          pers to purchase, does it change their product returns
+has at least four retail apps on his or her phone (CNBC                         and the net monetary value of purchases?
+2018). For example, nearly 70% of Walgreens’ cus-                                  The nascent literature on mobile apps is silent on
+tomers engage through mobile devices, and more                                  how app adopters differ from nonadopters in their
+than 50% of app adopters use the app while shopping                             online and ofﬂine purchases and product returns.
+in stores (Hyken 2017). Furthermore, about 20% of all                           Two related studies focus on aggregate loyalty points
+Starbucks transactions in stores originate from its                             or total purchases (Einav et al. 2014, Kim et al. 2015)
+“order and pay” app (Forbes 2015).                                              but not on purchases by channel. Wang et al. (2015)
+   The purpose of this paper is to quantify the rela-                           examine the effect of a campaign promoting the use
+tionship between a retailer’s branded mobile app                                of an app on online purchases. In a cross-platform/
+launch and its online and ofﬂine purchases and product                          channel study, Xu et al. (2016) examine a tablet adop-
+returns using data from a large-scale U.S. retailer of                          tion’s relationship with online purchases via smart-
+video games, electronics, and wireless services. In                             phones and desktops but not through the store. Prior
+particular, we evaluate the changes in online and                               research has also not examined the differences between
+
+                                                                          756
+Narang and Shankar: Mobile Apps and Online and Ofﬂine Purchases and Returns
+Marketing Science, 2019, vol. 38, no. 5, pp. 756–772, © 2019 INFORMS                                                        757
+
+adopters and nonadopters with regard to product                        that focus on only online purchase outcomes, we con-
+returns. Speciﬁcally, we address the following re-                     sider both online and in-store purchases. Finally, we
+search questions:                                                      examine app use patterns in depth.
+   • Do mobile app adopters have higher or lower                          Our ﬁndings offer key managerial implications. We
+frequency, quantity, and monetary value of purchases                   provide useful benchmarks for purchases and returns
+and product returns across all the channels relative to                for managers to evaluate the app introduction decision.
+nonadopters?                                                           Our results also suggest that managers should plan for
+   • How do app adopters and nonadopters differ in                     a higher number of store and website visits by app
+their purchases in existing online and ofﬂine channels?                adopters. Managers can predict more purchases from
+   • What potential app use patterns are associated                    adopters based on their time, location, and features
+with purchases in all the channels?                                    used in the app. Finally, managers should plan on
+   We address our research questions using a unique                    receiving greater returns from app adopters.
+data set relating to app introduction by a large retailer
+of video games, consumer electronics, and wireless                     2. Related Literature
+services. The data set spans 18 months before and                      Mobile devices inﬂuence shoppers both in and out
+after introduction of the app. Teasing out the dif-                    of a store (Shankar et al. 2016). Mobile apps may af-
+ferences in app adopters’ and nonadopters’ shopping                    fect purchases in three major ways. First, mobile apps
+outcomes in the absence of randomization is a com-                     can provide anytime, anywhere information beneﬁts
+plex task. Major issues include endogeneity and self-                  to shoppers. Such beneﬁts include product- and
+selection of shoppers adopting the app. We mitigate                    store-related information (Danaher et al. 2015, Fong
+the challenges posed by nonexperimental variation                      et al. 2015, Dubé et al. 2017). Second, mobile apps can
+in the data in three ways: (1) by adopting propen-                     offer immediate access to shopping (Shankar and
+sity score matching to identify app nonadopters                        Balasubramanian 2009), potentially driving impulse
+similar to adopters along their observed character-                    buying through deals. Finally, apps may serve as
+istics and comparing their shopping outcomes before                    convenient tools and reminders for shopping.
+and after app introduction, (2) by using the number of                    Two streams of research, one on mobile apps and
+cell towers in the shoppers’ zip code as a source of                   the other on mobile device adoption, are closest to
+exogenous variation in app adoption to mitigate                        our research questions. First, the sparse literature
+endogeneity as a result of unobservables, and (3) by                   on mobile apps considers how app usage relates to a
+conducting a series of robustness tests to rule out                    limited set of purchase measures. Kim et al. (2015)
+alternative explanations.                                              study how the use of two app features inﬂuences
+   Our results show that app adopters buy 33% more                     shoppers’ loyalty point accruals for an air miles re-
+frequently, buy 34% more items, and spend 37% more                     ward program. They treat an app update with two
+than nonadopters in the period after app introduction.                 new app features (not the app itself) as the inter-
+At the same time, they return 35% more frequently, 35%                 vention and ﬁnd that point accruals across retailers
+more items, and 41% more in dollar value. Combined,                    increase. In a descriptive analysis of eBay’s app usage,
+app adopters offer 36% more in net monetary value                      Einav et al. (2014) show that the app results in an
+(NMV) than do nonadopters after app introduc-                          immediate and sustained increase in the platform’s
+tion. Our analyses suggest that the time, location, and                aggregate revenues. Wang et al. (2015) show that a
+features of app use provide descriptive evidence of                    grocery retailer’s promotional campaign for a mobile
+how the app aids shopping in other channels. App-                      app results in a greater number of orders and spending.
+linked shoppers (those who make a purchase within                      Gill et al. (2017) report similar ﬁndings for a business-
+48 hours of app use) use the app when they are close to                to-business (B2B) app. Other papers examine related
+the store of purchase and can access the app for                       variables, such as purchase intent, website visits, and
+loyalty rewards, product details, and notiﬁcations.                    ﬁrm value (Bellman et al. 2011, Xu et al. 2014, Boyd
+App adopters also purchase a more diverse set of                       et al. 2019).
+items (including less popular products) than do non-                      Second, studies on mobile device adoption focus on
+adopters. App adopters return products originally                      the effects of a mobile device on purchase frequency
+purchased in stores and through rewards more than                      and monetary value. Lee et al. (2016) ﬁnd that pur-
+those purchased online and without rewards.                            chase frequency is higher but the monetary value of
+   Our research contributes to the mobile marketing                    each purchase is lower for shoppers who transact
+and omnichannel marketing literatures in at least                      more using a mobile device than a desktop. Xu et al.
+three important ways. First, we expand the scope of                    (2016) study the effect of tablet adoption on com-
+the mobile marketing literature by examining mobile                    merce through different devices in online retailing
+app adopters’ and nonadopters’ purchases and returns.                  and conclude that tablet commerce substitutes desktop
+Second, unlike most prior mobile marketing studies                     commerce but complements smartphone commerce.
+                                                              Narang and Shankar: Mobile Apps and Online and Ofﬂine Purchases and Returns
+758                                                                            Marketing Science, 2019, vol. 38, no. 5, pp. 756–772, © 2019 INFORMS
+
+
+Table 1. Selected Related Literature and Our Contribution
+
+                                                                                                              Cross-
+                                                                                                             channel
+                                                                                                             effect in
+                                               DVa =   DV =     DV =    DV =    DV =      DV =                stores
+Paper                       Focus               FP      QP       VP      FR      QR        VR      Other DV and online              Context
+
+                                                       Prior research on app adoption
+
+Bellman et al.     Effect of app use on                                                            Purchase                    Laboratory
+  (2011)             brand attitude and                                                              intent                      study
+                     purchase intention
+Einav et al.       Analysis of eBay’s mobile                     ✔                                                             Online retail
+  (2014)             app adoption and
+                     platform revenues
+Xu et al. (2014) Effect of mobile app                                                              Site visit                  Online news
+                     on demand at the
+                     mobile site
+Kim et al.         Effect of use of app                                                            Loyalty                     Air miles
+  (2015)             check-ins and                                                                   point                       reward app
+                     information lookups                                                             accruals
+                     on loyalty point
+                     accruals
+Gill et al. (2017) Effect of manufacturer’s     ✔        ✔       ✔                                                             B2B app of a tools
+                     mobile app on B2B                                                                                           manufacturer
+                     revenues
+
+                                                 Prior research on mobile device adoption
+
+Lee et al. (2016) Effect of mobile shopping     ✔                ✔                                                             Online retail
+                    ratio (mobile vs. web)
+                    on purchases
+Xu et al. (2016) Effect of tablet adoption                       ✔                                                             Online retail
+                    on digital commerce via
+                    smartphones and
+                    PC devices
+Our paper         Linkages between app          ✔        ✔       ✔        ✔       ✔         ✔          —              ✔        Large retailer
+                    introduction and                                                                                             with a chain
+                    purchase and returns                                                                                         of stores and
+                    across all channels                                                                                          ecommerce site
+   a
+     DV refers to the key dependent variables used in the study, including frequency (FP), quantity (QP), and value (VP) of purchases and
+frequency (FR), quantity (QR), and value (VR) of returns.
+
+
+Overall, they ﬁnd that tablet adoption enhances e-                         We also draw from and extend the literature on
+commerce revenues.                                                      cross-channel purchases and product returns. With
+   Combined, these research streams suggest that mo-                    regard to purchases, retail stores have a complemen-
+bile apps and devices positively affect aggregate pur-                  tary relationship with the internet channel in the long
+chases but do not inform us about how mobile apps                       run (Avery et al. 2012). Online sales increase after
+relate to outcomes in different channels, such as store                 ofﬂine stores open because of gains in brand aware-
+and web, at the shopper level. Nor do the research                      ness in markets with low brand presence and gains
+streams examine product returns.                                        in channel awareness (Wang and Goldfarb 2017, Bell
+   Our study complements and extends these research                     et al. 2018). Furthermore, online returns decline be-
+streams as shown in Table 1. First, we study the re-                    cause of enhanced product information ofﬂine (Bell
+lationship between a retailers’ mobile app launch                       et al. 2018). We apply these ﬁndings to our exami-
+(and subsequent adoption) and a variety of shopping                     nation of purchases in both online and ofﬂine chan-
+outcomes, such as the frequency, quantity, value of                     nels and to product returns after the app introduction.
+purchases, and importantly, product returns. Second,
+we examine outcomes in existing online and ofﬂine                       3. Data and Research Setting
+channels of a retailer. Finally, we explore app use                     We collect data from a large U.S.-based retailer of video
+patterns that can potentially explain the relationship                  games, consumer electronics, and wireless services with 32
+between app adoption and shopping in other channels.                    million customers. The gaming industry is a large $99.6
+Narang and Shankar: Mobile Apps and Online and Ofﬂine Purchases and Returns
+Marketing Science, 2019, vol. 38, no. 5, pp. 756–772, © 2019 INFORMS                                                         759
+
+billion industry and offers a ripe setting to examine                  or clicking on offer details to read more about a speciﬁc
+shopping behaviors. Overall, 48% of the video game pur-                offer. The rewards program features include the ability
+chases are physical disc format games (Minotti 2016).                  to check loyalty reward points and redeem reward
+   The retailer is similar to Walmart and PetSmart or any              coupons. Finally, the notiﬁcation feature refers to regis-
+other brick-and-mortar chain with a relatively larger off-             tering for and acting on push notiﬁcations. This feature
+line presence. The retailer’s primary channel is its store             categorization appears in Web Appendix Table A3.
+network comprising more than 4,175 stores across the                      For our research design, we collected data for a
+United States. In addition, it also has an e-commerce site,            period of 18 months before (pre) and after (post) the
+but only about 5% of its sales transactions are online,                app launch. This resulted in a panel from January
+although the proportion is growing fast. The retailer                  2013 to December 2015. The average interpurchase
+typically allows product returns for a full refund within              time of shoppers for the retailer’s products is about
+30 days of purchase. Returns take place in stores.                     37 days. To avoid left censoring, we also collected
+   Our focal independent variable/intervention is app in-              data on the recency of purchases—that is, the day on
+troduction. The retailer introduced its app on July 1, 2014,           which the shoppers made their last purchase if the last
+without any targeted campaign. Approximately 6% of                     purchase was before the start of our data period.
+shoppers adopted the app in the 18 months after launch.                   We supplement these data with publicly available
+The app allowed shoppers to browse the retailer’s product              data on the number of cell towers by zip code from the
+catalog, get deals and offers, order online through the                U.S. Federal Communications Commission (FCC).
+mobile browsers, and locate nearby stores to buy                       This variable provides exogenous variation in who
+ofﬂine (including open hours, phone numbers, and                       adopts the app, mitigating concerns about unob-
+driving directions). The app allowed shoppers to add                   servable factors that might inﬂuence adopters dif-
+products to an in-app cart linked to a checkout button.                ferently from nonadopters. Higher cell tower areas
+When shoppers clicked “Checkout,” the app redir-                       are likely to get better connectivity on mobile devices
+ected them to the retailer’s mobile site in the mobile                 and higher probability of downloading the app. Be-
+browser to make an online purchase. In this way, this                  cause most cell towers were constructed prior to
+app is similar to several retailer apps (e.g., PetSmart). Web          1990s, their location is not likely to be correlated with
+Appendix Figure A1 provides screenshots from the app.                  demand-led factors in recent years, such as pop-
+   We next describe the data used in our analysis.                     ulation growth or demand for video games differ-
+Mainly for security and privacy reasons, the retailer                  entially in high and low cell tower zip codes. We
+allowed us to access only a random sample of about                     explain the rationale for this instrument and rule out
+55,580 app adopters (from a population of about 2                      concerns for several potential omitted variables in
+million app adopters who started using the app for                     Section 4.3.2. We show that the number of cell towers
+the ﬁrst time in our data period) and 63,164 non-                      in a shopper’s zip code is less likely to be correlated
+adopters (from the remaining 30 million shoppers).1                    with omitted factors that may also drive demand (e.g.,
+The data on these shoppers include demographic                         store presence, store quality, income levels) during our
+information (age, gender, zip code) and loyalty program                data period. The key variables, their operationaliza-
+membership status. The ﬁrm provided us with two                        tion, and descriptive statistics appear in Table 2.
+kinds of data for these shoppers, transactional data
+across channels and mobile app use data. From the                      4. Analyses
+transactional data, we have access to purchases in the                 4.1. Relationship Between App Introduction and
+ﬁrm’s online and ofﬂine channels and to product returns.                    Shopping Outcomes: Descriptive Analysis
+The online channel represents purchases made via the                   We deﬁne app adopters as shoppers who started using
+retailer’s website, including those that come through                  the app for the ﬁrst time during our data period.
+the app checkout in the mobile browsers. In addition,                  Nonadopters are those who did not access the app even
+we have data on product returns by the shoppers.                       once during the study period.2 A simple comparison
+   The mobile app data include the app features that                   of shopping outcomes shows that the average mon-
+shoppers access with time stamps. App features relate to               etary value of purchases increased 19.25% ($63.60–$75.84
+app banner, product, stores, shopping, offers, rewards                 per month) for app adopters, whereas it decreased
+program, and notiﬁcations. We next describe these dif-                 marginally by 2.92% ($21.56–$20.93 per month) for
+ferent features. The app banner refers to the home screen              app nonadopters after app introduction (p < 0.001).
+of the app that displays offers or any other updates.                  However, the average monetary value of returns for
+Product-related features refer to product search, details,             app adopters also increased by 19.37% ($5.37–$6.41
+catalog, and videos that provide information about                     per month) compared with app nonadopters, who
+products. Similarly, store-related features refer to store-            experienced a marginal decrease of 8.23% ($1.58–$1.45
+related information, such as store check-in, locations,                per month) in the same period (p < 0.001). Overall, the
+and directions. Offers refer to a list of offers in the app            net monetary value increased by more than 19.23% for
+                                                               Narang and Shankar: Mobile Apps and Online and Ofﬂine Purchases and Returns
+760                                                                                Marketing Science, 2019, vol. 38, no. 5, pp. 756–772, © 2019 INFORMS
+
+
+Table 2. Variable Deﬁnitions and Descriptive Statistics
+
+Variable                                           Operationalization                            Mean         Std. dev.          Min            Max
+
+Frequency of purchases          Number of purchase transactions in the time period                 0.81           1.58          0               101
+Quantity of purchases           Number of items bought in the time period                          1.50           3.47          0               542
+Value of purchases              Monetary value of purchases in the time period ($)                43.94         117.61          0             8,993.81
+Frequency of returns            Number of return transactions in the time period                   0.11           0.48          0                51
+Quantity of returns             Number of items returned in the time period                        0.15           0.73          0               120
+Value of returns                Monetary value of returns in the time period ($)                   3.56          29.73          0             5,150.63
+Net monetary value (NMV)        (Monetary value of purchases − Monetary value of                  40.37         107.22         −1,937         8,993.81
+                                  returns) ($)
+App Adopters (TREAT)            Dummy indicating whether the shopper adopted the                   0.47           0.50           0                1
+                                  app (= 1) or not (= 0)
+Time Period (POST)              Dummy indicating whether the period is before (= 0) or             0.50           0.50           0                1
+                                  after (= 1) app launch
+Recency                         Number of days since the shopper’s last purchase                193.60          293.71           0.08         1,493.23
+Age                             Age of the shopper in years at the start of the data             31.98           10.78          11.00           115
+                                  period
+Gender                          Gender of the shopper (female = 2, male = 1,                       0.67           0.63           0.00             2.00
+                                  unknown = 0)
+Distance to nearest store       Distance in miles between the geographical centers of              3.90           7.21           0.00          574.48
+                                  the shopper’s and the nearest store’s zip codes
+Number of stores                Number of the focal retailer’s stores in the shopper’s zip         0.56           0.72           0.00             4
+                                  code
+Loyalty program level           Dummy indicating whether the shopper is enrolled in                0.16           0.37           0.00             1
+                                  the basic (= 0) or professional (= 1) membership
+                                  category on app introduction date
+Area population                 Population of the shopper’s zip code based on 2010 U.S.         31,437          19,090           6.00         113,916
+                                  census
+Competitor stores               Number of competing stores in the shopper’s zip code               0.29           0.52           0.00            4
+No. of unique products          Number of unique stock-keeping units that the shopper              1.21           2.71           0.00          313
+                                  buys
+No. of unique categories        Number of unique categories that the shopper buys                 0.84            1.53           0.00           29
+Pct. of top 100 products        Spending on the top 100 products/Total spending                   0.21            0.34           0.00            1
+Pct. of top 500 products        Spending on the top 500 products/Total spending                   0.47            0.42           0.00            1
+Cell towers                     Number of cell towers in the shopper’s zip code                   6.99            6.93           0.00           52
+Precipitation                   Average precipitation level in the shopper’s zip code as        102.82           74.81           0.00          498.5
+                                  reported by the NOAA in millimeters in June 2014
+Temperature                     Average air temperature of the shopper’s zip code in              23.53           3.57           0.96            36.38
+                                  Celsius as measured by the NOAA in June 2014
+Download speed                  Percentage of the population in the shopper’s county               0.01           0.02           0.00             0.81
+                                  with download speeds less than 6,000 KBps as
+                                  reported by the FCC in June 2014
+Wireless access                 Percentage of the population in the shopper’s county               0.12           0.02           0.00             1
+                                  with access to three or more wireless providers as
+                                  reported by the FCC in June 2014
+
+Notes. The statistics for the outcome variables (e.g., frequency, quantity, and value of purchases and returns) are averaged over the 36-month
+data period. NOAA, National Oceanic and Atmospheric Administration.
+
+
+
+app adopters compared with a 2.53% decline for                             4.2. Econometric Model
+nonadopters. Notably, both the online and ofﬂine                           To estimate the effect of mobile app introduction, the
+purchases are higher for app adopters than for non-                        ideal approach would be to compare the shopping
+adopters by 55.77% and 21.34%, respectively (p <                           outcomes for shoppers who adopt the mobile app to
+0.001). For the matched sample of nonadopters in                           the counterfactual—that is, to outcomes when the
+Table 3, the comparison shows a similar direction                          same shoppers do not adopt the mobile app. How-
+but a larger magnitude of differences in treated and                       ever, because we do not observe the counterfactual (a
+matched controls versus treated and unmatched con-                         shopper cannot be both an app adopter and a non-
+trols over the same time period. Between the pre and                       adopter), and because the treatment is not randomly
+post periods, the value of purchases decreased by                          assigned (a shopper self-selects into adopting the
+17.45% (from $63.10 to $52.09) for the matched control                     app), we examine nonexperimental variation. Speciﬁ-
+shoppers, and the value of returns decreased by                            cally, we compare the pre– and post–app introduction
+21.10% (from $5.26 to $4.15).                                              outcomes for app adopters and similar nonadopters.
+Narang and Shankar: Mobile Apps and Online and Ofﬂine Purchases and Returns
+Marketing Science, 2019, vol. 38, no. 5, pp. 756–772, © 2019 INFORMS                                                                          761
+
+Table 3. Model-Free Evidence: Mean Statistics
+
+                                       Treated pre       Treated post   Control pre       Control post   Matched controls      Matched controls
+Variable                                 period             period        period            period         pre period            post period
+
+Frequency of purchases                     1.211              1.368        0.407              0.363             1.197                 0.963
+Quantity of purchases                      2.256              2.524        0.570              0.665             2.214                 1.737
+Value of purchases                        63.60              75.84        21.56              20.93             63.10                 52.09
+Frequency of returns                       0.177              0.196        0.047              0.041             0.169                 0.129
+Quantity of returns                        0.238              0.258        0.062              0.053             0.226                 0.167
+Value of returns                           5.369              6.406        1.584              1.452             5.257                 4.146
+Net monetary value of purchases           58.236             69.438       19.975             19.481            57.85                 47.94
+Frequency of purchases—online              0.019              0.033        0.006              0.007             0.020                 0.017
+Quantity purchased—online                  0.028              0.050        0.009              0.010             0.028                 0.025
+Value of purchases—online                  1.41               1.997        0.495              0.425             1.571                 1.085
+Frequency of purchases—stores              1.192              1.335        0.400              0.356             1.177                 0.946
+Quantity purchased—stores                  2.228              2.474        0.741              0.655             2.186                 1.713
+Value of purchases—stores                 62.20              73.85        21.06              20.51             61.53                 51.01
+
+Notes. The pre period (post period) statistics are monthly averages over the 18-month period before (after) app launch across shoppers; online
+purchases in the post period for the treated include purchases on the mobile site after clicking checkout in app. Matched controls are nonadopters
+similar to adopters based on nearest neighbor matching using preperiod covariates.
+
+After specifying the baseline regression model, in the                      where i is the individual, t is the month, Y is the
+next section, we outline our strategy to address the                        outcome variable (frequency, quantity, and monetary
+endogeneity of the individual app adoption decision                         value of purchases and returns), TREAT is a dummy
+using propensity score matching (Rosenbaum and                              variable denoting app adoption (1 if shopper i is an
+Rubin 1983) and the Heckman selection model. We                             app adopter and 0 otherwise) to account for time-
+rule out several competing explanations for our re-                         invariant unobserved differences in adopters and non-
+sults in the robustness checks. The complete list of                        adopters, POST is a dummy variable denoting the
+analyses appears in Table 4.                                                period (1 for the period after the app has been in-
+  We compare the change in outcomes for the app                             troduced and 0 otherwise), α is a coefﬁcient vector, τ
+adopters 18 months before and 18 months after the                           represents month ﬁxed effects, and ϑ is an error term.
+retailer introduced the app to the change in outcomes                       The coefﬁcient of TREAT × POST represents the change
+for the nonadopters over the same time period. For-                         in app adopters’ outcomes relative to nonadopters’
+mally, we specify our difference-in-differences linear                      outcomes between the pre and post periods.
+regression model as                                                            The challenge in identifying the model speciﬁed
+                                                                            in Equation (1) is that app adoption is endogenous. In
+ Yit  α0 + α1 TREATi + α2 TREATi × POSTt + τt + ϑit ,                      other words, shoppers choose to adopt an app in an-
+                                                   (1)                      ticipation of future purchase behaviors and because
+
+Table 4. Overview of Analyses
+
+Section                                       Analysis                                Objective                   Key insight/conclusion
+
+4.3                         Propensity score matched and                Quantifying the relationship       App introduction is related with
+                              Heckman two-stage                          between app introduction and       higher frequency; quantity; and
+                              linear regression                          shopping outcomes                  monetary value of online and
+                                                                                                            ofﬂine purchases, returns, and net
+                                                                                                            monetary value of purchases.
+5.2 and web appendix        Robustness checks                           Ruling out alternative             App introduction effects are robust
+                              (a) Alternative models: difference-in-      explanations for the results      to alternative speciﬁcations and
+                                 differences without matching, and                                          explanations, such as other
+                                 Poisson difference-in-differences                                          adoption measures, time periods,
+                              (b) App adoption date as cutoff                                               app novelty, customer deal-
+                              (c) App novelty                                                               proneness, and outliers.
+                              (d) Alternative matching
+                              (e) Outliers
+                              (f) Shopper heterogeneity in
+                                 deal proneness
+                              (g) Alternative sample
+6 and web appendix          App use patterns                            Identifying app use                Increased purchases seem to be
+                              Time, geography, and                        patterns associated with           associated with app use time,
+                                 features used                            shopper purchases                  geography, and features.
+                                                  Narang and Shankar: Mobile Apps and Online and Ofﬂine Purchases and Returns
+762                                                                Marketing Science, 2019, vol. 38, no. 5, pp. 756–772, © 2019 INFORMS
+
+
+of their inherent characteristics, both observed and           In the absence of randomization on who adopts
+unobserved (e.g., preference for the retailer). The         the app, we use several careful econometric tech-
+selection challenges are posed by nonexperimental           niques to examine the effects of app introduction.
+variation in our data similar to quasi-experiments          First, we use propensity score matching based on
+(Tirunillai and Tellis 2017). Next, we describe em-         observed individual covariates. We conduct several
+pirical approaches for mitigating concerns for selec-       tests to inspect the quality of the matches. Second, we
+tion on observables and unobservables.                      estimate a two-stage Heckman selection model using
+                                                            the exogenous variation in the number of cell towers
+                                                            in the shopper’s zip code to mitigate selection on
+4.3. Endogeneity and Self-Selection
+                                                            unobservables. Third, we carry out a set of additional
+The ﬁrst availability of the retailer’s mobile app re-
+                                                            falsiﬁcation analyses. We next discuss our approaches
+presents a shock in our data period. The timing of the
+                                                            for selection on observables and unobservables.
+introduction of the app is exogenous to the shoppers,
+but the date on which an individual shopper adopts          4.3.1. Selection on Observables: Propensity Score
+and starts using an app may be endogenous. There-           Matching. Propensity score matching allows us to
+fore, we use the app introduction date as the cutoff        match app adopters and nonadopters on observed
+for deﬁning the pre and post periods. In this way, our      demographic and behavioral covariates while tack-
+empirical strategy conservatively assumes that the          ling the curse of dimensionality (Rubin 2008, Guo and
+beneﬁts of the app start accruing right from the day of     Fraser 2014). We begin by calculating each shopper’s
+app introduction for all app adopters, irrespective of      propensity score, deﬁned as the shopper’s probabil-
+their self-selected time of app adoption (Manchanda         ity of adopting the app. We do this using a bino-
+et al. 2015). An alternative empirical strategy for es-     mial logit model (see Web Appendix Table A4). Next,
+timating the effect of the app would be to treat the app    we identify nonadopters similar to adopters based
+adoption date for each adopter as the cutoff date           on the estimated propensity scores to create a con-
+for the intervention. This approach does not rule out       trol group. This approach is consistent with that of
+endogenous app adoption timing because app adop-            Rosenbaum and Rubin (1983) in creating a control
+ters may decide to adopt the app in anticipation of         group similar to the treated group in the distribution
+increased future purchases. As a result, our main           of observed covariates. We match each app adopter
+analysis reports the results from the ﬁrst approach.        to a nonadopter based on the 1:1 nearest neighbor
+However, as a robustness check, we estimate a model         algorithm with replacement. Formally, if P(Xi) is
+using the second approach that leverages individual         shopper i’s propensity score, the treated shopper i
+adoption dates (see Section 5.2.2).                         is matched to the control individual j, where j is
+   Arguably, one concern with using the app intro-          min||P(Xi) – P(Xj)||, to create the matched pairs closest
+duction date is the question of what exactly we are         to each other (Wangenheim and Bayón 2007, Huang
+measuring. Is it the effect of app introduction or          et al. 2012).
+adoption by shoppers? Our context is similar to that           What factors explain the decision to adopt the app?
+of Manchanda et al. (2015). They study the launch           Consistent with the existing research (Hung et al.
+of an online community that users join endogenously         2003, Kim et al. 2015), we model app adoption as
+at different points in time. They use the launch of         dependent on individual shopper demographics (e.g.,
+the community as the intervention and leverage              age, gender), behavioral measures (e.g., pre-period
+the period before and after the community launch as         spending and returns by month, recency, and fre-
+their pre and post periods. However, they attribute         quency of purchase, online purchases), and other
+the coefﬁcients of treatment effect of launching the        related measures (e.g., distance to the nearest store,
+community to users’ act of joining the community.           number of stores in the shopper’s zip code, presence
+   In our setting, although we use the launch date to       of competitor stores, loyalty program membership
+quantify the shift pre and post app introduction, the       level on app introduction day) that are likely to in-
+differences in shopping outcomes come from those            ﬂuence shoppers:
+who adopt the app (and not from their purchases
+even before they have adopted). We triangulate this           Propensity/Probability of App Adoption Ai
+through several analyses and falsiﬁcation checks (see                      exp(Ui )                                                (2)
+                                                                                    ,
+Section 4.3.2). In this sense, we measure the rela-                      1 + exp(Ui )
+tionship between app introduction and shopping                     Ui  γ + δDi + εi ,                                             (3)
+outcomes for the shoppers adopting the app. There-
+fore, our estimates are more representative of a local      where i is the shopper, U is the utility from app
+average treatment effect (LATE) than an average             adoption, D is a vector of covariates, (γ, δ) is a co-
+treatment effect (ATE) for the population.                  efﬁcient vector, and ε is an error term, distributed
+Narang and Shankar: Mobile Apps and Online and Ofﬂine Purchases and Returns
+Marketing Science, 2019, vol. 38, no. 5, pp. 756–772, © 2019 INFORMS                                                                     763
+
+Figure 1. (Color online) Monetary Value of Purchases Before and After App Introduction
+
+
+
+
+Notes. The app was launched on July 1, 2014. In the pre period, the values of purchases are nearly identical for the adopters and nonadopters,
+hence appearing as a single line. The sharp peak in November 2013 reﬂects the launch of the Xbox One console, which sold more than 2 million
+units worldwide within the ﬁrst month.
+
+
+as double exponential (Wooldridge 2002). To test                         4.3.2. Selection on Unobservables: Heckman Correc-
+the goodness of our propensity score matches, we                         tion and Other Analyses. To more formally account
+conduct a set of statistical analyses, including the                     for the nonrandomness of app adoption as a result
+standardized bias reduction test (Rosenbaum 2005).                       of unobserved factors, in this section, we carry out
+  Matching improves the percentage balance of pro-                       two types of analyses. In the ﬁrst set of analyses, we
+pensity scores by 100%, making the matched treated                       use (1) the two-stage Heckman correction procedure
+and control groups comparable (see Web Appendix                          (Heckman 1979) and (2) an alternative control group
+Table A5). This is important evidence that matching                      based on future treated shoppers because they are
+results in a valid control group. Another piece of                       more similar to app adopters than are nonadopters. In
+evidence is visual veriﬁcation that the pre period                       the second set of analyses, we exploit falsiﬁcation
+purchase trends for the treated and control groups are                   tests to check that the estimates are not spurious by
+parallel (Figure 1).3 Web Appendix Table A6 pres-                        comparing app adopters’ outcomes relative to non-
+ents the model estimates from the same comparison                        adopters’ outcomes in the periods after app intro-
+shown in Figure 1, based on the model in Equation (1),                   duction but prior to the adopters’ speciﬁc adoption
+with treatment interacted with each monthly dummy.                       dates, consistent with Goldfarb and Tucker (2014).
+This check, together with the insensitivity of results                      We ﬁrst describe the Heckman selection model. In
+to control variables (discussed in Section 5.2.1), as-                   the ﬁrst stage, we model the choice to adopt the app
+sures us that we can reasonably mitigate selection                       using a probit model. App adoption is an endoge-
+concerns along observables.                                              nous variable in our outcome model because shop-
+  Histograms showing the distribution of propensity                      pers self-select into adopting the retailer’s app. To
+scores for the treated and control groups before and                     identify the model, we require exogenous variation
+after matching appear in Figure 2. The distributions                     in app adoption. A potential source of such variation
+visually look more similar after matching relative to                    is the number of cell towers in the shopper’s zip
+before matching.                                                         code. Presumably, a higher number of cell towers may
+  Matching estimates and inspecting common trends                        be associated with better wireless connectivity on
+in our data ameliorate the self-selection concern to                     the shoppers’ mobile devices. This is likely to inﬂu-
+some extent. Nevertheless, we also carry out several                     ence app adoption. To meet the exclusion restriction,
+other analyses to further reduce concerns for un-                        the number of cell towers should not be correlated
+observed omitted variables (e.g., unobserved pref-                       with the error term ϑit . In other words, it should
+erence for the ﬁrm).                                                     not drive demand through variables other than app
+                                                           Narang and Shankar: Mobile Apps and Online and Ofﬂine Purchases and Returns
+764                                                                          Marketing Science, 2019, vol. 38, no. 5, pp. 756–772, © 2019 INFORMS
+
+
+Figure 2. Distribution of Propensity Scores Before and After Matching
+
+
+
+
+Note. Raw adopters’ and nonadopters’ plots represent pre-matching propensity scores.
+
+
+adoption. Consistent with Bronnenberg et al. (2012)                  where the locations of recently constructed cell towers
+and Lundborg et al. (2017), we carefully consider and                map closely with population density, our exclusion re-
+argue against several potential omitted variables that               striction could fail.4 However, in our nationwide data,
+may be correlated with the number of cell towers.                    this is the case for only 0.6% of locations.
+   First, in our context, high population growth areas                  Second, a possible alternative variable through which
+or areas that experienced recent population surges                   the number of cell towers can directly affect shop-
+could possibly endogenously drive the number of cell                 ping outcomes is store availability. However, the cor-
+towers. If so, in such locations, the number of cell                 relation between the number of towers and the number
+towers may be correlated with the demand-related                     of stores in a zip code is low, at 0.18. During 2010–2015,
+factors. We analyze relevant data on population from                 the correlation between the number of new stores
+recent years and the number of cell towers for the zip               opened and the number of cell towers is even lower
+codes in our data. We examined the correlations                      at 0.012. Nonetheless, we also control for population,
+between the number of cell towers constructed and                    the number of stores, and the distance of the shopper
+the population in a zip code during 2010–2015. The                   to the nearest store in our matching algorithm. Thus,
+correlation is low and positive at 0.072. Similarly,                 both the app adopters and the matched nonadopters
+the correlation between the number of towers and the                 are similar in these variables besides the application of
+change in population between 2010 and the start year                 Heckman selection correction.
+of our data—namely, 2013—is low and negative at                         Third, another potential alternative variable through
+−0.004. Furthermore, we ﬁnd that 90% of the cell                     which the number of cell towers can directly affect
+towers in our data set were constructed prior to 2010,               shopping outcomes is store performance. Perhaps the
+with 50% developed prior to 1990, before the birth of                retailer’s stores in high cell tower regions perform
+commercial internet. Thus, the changes in population                 better than stores in low cell tower regions because
+and the resulting demand effects during our period of                they might have superior staff and product assort-
+data would have less likely contributed to the variation             ment. To examine this possibility, we collect data on
+we observe in cell towers across zip codes because of                two commonly used measures of store performance,
+population growth. Furthermore, 42% of the cities in the             sales and sales per square foot (Gomez et al. 2004).
+data show stagnant or negative growth in popula-                     We estimate the differences in these store perfor-
+tion, ameliorating a concern that the emergence of cell              mance measures across high and low cell tower zip
+towers in these already built-up cities could have been in           codes based on the median split and ﬁnd that there is
+response to population growth in recent years. In areas              no signiﬁcant difference in the average store sales
+Narang and Shankar: Mobile Apps and Online and Ofﬂine Purchases and Returns
+Marketing Science, 2019, vol. 38, no. 5, pp. 756–772, © 2019 INFORMS                                                            765
+
+(p > 0.10) and average store sales per square foot (p >                      matching, ∂ is a coefﬁcient vector, and  is an error
+0.10) during the data period.                                                term. We compute the inverse Mills ratio from this
+   Fourth, the number of cell towers could also affect                       probit regression. We then augment the regression
+shopping outcomes if high cell tower regions are                             model in Equation (1) by including the inverse Mills
+those with stores offering better product assortment.                        ratio as an additional covariate in the second stage.
+We also conﬁrm from the managers of the retail chain                         Because the number of cell towers varies at the zip
+that they strategically vary neither the product as-                         code level, we cluster standard errors by zip code to
+sortments across stores nor between online and off-                          allow serial correlations and within–zip code corre-
+line channels. This fact mitigates the concern that                          lations among shoppers (Bertrand et al. 2004).
+product assortment might vary between stores in high                            Another approach we adopt for selection on un-
+cell tower areas and stores in low cell tower areas.                         observables is to use an alternative control group. In
+   Fifth, the number of cell towers may be endogenous                        this approach, we treat future app adopters as a
+because they might have been constructed in areas                            control group. Speciﬁcally, we consider a shopper
+needing greater wireless connectivity. We ﬁnd that                           who adopted the app in the 9 months between April
+most of the cell towers were built prior to 1990.                            2015 and December 2015 (both months included) to
+However, even if the number of cell towers is highly                         be in the control group, whereas we view those who
+correlated with the need for wireless connectivity,                          adopted the app in the ﬁrst 9 months of app launch in
+this demand is less likely to come from console buyers                       July 2014 to be in the treatment group. We compare
+who primarily play games ofﬂine in the console and                           the outcomes of these groups of shoppers 9 months
+do not depend on connectivity to the internet. This                          before and after app launch. This analysis is in the
+focal retailer primarily sells console games. Fur-                           same spirit as the falsiﬁcation analysis of Manchanda
+thermore, online game playing is a recent phenom-                            et al. (2015) and Goldfarb and Tucker (2011).
+enon, is still a small fraction of console game playing                         Finally, we report a falsiﬁcation test to formally
+time, and occurred after most cell towers were built.                        check whether app introduction has a strong rela-
+About 70% console buyers play games that are ofﬂine,                         tionship with shopping outcomes right from the time
+and their experience is not tied to better connectivity                      of launch or from when it is adopted by the shoppers.
+(Statista 2015). Anyone can purchase a game and play                         This test will help mitigate any concern about an
+on his or her home console without being connected to                        unobserved event around app introduction that may
+the internet. Thus, in terms of scope and generaliz-                         be leading to spurious effects. Introduction by itself,
+ability, our results are best interpreted in the context                     in the absence of adoption, should not be linked to
+of retailing of an ofﬂine product (e.g., electronics,                        signiﬁcant upticks in purchases despite a possible
+consoles, and ofﬂine games) rather than online and                           positive spillover effect of the news of app release.
+mobile games that require internet connection.                               The way we conduct this falsiﬁcation check is to ﬁrst
+   Sixth, the location of cell towers may be correlated                      create different cohorts of app adopters based on
+with economic variables, such as income and employ-                          adoption date. We then deﬁne the post-period ob-
+ment. To examine this possibility, we analyzed the                           servations as those from the months after app in-
+correlations by zip code. The correlation between the                        troduction but before the cohort’s app adoption date.
+number of towers and the mean (median) household                             Thus, adopters of August 19, 2015, will have their post
+income in 2013 inﬂation-adjusted dollars is low at −0.13                     period deﬁned as July 2014 through July 2015. Their
+(−0.11). Similarly, the correlation between the num-                         pre period will be the same number of months before
+ber of towers and employment rate (measured as the                           app launch (i.e., June 2013 through June 2014). We
+percent population 16 years and older in the labor                           then estimate a regression model for these periods for
+force) is low at 0.03.5                                                      the treated cohort with each adopting shopper’s
+   Next, we estimate a probit model to examine the                           matched nonadopter. Although this test is not an
+strength of the ﬁrst-stage effects. The exclusion re-                        exact replication of the full model because of the re-
+striction results in the following ﬁrst-stage selection                      duced number of post-period observations, it lends
+equation for modeling Ai, the probability of shopper i                       some conﬁdence in the estimates by showing the lack
+adopting the app:                                                            of signiﬁcant effects in the months before adoption.
+
+          Pr(Ai  1| CELLTOWERi , Qi , i )                                  5. Results and Robustness Checks
+                 Φ(∂0 CELLTOWERi + ∂1 Qi + i ),                      (4)   5.1. Results
+                                                                             We ﬁrst report the results for the selection model.
+                                                                             Table 5 shows the estimates from the ﬁrst-stage self-
+where CELLTOWER is the number of cell towers                                 selection probit model. A higher number of cell towers
+in the shopper’s zip code, Q is a vector of other                            is associated with a higher adoption probability in the
+covariates similar to those used in propensity score                         ﬁrst stage (p < 0.001).
+                                                          Narang and Shankar: Mobile Apps and Online and Ofﬂine Purchases and Returns
+766                                                                         Marketing Science, 2019, vol. 38, no. 5, pp. 756–772, © 2019 INFORMS
+
+
+                Table 5. First-Stage Probit Model Results
+
+                Variable                                                                  Coefﬁcient (standard error)
+
+                Cell towers                                                                     0.0022*** (0.0006)
+                Precipitation                                                                   0.0003*** (0.0001)
+                Temperature                                                                     0.0036** (0.0012)
+                Download speeds (less than 6,000 KBps)                                         −0.0111 (0.0168)
+                Wireless access                                                                 0.0075 (0.0184)
+                Age                                                                            −0.0142*** (0.0004)
+                Gender                                                                          0.1566*** (0.0066)
+                Recency                                                                        −0.0018*** (0.0000)
+                Loyalty program level                                                          −0.1902*** (0.0106)
+                No. of stores in zip code                                                      −0.0168* (0.0067)
+                Area population                                                                 0.0000*** (0.0000)
+                Distance to nearest store                                                      −0.0004 (0.0007)
+                No. of competitor stores                                                        0.0201* (0.0083)
+                Past frequency of purchases                                                     0.0003*** (0.0000)
+                Past quantity of purchases                                                     −0.0003*** (0.0001)
+                Past monetary value of purchases                                                0.0001*** (0.0000)
+                Past frequency of returns                                                      −0.0024*** (0.0010)
+                Past quantity of returns                                                       −0.0019 (0.0062)
+                Past monetary value of returns                                                  0.0225*** (0.0016)
+                Past frequency of purchases—online                                             −0.0001 (0.0039)
+                Past quantity of purchases—online                                               0.0406*** (0.0151)
+                Past monetary value of purchases—online                                         0.0145* (0.0074)
+                Past quantity of purchases per order                                           −0.0003*** (0.0001)
+                Intercept                                                                      −0.0084 (0.0363)
+
+                Notes. The number of cell towers in the shopper’s zip code provides the exogenous variation in app
+                adoption; N = 118,744, Akaike information criterion = 127,565.6, and Bayesian information criterion =
+                127,798. Past period refers the 18-month period totals prior to app introduction.
+                   ***p < 0.001; **p < 0.01; *p < 0.05.
+
+
+
+   We include the inverse Mills ratio (IMR) obtained                 returns (α2 = 0.08, p < 0.001). Overall, app adopters’
+from the ﬁrst stage in the second-stage outcome                      net monetary value of purchases is 36.49% higher
+model for the propensity score–matched sample. The                   than those of matched pre-period nonadopters. 6
+results for this model appear in Table 6. IMR is sig-                   Furthermore, both the online and ofﬂine purchases
+niﬁcant (p < 0.001). The coefﬁcient of IMR is the frac-              tend to be higher for app adopters relative to non-
+tion of the covariance between the decision to adopt                 adopters (Table 7). The absolute effects are much
+the app and shopping outcome relative to the vari-                   larger for in-store purchases ($22.18 additional amount)
+ation in decision to adopt the app. The coefﬁcient of                than for online purchases ($1.07 additional amount).
+IMR is indeed negative (similar to Gill et al. 2017).                However, in percentage terms, the increase in online
+This sign indicates that the selection correction term,              purchases for app adopters relative to matched non-
+resulting from omitted factors affecting shoppers,                   adopters is 68% compared with about 36% for corre-
+adjusts shopping outcomes downward.                                  sponding in-store purchases (p < 0.001).
+   The results in Table 6 show a positive and signiﬁ-                   Our ﬁndings show a signiﬁcant change in shopper
+cant relationship between app introduction on the                    behavior in other channels. We ﬁnd that app adopters
+frequency, quantity, and monetary value of purchases                 buy 33% more frequently, buy 34% more items, and
+and returns (p < 0.001). These estimates are more                    spend 37% more than nonadopters after app intro-
+representative of a LATE than an ATE for the pop-                    duction. At the same time, they return 35% more
+ulation. They are particularly relevant for app adopters             frequently, 35% more items, and 41% more in dollar
+whose decision to adopt the app is affected by the                   value compared with nonadopters after app intro-
+number of cell towers in the zip code, consistent with               duction. Overall, the app is associated with a 36%
+Sudhir and Talukdar (2015). App adopters spend                       increase in net monetary value of purchases across
+$23.26 more than nonadopters after app introduction                  the channels. Both the online and ofﬂine purchases
+and engage in a higher frequency (α2 = 0.39, p < 0.001)              are higher for app adopters.
+and quantity of purchases (α2 = 0.75, p < 0.001). In-                   Similarly, the main model with an alternative control
+terestingly, relative to nonadopters, app adopters                   group based on future adopters produces robust es-
+also return $2.15 more of products and engage in a                   timates. These results appear in Table 8.7 In this method,
+greater frequency (α2 = 0.06, p < 0.001) and quantity of             we use matched future app adopters from April to
+Narang and Shankar: Mobile Apps and Online and Ofﬂine Purchases and Returns
+Marketing Science, 2019, vol. 38, no. 5, pp. 756–772, © 2019 INFORMS                                                                                  767
+
+Table 6. App Introduction and Aggregate Shopping Outcomes
+
+                                Frequency of         Quantity of          Value of         Frequency of          Quantity of       Value of      NMV of
+Variable                         purchases           purchases           purchases            returns             returns          returns      purchases
+
+(App Adopters × Post                0.391***            0.745***           23.256***             0.059***           0.080***         2.149***     21.107***
+  App Introduction)                (0.014)             (0.027)             (0.749)              (0.004)            (0.008)          (0.217)       (0.668)
+App Adopters                        0.018               0.051               0.746                0.009              0.013            0.134         0.612
+                                   (0.021)             (0.04)              (1.147)              (0.008)            (0.013)          (0.373)       (0.970)
+IMR                                −2.446***          −4.504***          −122.22***             −0.380***         −0.508***       −11.232***    −110.99***
+                                   (0.045)            (0.083)              (2.096)              (0.016)           (0.025)          (0.624)        (1.812)
+Intercept                           7.148***          13.123***           350.28***              1.094***           1.456***        32.731***    317.55***
+                                   (0.126)            (0.233)              (5.986)              (0.045)            (0.07)           (1.81)        (5.168)
+Number of observations             4,001,760          4,001,760           4,001,760             4,001,760         4,001,760        4,001,760     4,001,760
+R-squared                           0.156              0.117                 0.098               0.047             0.038             0.012          0.099
+
+Notes. Robust standard errors clustered by zip code are in parentheses; month ﬁxed effects are included. IMR, inverse Mills ratio from the
+selection model.
+   ***p < 0.001; **p < 0.01; *p < 0.05.
+
+
+December 2015 as comparable nonadopters for app                                   results in Table 9 are for the shorter-term period
+adopters from July 2014 to March 2015 and compare                                 relative to the main model period of 18 months. Thus,
+their outcomes before and after 9 months of app in-                               these estimates are best viewed as depicting short-
+troduction. The results from this model are substan-                              term relationships.
+tively similar.
+   Finally, we consider the pre adoption period for the                           5.2. Checking Robustness of Results and Ruling
+app adopters as their post period relative to the pre                                   Out Alternative Explanations
+launch period by adoption date-based cohorts. The                                 We obtain consistent results when using individual
+estimates for nine such cohorts (randomly drawn                                   and month ﬁxed effects in our model speciﬁcation. In
+from adoption dates between April and December                                    addition, we perform several robustness checks and
+2015) appear in Table 9. We report the coefﬁcient of                              tests to rule out alternative explanations for the linkages
+the TREAT × POST variable for the adopters on each                                we ﬁnd between app introduction and purchases and
+of the dates relative to their matched nonadopters.                               returns.
+The post-period observations are those from the months
+after app introduction but before app adoption. From                              5.2.1. Alternative Model Speciﬁcations. In addition to
+Table 9, most coefﬁcients are insigniﬁcant. Even so,                              our preferred model with propensity score–matched
+for the cohorts with signiﬁcant coefﬁcients in Table 9,                           linear regression and Heckman selection correction, we
+we do not spot any systematic pattern. Thus, the                                  also estimate models without matching and using
+availability of the app does not appear to be related                             Poisson count data models for frequency and quantity
+to shopper behavior in the absence of adoption. The                               variables. The results from these models replicate the
+
+Table 7. App Introduction and Purchases by Channel
+
+                                                           (1) Ofﬂine                                                          (2) Online
+
+                                    Frequency of           Quantity of            Value of                Frequency of         Quantity of        Value of
+Variable                             purchases             purchases             purchases                 purchases           purchases         purchases
+
+(App Adopters × Post                    0.375***              0.719***                22.183***              0.017***             0.026***         1.074***
+  App Introduction)                    (0.014)               (0.027)                  (0.737)               (0.001)              (0.002)          (0.125)
+App Adopters                            0.019                 0.051                    0.902                 0.000                0.000          −0.157
+                                       (0.021)               (0.039)                  (1.126)               (0.001)              (0.002)         (0.131)
+IMR                                   −2.411***             −4.454***            −119.91***                 −0.035***            −0.05***        −2.306***
+                                      (0.044)               (0.082)                (2.063)                  (0.002)              (0.003)         (0.122)
+Intercept                               7.042***            12.974***             343.72***                   0.106***             0.149***        6.56***
+                                       (0.125)               (0.231)                (5.894)                  (0.004)              (0.008)         (0.342)
+Number of observations                4,001,760             4,001,760             4,001,760                 4,001,760            4,001,760       4,001,760
+R-squared                               0.050                 0.038                  0.051                    0.003                0.002           0.003
+
+Notes. Robust standard errors clustered by zip code are in parentheses; month ﬁxed effects are included. IMR, inverse Mills ratio from the
+selection model.
+   ***p < 0.001; **p < 0.01; *p < 0.05.
+                                                                   Narang and Shankar: Mobile Apps and Online and Ofﬂine Purchases and Returns
+768                                                                                   Marketing Science, 2019, vol. 38, no. 5, pp. 756–772, © 2019 INFORMS
+
+
+Table 8. Alternative Model with Future App Adopters as Control
+
+                                 Frequency of        Quantity of        Value of     Frequency of        Quantity of         Value of          NMV of
+Variable                          purchases          purchases         purchases        returns           returns            returns          purchases
+
+(App Adopters × Post                0.262***           0.482***         15.534***        0.045***           0.063***           1.789***         13.745***
+  App Introduction)                (0.014)            (0.031)           (1.196)         (0.005)            (0.007)            (0.273)           (1.084)
+App Adopters                        0.007              0.015             0.345           0.000            −0.003               0.054             0.299
+                                   (0.023)            (0.048)           (1.484)         (0.007)           (0.011)             (0.293)           (1.338)
+IMR                               −3.248***           −5.96***      −173.679***         −0.518***         −0.696***         −16.03***        −157.65***
+                                  (0.078)             (0.149)         (4.172)           (0.017)           (0.025)            (0.635)           (3.750)
+Intercept                           9.745***          17.911***        508.894***        1.55***            2.096***         44.981***        463.913***
+                                   (0.206)            (0.398)          (11.07)          (0.048)            (0.07)            (1.721)           (9.967)
+Number of observations            1,388,772           1,388,772        1,388,772        1,388,772         1,388,772         1,388,772         1,388,772
+R-squared                          0.058               0.041              0.055          0.014             0.011              0.004              0.059
+
+Notes. Robust standard errors clustered by zip code are in parentheses; month ﬁxed effects are included. In this method, matched future app
+adopters from April to December 2015 are used as controls for app adopters from July 2014 to March 2015; their outcomes before and after nine
+months are compared. IMR, inverse Mills ratio from the selection model.
+  ***p < 0.001; **p < 0.01; *p < 0.05.
+
+ﬁndings from Tables 6 and 7 and appear in Web                                  POSTt in the regression from our estimation equa-
+Appendix Tables A8–A11. Coefﬁcients of the treat-                              tion (1) becomes POSTit, a binary variable that in-
+ment effect from Web Appendix Tables A8 and A9                                 dicates the post–app adoption period for each treated
+represent unconditional changes in outcomes as a                               shopper and the matched counterpart. For example, if a
+result of the app, without conditioning on covariates                          shopper ﬁrst adopted the app in September 2014,
+via propensity scores. Web Appendix Tables A10 and                             the indicator value is 1 for subsequent months and
+A11 report the results from Poisson count data models.                         otherwise 0. The matched shopper for this adopter
+These results are substantively similar to those in                            will share the same value. Thus, the comparison time
+Tables 6 and 7 for the matched samples. The insen-                             window is the same for each matched pair (Xu et al.
+sitivity of the results to control variables suggests that                     2016). The results appear in Web Appendix Tables
+the effect of unobservables relative to these observed                         A12 and A13. The effects are robust and consistent
+covariates would have to be very large to change our                           with previous ﬁndings.
+results signiﬁcantly (Altonji et al. 2005).
+                                                                               5.2.3. App Novelty Effect. An alternative explanation
+5.2.2. Alternative Intervention/Cutoff Date. We esti-                          for the increased net monetary value of purchases
+mated an alternative model with a more nuanced                                 after app adoption could be the novelty of the app. It
+pre- and post-period intervention/cutoff date based                            is possible that the app triggers a heightened shop-
+on individual app adoption. In our main model, we                              ping response only because of a temporary novelty
+compared app adopters and nonadopters along their                              effect around its launch that fades after a few months.
+outcomes before and after app introduction. In the                             To test this explanation, we reestimate our models
+alternative model, we create a new setup where we                              using different windows of time, including 3, 6, 9,
+treat the app adoption date for each treated shopper                           and 12 months before and after introduction for
+as the cutoff date for the intervention. In this model,                        the matched sample of adopters and nonadopters.
+
+Table 9. Falsiﬁcation Test with the Post Period Deﬁned as After App Introduction but Before App Adoption
+
+               Frequency of         Quantity of             Value of         Frequency of         Quantity of          Value of             NMV of
+Cohort          purchases           purchases              purchases            returns            returns             returns             purchases
+
+4/16/15         0.139 (0.14)        0.219 (0.287)       −2.511 (12.827)       0.064 (0.052)     0.068 (0.07)        6.218 (3.443)        −8.729 (11.557)
+5/10/15         0.287 (0.147)       0.561 (0.316)       22.386* (10.948)      0.068 (0.042)     0.088 (0.059)       3.993 (2.407)        18.394 (9.957)
+6/28/15         0.038 (0.11)       −0.179 (0.229)       −0.249 (10.03)       −0.03 (0.036)     −0.051 (0.064)      −1.28 (2.629)          1.031 (9.462)
+7/18/15         0.159 (0.123)       0.058 (0.248)        5.235 (9.485)        0.023 (0.039)     0.025 (0.055)       0.398 (2.547)         4.837 (8.434)
+8/19/15         0.168 (0.119)       0.164 (0.252)      −10.622 (9.674)        0.085* (0.04)     0.089 (0.052)       1.296 (1.576)       −11.918 (9.464)
+9/22/15         0.337* (0.145)      0.718* (0.351)      19.026 (12.749)      −0.013 (0.04)     −0.002 (0.059)      −2.928 (2.83)         21.953* (11.109)
+10/21/15       −0.127 (0.156)      −0.062 (0.291)        5.929 (10.365)      −0.06 (0.039)     −0.086 (0.061)      −2.602 (1.596)         8.531 (9.964)
+11/8/15         0.033 (0.139)       0.039 (0.286)       −1.064 (11.122)       0.008 (0.03)      0.011 (0.04)       −1.076 (1.62)          0.013 (10.746)
+12/15/15        0.056 (0.112)      −0.024 (0.24)       −12.333 (11.605)       0.058 (0.052)     0.084 (0.062)      −0.7 (3.237)         −11.633 (10.541)
+
+Notes. Coefﬁcients of TREAT × POST are reported in this table for cohorts based on their date of app adoption for randomly selected dates
+between April and December 2015. Robust standard errors clustered by zip code are in parentheses; month ﬁxed effects are included.
+   ***p < 0.001; **p < 0.01; *p < 0.05.
+Narang and Shankar: Mobile Apps and Online and Ofﬂine Purchases and Returns
+Marketing Science, 2019, vol. 38, no. 5, pp. 756–772, © 2019 INFORMS                                                          769
+
+The effects of the app introduction persist in these vary-             outcomes (see Table 9). In this section, we examine
+ing windows of time (see Web Appendix Tables A14                       app adopters’ app use and offer a descriptive analysis
+and A15).                                                              of the linkages between shoppers’ app use patterns
+                                                                       and purchase or return transactions.
+5.2.4. Alternative Matching Methods. Our main anal-                       Speciﬁcally, we examine three elements of app
+ysis relies on the commonly used 1:1 nearest neighbor                  use—namely, time, geography, and features—in the
+matching algorithm with replacement. In addition,                      6 months following the launch of the app.8 We identify
+we use the Mahalanobis metric, the nearest neighbor                    and report differences in these usage aspects in these
+without replacement, and a reﬁned caliper matching                     6 months between app adopters who subsequently
+approach by deﬁning the bandwidth within which to                      make a purchase (app-linked shoppers; n = 21,092)
+identify matched control units (Silverman 1986). We                    within 48 hours after app use and those who do not
+test using a bandwidth of 0.27 and a tighter 0.05 times                (non-app-linked shoppers; n = 8,934). We chose 48 hours
+the standard deviation of the propensity scores. Web                   based on the distribution of the time gap between
+Appendix Tables A16 and A17 report the results for                     app use and purchase. We examined the distribu-
+these alternative matched samples. We ﬁnd that these                   tion of time gap between app use and purchase time
+estimates are consistent with those from our proposed                  (within one day [24 hours], two days [48 hours], etc.).
+method.                                                                We found that the largest chunk (41%) of adopters’
+                                                                       purchases after app introduction occur within 48
+5.2.5. Outliers. Another possible explanation for the                  hours of app use.
+effects could be outliers, such as the top spenders (and
+not the average shopper). We test this possible ex-
+                                                                       6.1. Temporal App Use–Purchase Linkages
+planation by ﬁrst removing the top spenders from
+                                                                       The differences between app-linked and non-app-
+our sample (the mean plus 3 standard deviations of
+                                                                       linked shoppers reveal that app-linked shoppers use
+spending by shoppers in the pre period) and then
+                                                                       the app for a greater number of days (Web Appendix
+carrying out difference-in-differences methods as done
+                                                                       Figure A3), longer periods of time (Web Appendix
+earlier. Our estimates are robust to outliers as shown
+                                                                       Figure A4), a higher number of app sessions (Web
+in Web Appendix Tables A18 and A19.
+                                                                       Appendix Figure A5), and a longer dwell time (Web
+                                                                       Appendix Figure A6) during each session (p < 0.001)
+5.2.6. Shopper Heterogeneity. Whereas we match shop-
+                                                                       than do non-app-linked shoppers in the six months
+pers on a broad set of covariates, an untested alter-
+                                                                       after app launch.
+native explanation is that deal-prone shoppers rather
+                                                                          Furthermore, app-linked shoppers use a greater
+than app usage largely drive the effects. In general,
+                                                                       number of app features across sessions. However,
+the retailer did not send any unique offers to mobile
+                                                                       within a session, the number of features app-linked
+app adopters that the nonadopters did not receive,
+                                                                       shoppers use does not signiﬁcantly differ from those
+or vice versa. Yet, to rule out the possibility that the
+                                                                       used by non-app-linked shoppers (Web Appendix
+actual redemption or use of offers in the pre period
+                                                                       Figure A7).9 Extended use of features over a longer
+could inﬂuence the two groups differently, we repeat
+                                                                       period of time might possibly explain subsequent
+the analyses after removing deal-prone shoppers. Web
+                                                                       purchases by app-linked shoppers better than the
+Appendix Tables A20 and A21 report the estimates
+                                                                       diversity of feature use within a session does. An
+for the sample that did not use deals in the pre period.
+                                                                       alternative explanation can be that the number of
+The results are substantively similar.
+                                                                       sessions is correlated with purchases—those who
+                                                                       shop more also use the app more times.
+5.2.7. Alternative Sample. Whereas we analyze a sam-
+ple of 55,580 app adopters (about 3% of all adopters) in
+our main analysis, we collect additional data on                       6.2. Geographic App Use–Purchase Linkages
+another random sample of 50,000 app adopters. We                       Of the 30,026 app adopters who adopted the app in
+repeat the analyses for this sample using a propensity                 the ﬁrst six months, 9,940 enabled location tracking in
+score–matched linear regression with Heckman sec-                      the app. Their median (mean) distance from the store
+tion correction from our main model. We ﬁnd consistent                 of purchase when they access the app is 3.78 (22.39)
+results for this alternative sample. Web Appendix Tables               miles. Moreover, 20.05% of their transactions take
+A1 and A2 report these estimates.                                      place after app use within a mile of the store of purchase,
+                                                                       with 65.36% of the transactions occurring after app
+6. App Use Patterns: An                                                use within ﬁve miles. App-linked shoppers (average
+   Exploratory Examination                                             of 21.62 miles) tend to use the app much closer to
+Our results show that app adoption and not its                         stores (p < 0.001) than do non-app-linked shoppers
+availability is primarily associated with shopping                     (average of 30.96 miles).
+                                                    Narang and Shankar: Mobile Apps and Online and Ofﬂine Purchases and Returns
+770                                                                  Marketing Science, 2019, vol. 38, no. 5, pp. 756–772, © 2019 INFORMS
+
+
+6.3. Feature Use–Purchase Linkages                            app adopters than for nonadopters. Third, the time, lo-
+A comparison of features used by app-linked and non-          cation, and features of app use provide descriptive
+app-linked shoppers shows that (1) within a session,          evidence of how the app aids shopping in different
+app-linked shoppers exhibit a higher frequency of             channels. Speciﬁcally, app-linked shoppers (those who
+use of features relating to the offer list, product avail-    make a purchase within 48 hours of app use) are those
+ability check, and call store (p < 0.001), and (2) across     who use the app when they are close to the store of
+sessions, app-linked shoppers display a higher frequency      purchase and access the app for rewards, product
+of use of features relating to the product search, product    details, and notiﬁcations.
+details, and rewards landing page (p < 0.001).                   Although our research is the ﬁrst to quantify and
+   Additional analyses (see Web Appendix B) show              explain the differences between app adopters and
+that app adopters also purchase a more diverse set            nonadopters of a retailer’s mobile app for a broad
+of items (including less popular products) than do            range of shopping outcomes, including returns, it has
+nonadopters and tend to browse product and rewards            some limitations. First, our research relies on non-
+information in the app prior to making purchases. App         experimental variation in the data. Randomized ﬁeld
+adopters return products originally purchased in stores       experiments, if feasible, could provide future re-
+and through loyalty rewards more than those purchased         searchers with unique opportunities for testing spe-
+online and without rewards.                                   ciﬁc app-related manipulations. Second, our results
+                                                              capture the effects on app adopters who use the app
+                                                              at least once—not those who downloaded but never
+7. Managerial Implications, Conclusion,                       used the app. Third, the number of cell towers serves
+   and Limitations                                            as a good source of exogenous variation in app adop-
+Our results offer key managerial implications. First,         tion because it has little correlation with demand
+on the basis of the difference in net monetary value of       factors in our data. This exogeneity assumption or
+purchases for app adopters relative to nonadopters            exclusion restriction will fall down in locations where
+from the propensity score–matched regression model            the number of cell towers and population are highly
+with selection correction ($21.11) and the most conser-       correlated. Despite our careful analysis, if there are
+vative estimate from the robustness checks ($10.21)           any other unobservable confounds (especially if cor-
+across the retailer’s 55,580 adopters, we estimate that       related with the number of cell towers), we need to
+the retailer’s net annual revenue increase after app          be cautious about a causal interpretation of our es-
+introduction is approximately $6.8 million–$14.1 mil-         timates. Furthermore, our estimates are more repre-
+lion from these adopters.                                     sentative of a LATE than an ATE for the population.
+   Second, the ﬁnding that app adopters’ purchases            They are particularly relevant for app adopters whose
+expand in both the online and ofﬂine channels sug-            decision to adopt the app is affected by the number of cell
+gests that managers should plan for app adopters              towers in the zip code (Sudhir and Talukdar 2015).
+visiting both the physical and online stores more             Fourth, although we have examined the net monetary
+often. Managers should expect more purchases from             value of purchases, our data do not contain cost in-
+shoppers based on the time, location, and features            formation. If cost data are available, it would be in-
+used in the app of the shoppers. As a result, inte-           teresting to study the effect of app introduction on
+grating individual-level shopper insights from the            customer lifetime value. Fifth, we have data from only
+app into in-store and online experiences may help             one retailer across channels. Future studies on mobile
+create additional value in these channels. Because            apps can examine data on multiple retailers, including
+shoppers are likely to access product information             pure play retailers with a growing brick-and-mortar
+through the app, store associates can go beyond of-           presence (e.g., Warby Parker, Bonobos). Finally, future
+fering the standard product information.                      research can also examine the marketing mix strategies
+   In conclusion, our analyses offer several key insights     for improving adoption of and engagement through apps.
+that demonstrate novel results and extend extant re-
+search. First, mobile app adopters have a higher fre-         Acknowledgments
+quency, quantity, and monetary value of both purchases        The authors thank participants at the Theory and Practice in
+and returns relative to nonadopters. App adopters buy         Marketing (TPM) Conference and the Professors’ Institute
+                                                              meeting of Marketing EDGE, as well as Sridhar Narayanan,
+33% more frequently, buy 34% more items, and spend
+                                                              Harikesh Nair, Hema Yoganarasimhan, S. Sriram, and Raj
+37% more compared with nonadopters in the period after
+                                                              Venkatesan for valuable comments.
+app introduction. At the same time, they return 35% more
+frequently, 35% more items, and 41% more in dollar value.     Endnotes
+Overall, app adoption is associated with a 36% increase       1
+                                                               In subsequent robustness checks (Web Appendix Tables A1 and A2),
+in net monetary value of purchases across all channels.       we use an alternative sample of 50,000 app adopters and obtain
+Second, both online and ofﬂine purchases are higher for       similar results.
+Narang and Shankar: Mobile Apps and Online and Ofﬂine Purchases and Returns
+Marketing Science, 2019, vol. 38, no. 5, pp. 756–772, © 2019 INFORMS                                                                             771
+2
+ The ﬁndings of subsequent empirical analysis apply to app adopters          Dubé J-P, Fang Z, Fong N, Luo X (2017) Competitive price targeting
+deﬁned as those who download and use the app, not those who                       with smartphone coupons. Marketing Sci. 36(6):944–975.
+download but never use the app. This is reasonable because the latter        Einav L, Levin J, Popov I, Sundaresan N (2014) Growth, adoption,
+are effectively nonadopters.                                                      and use of mobile e-commerce. Amer. Econom. Rev. 104(5):
+3
+ We report the pre-period trends for the unmatched samples (raw                   489–494.
+data) in Web Appendix Figure A2. Together with Figure 1, it dem-             eMarketer (2017) eMarketer unveils new estimates for mobile app
+onstrates that matching improves the pre-period trends, mitigating                usage. eMarketer (April 11), https://tinyurl.com/ydyz4hsm.
+concerns for unobservables.                                                  Fong NM, Fang Z, Luo X (2015) Geo-conquesting: Competitive lo-
+4                                                                                 cational targeting of mobile promotions. J. Marketing Res. 52(5):
+ The limits and scope of our exclusion restriction are similar in spirit
+                                                                                  726–735.
+to those of Jacobi and Sovinsky’s (2016). They estimate marijuana de-
+                                                                             Forbes (2015) How mobile ordering can impact Starbucks’ valuation.
+mand using living in a city and temperature as exclusionary variables.
+5
+                                                                                  (October 30), http://tinyurl.com/zrekrwp.
+ Despite the thorough evaluation of the exclusion restriction and            Gill M, Sridhar S, Grewal R (2017) Return on engagement initiatives:
+other falsiﬁcation checks, we cannot completely rule out the possi-               A study of a business-to-business mobile app. J. Marketing 81(4):
+bility that there could be other unobserved factors not addressed by              45–66.
+the number of cell towers variable (Goldfarb and Tucker 2011). If            Goldfarb A, Tucker C (2011) Privacy regulation and online adver-
+there is any such unobserved factor, we need to be cautious in                    tising. Management Sci. 57(1):57–71.
+interpreting our estimates as causal (Jacobi and Sovinsky 2016).             Goldfarb A, Tucker C (2014) Conducting research with quasi-
+6
+ We calculate the percentage change as the treatment effect relative to           experiments: A guide for marketers. Working paper, Univer-
+matched pre period control group’s level of the variable reported in              sity of Toronto, Toronto.
+Table 3. For example, for NMV, it is (21.11/57.85), or 36.49%.               Gomez MI, McLaughlin EW, Wittink DR (2004) Customer satisfac-
+7
+ The results from this model are similar for online and ofﬂine pur-               tion and retail sales performance: An empirical investigation.
+chases, as reported in Web Appendix Table A7.                                     J. Retailing 80(4):265–278.
+8                                                                            Guo S, Fraser MW (2014) Propensity Score Analysis: Statistical Methods
+ In this analysis, we examine the 6-month period after app launch
+                                                                                  and Applications (Sage Publications, Thousand Oaks, CA).
+and consider adopters in this period (54% of all adopters in the main
+                                                                             Heckman J (1979) Sample selection bias as a speciﬁcation error.
+sample) to analyze the changes close to the app launch date for
+                                                                                  Econometrica 47(1):153–161.
+explaining the short-term differences between app-linked and non-
+                                                                             Huang Q, Nijs VR, Hansen K, Anderson ET (2012) Wal-Mart’s impact
+app-linked shoppers. We subsequently considered different time
+                                                                                  on supplier proﬁts. J. Marketing Res. 49(2):131–143.
+periods and found similar results.
+9
+                                                                             Hung SY, Ku CY, Chang CM (2003) Critical factors of WAP services
+ We compute the within-session number of features used by cal-                    adoption: An empirical study. Electronic Commerce Res. Appl. 2(1):
+culating the average number of features a shopper clicks in the app in            42–60.
+a given session (shopper-session level), and we calculate the across-        Hyken S (2017) Walgreens: At the corner of technology and a better
+session number of features through the cumulative sum of the                      customer experience (CX). Forbes (July 8), http://tinyurl.com/
+number of features a shopper clicks across sessions in the six                    y96uddk4.
+months after introduction. Therefore, this number can exceed the             Jacobi L, Sovinsky M (2016) Marijuana on Main Street? Estimating
+total number of features available in the app.                                    demand in markets with limited access. Amer. Econom. Rev.
+                                                                                  106(8):2009–2045.
+References                                                                   Kim SJ, Wang RJ-H, Malthouse EC (2015) The effects of adopting
+                                                                                  and using a brand’s mobile application on customers’ subse-
+Altonji JG, Elder TE, Taber CR (2005) Selection on observed and                   quent purchase behavior. J. Interactive Marketing 31(August):
+     unobserved variables: Assessing the effectiveness of Catholic                28–41.
+     schools. J. Political Econom. 113(1):151–184.                           Lee J-Y, Zhuang M, Kozlenkova IV, Fang E (2016) The dark side of
+Avery J, Steenburgh T, Deighton J, Caravella M (2012) Adding bricks               mobile channel expansion strategies. MSI Working Paper 16-119,
+     to clicks: Predicting the patterns of cross-channel elasticities over        Marketing Science Institute, Cambridge, MA.
+     time. J. Marketing 76(3):96–111.                                        Lundborg P, Plug E, Rasmussen AW (2017) Can women have chil-
+Bell D, Gallino S, Moreno A (2018) Ofﬂine showrooms in omni-                      dren and a career? IV evidence from IVF treatments. Amer.
+     channel retail: Demand and operational beneﬁts. Management                   Econom. Rev. 107(6):1611–1637.
+     Sci. 64(4):1629–1651.                                                   Manchanda P, Packard G, Pattabhiramaiah A (2015) Social dollars:
+Bellman S, Potter RF, Treleaven-Hassard S, Robinson JA, Varan D                   The economic impact of customer participation in a ﬁrm-
+     (2011) The effectiveness of branded mobile phone apps. J. In-                sponsored online customer community. Marketing Sci. 34(3):
+     teractive Marketing 25(4):191–200.                                           367–387.
+Bertrand M, Duﬂo E, Mullainathan S (2004) How much should we trust           Minotti M (2016) Video games will become a $99.6B industry this
+     difference-in-difference estimates? Quart. J. Econom. 119(1):249–275.        year as mobile overtakes consoles and PCs. Venture Beat (April
+Boyd ED, Kannan PK, Slotegraaf RJ (2019) Branded apps and their                   21), http://tinyurl.com/y7favjyc.
+     impact on ﬁrm value: A design perspective. J. Marketing Res.            Pew Research Center (2018) Mobile fact sheet. Accessed February 5,
+     56(1):76–88.                                                                 2018, http://www.pewinternet.org/fact-sheet/mobile/.
+Bronnenberg BJ, Dubé JPH, Gentzkow M (2012) The evolution of                 Rosenbaum PR (2005) Sensitivity analysis in observational studies.
+     brand preferences: Evidence from consumer migration. Amer.                   Everitt BS, Howell DC, eds. Encyclopedia of Statistics in Behavioral
+     Econom. Rev. 102(6):2472–2508.                                               Science, vol. 4 (John Wiley & Sons, New York), 1809–1814.
+CNBC (2018) The cutting edge of customer experience is. . . apps?            Rosenbaum PR, Rubin DB (1983) The central role of the propensity
+     CNBC.com (July 6), https://tinyurl.com/y8o4ukuv.                             score in observational studies for causal effects. Biometrika 70(1):
+Comscore (2016) The 2016 U.S. mobile app report. White paper,                     41–55.
+     Comscore, Reston, VA, http://tinyurl.com/j43tjyw.                       Rubin DB (2008) For objective causal inference, design trumps anal-
+Danaher PJ, Smith MS, Ranasinghe K, Danaher TS (2015) Where,                      ysis. Ann. Appl. Statist. 2(3):808–840.
+     when, and how long: Factors that inﬂuence the redemption of             Shankar V, Balasubramanian S (2009) Mobile marketing: A synthesis
+     mobile phone coupons. J. Marketing Res. 52(5):710–725.                       and prognosis. J. Interactive Marketing 23(2):118–129.
+                                                                Narang and Shankar: Mobile Apps and Online and Ofﬂine Purchases and Returns
+772                                                                              Marketing Science, 2019, vol. 38, no. 5, pp. 756–772, © 2019 INFORMS
+
+
+Shankar V, Kleijnen M, Ramanathan S, Rizley R, Holland S, Mor-            Wang K, Goldfarb A (2017) Can ofﬂine stores drive online sales?
+     rissey S (2016) Mobile shopper marketing: Key issues, current            J. Marketing Res. 54(5):706–719.
+     insights, and future research avenues. J. Interactive Marketing      Wang RJ-H, Malthouse EC, Krishnamurthi L (2015) On the go: How
+     34(May):37–48.                                                           mobile shopping affects customer purchase behavior. J. Retailing
+Silverman BW (1986) Density Estimation for Statistics and Data Analysis       91(2):217–234.
+     (Chapman & Hall, London).                                            Wangenheim FV, Bayón T (2007) Behavioral consequences of over-
+Statista (2015) Share of console gamers in the United States who play         booking service capacity. J. Marketing 71(4):36–47.
+     online and ofﬂine games as of April 2015, by platform. Accessed      Williams R (2018) App Annie: Shopping app use jumped 54% in
+     November 27, 2018, https://www.statista.com/statistics/420596/           2017. Retail Dive (January 12), https://tinyurl.com/ycgnyj8o.
+     us-consumer-share-playing-console-games-by-type/.                    Wooldridge JM (2002) Econometric Analysis of Cross Section and Panel
+Sudhir K, Talukdar D (2015) The “Peter Pan syndrome” in emerging              Data (MIT Press, Cambridge, MA).
+     markets: The productivity-transparency trade-off in IT adoption.     Xu K, Chan J, Ghose A, Han SP (2016) Battle of the channels: The impact
+     Marketing Sci. 34(4):500–521.                                            of tablets on digital commerce. Management Sci. 63(5):1469–1492.
+Tirunillai S, Tellis G (2017) Does ofﬂine TV advertising affect online    Xu J, Forman C, Kim JB, Ittersum KV (2014) News media channels:
+     chatter? Quasi-experimental analysis using synthetic control.            Complements or substitutes? Evidence from mobile phone us-
+     Marketing Sci. 36(6):862–878.                                            age. J. Marketing 78(4):97–112.
+Copyright 2019, by INFORMS, all rights reserved. Copyright of Marketing Science is the
+property of INFORMS: Institute for Operations Research and its content may not be copied or
+emailed to multiple sites or posted to a listserv without the copyright holder's express written
+permission. However, users may print, download, or email articles for individual use.
+

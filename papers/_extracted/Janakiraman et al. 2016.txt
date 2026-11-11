@@ -1,0 +1,1165 @@
+--- PAGE 1 ---
+Journal of Retailing 92 (2, 2016) 226–235
+Research Note
+The Effect of Return Policy Leniency on Consumer Purchase and Return
+Decisions:
+ A Meta-analytic Review
+Narayan Janakiraman a,∗, Holly A. Syrdal b,1, Ryan Freling c,2
+a College of Business, University of Texas at Arlington, 701 S. West Street, Suite 201, Arlington, TX 76019, USA
+b College of Business, University of Texas at Arlington, 701 S. West Street, Suite 223, Arlington, TX 76019, USA
+c Marketing Department, The Naveen Jindal School of Management, The University of Texas at Dallas, SM 32, 800 West Campbell Road, Richardson,
+TX 75080-3021, USA
+Available online 28 November 2015
+Abstract
+While
+ most retail stores offer return policies, some offer more lenient return policies than others. The inherent belief is that lenient return policies
+are more likely
+ to lead to purchases than to encourage returns. Examining prior research we ﬁnd that return policy leniency has been characterized
+in terms of
+ ﬁve different dimensions: time, money, effort, scope, and exchange. We conduct a meta-analysis of 21 papers examining the effect of
+leniency on purchase
+ and return decisions, and demonstrate that overall, leniency increases purchase more than return. Further, we show the return
+policy factors
+ that inﬂuence purchase (money and effort leniency increase purchase) are different from the return policy factors that inﬂuence
+returns (scope leniency increases returns while time and exchange leniency reduces returns).
+©
+ 2015 New York University. Published by Elsevier Inc. All rights reserved.
+Keywords: Product returns; Money back guarantee; Meta-analysis; Return policy; Post-purchase decision making
+Return policies
+ are a consumer risk reliever often used by
+retailers
+ (e.g., Greatorex and Mitchell 1994) to increase con-
+sumer demand. However higher demand also likely leads to
+higher product returns. Product returns in 2014 totaled about
+$280 million across all U.S. retailers—a  ﬁgure that exceeds the
+annual
+ sales revenue of all but the top ranked retailer.3 Returns
+can be prohibitively expensive for retailers due to the high
+processing costs and low salvage values associated with returned
+merchandise. In fact, a recent research anecdote suggests that
+retailers with product return rates in excess of 20 percent often
+generate zero operating proﬁt.4
+∗ Corresponding author. Tel.: +1 817 272 2885; fax: +1 817 272 2854.
+E-mail addresses: janakira@uta.edu (N. Janakiraman), hsyrdal@uta.edu
+(H.A. Syrdal), ref081000@utdallas.edu (R. Freling).
+1 Tel.: +1 817 272 2885; fax: +1 817 272 2854.
+2 Tel.: +1 972 679 0803.
+3 http://www.theretailequation.com/Retailers/images/public/pdfs/industry
+reports/ir 2014 nrf retail returns survey.pdf.
+4 https://www.theretailequation.com/Retailers/images/public/pdfs/white
+papers/wp TRE4013 WhitePaper ReturnFraud101 Feb2013.pdf.
+Despite the
+ cost and prevalence of returns, most retailers offer
+a
+ return policy hoping that the positive effect on demand will
+more than offset the negative effect on returns. In a survey of 133
+stores in California conducted by Davis, Hagerty, and Gerstner
+(1998), almost all of the stores had a return policy irrespective of
+whether
+ they were department stores, specialty stores, or single
+outlet stores. However, the policies differed in that some stores
+offered more lenient return policies compared with others. In
+this regard, the ﬁrst question we seek to address in the current
+research is: do lenient return policies increase product purchase
+more than product returns?
+Extant scholarly research offers no clear-cut answers. In fact,
+research exploring the effect of lenient return policies on product
+purchase and subsequent returns is inconclusive. To illustrate,
+while Petersen and Kumar (2010) ﬁnd that lenient return policies
+lead to both higher purchase and higher returns, Wood (2001)
+and Wang (2009) ﬁnd that lenient return policies increase pur-
+chase without increasing returns. To provide a more deﬁnitive
+answer
+ to this question, in the current research, we conduct a
+meta-analysis by synthesizing data from original studies that
+examine how return policy leniency affects two important down-
+stream outcomes: (1) purchase proclivity (i.e., purchase attitudes
+http://dx.doi.org/10.1016/j.jretai.2015.11.002
+0022-4359/© 2015 New York University. Published by Elsevier Inc. All rights reserved.
+
+--- PAGE 2 ---
+N. Janakiraman et al. / Journal of Retailing 92 (2, 2016) 226–235 227
+or behaviors) and (2) return proclivity (i.e., consumer intentions
+or decisions to keep or return products). We show, across studies
+and on an overall basis, that while return leniency increases both
+purchase and return, the effect on purchase proclivity is larger
+than
+ the effect on return proclivity.
+In addition to the basic question of whether return policies
+increase purchase more than returns, a second question we exam-
+ine is: what type of return policies have a greater impact on
+purchase,
+ and what type have a greater impact on returns?
+Extant research offers little guidance on this topic. Based on
+a research synthesis of prior literature, we propose that return
+policies can be classiﬁed as being lenient or restrictive along ﬁve
+dimensions: time leniency (e.g., 60 day vs. 30 day return policy),
+monetary leniency (e.g., offering 100 percent money back vs. 80
+percent money back), effort leniency (e.g., no forms required vs.
+forms required), scope leniency (e.g., accepting returns on sale
+items vs. not), and exchange leniency (e.g., cash back vs. store
+credit). We code the effects of return policy leniency reported in
+the studies included in our meta-analysis as varying along these
+ﬁve return policy leniency dimensions.
+To
+ account for the heterogeneity among papers included in
+the
+ meta-analysis, we include various substantive moderators
+(durability of the product, online focus of the retailer, and type
+of assortment carried) and various methodological moderators
+(type of journal, type of study, study location, and type of respon-
+dent). Using an HLM model that accounts for multiple effects
+included in each study, we ﬁnd a distinct set of return policy
+parameters affect purchase compared with the parameters that
+affect returns. Speciﬁcally, money leniency and effort leniency
+increase purchase to a greater extent than do the other return pol-
+icy factors. On the other hand, leniency on time and exchange
+reduces returns more than other return policy factors, while
+leniency on scope increases returns. Because the leniency fac-
+tors have a differential impact on purchase and returns, retailers
+should consider
+ creating return policies that vary along multiple
+dimensions.
+In the sections that follow, we provide a review of the rel-
+evant literature on return policies and their effect on purchase
+and return proclivities. After delineating the meta-analytic pro-
+cedure employed and presenting the results, we conclude with a
+discussion of how our ﬁndings provide meaningful contributions
+to both academicians and retail managers.
+Conceptual Foundations
+Does Leniency in Return Policies Increase Purchase More
+Than Returns?
+Because most researchers have limited their examinations
+of return policy leniency and its effect on product purchase or
+product returns to only one or two return policy factors, prior
+research does not sufﬁciently answer this question. For example,
+a study conducted by Wood (2001) varied only the amount of
+the monetary refund, whereas Petersen and Kumar (2010) varied
+only the scope of products, Wang (2009) varied only the amount
+of time and guarantee, and Janakiraman and Ordó˜nez (2012)
+varied only the amount of time and effort. Thus, we know little
+about the overall effect of return policies on purchase and return.
+On the one hand, there is evidence that varying some return
+policy factors increases purchase without increasing returns.
+For
+ example, Wood (2001) offered participants the opportunity
+to order a pen or choose a gift certiﬁcate under conditions of
+either a lenient or a restrictive return policy, which was varied
+by amount of the monetary refund (i.e., full refund amount for
+the lenient condition and
+ partial refund amount for the restric-
+tive condition). Upon receipt of the pen and after product trial,
+participants were asked to decide whether to keep the pen or
+exchange it for a gift certiﬁcate. The lenient return policy was
+found to increase purchase, but did not result in higher return
+rates compared with the restrictive return policy. Wang (2009)
+found similar effects, in that lenient return policies signiﬁcantly
+increased initial purchasing tendency but did not increase return
+rate.
+Some previous research shows leniency on other return policy
+factors likely increases purchase as well as returns. For exam-
+ple, in a controlled ﬁeld experiment, Petersen and Kumar (2010)
+varied
+ a company’s product return policy by either allowing for
+non-defective
+ products to be returned (lenient return policy)
+or only allowing defective products to be returned (restrictive
+return policy). The average dollar amount of returned products
+was higher under the lenient return policy ($67.90) than under
+the strict return policy ($20.50), suggesting a positive effect of
+lenient return policy on return behavior, with higher levels of
+return leniency leading to higher return proclivity. There is sup-
+port for such a notion at the aggregate level as well. Boniﬁeld,
+Cole, and Schultz (2010) ﬁnd a positive relationship between
+number of purchases and number of product returns, suggest-
+ing that increasing product purchases leads to greater product
+returns.
+To provide guidance on this topic, we conduct a meta-analysis
+to examine
+ the overall impacts of return policy leniency, as well
+as the individual inﬂuences of leniency factors that comprise
+return policies. We classify all measures of purchase intentions
+and purchase behavior as purchase proclivity. Similarly, we
+group measures of both intentions to return and actual returns
+as return proclivity. A summary of the theories that are rele-
+vant to the examination of the effect of return policy leniency
+on purchase and returns follows.
+Mechanisms Driving Effects of Leniency on Purchase
+In examining the effect of return policy factors on product
+purchase, three theoretical mechanisms have been suggested in
+extant research. First, signaling theory has been put forth to
+explain how return policies act as positive quality signals by the
+retailer (e.g., Wood 2001). Second, consumer risk theory has
+been applied to suggest that return policies should reduce the
+ﬁnancial and product risk that consumer’s feel prior to product
+purchase
+ (e.g., Van den Poel and Leunis 1999). Third, construal
+level theory has been used as a basis for positing that individ-
+uals faced with lenient return policies are likely to focus on
+the beneﬁts of purchase rather than the costs of purchase (e.g.,
+Janakiraman and Ordó˜nez 2012).
+
+--- PAGE 3 ---
+228 N. Janakiraman et al. / Journal of Retailing 92 (2, 2016) 226–235
+A common thread across the three theories is they all postu-
+late that lenient return policies should positively affect product
+purchase. However, the theories vary in relevance depending
+on the return policy factor that is examined. For example,
+researchers
+ examining
+ monetary leniency or money back guar-
+antees (e.g., Suwelack, Hogreve, and Hoyer 2011; Wood 2001)
+have employed signaling theory and consumer risk theory, while
+those examining time deadlines have relied on construal level
+theory (e.g., Janakiraman and
+ Ordó˜nez 2012). Intuition suggests
+that a unit reduction in consumer risk is unlikely to have exactly
+the same impact on purchase as a unit increase in consumer
+perceived quality. Thus, we propose that while all return policy
+factors are likely to have a positive effect on purchase, the degree
+of their inﬂuence will depend on the speciﬁc return policy factor
+that is varied.
+Mechanisms Driving Effects of Leniency on Returns
+Similar to the empirical evidence reported earlier, the the-
+oretical mechanisms for product returns are mixed in their
+predictions
+ of the effect of the different return policy factors.
+Some
+ theories predict lower returns with leniency. For instance,
+Wood (2001) ﬁnds that lenient return policies enhance qual-
+ity perceptions of the product not only during the pre-purchase
+stage, but also during the post-purchase stage. This suggests
+lenient return policies that increase perceived quality should
+reduce returns. This higher value placed by the consumer on
+the product increases with longer duration of ownership (i.e.,
+an endowment effect), with longer return deadlines increasing
+perceived product endowment more than shorter return dead-
+lines (Janakiraman and Ordó˜nez 2012; Wang 2009; Wood 2001).
+This suggests lenient return policies that increase endowment
+should reduce return rates.
+However, other theories suggest increased leniency is likely
+to increase
+ returns. For example, if individuals are sensitive to
+transaction costs post-purchase (Davis, Hagerty, and Gerstner
+1998), then lower transaction costs offered by lenient return
+policies should lead to higher return rates by making it easier to
+return a product. Taken together, the various theories suggest that
+leniency on return policy factors will differ not only by degree,
+but also in terms of the valence of effects on product returns.
+Typology of Return Policy Factors
+Previous researchers have attempted to classify the various
+elements of return policy leniency, but little consensus exists
+regarding these factors. Suwelack and Krafft (2012) note that
+return policies vary signiﬁcantly depending on their terms. For
+example, in a survey of 133 stores in California, Davis, Hagerty,
+and Gerstner (1998) classify return policies in terms of ﬁve
+restriction factors: (1) whether a store provides exchanges or
+cash refunds; (2) whether a receipt is required or not; (3) whether
+original
+ packaging is required or not; (4) whether visible signs
+of use is allowed or not; and (5) the time limit for returns.
+Alternatively, Heiman, McWilliams, and Zilberman (2001) char-
+acterize restrictions in terms of four factors: (1) the length of time
+allowed for the return (typically between 30 and 60 days); (2)
+the costs associated with the product return (totally, partially, or
+not assumed by the retailer); (3) the terms of the policy (e.g.,
+monetary refund vs. a replacement or an exchange); and (4)
+additional restrictions (e.g., the obligation to have the product
+returned
+ in its original package). Taking both of these catego-
+rization schemes into consideration, we classify return policy
+leniency as varying along ﬁve dimensions:
+1. Time leniency. Retailers commonly specify deadlines in their
+return policies (a 30-day policy, a 90-day policy, etc.). Return
+policies that provide a longer length of time in which to return
+products
+ are regarded as more lenient.
+2. Monetary leniency. Lenient return policies allow for a refund
+of the full monetary amount paid for the product, while strict
+policies allow for only a portion of the purchase price to be
+refunded, usually by imposing a “restocking fee” or a non-
+refundable “shipping and handling fee.” Policies that do not
+impose monetary restrictions are regarded as more lenient.
+3. Effort leniency. Consumer effort required to execute returns
+varies, with some retailers creating “hassles” for customers
+returning products (e.g., requiring the original receipt, tags,
+or product packaging be retained). Return policies requiring
+less effort on the part of the consumer are considered more
+lenient.
+4. Scope leniency. Stores limit items they consider “return-
+worthy.”
+ For example, products purchased on sale may not
+be eligible for return. Return policies with greater scope of
+“return-worthy” items are considered more lenient.
+5. Exchange leniency. While some retailers offer cash refunds,
+others offer store credit or product exchange for the returned
+item. Return policies that allow cash refunds are considered
+more lenient.
+Fig. 1 visually represents the proposed linkage between the
+return policy leniency factors and the behavioral outcomes of
+purchase and return.
+The
+ systematic coding of the return policy leniency factors
+varied in each study included in this meta-analysis allows us to
+address the questions of which leniency factors exert a greater
+impact on purchase and which have a higher impact on returns.
+Substantive Moderators
+The extent to which any return policy might affect purchase
+and returns likely depends not only on the combination of return
+policy factors employed, but also on the type of retail store that
+offers it. For example, Van den Poel and Leunis (1999) exam-
+ined the effect of type of retailer (mail order/internet/specialty
+store/supermarkets)
+ and type of risk reliever (money back guar-
+antee/price reduction/known brand) as inﬂuencers of product
+likeability. They ﬁnd a signiﬁcant interaction effect for store
+type and risk reliever, suggesting the type of retailer likely inﬂu-
+ences the effect of various risk relievers. In the current research,
+we investigate the following substantive moderators (see Fig. 1)
+relating to suppliers and retailers that are likely to moderate
+the impact of return policy leniency on purchase and return
+proclivities:
+
+--- PAGE 4 ---
+N. Janakiraman et al. / Journal of Retailing 92 (2, 2016) 226–235 229
+Fig. 1. Meta-analysis model.
+1. Assortment.
+ The breadth of the assortment carried by retailers
+varies
+ considerably. In this research, we term retailers car-
+rying a narrow assortment of product categories “specialty
+stores” and those carrying a broad assortment of product
+categories “general stores.”
+2. Distribution. Another potential source of variance is the
+retailer’s primary method of distribution. Retailers selling
+merchandise predominantly through brick-and-mortar stores
+are classiﬁed as “ofﬂine focus,” while those distributing prod-
+ucts through e-commerce web sites are classiﬁed as “online
+focus.”
+3. Durability. Retailers selling products that last a relatively
+longer time before the consumer repurchases or replaces the
+product are classiﬁed as “durable,” while those selling prod-
+ucts
+ that are immediately consumed or last a short period of
+time are categorized as “consumable.”
+Methodological Moderators
+Several methodological variables, which we term method-
+ological moderators, also possess the potential for explaining
+some variation in leniency-purchase and leniency-return cor-
+relations. Studies employing student versus general population
+samples and U.S. versus non-U.S. samples may vary in pur-
+chase and return outcomes. Further, the journal quality (elite vs.
+non-elite) and the research design (experimental study vs. ﬁeld
+study) might also affect purchase and return propensities.
+Meta-analysis
+Database Development
+To build our database, we used multiple approaches to
+identify the population of relevant research for inclusion in
+the meta-analysis. First, we conducted a manual search of
+leading journals (Decision Sciences, Electronic Commerce
+Research,
+ European
+ Journal of Social Psychology, Interna-
+tional
+ Journal of Retail & Distribution Management, Journal
+of Applied Psychology, Journal of Applied Social Psychology,
+Journal of Behavioral Decision Making, Journal of Business
+Research, Journal of Consumer Marketing, Journal of Con-
+sumer Psychology, Journal of Consumer Research, Journal of
+Economic Psychology, Journal of Experimental Social Psychol-
+ogy,
+ Journal of Fashion Marketing and Management, Journal of
+Marketing,
+ Journal of Marketing Management, Journal of Mar-
+keting Research, Journal of Operations Management, Journal of
+Product & Brand Management, Journal of Retailing, Journal of
+Retailing and Consumer Services, Journal of Service Research,
+Marketing
+ Letters, and Psychology and Marketing) in which
+articles investigating the inﬂuence of return policies were most
+likely
+ to appear.
+We then searched electronic databases (including EBSCO-
+host Business Source Complete, Emerald, Google Scholar and
+Science Direct) with a keyword search, including terms such as
+“money back guarantees” (e.g., Suwelack, Hogreve, and Hoyer
+2011), “lenient return policies” (e.g., Janakiraman and Ordó˜nez
+2012; Wood 2001), “restrictive return policies” (e.g., Bahn and
+Boyd 2014), “service failures” (e.g., Mollenkopf et al. 2007), and
+“reverse logistic chains” (e.g., Rogi´c, Bajor, and Roˇzi´c 2010).
+We also extended our search to unpublished work included in the
+conference proceedings of the Society for Consumer Psychology
+and the Association for Consumer Research.
+Next, in an effort to prevent a “publication bias,” which
+can reduce the measurement variability in meta-analysis (e.g.,
+Andrews and Franke 1991), we extended our search to unpub-
+lished
+ works by manually searching proceedings of additional
+conferences and contacting authors who have previously pub-
+lished in the return policy domain. Finally, employing an
+ancestry approach, we examined the references of key concep-
+tual articles and studies identiﬁed through the above efforts.
+Altogether, these efforts yielded 46 papers with empirical
+data related to return policies. Based on initial screening of
+
+--- PAGE 5 ---
+230 N. Janakiraman et al. / Journal of Retailing 92 (2, 2016) 226–235
+articles, a study was deemed eligible for inclusion in the meta-
+analysis if the following information was reported: (1) the
+Pearson correlation between return policy leniency/strictness
+and purchase and/or return behaviors or intentions (or enough
+statistical
+ information was provided to compute the correlation);
+and, (2) the sample size (Janiszewski, Noel, and Sawyer 2003).
+We coded 159 effect sizes from 21 papers that met the inclusion
+criteria.
+To
+ detect outliers
+ in the meta-analytic dataset, we utilized
+the sample-adjusted meta-analytic deviancy (SAMD) statistic
+recommended by Huffcutt and Arthur (1995), which takes into
+account both the effect size and study sample size when identi-
+fying outliers. The SAMD outlier analysis led us to remove ﬁve
+observations identiﬁed as problematic due to extremely large
+variance and/or calculated correlations near 1.0. As a result, our
+ﬁnal dataset consists of 154 observations, of which 75 related to
+purchase proclivity and 79 related to return proclivity. The total
+sample size for the studies included in our database is 11,662;
+however, because our dataset includes multiple effects from var-
+ious studies, the total sample size for our meta-analytic database
+is
+ 51,653 (Table 1).
+Coding of Return Policy Factors and Moderator V ariables
+For each effect included in the meta-analysis, three expert
+raters independently coded the potential moderators—ﬁve
+return policy factors, three substantive moderators, and four
+methodological moderators—based  on information about the
+study reported in the corresponding paper. A binary coding
+scheme was applied to each of the variables, with each rater
+independently rating each effect for the potential moderators.
+For example, each rater coded the leniency factor variables by
+inputting a “1” if the return policy factor was manipulated or
+measured in the study and “0” if it was not manipulated or mea-
+sured in
+ the study. The speciﬁc way each return policy variable
+was classiﬁed as a “0” or a “1” is detailed in Table 2.
+The expert raters also coded the type of focal products exam-
+ined in the study, the type of focal retail store mentioned in
+the study, and the type of research design on which the study
+was based. Table 2 details the binary coding scheme used to code
+the various substantive and methodological moderator variables.
+There was almost 100 percent agreement among the judges on
+return-policy
+ factors, and 89 percent agreement on the moder-
+ator variables. The coding was compared across the raters and
+discrepancies were resolved by choosing the coding structure
+that was chosen by a majority of the coders (i.e., two out of the
+three coders).
+Analytic Procedures
+To analyze the impact of return policy leniency on consumers’
+purchase and return proclivities we conducted both univariate
+analyses—following  procedures described by Borenstein et al.
+(2009)—and  a multivariate approach employing a hierarchical
+linear model as suggested by Bijmolt and Pieters (2001).
+The effect sizes coded for the analyses were zero-order
+product-moment correlation coefﬁcients, which are easy to
+interpret and to compare across studies (e.g., Brown and
+Stayman 1992). We calculated and analyzed the estimated true
+correlation (rT) between the return policy leniency factors and
+key outcomes. In order to calculate the mean rT, each correla-
+tion
+ for a given study was weighted by its sampling variance
+(which is a function of the sample size for the observation) and
+then averaged across all studies. Next, the total heterogeneity of
+the sample (a weighted sum of squares statistic comparable to
+a total sum of
+ squares in an ANOV A) is calculated and tested
+against a chi-square (χ2), distribution to test whether variance
+among the effect sizes is greater than expected by sampling error
+(Rosenberg, Adams, and Gurevitch 2000).
+A signiﬁcant chi-square test indicates that inconsistent ﬁnd-
+ings across the observed correlations with respect to product
+returns cannot be fully explained by statistical artifacts and
+suggests the presence of other factors (i.e., moderators) in the
+exploration of heterogeneity (Hunter and Schmidt 2004). The
+95 percent bootstrapped conﬁdence interval (CIBS) for each
+correlation is also calculated in an effort to examine the signiﬁ-
+cance of the mean-corrected correlations. Because meta-analytic
+data
+ often violate the distributional assumptions of paramet-
+ric
+ tests, the use of bootstrapped conﬁdence intervals, which
+are based on a non-parametric distribution, is appropriate and
+provides a more powerful estimate than traditional conﬁdence
+intervals (Rosenberg, Adams, and Gurevitch 1997). Finally, the
+fail-safe sample size (NFS) using Rosenthal’s (1979) method
+was calculated to assess the possibility of publication bias or a
+“ﬁle-drawer” problem. This information estimates the number
+of unpublished studies with an effect size of zero that would have
+to exist to render the observed effects insigniﬁcant at the alpha
+equal to a .05 level (Janiszewski, Noel, and Sawyer 2003), with
+a larger NFS value conveying greater conﬁdence in the results.
+Multivariate Analysis using a Hierarchical Linear Model
+(HLM). Bijmolt and Pieters (2001) suggest the nested nature
+of meta-analytic
+ data imposes a correlation structure that is
+best accommodated by specifying a hierarchical linear model
+(HLM). To jointly assess the inﬂuence of the proscribed vari-
+ables on purchase (return) proclivity we specify a model in which
+the coded effect sizes are a linear function of the return policy
+factors and the substantive and methodological moderators. The
+software package HLM 7 was used to estimate our models of
+purchase (return) proclivity on leniency factors, retailer factors
+and
+ manuscript control variables and is formally described in
+Eqs. (1) and (2).
+The variables included in our study of the impact of return
+policy leniency on purchase and return proclivities vary at the
+effect-size level (level 1) and the independent sample level (level
+2). Due to the limited number of observations in our meta-
+analytic dataset, we test only for main effects in the HLM.
+1. Level 1—Effect  Size Model
+The level 1 model explains the variation of effect size i
+(where i = 1. . .nj) around the intercept for study j (j = 1. . .J).
+At level 1, the return policy leniency dimension under inves-
+tigation is captured by p categorical variables where p = 5
+(Time, Money, Effort, Scope, Exchange). When the variables
+are mean centered, π0j represents the mean effect size for
+
+--- PAGE 6 ---
+N. Janakiraman et al. / Journal of Retailing 92 (2, 2016) 226–235 231
+Table 1
+Articles used in meta-analysis of return policy effects.
+Authors Year # of studies # of observations Research design Dependent
+variable
+Product
+ category Leniency factors
+examined
+Bahn and Boyd 2014  2 170
+ experiment intentions  durables time
+Boniﬁeld, Cole, and Schultz 2010  2 541 content analysis;
+experiment
+intentions consumables time, money, effort,
+exchange
+Bower and Maxham 2012 2 1,630 longitudinal event
+ﬁeld study
+behaviors consumables money
+d’Astous and Guèvremont 2008 1 164 experiment intentions durables time and exchange
+Derbaix 1983 1 200 cross-sectional
+study
+intentions durables money
+Grifﬁs et al. 2012 1 445 experiment behaviors durables effort
+Huppertz 2007 1 338 experiment intentions durables effort and scope
+Janakiraman and Ordonez 2012 3 430 experiment behaviors consumables time and effort
+Javadi et al. 2012 1 107 cross-sectional
+study
+intentions
+ consumables time, money, effort,
+scope, and exchange
+Kang and Johnson 2009 1 246 cross-sectional
+study
+behaviors
+ durables time, money, effort,
+scope, and exchange
+Kim and Wansink 2012 2 367 experiment intentions durables and
+consumables
+time, money, effort,
+scope, and exchange
+Lantz and Hjort 2013 1 4,000 ﬁeld experiment behaviors consumables money
+Maity and Arnold 2013 1
+ 193 cross-sectional
+study
+intentions
+ durables time, money, effort,
+scope, and exchange
+Pei, Paswan, and Yan 2014 1 300 cross-sectional
+study
+intentions
+ consumables time, money, effort,
+scope, and exchange
+Posselt, Gerstner, and Radic 2008 2 952 content analysis behaviors durables time and money
+Powers and Jack 2013 1 308 cross-sectional
+study
+behaviors
+ consumables time, money, effort,
+scope, and exchange
+Shao, Chang, and Zhang 2014 1 182 experiment intentions durables money
+Suwelack, Hogreve, and Hoyer 2011 2 600 experiment intentions consumables time, money, effort
+Van den Poel and Leunis 1999 1 93 experiment intentions durables money
+Wang 2009 1 137 experiment behaviors consumables time and money
+Wood 2001 3 259 experiment intentions and
+behaviors
+durables and
+consumables
+time, money, effort,
+scope, and exchange
+Total (21 papers) 31 11,662
+Note:
+ There
+ are 75 effect sizes for purchases drawn from 18 studies, and 79 effect sizes for returns drawn from 17 studies.
+Table
+ 2
+Meta-analysis coding scheme.
+Factor Variable Binary coding scheme
+Return Policy Time If time deadline varied in study = 1 If time deadline not varied in study = 0
+Return Policy Money If money back varied in study = 1 If money back not varied in study = 0
+Return Policy Effort If effort for returns varied in study = 1 If effort for returns not varied in study = 0
+Return Policy Scope If discounted products accepted for
+returns = 1
+If discounted products not accepted = 0
+Return Policy Exchange If money is offered on returns in study = 1 If credit or product exchange offered on
+returns in study = 0
+Substantive Moderator Type of Product If focal product was durable product = 1 If focal product was not durable product = 0
+Substantive Moderator Assortment Focus If retail store described in study specialty
+store = 1
+If retail store described in study not specialty
+store = 0
+Substantive Moderator Channel Focus If retail store described in study was online
+store = 1
+If retail store described in study was not
+online store = 0
+Methodological Moderator Journal Quality If paper published in journal as described by
+UT Dallas list as elite = 1
+If paper published in journal as described by
+UT Dallas list as not elite = 0
+Methodological Moderator Research Design If study involved experimental
+manipulation
+ = 1
+If
+ study did not involve experimental
+manipulation
+ = 0
+Methodological Moderator Study  Location If study was conducted in the United
+States = 1
+If study was not conducted in the United
+States = 0
+Methodological Moderator Participant Details If study was among student participants = 1 If study was not among student
+participants = 0
+
+--- PAGE 7 ---
+232 N. Janakiraman et al. / Journal of Retailing 92 (2, 2016) 226–235
+Table 3
+Overall effect of return policy leniency on purchase proclivity and return proclivity (based on meta-analysis of 21 papers).
+Number of
+samples in
+each analysis
+(k)
+Number of
+observations
+in
+ the k
+samples (N)
+Mean
+uncorrected
+correlation
+ (r)
+Mean
+weighted
+corrected
+correlation
+ (rt)
+Estimated
+population
+variance
+ (σ2
+t )
+95 percent
+bootstrapped
+conﬁdence
+intervals
+(CI
+BS)
+Effect
+size
+Variance
+unaccounted
+for
+ across
+samples (χ2)
+Fail-safe N for
+each variable
+(NfsR)
+Purchase proclivity 75 21,052 0.212 0.217** 0.139 0.175 0.261 Small 469.25 22,297
+Return proclivity 79 20,831 0.053 0.080** 0.203 0.021 0.137 Small 1,859.82 569.8
+** p < .01.
+study jk. eij represents the sampling error of effect size Yij,
+which is assumed to be normally distributed with mean of 0
+and known variance Vi—which  is calculated based on statis-
+tics collected from the included study.
+Yij = π0j +
+P∑
+p=1
+πpjapij + eij (1)
+2. Level 2—Independent  Sample Level Model
+At level 2, we model the intercept of study j as a function
+of the retailer characteristics and study control variables that
+vary across studies X(q=1–8) (Durable Good, Specialty Store,
+Online, Elite Journal Publication, U.S. Respondents, Student
+Respondents, Experimental Setting). Again, mean centering
+the variables at level 2 means the intercept, β00 is interpreted
+as
+ the average effect size. The error term r0j is assumed to be
+normally distributed with mean of 0 and variance τπ.
+π0j = β00 +
+Q∑
+q=1
+β0qXqj + r0j (2)
+Results
+Overall Results. The strength of meta-analysis lies in its
+pooling of estimates of association across studies and analyzing
+differences in relationship strength according to factors that can
+distinguish these effects. Table 3 provides an overview of the
+main effects associated with return policy leniency on purchase
+indicators and return indicators.
+The
+ overall correlation between return leniency and purchase
+indicators is 0.218 and that between return leniency and return
+proclivity is 0.080, suggesting that return leniency is associated
+with both increased purchase proclivity and increased return pro-
+clivity. Further, the effect on purchase proclivity is greater than
+the effect on return proclivity. Consistent with Rosenthal and
+Rosnow (1991), these effects are categorized as small and are
+signiﬁcant.
+ The high NFS for both effects suggests that publica-
+tion bias is not a problem. Given the heterogeneity present within
+the dataset (χ2
+pur = 469.25, df = 74, p < .01) (χ2
+ret = 1859.82,
+df = 78, p < .01), an examination of the moderators of the rela-
+tionship between return leniency and purchase and return is
+warranted.
+Multivariate Analysis using HLM. The multi-level model
+as speciﬁed in Eqs. (1) and (2) that accounts for multiple
+effects per study was used to estimate the impact of the
+Table 4
+Estimation results—HLM  model—ﬁxed  effects for each DV.
+Purchase proclivity Return proclivity
+Level 1 Coefﬁcients
+Return Policy Factors
+Time 0.028 −0.381*
+Money 0.089* 0.021
+Effort 0.122* −0.156
+Scope 0.163
+ 0.049+
+Exchange 0.040 −0.582*
+Level 2 Coefﬁcients
+Intercept 0.243* 0.111*
+Substantive Moderators
+Type of Product 0.155+ 0.102
+Assortment Focus 0.140 −0.264
+Channel Focus −0.013 −0.457
+Methodological Moderators
+Journal Quality 0.213+ −0.019
+Research Design 0.085 −0.726+
+Study Location −0.016 0.198
+Participant Details −0.068 0.195+
+Variance Component u0 0.015* 0.048*
+Variance Explained 35.9 percent 41.7 percent
+AIC 434.70 752.83
+BIC 467.10 783.63
+* p < .05.
++ p < .1.
+inﬂuencing variables on purchase proclivity and return pro-
+clivity. The meta-regression models of purchase and return
+proclivites on the inﬂuencing variables are provided in Table 4.
+The reported results are estimated using Restricted Maximum
+Likelihood techniques, which are more appropriate for estimat-
+ing the variance parameters due to the small number of level
+two units (independent samples) in our dataset (Raudenbush
+and Bryk 2002), and provide the results of a fully conditional
+model for both purchase and returns. The variables were cen-
+tered around the grand mean which allows interpretation of the
+intercept as the adjusted mean effect size for study j.5
+5 The simple full conditional model was found to be signiﬁcantly better (based
+on AIC/BIC) than a non-conditional model that did not include any of the vari-
+ables, or a partial conditional model that included only the return policy variables
+and ignored the moderator variables. Further, within the full conditional model
+we ran different models by dropping variables such as Specialty and Online.
+This did not change the direction or signiﬁcance of the results. We therefore
+report only the full conditional model because it captures the effect of all the
+return policy variables and the moderator variables proposed by prior research.
+
+--- PAGE 8 ---
+N. Janakiraman et al. / Journal of Retailing 92 (2, 2016) 226–235 233
+In examining the dependent variable of purchase procliv-
+ity, HLM results reveal that leniency on money (βpur = 0.089,
+p < .05) and effort (βpur = 0.122, p < .05) return policy factors
+lead to signiﬁcantly higher purchase as compared to leniency
+on
+ time (βpur = 0.028, p = ns), scope (βpur = 0.163, p = ns) or
+exchange (βpur = 0.040, p = ns). Further, leniency on durable
+products (βpur = 0.155, p < .05) showed a higher effect on pur-
+chase compared with non-durable products.6
+An examination of
+ return proclivity as the dependent variable
+reveals leniency on time (βret = −0.381, p < .05) and exchange
+(βret = −0.582, p < .05) have a signiﬁcantly lower effect on
+returns, while scope (βret = 0.049, p < .1) has a directionally
+higher effect on returns, as compared to money (βret = 0.021,
+p = ns) and effort (βret = −0.156, p = ns). Among the method-
+ological moderators, experimental studies produce directionally
+lower returns (βret = −0.726, p < .1) than ﬁeld studies, and stud-
+ies conducted with student samples are directionally higher than
+those with non-student samples (βret = 0.195, p < .10).
+General Discussion
+Retailers often use lenient return policies—possibly  due to
+the belief that leniency
+ inherently increases purchase more than
+returns—despite
+ the substantial expense associated with product
+returns. Through meta-analysis, we are able to shed new light
+on this trade-off. Consistent with Petersen and Kumar (2010),
+we observe a more pronounced increase in purchase stemming
+from lenient return policies than for return rates. This suggests
+that, overall, return policies do in fact beneﬁt retailers—at  least
+in terms of
+ encouraging product purchase.
+Our research represents the ﬁrst attempt to understand the
+return policy literature in a quantitative, systematic manner using
+meta-analysis, and to substantiate beliefs that return leniency
+positively affects both purchase and return decisions. It also
+challenges the underlying assumption in most previous return
+policy research—that  all return policy factors are similar in their
+effect on purchase and returns and, therefore, any one or more
+of the return policy factors can be randomly varied in order to
+manipulate return policy leniency.
+In fact, our consolidation of prior research suggests retail-
+ers
+ tend to vary ﬁve factors in their return policies to impose
+restrictions that dissuade returns or offer leniency to encourage
+purchase. These factors are monetary leniency, time leniency,
+effort leniency, scope leniency, and exchange leniency. Prior
+research exploring the effects of lenient return policies yields
+mixed results, primarily because most work in this area examines
+only one or two of the various lenient return policy factors. By
+systematically coding all of the variables for each paper in our
+meta-analysis database, we are able to provide more clarity on
+this topic.
+Our results imply that careful thought should guide the
+choice
+ of leniency factors because they have differential effects
+6 The statistically signiﬁcant variables in HLM were also found to be signiﬁ-
+cant in univariate analyses—which  is not reported in the paper since it essentially
+replicates the HLM results.
+on purchase and return. To illustrate, imagine two return
+policies—Policy
+ A (100 percent money back, 30-day deadline)
+and Policy B (80 percent money back, 60-day deadline)—that
+vary in terms of money and time. Are both return policies likely
+to
+ affect
+ purchase and returns equally? While intuition suggests
+different retailers are sensitive to different aspects of return
+policy, extant research has mostly assumed that the leniency
+dimensions affect purchase and return in a similar manner. Our
+ﬁndings show that
+ having both money and time as part of the
+return policy mean that Policy A will likely affect purchase
+more, while Policy B will inﬂuence returns more. Thus, leniency
+should be offered on return policy factors depending on the
+objectives of the retailer.
+Speciﬁcally, if the retailer’s strategy is to stimulate pur-
+chase, offering more lenient monetary and/or lower effort
+return-policies may be more effective. This is in line with theo-
+retical models developed by Shulman, Coughlan, and Savaskan
+(2010), who examine the effect of restocking fees and ﬁnd
+that lower return penalty increases the expected utility of ini-
+tially making a purchase. We also ﬁnd that consumers are
+sensitive
+ to future return restrictions (effort) and incorporate
+this
+ into their purchase decisions, and less return hassle (e.g.,
+not requiring tags or forms to be ﬁlled out) does increase
+purchase.
+However, if retailers wish to curb returns, offering a restric-
+tive return policy in terms of limiting the scope of products
+eligible for return, in combination with longer deadlines and
+leniency on exchange, would be more effective. The effect of
+longer deadlines is in line with ﬁndings by Janakiraman and
+Ordó˜nez (2012), who ﬁnd that longer deadlines increase the
+endowment effect for products and lead to consumers postpon-
+ing or delaying return decisions. Allowing returns on products
+purchased during sale periods increases returns. This suggests
+enforcing restrictions on more price sensitive segments of con-
+sumers (who
+ presumably purchase the discounted products)
+might dissuade return tendency. Leniency on exchange shows
+a signiﬁcant and negative effect on product returns, suggesting
+exchange leniency (i.e., offering cash back in exchange for the
+returned item) results in fewer returns than restrictive return poli-
+cies (i.e., offering product exchanges, but no monetary refund).
+One potential explanation may be that consumers with minor
+product grievances (enough to trigger exchanges but not returns)
+are
+ more likely to exchange products when exchange clauses are
+made salient.
+A ﬁnal implication for retailers, given our ﬁnding that
+return policy leniency increases purchase for durable products
+markedly more than for non-durable products, is that different
+return policies should be devised for different categories of prod-
+ucts sold in the store, rather than implementing a blanket return
+policy
+ across all items in the store.
+From a theoretical standpoint, our research also suggests
+that product return decisions are more complex than product
+purchase decisions because the effect of the different leniency
+factors is likely to vary not just on the degree of their effect on
+return, but also on the valence or the direction of their effect on
+return decisions. Using an HLM model that controls for multiple
+effects reported in each study, we ﬁnd that study-level factors
+
+--- PAGE 9 ---
+234 N. Janakiraman et al. / Journal of Retailing 92 (2, 2016) 226–235
+do matter, in that they moderate both the purchase and return
+decision. Speciﬁcally, we ﬁnd that studies in elite publications
+are likely to show a higher rate of purchase under lenient return
+conditions and that studies conducted with student samples are
+likely to suppress returns. We also ﬁnd that utilizing an exper-
+imental design produces no signiﬁcant impact with respect to
+purchase behavior; however, it diminishes return propensity
+more than ﬁeld studies.
+While our research makes important practical and theoret-
+ical contributions, it is fraught with some limitations. First,
+we acknowledge that return policy research is an evolving
+ﬁeld. As such, the emergence of new studies in this area may
+allow
+ for a meta-analysis of more nuanced constructs (e.g., pur-
+chase behavior) rather than broad categories of outcomes (i.e.,
+purchase proclivity), which would potentially lead to greater
+clarity on the effect of different leniency factors. Second, the
+studies and the range of variation within each construct that
+has been examined by prior research limit any meta-analysis,
+including ours. A third limitation of our research lies in our
+inability to examine return policy leniency factors in a con-
+trolled setting,
+ varying
+ one at a time (in a ﬁeld study) or together
+(in
+ a conjoint study), to increase the validity of the results.
+Further, scant exant research has examined the process by
+which some of these leniency factors inﬂuence purchase, return,
+and re-purchase decisions. We leave these initiatives to future
+research.
+Our investigation focuses on two dependent variables (i.e.,
+purchase and returns), that could themselves be part of a
+two-stage
+ process wherein purchase decisions precede return
+decisions and strong versus weak purchase attitudes subse-
+quently inﬂuence return attitudes. Prior research has largely
+examined these effects separately, with only six of the 31 stud-
+ies comprising our meta-analytic dataset providing effect sizes
+for both
+ purchases and returns (i.e., studies in which the same
+respondents provide responses leading to the measures of the
+impact of return policy leniency). Because almost two-thirds of
+the studies in our dataset reported only a purchase or a return
+decision, we chose to analyze the dependent variables separately.
+Kalaian and Raudenbush (1996) suggest that if some measure of
+correlation between the multiple dependent variables is known
+a priori, then they can be included in the analysis. As the return
+policy research domain continues to expand and studies emerge
+that report both purchase and return decisions, we hope future
+research will be able to examine the correlated nature of these
+two
+ outcomes.
+Further, future research might examine the effect of
+interactions between the different return policy factors. For
+example, Shulman, Coughlan, and Savaskan (2010) suggest
+return
+ penalties
+ (e.g., restocking fees or restricting a monetary
+leniency factor) are imposed based on the salvage value of the
+product, which varies by channel member. Thus, understanding
+the joint effect of exchange leniency and monetary leniency
+may be important in making these decisions. Along similar
+lines, Neiman Marcus uses a sliding scale of restocking
+fees (increasing with the length of ownership) for returns,
+suggesting
+ that the effect of monetary leniency is contingent on
+time leniency.
+Executive summary
+Retailers often use lenient return policies—possibly  due to
+the inherent belief that leniency increases product purchase more
+than product returns—despite  the high processing costs and
+low salvage values
+ associated with returns. However, previous
+research
+ exploring the effect of lenient return policies on pur-
+chase
+ and subsequent returns is inconclusive. We shed new light
+on this topic by conducting a meta-analysis in which data is
+synthesized from original studies examining how return policy
+leniency affects two important downstream outcomes: (1) pur-
+chase proclivity (i.e., purchase attitudes or behaviors) and (2)
+return proclivity (i.e., consumer intentions or decisions to keep
+or return products). Our analysis reveals a more pronounced
+increase in purchase stemming from
+ lenient return policies than
+for
+ return rates. This suggests that, overall, return policies do in
+fact beneﬁt retailers—at  least in terms of encouraging product
+purchase.
+Additionally,
+ our work challenges the underlying assumption
+in most prior return policy research—that  all forms of return
+policies affect product purchase and returns in a similar manner.
+Our
+ consolidation of previous research suggests this is not the
+case, as retailers tend to impose restrictions that dissuade returns
+or offer leniency to encourage purchase through the use of ﬁve
+return policy elements. We systematically code the effects of
+return policy leniency (on product purchase and return) reported
+in studies included in our meta-analytic database as varying
+along ﬁve leniency dimensions representative of those elements:
+time leniency (e.g., 60 day vs. 30 day return policy), monetary
+leniency (e.g., offering 100 percent money back vs. 80 percent
+money back), effort leniency (e.g., no forms required vs. forms
+required), scope leniency (e.g., accepting returns on sale items
+vs. not), and exchange leniency (e.g., cash back vs. store credit).
+We ﬁnd these ﬁve factors differ in their impact on consumer
+purchase and return decisions and suggest the mixed results in
+previous
+ research regarding the effects of return policy leniency
+are likely due to the fact that most work in this area examines
+only one or two of the various leniency factors.
+Speciﬁcally, we ﬁnd that return policies that offer more mon-
+etary and/or effort leniency are likely to increase consumer
+purchase and, hence, are more likely to drive demand. However,
+in situations in which the priority is to curb returns, retail-
+ers should focus more on other aspects such as return policy
+deadlines, exchange leniency, and/or scope leniency. Due to the
+differential inﬂuences of the leniency factors, retailers may be
+better served by creating more complex return policies that vary
+along multiple dimensions rather than simplistic return policies
+that vary along only one or two dimensions.
+References
+Andrews, Rick L. and George R. Franke (1991), “The Determinants of Cigarette
+Consumption: A Meta-analysis,” Journal of Public Policy & Marketing, 10
+(1), 81–100.
+Bahn, Kenneth D. and Eric Boyd (2014), “Information and Its Impact on Con-
+sumers’ Reactions to Restrictive Return Policies,” Journal of Retailing and
+Consumer Services, 21 (4), 415–23.
+
+--- PAGE 10 ---
+N. Janakiraman et al. / Journal of Retailing 92 (2, 2016) 226–235 235
+Bijmolt, Tammo H.A. and Rik G.M. Pieters (2001), “Meta-analysis in Marketing
+When Studies Contain Multiple Measurements,” Marketing Letters, 12 (2),
+157–69.
+Boniﬁeld, Carolyn, Catherine Cole and Randall L. Schultz (2010), “Product
+Returns on the Internet: A Case of Mixed Signals?,” Journal of Business
+Research, 63 (9), 1058–65.
+Borenstein, Michael, Larry V. Hedges, Julian P.T. Higgins and Hanna R. Roth-
+stein (2009), Introduction to Meta-analysis, Chichester: John P. Wiley &
+Sons, Ltd.
+Bower, Amanda B. and James G. Maxham III (2012), “Return Shipping Policies
+of Online Retailers: Normative Assumptions and the Long-term Conse-
+quences of Fee and Free Returns,” Journal of Marketing, 76 (5), 110–24.
+Brown, Steven P. and Douglas M. Stayman (1992), “Antecedents and Conse-
+quences of Attitude Toward the Ad: A Meta-analysis,” Journal of Consumer
+Research, 19 (1), 34–51.
+d’Astous, Alain and Amélie Guèvremont (2008), “Effects of Retailer Post-
+purchase Guarantee Policies on Consumer Perceptions with the Moderating
+Inﬂuence of Financial Risk and Product Complexity,” Journal of Retailing
+and Consumer Services, 15 (4), 306–14.
+Davis, Scott, Michael Hagerty and Eitan Gerstner (1998), “Return Policies and
+the Optimal Level of ‘Hassle’,” Journal of Economics and Business, 50 (5),
+445–60.
+Derbaix, Christian (1983), “Perceived Risk and Risk Relievers: An Empirical
+Investigation,” Journal of Economic Psychology, 3 (1), 19–38.
+Greatorex,
+ Mike
+ and Vincent W. Mitchell (1994), “Modelling Consumer Risk
+Reduction
+ Preferences from
+ Perceived Loss Data,” Journal of Economic
+Psychology, 15 (4), 669–85.
+Grifﬁs, Stanley E., Shashank Rao, Thomas J. Goldsby and Tarikere T. Niranjan
+(2012), “The Customer Consequences of Returns in Online Retailing: An
+Empirical Analysis,” Journal of Operations Management, 30 (4), 282–94.
+Heiman, Amir, Bruce McWilliams and David Zilberman (2001), “Demon-
+strations and Money-Back Guarantees: Market Mechanisms to Reduce
+Uncertainty,” Journal of Business Research, 54 (1), 71–84.
+Huffcutt, Allen I. and Winfred Arthur (1995), ““Development of a New Outlier
+Statistic for Meta-analytic Data,” Journal of Applied Psychology, 80 (2),
+327.
+Hunter, John E. and Frank L. Schmidt (2004), Methods of Meta-analysis: Cor-
+recting Error and Bias in Research Findings, 2nd ed. Newbury Park, CA:
+Sage.
+Huppertz, John W. (2007), “Firms’ Complaint Handling Policies and Consumer
+Complaint V oicing,” Journal of Consumer Marketing, 24 (7), 428–37.
+Janakiraman, Narayan and Lisa Ordó˜nez (2012), “Effect of Effort and Deadlines
+on Consumer Product Returns,” Journal of Consumer Psychology, 22 (2),
+260–71.
+Janiszewski, Chris, Hayden Noel and Alan G. Sawyer (2003), “A Meta-analysis
+of the Spacing Effect in Verbal Learning: Implications for Research on
+Advertising Repetition and Consumer Memory,” Journal of Consumer
+Research, 30 (1), 138–49.
+Javadi, Moshref, Mohammad Hossein, Hossein Rezaie Dolatabadi, Mojtaba
+Nourbakhsh, Amir Poursaeedi and Ahmadreza Asadollahi (2012), “An Anal-
+ysis of Factors Affecting on Online Shopping Behavior of Consumers,”
+International Journal of Marketing Studies, 4 (5), 81.
+Kalaian, Hripsime A. and Stephen W. Raudenbush (1996), “A Multivariate
+Mixed Linear Model for Meta-analysis,” Psychological Methods, 1 (3), 227.
+Kang, Minjeong and Kim Johnson (2009), “Identifying Characteristics of Con-
+sumers Who Frequently Return Apparel,” Journal of Fashion Marketing and
+Management, 13 (1), 37–48.
+Kim, Junyong and Brian Wansink (2012), “How Retailers’ Recommendation
+and Return Policies Alter Product Evaluations,” Journal of Retailing, 88 (4),
+528–41.
+Lantz, Björn and Klas Hjort (2013), “Real E-customer Behavioural Responses
+to Free Delivery and Free Returns,” Electronic Commerce Research, 13 (2),
+183–98.
+Maity, Devdeep and Todd J. Arnold (2013), “Search: An Expense or an Expe-
+rience? Exploring the Inﬂuence of Search on Product Return Intentions,”
+Psychology
+ & Marketing, 30 (7), 576–87.
+Mollenkopf, Diane A., Elliot Rabinovich, Timothy M. Laseter and Kenneth K.
+Boyer (2007), “Managing Internet Product Returns: A Focus on Effective
+Service Operations,” Decision Sciences, 38 (2), 215–50.
+Pei, Zhi, Audhesh Paswan and Ruiliang Yan (2014), “E-tailer’s Return Policy,
+Consumer’s Perception of Return Policy Fairness and Purchase Intention,”
+Journal of Retailing and Consumer Services, 21 (3), 249–57.
+Petersen, J. Andrew and V. Kumar (2010), “Can Product Returns Make You
+Money?,” MIT Sloan Management Review, 51 (3), 84–9.
+Posselt, Thorsten, Eitan Gerstner and Dubravko Radic (2008), “Rating E-
+tailers’ Money-Back Guarantees,” Journal of Service Research, 10 (3),
+207–19.
+Powers, Thomas L. and Eric P. Jack (2013), “The Inﬂuence of Cognitive Disso-
+nance on Retail Product Returns,” Psychology & Marketing, 30 (8), 724–35.
+Raudenbush, Stephen W. and Anthony S. Bryk (2002), , Sage.
+Rogi´c, Kristijan, Ivona Bajor and Tomislav Roˇzi´c (2010), “Consumer as a Part
+of Reverse
+ Logistics Chain,” in Annals of DAAAM for 2010 & Proceedings
+of
+ the 21st
+ International DAAAM Symposium, 21.1, ISSN 1726-9679,
+Rosenberg, Michael S., Dean C. Adams and Jessica Gurevitch (1997), MetaWin:
+Statistical Software for Meta-analysis with Resampling Tests, Sunderland,
+MA: Sinauer Associates.
+, and
+(2000), MetaWin: Statistical Software for Meta-analysis, Sunderland: Sin-
+auer Associates.
+Rosenthal, Robert (1979), “The File Drawer Problem and Tolerance for Null
+Results,” Psychological Bulletin, 86 (3), 638–41.
+Rosenthal, Robert and Ralph L. Rosnow (1991), , New York: McGraw-Hill.
+Shao, Bingjia, Lingli Chang and Lizhong Zhang (2013), “The Effect of Online
+Return Shipping Insurance and Regulatory Focus on Consumer Behavior,”
+in Proceedings of 23rd International Business Research Conference.
+Shulman, Jeffrey D., Anne T. Coughlan and R. Canan Savaskan (2010), “Opti-
+mal Reverse Channel Structure for Consumer Product Returns,” Marketing
+Science, 29, 1071–85.
+Suwelack, Thomas, Jens Hogreve and Wayne D. Hoyer (2011), “Understanding
+Money-Back Guarantees: Cognitive, Affective, and Behavioral Outcomes,”
+Journal of Retailing, 87 (4), 462–78.
+Suwelack, Thomas and Manfred Krafft (2012), “Effects of Money-Back and
+Low-Price Guarantees on Consumer Behavior,” in Quantitative Marketing
+and Marketing Management Gabler Verlag.531–61.
+Van den Poel, Dirk and Joseph Leunis (1999), “Consumer Acceptance of the
+Internet as a Channel of Distribution,” Journal of Business Research, 45 (3),
+249–56.
+Wang, Xianghong (2009), “Retail Return Policy, Endowment Effect, and Con-
+sumption Propensity: An Experimental Study,” The BE Journal of Economic
+Analysis & Policy, 9 (1).
+Wood, Stacy L. (2001), “Remote Purchase Environments: The Inﬂuence of
+Return Policy Leniency on Two-Stage Decision Processes,” Journal of Mar-
+keting Research, 38 (2), 157–69.

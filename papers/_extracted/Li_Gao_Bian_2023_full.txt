@@ -1,0 +1,5919 @@
+PAGES 31
+
+
+========== PAGE 1 ==========
+Int. J. Production Economics 256 (2023) 108752
+Available online 22 December 2022
+0925-5273/© 2022 Elsevier B.V. All rights reserved.
+Contents lists available at ScienceDirect
+International Journal of Production Economics
+journal homepage: www.elsevier.com/locate/ijpe
+Return freight insurance strategies for the online retailer and insurance
+company
+Xiaoxiao Li a,b, Jie Gao a,∗, Yiwen Bian c
+a School of Management, The State Key Lab for Manufacturing Systems Engineering, Xi’an Jiaotong University, Xi’an, 710049, China
+b Department of Management Sciences, City University of Hong Kong, 999077, Hong Kong Special Administrative Region of China
+c SHU-UTS SILC (Sydney Institute of Language & Commerce) Business School, Shanghai University, Shanghai, 201899, China
+A R T I C L E
+I N F O
+Keywords:
+Return freight insurance
+Quality risk
+Customer return
+Quality perception
+E-commerce
+A B S T R A C T
+In online purchases, customers often exhibit considerable hesitations due to quality uncertainty and return
+freight fees. In response, online retailers may buy the return freight insurance (RFI) service from insurance
+companies that compensate the customers when they return the purchased item. With the RFI service, insurance
+companies generally verify the quality information posted by the retailer to avoid excessive customer returns.
+Thus, the RFI service not only reduces the customer’s return freight but also acts as an imperfect quality signal
+for customers to mitigate quality uncertainty. We characterize the RFI’s imperfect signaling effect by signal
+efficiency, and develop a game-theoretic model to investigate the RFI strategies of insurance companies and
+the retailer. Our results shed light on how signal efficiency and return freight fees drive their RFI strategies.
+The insurance companies charge an extremely small RFI premium for the retailer selling high-quality products;
+for the retailer selling low-quality products, the RFI premium becomes large for those with a medium return
+freight fee, or with a small signal efficiency. The retailer selling high-quality products always adopts the RFI
+service. The retailer selling low-quality products does not adopt the RFI service when the return freight fee
+is large. Given a medium return freight fee, the retailer with low-quality products prefers the RFI service
+when the signal efficiency is medium. Given a small return freight fee, only when the signal efficiency is large
+does the retailer with low-quality products adopt the RFI service. Our results provide new explanations for
+the prevalence of the RFI service for retailers selling products of different quality, and shed light on the RFI
+premium strategy for insurance companies.
+1. Introduction
+Customers often face quality uncertainty risk, i.e., uncertain product performance, when shopping online, as they cannot fully understand the
+true product quality, e.g., the warm performance of clothing (Guo and Zhao, 2009; Guan and Chen, 2015) or computer performance, via text
+description, pictures and videos (Nelson, 1970; Guo and Zhao, 2009; Board, 2009; Feng et al., 2020; Hsiao and Chen, 2012). To reduce the quality
+uncertainty risk, most online retailers provide the money-back-guarantee (MBG) policy. An MBG policy allows customers to return products if they
+are not satisfied with the true quality.1 For example, online down coat retailers often claim the coat is padded with duck down and the fabric
+quantity is 150 g. However, the warmth of a down coat also depends on many other factors, e.g., fill power and feather content. At the purchase
+stage, the customer is not clear about the actual performance of the product and makes purchase decisions based on the perceived quality inferred
+from the posted texts and pictures. When the product is delivered, the customer learns the actual performance. If the performance is far below the
+perceived quality, the customer feels unsatisfied and chooses to return the product.
+However, even if a full-refund policy (e.g., MBG policy) is offered, customers still have to bear the return freight fee, which becomes an inhibitor
+for online purchases (Lin et al., 2020). Surveys show that 66% of customers are concerned about return freight fees2 and 79% want free return
+∗Corresponding author.
+E-mail addresses: lxx2013@stu.xjtu.edu.cn, xiaoxli7-c@my.cityu.edu.hk (X. Li), gaoj@mail.xjtu.edu.cn (J. Gao), ywbian@shu.edu.cn (Y. Bian).
+1 https://www.salecycle.com/blog/featured/ecommerce-returns-2018-stats-trends/
+2 UPS and comScore. (2015). Pulse of the online shopper: Empowered shoppers propel retail change. October 27.
+https://doi.org/10.1016/j.ijpe.2022.108752
+Received 30 January 2022; Received in revised form 26 November 2022; Accepted 15 December 2022
+
+
+========== PAGE 2 ==========
+International Journal of Production Economics 256 (2023) 108752
+2
+X. Li et al.
+freight.3 Moreover, more than 69% of customers opt out of online shopping because they are unwilling to bear the return freight fee.4 Bower and
+Maxham (2012) suggest that online retailers should institute a policy of free product return. To this end, the return freight insurance (RFI) service
+for online retailers (retailer-oriented RFI) is introduced on platforms such as Taobao in China. Taobao has invited insurance companies to offer
+the RFI service for online retailers since 2010. With the release of the ‘‘Antitrust Guidelines for the Platform Economy Industry’’, Taobao focuses
+on reducing entry barriers for insurance companies to provide the RFI service.5 For example, more than ten insurance companies, such as PICC
+and Huatai Insurance, offer the RFI service on Taobao.6 In recent years, the RFI service has become popular on online platforms such as JD and
+Suning.
+The retailer on the platform is eligible to decide whether to adopt this service. For example, most make-up and apparel retailers on Taobao
+provide the RFI service, whereas some daily necessity retailers do not. If the retailer adopts the RFI service, the insurance companies determine
+the unit RFI premium based on the evaluation of online retailers’ quality/return rates, return freight fees, and product category.7 Afterwards, the
+retailer pays the premium in pace with each transaction via the online shopping platform to the RFI service provider. Once a customer returns
+his/her purchase, the insurance company pays a freight compensation fee to the customer.
+The retailer may exaggerate product quality to solicit purchases from customers. In the presence of RFI, the exaggerated quality leads to more
+returns and incurs more compensation costs for the RFI provider. Hence, the insurance companies generally evaluate the product quality before
+determining the RFI premium8 and are entitled to rescind the contract with high-return-rate retailers, forcing the retailer to post the true quality
+as much as possible.7 From the perspective of customer, the RFI service acts as a third-party quality certificate (Zhang et al., 2021), and can be
+regarded as a signal of the true quality (Shao et al., 2013; Zhang et al., 2021). Nevertheless, the RFI service is an imperfect quality signal, i.e., the
+RFI service cannot indicate the product quality precisely, since this signaling effect may not always work due to the difficulties in describing
+the product performance through text and pictures. The efficiency of this signal (in short, signal efficiency) captures the intertemporal difference
+between the customer’s perceived and true quality, and is associated with the product category. In particular, for some experience-based products,
+such as apparel and make-up, the evaluation of these products’ performance depends heavily on users’ subjective experience (Nelson, 1970; Gupta
+et al., 2004; Wells et al., 2011), and the retailer is likely to disclose false quality information without third-party censorship. Hence, customers
+rely on the insurance company’s censorship of quality information, implying high signal efficiency for these experience-based products (Kang and
+Johnson, 2009). In contrast, for categories like daily necessities, product quality is objective and straightforward for customers to evaluate by text
+description. Thus, customers encounter less quality risk and rely less on the insurance company’s censorship of quality information, and thus the
+signal is less efficient (Alba and Hutchinson, 1987; Coupey et al., 1998; Söderlund, 2002). This imperfect signaling effect, which is product-category
+contingent, distinguishes the RFI service from the extant return policies. Thus, the wisdom of managing return policies may not apply to the RFI
+service. However, few current studies consider this imperfect signaling effect; rather, this paper incorporates this effect and highlights its impact
+on the retailer’s and insurance companies’ strategies.
+As the RFI service makes up for the customers’ return freight fee and encourages customers to return the product, it causes additional costs for
+both the retailer and the insurance companies. Hence, it is important for insurance companies to charge a proper RFI premium to cover its cost
+and solicit more retailers to adopt the RFI service. Intriguingly, most research focuses on the retailer’s RFI decision by assuming an exogenous RFI
+premium. Few attempts in academia consider the RFI premium decision of the insurance companies. Several research questions naturally arise:
+(1) What RFI premium should the competitive insurance companies charge for the retailer?
+(2) When should the retailer adopt the RFI service?
+(3) How should the retailer set the retail price if it adopts the RFI service?
+To address these questions, we propose a game-theoretic model consisting of one retailer and several competitive insurance companies who sell
+homogeneous RFI services. They serve a customer population with quality risk and heterogeneous willingness-to-pay (WTP). We examine the pricing
+strategies of the retailer and competitive insurance companies by considering two possible scenarios: 1) the retailer does not adopt the RFI service,
+and 2) the retailer adopts the RFI service. Under each scenario, the customer does not observe the true product quality before the purchase, but can
+update the belief on the quality if the RFI service is adopted. The customer then makes the purchase decision based on the perceived quality. After
+the transaction, the customer learns the true quality and decides whether to return the purchase. The customer who returns the product obtains
+full refund and freight compensation from the insurance company if the retailer adopts the RFI. Otherwise, the customer obtains the full refund
+without any freight compensation.
+In this study, customers can be categorized into three classes according to their WTP: compulsive customers with high WTP who never return
+the product, strategic customers with medium WTP who return the low-quality product but keep the high-quality product, and non-buy customers
+with low WTP who never buy the product.
+Our results show that the competitive insurance companies set an infinitesimally small RFI premium for the retailer selling high-quality products,
+because both the compulsive and strategic customers always keep the high-quality product. In contrast, the retailer selling low-quality products
+may encounter customer returns, and thus the RFI premium is closely related to the return rate. This result is distinct from the expected-quality
+related premium indicated by Zhang et al. (2021), who assume that the insurance company lacks the quality information on the retailer. In contrast,
+we consider a distinct information structure in that the insurance company knows the true quality. Our result further shows that the RFI premium
+for the low-quality retailer first increases then decreases in the return freight fee due to the trade-off between the unit compensation cost and the
+return rate. In addition, the RFI premium decreases in the signal efficiency. This is because the high signal efficiency effectively prevents strategic
+customers from purchasing, reducing the return rate. This result echoes the phenomenon in which the insurance company, AXA, on Suning.com,
+charges a smaller premium (0.85 RMB) for make-up with high signal efficiency, compared with products like food (0.95 RMB) and household
+appliances (1.00 RMB).9
+3 https://www.invespcro.com/blog/ecommerce-product-return-rate-statistics/.
+4 https://www.emarketer.com/topics/topic/retail-ecommerce-2016
+5 http://www.iachina.cn/art/2021/9/30/art_22_105475.html
+6 https://m.gxfin.com/article/finance/bx/default/2020-06-17/5298204.html.
+7 https://www.finlaw.pku.edu.cn/zxzx/zxwz/239619.html
+8 https://render.alipay.com/p/c/jzlpc1ez/1581579450735.html
+9 https://stc.suning.com/stc/helpCenter/showHelpDetail/SBZ100003915.htm
+
+
+========== PAGE 3 ==========
+International Journal of Production Economics 256 (2023) 108752
+3
+X. Li et al.
+The retailer’s adoption decision of the RFI service is determined by the trade-off between the sales revenue advantage and the extra RFI costs
+including both the premium and return handling costs. The retailer selling high-quality products is always willing to adopt the RFI service as RFI
+improves the customers’ purchase utility due to its quality signaling effect, and the retailer bears no return cost; whereby the retailer is able to
+raise the price and ends up with a high sales revenue. The RFI adoption decision for the retailer selling low-quality products is somewhat nuanced,
+shaped by the synergistic effect of signal efficiency and return freight fee. Specifically, when the return freight fee is large (e.g., bulk merchandise),
+the retailer is less likely to adopt the RFI service, consistent with the empirical finding of Chen et al. (2018). Note that for the retailer selling
+low-quality products, the large return freight fee only induces purchases of the compulsive customers, yet the quality signaling role of RFI drags
+the customers’ perceived quality down, resulting in a low price and a low sales revenue. When the return freight fee is medium, both the compulsive
+and strategic customers may purchase the product. The presence of RFI dwindles the strategic customers’ expected utility to the low-quality product,
+attributed again to its quality signaling role, and thus effectively prevents strategic customers from purchasing. In this case, the retailer is more
+likely to adopt RFI when the signal efficiency is moderate in case of diminishing compulsive customers. When the return freight fee is so small that
+the retailer accommodates a proportion of strategic customers, only a high signal efficiency could effectively dissuade the strategic customers from
+purchasing the product, thus decreasing the return rate as well as the RFI costs. In this case, the retailer prefers the RFI service when the signal
+efficiency is high. These results give explanations of the RFI adoption for retailers selling products with different return freight fees. For example,
+both furniture and apparel are experience products, for which the signal efficiency of RFI is high. The furniture retailer is less likely to adopt RFI,
+while the apparel retailers are more willing to adopt RFI.
+Upon adopting the RFI service, intuitively, the retailer should pull up the price to make up for additional RFI costs, as indicated by Fan and
+Chen (2020), Lin et al. (2020). Our study shows a similar result for the retailer selling high-quality products, which is attributed to the beneficial
+quality signaling effect of RFI. Intriguingly, with quite small return freight fees, the retailer selling low-quality products may lower the price when
+adopting the RFI service. This is because the retailer must accommodate the strategic customers regardless of the RFI adoption, but the volume
+of compulsive customers with RFI is smaller than that without RFI. Hence, by adopting RFI, the retailer tends to decrease its price to expand the
+volume of compulsive ones and inhibits returns from the strategic ones.
+Finally, we consider the case of a monopoly insurance company. The monopoly insurance company has a larger power to set a high RFI premium
+and makes positive returns. As a result, the retailer earns less profit, and thus has less incentive to use RFI. This result explains why online platforms
+such as Taobao encourage more insurance companies to participate.
+In summary, we underscore the RFI’s imperfect signaling effect and examine the RFI strategies of the retailer and insurance companies. Our
+results provide new explanations for the popularity of RFI service for retailers with various quality and return freight fees. We also shed light on
+the premium decisions of insurance companies.
+The remainder of this paper is organized as follows. Section 2 summarizes the related literature. We describe our model in Section 3. In Section 4,
+we examine the pricing and RFI strategies of the retailer and the insurance companies. We extend to consider the case with a single insurance
+company in Section 5. Section 6 provides concluding remarks. We relegate the proofs to Appendices A and B.
+2. Literature review
+Our study is related to two main research streams. The first stream is about customer returns, and the second is about RFI.
+Customer returns are often incurred by product quality risk. The extant studies on customer returns characterize the horizontal quality risk,
+that a product may not match the customer’s tastes. From the modeling perspective, most assume customers are associated with an exogenous
+return probability and examine the impact of product mismatch risk on operational decisions (see Chen and Chen (2017a,b), Ma et al. (2020)).
+Anderson et al. (2009) instead consider the endogenous customer return behavior, allowing the firm to measure the value of the return option to
+customers. Other studies consider that customer returns originate from the vertical quality risk of satisfaction with product performance, and regard
+the quality as the retailer’s private information (see Feng et al., 2020; Moorthy and Srinivasan, 1995). Moorthy and Srinivasan (1995) consider
+the quality-associated return probability and show the signaling role of MBG policy. Feng et al. (2020) examine the quality disclosure strategy of
+a manufacturer/retailer in the presence of customer returns. Thus, they model the return probability related to the quality disclosure strategy. Our
+research falls into the stream that focuses on vertical quality risk, and we mainly focus on the RFI service. In particular, we borrow part of the
+model in Anderson et al. (2009) and characterize the endogenous customer return behavior.
+Return hassle costs for customers, e.g., the return freight fee and the restocking fee charged by the retailer when merchandise is returned from
+the customer, always accompany customer returns and are a critical inhibitor of online purchases. Regarding general return hassle costs, Davis et al.
+(1998) and Hsiao and Chen (2014) examine when the retailer adopts the general low-hassle policy for customers. There are extant studies focusing
+on the design of the restocking fee to reduce the store return rate (Shulman et al., 2009, 2011), to distinguish high- and low-type customers (Hsiao
+and Chen, 2012), to deal with the customer’s anticipated regrets (Zou et al., 2020). However, little research addresses the impact of the return
+freight fee even though it naturally accompanies customer returns, and is vital to customer satisfaction and purchase decisions (Cao et al., 2018;
+He et al., 2020). In this study, we incorporate the RFI service that reduces the customer’s return freight fee and highlight the impact of return
+freight fees on the RFI policies of the retailer and insurance companies. Our results indicate that the return freight fee non-monotonically affects
+the retailer’s RFI adoption and the RFI premium.
+The RFI service, a replenishment of the return policies, can effectively reduce the quality uncertainty and alleviate the return freight fee’s adverse
+effects. The extant research on the RFI service investigates when RFI benefits online retailers. Fan and Chen (2020) find that the RFI service benefits
+the retailer when the premium is low and the compensation is large. They argue that a low premium or a considerable compensation alleviates
+the negative impact of price markup on demand. Lin et al. (2020) investigate the retailer’s RFI policy by assuming two types of customers with
+valuation uncertainty. They show that a large return freight fee reduces customer returns and enables the retailer to benefit from RFI. Chen et al.
+(2021) investigate how the reselling and agency selling formats affect the value of RFI for retailers. They highlight the role of the retailer’s unit
+return loss and show that the RFI service benefits retailers more under the reselling format. Li et al. (2018) incorporate retailer competition, and
+show that only the retailer with a high return rate benefits from RFI due to the freight compensation effect of RFI.
+The above studies all assume exogenous insurance premiums. In contrast, Zhang et al. (2021) examine an insurer’s decisions on premium for
+the retailer by assuming both the insurance company and customers encounter quality uncertainty risk. The insurance premium under their setting
+is related to the expected quality. Similar to Zhang et al. (2021), our research also considers the signaling role of RFI and examines the insurer’s
+premium decisions. However, the distinguishing element of our study from theirs is the incorporation of the imperfect signaling effect of RFI,
+
+
+========== PAGE 4 ==========
+International Journal of Production Economics 256 (2023) 108752
+4
+X. Li et al.
+which is captured by signal efficiency. We show that signal efficiency plays an essential role in the retailer’s pricing and RFI adoption strategies.
+Furthermore, we consider the case of competitive insurance companies selling homogeneous RFI services, and only the customer is assumed to face
+quality risk. We find that the RFI premiums are determined by the retailer’s return rate, and are distinct for the retailers with different quality.
+Apart from the retailer-oriented RFI service, customers can also purchase the RFI service from insurance companies, which is called customer-
+oriented RFI. Geng et al. (2017) consider that the customer has the option to purchase RFI while the retailer does not have such an option. Several
+studies consider both types of RFI. Li et al. (2021a,b) model customers’ endogenous return behavior and find that the retailer grabs higher profits
+under both types of RFI, especially by offering retailer-oriented RFI as the retailer captures all customer surplus. Ren et al. (2021) formulate a
+binary model with exogenous customer return probability and reach the opposite result: the insurance company should be neutral in providing
+both types of RFI, and the online retailer cannot benefit from both types of RFI as the RFI service reduces market share. Zhang et al. (2021) further
+show that the customer-oriented RFI cannot make the insurer profitable. As the above literature shows the weakening benefits of customer-oriented
+RFI, our study does not incorporate this type of RFI. Another reason why we do not consider the customer-oriented type is that, one of the goals
+of our study is to explore the imperfect signaling effect of RFI, where such an effect stems from the quality information verification of the RFI
+provider. However, customer-oriented RFI does not have this effect, and its introduction may undermine our main topic results.
+To conclude, our study investigates the retailer-oriented RFI service in the presence of vertical quality risk for customers. We underscore the
+quality verification role of insurance companies, incorporating the imperfect signaling effect of RFI. We endogenize customer return behaviors rather
+than assume an exogenous return probability to explore how RFI affects the demand and return rate. Furthermore, in addition to the retailer, we
+also examine the RFI strategies of competitive insurance companies. Our results show that both insurance companies and retailers with dissimilar
+quality can potentially benefit from the RFI service. Their RFI strategies change strategically with several vital factors including signal efficiency,
+return freight fee and retailer’s quality.
+3. Model setting
+Consider an online shopping setting where several competitive insurance companies offer homogeneous RFI services for the online retailer,5
+and an online retailer sells a product of quality 𝑞to customers who are uncertain about the product quality before purchase. The product quality
+𝑞is either high or low, i.e., 𝑞∈{𝑞𝐻, 𝑞𝐿}. Remarkably, the retailer knows the product quality but cannot use prices to signal quality as prices alone
+cannot be an effective quality signal (Grossman, 1981; Olshavsky et al., 1985), and this study mainly focuses on the role of the RFI service in
+influencing the customer choice. In brief, the retailer knows the product quality and knows that the customers do not (Narayanan and Manchanda,
+2009; Narayanan et al., 2005; Guo et al., 2022).
+The retailer provides the MBG policy for the customer, decides whether to adopt the RFI service and sets the retail price. Depending on the
+retailer’s RFI decision, we consider two cases: ‘‘the benchmark case without RFI’’ and ‘‘the case with RFI service’’, and denote the two cases by
+subscripts 𝑁and 𝑅respectively. Hence, the retailer’s RFI adoption decision is represented by the following indicator function:
+𝐼𝑅=
+{
+1, if the retailer adopts RFI,
+0, otherwise..
+(1)
+The retailer sets the price 𝑝𝑅if it adopts the RFI service (i.e., 𝐼𝑅= 1). Otherwise, it sets the price 𝑝𝑁.
+3.1. The customer
+The market involves a continuum of customers who are heterogeneous in the willingness-to-pay (WTP) 𝛾for the product quality, where
+𝛾∼𝑈(0, 1). Each customer has at most one-unit demand, and the market size is normalized to 1. Initially, the customer does not know the
+product’s true quality. Let ̄𝑞be the perceived quality, which is a random variable. The customer decides whether to purchase the product based
+on the perceived quality. After the purchase, the customer then learns the product’s true quality and decides whether to keep or return it. In
+consideration of this return behavior, the customer seeks to maximize the individual expected surplus at the initial purchase stage.
+3.1.1. Without the RFI service
+We first consider that the retailer does not adopt the RFI service (i.e., 𝐼𝑅= 0). Before the purchase, the customer holds the initial belief that the
+product quality will be 𝑞𝐻with probability 1∕2 and be 𝑞𝐿with probability 1∕2. After receiving the product, the customer immediately learns the
+product’s true quality 𝑞. If keeping the product, the customer obtains utility 𝑈𝑘
+𝑁= 𝛾𝑞−𝑝𝑁. Upon returning the product, the customer gets the price
+𝑝𝑁back, pays the return freight fee 𝑓, and thus obtains the utility 𝑈𝑟
+𝑁= −𝑓. The customer keeps the product if 𝑈𝑘
+𝑁≥𝑈𝑟
+𝑁, and returns otherwise.
+In consideration of the return behavior, the customer’s expected surplus of purchase can be written as
+𝐸(𝑈𝑁|𝐼𝑅= 0) = 𝐸(max{𝛾̄𝑞, 𝑝𝑁−𝑓})
+= max{𝛾𝑞𝐻, 𝑝𝑁−𝑓}
+2
++ max{𝛾𝑞𝐿, 𝑝𝑁−𝑓}
+2
+.
+(2)
+The customer will make a purchase if his/her expected surplus is greater than the product price.
+3.1.2. With the RFI service
+With the RFI service (𝐼𝑅= 1), the insurance companies generally evaluate the product quality to avoid excessive customer returns led by
+misleading quality information, and they are entitled to rescind the contract with high-return-rate retailers, which forces the retailer to post the
+true quality as much as possible. Customers know this and can reasonably believe that the information posted by the retailer is more credible with
+the RFI service. That is, the RFI service acts as a third-party certificate Hwang et al. (2006) and helps signal the true quality to customers Shao et al.
+(2013), Zhang et al. (2021). However, such verification may not always work due to the difficulties in describing the experience-based product’s
+performance through text and pictures. In a nutshell, the RFI service is an imperfect signal of product quality.
+To capture the RFI’s imperfect signaling effect, we assume that the adoption of RFI reveals the retailer’s true quality with probability 𝜎, where
+𝜎∈[0, 1) represents the signal efficiency. The signal efficiency 𝜎is associated with the product category. For example, before using the product,
+customers know less about the quality of experience-based products such as apparel and make-up. They rely more on the RFI provider’s quality
+
+
+========== PAGE 5 ==========
+International Journal of Production Economics 256 (2023) 108752
+5
+X. Li et al.
+Table 1
+Notations.
+Notation
+Definition
+𝑎
+RFI premium of the RFI provider
+𝑝𝑗
+Retail price under case 𝑗, 𝑗= {𝑁, 𝑅}
+𝐼𝑅
+Retailer’s RFI strategy
+𝛾
+Customer’s willingness to pay, 𝛾∼𝑈(0, 1)
+𝑞
+Product’s true quality, 𝑞∈{𝑞𝐻, 𝑞𝐿}
+̄𝑞
+Perceived quality
+𝑑𝑗
+Total demand under case 𝑗, 𝑗= {𝑁, 𝑅}
+𝑑𝑘
+𝑗
+Volume of keeping the product under case 𝑗, 𝑗= {𝑁, 𝑅}
+𝑑𝑟
+𝑗
+Volume of customer returns under case 𝑗, 𝑗= {𝑁, 𝑅}
+𝛱𝑗
+Retailer’s profit under case 𝑗, 𝑗= {𝑁, 𝑅}
+𝜋
+Profit of the RFI provider
+𝑡
+Return handling cost of the retailer
+𝜎
+Signal efficiency of RFI, 𝜎∈[0, 1)
+𝑓
+Return freight fee
+𝛽
+Compensation fraction of the return freight fee, 𝛽∈(0, 1)
+information censorship to form the quality perception (Kang and Johnson, 2009). Thus, their quality perceptions are more likely to be updated
+by the RFI service (Gupta et al., 2004; Wells et al., 2011), corresponding to a high signal efficiency 𝜎. By contrast, for some products (e.g., daily
+necessities) with objective quality, customers can easily infer the quality from the text description, and thus rely less on the RFI’s quality signaling
+role, implying a relatively low signal efficiency 𝜎.
+The Bayesian belief updating of ̄𝑞for the customer is performed as follows. On the observation of RFI, the customer receives a signal 𝐼𝑅= 1,
+which is informative and reveals the retailer’s true quality with probability 𝜎. With probability 1 −𝜎, RFI is uninformative, and the customer holds
+the initial belief. Following Lewis and Sappington (1994) (see more examples in Kwark et al., 2014; Zhang et al., 2018), we can formulate the
+customer’s belief formally as Pr(𝐼𝑅= 1| ̄𝑞= 𝑦) = 1−𝜎
+2
++ 𝜎𝛿𝑦𝑞, where 𝛿𝑦𝑞is the Kronecker delta distribution that satisfies 𝛿𝑦𝑞=
+{
+1, 𝑦= 𝑞,
+0, 𝑦≠𝑞.
+. Using
+Bayes’ Law, we obtain the conditional probability if the RFI service is offered.
+Pr( ̄𝑞= 𝑦|𝐼𝑅= 1) =
+Pr(𝐼𝑅= 1| ̄𝑞= 𝑦) Pr( ̄𝑞= 𝑦)
+Pr(𝐼𝑅
+)
+= 1 −𝜎
+2
++ 𝜎𝛿𝑦𝑞.
+(3)
+Let 𝑞′ be the false product quality, then we have Pr( ̄𝑞= 𝑞|𝐼𝑅= 1) = 1+𝜎
+2
+and Pr( ̄𝑞= 𝑞′|𝐼𝑅= 1) = 1−𝜎
+2 . Thus, the customer updates his/her perceived
+quality towards the product’s true quality after observing the signal 𝐼𝑅= 1.
+Upon receiving the product, the customer obtains utility 𝑈𝑘
+𝑅= 𝛾𝑞−𝑝𝑅if keeping the purchase. If the customer returns the product, he/she gets
+the product price 𝑝𝑅back and a fraction 𝛽of the return freight fee 𝑓(𝛽∈(0, 1)) from the insurance company, thus obtaining utility 𝑈𝑟
+𝑅= −(1−𝛽)𝑓.
+To avoid trivial results, we assume 𝑓≤min{ 𝑞𝐻−𝑞𝐿
+2
+, (1−𝜎)(𝑞𝐻−𝑞𝐿)
+2(1−𝛽)
+} to ensure that the equilibrium demand is always positive. The customer’s expected
+surplus of purchase is
+𝐸(𝑈𝑅|𝐼𝑅= 1) = 1 + 𝜎
+2
+max{𝛾𝑞, 𝑝𝑅−(1 −𝛽)𝑓} + 1 −𝜎
+2
+max{𝛾𝑞′, 𝑝𝑅−(1 −𝛽)𝑓}.
+(4)
+3.2. The retailer and insurance companies
+Note that there are competitive insurance companies offering homogeneous RFI services, and they perfectly compete with each other due to
+low barriers to entry. As revealed later, through perfect competition and selling homogeneous RFI, the insurance companies in equilibrium make
+zero expected profit.
+With competitive insurance companies, the retailer first decides whether to adopt the RFI service and sets the retail price. If the retailer adopts
+the RFI service, the insurance companies independently set the RFI premium. The retailer then chooses the insurance company with the lowest
+premium 𝑎. Notably, the retailer sets the retail price before selecting the insurance company. By doing so, the retailer exempts the insurance
+companies from the risk of a disadvantageous retail price, which helps reduce the premium. This decision sequence also echoes the practice that
+after the retailer uses RFI, the online shopping platform allows insurance companies to adjust the premium based on the retailer’s real-time data 7.
+If the retailer adopts the RFI service, it pays the selected insurance company the RFI premium 𝑎for each product sold. When the customer
+returns the purchase, the RFI service provider compensates the customer 𝛽𝑓, where 𝛽∈(0, 1). For each returned product, the retailer spends a
+handling cost 𝑡.10 The retailer’s profit can be expressed as 𝛱𝑅(𝑝𝑅) = 𝑝𝑅𝑑𝑘
+𝑅−𝑡𝑑𝑟
+𝑅−𝑎𝑑𝑅if the RFI service is adopted; otherwise, it obtains profit
+𝛱𝑁(𝑝𝑁) = 𝑝𝑁𝑑𝑘
+𝑁−𝑡𝑑𝑟
+𝑁. The expected profit of the RFI service provider can be expressed by 𝜋(𝑎) = 𝑎𝑑𝑅−𝛽𝑓𝑑𝑟
+𝑅. The notations and comments are
+summarized in Table 1.
+We summarize the event sequence as follows:
+(1) The retailer decides whether to adopt the RFI service and sets the corresponding retail price.
+(2) The competing insurance companies determine the RFI premiums, and the retailer chooses the insurance company.
+(3) The customers update their beliefs about the product quality and make purchase decisions, and the retailer pays the selected insurance
+company the premium based on the sales volume.
+(4) The customers learn the true product quality and decide whether to return their purchases.
+10 To focus on the cases with customer returns, we assume 𝑡≤
+𝑞𝐻𝑞𝐿
+𝑞𝐻−𝑞𝐿.
+
+
+========== PAGE 6 ==========
+International Journal of Production Economics 256 (2023) 108752
+6
+X. Li et al.
+Fig. 1. The Optimal Price for the Retailer of 𝑞𝑖, 𝑖= 𝐻, 𝐿. (a) For the High-quality Retailer (𝑞= 𝑞𝐻). (b) For the Low-quality Retailer (𝑞= 𝑞𝐿). (𝑞𝐻= 0.8, 𝑞𝐿= 0.2, 𝑡= 0.1, 𝛽= 0.5).
+In the next section, we investigate the optimal pricing strategies of the retailer by considering two cases: without RFI service and with RFI
+service. We also explore the RFI premium strategy of the insurance companies under the RFI case. We finally identify the conditions under which
+the retailer adopts the RFI service by trading off the expected profits with the RFI service and without the service.
+4. Analysis
+4.1. Benchmark case without RFI
+We first consider a benchmark case without RFI (𝐼𝑅= 0) and use backward induction to analyze the customer’s return behavior by comparing
+𝑈𝑘
+𝑁= 𝛾𝑞−𝑝𝑁, 𝑞= {𝑞𝐻, 𝑞𝐿} and 𝑈𝑟
+𝑁= −𝑓. Based on the return behavior, the customer can be categorized into three groups in terms of WTP: 1)
+the compulsive customer with high WTP, i.e., 𝛾≥max
+{ 𝑝𝑁−𝑓
+𝑞𝐻,
+𝑝𝑁−𝑓
+𝑞𝐿
+}
+= 𝑝𝑁−𝑓
+𝑞𝐿
+, who always keeps the purchase regardless of the quality level; 2)
+the strategic customer with medium WTP, i.e., 𝑝𝑁−𝑓
+𝑞𝐻
+≤𝛾≤𝑝𝑁−𝑓
+𝑞𝐿
+, who keeps the purchase if the quality is high, but returns the purchase if the
+quality is low; 3) the non-buy customer with low WTP, i.e., 𝛾≤𝑝𝑁−𝑓
+𝑞𝐻, who always returns the purchase regardless of the quality level.
+In consideration of the return behavior above, we can formulate the customer’s expected utility at the purchase stage as follows.
+(1) The compulsive customer obtains the expected utility 𝐸(𝑈𝑁|𝐼𝑅= 0) = 𝛾𝑞𝐻
+2 + 𝛾𝑞𝐿
+2 , and purchases the product if this utility exceeds the product
+price 𝑝𝑁, i.e., 𝛾≥
+2𝑝𝑁
+𝑞𝐻+𝑞𝐿.
+(2) The strategic customer obtains the expected utility 𝐸(𝑈𝑁|𝐼𝑅= 0) = 𝛾𝑞𝐻
+2
++ (𝑝𝑁−𝑓)
+2
+, and will purchase the product if 𝛾≥𝑝𝑁+𝑓
+𝑞𝐻.
+(3) The non-buy customer obtains the expected utility 𝐸(𝑈𝑁|𝐼𝑅= 0) = (𝑝𝑁−𝑓)
+2
++ (𝑝𝑁−𝑓)
+2
+, and thus never buys the product.
+Regarding the customer’s return and purchase behavior, the retailer determines the retail price to maximize profit. As the non-buy customers
+never purchase, the retailer should determine whether to accommodate only the compulsive customers or both the compulsive and strategic ones
+at the purchase stage. We derive the retailer’s optimal pricing strategy regarding the targeted customers in Lemma 1 and give an illustration in
+Fig. 1. For traceability, we denote the optimal price (resp. profit) as 𝑝𝑖
+𝑁, 𝑖= 𝐻, 𝐿(resp. 𝛱𝑖
+𝑁, 𝑖= 𝐻, 𝐿) for the retailer of 𝑞= 𝑞𝑖, 𝑖= 𝐻, 𝐿in the
+sequel. Accordingly, the equilibrium demand and customer returns are denoted by 𝑑𝑖
+𝑁and 𝑑𝑟𝑖
+𝑁, 𝑖= 𝐻, 𝐿, respectively.
+Lemma 1.
+(1) The high-quality (𝑞= 𝑞𝐻) retailer sets the optimal price 𝑝𝐻
+𝑁= 𝑞𝐻+𝑞𝐿
+4
+if 𝑓≥𝑓ℎ, and 𝑝𝐻
+𝑁= 𝑞𝐻−𝑓
+2
+if 𝑓≤𝑓ℎ, where 𝑓ℎ= 𝑞𝐻−
+√
+𝑞𝐻(𝑞𝐻+𝑞𝐿)
+2
+;
+(2) The low-quality (𝑞= 𝑞𝐿) retailer sets the optimal price 𝑝𝐿
+𝑁= 𝑞𝐻+𝑞𝐿
+4
+if 𝑓≥𝑞𝐻−𝑞𝐿
+4
+(case 2-(i)), 𝑝𝐿
+𝑁= (𝑞𝐻+𝑞𝐿)𝑓
+𝑞𝐻−𝑞𝐿
+if 𝑓𝑙≤𝑓≤𝑞𝐻−𝑞𝐿
+4
+(case 2-(ii)), and
+𝑝𝐿
+𝑁= 𝑞𝐿+𝑓
+2
+−(𝑞𝐻−𝑞𝐿)𝑡
+2𝑞𝐻
+if 𝑓≤𝑓𝑙(case 2-(iii)), where 𝑓𝑙=
+𝑞𝐻−𝑞𝐿
+𝑞𝐻+3𝑞𝐿
+[
+𝑞𝐿−𝑞𝐻−𝑞𝐿
+𝑞𝐻
+𝑡
+]
+.
+Conventional wisdom tells that the high-quality retailer should target both the compulsive and strategic customers since all targeted ones
+would keep the product. However, a relatively large return freight fee potentially indicates a low expected utility and a shrinking demand of the
+strategic customers. In this case, the retailer only accommodates the compulsive customers and sets a low price to expand the volume of compulsive
+customers. Moreover, the price is independent of the return freight fee as the expected utility of the compulsive customers is irrelevant to the return
+freight fee. As the return freight fee drops, the expected utility and the volume of strategic customers increase; thus, the high-quality retailer can
+accommodate both compulsive and strategic customers to expand the market and therefore charge a higher price.
+Intriguingly, the low-quality retailer can employ the same price as the high-quality retailer if the return freight fee is large enough (see case
+2-(i)). This is because the retailer only accommodates the compulsive customers, who cannot distinguish between the low-quality and high-quality
+retailers at the purchase stage. As the return freight fee slightly drops, the volume of compulsive customers declines. In this case, the retailer should
+decrease its price to attract the compulsive customers (see case 2-(ii)). When the return freight fee is low, the high retail price becomes the main
+incentive for customer returns, and thus the retailer should further lower the price to expand the volume of compulsive customers. However, in
+this case, the low price may also attract strategic customers, which is detrimental to the retailer’s profit as these strategic customers will finally
+
+
+========== PAGE 7 ==========
+International Journal of Production Economics 256 (2023) 108752
+7
+X. Li et al.
+Table 2
+The corresponding results in the benchmark case.
+Quality 𝑞𝑖
+Region
+Demand 𝑑𝑖
+𝑁
+Customer returns 𝑑𝑟𝑖
+𝑁
+𝑖= 𝐻
+𝑓≥𝑓ℎ
+1
+2
+0
+𝑓≤𝑓ℎ
+𝑞𝐻−𝑓
+2𝑞𝐻
+0
+𝑖= 𝐿
+𝑓≥𝑞𝐻−𝑞𝐿
+4
+1
+2
+0
+𝑓𝑙≤𝑓≤𝑞𝐻−𝑞𝐿
+4
+1 −
+2𝑓
+𝑞𝐻−𝑞𝐿
+0
+𝑓≤𝑓𝑙
+1 −𝑞𝐻(𝑞𝐿−𝑓)−𝑡(𝑞𝐻−𝑞𝐿)
+2𝑞2
+𝐻
+𝑞𝐿−𝑓−𝑡
+2𝑞𝐿
+−3𝑓−2𝑡+𝑞𝐿+𝑞𝐿𝑡
+2𝑞2
+𝐻
+return the low-quality product. Therefore, the low-quality retailer’s price decreases more slowly as the return freight fee falls in case 2-(iii) than
+in case 2-(ii).
+As shown in Table 2, the retailer selling the high-quality product does not bear any customer return as neither the compulsive customers nor
+the strategic customers return the high-quality product. By contrast, the low-quality retailer sells to both compulsive and strategic customers and
+carries return costs when the return freight fee is low.
+Lemma 2.
+The equilibrium profit 𝛱𝑖
+𝑁for the retailer with 𝑞= 𝑞𝑖, 𝑖= 𝐻, 𝐿has the following properties:
+(1) The high-quality (𝑞= 𝑞𝐻) retailer’s profit 𝛱𝐻
+𝑁is non-increasing in the return freight fee 𝑓;
+(2) The low-quality (𝑞= 𝑞𝐿) retailer’s profit 𝛱𝐿
+𝑁is non-decreasing in the return freight fee 𝑓.
+Lemma 2 indicates that the return freight fee has the opposite impact on the profits of the retailers with different quality. The high-quality
+retailer tends to accommodate both the compulsive and strategic customers as it bears no customer returns. A large return freight fee inhibits the
+strategic customers’ purchases, impeding total demand and harming the retailer’s profit. Contrastively, for the low-quality retailer, a high return
+freight fee enlarges the volume of compulsive customers who never return the low-quality product and thus benefits the retailer.
+4.2. Case with the RFI service
+In this section, we discuss the situation where the retailer adopts the RFI service (𝐼𝑅= 1). Similar to the benchmark case, we first analyze the
+customers’ return behavior and categorize them into three groups according to their WTP: 1) the compulsive customers with high WTP 𝛾≥𝑝𝑅−(1−𝛽)𝑓
+𝑞𝐿
+;
+2) the strategic customers with medium WTP 𝑝𝑅−(1−𝛽)𝑓
+𝑞𝐻
+≤𝛾≤𝑝𝑅−(1−𝛽)𝑓
+𝑞𝐿
+; 3) the non-buy customers with low WTP 𝛾≤𝑝𝑅−(1−𝛽)𝑓
+𝑞𝐻
+. Based on the return
+behavior, we obtain the purchase behavior of each group of customers by exploiting their expected utilities. We relegate the customer’s purchase
+behavior to Appendix A.
+We then analyze the RFI premium 𝑎of the RFI service provider based on the customer’s return and purchase behaviors. Recall that there are
+plenty of insurance companies due to free entry on an e-commerce platform. In addition, these competitive insurance companies sell homogeneous
+RFI services, and are perfectly substitutable with each other. Thus, each insurance company manages to set the lowest RFI premium to acquire the
+whole market, resulting in an RFI premium that makes zero expected profit (Edgeworth, 1925; Rothschild and Stiglitz, 1978; Azevedo and Gottlieb,
+2017), i.e., 𝜋(𝑎) = 𝑎𝑑𝑅−𝛽𝑓𝑑𝑟
+𝑅= 0. Then, we have 𝑎= (𝑑𝑟
+𝑅∕𝑑𝑅
+) 𝛽𝑓.
+With the RFI service, the retailer should pay the RFI premium 𝑎with each product sold. Given that the RFI premium is set at 𝑎= (𝑑𝑟
+𝑅∕𝑑𝑅
+) 𝛽𝑓,
+the retailer determines the retail price by solving 𝛱𝑅(𝑝𝑅) = 𝑝𝑅𝑑𝑘
+𝑅−(𝑡+𝛽𝑓)𝑑𝑟
+𝑅. We characterize the optimal price of the retailer and the RFI premium
+under the RFI case in Proposition 1 and illustrate the results in Fig. 2. For traceability, we denote the optimal RFI premium as 𝑎𝑖, 𝑖= 𝐻, 𝐿, denote
+the optimal price (resp. profit) as 𝑝𝑖
+𝑅(resp. 𝛱𝑖
+𝑅) for the retailer of 𝑞= 𝑞𝑖, 𝑖= 𝐻, 𝐿. Accordingly, the equilibrium demand and customer returns are
+denoted by 𝑑𝑖
+𝑅and 𝑑𝑟𝑖
+𝑅, 𝑖= 𝐻, 𝐿, respectively.
+Proposition 1.
+(1) The RFI premium is 𝑎𝑖= (𝑑𝑟𝑖
+𝑅∕𝑑𝑖
+𝑅
+) 𝛽𝑓, 𝑖= 𝐻, 𝐿, where 𝑑𝑟𝑖
+𝑅and 𝑑𝑖
+𝑅are shown in Table 3;
+(2) The optimal price of the high-quality retailer is 𝑝𝐻
+𝑅= 𝑞𝐻+𝑞𝐿+𝜎(𝑞𝐻−𝑞𝐿)
+4
+if 𝑓≥𝐹ℎ(case 2-(i)), and 𝑝𝐻
+𝑅= 𝑞𝐻
+2 −(1−𝜎)(1−𝛽)𝑓
+2(1+𝜎)
+if 𝑓≤𝐹ℎ(case 2-(ii)),
+where 𝐹ℎ=
+1+𝜎
+(1−𝜎)(1−𝛽)
+[
+𝑞𝐻−
+√
+𝑞𝐻(𝑞𝐻+𝑞𝐿)
+2
+]
+;
+(3) The optimal price of the low-quality retailer is 𝑝𝐿
+𝑅=
+𝑞𝐻+𝑞𝐿−𝜎(𝑞𝐻−𝑞𝐿)
+4
+if 𝑓
+≥
+(1−𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+(case 3-(i)), 𝑝𝐿
+𝑅=
+(𝑞𝐻+𝑞𝐿)−𝜎(𝑞𝐻−𝑞𝐿)
+(1−𝜎)(𝑞𝐻−𝑞𝐿)
+(1 −𝛽)𝑓if
+𝐹𝑙≤𝑓≤(1−𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+(case 3-(ii)), and 𝑝𝐿
+𝑅= 𝑞𝐿+(1−𝛽)𝑓
+2
+−(𝑞𝐻−𝑞𝐿)(𝛽𝑓+𝑡)
+2𝑞𝐻
+if 𝑓≤𝐹𝑙(case 3-(iii)), where 𝐹𝑙=
+(1−𝜎)(𝑞𝐻−𝑞𝐿)[𝑞𝐻𝑞𝐿−(𝑞𝐻−𝑞𝐿)𝑡]
+(1−𝜎)(𝑞𝐻−𝑞𝐿)(𝑞𝐻−𝛽𝑞𝐿)+4(1−𝛽)𝑞𝐻𝑞𝐿.
+Proposition 1-(1) shows that the RFI premium is closely related to the equilibrium return rate. This is in line with the practice that the retailer’s
+return rate is the main factor for insurance companies, e.g., Huatai Insurance and PICC, to determine the RFI premium. Specifically, regarding
+the high-quality retailer, the insurance companies charge infinitesimally small premiums, since both the compulsive and strategic customers keep
+the high-quality product. By contrast, the low-quality retailer may encounter customer returns from the strategic customers (e.g., when 𝑓≤𝐹𝑙as
+shown in Table 3). Therefore, the insurance companies potentially charge large premiums for those low-quality retailers with high return rate. This
+result differs from the expected-quality related premium indicated in Zhang et al. (2021). The distinction is driven by the information structure of
+the insurance company. Specifically, they assume the insurance company lacks the retailer’s quality information; instead, the true quality is known
+to the insurance company in our study. Later, we show how the return freight fee and signal efficiency affect the equilibrium return rate as well
+as the optimal RFI premium.
+Similar to the benchmark case, Proposition 1-(2) shows that the retailer selling high-quality products charges a price to accommodate both the
+compulsive and strategic customers if the return freight fee is small, or sets a price to accommodate only the compulsive customers if the return
+freight fee is large. As Proposition 1-(3) and Table 3 depict, the retailer selling low-quality products charges a price only to accommodate the
+
+
+========== PAGE 8 ==========
+International Journal of Production Economics 256 (2023) 108752
+8
+X. Li et al.
+Fig. 2.
+The Optimal Price 𝑝𝑖
+𝑅for the Retailer of 𝑞𝑖, 𝑖= 𝐻, 𝐿with Various 𝑓and 𝜎. (a) 𝑝𝐻
+𝑅For the High-quality Retailer (𝑞= 𝑞𝐻). (b) 𝑝𝐿
+𝑅For the Low-quality Retailer (𝑞= 𝑞𝐿).
+(𝑞𝐻= 0.8, 𝑞𝐿= 0.2, 𝑡= 0.1, 𝛽= 0.5).
+Table 3
+The corresponding results in the RFI case.
+Quality 𝑞𝑖
+Region
+Demand 𝑑𝑖
+𝑅
+Customer returns 𝑑𝑟𝑖
+𝑅
+𝑖= 𝐻
+𝑓≥𝐹ℎ
+1
+2
+0
+𝑓≤𝐹ℎ
+(1+𝜎)𝑞𝐻−(1−𝜎)(1−𝛽)𝑓
+2(1+𝜎)𝑞𝐻
+0
+𝑖= 𝐿
+𝑓≥(1−𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+1
+2
+0
+𝐹𝑙≤𝑓≤(1−𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+1 −
+2(1−𝛽)𝑓
+(1−𝜎)(𝑞𝐻−𝑞𝐿)
+0
+𝑓≤𝐹𝑙
+1 −𝑞𝐿(𝛽𝑓+𝑡)
+2𝑞2
+𝐻
+−
+[𝑞𝐻𝑞𝐿−𝑡(𝑞𝐻−𝑞𝐿)](𝑞𝐻−𝑞𝐿)
+2𝑞2
+𝐻𝑞𝐿
+−2(1−𝛽)𝑓
+(1−𝜎)𝑞𝐻
+(3+𝜎−4𝛽)𝑓+(1−𝜎)(𝑞𝐿−𝑡)
+2(1−𝜎)𝑞𝐻
+−(𝑞𝐻−𝛽𝑞𝐿)(𝑞𝐻−𝑞𝐿)𝑓
+2𝑞2
+𝐻𝑞𝐿
+compulsive customers and enjoys an infinitesimally small premium if the return freight fee is large (𝑓≥𝐹𝑙). If the return freight fee is very small,
+the retailer charges a price to accommodate both strategic and compulsive customers, thus paying a large RFI premium.
+A high signal efficiency improves the customer’s utility regarding the high-quality product but reduces the counterpart of the low-quality
+product. Hence, along with the increase of signal efficiency, the high-quality retailer prefers to accommodate both the compulsive and strategic
+customers and to improve the price, as shown in Fig. 2(a). By contrast, the retailer with low quality should take into account the potential returns
+of the strategic customers and be unwilling to accommodate them. It follows that the low-quality retailer charges high prices to focus only on the
+compulsive customers when the signal efficiency is high (see Fig. 2(b)).
+Corollary 1.
+The optimal retail price 𝑝𝑖
+𝑅, 𝑖= 𝐻, 𝐿has the following properties:
+(1) For the high-quality retailer, the retail price 𝑝𝐻
+𝑅is non-increasing in the return freight fee 𝑓, and is increasing in the signal efficiency 𝜎;
+(2) For the low-quality retailer, the retail price 𝑝𝐿
+𝑅: (i) is decreasing in the return freight fee 𝑓if 𝑓≤𝐹𝑙,
+𝑞𝐿
+𝑞𝐻≤max{ 2𝛽−1
+𝛽
+, 0}; (ii) is non-decreasing in
+𝑓otherwise;
+(3) For the low-quality retailer, the retail price 𝑝𝐿
+𝑅: (i) is increasing in the signal efficiency 𝜎if 𝐹𝑙≤𝑓≤(1−𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+; (ii) is non-increasing in 𝜎otherwise.
+As the return freight fee increases, the strategic customers become reluctant to purchase, so the high-quality retailer should either lower the
+price to attract the strategic customers, or employ a fixed price to focus only on the compulsive customers. With the high-quality product, the retail
+price is positively associated with the signal efficiency because a large signal efficiency improves the customer’s expected utility by signaling the
+high quality.
+For the low-quality retailer, it is clear that, given the price, the volume of compulsive customers is non-decreasing in the return freight fee,
+whereas the volume of strategic customers is decreasing in the return freight fee. In addition, the volume of strategic customers increases in the
+quality difference between the low- and high-quality levels (in short, quality dissimilarity), because a significant quality dissimilarity enlarges the
+gap between the perceived and true quality, improving the volume of strategic customers. The presence of RFI pushes out this quality dissimilarity
+effect due to the quality signaling role, thereby reducing the volume of strategic customers. As analyzed above, when the return freight fee is small,
+the low-quality retailer must accommodate a proportion of strategic customers, which harms the retailer’s profit. With narrow quality dissimilarity,
+the volume of strategic customers is very small in the presence of RFI. In this case, the retailer tends to decrease its price to expand the volume
+of compulsive customers along with the increase of the return freight fee. However, when the volume of the strategic customers or the volume of
+the compulsive customers is large, the retailer should increase its price to take advantage of the high WTP of the compulsive ones along with the
+increase of the return freight fee.
+When quality is low, the intuition tells that the retail price should decrease in the signal efficiency as a high signal efficiency reduces the
+customer’s purchase utility and impedes the demand. Intriguingly, the retail price increases in the signal efficiency when the return freight fee
+is medium (𝐹𝑙≤𝑓≤(1−𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+). With medium return freight fees, the volume of compulsive customers is not large; meanwhile, the strategic
+
+
+========== PAGE 9 ==========
+International Journal of Production Economics 256 (2023) 108752
+9
+X. Li et al.
+buyers tend to purchase if the signal efficiency is low. Thus, the retailer charges a low price to prevent the strategic customers from returning
+their purchases for full refunds. By contrast, when the signal efficiency is high, the volume of strategic customers is small due to the low purchase
+utility. Thus, the retailer does not worry too much about the potential returns from strategic customers, and charges a relatively high price to take
+advantage of the high WTP of the compulsive customers.
+As the RFI premium is affected by the retailer’s return rate, we then investigate the impacts of the return freight fee and the signal efficiency
+on the retailer’s return rate.
+Lemma 3.
+The equilibrium return rate 𝑑𝑟𝑖
+𝑅∕𝑑𝑖
+𝑅, 𝑖= 𝐻, 𝐿is non-increasing in the return freight fee 𝑓and the signal efficiency 𝜎.
+The high-quality retailer encounters no customer returns, thus the return rate is zero and is independent of 𝑓and 𝜎. For the low-quality retailer,
+intuitively, a large return freight fee reduces the return rate. A large signal efficiency impedes the strategic customers’ purchases and subsequent
+returns by signaling true quality. Thus, a high signal efficiency reduces the return rate.
+Proposition 2.
+The RFI premium 𝑎𝐻is independent of the return freight fee 𝑓and the signal efficiency 𝜎. The RFI premium 𝑎𝐿is inversely U-shaped in
+the return freight fee 𝑓; 𝑎𝐿is decreasing in the signal efficiency 𝜎.
+Proposition 2 indicates that the RFI premium for the low-quality retailer is non-monotonic in the return freight fee. The premium is determined
+by the unit compensation fee and the retailer’s return rate. When the return freight fee is small, the retailer sells to both the compulsive and
+strategic customers, and the return rate is rather stable. Thus, the RFI premium is mainly determined by the compensation fee, and is increasing in
+the return freight fee. When the return freight fee is large, the retailer tends to accommodate only the compulsive customers, and thus the return
+rate decreases quickly in the return freight fee. In this case, the RFI premium is decreasing in the return freight fee. Moreover, an efficient quality
+signal of RFI significantly decreases the volume of strategic customers and the return rate, thus resulting in a small premium. For example, on
+Suning.com, AXA insurance company charges a smaller premium for make-up (0.85 RMB) than food (0.95 RMB) and household appliances (1.00
+RMB)9.
+Finally, we analyze how the return freight fee and the signal efficiency affect the retailer’s profit under the RFI case.
+Proposition 3.
+The retailer’s profit 𝛱𝑖
+𝑅, 𝑖= 𝐻, 𝐿has the following properties:
+(1) The high-quality retailer’s profit 𝛱𝐻
+𝑅is increasing in the signal efficiency 𝜎; 𝛱𝐻
+𝑅is non-increasing in the return freight fee 𝑓.
+(2) The low-quality retailer’s profit 𝛱𝐿
+𝑅is decreasing in the signal efficiency 𝜎if 𝑓≥(1−𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+, is inversely U-shaped in the signal efficiency 𝜎if
+𝐹𝑙≤𝑓≤(1−𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+, and is increasing in the signal efficiency 𝜎if 𝑓≤𝐹𝑙.
+(3) The low-quality retailer’s profit 𝛱𝐿
+𝑅is U-shaped in the return freight fee 𝑓if 𝑓≤𝐹𝑙,
+𝑞𝐿
+𝑞𝐻≤max{ 2𝛽−1
+𝛽
+, 0}; otherwise, 𝛱𝐿
+𝑅is non-decreasing in the
+return freight fee 𝑓.
+The high-quality retailer does not bear customer returns and prefers accommodating both the compulsive and strategic customers. The high
+signal efficiency increases the customers’ perceived quality and their purchase motivation. Therefore, the high-quality retailer obtains a larger profit
+when the signal efficiency is high than when it is low. However, a large return freight fee always impedes purchases from the strategic customers
+and is harmful to the high-quality retailer, consistent with Lemma 2.
+For the low-quality retailer, the high signal efficiency drags down the purchase motivation of both the compulsive and strategic customers. The
+diminished purchase motivation of the compulsive customers reduces the actual sales volume and thus harms the retailer’s profit (reduced sales
+effect). On the other hand, the decreased purchase motivation of the strategic customers reduces potential returns and benefits the low-quality
+retailer (reduced return effect). When the return freight fee is large, the reduced sales effect dominates as only the compulsive customers will buy the
+product. Thus, the price and profit of the low-quality retailer are decreasing in the signal efficiency. When the return freight fee is small, both the
+compulsive and strategic customers will buy the product, and the volume of strategic customers is large, resulting in the dominant reduced return
+effect. Thus, the low-quality retailer’s profit is increasing in the signal efficiency. Given a medium return freight fee, if the signal efficiency is low,
+both the compulsive and strategic customers may buy the products. In such a case, the reduced return effect dominates, whereby the low-quality
+retailer’s profit increases in the signal efficiency. If the signal efficiency is large, the compulsive customers decline significantly. Hence, the reduced
+sales effect again dominates, making the low-quality retailer’s profit decrease in the signal efficiency. Overall, the low-quality retailer’s profit is
+inversely U-shaped in the signal efficiency when the return freight fee is medium.
+Proposition 3-(3) presents a non-linear impact of the return freight fee on the low-quality retailer’s profit, which is distinct from Lemma 2. This
+non-linear impact occurs when the retailer has to accommodate the strategic customers (𝑓≤𝐹𝑙). The rationale is as follows. A relatively high
+return freight fee increases the volume of compulsive customers (increased sales effect); whereas it increases the unit cost of the RFI provider and
+may improve the RFI premium (increased RFI premium effect). The non-linear impact can be attributed to the trade-off between the increased sales
+effect and the potential increased RFI premium effect. Note that a slight quality dissimilarity implies a small volume of strategic customers. When
+both the quality dissimilarity and the return freight fee are small, the retailer lowers the price to expand the volume of compulsive customers at
+the expense of accommodating the strategic customers, resulting in a large RFI premium. Thus, the increased RFI premium effect dominates, and the
+retailer’s profit decreases as the return freight fee rises. As the return freight fee increases, the volume of compulsive customers increases, but the
+strategic customers are further impeded. In this case, the return rate quickly declines, resulting in a small RFI premium. Thus, the increased sales
+effect dominates, and the retailer’s profit increases in the return freight fee. Nevertheless, when the quality dissimilarity becomes large, the retailer
+tends to improve the retail price to hinder the strategic customers and to take advantage of the high WTP of compulsive customers. This makes
+the increased sales effect dominant, and the retailer’s profit increases as the return freight fee rises. Similarly, when the return freight fee is large,
+the strategic customers are greatly hindered but the volume of compulsive customers expands. Hence, the increased sales effect again dominates,
+and the retailer’s profit increases in the return freight fee.
+
+
+========== PAGE 10 ==========
+International Journal of Production Economics 256 (2023) 108752
+10
+X. Li et al.
+Fig. 3. Comparison of 𝑝𝐿
+𝑅and 𝑝𝐿
+𝑁for the low-quality Retailer. (𝑡= 0.1, 𝛽= 0.2).
+4.3. With RFI vs. Without RFI
+In this section, we first compare the retailer’s prices under the benchmark case without RFI and the case with RFI. Then, we compare the
+retailer’s profits in the two cases to explore the condition under which the retailer adopts the RFI service.
+Proposition 4.
+The high-quality retailer always charges a larger price with the RFI than without the RFI, i.e., 𝑝𝐻
+𝑅≥𝑝𝐻
+𝑁. The low-quality retailer charges a
+smaller price with the RFI than without the RFI when either 𝑓≥max
+{ (1−𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+, 𝑞𝐻−𝑞𝐿
+4
+}
+, or 𝑓≤min{𝐹𝑙, 𝑓𝑙}. However, the low-quality retailer charges
+a higher price with the RFI than without the RFI when the return freight fee is medium and the signal efficiency is large.
+When the product quality is high, the signaling effect of RFI improves the utility of the compulsive and strategic customers who keep the
+high-quality product, boosting the sales. Thus, the appearance of RFI endows the high-quality retailer with the capability to pull up the price. This
+finding is consistent with the result that the retailer should raise the price by adopting the RFI service in the literature (e.g., Fan and Chen, 2020;
+Lin et al., 2020), where they argue that the price markup is driven by the extra RFI premium. Our work gives a new explanation for this result
+from the perspective of the signaling effect of RFI.
+However, the RFI may compel the low-quality retailer to lower the price, especially when the return freight fee is very large or very small, as
+illustrated in Fig. 3. For quite large return freight fees, only the compulsive customers make purchases regardless of the adoption of RFI. However,
+the quality signaling effect of RFI dwindles their expected utility of the low-quality product, compelling the retailer to lower the price. Instead,
+for quite small return freight fees, the retailer must accommodate the strategic customers regardless of the adoption of RFI, and the volume of
+compulsive customers with RFI is smaller than that without RFI. In this case, the retailer tends to decrease its price to expand the volume of
+compulsive customers and inhibits purchases from the strategic customers. Intriguingly, when the return freight fee is medium, the retail price
+with the RFI may be larger than that without RFI (the specific conditions are shown in Table A.9 in the Appendix A). Specifically, there are two
+cases. (1) When the return freight is relatively small, without the RFI, in addition to the compulsive customers, the strategic customers may buy the
+products, which is harmful to the low-quality retailer, as aforementioned. With the RFI, the high signal efficiency decreases the strategic customer’s
+utility and effectively inhibits their purchases, endowing the low-quality retailer with the ability to increase the sales price to take advantage of
+the high WTP of the compulsive customers. (2) As the return freight fee further increases such that only the compulsive customers make purchases
+(i.e., when (1−𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+≤𝑓≤max{ (1−𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+, 𝑞𝐻−𝑞𝐿
+4
+}), only a relatively low signal efficiency leads to price markups with the RFI. This can be
+attributed to the detrimental signaling effect on the compulsive customers.
+Furthermore, as the quality dissimilarity narrows, the condition of 𝑝𝐿
+𝑅≥𝑝𝐿
+𝑁diminishes considerably, as shown in Fig. 3. Note that the volume
+of strategic customers shrinks significantly along with the narrowing of quality dissimilarity, especially when the RFI service is not offered. Hence,
+the retailer turns to focus on the compulsive customers and charges a higher price without RFI.
+We then investigate the retailer’s adoption decision about the RFI service by comparing its profits with the RFI service and without the service.
+Proposition 5.
+The high-quality retailer always adopts the RFI service. The low-quality retailer adopts the RFI service under some conditions: 1) when
+the return freight fee is small and the signal efficiency is large; 2) or when both the return freight fee and the signal efficiency are medium. Otherwise, the
+low-quality retailer does not adopt the RFI service.
+The RFI adoption decision of the retailer depends on the trade-off between the sales revenue advantage (𝑝𝑅𝑑𝑘
+𝑅−𝑝𝑁𝑑𝑘
+𝑁) and the RFI cost
+(𝑡(𝑑𝑟
+𝑅−𝑑𝑟
+𝑁) + 𝑎𝑑𝑅), including both the extra return handling cost and the RFI premium. When the product is of high quality, no customers will
+return the purchases. Moreover, the RFI service prompts the customer’s purchase utility from the high-quality retailer due to its quality signaling
+effect. Thus, the high-quality retailer always adopts the RFI service and raises the price. This finding aligns with the practice that most retailers
+on Tmall.com11, where only high-quality retailers on Taobao.com can join, offer the RFI service.
+The RFI adoption decision of the low-quality retailer is rather nuanced. As shown in Fig. 4 (the colored area represents the low-quality retailer
+prefers adopting the RFI service), this decision is dependent on the signal efficiency and the return freight fee (the specific conditions under which
+the low-quality retailer adopts the RFI service are shown in Table A.10 of Appendix A). When the return freight fee is large, only the compulsive
+customers buy the products. Even though the RFI service does nothing to the return cost, it reduces customers’ expected utility due to the quality
+signaling effect, compelling the retailer to lower the price and ultimately leading to low sales revenue. Hence, no low-quality retailer adopts the
+RFI service when the return freight fee is large. This result is consistent with the empirical finding in Chen et al. (2018) and gives a theoretical
+explanation that the online retailers selling bulk merchandise (e.g., furniture) are unlikely to adopt the RFI service.
+11 https://www.alibabagroup.com/en-US/about-alibaba-businesses-1489015051867127808,
+and
+https://asia-assist.com/insights/increase-popularity-cross-
+border-e-commerce-tmall-tmall-global/
+
+
+========== PAGE 11 ==========
+International Journal of Production Economics 256 (2023) 108752
+11
+X. Li et al.
+Fig. 4.
+Optimal RFI Strategy for the low-quality Retailer. (𝑡= 0.1, 𝛽= 0.2).
+Fig. 5.
+Optimal RFI Strategy for the Retailer of 𝑞𝑖, 𝑖= 𝐻, 𝐿with Various 𝑓and 𝜎. (a) For the High-quality Retailer (𝑞= 𝑞𝐻). (b) For the Low-quality Retailer (𝑞= 𝑞𝐿).
+When the return freight fee is medium, the retailer may charge a low price to accommodate both the compulsive and strategic customers, as the
+volume of compulsive customers is not large. As aforementioned, due to the signaling effect of RFI, the low-quality retailer can use the RFI service
+to effectively prevent strategic customers from purchasing the product. However, the signal efficiency should be medium so that the expected
+utility of compulsive customers does not decrease too much. As a result, the low-quality retailer adopts the RFI service when the signal efficiency
+is moderate. As is presented in 4, the benefits of using RFI shrink if the quality dissimilarity narrows considerably. Shrinkage mainly occurs when
+(1−𝛽)(𝑞𝐻−𝑞𝐿)
+4(1−𝜎)
+≤𝑓≤𝑞𝐻−𝑞𝐿
+4
+. Within this interval, only when using a very large 𝑝𝐿
+𝑅can the firm reap a high profit with RFI. However, as the quality
+dissimilarity narrows, the condition of 𝑝𝐿
+𝑅≥𝑝𝐿
+𝑁diminishes considerably (refer to Proposition 4), resulting in the decline of RFI’s benefits.
+When the return freight fee is small, the volume of compulsive customers is small, and the low-quality retailer accommodates the strategic
+customers regardless of the adoption of RFI. Interestingly, even though the presence of RFI compels the low-quality retailer to lower the price (as
+shown in Proposition 4), the low-quality retailer still has incentives to adopt the RFI service when signal efficiency is high. This is because a high
+signal efficiency can effectively prevent some strategic customers from purchasing the products, reducing the return rate and the RFI premium. In
+addition, the retailer lowers the price to boost the sales of the compulsive ones and to reduce the return motivation of the strategic customer. This
+result is in line with the phenomenon that the retailers selling make-up and apparel, for which the signal efficiency is high and the return freight
+fee is very small in comparison with the retail price, are more willing to adopt the RFI service.
+5. Extension: Monopoly insurance company
+Our base model assumes that there are competitive insurance companies. In this section, we consider the case of a monopoly insurance company,
+and explore the RFI strategies of the monopolistic insurance company and the retailer. The detailed analysis is relegated to Appendix B.
+Note that the retailer first decides the retail price and the adoption of RFI. Upon observing the retailer’s RFI strategy, the insurance company
+decides the RFI premium 𝑎𝑖
+𝑠, 𝑖= 𝐻, 𝐿. Due to the second mover advantage, the monopolistic insurance company sets the RFI premium as high as
+possible. In response to this high premium, the retailer raises the retail price too. As a result, both the demand and the profit of the retailer are
+thwarted, and the high- and low-quality retailers have less incentive to adopt the RFI service, which is shown in Fig. 5.
+To avoid premium gouging by the insurance company, the retailer might delay its pricing and RFI decisions, if possible. This reverses Steps 1)
+and 2) in the game sequence. Under this setting, the insurance company first determines the RFI premium 𝑎𝑖
+𝑚, 𝑖= 𝐻, 𝐿. After observing 𝑎𝑖
+𝑚, the
+retailer decides whether to adopt the RFI service and sets the retail price accordingly.
+The postponement of the retailer’s decision allows the monopolistic insurance company to become the leader. Thus the monopolistic insurance
+company charges a higher RFI premium than the competitive insurance companies in the base model as indicated in Fig. 6 (note that this RFI
+premium is no more than the previous case where the insurance company moves after the retailer). In equilibrium, the high-quality retailer always
+buys RFI from the insurance company, but the low-quality retailer has less incentive to use RFI compared to our base model due to the large
+
+
+========== PAGE 12 ==========
+International Journal of Production Economics 256 (2023) 108752
+12
+X. Li et al.
+Fig. 6.
+RFI Premium Comparison Between the Case with a Single Insurance Company and the Case with Competitive Insurance Companies. (a) 𝑎𝐻
+𝑚vs. 𝑎𝐻. (b) 𝑎𝐿
+𝑚vs. 𝑎𝐿.
+premium cost. Compared to our base model, this postponement cannot improve the retailer’s profit regardless of the quality level, because the
+monopoly insurance company carves up partial supply chain profit, making the retailer worse off.
+As indicated above, no matter whether the retailer postpones its decisions, it earns less profit when there is only one insurance company, and
+thus has less incentive to use the RFI service. From this perspective, our result explains why online platforms such as Taobao reduce the entry
+barriers of the RFI service and encourage more insurance companies to participate.
+6. Conclusions
+As the MBG policy has been widely adopted, the return freight fee becomes a new barrier for customers to purchase online. To reduce this
+adverse effect, online retailers in China buy the RFI service from competitive insurance companies. With the RFI service, insurance companies
+evaluate and verify the quality information posted by the online retailer to avoid excessive customer returns, and compensate the customer for the
+return freight fee when returns occur. From the view of customers, the RFI service exhibits both the imperfect quality signaling effect and the return
+freight fee reduction effect. The RFI’s imperfect signaling effect mitigates the quality risk for customers before purchasing, which is captured by
+signal efficiency in our context. We build a game-theoretic model to analyze the impact of these two effects on customer purchase/return behavior,
+and the impact on the strategies of the retailer and competitive insurance companies.
+Both the RFI’s imperfect signaling effect and return freight fee reduction effect highlight the operational details for insurance companies and
+online retailers, where the former has received little attention in the literature. Our results show that the competitive insurance companies set an
+infinitesimally small RFI premium for the high-quality retailer. By contrast, they charge a high RFI premium for the low-quality retailer due to large
+compensation costs for customer returns. Moreover, when determining the RFI premium, the insurance companies should take return freight fees and
+product categories with various signal efficiency into account. This result complements the extant literature in which the RFI premium is assumed
+to be exogenous. In particular, insurance companies should assign a small premium for the category with high signal efficiency, e.g., make-up. In
+addition, as the return freight fee increases, the insurance company should first raise the premium and then strategically decrease it.
+Regarding the RFI adoption decision for the retailer, our result shows that the high-quality retailer is always willing to adopt the RFI service.
+One might think that the low-quality retailer does not employ the RFI service due to the quality signaling effect. Interestingly, the low-quality
+retailer adopts the RFI service when both the signal efficiency and the return freight fee are medium, or when the signal efficiency is high and the
+return freight fee is small. This is because the quality signaling role of RFI can effectively prevent the detrimental purchase of strategic customers
+who finally return the product after they learn the true product quality. However, the low-quality retailer does not use RFI when the return freight
+fee is large. Thus, the low-quality retailer selling bulk merchandise should be careful in adopting RFI; but the retailer selling make-up and clothing
+should offer RFI to reap higher profit.
+As for the retail pricing strategy with the RFI service, our results show that the high-quality retailer always employs a price markup with the
+adoption of RFI. In particular, the price of the high-quality retailer increases in signal efficiency. However, the low-quality retailer may not enjoy
+a price markup by using RFI, especially when the return freight fee is extremely small. In contrast to the high-quality case, the impact of signal
+efficiency on the price of the low-quality retailer is not monotonic, depending on the return freight fee. Thus, the low-quality retailer cannot simply
+increase the price with the adoption of RFI. Instead, it should take product category into consideration and carefully trade off the sales volume
+and the detrimental product returns when determining the retail price.
+Finally, we consider how the findings differ if there is a monopoly insurance company. The monopoly insurance company has more power to
+set a high RFI premium and makes positive returns. As a result, the retailer earns less profit, and thus has less incentive to use RFI. Our result
+explains why online platforms such as Taobao encourage more insurance companies to participate.
+Future research may pay more attention to customers’ concerns about horizontal quality (i.e., the risk of product mismatch), and the joint
+effects of RFI with other information disclosure strategies. Furthermore, the effect of a more complex market structure (i.e., competitive market)
+is of interest. In practice, insurance companies are closely collaborating with shopping platforms, and another important issue is to investigate the
+coordination of RFI strategies between the online shopping platform and insurance companies, e.g., the contract design problem.
+Data availability
+No data was used for the research described in the article.
+
+
+========== PAGE 13 ==========
+International Journal of Production Economics 256 (2023) 108752
+13
+X. Li et al.
+Acknowledgments
+The authors gratefully thank Editors and two anonymous referees for their helpful comments. We also gratefully acknowledge the financial
+support from the National Natural Science Foundation of China (No. 71971166, 72031004), and the Major Program of National Natural Science
+Foundation of China (No. 72192830, 72192834).
+Appendix A. Main proof
+Proof of Lemma 1. Under the benchmark case without RFI, the insurance companies do not need to charge the RFI premium, and we normalize
+the premium as 0. Hence, we mainly analyze customers’ purchase and return behaviors to formalize the demand and customer returns, and explore
+the retailer’s pricing strategy regarding the customer’s best reactions.
+We use the backward induction to solve the problem from the customer’s return behavior. By comparing 𝑈𝑘
+𝑁= 𝛾𝑞≥𝑈𝑟
+𝑁= 𝑝𝑁−𝑓, we categorize
+the customers into three groups in terms of WTP. 1) when 𝛾≥max{ 𝑝𝑁−𝑓
+𝑞𝐻,
+𝑝𝑁−𝑓
+𝑞𝐿
+} = 𝑝𝑁−𝑓
+𝑞𝐿
+, the customer who makes a purchase always keeps the
+product regardless of the quality level, and we regard them as the compulsive customer; 2) when 𝑝𝑁−𝑓
+𝑞𝐻
+≤𝛾≤𝑝𝑁−𝑓
+𝑞𝐿
+, the customer keeps the product
+with high quality but returns the low-quality one, regarded as the strategic customer; 3) when 𝛾≤𝑝𝑁−𝑓
+𝑞𝐻, the customer always chooses to return
+the product, we regard them as non-buy customer. Regarding these return behaviors, we analyze the customer’s purchase behavior as follows.
+(1) When 𝛾≥𝑝𝑁−𝑓
+𝑞𝐿
+, the compulsive customer obtains the expected utility 𝐸(𝑈𝑁|𝐼𝑅= 0) = 𝛾𝑞𝐻
+2
++ 𝛾𝑞𝐿
+2 , and the customer will make a purchase
+when this utility exceeds the product price 𝑝𝑁, i.e., the customer with 𝛾≥
+2𝑝𝑁
+𝑞𝐻+𝑞𝐿will make a purchase.
+(2) When 𝑝𝑁−𝑓
+𝑞𝐻
+≤𝛾≤𝑝𝑁−𝑓
+𝑞𝐿
+, the strategic customer obtains the expected utility 𝐸(𝑈𝑁|𝐼𝑅= 0) = 𝛾𝑞𝐻
+2
++ (𝑝𝑁−𝑓)
+2
+, and the customer with 𝛾≥𝑝𝑁+𝑓
+𝑞𝐻
+will make a purchase.
+(3) When 𝛾≤
+𝑝𝑁−𝑓
+𝑞𝐻, The non-buy customer obtains the expected utility 𝐸(𝑈𝑁|𝐼𝑅= 0) =
+(𝑝𝑁−𝑓)
+2
++ (𝑝𝑁−𝑓)
+2
+, and the customer never buys the
+product.
+Note that 𝛾∼𝑈(0, 1), by summarizing, we obtain the volume of the compulsive and strategic customers as follows.
+(1) The volume of compulsive customers is 1 −𝛾𝐶, where 𝛾𝐶= max{ 𝑝𝑁−𝑓
+𝑞𝐿
+,
+2𝑝𝑁
+𝑞𝐻+𝑞𝐿};
+(2) The volume of strategic customers is 𝑝𝑁−𝑓
+𝑞𝐿
+−𝛾𝑆, where 𝛾𝑆= min{ 𝑝𝑁−𝑓
+𝑞𝐿
+,
+𝑝𝑁+𝑓
+𝑞𝐻}.
+As a result, the demand is represented as 𝑑𝑁= 1 −𝛾𝐶+ 𝑝𝑁−𝑓
+𝑞𝐿
+−𝛾𝑆, the volume of return is 𝑑𝑟
+𝑁= 𝑝𝑁−𝑓
+𝑞𝐿
+−𝛾𝑆, and the volume of keep is 𝑑𝑘
+𝑁= 1 −𝛾𝐶.
+Before we turn to analyze the retailer’s pricing strategy, we first find the value size of 𝛾𝐶and 𝛾𝑆to identify the demand and return volume.
+(1) When 𝑝𝑁≥(𝑞𝐻+𝑞𝐿)𝑓
+𝑞𝐻−𝑞𝐿, we have 𝛾𝐶= 𝑝𝑁−𝑓
+𝑞𝐿
+, 𝛾𝑆= 𝑝𝑁+𝑓
+𝑞𝐻
+≤𝛾𝐶;
+(2) When 𝑝𝑁≤(𝑞𝐻+𝑞𝐿)𝑓
+𝑞𝐻−𝑞𝐿, 𝛾𝐶=
+2𝑝𝑁
+𝑞𝐻+𝑞𝐿, 𝛾𝑆= 𝑝𝑁−𝑓
+𝑞𝐿
+.
+Next, regarding the value of 𝛾𝐶and 𝛾𝑆, we separately analyze the high-quality (Case I) and low-quality (Case II) retailer’s pricing strategy.
+Case I: 𝑞= 𝑞𝐻
+As for the retailer who sells the product with 𝑞= 𝑞𝐻, we first consider two cases conditional on 𝑝𝑁≥(𝑞𝐻+𝑞𝐿)𝑓
+𝑞𝐻−𝑞𝐿
+and 𝑝𝑁≤(𝑞𝐻+𝑞𝐿)𝑓
+𝑞𝐻−𝑞𝐿, respectively.
+Then, we combine these two cases to find the optimal retail price.
+Case 1: 𝑝𝑁≥(𝑞𝐻+𝑞𝐿)𝑓
+𝑞𝐻−𝑞𝐿
+Under this condition, the demand is 𝑑𝑁= 1 −𝛾𝑆= 1 −𝑝𝑁+𝑓
+𝑞𝐻, and no customers will return the product because of quality satisfaction. Then,
+the high-quality retailer solves the following program:
+max
+𝑝𝑁
+𝛱𝑁= 𝑝𝑁𝑑𝑁= 𝑝𝑁(1 −𝑝𝑁+ 𝑓
+𝑞𝐻
+)
+(A.1)
+s.t.
+(𝑞𝐻+ 𝑞𝐿)𝑓
+𝑞𝐻−𝑞𝐿
+≤𝑝𝑁≤𝑞𝐻−𝑓.
+The constraint guarantees the demand is greater than 0.
+For this program, we have
+𝜕2𝛱𝑁
+𝜕𝑝2
+𝑁
+= −2
+𝑞𝐻
+< 0, i.e., the profit function is a concave function of price 𝑝𝑁. Given the concavity of the
+profit function, the optimal retail price 𝑝𝑁is either interior 𝑝(1)
+𝑁
+=
+𝑞𝐻−𝑓
+2
+or at the corner of 𝑝(1)
+𝑁
+=
+(𝑞𝐻+𝑞𝐿)𝑓
+𝑞𝐻−𝑞𝐿. The Lagrangian of 𝛱𝑁is
+= 𝛱𝑁+ 𝜇1(𝑞ℎ−𝑓−𝑝𝑁) + 𝜇2
+(𝑝𝑁−(𝑞𝐻+𝑞𝐿)𝑓
+𝑞𝐻−𝑞𝐿
+).
+d
+d𝑝𝑁= 0 and 𝜇1 = 𝜇2 = 0 yields 𝑝(1)
+𝑁=
+𝑞𝐻−𝑓
+2
+. For 𝑞𝐻−𝑓
+2
+to be larger than (𝑞𝐻+𝑞𝐿)𝑓
+𝑞𝐻−𝑞𝐿, we have
+𝑓≤𝑞𝐻(𝑞𝐻−𝑞𝐿)
+3𝑞𝐻+𝑞𝐿. Moreover, we find 𝑞𝐻−𝑓
+2
+is always smaller than 𝑞𝐻−𝑓(i.e., 𝜇1 = 0 always holds). Letting
+d
+d𝑝𝑁= 0,
+d
+d𝜇2 = 0 and 𝜇1 = 0 yields
+𝑝(1)
+𝑁= (𝑞𝐻+𝑞𝐿)𝑓
+𝑞𝐻−𝑞𝐿
+and 𝜇2 = (3𝑞𝐻+𝑞𝑙)𝑓−𝑞𝐻(𝑞𝐻−𝑞𝐿)
+𝑞𝐻(𝑞𝐻−𝑞𝐿)
+. 𝜇2 > 0 requires 𝑓≥𝑞𝐻(𝑞𝐻−𝑞𝐿)
+3𝑞𝐻+𝑞𝐿.
+In summary, when 𝑓≥𝑞𝐻(𝑞𝐻−𝑞𝐿)
+3𝑞𝐻+𝑞𝐿, 𝑝(1)
+𝑁= (𝑞𝐻+𝑞𝐿)𝑓
+𝑞𝐻−𝑞𝐿, the corresponding profit is 𝛱(1)
+𝑁= (𝑞𝐻+𝑞𝐿)𝑓(𝑞𝐻−𝑞𝐿−2𝑓)
+𝑞𝐻−𝑞𝐿
+; otherwise, when 𝑓≤𝑞𝐻(𝑞𝐻−𝑞𝐿)
+3𝑞𝐻+𝑞𝐿, the
+price becomes 𝑝(1)
+𝑁= 𝑞𝐻−𝑓
+2
+, the corresponding profit is 𝛱(1)
+𝑁= (𝑞𝐻−𝑓)2
+4𝑞𝐻
+.
+Case 2: 𝑝𝑁≤(𝑞𝐻+𝑞𝐿)𝑓
+𝑞𝐻−𝑞𝐿
+When 𝑝𝑁≤(𝑞𝐻+𝑞𝐿)𝑓
+𝑞𝐻−𝑞𝐿, the number of strategic customers shrinks to zero, thus the demand becomes 𝑑𝑁= 1 −𝛾𝐶= 1 −
+2𝑝𝑁
+𝑞𝐻+𝑞𝐿, and all customers
+always keep the product. Then the retailer solves the following program:
+max
+𝑝𝑁
+𝛱𝑁= 𝑝𝑁
+(1 −
+2𝑝𝑁
+𝑞𝐻+ 𝑞𝐿
+)
+(A.2)
+s.t.
+𝑝𝑁≤(𝑞𝐻+ 𝑞𝐿)𝑓
+𝑞𝐻−𝑞𝐿
+.
+
+
+========== PAGE 14 ==========
+International Journal of Production Economics 256 (2023) 108752
+14
+X. Li et al.
+Table A.4
+The
+optimal
+pricing
+strategy
+of
+the
+high-quality
+retailer.
+Condition
+𝑝𝐻
+𝑁
+𝑓≥𝑓ℎ
+𝑞𝐻+𝑞𝐿
+4
+𝑓≤𝑓ℎ
+𝑞𝐻−𝑓
+2
+We also find that 𝜕2𝛱𝑁
+𝜕𝑝2
+𝑁
+= −
+4
+𝑞𝐻+𝑞𝐿< 0, i.e., the profit is a concave function of price 𝑝𝑁. Given the concavity of the profit function, the optimal retail
+price 𝑝𝑁is the interior solution 𝑝(2)
+𝑁= 𝑞𝐻+𝑞𝐿
+4
+when 𝑓≥𝑞𝐻−𝑞𝐿
+4
+with profit 𝛱(2)
+𝑁= 𝑞𝐻+𝑞𝐿
+8
+, and the corner solution 𝑝(2)
+𝑁= (𝑞𝐻+𝑞𝐿)𝑓
+𝑞𝐻−𝑞𝐿
+when 𝑓≥𝑞𝐻−𝑞𝐿
+4
+with profit 𝛱(2)
+𝑁= (𝑞𝐻+𝑞𝐿)𝑓(𝑞𝐻−𝑞𝐿−2𝑓)
+𝑞𝐻−𝑞𝐿
+.
+Finally, we compare the profit under Case 1 and Case 2 to find the optimal solution, and denote the optimal price as 𝑝𝐻
+𝑁. First, note that
+𝑞𝐻−𝑞𝐿
+4
+< 𝑞𝐻(𝑞𝐻−𝑞𝐿)
+3𝑞𝐻+𝑞𝐿, so we compare the retailer’s profit regarding 𝑓≥𝑞𝐻(𝑞𝐻−𝑞𝐿)
+3𝑞𝐻+𝑞𝐿, 𝑞𝐻−𝑞𝐿
+4
+≤𝑓≤𝑞𝐻(𝑞𝐻−𝑞𝐿)
+3𝑞𝐻+𝑞𝐿, and 𝑓≤𝑞𝐻−𝑞𝐿
+4
+.
+(1) when 𝑓≥𝑞𝐻(𝑞𝐻−𝑞𝐿)
+3𝑞𝐻+𝑞𝐿, 𝛱(1)
+𝑁= (𝑞𝐻+𝑞𝐿)𝑓(𝑞𝐻−𝑞𝐿−2𝑓)
+𝑞𝐻−𝑞𝐿
+≤𝛱(2)
+𝑁= 𝑞𝐻+𝑞𝐿
+8
+. Then we conclude that the optimal price is 𝑝𝐻
+𝑁= 𝑞𝐻+𝑞𝐿
+4
+.
+(2) when 𝑞𝐻−𝑞𝐿
+4
+≤𝑓≤𝑞𝐻(𝑞𝐻−𝑞𝐿)
+3𝑞𝐻+𝑞𝐿, 𝛱(1)
+𝑁= (𝑞𝐻−𝑓)2
+4𝑞𝐻
+≤𝛱(2)
+𝑁= 𝑞𝐻+𝑞𝐿
+8
+when 𝑓≥𝑓ℎ= 𝑞𝐻−
+√
+𝑞𝐻(𝑞𝐻+𝑞𝐿)
+2
+, and 𝛱(1)
+𝑁≥𝛱(2)
+𝑁when 𝑓≤𝑓ℎ. Then we
+conclude that the optimal price is 𝑝𝐻
+𝑁= 𝑞𝐻+𝑞𝐿
+4
+when 𝑓≥𝑓ℎ, and 𝑝𝐻
+𝑁= 𝑞𝐻−𝑓
+2
+when 𝑓≤𝑓ℎ.
+(3) when 𝑓≤𝑞𝐻−𝑞𝐿
+4
+, 𝛱(1)
+𝑁= (𝑞𝐻−𝑓)2
+4𝑞𝐻
+≥𝛱(2)
+𝑁= (𝑞𝐻+𝑞𝐿)𝑓(𝑞𝐻−𝑞𝐿−2𝑓)
+𝑞𝐻−𝑞𝐿
+. Then we conclude that the optimal price is 𝑝𝐻
+𝑁= 𝑞𝐻−𝑓
+2
+.
+In summary, the optimal retail price 𝑝𝐻
+𝑁for the retailer with 𝑞= 𝑞𝐻is shown in Table A.4.
+Case II: 𝑞= 𝑞𝐿
+As for the retailer who sells the product with 𝑞= 𝑞𝐿, we also consider two cases conditional on 𝑝𝑁≥(𝑞𝐻+𝑞𝐿)𝑓
+𝑞𝐻−𝑞𝐿
+and 𝑝𝑁≤(𝑞𝐻+𝑞𝐿)𝑓
+𝑞𝐻−𝑞𝐿, respectively.
+Then, we combine these two cases to find the optimal retail price.
+Case 1: 𝑝𝑁≥(𝑞𝐻+𝑞𝐿)𝑓
+𝑞𝐻−𝑞𝐿
+Under this condition, the demand is 𝑑𝑁= 1−𝛾𝑆= 1−𝑝𝑁+𝑓
+𝑞𝐻. However, only the compulsive customers keep the product, i.e., 𝑑𝑘
+𝑁= 1−𝛾𝐶= 1−𝑝𝑁−𝑓
+𝑞𝐿
+;
+the strategic customers choose to return the low-quality product afterwards, i.e., 𝑑𝑟
+𝑁= 𝑝𝑁−𝑓
+𝑞𝐿
+−𝛾𝑆= 𝑝𝑁−𝑓
+𝑞𝐿
+−𝑝𝑁+𝑓
+𝑞𝐻, and the retailer with 𝑞= 𝑞𝐿has
+to bear the return handling cost 𝑡𝑑𝑟
+𝑁. Hence, the retailer solves the following program:
+max
+𝑝𝑁
+𝛱𝑁= 𝑝𝑁𝑑𝑘
+𝑁−𝑡𝑑𝑟
+𝑁= 𝑝𝑁
+(1 −𝑝𝑁−𝑓
+𝑞𝐿
+) −𝑡(𝑝𝑁−𝑓
+𝑞𝐿
+−𝑝𝑁+ 𝑓
+𝑞𝐻
+)
+(A.3)
+s.t.
+(𝑞𝐻+ 𝑞𝐿)𝑓
+𝑞𝐻−𝑞𝐿
+≤𝑝𝑁≤𝑞𝐿+ 𝑓.
+The constraint guarantees the demand is greater than 0.
+We find that 𝜕2𝛱𝑁
+𝜕𝑝2
+𝑁
+= −2
+𝑞𝐿< 0, i.e., the profit is a concave function of price 𝑝𝑁. Given the concavity of the profit function, we solve program
+(A.4) through the Lagrange function = 𝛱𝑁+ 𝜇1(𝑞𝐿−𝑓−𝑝𝑁) + 𝜇2
+(𝑝𝑁−(𝑞𝐻+𝑞𝐿)𝑓
+𝑞𝐻−𝑞𝐿
+), and find that the optimal solution is the interior solution
+𝑝(1)
+𝑁= 𝑞𝐿+𝑓
+2
+−(𝑞𝐻−𝑞𝐿)𝑡
+2𝑞𝐻
+when 𝑓≤𝑓𝑙=
+𝑞𝐻−𝑞𝑙
+𝑞𝐻+3𝑞𝐿
+[𝑞𝐿−(𝑞𝐻−𝑞𝐿)𝑡
+𝑞𝐻
+] (with profit 𝛱(1)
+𝑁= [𝑞𝐻(𝑞𝐿−𝑓−𝑡)+𝑡𝑞𝐿]2+4𝑞𝐻𝑞𝐿(𝑞𝐻+2𝑡)𝑓
+4𝑞𝐿𝑞2
+𝐻
+); and the corner solution 𝑝(1)
+𝑁= (𝑞𝐻+𝑞𝐿)𝑓
+𝑞𝐻−𝑞𝐿
+when 𝑓≥𝑓𝑙(with profit 𝛱(1)
+𝑁= (𝑞𝐻+𝑞𝐿)𝑓(𝑞𝐻−𝑞𝐿−2𝑓)
+(𝑞𝐻−𝑞𝐿)2
+).
+Case 2: 𝑝𝑁≤(𝑞𝐻+𝑞𝐿)𝑓
+𝑞𝐻−𝑞𝐿
+When 𝑝𝑁≤(𝑞𝐻+𝑞𝐿)𝑓
+𝑞𝐻−𝑞𝐿, only a proportion of the compulsive customers would like to purchase, i.e., the demand is 𝑑𝑁= 1−𝛾𝐶= 1−
+2𝑝𝑁
+𝑞𝐻+𝑞𝐿. Hence,
+the retailer bears zero return risks, it solve the following program to obtain the optimal price.
+max
+𝑝𝑁
+𝛱𝑁= 𝑝𝑁
+(1 −
+2𝑝𝑁
+𝑞𝐻+ 𝑞𝐿
+)
+(A.4)
+s.t.
+𝑝𝑁≤(𝑞𝐻+ 𝑞𝐿)𝑓
+𝑞𝐻−𝑞𝐿
+.
+We also find that 𝜕2𝛱𝑁
+𝜕𝑝2
+𝑁
+= −
+4
+𝑞𝐻+𝑞𝐿< 0, i.e., the profit is a concave function of price 𝑝𝑁. Given the concavity of the profit function, the optimal
+solution 𝑝𝑁is the interior solution 𝑝(2)
+𝑁= 𝑞𝐻+𝑞𝐿
+4
+when 𝑓≥𝑞𝐻−𝑞𝐿
+4
+with profit 𝛱(2)
+𝑁= 𝑞𝐻+𝑞𝐿
+8
+, and the corner solution 𝑝(2)
+𝑁= (𝑞𝐻+𝑞𝐿)𝑓
+𝑞𝐻−𝑞𝐿
+when 𝑓≥𝑞𝐻−𝑞𝐿
+4
+with profit 𝛱(2)
+𝑁= (𝑞𝐻+𝑞𝐿)𝑓(𝑞𝐻−𝑞𝐿−2𝑓)
+(𝑞𝐻−𝑞𝐿)2
+.
+Finally, we compare the profit under Case 1 and Case 2 to find the optimal one. First, note that 𝑓𝑙≤𝑞𝐻−𝑞𝐿
+4
+, so we compare the retailer’s profit
+regarding 𝑓≥𝑞𝐻−𝑞𝐿
+4
+, 𝑓𝑙≤𝑓≤𝑞𝐻−𝑞𝐿
+4
+, and 𝑓≤𝑓𝑙.
+(1) when 𝑓≥𝑞𝐻−𝑞𝐿
+4
+, 𝛱(1)
+𝑁= (𝑞𝐻+𝑞𝐿)𝑓(𝑞𝐻−𝑞𝐿−2𝑓)
+(𝑞𝐻−𝑞𝐿)2
+≤𝛱(2)
+𝑁= 𝑞𝐻+𝑞𝐿
+8
+. Then we conclude that the optimal price is 𝑝𝐿
+𝑁= 𝑞𝐻+𝑞𝐿
+4
+.
+(2) when 𝑓𝑙≤𝑓≤𝑞𝐻−𝑞𝐿
+4
+, 𝛱(1)
+𝑁= (𝑞𝐻+𝑞𝐿)𝑓(𝑞𝐻−𝑞𝐿−2𝑓)
+(𝑞𝐻−𝑞𝐿)2
+= 𝛱(2)
+𝑁. Then we conclude that the optimal price is 𝑝𝐿
+𝑁= (𝑞𝐻+𝑞𝐿)𝑓
+𝑞𝐻−𝑞𝐿.
+(3) when 𝑓≤𝑓𝑙, 𝛱(1)
+𝑁
+=
+[𝑞𝐻(𝑞𝐿−𝑓−𝑡)+𝑡𝑞𝐿]2+4𝑞𝐻𝑞𝐿(𝑞𝐻+2𝑡)𝑓
+4𝑞𝐿𝑞2
+𝐻
+≥𝛱(2)
+𝑁
+=
+(𝑞𝐻+𝑞𝐿)𝑓(𝑞𝐻−𝑞𝐿−2𝑓)
+(𝑞𝐻−𝑞𝐿)2
+. Then we conclude that the optimal price is 𝑝𝐿
+𝑁=
+𝑞𝐿+𝑓
+2
+−(𝑞𝐻−𝑞𝐿)𝑡
+2𝑞𝐻
+.
+In summary, the optimal retail price 𝑝𝐿
+𝑁for the retailer with 𝑞= 𝑞𝐿is shown in Table A.5.
+□
+
+
+========== PAGE 15 ==========
+International Journal of Production Economics 256 (2023) 108752
+15
+X. Li et al.
+Table A.5
+The optimal pricing strategy of the low-quality retailer.
+Condition
+𝑝𝐿
+𝑁
+𝑓≥𝑞𝐻−𝑞𝐿
+4
+𝑞𝐻+𝑞𝐿
+4
+𝑓𝑙≤𝑓≤𝑞𝐻−𝑞𝐿
+4
+(𝑞𝐻+𝑞𝐿)𝑓
+𝑞𝐻−𝑞𝐿
+𝑓≤𝑓𝑙
+𝑞𝐿+𝑓
+2
+−(𝑞𝐻−𝑞𝐿)𝑡
+2𝑞𝐻
+Proof of Lemma 2. To explore the impact of the return freight fee 𝑓on the retailer profit without RFI, we take the derivative of the equilibrium
+profit 𝛱𝑖
+𝑁, 𝑖= 𝐻, 𝐿with respect to 𝑓.
+Case I: 𝑞= 𝑞𝐻
+(1) when 𝑓≥𝑓ℎ, 𝛱𝐻
+𝑁= 𝑞𝐻+𝑞𝐿
+8
+. It is obvious that 𝛱𝐻
+𝑁is independent of 𝑓.
+(2) when 𝑓≤𝑓ℎ, 𝛱𝐻
+𝑁= (𝑞𝐻−𝑓)2
+4𝑞𝐻
+. Taking its derivative, we have
+d𝛱𝐻
+𝑁
+d𝑓
+= −𝑞𝐻−𝑓
+2𝑞𝐻
+< 0.
+In summary, we conclude that the high-quality retailer’s profit 𝛱𝐻
+𝑁is non-increasing in 𝑓.
+Case II: 𝑞= 𝑞𝐿
+(1) when 𝑓≥𝑞𝐻−𝑞𝐿
+4
+, 𝛱𝐿
+𝑁= 𝑞𝐻+𝑞𝐿
+8
+. It is obvious that 𝛱𝐿
+𝑁is independent of 𝑓..
+(2) when 𝑓𝑙≤𝑓≤𝑞𝐻−𝑞𝐿
+4
+, 𝛱𝐿
+𝑁= (𝑞𝐻+𝑞𝐿)𝑓(𝑞𝐻−𝑞𝐿−2𝑓)
+(𝑞𝐻−𝑞𝐿)2
+. Taking its derivative, we have
+d𝛱∗
+𝑁
+d𝑓
+= (𝑞𝐻+𝑞𝐿)[(𝑞𝐻−𝑞𝐿)−4𝑓]
+(𝑞𝐻−𝑞𝐿)2
+, which is larger than 0 in this
+interval.
+(3) when 𝑓≤𝑓𝑙, 𝛱𝐿
+𝑁= [𝑞𝐻(𝑞𝐿−𝑓−𝑡)+𝑡𝑞𝐿]2+4𝑞𝐻𝑞𝐿(𝑞𝐻+2𝑡)𝑓
+4𝑞𝐿𝑞2
+𝐻
+. Taking its derivative, we have
+d𝛱∗
+𝑁
+d𝑓
+= 𝑞𝐻(𝑞𝐿+𝑓)+𝑡(𝑞𝐻+3𝑞𝐿)
+4𝑞𝐿𝑞𝐻
+> 0.
+In summary, we conclude that the low-quality retailer’s profit 𝛱𝐿
+𝑁is non-decreasing in 𝑓.
+□
+Proof of Proposition 1.
+Under the RFI case, we start with the customer’s return behavior, similar to the benchmark case. Through analyzing
+customers’ purchase and return behaviors, we formalize the demand and customer returns. Then we solve the insurance companies’ and retailer’s
+pricing strategies regarding the customer’s best reactions.
+By comparing 𝑈𝑘
+𝑅= 𝛾𝑞≥𝑈𝑟
+𝑅= 𝑝𝑁−(1 −𝛽)𝑓, we categorize the customers into three groups like the benchmark case.
+(1) when 𝛾≥max{ 𝑝𝑅−(1−𝛽)𝑓
+𝑞𝐻
+,
+𝑝𝑅−(1−𝛽)𝑓
+𝑞𝐿
+} = 𝑝𝑅−(1−𝛽)𝑓
+𝑞𝐿
+, the customer who makes a purchase always keeps the product regardless of the quality
+level, we regard them as the compulsive customers;
+(2) when 𝑝𝑅−(1−𝛽)𝑓
+𝑞𝐻
+≤𝛾≤𝑝𝑅−(1−𝛽)𝑓
+𝑞𝐿
+, the customer keeps the product with high quality but returns the low-quality one, regarded as the strategic
+customers;
+(3) when 𝛾≤𝑝𝑅−(1−𝛽)𝑓
+𝑞𝐻
+, the customer always chooses to return the product, regarded as the non-buy customers.
+Given three types of customers, we analyze their purchase behaviors as follows.
+(1) When 𝛾≥
+𝑝𝑅−(1−𝛽)𝑓
+𝑞𝐿
+, the compulsive customer obtains the expected utility: 𝐸(𝑈𝑅|𝐼𝑅= 1) =
+(1+𝜎)𝛾𝑞
+2
++ (1−𝜎)𝛾𝑞′
+2
+,where 𝑞= {𝑞𝐻, 𝑞𝐿} is the
+product true quality and 𝑞′ represents the false quality. The customer will make a purchase when this utility exceeds the product price 𝑝𝑁,
+i.e., the customer with 𝛾≥
+2𝑝𝑅
+(1+𝜎)𝑞+(1−𝜎)𝑞′ will make a purchase.
+(2) When 𝑝𝑅−(1−𝛽)𝑓
+𝑞𝐻
+≤𝛾≤𝑝𝑅−(1−𝛽)𝑓
+𝑞𝐿
+, the strategic customer’s utility becomes: 𝐸(𝑈𝑅|𝐼𝑅= 1) = (1+𝜎) max{𝛾𝑞, 𝑝𝑅−(1−𝛽)𝑓}
+2
++ (1−𝜎) max{𝛾𝑞′, 𝑝𝑅−(1−𝛽)𝑓}
+2
+, and
+the customer with 𝛾≥𝛾1(𝑞) will make a purchase, where 𝛾1(𝑞) solves (1+𝜎) max{𝛾1(𝑞)𝑞, 𝑝𝑅−(1−𝛽)𝑓}
+2
++ (1−𝜎) max{𝛾1(𝑞)𝑞′, 𝑝𝑅−(1−𝛽)𝑓}
+2
+= 0.
+(3) When 𝛾≤𝑝𝑅−(1−𝛽)𝑓
+𝑞𝐻
+, the non-buy customer obtains the expected utility 𝐸(𝑈𝑅|𝐼𝑅= 1) = (𝑝𝑅−(1−𝛽)𝑓)
+2
++ (𝑝𝑅−(1−𝛽)𝑓)
+2
+, and the customer never buys
+the product.
+Note that 𝛾∼𝑈(0, 1), by summarizing, we obtain the volume of the compulsive and strategic customers as follows.
+(1) The volume of compulsive customers is 1 −𝛾′
+𝐶, where 𝛾′
+𝐶= max{ 𝑝𝑅−(1−𝛽)𝑓
+𝑞𝐿
+,
+2𝑝𝑅
+(1+𝜎)𝑞+(1−𝜎)𝑞′ };
+(2) The volume of strategic customers is 𝑝𝑅−(1−𝛽)𝑓
+𝑞𝐿
+−𝛾′
+𝑆, where 𝛾′
+𝑆= min{𝛾1(𝑞),
+𝑝𝑅−(1−𝛽)𝑓
+𝑞𝐿
+}.
+As a result, the demand is 𝑑𝑅= 1 −𝛾′
+𝐶+ 𝑝𝑅−(1−𝛽)𝑓
+𝑞𝐿
+−𝛾′
+𝑆, the volume of return is 𝑑𝑟
+𝑅= 𝑝𝑅−(1−𝛽)𝑓
+𝑞𝐿
+−𝛾′
+𝑆, and the volume of keep is 𝑑𝑘
+𝑅= 1 −𝛾′
+𝐶.
+Next, the retailer chooses the insurance company with the lowest premium 𝑎, and pays the premium to the selected insurance company with
+each transaction. As for the insurance companies, the expected profit of the RFI service provider can be expressed by 𝜋(𝑎) = 𝑎𝑑𝑅−𝛽𝑓𝑑𝑟
+𝑅. As the
+insurance companies are completely substituted with each other, and the non-selected companies earn nothing, we have 𝜋(𝑎) = 0. Then, we have
+𝑎= (𝑑𝑟
+𝑅∕𝑑𝑅
+) 𝛽𝑓.
+Next, regarding the customers’ behaviors and the RFI premium, we analyze the retailer’s pricing strategy when 𝑞= 𝑞𝐻and 𝑞= 𝑞𝐿, separately.
+Case I: 𝑞= 𝑞𝐻
+When 𝑞= 𝑞𝐻, we first find the exact value of 𝛾′
+𝐶and 𝛾′
+𝑆to obtain the demand and the return volume.
+(1) When 𝑝𝑅≥[(𝑞𝐻+𝑞𝐿)+𝜎(𝑞𝐻−𝑞𝐿)](1−𝛽)𝑓
+(1+𝜎)(𝑞𝐻−𝑞𝐿)
+, we have 𝛾′
+𝐶= 𝑝𝑅−(1−𝛽)
+𝑞𝐿
+, 𝛾′
+𝑆= (1+𝜎)𝑝𝑅+(1−𝜎)(1−𝛽)𝑓
+(1+𝜎)𝑞𝐻
+≤𝛾′
+𝐶;
+(2) when 𝑝𝑅≤[(𝑞𝐻+𝑞𝐿)+𝜎(𝑞𝐻−𝑞𝐿)](1−𝛽)𝑓
+(1+𝜎)(𝑞𝐻−𝑞𝐿)
+, 𝛾′
+𝐶=
+2𝑝𝑅
+(𝑞𝐻+𝑞𝐿)+𝜎(𝑞𝐻−𝑞𝐿), 𝛾′
+𝑆= 𝑝𝑅−(1−𝛽)𝑓
+𝑞𝐿
+.
+Given the above facts, we analyze the retailer’s pricing strategy regarding 𝑝𝑅≥[(𝑞𝐻+𝑞𝐿)+𝜎(𝑞𝐻−𝑞𝐿)](1−𝛽)𝑓
+(1+𝜎)(𝑞𝐻−𝑞𝐿)
+and 𝑝𝑅≤[(𝑞𝐻+𝑞𝐿)+𝜎(𝑞𝐻−𝑞𝐿)](1−𝛽)𝑓
+(1+𝜎)(𝑞𝐻−𝑞𝐿)
+, respectively.
+
+
+========== PAGE 16 ==========
+International Journal of Production Economics 256 (2023) 108752
+16
+X. Li et al.
+Table A.6
+The
+optimal
+pricing
+strategy
+of
+the
+high-quality
+retailer.
+Condition
+𝑝𝐻
+𝑅
+𝑓≥𝐹ℎ
+𝑞𝐻+𝑞𝐿+𝜎(𝑞𝐻−𝑞𝐿)
+4
+𝑓≤𝐹ℎ
+(1+𝜎)𝑞𝐻−(1−𝜎)(1−𝛽)𝑓
+2(1+𝜎)
+Case 1: 𝑝𝑅≥[(𝑞𝐻+𝑞𝐿)+𝜎(𝑞𝐻−𝑞𝐿)](1−𝛽)𝑓
+(1+𝜎)(𝑞𝐻−𝑞𝐿)
+When 𝑝𝑅≥[(𝑞𝐻+𝑞𝐿)+𝜎(𝑞𝐻−𝑞𝐿)](1−𝛽)𝑓
+(1+𝜎)(𝑞𝐻−𝑞𝐿)
+, the demand is 𝑑𝑅= 1 −𝛾′
+𝑆= 1 −(1+𝜎)𝑝𝑅+(1−𝜎)(1−𝛽)𝑓
+(1+𝜎)𝑞𝐻
+, and the returns 𝑑𝑟
+𝑅= 0 because of the high quality. Thus,
+the retailer pays an infinitely small premium to the insurance company, i.e., 𝑎= 0. Moreover, to ensure the demand is larger than 0, we have
+𝑝𝑅≤𝑞𝐻−(1−𝜎)(1−𝛽)𝑓
+1+𝜎
+. The retailer solves the following program to determine the retail price.
+max
+𝑝𝑅
+𝛱𝑅= 𝑝𝑅𝑑𝑅= 𝑝𝑅
+(
+1 −(1 + 𝜎)𝑝𝑅+ (1 −𝜎)(1 −𝛽)𝑓
+(1 + 𝜎)𝑞𝐻
+)
+(A.5)
+s.t.
+[(𝑞𝐻+ 𝑞𝐿) + 𝜎(𝑞𝐻−𝑞𝐿)](1 −𝛽)𝑓
+(1 + 𝜎)(𝑞𝐻−𝑞𝐿)
+≤𝑝𝑅≤𝑞𝐻−(1 −𝜎)(1 −𝛽)𝑓
+1 + 𝜎
+.
+𝛱𝑅is a concave function of price 𝑝𝑅since
+𝜕2𝛱𝑅
+𝜕𝑝2
+𝑅
+= −2
+𝑞𝐻
+< 0. By analyzing the Lagrangian of 𝛱𝑅, i.e., = 𝛱𝑅+ 𝜆1( (1−𝜎)(1−𝛽)𝑓
+1+𝜎
+−
+𝑝𝑅) + 𝜆2
+(𝑝𝑅−[(𝑞𝐻+𝑞𝐿)+𝜎(𝑞𝐻−𝑞𝐿)](1−𝛽)𝑓
+(1+𝜎)(𝑞𝐻−𝑞𝐿)
+), we obtain the interior solution 𝑝(1)
+𝑅
+=
+(1+𝜎)𝑞𝐻−(1−𝜎)(1−𝛽)𝑓
+2(1+𝜎)
+(with profit 𝛱(1)
+𝑅
+=
+[(1+𝜎)𝑞𝐻−(1−𝜎)(1−𝛽)𝑓]2
+4(1+𝜎)2𝑞𝐻
+) when
+𝑓≤
+(1+𝜎)𝑞𝐻(𝑞𝐻−𝑞𝐿)
+(1−𝛽)[2(𝑞𝐻+𝑞𝐿)+(1+𝜎)(𝑞𝐻−𝑞𝐿)] ; and the corner solution 𝑝(1)
+𝑅= [(𝑞𝐻+𝑞𝐿)+𝜎(𝑞𝐻−𝑞𝐿)](1−𝛽)𝑓
+(1+𝜎)(𝑞𝐻−𝑞𝐿)
+(with profit 𝛱(1)
+𝑅
+= [(𝑞𝐻+𝑞𝐿)+𝜎(𝑞𝐻−𝑞𝐿)][(1+𝜎)(𝑞𝐻−𝑞𝐿)−2(1−𝛽)𝑓](1−𝛽)𝑓
+(1+𝜎)2(𝑞𝐻−𝑞𝐿)2
+)
+when 𝑓≥
+(1+𝜎)𝑞𝐻(𝑞𝐻−𝑞𝐿)
+(1−𝛽)[2(𝑞𝐻+𝑞𝐿)+(1+𝜎)(𝑞𝐻−𝑞𝐿)] .
+Case 2: 𝑝𝑅≤[(𝑞𝐻+𝑞𝐿)+𝜎(𝑞𝐻−𝑞𝐿)](1−𝛽)𝑓
+(1+𝜎)(𝑞𝐻−𝑞𝐿)
+When 𝑝𝑅≤[(𝑞𝐻+𝑞𝐿)+𝜎(𝑞𝐻−𝑞𝐿)](1−𝛽)𝑓
+(1+𝜎)(𝑞𝐻−𝑞𝐿)
+, the demand is 𝑑𝑅= 1 −𝛾′
+𝐶= 1 −
+2𝑝𝑅
+(𝑞𝐻+𝑞𝐿)+𝜎(𝑞𝐻−𝑞𝐿), and the volume of strategic customers shrinks to zero,
+i.e., the returns 𝑑𝑟
+𝑅= 0. Thus, the optimization problem of the retailer can be expressed as
+max
+𝑝𝑅
+𝛱𝑅= 𝑝𝑅
+(1 −
+2𝑝𝑅
+(𝑞𝐻+ 𝑞𝐿) + 𝜎(𝑞𝐻−𝑞𝐿)
+)
+(A.6)
+s.t.
+𝑝𝑅≤[(𝑞𝐻+ 𝑞𝐿) + 𝜎(𝑞𝐻−𝑞𝐿)](1 −𝛽)𝑓
+(1 + 𝜎)(𝑞𝐻−𝑞𝐿)
+.
+The objective is a concave function of price 𝑝𝑅since
+𝜕2𝛱𝑅
+𝜕𝑝2
+𝑅
+= −
+4
+𝑞𝐻+𝑞𝐿+𝜎(𝑞𝐻−𝑞𝐿)
+< 0. Given the concavity of the profit function, we solve
+the Lagrangian: = 𝛱𝑅+ 𝜆1
+( [(𝑞𝐻+𝑞𝐿)+𝜎(𝑞𝐻−𝑞𝐿)](1−𝛽)𝑓
+(1+𝜎)(𝑞𝐻−𝑞𝐿)
+−𝑝𝑅
+). We obtain the interior solution 𝑝(2)
+𝑅
+=
+𝑞𝐻+𝑞𝐿+𝜎(𝑞𝐻−𝑞𝐿)
+4
+when 𝑓
+≥
+(1+𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+(with profit 𝛱(2)
+𝑅
+=
+𝑞𝐻+𝑞𝐿+𝜎(𝑞𝐻−𝑞𝐿)
+8
+); and the corner solution 𝑝(2)
+𝑅
+=
+[(𝑞𝐻+𝑞𝐿)+𝜎(𝑞𝐻−𝑞𝐿)](1−𝛽)𝑓
+(1+𝜎)(𝑞𝐻−𝑞𝐿)
+when 𝑓
+≤
+(1+𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+(with profit 𝛱(2)
+𝑅
+=
+[(𝑞𝐻+𝑞𝐿)+𝜎(𝑞𝐻−𝑞𝐿)][(1+𝜎)(𝑞𝐻−𝑞𝐿)−2(1−𝛽)𝑓](1−𝛽)𝑓
+(1+𝜎)2(𝑞𝐻−𝑞𝐿)2
+).
+Next, we compare 𝛱(1)
+𝑅
+and 𝛱(2)
+𝑅
+to find the optimal price, where the optimal price is denoted by 𝑝𝐻
+𝑅. First, note that
+(1+𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+<
+(1+𝜎)𝑞𝐻(𝑞𝐻−𝑞𝐿)
+(1−𝛽)[2(𝑞𝐻+𝑞𝐿)+(1+𝜎)(𝑞𝐻−𝑞𝐿)] by rearranging the inequality, we find that 4𝑞𝐻≥2(𝑞𝐻+ 𝑞𝐿) + (1 + 𝜎)(𝑞𝐻−𝑞𝐿) always holds. As a result, we compare 𝛱(1)
+𝑅
+and 𝛱(2)
+𝑅
+regarding 𝑓≥
+(1+𝜎)𝑞𝐻(𝑞𝐻−𝑞𝐿)
+(1−𝛽)[2(𝑞𝐻+𝑞𝐿)+(1+𝜎)(𝑞𝐻−𝑞𝐿)] , (1+𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+≤𝑓≤
+(1+𝜎)𝑞𝐻(𝑞𝐻−𝑞𝐿)
+(1−𝛽)[2(𝑞𝐻+𝑞𝐿)+(1+𝜎)(𝑞𝐻−𝑞𝐿)] , and 𝑓≤(1+𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+.
+(1) when 𝑓≥
+(1+𝜎)𝑞𝐻(𝑞𝐻−𝑞𝐿)
+(1−𝛽)[2(𝑞𝐻+𝑞𝐿)+(1+𝜎)(𝑞𝐻−𝑞𝐿)] , we have 𝛱(1)
+𝑅
+= [(𝑞𝐻+𝑞𝐿)+𝜎(𝑞𝐻−𝑞𝐿)][(1+𝜎)(𝑞𝐻−𝑞𝐿)−2(1−𝛽)𝑓](1−𝛽)𝑓
+(1+𝜎)2(𝑞𝐻−𝑞𝐿)2
+≤𝛱(2)
+𝑅
+= 𝑞𝐻+𝑞𝐿+𝜎(𝑞𝐻−𝑞𝐿)
+8
+. Then we conclude
+that the optimal price is 𝑝𝐻
+𝑅= (𝑞𝐻+𝑞𝐿)+𝜎(𝑞𝐻−𝑞𝐿)
+4
+.
+(2) when (1+𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+≤𝑓≤
+(1+𝜎)𝑞𝐻(𝑞𝐻−𝑞𝐿)
+(1−𝛽)[2(𝑞𝐻+𝑞𝐿)+(1+𝜎)(𝑞𝐻−𝑞𝐿)] , 𝛱(1)
+𝑅
+= [(1+𝜎)𝑞𝐻−(1−𝜎)(1−𝛽)𝑓]2
+4(1+𝜎)2𝑞𝐻
+and 𝛱(2)
+𝑅
+= 𝑞𝐻+𝑞𝐿+𝜎(𝑞𝐻−𝑞𝐿)
+8
+. By formulating their difference
+𝛱(2)
+𝑅−𝛱(1)
+𝑅, we have 𝛱(2)
+𝑅−𝛱(1)
+𝑅≥0 when 𝑓≥𝐹ℎ=
+1+𝜎
+(1−𝜎)(1−𝛽)
+[
+𝑞𝐻−
+√
+𝑞𝐻(𝑞𝐻+𝑞𝐿+𝜎(𝑞𝐻−𝑞𝐿))
+2
+]
+, and 𝛱(2)
+𝑅−𝛱(1)
+𝑅≤0 when 𝑓≤𝐹ℎ.
+Next, We show 𝐹ℎ∈[ (1+𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+,
+(1+𝜎)𝑞𝐻(𝑞𝐻−𝑞𝐿)
+(1−𝛽)[2(𝑞𝐻+𝑞𝐿)+(1+𝜎)(𝑞𝐻−𝑞𝐿)] ] by verifying (a) 𝐹ℎ≥
+(1+𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+and (b) 𝐹ℎ≤
+(1+𝜎)𝑞𝐻(𝑞𝐻−𝑞𝐿)
+(1−𝛽)[2(𝑞𝐻+𝑞𝐿)+(1+𝜎)(𝑞𝐻−𝑞𝐿)] ]
+respectively.
+(a) As for 𝐹ℎ≥(1+𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+, we have [4𝑞𝐻−(1 −𝜎)(𝑞𝐻−𝑞𝐿)]2 ≥8[(1 + 𝜎)𝑞2
+𝐻+ (1 −𝜎)𝑞𝐻𝑞𝐿] by rearranging the inequality, which is equivalent
+to [(1 −𝜎)(𝑞𝐻−𝑞𝐿)]2 ≥0.
+(b) As for 𝐹ℎ≤
+(1+𝜎)𝑞𝐻(𝑞𝐻−𝑞𝐿)
+(1−𝛽)[2(𝑞𝐻+𝑞𝐿)+(1+𝜎)(𝑞𝐻−𝑞𝐿)] ], it is equivalent to 8𝑞𝐻[𝑞𝐻+ 𝑞𝐿+ 𝜎(𝑞𝐻−𝑞𝐿)] ≤[2(𝑞𝐻+ 𝑞𝐿) + (1 + 𝜎)(𝑞𝐻−𝑞𝐿)]2 by rearranging the
+inequality, which is equivalent to (1 −𝜎)2(𝑞𝐻−𝑞𝐿) ≥0.
+In conclusion, we have 𝐹ℎ∈[ (1+𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+,
+(1+𝜎)𝑞𝐻(𝑞𝐻−𝑞𝐿)
+(1−𝛽)[2(𝑞𝐻+𝑞𝐿)+(1+𝜎)(𝑞𝐻−𝑞𝐿)]].
+As a result, in this interval, the optimal price is 𝑝𝐻
+𝑅= 𝑞𝐻+𝑞𝐿+𝜎(𝑞𝐻−𝑞𝐿)
+4
+when 𝑓≥𝐹ℎ, and 𝑝𝐻
+𝑅= (1+𝜎)𝑞𝐻−(1−𝜎)(1−𝛽)𝑓
+2(1+𝜎)
+when 𝑓≤𝐹ℎ.
+(3) when 𝑓≤(1+𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+, 𝛱(1)
+𝑅
+= [(1+𝜎)𝑞𝐻−(1−𝜎)(1−𝛽)𝑓]2
+4(1+𝜎)2𝑞𝐻
+≥𝛱(2)
+𝑅
+= [(𝑞𝐻+𝑞𝐿)+𝜎(𝑞𝐻−𝑞𝐿)][(1+𝜎)(𝑞𝐻−𝑞𝐿)−2(1−𝛽)𝑓](1−𝛽)𝑓
+(1+𝜎)2(𝑞𝐻−𝑞𝐿)2
+. Then we conclude that the optimal
+price is 𝑝𝐻
+𝑅= (1+𝜎)𝑞𝐻−(1−𝜎)(1−𝛽)𝑓
+2(1+𝜎)
+.
+By summarizing, we show the optimal price 𝑝𝐿
+𝑅for the high-quality retailer in Table A.6.
+
+
+========== PAGE 17 ==========
+International Journal of Production Economics 256 (2023) 108752
+17
+X. Li et al.
+Case II: 𝑞= 𝑞𝐿
+When 𝑞= 𝑞𝐿, we first find the exact value of 𝛾′
+𝐶and 𝛾′
+𝑆.
+(1) When 𝑝𝑅≥[(𝑞𝐻+𝑞𝐿)−𝜎(𝑞𝐻−𝑞𝐿)](1−𝛽)𝑓
+(1−𝜎)(𝑞𝐻−𝑞𝐿)
+, we have 𝛾′
+𝐶= 𝑝𝑅−(1−𝛽)𝑓
+𝑞𝐿
+, 𝛾′
+𝑆= (1−𝜎)𝑝𝑅+(1+𝜎)(1−𝛽)𝑓
+(1−𝜎)𝑞𝐻
+≤𝛾′
+𝐶;
+(2) when 𝑝𝑅≤[(𝑞𝐻+𝑞𝐿)−𝜎(𝑞𝐻−𝑞𝐿)](1−𝛽)𝑓
+(1−𝜎)(𝑞𝐻−𝑞𝐿)
+, 𝛾′
+𝐶=
+2𝑝𝑅
+(𝑞𝐻+𝑞𝐿)−𝜎(𝑞𝐻−𝑞𝐿), 𝛾′
+𝑆= 𝑝𝑅−(1−𝛽)𝑓
+𝑞𝐿
+.
+With the above facts, we analyze the low-quality retailer’s strategy when 𝑝𝑅≥[(𝑞𝐻+𝑞𝐿)−𝜎(𝑞𝐻−𝑞𝐿)](1−𝛽)𝑓
+(1−𝜎)(𝑞𝐻−𝑞𝐿)
+and 𝑝𝑅≤[(𝑞𝐻+𝑞𝐿)−𝜎(𝑞𝐻−𝑞𝐿)](1−𝛽)𝑓
+(1−𝜎)(𝑞𝐻−𝑞𝐿)
+, respectively.
+Then, we combine the two cases to find the optimal price.
+Case 1: 𝑝𝑅≥[(𝑞𝐻+𝑞𝐿)−𝜎(𝑞𝐻−𝑞𝐿)](1−𝛽)𝑓
+(1−𝜎)(𝑞𝐻−𝑞𝐿)
+When 𝑝𝑅≥[(𝑞𝐻+𝑞𝐿)−𝜎(𝑞𝐻−𝑞𝐿)](1−𝛽)𝑓
+(1−𝜎)(𝑞𝐻−𝑞𝐿)
+, the demand is 𝑑𝑅= 1 −𝛾′
+𝑆= 1 −(1−𝜎)𝑝𝑅+(1+𝜎)(1−𝛽)𝑓
+(1−𝜎)𝑞𝐻
+. But the strategic customers will return the low-quality
+product, i.e., the return volume is 𝑑𝑟
+𝑅= 𝑝𝑅−(1−𝛽)𝑓
+𝑞𝐿
+−𝛾′
+𝑆= 𝑝𝑅−(1−𝛽)𝑓
+𝑞𝐿
+−(1−𝜎)𝑝𝑅+(1+𝜎)(1−𝛽)𝑓
+(1−𝜎)𝑞𝐻
+, and the keeping volume is 𝑑𝑘
+𝑅= 1 −𝛾′
+𝐶= 1 −𝑝𝑅−(1−𝛽)𝑓
+𝑞𝐿
+. Thus,
+the retailer pays a RFI premium related to its return rate, i.e., 𝑎= (𝑑𝑟
+𝑅∕𝑑𝑅
+) 𝛽𝑓. The retailer solves the following program to determine the retail
+price.
+max
+𝑝𝑅
+𝛱𝑅= 𝑝𝑅
+(1 −𝑝𝑅−(1 −𝛽)𝑓
+𝑞𝐿
+) −(𝑡+ 𝛽𝑓)( 𝑝𝑅−(1 −𝛽)𝑓
+𝑞𝐿
+) + (𝑡+ 𝛽𝑓)( [(1 −𝜎)𝑝𝑅+ (1 + 𝜎)(1 −𝛽)𝑓
+(1 −𝜎)𝑞𝐻
+)
+(A.7)
+s.t.
+[(𝑞𝐻+ 𝑞𝐿) −𝜎(𝑞𝐻−𝑞𝐿)](1 −𝛽)𝑓
+(1 −𝜎)(𝑞𝐻−𝑞𝐿)
+≤𝑝𝑅≤𝑞𝐿+ (1 −𝛽)𝑓.
+The constraint guarantees the demand is larger than 0.
+𝛱𝑅is a concave function of price 𝑝𝑅since 𝜕2𝛱𝑅
+𝜕𝑝2
+𝑅
+= −2
+𝑞𝐿< 0. We derive the optimal solution by analyzing the Lagrangian of 𝛱𝑁, i.e., =
+𝛱𝑅+ 𝜆1(𝑞𝐿+ (1 −𝛽)𝑓−𝑝𝑅) + 𝜆2
+(𝑝𝑅−[(𝑞𝐻+𝑞𝐿)−𝜎(𝑞𝐻−𝑞𝐿)](1−𝛽)𝑓
+(1−𝜎)(𝑞𝐻−𝑞𝐿)
+). We obtain the interior solution 𝑝(1)
+𝑅
+=
+𝑞𝐿+(1−𝛽)𝑓
+2
+−(𝑞𝐻−𝑞𝐿)(𝛽𝑓+𝑡)
+2𝑞𝐻
+when 𝑓≤𝐹𝑙=
+(1−𝜎)(𝑞𝐻−𝑞𝐿)[𝑞𝐻𝑞𝐿−𝑡(𝑞𝐻−𝑞𝐿)]
+4(1−𝛽)𝑞𝐻𝑞𝐿+(1−𝜎)(𝑞𝐻−𝑞𝐿)(𝑞𝐻−𝛽𝑞𝐿) (with 𝛱(1)
+𝑅= (1−𝜎)[(𝑞𝐿−𝑓−𝑡)𝑞𝐻+𝑞𝐿(𝑡+𝛽𝑓)]2+4(1−𝛽)𝑓𝑞𝐻𝑞𝐿[(1−𝜎)𝑞𝐻+2(𝑡+𝛽𝑓)]
+4(1−𝜎)𝑞2
+𝐻𝑞𝐿
+); and the corner solution 𝑝(1)
+𝑅= [(𝑞𝐻+𝑞𝐿)−𝜎(𝑞𝐻−𝑞𝐿)](1−𝛽)𝑓
+(1−𝜎)(𝑞𝐻−𝑞𝐿)
+when 𝑓≥𝐹𝑙(with profit 𝛱(1)
+𝑅= [(1−𝜎)𝑞𝐻+(1+𝜎)𝑞𝐿][(1−𝜎)(𝑞𝐻−𝑞𝐿)−2(1−𝛽)𝑓](1−𝛽)𝑓
+(1−𝜎)2(𝑞𝐻−𝑞𝐿)2
+).
+Case 2: 𝑝𝑅≤[(𝑞𝐻+𝑞𝐿)−𝜎(𝑞𝐻−𝑞𝐿)](1−𝛽)𝑓
+(1−𝜎)(𝑞𝐻−𝑞𝐿)
+When 𝑝𝑅≤[(𝑞𝐻+𝑞𝐿)−𝜎(𝑞𝐻−𝑞𝐿)](1−𝛽)𝑓
+(1−𝜎)(𝑞𝐻−𝑞𝐿)
+, the volume of strategic customers shrinks to zero, thus the demand is 𝑑𝑅= 1 −𝛾′
+𝐶= 1 −
+2𝑝𝑅
+(𝑞𝐻+𝑞𝐿)−𝜎(𝑞𝐻−𝑞𝐿), and
+the return volume is 𝑑𝑟
+𝑅= 0. Thus, the optimization problem of the retailer can be expressed as
+max
+𝑝𝑅
+𝛱𝑅= 𝑝𝑅
+(1 −
+2𝑝𝑅
+(𝑞𝐻+ 𝑞𝐿) −𝜎(𝑞𝐻−𝑞𝐿)
+)
+(A.8)
+s.t.
+𝑝𝑅≤[(𝑞𝐻+ 𝑞𝐿) −𝜎(𝑞𝐻−𝑞𝐿)](1 −𝛽)𝑓
+(1 −𝜎)(𝑞𝐻−𝑞𝐿)
+.
+The objective is a concave function of price 𝑝𝑅since
+𝜕2𝛱𝑅
+𝜕𝑝2
+𝑅
+= −
+4
+𝑞𝐻+𝑞𝐿−𝜎(𝑞𝐻−𝑞𝐿) < 0. Given the concavity of the profit function, we solve the
+Lagrangian of 𝛱𝑅: = 𝛱𝑅+ 𝜆1
+( [(𝑞𝐻+𝑞𝐿)−𝜎(𝑞𝐻−𝑞𝐿)](1−𝛽)𝑓
+(1−𝜎)(𝑞𝐻−𝑞𝐿)
+−𝑝𝑅
+). We obtain the interior solution 𝑝(2)
+𝑅
+=
+𝑞𝐻+𝑞𝐿−𝜎(𝑞𝐻−𝑞𝐿)
+4
+when 𝑓≥
+(1−𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+(with profit 𝛱(2)
+𝑅
+=
+𝑞𝐻+𝑞𝐿−𝜎(𝑞𝐻−𝑞𝐿)
+8
+); and the corner solution 𝑝(2)
+𝑅
+=
+[(𝑞𝐻+𝑞𝐿)−𝜎(𝑞𝐻−𝑞𝐿)](1−𝛽)𝑓
+(1−𝜎)(𝑞𝐻−𝑞𝐿)
+when 𝑓
+≤
+(1−𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+(with profit 𝛱(2)
+𝑅
+=
+[(𝑞𝐻+𝑞𝐿)−𝜎(𝑞𝐻−𝑞𝐿)][(1−𝜎)(𝑞𝐻−𝑞𝐿)−2(1−𝛽)𝑓](1−𝛽)𝑓
+(1−𝜎)2(𝑞𝐻−𝑞𝐿)2
+).
+Next, we compare 𝛱(1)
+𝑅
+and 𝛱(2)
+𝑅
+to find the optimal strategy. First, note that
+(1−𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+≥𝐹𝑙because we have −4(1 −𝛽)(𝑞𝐻−𝑞𝐿)𝑡≥
+(1 −𝜎)(𝑞𝐻−𝑞𝐿)(𝑞𝐻−𝛽𝑞𝐿), which always holds, by rearranging the inequality. As a result, we compare 𝛱(1)
+𝑅
+and 𝛱(2)
+𝑅
+regarding 𝑓≥(1−𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+,
+𝐹𝑙≤𝑓≤(1−𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+, and 𝑓≤𝐹𝑙.
+(1) when 𝑓≥(1−𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+,
+𝛱(1)
+𝑅= [(𝑞𝐻+ 𝑞𝐿) −𝜎(𝑞𝐻−𝑞𝐿)][(1 −𝜎)(𝑞𝐻−𝑞𝐿) −2(1 −𝛽)𝑓](1 −𝛽)𝑓
+(1 −𝜎)2(𝑞𝐻−𝑞𝐿)2
+≤𝛱(2)
+𝑅= 𝑞𝐻+ 𝑞𝐿−𝜎(𝑞𝐻−𝑞𝐿)
+8
+.
+Then we conclude that the optimal price is 𝑝𝐿
+𝑅= 𝑞𝐻+𝑞𝐿−𝜎(𝑞𝐻−𝑞𝐿)
+4
+.
+(2) when 𝐹𝑙≤𝑓≤
+(1−𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+, 𝛱(1)
+𝑅
+=
+[(𝑞𝐻+𝑞𝐿)−𝜎(𝑞𝐻−𝑞𝐿)][(1−𝜎)(𝑞𝐻−𝑞𝐿)−2(1−𝛽)𝑓](1−𝛽)𝑓
+(1−𝜎)2(𝑞𝐻−𝑞𝐿)2
+= 𝛱(2)
+𝑅. Then we conclude the optimal price is 𝑝𝐿
+𝑅=
+[(𝑞𝐻+𝑞𝐿)−𝜎(𝑞𝐻−𝑞𝐿)](1−𝛽)𝑓
+(1−𝜎)(𝑞𝐻−𝑞𝐿)
+.
+(3) when 𝑓≤𝐹𝑙, 𝛱(1)
+𝑅
+=
+(1−𝜎)[(𝑞𝐿−𝑓−𝑡)𝑞𝐻+𝑞𝐿(𝑡+𝛽𝑓)]2+4(1−𝛽)𝑓𝑞𝐻𝑞𝐿[(1−𝜎)𝑞𝐻+2(𝑡+𝛽𝑓)]
+4(1−𝜎)𝑞2
+𝐻𝑞𝐿
+≥𝛱(2)
+𝑅
+=
+[(𝑞𝐻+𝑞𝐿)−𝜎(𝑞𝐻−𝑞𝐿)][(1−𝜎)(𝑞𝐻−𝑞𝐿)−2(1−𝛽)𝑓](1−𝛽)𝑓
+(1−𝜎)2(𝑞𝐻−𝑞𝐿)2
+. Then we
+conclude that the optimal price is 𝑝𝐿
+𝑅= 𝑞𝐿+(1−𝛽)𝑓
+2
+−(𝑞𝐻−𝑞𝐿)(𝛽𝑓+𝑡)
+2𝑞𝐻
+.
+In summary, we show the optimal price 𝑝𝐿
+𝑅for the low-quality retailer in Table A.7.
+□
+Proof of Corollary 1. We take the derivative of 𝑝𝑖
+𝑅, 𝑖= 𝐻, 𝐿with the return freight fee 𝑓and the signal efficiency 𝜎, to show the monotonicity
+of 𝑝𝑖
+𝑅.
+(1) Property of 𝑝𝐻
+𝑅for the high-quality retailer
+(i) when 𝑓≥𝐹ℎ: we have 𝑝𝐻
+𝑅= 𝑞𝐻+𝑞𝐿+𝜎(𝑞𝐻−𝑞𝐿)
+4
+. Obviously, it is independent of 𝑓.
+d𝑝𝐻
+𝑅
+d𝜎= 𝑞𝐻−𝑞𝐿
+4
+> 0, i.e., 𝑝𝐻
+𝑅is increasing in 𝜎.
+
+
+========== PAGE 18 ==========
+International Journal of Production Economics 256 (2023) 108752
+18
+X. Li et al.
+Table A.7
+The optimal pricing strategy of the low-quality retailer.
+Condition
+𝑝𝐿
+𝑅
+𝑓≥(1−𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+𝑞𝐻+𝑞𝐿−𝜎(𝑞𝐻−𝑞𝐿)
+4
+𝐹𝑙≤𝑓≤(1−𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+[(𝑞𝐻+𝑞𝐿)−𝜎(𝑞𝐻−𝑞𝐿)](1−𝛽)𝑓
+(1−𝜎)(𝑞𝐻−𝑞𝐿)
+𝑓≤𝐹𝑙
+𝑞𝐿+(1−𝛽)𝑓
+2
+−(𝑞𝐻−𝑞𝐿)(𝛽𝑓+𝑡)
+2𝑞𝐻
+(ii) when 𝑓≤𝐹ℎ: we have 𝑝𝐻
+𝑅= (1+𝜎)𝑞𝐻−(1−𝜎)(1−𝛽)𝑓
+2(1+𝜎)
+.
+d𝑝𝐻
+𝑅
+d𝑓= −(1−𝜎)(1−𝛽)𝑓
+2(1+𝜎)
+, thus we conclude that 𝑝𝐻
+𝑅is decreasing in 𝑓.
+d𝑝𝐻
+𝑅
+d𝜎= (1−𝛽)𝑓
+(1+𝜎)2 , thus we
+conclude that 𝑝𝐻
+𝑅is increasing in 𝜎.
+In summary, we have 𝑝𝐻
+𝑅is non-increasing in 𝑓and increasing in 𝜎for the high-quality retailer.
+(2) Property of 𝑝𝐿
+𝑅for the low-quality retailer.
+(i) when 𝑓≥(1−𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+: we have 𝑝𝐿
+𝑅= 𝑞𝐻+𝑞𝐿−𝜎(𝑞𝐻−𝑞𝐿)
+4
+. Obviously, it is independent of 𝑓.
+d𝑝∗
+𝑅
+d𝜎= −𝑞𝐻−𝑞𝐿
+4
+> 0, thus we conclude that 𝑝𝐿
+𝑅is
+decreasing in 𝜎.
+(ii) when 𝐹𝑙≤𝑓≤
+(1−𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+: we have 𝑝𝐿
+𝑅=
+[(𝑞𝐻+𝑞𝐿)−𝜎(𝑞𝐻−𝑞𝐿)](1−𝛽)𝑓
+(1−𝜎)(𝑞𝐻−𝑞𝐿)
+, and
+d𝑝∗
+𝑅
+d𝑓
+=
+[(𝑞𝐻+𝑞𝐿)−𝜎(𝑞𝐻−𝑞𝐿)](1−𝛽)
+(1−𝜎)(𝑞𝐻−𝑞𝐿)
+> 0, i.e., 𝑝𝐿
+𝑅is increasing in 𝑓.
+d𝑝∗
+𝑅
+d𝜎=
+2𝑞𝐿(1−𝛽)𝑓
+(1−𝜎)2(𝑞𝐻−𝑞𝐿) > 0, i.e., 𝑝𝐿
+𝑅is increasing in 𝜎.
+(iii) when 𝑓≤𝐹𝑙: we have 𝑝𝐿
+𝑅= 𝑞𝐿+(1−𝛽)𝑓
+2
+−(𝑞𝐻−𝑞𝐿)(𝛽𝑓+𝑡)
+2𝑞𝐻
+. Taking its derivative, we have
+d𝑝∗
+𝑅
+d𝑓
+= (1−𝛽)𝑞𝐻−𝛽(𝑞𝐻−𝑞𝐿)
+2𝑞𝐻
+> 0. It is decreasing in 𝑓
+when 𝑞𝐿
+𝑞𝐻≤2𝛽−1
+𝛽
+, and increasing in 𝑓when 𝑞𝐿
+𝑞𝐻≥2𝛽−1
+𝛽
+. As for the impact of 𝜎, it is obvious that 𝑝𝐿
+𝑅is independent of 𝜎.
+In summary, we conclude that 𝑝𝐿
+𝑅: (i) is decreasing in 𝑓when 𝑓≤𝐹𝑙,
+𝑞𝐿
+𝑞𝐻≤2𝛽−1
+𝛽
+; (ii) is non-decreasing in 𝑓otherwise.
+𝑝𝐿
+𝑅(i) is increasing in 𝜎when 𝐹𝑙≤𝑓≤(1−𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+; (ii) is non-increasing in 𝜎otherwise.
+□
+Proof of Lemma 3. Note that there are no customer returns except for Case (3)-(iii) of Lemma 1. The return rate in Case (3)-(iii) is 𝑑𝑟𝐿
+𝑅∕𝑑𝐿
+𝑅, where
+𝑑𝑟𝐿
+𝑅= [𝑞𝐻𝑞𝐿−𝑡(𝑞𝐻−𝑞𝐿)](𝑞𝐻−𝑞𝐿)
+2𝑞2
+𝐻𝑞𝐿
+−2(1−𝛽)𝑓
+(1−𝜎)𝑞𝐻−(𝑞𝐻−𝛽𝑞𝐿)(𝑞𝐻−𝑞𝐿)𝑓
+2𝑞2
+𝐻𝑞𝐿
+and 𝑑𝐿
+𝑅= 1 −𝑞𝐿(𝛽𝑓+𝑡)
+2𝑞2
+𝐻
+−(3+𝜎−4𝛽)𝑓+(1−𝜎)(𝑞𝐿−𝑡)
+2(1−𝜎)𝑞𝐻
+.
+Next, we take the derivative of 𝑑𝑟𝐿
+𝑅∕𝑑𝐿
+𝑅to explore its monotonicity with the return freight fee 𝑓and the signal efficiency 𝜎.
+(1) The monotonicity of the return rate 𝑑𝑟𝐿
+𝑅∕𝑑𝐿
+𝑅in 𝑓
+Taking the derivatives of 𝑑𝑟𝐿
+𝑅
+and 𝑑𝐿
+𝑅with respect to 𝑓respectively, we have
+d𝑑𝑟𝐿
+𝑅
+d𝑓
+=
+(1−𝜎)(𝑞𝐻−𝑞𝐿)(𝑞𝐻−𝛽𝑞𝐿)+4(1−𝛽)𝑞𝐻𝑞𝐿
+−2(1−𝜎)𝑞2
+𝐻𝑞𝐿
+<
+0,
+d𝑑𝐿
+𝑅
+d𝑓
+=
+(1−𝜎)𝛽𝑞𝐿+(3+𝜎−4𝛽)𝑞𝐻
+−2(1−𝜎)𝑞2
+𝐻
+, where
+d𝑑𝐿
+𝑅
+d𝑓is larger than 0 when 𝑞𝐿
+𝑞𝐻≤4𝛽−𝜎−3
+𝛽(1−𝜎) , is smaller than 0 otherwise.
+Taking the derivatives of 𝑑𝑟𝐿
+𝑅∕𝑑𝐿
+𝑅with 𝑓, we have
+d(𝑑𝑟𝐿
+𝑅∕𝑑𝐿
+𝑅)
+d𝑓
+=
+[
+d𝑑𝑟𝐿
+𝑅
+d𝑓𝑑𝐿
+𝑅−
+d𝑑𝐿
+𝑅
+d𝑓𝑑𝑟𝐿
+𝑅
+]
+∕(𝑑𝐿
+𝑅
+)2 .
+(a) when 𝑞𝐿
+𝑞𝐻≤4𝛽−𝜎−3
+𝛽(1−𝜎) , it is easy to find that
+d(𝑑𝑟𝐿
+𝑅∕𝑑𝐿
+𝑅)
+d𝑓
+< 0;
+(b) when 𝑞𝐿
+𝑞𝐻≥4𝛽−𝜎−3
+𝛽(1−𝜎) , we have
+d𝑑𝑟𝐿
+𝑅
+d𝑓
+= −(1−𝜎)(𝑞𝐻−𝑞𝐿)(𝑞𝐻−𝛽𝑞𝐿)+4(1−𝛽)𝑞𝐻𝑞𝐿
+2(1−𝜎)𝑞2
+𝐻𝑞𝐿
+<
+d𝑑𝐿
+𝑅
+d𝑓= −(1−𝜎)𝛽𝑞𝐿+(3+𝜎−4𝛽)𝑞𝐻
+2(1−𝜎)𝑞2
+𝐻
+< 0. This is because (1−𝜎)𝛽𝑞𝐿+(3+𝜎−4𝛽)𝑞𝐻
+−2(1−𝜎)𝑞2
+𝐻
+−
+(1−𝜎)(𝑞𝐻−𝑞𝐿)(𝑞𝐻−𝛽𝑞𝐿)+4(1−𝛽)𝑞𝐻𝑞𝐿
+−2(1−𝜎)𝑞2
+𝐻𝑞𝐿
+= 𝑞𝐻−𝛽𝑞𝐿
+2𝑞𝐻𝑞𝐿> 0.
+Thus,
+d𝑑𝑟𝐿
+𝑅
+d𝑓𝑑𝐿
+𝑅<
+d𝑑𝑟𝐿
+𝑅
+d𝑓𝑑𝑟𝐿
+𝑅<
+d𝑑𝐿
+𝑅
+d𝑓𝑑𝑟𝐿
+𝑅, which implies
+d(𝑑𝑟𝐿
+𝑅∕𝑑𝐿
+𝑅)
+d𝑓
+< 0. Putting two parts together, we have
+d(𝑑𝑟𝐿
+𝑅∕𝑑𝐿
+𝑅)
+d𝑓
+< 0.
+(2) The monotonicity of the return rate 𝑑𝑟𝐿
+𝑅∕𝑑𝐿
+𝑅in 𝜎
+Taking the derivatives of 𝑑𝑟𝐿
+𝑅, 𝑑𝐿
+𝑅with respect to 𝜎, we have
+d𝑑𝑟𝐿
+𝑅
+d𝜎
+=
+d𝑑𝐿
+𝑅
+d𝜎= −2(1−𝛽)𝑓
+(1−𝜎)2𝑞𝐻< 0.
+Taking the derivatives of 𝑑𝑟𝐿
+𝑅∕𝑑𝐿
+𝑅with respect to 𝜎, we have
+d(𝑑𝑟𝐿
+𝑅∕𝑑𝐿
+𝑅)
+d𝜎
+=
+[
+d𝑑𝑟𝐿
+𝑅
+d𝜎𝑑𝐿
+𝑅−
+d𝑑𝐿
+𝑅
+d𝜎𝑑𝑟𝐿
+𝑅
+]
+∕(𝑑𝐿
+𝑅
+)2 < 0.
+□
+Proof of Proposition 2. Note that there are no customer returns except for Case (3)-(iii) of the low-quality retailer in Lemma 1. For Case (3)-(iii),
+𝑎𝐿= (𝑑𝑟𝐿
+𝑅∕𝑑𝐿
+𝑅
+)𝛽𝑓, we take its derivative with respect to 𝑓and 𝜎to find the monotonicity.
+(1) The monotonicity of the RFI premium 𝑎𝐿in 𝑓
+Note that 𝑎𝐿= (𝑑𝑟𝐿
+𝑅∕𝑑𝐿
+𝑅
+)𝛽𝑓, take the derivative with respect to 𝑓, we have
+d𝑎𝐿
+d𝑓= 𝛽𝑑𝑟𝐿
+𝑅∕𝑑𝐿
+𝑅+ 𝛽𝑓
+[
+d𝑑𝑟𝐿
+𝑅
+d𝑓𝑑𝐿
+𝑅−
+d𝑑𝐿
+𝑅
+d𝑓𝑑𝑟𝐿
+𝑅
+]
+∕(𝑑𝐿
+𝑅
+)2
+=
+𝛽
+(𝑑𝐿
+𝑅
+)2 ⋅
+[
+𝑑𝑟𝐿
+𝑅𝑑𝐿
+𝑅+ 𝑓
+(
+d𝑑𝑟𝐿
+𝑅
+d𝑓𝑑𝐿
+𝑅−
+d𝑑𝐿
+𝑅
+d𝑓𝑑𝑟𝐿
+𝑅
+)]
+.
+(A.9)
+As for the second equality (A.9), the first part
+𝛽
+(
+𝑑𝐿
+𝑅
+)2 is always larger than 0. For the second part, note that 𝑑𝑟𝐿
+𝑅𝑑𝐿
+𝑅> 0 but
+(
+d𝑑𝑟𝐿
+𝑅
+d𝑓𝑑𝐿
+𝑅−
+d𝑑𝐿
+𝑅
+d𝑓𝑑𝑟𝐿
+𝑅
+)
+< 0, thus the second part is greater than 0 iff 𝑓< ̂𝐹, where ̂𝐹satisfies 𝑑𝑟𝐿
+𝑅𝑑𝐿
+𝑅+ ̂𝐹
+(
+d𝑑𝑟𝐿
+𝑅
+d𝑓𝑑𝐿
+𝑅−
+d𝑑𝐿
+𝑅
+d𝑓𝑑𝑟𝐿
+𝑅
+)
+= 0.
+
+
+========== PAGE 19 ==========
+International Journal of Production Economics 256 (2023) 108752
+19
+X. Li et al.
+(2) The monotonicity of the RFI premium 𝑎𝐿in 𝜎
+d𝑎𝐿
+d𝜎=
+d(𝑑𝑟𝐿
+𝑅∕𝑑𝐿
+𝑅)
+d𝜎
+𝛽𝑓, this derivative is determined by
+d(𝑑𝑟𝐿
+𝑅∕𝑑𝐿
+𝑅)
+d𝜎
+, thus the property degenerates to the proof of part (2) in Lemma 3, i.e., 𝑎𝐿is
+decreasing in 𝜎.
+□
+Proof of Proposition 3. We explore the impacts of the return freight fee 𝑓and the signal efficiency 𝜎on 𝛱𝑖
+𝑅, 𝑖= 𝐻, 𝐿regarding 𝑞= 𝑞𝐻and
+𝑞= 𝑞𝐿, respectively.
+Case I: 𝑞= 𝑞𝐻
+(i) when 𝑓≥𝐹ℎ: we have 𝛱𝐻
+𝑅
+=
+(1+𝜎)𝑞𝐻+(1−𝜎)(1−𝑞𝐿)
+8
+. it is obvious that 𝛱𝐻
+𝑅is independent of 𝑓. Taking its derivative with 𝜎, we have
+d𝛱𝐻
+𝑅
+d𝜎
+= 𝑞𝐻−𝑞𝐿
+8
+> 0, thus we conclude that 𝛱𝐻
+𝑅is increasing in 𝜎.
+(ii) when 𝑓≤𝐹ℎ: we have 𝛱𝐻
+𝑅= [(1+𝜎)𝑞𝐻−(1−𝜎)(1−𝛽)𝑓]2
+4(1+𝜎)2𝑞𝐻
+. Taking its derivative, we have
+d𝛱𝐻
+𝑅
+d𝑓
+= −[(1+𝜎)𝑞𝐻−(1−𝜎)(1−𝛽)𝑓](1−𝜎)(1−𝛽)
+2(1+𝜎)2𝑞𝐻
+< 0,
+d𝛱𝐻
+𝑅
+d𝜎
+= [(1+𝜎)𝑞𝐻−(1−𝜎)(1−𝛽)𝑓](1−𝛽)𝑓
+(1+𝜎)3𝑞𝐻
+> 0.
+In summary, we have 𝛱𝐻
+𝑅is non-increasing in 𝑓, and increasing in 𝜎for the high-quality retailer.
+Case II: 𝑞= 𝑞𝐿
+As for the low-quality retailer, i.e., 𝑞= 𝑞𝐿, we have the following results.
+(i) when 𝑓≥
+(1−𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+: we have 𝛱𝐿
+𝑅=
+(1−𝜎)𝑞𝐻+(1+𝜎)𝑞𝐿
+8
+. it is obvious that 𝛱𝐿
+𝑅is independent of 𝑓; Taking its derivative with 𝜎, we have
+d𝛱𝐿
+𝑅
+d𝜎
+= −𝑞𝐻−𝑞𝐿
+8
+< 0, thus we conclude that 𝛱𝐿
+𝑅is decreasing in 𝜎.
+(ii) when 𝐹𝑙≤𝑓≤(1−𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+: we have 𝛱𝐿
+𝑅= [(1−𝜎)𝑞𝐻+(1+𝜎)𝑞𝐿][(1−𝜎)(𝑞𝐻−𝑞𝐿)−2(1−𝛽)𝑓](1−𝛽)𝑓
+(1−𝜎)2(𝑞𝐻−𝑞𝐿)2
+. Taking its derivative, we have
+d𝛱𝐿
+𝑅
+d𝑓
+= [(1−𝜎)𝑞𝐻+(1+𝜎)𝑞𝐿][(1−𝜎)(𝑞𝐻−𝑞𝐿)−4(1−𝛽)2𝑓]
+(1−𝜎)2(𝑞𝐻−𝑞𝐿)2
+> 0,
+d𝛱𝐿
+𝑅
+d𝜎
+= 2(1−𝛽)𝑓[(𝑞𝐻−𝑞𝐿)𝑞𝐿−(1−𝛽)𝑓(𝑞𝐻+3𝑞𝐿)−𝜎(𝑞𝐻−𝑞𝐿)(𝑞𝐿−(1−𝛽)𝑓)]
+(1−𝜎)3(𝑞𝐻−𝑞𝐿)2
+.
+As for the second equation
+d𝛱𝐿
+𝑅
+d𝜎, we have
+d𝛱𝐿
+𝑅
+d𝜎
+≥0 when 𝜎≤
+(𝑞𝐻−𝑞𝐿)𝑞𝐿−(1−𝛽)𝑓(𝑞𝐻+3𝑞𝐿)
+(𝑞𝐻−𝑞𝐿)(𝑞𝐿−(1−𝛽)𝑓)
+, and
+d𝛱𝐿
+𝑅
+d𝜎
+≤0 when 𝜎≥
+(𝑞𝐻−𝑞𝐿)𝑞𝐿−(1−𝛽)𝑓(𝑞𝐻+3𝑞𝐿)
+(𝑞𝐻−𝑞𝐿)(𝑞𝐿−(1−𝛽)𝑓)
+. In
+summary, 𝛱𝐿
+𝑅is firstly increasing in 𝜎then decreasing in 𝜎.
+(iii) when 𝑓≤𝐹𝑙: we have
+𝛱𝐿
+𝑅= (1 −𝜎)[(𝑞𝐿−𝑓−𝑡)𝑞𝐻+ 𝑞𝐿(𝑡+ 𝛽𝑓)]2 + 4(1 −𝛽)𝑓𝑞𝐻𝑞𝐿[(1 −𝜎)𝑞𝐻+ 2(𝑡+ 𝛽𝑓)]
+4(1 −𝜎)𝑞2
+𝐻𝑞𝐿
+.
+Taking its derivative, we have
+d𝛱𝐿
+𝑅
+d𝜎
+= 2(1−𝛽)𝑓(𝑡+𝛽𝑓)
+𝑞𝐻
+> 0.
+d𝛱𝐿
+𝑅
+d𝑓
+= (𝛽𝑞𝐿−𝑞𝐻)[(𝑞𝐿−𝑡−𝑓)𝑞𝐻+𝑞𝐿(𝑡+𝛽𝑓)]
+2𝑞2
+𝐻𝑞𝐿
++ (1−𝛽)[(1−𝜎)𝑞𝐻+2(𝑡+2𝛽𝑓)]
+(1−𝜎)𝑞𝐻
+=
+𝐴1−(1−𝜎)𝑞2
+𝐻𝑞𝐿[(2𝛽−1)−𝛽𝑞𝐿
+𝑞𝐻]+𝐴2𝑓
+2(1−𝜎)𝑞2
+𝐻𝑞𝐿
+,
+where 𝐴1 = [4(1 −𝛽)𝑞𝐻𝑞𝐿+ (1 −𝜎)(𝑞𝐻−𝛽𝑞𝐿)(𝑞𝐻−𝑞𝐿)]𝑡> 0, 𝐴2 = [(1 −𝜎)(𝑞𝐻−𝛽𝑞𝐿)2 + 8𝛽(1 −𝛽)𝑞𝐻𝑞𝐿] > 0. Hence, (1) when 𝑞𝐿
+𝑞𝐻≥2𝛽−1
+𝛽
+,
+d𝛱𝐿
+𝑅
+d𝑓
+≥0;
+(2) when 𝑞𝐿
+𝑞𝐻≤2𝛽−1
+𝛽
+, 𝑓≥
+(1−𝜎)𝑞2
+𝐻𝑞𝐿[(2𝛽−1)−𝛽𝑞𝐿
+𝑞𝐻]−𝐴1
+𝐴2
+,
+d𝛱𝐿
+𝑅
+d𝑓
+≥0; (3) when 𝑞𝐿
+𝑞𝐻≤2𝛽−1
+𝛽
+, 𝑓≤
+(1−𝜎)𝑞2
+𝐻𝑞𝐿[(2𝛽−1)−𝛽𝑞𝐿
+𝑞𝐻]−𝐴1
+𝐴2
+,
+d𝛱𝐿
+𝑅
+d𝑓
+≤0.
+In summary, we conclude that the low-quality retailer’s profit is inversely U-shaped in 𝑓when 𝑞𝐿
+𝑞𝐻≤2𝛽−1
+𝛽
+; otherwise, it is non-decreasing in 𝑓.
+As for the impact of 𝜎, when 𝑓≥(1−𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+, 𝛱𝐿
+𝑅is decreasing in 𝜎; when 𝐹𝑙≤𝑓≤(1−𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+, 𝜎has an inverse U-shaped impact on 𝛱𝐿
+𝑅; when
+𝑓≤𝐹𝑙, 𝛱𝐿
+𝑅is increasing in 𝜎.
+□
+Proof of Proposition 4. To explore when the retailer can employ the markup price with the adoption of RFI, we compare 𝑝𝑖
+𝑅, 𝑖= 𝐻, 𝐿and 𝑝𝑖
+𝑁
+regarding quality 𝑞= {𝑞𝐻, 𝑞𝐿} respectively.
+Case I: 𝑞= 𝑞𝐻
+First, we compare 𝑝𝐻
+𝑅and 𝑝𝐻
+𝑁to find the condition when the high-quality retailer employs the markup price with adoption of RFI, i.e., 𝑝𝐻
+𝑅≥𝑝𝐻
+𝑁.
+To achieve this goal, we first show two algebra facts. Given these facts, we argue that, regarding the thresholds of the optimal pricing strategies,
+𝑝𝐻
+𝑅≥𝑝𝐻
+𝑁.
+Firstly, from the perspective of algebra, we have:
+(1)
+(1+𝜎)𝑞𝐻+(1−𝜎)𝑞𝐿
+4
+≥𝑞𝐻+𝑞𝐿
+4
+always holds.
+(2)
+𝑞𝐻
+2 −(1−𝜎)(1−𝛽)𝑓
+2(1+𝜎)
+≥𝑞𝐻−𝑓
+2
+always holds.
+Regarding the thresholds of the optimal pricing strategies with/ without the RFI, the retailer always charges a higher price by adopting the RFI
+service because
+max
+{ (1+𝜎)𝑞𝐻+(1−𝜎)𝑞𝐿
+4
+, 𝑞𝐻
+2 −(1−𝜎)(1−𝛽)𝑓]
+2(1+𝜎)
+}
+= 𝑝𝐻
+𝑅≥max
+{ 𝑞𝐻+𝑞𝐿
+4
+, 𝑞𝐻−𝑓
+2
+}
+= 𝑝𝐻
+𝑁.
+Case II: 𝑞= 𝑞𝐿
+Next, we compare 𝑝𝐿
+𝑅and 𝑝𝐿
+𝑁regarding different return freight fees, to find the conditions when the retailer with 𝑞= 𝑞𝐿charges a high price
+under the RFI case, i.e., 𝑝𝐿
+𝑅≥𝑝𝐿
+𝑁.
+When 𝑓≥max{ 𝑞𝐻−𝑞𝐿
+4
+, (1−𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+}, i.e., 𝑝𝐿
+𝑅= (1−𝜎)𝑞𝐻+(1+𝜎)𝑞𝐿
+4
+and 𝑝𝐿
+𝑁= 𝑞𝐻+𝑞𝐿
+4
+, where (1−𝜎)𝑞𝐻+(1+𝜎)𝑞𝐿
+4
+≤𝑞𝐻+𝑞𝐿
+4
+. That is, the pricing strategy under
+the RFI case is always below the strategy under the case without RFI.
+When 𝑓≤min{𝐹𝑙, 𝑓𝑙}, we have 𝑝𝐿
+𝑅= 𝑞𝐿+(1−𝛽)𝑓
+2
+−(𝑡+𝛽𝑓)(𝑞𝐻−𝑞𝐿)
+2𝑞𝐻
+≤𝑞𝐿+𝑓
+2
+−𝑡(𝑞𝐻−𝑞𝐿)
+2𝑞𝐻
+= 𝑝𝐿
+𝑁.
+When min{𝐹𝑙, 𝑓𝑙} ≤𝑓≤max{ 𝑞𝐻−𝑞𝐿
+4
+,
+(1−𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+}, we compare 𝑝𝐿
+𝑅and 𝑝𝐿
+𝑁conditional on the size of 𝑞𝐻−𝑞𝐿
+4
+,
+(1−𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+, 𝐹𝑙, 𝑓𝑙. Before that,
+we firstly explore the size of 𝑞𝐻−𝑞𝐿
+4
+,
+(1−𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+, 𝐹𝑙, 𝑓𝑙. We have the following 5 Cases depending on the value of 𝜎.
+Next, we discuss the comparison of pricing strategy regarding different cases in Table A.8.
+
+
+========== PAGE 20 ==========
+International Journal of Production Economics 256 (2023) 108752
+20
+X. Li et al.
+Table A.8
+Threshold comparison.
+Case
+Condition
+Size
+Case 1
+𝜎≤𝛽
+(1−𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+≥𝑞𝐻−𝑞𝐿
+4
+≥𝐹𝑙≥𝑓𝑙
+Case 2
+(1−𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+≥𝐹𝑙≥𝑞𝐻−𝑞𝐿
+4
+≥𝑓𝑙
+Case 3
+𝛽< 𝜎≤
+(5𝑞𝐻−𝑞𝐿)𝛽
+4𝑞𝐻+(𝑞𝐻−𝑞𝐿)𝛽
+𝑞𝐻−𝑞𝐿
+4
+≥(1−𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+≥𝐹𝑙≥𝑓𝑙
+Case 4
+(5𝑞𝐻−𝑞𝐿)𝛽
+4𝑞𝐻+(𝑞𝐻−𝑞𝐿)𝛽< 𝜎≤1 −
+4(1−𝛽)𝑓𝑙
+𝑞𝐻−𝑞𝐿
+𝑞𝐻−𝑞𝐿
+4
+≥(1−𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+≥𝑓𝑙≥𝐹𝑙
+Case 5
+𝜎> 1 −
+4(1−𝛽)𝑓𝑙
+𝑞𝐻−𝑞𝐿
+𝑞𝐻−𝑞𝐿
+4
+≥𝑓𝑙≥(1−𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+≥𝐹𝑙
+Case 1
+Given the relationship under Case 1, we compare 𝑝𝐿
+𝑅and 𝑝𝐿
+𝑁depending on 𝑓.
+(i) when 𝑞𝐻−𝑞𝐿
+4
+≤𝑓≤(1−𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+, we have 𝑝𝐿
+𝑅= [(1−𝜎)𝑞𝐻+(1+𝜎)𝑞𝐿](1−𝛽)𝑓
+(1−𝜎)(𝑞𝐻−𝑞𝐿)
+< (1−𝜎)𝑞𝐻+(1+𝜎)𝑞𝐿
+4
+≤𝑞𝐻+𝑞𝐿
+4
+= 𝑝𝐿
+𝑁. Note that the first inequality is from the
+property of 𝑝𝐿
+𝑅we discussed in Corollary 1, that 𝑝𝐿
+𝑅is continuous and non-decreasing in 𝑓;
+(ii) when 𝐹𝑙≤𝑓
+≤
+𝑞𝐻−𝑞𝐿
+4
+, we have 𝑝𝐿
+𝑅=
+[(1−𝜎)𝑞𝐻+(1+𝜎)𝑞𝐿](1−𝛽)𝑓
+(1−𝜎)(𝑞𝐻−𝑞𝐿)
+and 𝑝𝐿
+𝑁
+=
+(𝑞𝐻+𝑞𝐿)𝑓
+(𝑞𝐻−𝑞𝐿) . 𝑝𝐿
+𝑅≥𝑝𝐿
+𝑁holds when 𝜎≥
+(𝑞𝐻+𝑞𝐿)𝛽
+2𝑞𝐿+(𝑞𝐻−𝑞𝐿)𝛽, where
+𝛽≤
+(5𝑞𝐻−𝑞𝐿)𝛽
+4𝑞𝐻+(𝑞𝐻−𝑞𝐿)𝛽≤
+(𝑞𝐻+𝑞𝐿)𝛽
+2𝑞𝐿+(𝑞𝐻−𝑞𝐿)𝛽. Hence, we conclude that 𝑝𝐿
+𝑅≤𝑝𝐿
+𝑁in this interval;
+(iii) when 𝑓𝑙≤𝑓≤𝐹𝑙, we have 𝑝𝐿
+𝑅= 𝑞𝐿+(1−𝛽)𝑓
+2
+−(𝑡+𝛽𝑓)(𝑞𝐻−𝑞𝐿)
+2𝑞𝐻
+and 𝑝𝐿
+𝑁= (𝑞𝐻+𝑞𝐿)𝑓
+(𝑞𝐻−𝑞𝐿) . 𝑝𝐿
+𝑅≥𝑝𝐿
+𝑁is equivalent to 𝑓≤
+𝑞𝐻𝑞𝐿−𝑡(𝑞𝐻−𝑞𝐿)
+2𝑞𝐻[ 𝑞𝐻+𝑞𝐿
+𝑞𝐻−𝑞𝐿+ 𝛽(𝑞𝐻−𝑞𝐿)
+2𝑞𝐻
+−1−𝛽
+2 ] = 𝑓𝐴by
+rearranging this inequality. However, 𝑓𝐴≤𝑓𝑙is equivalent to (𝑞𝐻−𝑞𝐿)(2 −𝑞𝐿∕𝑞𝐻)𝛽≥0. Hence, under Case 1, we conclude that 𝑝𝐿
+𝑅≤𝑝𝐿
+𝑁.
+Case 2
+Given the relationship under Case 2, we compare 𝑝𝐿
+𝑅and 𝑝𝐿
+𝑁depending on 𝑓.
+(i) when 𝐹𝑙≤𝑓≤(1−𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+, we have 𝑝𝐿
+𝑅= [(1−𝜎)𝑞𝐻+(1+𝜎)𝑞𝐿](1−𝛽)𝑓
+(1−𝜎)(𝑞𝐻−𝑞𝐿)
+and 𝑝𝐿
+𝑁= 𝑞𝐻+𝑞𝐿
+4
+. Referring to the same argument in Case 1-(i), we conclude
+that 𝑝𝐿
+𝑅≤𝑝𝐿
+𝑁in this interval;
+(ii) when 𝑞𝐻−𝑞𝐿
+4
+≤𝑓≤𝐹𝑙, we have 𝑝𝐿
+𝑅≤𝑝𝐿
+𝑁due to same argument in Case 1-(ii);
+(iii) when 𝑓𝑙≤𝑓≤𝑞𝐻−𝑞𝐿
+4
+, we have 𝑝𝐿
+𝑅= 𝑞𝐿+(1−𝛽)𝑓
+2
+−(𝑡+𝛽𝑓)(𝑞𝐻−𝑞𝐿)
+2𝑞𝐻
+and 𝑝𝐿
+𝑁= (𝑞𝐻+𝑞𝐿)𝑓
+(𝑞𝐻−𝑞𝐿) . Referring to the same argument in Case 1-(iii), we conclude
+that, under case 2, we have 𝑝𝐿
+𝑅≤𝑝𝐿
+𝑁.
+Case 3
+Given the relationship under Case 3, we compare 𝑝𝐿
+𝑅and 𝑝𝐿
+𝑁depending on 𝑓.
+(i) when (1−𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+≤𝑓≤𝑞𝐻−𝑞𝐿
+4
+, we have 𝑝𝐿
+𝑅= (1−𝜎)𝑞𝐻+(1+𝜎)𝑞𝐿
+4
+and 𝑝𝐿
+𝑁= (𝑞𝐻+𝑞𝐿)𝑓
+(𝑞𝐻−𝑞𝐿) . 𝑝𝐿
+𝑅≥𝑝𝐿
+𝑁is equivalent to 𝑓≤𝑞𝐻−𝑞𝐿
+4
+[1 −𝜎𝑞𝐻−𝑞𝐿
+𝑞𝐻+𝑞𝐿]. Since
+𝑞𝐻−𝑞𝐿
+4
+[1 −𝜎𝑞𝐻−𝑞𝐿
+𝑞𝐻+𝑞𝐿] ≥(1−𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+when 𝜎≥
+(𝑞𝐻+𝑞𝐿)𝛽
+2𝑞𝐿+(𝑞𝐻−𝑞𝐿)𝛽, we conclude 𝑝𝐿
+𝑅≤𝑝𝐿
+𝑁in this case;
+(ii) when 𝐹𝑙≤𝑓≤
+(1−𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+, we have 𝑝𝐿
+𝑅=
+[(1−𝜎)𝑞𝐻+(1+𝜎)𝑞𝐿](1−𝛽)𝑓
+(1−𝜎)(𝑞𝐻−𝑞𝐿)
+and 𝑝𝐿
+𝑁=
+(𝑞𝐻+𝑞𝐿)𝑓
+(𝑞𝐻−𝑞𝐿) . Referring to the same argument in Case 1-(ii), we
+conclude that 𝑝𝐿
+𝑅≤𝑝𝐿
+𝑁in this interval;
+(iii) when 𝑓𝑙≤𝑓≤𝐹𝑙, we have 𝑝𝐿
+𝑅= 𝑞𝐿+(1−𝛽)𝑓
+2
+−(𝑡+𝛽𝑓)(𝑞𝐻−𝑞𝐿)
+2𝑞𝐻
+and 𝑝𝐿
+𝑁= (𝑞𝐻+𝑞𝐿)𝑓
+(𝑞𝐻−𝑞𝐿) . Referring to the same argument in Case 1-(iii), we conclude
+that, under Case 3, we have 𝑝𝐿
+𝑅≤𝑝𝐿
+𝑁.
+Case 4
+Given the relationship under Case 4, we compare 𝑝𝐿
+𝑅and 𝑝𝐿
+𝑁depending on 𝑓.
+(i) when (1−𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+≤𝑓≤𝑞𝐻−𝑞𝐿
+4
+, we have 𝑝𝐿
+𝑅= (1−𝜎)𝑞𝐻+(1+𝜎)𝑞𝐿
+4
+and 𝑝𝐿
+𝑁= (𝑞𝐻+𝑞𝐿)𝑓
+(𝑞𝐻−𝑞𝐿) . 𝑝𝐿
+𝑅≥𝑝𝐿
+𝑁is equivalent to 𝑓≤𝑞𝐻−𝑞𝐿
+4
+[1 −𝜎𝑞𝐻−𝑞𝐿
+𝑞𝐻+𝑞𝐿]. Referring
+to the discussion in case 3-(i), we conclude that 𝑝𝐿
+𝑅≥𝑝𝐿
+𝑁when 𝜎≥
+(𝑞𝐻+𝑞𝐿)𝛽
+2𝑞𝐿+(𝑞𝐻−𝑞𝐿)𝛽and (1−𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+≤𝑓≤𝑞𝐻−𝑞𝐿
+4
+[1 −𝜎𝑞𝐻−𝑞𝐿
+𝑞𝐻+𝑞𝐿];
+(ii) when 𝑓𝑙≤𝑓≤(1−𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+, we have 𝑝𝐿
+𝑅= [(1−𝜎)𝑞𝐻+(1+𝜎)𝑞𝐿](1−𝛽)𝑓
+(1−𝜎)(𝑞𝐻−𝑞𝐿)
+and 𝑝𝐿
+𝑁= (𝑞𝐻+𝑞𝐿)𝑓
+(𝑞𝐻−𝑞𝐿) . 𝑝𝐿
+𝑅≥𝑝𝐿
+𝑁holds when 𝜎≥
+(𝑞𝐻−𝑞𝐿)𝛽
+2𝑞𝐿+(𝑞𝐻−𝑞𝐿)𝛽based on the
+argument in Case 1-(ii);
+(iii) when 𝐹𝑙≤𝑓≤𝑓𝑙, we have 𝑝𝐿
+𝑅= [(1−𝜎)𝑞𝐻+(1+𝜎)𝑞𝐿](1−𝛽)𝑓
+(1−𝜎)(𝑞𝐻−𝑞𝐿)
+and 𝑝𝐿
+𝑁= 𝑞𝐿+𝑓
+2
+−𝑡(𝑞𝐻−𝑞𝐿)
+2𝑞𝐻
+. 𝑝𝐿
+𝑅≥𝑝𝐿
+𝑁is equivalent to 𝑓≥
+𝑞𝐻𝑞𝐿−𝑡(𝑞𝐻−𝑞𝐿)
+2𝑞𝐻[ (1−𝛽)(𝑞𝐻+𝑞𝐿)
+(1−𝜎)(𝑞𝐻−𝑞𝐿) −𝜎(1−𝛽)
+1−𝜎−1
+2 ] = 𝑓𝐵.
+Note that 𝑓𝐵−̄𝑓𝑙≤0 is equivalent to (2𝑞𝐿+ (𝑞𝐻−𝑞𝐿)𝛽)𝜎≥(𝑞𝐻−𝑞𝐿)𝛽. Hence, when 𝜎≥
+(𝑞𝐻−𝑞𝐿)𝛽
+2𝑞𝐿+(𝑞𝐻−𝑞𝐿)𝛽, 𝑓𝐵≤̄𝑓𝑙. Then we conclude that
+𝑝𝐿
+𝑅≥𝑝𝐿
+𝑁holds when 𝑓𝐵≤𝑓≤̄𝑓𝑙and 𝜎≥
+(𝑞𝐻−𝑞𝐿)𝛽
+2𝑞𝐿+(𝑞𝐻−𝑞𝐿)𝛽.
+Case 5
+Given the relationship under Case 5, we compare 𝑝𝐿
+𝑅and 𝑝𝐿
+𝑁depending on 𝑓.
+(i) when 𝑓𝑙≤𝑓≤𝑞𝐻−𝑞𝐿
+4
+, we have 𝑝𝐿
+𝑅= (1−𝜎)𝑞𝐻+(1+𝜎)𝑞𝐿
+4
+and 𝑝𝐿
+𝑁= (𝑞𝐻+𝑞𝐿)𝑓
+(𝑞𝐻−𝑞𝐿) . 𝑝𝐿
+𝑅≥𝑝𝐿
+𝑁is equivalent to 𝑓≤𝑞𝐻−𝑞𝐿
+4
+[1 −𝜎𝑞𝐻−𝑞𝐿
+𝑞𝐻+𝑞𝐿];
+(ii) when (1−𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+≤𝑓≤𝑓𝑙, we have 𝑝𝐿
+𝑅= (1−𝜎)𝑞𝐻+(1+𝜎)𝑞𝐿
+4
+and 𝑝𝐿
+𝑁= 𝑞𝐿+𝑓
+2
+−𝑡(𝑞𝐻−𝑞𝐿)
+2𝑞𝐻
+. 𝑝𝐿
+𝑅≥𝑝𝐿
+𝑁is equivalent to 𝑓≤(𝑞𝐻−𝑞𝐿)[(1−𝜎)𝑞𝐻+2𝑡]
+2𝑞𝐻
+;
+(iii) when 𝐹𝑙≤𝑓≤(1−𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+, we have 𝑝𝐿
+𝑅= [(1−𝜎)𝑞𝐻+(1+𝜎)𝑞𝐿](1−𝛽)𝑓
+(1−𝜎)(𝑞𝐻−𝑞𝐿)
+and 𝑝𝐿
+𝑁= 𝑞𝐿+𝑓
+2
+−𝑡(𝑞𝐻−𝑞𝐿)
+2𝑞𝐻
+. 𝑝𝐿
+𝑅≥𝑝𝐿
+𝑁is equivalent to 𝑓≥𝑓𝐵.
+By summarizing all the above cases, we show the conditions of 𝑝𝐿
+𝑅≥𝑝𝐿
+𝑁in Table A.9.
+□
+
+
+========== PAGE 21 ==========
+International Journal of Production Economics 256 (2023) 108752
+21
+X. Li et al.
+Table A.9
+Condition of 𝑝𝐿
+𝑅≥𝑝𝐿
+𝑁.
+Condition
+(1)
+𝜎≥
+(𝑞𝐻+𝑞𝐿)𝛽
+2𝑞𝐿+(𝑞𝐻−𝑞𝐿)𝛽
+max{𝑓𝑙, (1−𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+} ≤𝑓≤𝑞𝐻−𝑞𝐿
+4
+[1 −𝜎(𝑞𝐻−𝑞𝐿)
+(𝑞𝐻+𝑞𝐿) ]
+(2)
+𝑓𝐵≤𝑓≤min{ ̄𝑓𝑙, (1−𝛽)(𝑞𝐻−𝑞𝐿)
+4(1−𝜎)
+}
+(3)
+(𝑞𝐻+𝑞𝐿)𝛽
+2𝑞𝐿+(𝑞𝐻−𝑞𝐿)𝛽≤𝜎≤1 −
+4(1−𝛽)𝑓𝑙
+𝑞𝐻−𝑞𝐿
+𝑓𝑙≤𝑓≤max{𝑓𝑙, (1−𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+}
+(4)
+𝜎≥1 −
+4(1−𝛽)𝑓𝑙
+𝑞𝐻−𝑞𝐿
+(1−𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+≤𝑓≤min{𝑓𝑙, [(1−𝜎)𝑞𝐻+2𝑡](𝑞𝐻−𝑞𝐿)
+2𝑞𝐻
+}
+Proof of Proposition 5. We analyze the RFI adoption strategy of the retailer with quality 𝑞𝐻and 𝑞𝐿respectively. As for the retailer with quality
+𝑞𝑖, 𝑖= 𝐻, 𝐿, specifically, it would like to adopt the RFI strategy iff 𝛱𝑖
+𝑅≥𝛱𝑖
+𝑁. Therefore, in the sequel, we aim to find the conditions by comparing
+𝛱𝑖
+𝑅and 𝛱𝑖
+𝑁.
+Case I: 𝑞= 𝑞𝐻
+First, we compare 𝛱𝐻
+𝑅and 𝛱𝐻
+𝑁to find when the retailer with 𝑞= 𝑞𝐻prefers the RFI service, i.e., 𝛱𝐻
+𝑅≥𝛱𝐻
+𝑁. Similar to the proof of 𝑝𝑅𝐻≥𝑝𝑁𝐻,
+we first show two algebra facts. Given these facts, we argue that 𝛱𝐻
+𝑅≥𝛱𝐻
+𝑁always holds regarding the thresholds of the optimal pricing strategies
+with/without RFI.
+Firstly, we have the following two algebra facts.
+(1)
+(1+𝜎)𝑞𝐻+(1−𝜎)𝑞𝐿
+8
+≥𝑞𝐻+𝑞𝐿
+8
+.
+(2)
+[(1+𝜎)𝑞𝐻−(1−𝜎)(1−𝛽)𝑓]2
+4(1−𝜎)2𝑞𝐻
+=
+[ (1+𝜎)
+(1−𝜎) 𝑞𝐻−(1−𝛽)𝑓]2
+4𝑞𝐻
+≥(𝑞𝐻−𝑓)2
+4𝑞𝐻
+.
+Given these facts, we find that the retailer always obtains a higher profit by adopting the RFI service because
+𝛱𝐻
+𝑅= max{ (1+𝜎)𝑞𝐻+(1−𝜎)𝑞𝐿
+8
+, [(1+𝜎)𝑞𝐻−(1−𝜎)(1−𝛽)𝑓]2
+4(1−𝜎)2𝑞𝐻
+} ≥max{ 𝑞𝐻+𝑞𝐿
+8
+, (𝑞𝐻−𝑓)2
+4𝑞𝐻
+} = 𝛱𝐻
+𝑁.
+Case II: 𝑞= 𝑞𝐿
+Next, we compare 𝛱𝐿
+𝑅and 𝛱𝐿
+𝑁to find the conditions when the retailer with 𝑞= 𝑞𝐿prefers the RFI service under the RFI case, i.e., 𝛱𝐿
+𝑅≥𝛱𝐿
+𝑁.
+(1) When 𝑓≥max{ 𝑞𝐻−𝑞𝐿
+4
+,
+(1−𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+}, we have
+{
+𝛱𝐿
+𝑅= (1−𝜎)𝑞𝐻+(1+𝜎)𝑞𝐿
+8
+,
+𝛱𝐿
+𝑁= 𝑞𝐻+𝑞𝐿
+8
+.
+. However, 𝛱𝐿
+𝑅= (1−𝜎)𝑞𝐻+(1+𝜎)𝑞𝐿
+8
+≤𝑞𝐻+𝑞𝐿
+8
+= 𝛱𝐿
+𝑁. That is, the retailer
+never adopts RFI.
+(2) When 𝑓≤min{𝐹𝑙, 𝑓𝑙}, we have
+⎧
+⎪
+⎨
+⎪⎩
+𝛱𝐿
+𝑅= (1−𝜎)[(𝑞𝐿−𝑓−𝑡)𝑞𝐻+𝑞𝐿(𝑡+𝛽𝑓)]2+4(1−𝛽)𝑓𝑞𝐻𝑞𝐿[(1−𝜎)𝑞𝐻+2(𝑡+𝛽𝑓)]
+4(1−𝜎)𝑞2
+𝐻𝑞𝐿
+,
+𝛱𝐿
+𝑁= [𝑞𝐻(𝑞𝐿−𝑓−𝑡)+𝑡𝑞𝐿]2+4𝑞𝐻𝑞𝐿(𝑞𝐻+2𝑡)𝑓
+4𝑞𝐿𝑞2
+𝐻
+.
+To compare 𝛱𝐿
+𝑅and 𝛱𝐿
+𝑁, we consider two sub-cases based on the properties of 𝛱𝐿
+𝑅(please refer to the proof of Proposition 3). (a) when 𝑞𝐿
+𝑞𝐻≤2𝛽−1
+𝛽
+,
+𝑓<
+(1−𝜎)𝑞2
+𝐻𝑞𝐿[(2𝛽−1)−𝛽𝑞𝐿
+𝑞𝐻]−𝐴1
+𝐴2
+, we know that 𝛱𝐿
+𝑅is decreasing in 𝑓but 𝛱𝐿
+𝑁is increasing in 𝑓. Hence, max 𝛱𝐿
+𝑅= 𝛱𝐿
+𝑅(𝑓= 0) =
+[(𝑞𝐿−𝑡)𝑞𝐻+𝑞𝐿𝑡]2
+4𝑞2
+𝐻𝑞𝐿
+=
+[𝑞𝐻(𝑞𝐿−𝑡)+𝑡𝑞𝐿]2
+4𝑞𝐿𝑞2
+𝐻
+= 𝛱𝐿
+𝑁(𝑓= 0) = min 𝛱𝐿
+𝑁. Then, we conclude that the retailer never adopts RFI.
+(b) Otherwise, both 𝛱𝐿
+𝑅and 𝛱𝐿
+𝑁are increasing in 𝑓, in this case, we regard 𝛱𝐿
+𝑅as a function of 𝜎. Recall that 𝛱𝐿
+𝑅(𝜎) is an increasing function
+of 𝜎, and we have 𝛱𝐿
+𝑅(𝜎= 0) ≤𝛱𝐿
+𝑁, 𝛱𝐿
+𝑅(𝜎= 1) = +∞> 𝛱𝐿
+𝑁. Then, there must exists a threshold 𝜎≥̂𝜎such that 𝛱𝐿
+𝑅≥𝛱𝐿
+𝑁, where ̂𝜎satisfies
+𝛱𝐿
+𝑅(̂𝜎) = 𝛱𝐿
+𝑁, i.e., ̂𝜎=
+1
+𝑞𝐻
+[
+1 −
+2(1−𝛽)(𝑡+𝛽𝑓)
+4𝑞𝐻(𝛽𝑞𝐻+2𝑡)−[2(𝑞𝐿−𝑡−𝑓)𝑞𝐻+𝑞𝐿(2𝑡+𝛽𝑓)]𝛽
+]
+.
+(3) When min{𝐹𝑙, 𝑓𝑙} ≤𝑓≤max{ 𝑞𝐻−𝑞𝐿
+4
+,
+(1−𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+}, we compare 𝛱𝐿
+𝑅and 𝛱𝐿
+𝑁conditional on the size of 𝑞𝐻−𝑞𝐿
+4
+,
+(1−𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+, 𝐹𝑙, 𝑓𝑙(as is
+shown in Table A.8).
+Case 1. Given the relationship under Case 1, we compare 𝛱𝐿
+𝑅and 𝛱𝐿
+𝑁depending on 𝑓.
+(i) when 𝑞𝐻−𝑞𝐿
+4
+≤𝑓≤(1−𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+, we have
+{
+𝛱𝐿
+𝑅= [(1−𝜎)𝑞𝐻+(1+𝜎)𝑞𝐿][(1−𝜎)(𝑞𝐻−𝑞𝐿)−2(1−𝛽)𝑓](1−𝛽)𝑓
+(1−𝜎)2(𝑞𝐻−𝑞𝐿)2
+,
+𝛱𝐿
+𝑁= 𝑞𝐻+𝑞𝐿
+8
+.
+.
+Recall that 𝛱𝐿
+𝑅is increasing in 𝑓, thus in this interval, we have max 𝛱𝐿
+𝑅(𝑓) = 𝛱𝐿
+𝑅
+( (1−𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+)
+=
+(1−𝜎)𝑞𝐻+(1+𝜎)𝑞𝐿
+8
+≤
+𝑞𝐻+𝑞𝐿
+8
+= 𝛱𝐿
+𝑁,
+i.e., 𝛱𝐿
+𝑅≤𝛱𝐿
+𝑁in this interval.
+(ii) when 𝐹𝑙≤𝑓≤𝑞𝐻−𝑞𝐿
+4
+, we have
+⎧
+⎪
+⎨
+⎪⎩
+𝛱𝐿
+𝑅= [(1−𝜎)𝑞𝐻+(1+𝜎)𝑞𝐿][(1−𝜎)(𝑞𝐻−𝑞𝐿)−2(1−𝛽)𝑓](1−𝛽)𝑓
+(1−𝜎)2(𝑞𝐻−𝑞𝐿)2
+,
+𝛱𝐿
+𝑁= (𝑞𝐻+𝑞𝐿)𝑓(𝑞𝐻−𝑞𝐿−2𝑓)
+(𝑞𝐻−𝑞𝐿)2
+.
+.
+We explore properties of the function 𝛱𝐿
+𝑅−𝛱𝐿
+𝑁as follows. Firstly, we denote 𝐺(𝑓) = 𝛱𝐿
+𝑅−𝛱𝐿
+𝑁, which is regarded as a function of 𝑓, then
+𝜕2𝐺(𝑓)
+𝜕𝑓2
+= 4[(1−(1−𝛽)2∕(1−𝜎)2)(𝑞𝐻+𝑞𝐿)+(1−𝛽)2∕(1−𝜎)2𝜎(𝑞𝐻−𝑞𝐿)]
+(𝑞𝐻−𝑞𝐿)2
+> 0,
+(this inequality always holds because 𝜎≤𝛽), thus we conclude that 𝐺(𝑓) is a convex function of 𝑓when 𝑓< 𝑞𝐻−𝑞𝐿
+4
+. Besides, when 𝑓= 0,
+we have 𝐺(0) = 0; when 𝑓= 𝑞𝐻−𝑞𝐿
+4
+, we have 𝐺( 𝑞𝐻−𝑞𝐿
+4
+) < (1−𝜎)𝑞𝐻+(1+𝜎)𝑞𝐿−(𝑞𝐻+𝑞𝐿)
+8
+≤0. The above facts implies that for 𝐹𝑙≤𝑓≤𝑞𝐻−𝑞𝐿
+4
+,
+𝛱𝐿
+𝑅−𝛱𝐿
+𝑁< 0. As a result, 𝛱𝐿
+𝑅< 𝛱𝐿
+𝑁in this interval;
+
+
+========== PAGE 22 ==========
+International Journal of Production Economics 256 (2023) 108752
+22
+X. Li et al.
+(iii) when 𝑓𝑙≤𝑓≤𝐹𝑙, we have
+⎧
+⎪
+⎨
+⎪⎩
+𝛱𝐿
+𝑅= (1−𝜎)[(𝑞𝐿−𝑓−𝑡)𝑞𝐻+𝑞𝐿(𝑡+𝛽𝑓)]2+4(1−𝛽)𝑓𝑞𝐻𝑞𝐿[(1−𝜎)𝑞𝐻+2(𝑡+𝛽𝑓)]
+4(1−𝜎)𝑞2
+𝐻𝑞𝐿
+,
+𝛱𝐿
+𝑁= (𝑞𝐻+𝑞𝐿)𝑓(𝑞𝐻−𝑞𝐿−2𝑓)
+(𝑞𝐻−𝑞𝐿)2
+.
+.
+Note that 𝛱𝐿
+𝑅is increasing in 𝜎in this interval. We regard 𝛱𝐿
+𝑅as a function of 𝜎which is increasing in 𝜎, then similar to case (2), we have
+𝛱𝐿
+𝑅−𝛱𝐿
+𝑁≥0 when 𝜎≥̃𝜎, where ̃𝜎satisfies 𝛱𝐿
+𝑅−𝛱𝐿
+𝑁= 0, i.e., ̃𝜎= 1 −
+𝑞𝐻
+2(𝑡+𝛽𝑓)(1−𝛽)𝑓
+[ (𝑞𝐻+𝑞𝐿)𝑓(𝑞𝐻−𝑞𝐿−2𝑓)
+(𝑞𝐻−𝑞𝐿)2
++ (1 −𝛽)𝑓−[(𝑞𝐿−𝑓−𝑡)𝑞𝐻+𝑞𝐿(𝑡+𝛽𝑓)]2
+4𝑞2
+𝐻𝑞𝐿
+]
+.
+Thus, we conclude that 𝛱𝐿
+𝑅≥𝛱𝐿
+𝑁when 𝜎≥̃𝜎.
+Case 2. Given the relationship under Case 2, we compare 𝛱𝐿
+𝑅and 𝛱𝐿
+𝑁depending on 𝑓.
+(i) when 𝐹𝑙≤𝑓≤(1−𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+, we have
+{
+𝛱𝐿
+𝑅= [(1−𝜎)𝑞𝐻+(1+𝜎)𝑞𝐿][(1−𝜎)(𝑞𝐻−𝑞𝐿)−2(1−𝛽)𝑓](1−𝛽)𝑓
+(1−𝜎)2(𝑞𝐻−𝑞𝐿)2
+,
+𝛱𝐿
+𝑁= 𝑞𝐻+𝑞𝐿
+8
+.
+.
+(ii) when 𝑞𝐻−𝑞𝐿
+4
+≤𝑓≤𝐹𝑙, we have
+⎧
+⎪
+⎨
+⎪⎩
+𝛱𝐿
+𝑅= (1−𝜎)[(𝑞𝐿−𝑓−𝑡)𝑞𝐻+𝑞𝐿(𝑡+𝛽𝑓)]2+4(1−𝛽)𝑓𝑞𝐻𝑞𝐿[(1−𝜎)𝑞𝐻+2(𝑡+𝛽𝑓)]
+4(1−𝜎)𝑞2
+𝐻𝑞𝐿
+,
+𝛱𝐿
+𝑁= 𝑞𝐻+𝑞𝐿
+8
+.
+.
+As for the above two sub-cases, we refer to the same argument in Case 1-(i), and conclude that 𝛱𝐿
+𝑅≤𝛱𝐿
+𝑁;
+(iii) when 𝑓𝑙≤𝑓≤𝑞𝐻−𝑞𝐿
+4
+, we have
+⎧
+⎪
+⎨
+⎪⎩
+𝛱𝐿
+𝑅= (1−𝜎)[(𝑞𝐿−𝑓−𝑡)𝑞𝐻+𝑞𝐿(𝑡+𝛽𝑓)]2+4(1−𝛽)𝑓𝑞𝐻𝑞𝐿[(1−𝜎)𝑞𝐻+2(𝑡+𝛽𝑓)]
+4(1−𝜎)𝑞2
+𝐻𝑞𝐿
+,
+𝛱𝐿
+𝑁= (𝑞𝐻+𝑞𝐿)𝑓(𝑞𝐻−𝑞𝐿−2𝑓)
+(𝑞𝐻−𝑞𝐿)2
+.
+.
+Referring to the same argument in Case 1-(iii), we conclude that 𝛱𝐿
+𝑅≥𝛱𝐿
+𝑁when 𝜎≥̃𝜎.
+Case 3
+Given the relationship under Case 3, we compare 𝛱𝐿
+𝑅and 𝛱𝐿
+𝑁depending on 𝑓.
+(i) when (1−𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+≤𝑓≤𝑞𝐻−𝑞𝐿
+4
+, we have
+{
+𝛱𝐿
+𝑅= (1−𝜎)𝑞𝐻+(1+𝜎)𝑞𝐿
+8
+,
+𝛱𝐿
+𝑁= (𝑞𝐻+𝑞𝐿)𝑓(𝑞𝐻−𝑞𝐿−2𝑓)
+(𝑞𝐻−𝑞𝐿)2
+.
+By arranging 𝛱𝐿
+𝑅−𝛱𝐿
+𝑁≥0, we have
+(1−𝜎)𝑞𝐻+(1+𝜎)𝑞𝐿
+8
+−(𝑞𝐻+𝑞𝐿)𝑓(𝑞𝐻−𝑞𝐿−2𝑓)
+(𝑞𝐻−𝑞𝐿)2
+≥0. It is equivalent to 𝑓≤
+𝑞𝐻−𝑞𝐿
+4
+[
+1 −
+√
+𝜎𝑞𝐻−𝑞𝐿
+𝑞𝐻+𝑞𝐿
+]
+. 𝑞𝐻−𝑞𝐿
+4
+[
+1 −
+√
+𝜎𝑞𝐻−𝑞𝐿
+𝑞𝐻+𝑞𝐿
+]
+≥(1−𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+when 𝜎≥̄𝜎, where ̄𝜎solves (𝜎−𝛽)
+(1−𝛽) =
+√
+𝜎𝑞𝐻−𝑞𝐿
+𝑞𝐻+𝑞𝐿. As a result, we conclude that
+𝛱𝐿
+𝑅≥𝛱𝐿
+𝑁when 𝑓≤𝑞𝐻−𝑞𝐿
+4
+[
+1 −
+√
+𝜎𝑞𝐻−𝑞𝐿
+𝑞𝐻+𝑞𝐿
+]
+and 𝜎≥̄𝜎;
+(ii) when 𝐹𝑙≤𝑓≤(1−𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+, we have
+⎧
+⎪
+⎨
+⎪⎩
+𝛱𝐿
+𝑅= [(1−𝜎)𝑞𝐻+(1+𝜎)𝑞𝐿][(1−𝜎)(𝑞𝐻−𝑞𝐿)−2(1−𝛽)𝑓](1−𝛽)𝑓
+(1−𝜎)2(𝑞𝐻−𝑞𝐿)2
+,
+𝛱𝐿
+𝑁= (𝑞𝐻+𝑞𝐿)𝑓(𝑞𝐻−𝑞𝐿−2𝑓)
+(𝑞𝐻−𝑞𝐿)2
+.
+.
+By solving 𝛱𝐿
+𝑅−𝛱𝐿
+𝑁≥0, we obtain
+[(1 −𝛽)((1 −𝜎)𝑞𝐻+ (1 + 𝜎)𝑞𝐿) −(1 −𝜎)(𝑞𝐻+ 𝑞𝐿)](1 −𝜎)(𝑞𝐻−𝑞𝐿) ≥2[(1 −𝛽)2((1 −𝜎)𝑞𝐻+ (1 + 𝜎)𝑞𝐿) −(1 −𝜎)2(𝑞𝐻+ 𝑞𝐿)]𝑓.
+(A.10)
+(i) When 𝜎
+≥
+𝛽(𝑞𝐻+𝑞𝐿)
+2𝑞𝐿+𝛽(𝑞𝐻−𝑞𝐿), both the LHS and RHS of formula (A.10) are positive. Hence, (A.10) holds when 𝑓
+≤
+𝑓𝑆
+=
+[(1−𝛽)((1−𝜎)𝑞𝐻+(1+𝜎)𝑞𝐿)−(1−𝜎)(𝑞𝐻+𝑞𝐿)](1−𝜎)(𝑞𝐻−𝑞𝐿)
+2[(1−𝛽)2((1−𝜎)𝑞𝐻+(1+𝜎)𝑞𝐿)−(1−𝜎)2(𝑞𝐻+𝑞𝐿)]
+. (ii) When 𝜎1 ≤𝜎≤
+𝛽(𝑞𝐻+𝑞𝐿)
+2𝑞𝐿+𝛽(𝑞𝐻−𝑞𝐿), where 𝜎1 = 1 −(1−𝛽)2
+2
+[ 𝑞𝐻−𝑞𝐿
+𝑞𝐻+𝑞𝐿+
+√( 𝑞𝐻−𝑞𝐿
+𝑞𝐻+𝑞𝐿
+)2 +
+8𝑞𝐿
+(1−𝛽)2(𝑞𝐻+𝑞𝐿)
+]
+,
+the RHS remains positive but the LHS becomes negative. Hence, (A.10) cannot hold. (iii) When 𝛽≤𝜎≤𝜎1, both the LHS and RHS of (A.10)
+are negative. Then, (A.10) holds when 𝑓≥𝑓𝑆.
+In summary, 𝛱𝐿
+𝑅−𝛱𝐿
+𝑁≥0 when 𝜎≥
+𝛽(𝑞𝐻+𝑞𝐿)
+2𝑞𝐿+𝛽(𝑞𝐻−𝑞𝐿), 𝑓≤𝑓𝑆and 𝛽≤𝜎≤𝜎1, 𝑓≥𝑓𝑆.
+(iii) when 𝑓𝑙≤𝑓≤𝐹𝑙, we have
+⎧
+⎪
+⎨
+⎪⎩
+𝛱𝐿
+𝑅= (1−𝜎)[(𝑞𝐿−𝑓−𝑡)𝑞𝐻+𝑞𝐿(𝑡+𝛽𝑓)]2+4(1−𝛽)𝑓𝑞𝐻𝑞𝐿[(1−𝜎)𝑞𝐻+2(𝑡+𝛽𝑓)]
+4(1−𝜎)𝑞2
+𝐻𝑞𝐿
+,
+𝛱𝐿
+𝑁= (𝑞𝐻+𝑞𝐿)𝑓(𝑞𝐻−𝑞𝐿−2𝑓)
+(𝑞𝐻−𝑞𝐿)2
+.
+Referring to the same argument in Case 1-(iii), we conclude that 𝛱𝐿
+𝑅≥𝛱𝐿
+𝑁when 𝜎≥̃𝜎.
+Case 4
+Given the relationship under Case 4, we compare 𝛱𝐿
+𝑅and 𝛱𝐿
+𝑁depending on 𝑓.
+(i) when (1−𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+≤𝑓≤𝑞𝐻−𝑞𝐿
+4
+, we have
+{
+𝛱𝐿
+𝑅= (1−𝜎)𝑞𝐻+(1+𝜎)𝑞𝐿
+8
+,
+𝛱𝐿
+𝑁= (𝑞𝐻+𝑞𝐿)𝑓(𝑞𝐻−𝑞𝐿−2𝑓)
+(𝑞𝐻−𝑞𝐿)2
+.
+
+
+========== PAGE 23 ==========
+International Journal of Production Economics 256 (2023) 108752
+23
+X. Li et al.
+Table A.10
+Conditions of 𝛱𝐿
+𝑅≥𝛱𝐿
+𝑁.
+Condition
+(1)
+̃𝜎≤𝜎≤
+(5𝑞𝐻−𝑞𝐿)𝛽
+4𝑞𝐻+(𝑞𝐻−𝑞𝐿)𝛽
+𝑓𝑙≤𝑓≤min{𝐹𝑙, (𝑞𝐻−𝑞𝐿)
+4
+}
+(2)
+̄𝜎≤𝜎≤1 −
+4(1−𝛽)𝑓𝑙
+𝑞𝐻−𝑞𝐿
+(1−𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+≤𝑓≤𝑞𝐻−𝑞𝐿
+4
+[1 −
+√
+𝜎(𝑞𝐻−𝑞𝐿)
+𝑞𝐻+𝑞𝐿]
+(3)
+𝛽≤𝜎≤𝜎1
+max{ ̄𝐹𝑙, 𝑓𝑆} ≤𝑓≤(1−𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+(4)
+(𝑞𝐻+𝑞𝐿)𝛽
+2𝑞𝐻+(𝑞𝐻−𝑞𝐿)𝛽≤𝜎≤1 −
+4(1−𝛽)𝑓𝑙
+𝑞𝐻−𝑞𝐿
+𝑓𝑙≤𝑓≤𝑓𝑆
+(5)
+1 −
+4(1−𝛽)𝑓𝑙
+𝑞𝐻−𝑞𝐿
+≤𝜎≤𝑞𝐻+𝑞𝐿
+𝑞𝐻−𝑞𝐿[1 −
+4𝑓𝑙
+𝑞𝐻−𝑞𝐿]2
+(1−𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+≤𝑓≤̂𝑓
+(6)
+𝜎≥𝑞𝐻+𝑞𝐿
+𝑞𝐻−𝑞𝐿[1 −
+4𝑓𝑙
+𝑞𝐻−𝑞𝐿]2
+̄𝐹𝑙≤𝑓≤𝑞𝐻−𝑞𝐿
+4
+[1 −
+√
+𝜎(𝑞𝐻−𝑞𝐿)
+𝑞𝐻−𝑞𝐿]
+(7)
+𝜎≥̂𝜎
+𝑓≤min{ ̄𝐹𝑙, ̄𝑓𝑙}
+Referring to the same argument in Case 3-(i), we conclude that 𝛱𝐿
+𝑅≥𝛱𝐿
+𝑁when 𝑓≤𝑞𝐻−𝑞𝐿
+4
+[
+1 −
+√
+𝜎𝑞𝐻−𝑞𝐿
+𝑞𝐻+𝑞𝐿
+]
+and 𝜎≥̄𝜎;
+(ii) when 𝑓𝑙≤𝑓≤(1−𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+, we have
+⎧
+⎪
+⎨
+⎪⎩
+𝛱𝐿
+𝑅= [(1−𝜎)𝑞𝐻+(1+𝜎)𝑞𝐿][(1−𝜎)(𝑞𝐻−𝑞𝐿)−2(1−𝛽)𝑓](1−𝛽)𝑓
+(1−𝜎)2(𝑞𝐻−𝑞𝐿)2
+,
+𝛱𝐿
+𝑁= (𝑞𝐻+𝑞𝐿)𝑓(𝑞𝐻−𝑞𝐿−2𝑓)
+(𝑞𝐻−𝑞𝐿)2
+.
+.
+By solving 𝛱𝐿
+𝑅−𝛱𝐿
+𝑁≥0, we again obtain (A.10). Referring to the analysis in case 3-(ii), we have 𝛱𝐿
+𝑅−𝛱𝐿
+𝑁≥0 when 𝜎≥
+𝛽(𝑞𝐻+𝑞𝐿)
+2𝑞𝐿+𝛽(𝑞𝐻−𝑞𝐿), 𝑓≤𝑓𝑆
+and
+(5𝑞𝐻−𝑞𝐿)𝛽
+4𝑞𝐻+(𝑞𝐻−𝑞𝐿)𝛽≤𝜎≤𝜎1, 𝑓≥𝑓𝑆.
+(iii) when 𝐹𝑙≤𝑓≤𝑓𝑙, we have
+⎧
+⎪
+⎨
+⎪⎩
+𝛱𝐿
+𝑅= [(1−𝜎)𝑞𝐻+(1+𝜎)𝑞𝐿][(1−𝜎)(𝑞𝐻−𝑞𝐿)−2(1−𝛽)𝑓](1−𝛽)𝑓
+(1−𝜎)2(𝑞𝐻−𝑞𝐿)2
+,
+𝛱𝐿
+𝑁= [𝑞𝐻(𝑞𝐿−𝑓−𝑡)+𝑡𝑞𝐿]2+4𝑞𝐻𝑞𝐿(𝑞𝐻+2𝑡)𝑓
+4𝑞𝐿𝑞2
+𝐻
+.
+.
+By the continuity and increasing property of 𝛱𝐿
+𝑅and 𝛱𝐿
+𝑁. It is sufficient to compare 𝛱𝐿
+𝑅with max 𝛱𝐿
+𝑁( ̄𝑓𝑙) =
+(𝑞𝐻+𝑞𝐿)𝑓(𝑞𝐻−𝑞𝐿−2𝑓)
+(𝑞𝐻−𝑞𝐿)2
+. That
+is, the comparison degenerates to case 4-(ii). Then, guarantees that 𝛱𝐿
+𝑅≥𝛱𝐿
+𝑁holds when (a) 𝜎∈[
+(5𝑞𝐻−𝑞𝐿)𝛽
+4𝑞𝐻+(𝑞𝐻−𝑞𝐿)𝛽, 𝜎1], 𝑓≥𝑓𝑆; (b)
+𝜎∈[
+𝛽(𝑞𝐻+𝑞𝐿)
+2𝑞𝐿+𝛽(𝑞𝐻−𝑞𝐿), 1 −
+4(1−𝛽)𝑓𝑙
+𝑞𝐻−𝑞𝐿], 𝑓≤𝑓𝑆.
+Case 5
+Given the relationship under Case 5, we compare 𝛱𝐿
+𝑅and 𝛱𝐿
+𝑁depending on 𝑓.
+(i) when 𝑓𝑙≤𝑓≤𝑞𝐻−𝑞𝐿
+4
+, we have
+{
+𝛱𝐿
+𝑅= (1−𝜎)𝑞𝐻+(1+𝜎)𝑞𝐿
+8
+,
+𝛱𝐿
+𝑁= (𝑞𝐻+𝑞𝐿)𝑓(𝑞𝐻−𝑞𝐿−2𝑓)
+(𝑞𝐻−𝑞𝐿)2
+.
+.
+Referring to the same argument in Case 3-(i), we conclude that 𝛱𝐿
+𝑅≥𝛱𝐿
+𝑁when 𝑓≤𝑞𝐻−𝑞𝐿
+4
+[
+1 −
+√
+𝜎𝑞𝐻−𝑞𝐿
+𝑞𝐻+𝑞𝐿
+]
+, 𝜎≤𝑞𝐻+𝑞𝐿
+𝑞𝐻−𝑞𝐿
+[
+1 −
+4𝑓𝑙
+𝑞𝐻−𝑞𝐿
+]2
+;
+(ii) when (1−𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+≤𝑓≤𝑓𝑙, we have
+⎧
+⎪
+⎨
+⎪⎩
+𝛱𝐿
+𝑅= (1−𝜎)𝑞𝐻+(1+𝜎)𝑞𝐿
+8
+,
+𝛱𝐿
+𝑁= [𝑞𝐻(𝑞𝐿−𝑓−𝑡)+𝑡𝑞𝐿]2+4𝑞𝐻𝑞𝐿(𝑞𝐻+2𝑡)𝑓
+4𝑞𝐿𝑞2
+𝐻
+.
+. Note that 𝛱𝐿
+𝑁(𝑓) is continuous and is strictly increasing in
+𝑓in this interval, i.e., max 𝛱𝐿
+𝑁(𝑓) = 𝛱𝑁(𝑓𝑙) = min (𝑞𝐻+𝑞𝐿)𝑓(𝑞𝐻−𝑞𝐿−2𝑓)
+(𝑞𝐻−𝑞𝐿)2
+, which is always less than 𝛱𝐿
+𝑅when 𝜎≥𝑞𝐻+𝑞𝐿
+𝑞𝐻−𝑞𝐿
+[
+1 −
+4𝑓𝑙
+𝑞𝐻−𝑞𝐿
+]2
+, as Case
+5-(i) shows. Otherwise, 𝛱𝐿
+𝑅≥𝛱𝐿
+𝑁only holds when 𝑓≤̂𝑓( ̂𝑓satisfies 𝛱𝐿
+𝑅= 𝛱𝐿
+𝑁( ̂𝑓)), because 𝛱𝐿
+𝑁is increasing in 𝑓. In summary, we have
+𝛱𝐿
+𝑅≥𝛱𝐿
+𝑁holds when 𝜎≤𝑞𝐻+𝑞𝐿
+𝑞𝐻−𝑞𝐿
+[
+1 −
+4𝑓𝑙
+𝑞𝐻−𝑞𝐿
+]2
+or when 𝜎≥𝑞𝐻+𝑞𝐿
+𝑞𝐻−𝑞𝐿
+[
+1 −
+4𝑓𝑙
+𝑞𝐻−𝑞𝐿
+]2
+, 𝑓≤̂𝑓;
+(iii) when 𝐹𝑙≤𝑓≤(1−𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+, we have
+⎧
+⎪
+⎨
+⎪⎩
+𝛱𝐿
+𝑅= [(1−𝜎)𝑞𝐻+(1+𝜎)𝑞𝐿][(1−𝜎)(𝑞𝐻−𝑞𝐿)−2(1−𝛽)𝑓](1−𝛽)𝑓
+(1−𝜎)2(𝑞𝐻−𝑞𝐿)2
+,
+𝛱𝐿
+𝑁= [𝑞𝐻(𝑞𝐿−𝑓−𝑡)+𝑡𝑞𝐿]2+4𝑞𝐻𝑞𝐿(𝑞𝐻+2𝑡)𝑓
+4𝑞𝐿𝑞2
+𝐻
+.
+. Similar to the argument in Case 5-(ii), the continuity
+and increasing property of 𝛱𝐿
+𝑅and 𝛱𝐿
+𝑁guarantees that 𝛱𝐿
+𝑅≥𝛱𝐿
+𝑁holds when 𝜎≥𝑞𝐻+𝑞𝐿
+𝑞𝐻−𝑞𝐿
+[
+1 −
+4𝑓𝑙
+𝑞𝐻−𝑞𝐿
+]2
+; otherwise, if 𝜎< 𝑞𝐻+𝑞𝐿
+𝑞𝐻−𝑞𝐿
+[
+1 −
+4𝑓𝑙
+𝑞𝐻−𝑞𝐿
+]2
+,
+we compare through numerical study.
+By summarizing the above cases, we obtain the conditions when 𝛱𝐿
+𝑅≥𝛱𝐿
+𝑁holds in Table A.10.
+□
+Appendix B. Proof of the case with monopoly insurance company
+Note that, under the RFI case, the customer’s return and purchase behaviors are the same with Proposition 1, which is omitted in this part.
+Following the analysis in Proposition 1, we have the demand 𝑑𝑅= 1−𝛾′
+𝐶+ 𝑝𝑅−(1−𝛽)𝑓
+𝑞𝐿
+−𝛾′
+𝑆, the volume of return 𝑑𝑟
+𝑅= 𝑝𝑅−(1−𝛽)𝑓
+𝑞𝐿
+−𝛾′
+𝑆, and the volume
+of keep 𝑑𝑘
+𝑅= 1 −𝛾′
+𝐶, where 𝛾′
+𝐶and 𝛾′
+𝑆are shown in the proof of Lemma 1.
+Next, the insurance company decides the premium 𝑎for each unit demand, and it pays 𝛽𝑓for each unit return item. The insurance company
+should solve the following program.
+max
+𝜋(𝑎) = 𝑎𝑑𝑅−𝛽𝑓𝑑𝑟
+𝑅
+(B.1)
+s.t.
+𝑎≤𝛽𝑓.
+
+
+========== PAGE 24 ==========
+International Journal of Production Economics 256 (2023) 108752
+24
+X. Li et al.
+Table B.11
+The optimal pricing strategy of the high-quality retailer.
+Region
+Condition
+𝑝𝐻
+𝑅𝑠
+𝛽≥max{𝛽ℎ
+1 , 𝛽ℎ
+2 }
+(1+𝜎)𝑞𝐻−(1−𝜎−2𝛽)𝑓
+2(1+𝜎)
+min{𝛽ℎ
+1 , 𝛽ℎ
+2 } ≤𝛽≤max{𝛽ℎ
+1 , 𝛽ℎ
+2 }
+𝑓≥̇𝐹ℎ
+𝑞𝐻+𝑞𝐿+𝜎(𝑞𝐻−𝑞𝐿)+2𝛽𝑓
+4
+𝑓≤̇𝐹ℎ
+(1+𝜎)𝑞𝐻−(1−𝜎−2𝛽)𝑓
+2(1+𝜎)
+𝛽≤min{𝛽ℎ
+1 , 𝛽ℎ
+2 }
+̇𝑓ℎ
+2 ≤̇𝑓ℎ
+1
+𝑓≥̇𝐹ℎ
+𝑞𝐻+𝑞𝐿+𝜎(𝑞𝐻−𝑞𝐿)+2𝛽𝑓
+4
+𝑓≤̇𝐹ℎ
+(1+𝜎)𝑞𝐻−(1−𝜎−2𝛽)𝑓
+2(1+𝜎)
+̇𝑓ℎ
+2 ≥̇𝑓ℎ
+1
+𝑓≥̇𝑓ℎ
+2
+𝑞𝐻+𝑞𝐿+𝜎(𝑞𝐻−𝑞𝐿)+2𝛽𝑓
+4
+̇𝑓ℎ
+1 ≤𝑓≤̇𝑓ℎ
+2
+[(𝑞𝐻+𝑞𝐿)+𝜎(𝑞𝐻−𝑞𝐿)](1−𝛽)𝑓
+(1+𝜎)(𝑞𝐻−𝑞𝐿)
+𝑓≤̇𝑓ℎ
+1
+(1+𝜎)𝑞𝐻−(1−𝜎−2𝛽)𝑓
+2(1+𝜎)
+Note
+̇𝐹ℎ=
+√
+2𝑞𝐻−
+√
+𝑞𝐻+𝑞𝐿+𝜎(𝑞𝐻−𝑞𝐿)
+4[(1−𝜎+2𝜎𝛽)
+√
+𝑞𝐻+𝑞𝐿+𝜎(𝑞𝐻−𝑞𝐿)−(1+𝜎)𝛽
+√
+2𝑞𝐻] .
+The constraint follows the fact that the insurance premium cannot exceed the insurance amount. This constraint is guaranteed by the robust premium
+calculation principle proposed by Hürlimann (1998), where the premium equals the expected claim size multiplied by a risk factor (i.e., insurance
+rate)12. Recall that both 𝑑𝑅and 𝑑𝑟
+𝑅are independent of 𝑎, thus Program (B.1) is an increasing function of 𝑎, which implies that 𝑎= 𝛽𝑓.
+Next, regarding the customers’ behaviors and the RFI premium, we analyze the retailer’s pricing strategy when 𝑞= 𝑞𝐻and 𝑞= 𝑞𝐿, separately.
+To rule our trivial results, we assume 𝑓≤min{ 𝑞𝐻𝑞𝐿+𝑡(𝑞𝐻−𝑞𝐿)
+𝑞𝐿
+, 2(1+𝜎)𝑞𝐻
+(1−𝜎)
+} to ensure positive demand.
+Case I: 𝑞= 𝑞𝐻
+When 𝑞= 𝑞𝐻, we analyze the retailer’s pricing strategy regarding 𝑝𝑅≥[(𝑞𝐻+𝑞𝐿)+𝜎(𝑞𝐻−𝑞𝐿)](1−𝛽)𝑓
+(1+𝜎)(𝑞𝐻−𝑞𝐿)
+and 𝑝𝑅≤[(𝑞𝐻+𝑞𝐿)+𝜎(𝑞𝐻−𝑞𝐿)](1−𝛽)𝑓
+(1+𝜎)(𝑞𝐻−𝑞𝐿)
+, respectively.
+Case 1: 𝑝𝑅≥[(𝑞𝐻+𝑞𝐿)+𝜎(𝑞𝐻−𝑞𝐿)](1−𝛽)𝑓
+(1+𝜎)(𝑞𝐻−𝑞𝐿)
+When 𝑝𝑅≥[(𝑞𝐻+𝑞𝐿)+𝜎(𝑞𝐻−𝑞𝐿)](1−𝛽)𝑓
+(1+𝜎)(𝑞𝐻−𝑞𝐿)
+, the demand is 𝑑𝑅= 1 −𝛾′
+𝑆= 1 −(1+𝜎)𝑝𝑅+(1−𝜎)(1−𝛽)𝑓
+(1+𝜎)𝑞𝐻
+, and the returns 𝑑𝑟
+𝑅= 0 because of the high quality. The
+retailer pays 𝑎= 𝛽𝑓to the insurance company. Moreover, to ensure the demand is larger than 0, we have 𝑝𝑅≤𝑞𝐻−(1−𝜎)(1−𝛽)𝑓
+1+𝜎
+. The retailer solves
+the following program to determine the retail price
+max
+𝑝𝑅
+𝛱𝑅= (𝑝𝑅−𝑎)
+(
+1 −(1 + 𝜎)𝑝𝑅+ (1 −𝜎)(1 −𝛽)𝑓
+(1 + 𝜎)𝑞𝐻
+)
+s.t.
+[(𝑞𝐻+ 𝑞𝐿) + 𝜎(𝑞𝐻−𝑞𝐿)](1 −𝛽)𝑓
+(1 + 𝜎)(𝑞𝐻−𝑞𝐿)
+≤𝑝𝑅≤𝑞𝐻−(1 −𝜎)(1 −𝛽)𝑓
+1 + 𝜎
+,
+𝑎= 𝛽𝑓.
+𝛱𝑅is a concave function of price 𝑝𝑅since
+𝜕2𝛱𝑅
+𝜕𝑝2
+𝑅
+= −2
+𝑞𝐻
+< 0. By analyzing the Lagrangian of 𝛱𝑅, i.e., = 𝛱𝑅+ 𝜆1( (1−𝜎)(1−𝛽)𝑓
+1+𝜎
+−𝑝𝑅) +
+𝜆2
+(𝑝𝑅−[(𝑞𝐻+𝑞𝐿)+𝜎(𝑞𝐻−𝑞𝐿)](1−𝛽)𝑓
+(1+𝜎)(𝑞𝐻−𝑞𝐿)
+), we obtain the interior solution 𝑝(1)
+𝑅= (1+𝜎)𝑞𝐻−(1−𝜎−2𝛽)𝑓
+2(1+𝜎)
+(with profit 𝛱(1)
+𝑅
+= [(1+𝜎)𝑞𝐻−(1−𝜎+2𝜎𝛽)𝑓]2
+4(1+𝜎)2𝑞𝐻
+) when 𝑓≤
+̇𝑓ℎ
+1 =
+lim𝜖↓0
+(1+𝜎)𝑞𝐻(𝑞𝐻−𝑞𝐿)
+max{(1−2𝛽)(1+𝜎)(𝑞𝐻−𝑞𝐿)+2(1−𝛽)(𝑞𝐻+𝑞𝐿), 𝜖}
+13; and the corner solution 𝑝(1)
+𝑅= [(𝑞𝐻+𝑞𝐿)+𝜎(𝑞𝐻−𝑞𝐿)](1−𝛽)𝑓
+(1+𝜎)(𝑞𝐻−𝑞𝐿)
+(with profit 𝛱(1)
+𝑅=
+[ [𝑞𝐻+𝑞𝐿+𝜎(𝑞𝐻−𝑞𝐿)](1−𝛽)𝑓
+(1+𝜎)(𝑞𝐻−𝑞𝐿)
+−𝛽𝑓
+][
+1−
+2𝑞𝐻(1−𝛽)𝑓
+(1+𝜎)𝑞𝐻(𝑞𝐻−𝑞𝐿)
+]
+) when 𝑓≥
+̇𝑓ℎ
+1 . Note that when 𝛽≥𝛽ℎ
+1 =
+(1+𝜎)(𝑞𝐻−𝑞𝐿)+2(𝑞𝐻+𝑞𝐿)
+2(1+𝜎)(𝑞𝐻−𝑞𝐿)+2(𝑞𝐻+𝑞𝐿) , we have (1 −2𝛽)(1 + 𝜎)(𝑞𝐻−𝑞𝐿) + 2(1 −𝛽)(𝑞𝐻+ 𝑞𝐿) ≤0 and thus
+̇𝑓ℎ
+1 = +∞.
+Case 2: 𝑝𝑅≤[(𝑞𝐻+𝑞𝐿)+𝜎(𝑞𝐻−𝑞𝐿)](1−𝛽)𝑓
+(1+𝜎)(𝑞𝐻−𝑞𝐿)
+When 𝑝𝑅≤[(𝑞𝐻+𝑞𝐿)+𝜎(𝑞𝐻−𝑞𝐿)](1−𝛽)𝑓
+(1+𝜎)(𝑞𝐻−𝑞𝐿)
+, the demand is 𝑑𝑅= 1 −𝛾′
+𝐶= 1 −
+2𝑝𝑅
+(𝑞𝐻+𝑞𝐿)+𝜎(𝑞𝐻−𝑞𝐿), and the return is 𝑑𝑟
+𝑅= 0. Thus, the optimization problem
+of the retailer can be expressed as
+max
+𝑝𝑅
+𝛱𝑅= (𝑝𝑅−𝑎)(1 −
+2𝑝𝑅
+(𝑞𝐻+ 𝑞𝐿) + 𝜎(𝑞𝐻−𝑞𝐿)
+)
+(B.2)
+s.t.
+𝑝𝑅≤[(𝑞𝐻+ 𝑞𝐿) + 𝜎(𝑞𝐻−𝑞𝐿)](1 −𝛽)𝑓
+(1 + 𝜎)(𝑞𝐻−𝑞𝐿)
+,
+𝑎= 𝛽𝑓.
+The objective is a concave function of price 𝑝𝑅since 𝜕2𝛱𝑅
+𝜕𝑝2
+𝑅
+= −
+4
+𝑞𝐻+𝑞𝐿+𝜎(𝑞𝐻−𝑞𝐿) < 0. Given the concavity of the profit function, we solve the Lagrangian:
+= 𝛱𝑅+ 𝜆1
+( [(𝑞𝐻+𝑞𝐿)+𝜎(𝑞𝐻−𝑞𝐿)](1−𝛽)𝑓
+(1+𝜎)(𝑞𝐻−𝑞𝐿)
+−𝑝𝑅
+). We obtain the interior solution 𝑝(2)
+𝑅= 𝑞𝐻+𝑞𝐿+𝜎(𝑞𝐻−𝑞𝐿)+2𝛽𝑓
+4
+(with profit 𝛱(2)
+𝑅= [𝑞𝐻+𝑞𝐿+𝜎(𝑞𝐻−𝑞𝐿)−2𝛽𝑓]2
+8[𝑞𝐻+𝑞𝐿+𝜎(𝑞𝐻−𝑞𝐿)]
+) when
+𝑓≥̇𝑓ℎ
+2 = lim𝜖↓0
+(1+𝜎)(𝑞𝐻−𝑞𝐿)[𝑞𝐻+𝑞𝐿+𝜎(𝑞𝐻−𝑞𝐿)]
+max{2[4(1−𝛽)𝑞𝐿+(1−𝜎)(2−3𝛽)(𝑞𝐻−𝑞𝐿)], 𝜖} ; and the corner solution 𝑝(2)
+𝑅= [(𝑞𝐻+𝑞𝐿)+𝜎(𝑞𝐻−𝑞𝐿)](1−𝛽)𝑓
+(1+𝜎)(𝑞𝐻−𝑞𝐿)
+(with profit 𝛱(2)
+𝑅=
+[ [𝑞𝐻+𝑞𝐿+𝜎(𝑞𝐻−𝑞𝐿)](1−𝛽)𝑓
+(1+𝜎)(𝑞𝐻−𝑞𝐿)
+−
+𝛽𝑓
+][
+1 −
+2𝑞𝐻(1−𝛽)𝑓
+(1+𝜎)𝑞𝐻(𝑞𝐻−𝑞𝐿)
+]
+) when 𝑓≤
+̇𝑓ℎ
+2 . Note that when 𝛽≥𝛽ℎ
+2 = 4𝑞𝐿+2(1−𝜎)(𝑞𝐻−𝑞𝐿)
+4𝑞𝐿+3(1−𝜎)(𝑞𝐻−𝑞𝐿), we have 2[4(1 −𝛽)𝑞𝐿+ (1 −𝜎)(2 −3𝛽)(𝑞𝐻−𝑞𝐿)] ≤0 and thus
+̇𝑓ℎ
+2 = +∞.
+Next, we compare profits across Case 1 and Case 2 to find the optimal price. We denote the optimal price as 𝑝𝐻
+𝑅𝑠, and the equilibrium profit as
+𝛱𝐻
+𝑅𝑠. The optimal price 𝑝𝐻
+𝑅𝑠are summarized in Table B.11.
+12 see the premium pricing provision for HuaTai Insurance Company https://www.weiyangx.com/266934.html
+13 In the definition of
+̇𝑓ℎ
+𝑖or
+̇𝑓𝑙
+𝑖, 𝑖= 1, 2, we let 𝜖↓0 to avoid the situation when the denominator is negative.
+
+
+========== PAGE 25 ==========
+International Journal of Production Economics 256 (2023) 108752
+25
+X. Li et al.
+Table B.12
+The optimal pricing strategy of the low-quality retailer.
+Region
+Condition
+𝑝𝐿
+𝑅𝑠
+𝛽≥𝛽𝑙
+1
+𝑞𝐿−𝑡+(1−𝛽)𝑓
+2
++ 𝑞𝐿(𝛽𝑓+𝑡)
+2𝑞𝐻
+𝛽𝑙
+2 ≤𝛽≤𝛽𝑙
+1
+𝑓≤̇𝑓𝑙
+1
+𝑞𝐿−𝑡+(1−𝛽)𝑓
+2
++ 𝑞𝐿(𝛽𝑓+𝑡)
+2𝑞𝐻
+𝑓≥̇𝑓𝑙
+1
+[(𝑞𝐻+𝑞𝐿)−𝜎(𝑞𝐻−𝑞𝐿)](1−𝛽)𝑓
+(1−𝜎)(𝑞𝐻−𝑞𝐿)
+𝛽≤𝛽𝑙
+2
+𝑓≥max{ ̇𝑓𝑙
+1, ̇𝑓𝑙
+2}
+𝑞𝐻+𝑞𝐿−𝜎(𝑞𝐻−𝑞𝐿)+2𝛽𝑓
+4
+̇𝑓𝑙
+1 ≤𝑓≤max{ ̇𝑓𝑙
+1, ̇𝑓𝑙
+2}
+[(𝑞𝐻+𝑞𝐿)−𝜎(𝑞𝐻−𝑞𝐿)](1−𝛽)𝑓
+(1−𝜎)(𝑞𝐻−𝑞𝐿)
+̇𝑓𝑙
+2 ≤𝑓≤max{ ̇𝑓𝑙
+1, ̇𝑓𝑙
+2}, 𝜎≤̇𝜎𝑠
+𝑞𝐻+𝑞𝐿−𝜎(𝑞𝐻−𝑞𝐿)+2𝛽𝑓
+4
+̇𝑓𝑙
+2 ≤𝑓≤max{ ̇𝑓𝑙
+1, ̇𝑓𝑙
+2} 𝜎≥̇𝜎𝑠
+𝑞𝐿−𝑡+(1−𝛽)𝑓
+2
++ 𝑞𝐿(𝛽𝑓+𝑡)
+2𝑞𝐻
+𝑓≤min{ ̇𝑓𝑙
+1, ̇𝑓𝑙
+2}
+𝑞𝐿−𝑡+(1−𝛽)𝑓
+2
++ 𝑞𝐿(𝛽𝑓+𝑡)
+2𝑞𝐻
+Note ̇𝜎𝑠solves
+[𝑞𝐻𝑞𝐿−𝑡(𝑞𝐻−𝑞𝐿)−(1−𝛽)𝑓𝑞𝐻+𝛽𝑓𝑞𝐿]2
+4𝑞𝐿(𝑞𝐻)2
+−(2𝛽−1)𝑓−
+[
+[𝑞𝐻+𝑞𝐿−𝜎(𝑞𝐻−𝑞𝐿)−2𝛽𝑓]2
+8[𝑞𝐻+𝑞𝐿−𝜎(𝑞𝐻−𝑞𝐿)]
+−2(1−𝛽)(𝛽𝑓+𝑡)
+(1−𝜎)𝑞𝐻
+]
+= 0.
+Case II: 𝑞= 𝑞𝐿
+We analyze the low-quality retailer’s pricing strategy regarding 𝑝𝑅≥[(𝑞𝐻+𝑞𝐿)−𝜎(𝑞𝐻−𝑞𝐿)](1−𝛽)𝑓
+(1−𝜎)(𝑞𝐻−𝑞𝐿)
+and 𝑝𝑅≤[(𝑞𝐻+𝑞𝐿)−𝜎(𝑞𝐻−𝑞𝐿)](1−𝛽)𝑓
+(1−𝜎)(𝑞𝐻−𝑞𝐿)
+, respectively. Then,
+we combine two cases to find the optimal price.
+Case 1: 𝑝𝑅≥[(𝑞𝐻+𝑞𝐿)−𝜎(𝑞𝐻−𝑞𝐿)](1−𝛽)𝑓
+(1−𝜎)(𝑞𝐻−𝑞𝐿)
+When 𝑝𝑅≥[(𝑞𝐻+𝑞𝐿)−𝜎(𝑞𝐻−𝑞𝐿)](1−𝛽)𝑓
+(1−𝜎)(𝑞𝐻−𝑞𝐿)
+, the demand is 𝑑𝑅= 1 −𝛾′
+𝑆= 1 −(1−𝜎)𝑝𝑅+(1+𝜎)(1−𝛽)𝑓
+(1−𝜎)𝑞𝐻
+. But the strategic customers will return the low-quality
+product, i.e., the return volume is 𝑑𝑟
+𝑅= 𝑝𝑅−(1−𝛽)𝑓
+𝑞𝐿
+−𝛾′
+𝑆= 𝑝𝑅−(1−𝛽)𝑓
+𝑞𝐿
+−(1−𝜎)𝑝𝑅+(1+𝜎)(1−𝛽)𝑓
+(1−𝜎)𝑞𝐻
+, and the keeping volume is 𝑑𝑘
+𝑅= 1 −𝛾′
+𝐶= 1 −𝑝𝑅−(1−𝛽)𝑓
+𝑞𝐿
+. Thus,
+the retailer pays the RFI premium 𝑎= 𝛽𝑓. The retailer solves the following program to determine the retail price.
+max
+𝑝𝑅
+𝛱𝑅= 𝑝𝑅
+(1 −𝑝𝑅−(1 −𝛽)𝑓
+𝑞𝐿
+) −𝑡( 𝑝𝑅−(1 −𝛽)𝑓
+𝑞𝐿
+−(1 −𝜎)𝑝𝑅+ (1 + 𝜎)(1 −𝛽)𝑓
+(1 −𝜎)𝑞𝐻
+) −𝑎(1 −(1 −𝜎)𝑝𝑅+ (1 + 𝜎)(1 −𝛽)𝑓
+(1 −𝜎)𝑞𝐻
+)
+(B.3)
+s.t.
+[(𝑞𝐻+ 𝑞𝐿) −𝜎(𝑞𝐻−𝑞𝐿)](1 −𝛽)𝑓
+(1 −𝜎)(𝑞𝐻−𝑞𝐿)
+≤𝑝𝑅≤𝑞𝐿+ (1 −𝛽)𝑓,
+𝑎= 𝛽𝑓.
+𝛱𝑅is a concave function of price 𝑝𝑅since
+𝜕2𝛱𝑅
+𝜕𝑝2
+𝑅
+= −2
+𝑞𝐿< 0. We derive the optimal solution by analyzing the Lagrangian of 𝛱𝑅, i.e., =
+𝛱𝑅+ 𝜆1(𝑞𝐿+ (1 −𝛽)𝑓−𝑝𝑅) + 𝜆2
+(𝑝𝑅−[(𝑞𝐻+𝑞𝐿)−𝜎(𝑞𝐻−𝑞𝐿)](1−𝛽)𝑓
+(1−𝜎)(𝑞𝐻−𝑞𝐿)
+). We obtain the interior solution 𝑝(1)
+𝑅
+=
+𝑞𝐿−𝑡+(1−𝛽)𝑓
+2
++ 𝑞𝐿(𝛽𝑓+𝑡)
+2𝑞𝐻
+when 𝑓≤
+̇𝑓𝑙
+1 =
+lim𝜖↓0
+(1−𝜎)(𝑞𝐻−𝑞𝐿)[𝑞𝐻𝑞𝐿−(𝑞𝐻−𝑞𝐿)𝑡]
+max{(1−𝜎)(𝑞𝐻−𝑞𝐿)[(1−𝛽)𝑞𝐻−𝛽𝑞𝐿]+4(1−𝛽)𝑞𝐻𝑞𝐿, 𝜖} (with 𝛱(1)
+𝑅
+=
+[𝑞𝐻𝑞𝐿−𝑡(𝑞𝐻−𝑞𝐿)−(1−𝛽)𝑓𝑞𝐻+𝛽𝑓𝑞𝐿]2
+4𝑞𝐿(𝑞𝐻)2
+−
+4𝑞𝐿𝑞𝐻𝑓[(2𝛽−1)𝑞𝐻−2 1−𝛽
+1−𝜎(𝛽𝑓+𝑡)]
+4𝑞𝐿(𝑞𝐻)2
+); and the corner solution
+𝑝(1)
+𝑅
+=
+[(𝑞𝐻+𝑞𝐿)−𝜎(𝑞𝐻−𝑞𝐿)](1−𝛽)𝑓
+(1−𝜎)(𝑞𝐻−𝑞𝐿)
+when 𝑓≥
+̇𝑓𝑙
+1 (with profit 𝛱(1)
+𝑅
+=
+[ [𝑞𝐻+𝑞𝐿−𝜎(𝑞𝐻−𝑞𝐿)](1−𝛽)𝑓
+(1−𝜎)(𝑞𝐻−𝑞𝐿)
+−𝛽𝑓
+][
+1 −
+2(1−𝛽)𝑓
+(1−𝜎)(𝑞𝐻−𝑞𝐿)
+]
+). Note that when 𝛽≥𝛽𝑙
+1 =
+𝑞𝐻[4𝑞𝐿+(1−𝜎)(𝑞𝐻−𝑞𝐿)]
+(1−𝜎)(𝑞𝐻+𝑞𝐿)(𝑞𝐻−𝑞𝐿)+4𝑞𝐻𝑞𝐿, we have (1 −𝜎)(𝑞𝐻−𝑞𝐿)[(1 −𝛽)𝑞𝐻−𝛽𝑞𝐿] + 4(1 −𝛽)𝑞𝐻𝑞𝐿≤0 and thus
+̇𝑓𝑙
+1 = +∞.
+Case 2: 𝑝𝑅≤[(𝑞𝐻+𝑞𝐿)−𝜎(𝑞𝐻−𝑞𝐿)](1−𝛽)𝑓
+(1−𝜎)(𝑞𝐻−𝑞𝐿)
+When 𝑝𝑅≤[(𝑞𝐻+𝑞𝐿)−𝜎(𝑞𝐻−𝑞𝐿)](1−𝛽)𝑓
+(1−𝜎)(𝑞𝐻−𝑞𝐿)
+, the volume of strategic customers shrinks to zero, thus the demand is 𝑑𝑅= 1 −𝛾′
+𝐶= 1 −
+2𝑝𝑅
+(𝑞𝐻+𝑞𝐿)−𝜎(𝑞𝐻−𝑞𝐿), and
+the return volume is 𝑑𝑟
+𝑅= 0. Thus, the optimization problem of the retailer can be expressed as
+max
+𝑝𝑅
+𝛱𝑅= (𝑝𝑅−𝑎)(1 −
+2𝑝𝑅
+(𝑞𝐻+ 𝑞𝐿) −𝜎(𝑞𝐻−𝑞𝐿)
+)
+(B.4)
+s.t.
+𝑝𝑅≤[(𝑞𝐻+ 𝑞𝐿) −𝜎(𝑞𝐻−𝑞𝐿)](1 −𝛽)𝑓
+(1 −𝜎)(𝑞𝐻−𝑞𝐿)
+,
+𝑎= 𝛽𝑓.
+The objective is a concave function of price 𝑝𝑅since 𝜕2𝛱𝑅
+𝜕𝑝2
+𝑅
+= −
+4
+𝑞𝐻+𝑞𝐿−𝜎(𝑞𝐻−𝑞𝐿) < 0. Given the concavity of the profit function, we solve the Lagrangian:
+= 𝛱𝑅+ 𝜆1
+( [(𝑞𝐻+𝑞𝐿)−𝜎(𝑞𝐻−𝑞𝐿)](1−𝛽)𝑓
+(1−𝜎)(𝑞𝐻−𝑞𝐿)
+−𝑝𝑅
+). We obtain the interior solution 𝑝(2)
+𝑅= 𝑞𝐻+𝑞𝐿−𝜎(𝑞𝐻−𝑞𝐿)+2𝛽𝑓
+4
+(with profit 𝛱(2)
+𝑅= [𝑞𝐻+𝑞𝐿−𝜎(𝑞𝐻−𝑞𝐿)−2𝛽𝑓]2
+8[𝑞𝐻+𝑞𝐿−𝜎(𝑞𝐻−𝑞𝐿)]
+) when
+𝑓≥̇𝑓𝑙
+2 = lim𝜖↓0
+(1−𝜎)(𝑞𝐻−𝑞𝐿)[(1+𝜎)𝑞𝐿+(1−𝜎)𝑞𝐻]
+max{2[(1−𝜎)(𝑞𝐻−𝑞𝐿)(2−3𝛽)+4(1−𝛽)𝑞𝐿], 𝜖} ; and the corner solution 𝑝(2)
+𝑅= [(𝑞𝐻+𝑞𝐿)−𝜎(𝑞𝐻−𝑞𝐿)](1−𝛽)𝑓
+(1−𝜎)(𝑞𝐻−𝑞𝐿)
+(with profit 𝛱(2)
+𝑅=
+[ [𝑞𝐻+𝑞𝐿−𝜎(𝑞𝐻−𝑞𝐿)](1−𝛽)𝑓
+(1−𝜎)(𝑞𝐻−𝑞𝐿)
+−
+𝛽𝑓
+][
+1−
+2(1−𝛽)𝑓
+(1−𝜎)(𝑞𝐻−𝑞𝐿)
+]
+) when 𝑓≤̇𝑓𝑙
+2. Note that when 𝛽≥𝛽𝑙
+2 = 2(1−𝜎)(𝑞𝐻−𝑞𝐿)+4𝑞𝐿
+3(1−𝜎)(𝑞𝐻−𝑞𝐿)+4𝑞𝐿, we have 2[(1−𝜎)(𝑞𝐻−𝑞𝐿)(2−3𝛽)+4(1−𝛽)𝑞𝐿] ≤0 and thus ̇𝑓𝑙
+2 = +∞.
+By comparing profits under Case 1 and Case 2, we obtain the optimal price 𝑝𝐿
+𝑅𝑠for the low-quality retailer as shown in Table B.12.
+Finally, we compare 𝛱𝑖
+𝑅𝑠with 𝛱𝑖
+𝑁, 𝑖= 𝐻, 𝐿to show when the retailer adopts the RFI service under monopoly insurance company case. We
+start with the high-quality retailer case, 𝑞= 𝑞𝐻.
+Case I: 𝑞= 𝑞𝐻.
+When 𝑞= 𝑞𝐻, we compare 𝛱𝐻
+𝑅𝑠with 𝛱𝐻
+𝑁regarding the size of 𝑓ℎ,
+̇𝐹ℎ,
+̇𝑓ℎ
+1 and
+̇𝑓ℎ
+2 , and 𝛽ℎ
+1 and 𝛽ℎ
+2 in Table B.11.
+1. when 𝛽≥max{𝛽ℎ
+1 , 𝛽ℎ
+2 }, (1) if 𝑓≥𝑓ℎ, we have 𝛱𝐻
+𝑅𝑠= [(1+𝜎)𝑞𝐻−(1−𝜎+2𝜎𝛽)𝑓]2
+4(1+𝜎)2𝑞𝐻
+and 𝛱𝐻
+𝑁= 𝑞𝐻+𝑞𝐿
+8
+, and thus 𝛱𝐻
+𝑅𝑠≤𝛱𝐻
+𝑁when 𝑓≤
+(1+𝜎)√𝑞𝐻
+1−𝜎+2𝜎𝛽
+(√𝑞𝐻−
+√
+𝑞𝐻+𝑞𝐿
+2
+). (2) if 𝑓≤𝑓ℎ, we have 𝛱𝐻
+𝑅𝑠= [(1+𝜎)𝑞𝐻−(1−𝜎+2𝜎𝛽)𝑓]2
+4(1+𝜎)2𝑞𝐻
+and 𝛱𝐻
+𝑁= (𝑞𝐻−𝑓)2
+4𝑞𝐻
+, and thus 𝛱𝐻
+𝑅𝑠≥𝛱𝐻
+𝑁.
+By summarizing, 𝛱𝐻
+𝑅𝑠≥𝛱𝐻
+𝑁holds when 𝑓≤
+(1+𝜎)√𝑞𝐻
+1−𝜎+2𝜎𝛽
+(√𝑞𝐻−
+√
+𝑞𝐻+𝑞𝐿
+2
+) in this interval.
+2. when min{𝛽ℎ
+1 , 𝛽ℎ
+2 } ≤𝛽≤max{𝛽ℎ
+1 , 𝛽ℎ
+2 }, there are two sub-cases.
+
+
+========== PAGE 26 ==========
+International Journal of Production Economics 256 (2023) 108752
+26
+X. Li et al.
+Table B.13
+Conditions of 𝛱𝐻
+𝑅𝑠≥𝛱𝐻
+𝑁.
+Region
+Condition
+𝛽≥max{𝛽ℎ
+1 , 𝛽ℎ
+2 }
+𝑓≤
+(1+𝜎)√𝑞𝐻
+1−𝜎+2𝜎𝛽
+(√𝑞𝐻−
+√
+𝑞𝐻+𝑞𝐿
+2
+)
+min{𝛽ℎ
+1 , 𝛽ℎ
+2 } ≤𝛽≤max{𝛽ℎ
+1 , 𝛽ℎ
+2 }
+𝑓≤max {
+√
+𝑞𝐻+𝑞𝐿+𝜎(𝑞𝐻−𝑞𝐿)[√
+𝑞𝐻+𝑞𝐿+𝜎(𝑞𝐻−𝑞𝐿)−√𝑞𝐻+𝑞𝐿
+]
+2𝛽
+,
+(1+𝜎)√𝑞𝐻
+1−𝜎+2𝜎𝛽
+(√𝑞𝐻−
+√
+𝑞𝐻+𝑞𝐿
+2
+)}
+𝛽≤min{𝛽ℎ
+1 , 𝛽ℎ
+2 }
+̇𝑓ℎ
+1 ≤min{ ̇𝑓ℎ
+2 , 𝑓ℎ},
+𝑓≤
+√
+𝑞𝐻+𝑞𝐿+𝜎(𝑞𝐻−𝑞𝐿)[√
+𝑞𝐻+𝑞𝐿+𝜎(𝑞𝐻−𝑞𝐿)−√𝑞𝐻+𝑞𝐿
+]
+2𝛽
+̇𝑓ℎ
+2 ≤̇𝑓ℎ
+1 ≤𝑓ℎ,
+𝑓≤
+(1+𝜎)√𝑞𝐻
+1−𝜎+2𝜎𝛽
+(√𝑞𝐻−
+√
+𝑞𝐻+𝑞𝐿
+2
+)
+Case 1: 𝑓ℎ≥̇𝐹ℎ. (1) if 𝑓≥𝑓ℎ, we have 𝛱𝐻
+𝑅𝑠= [𝑞𝐻+𝑞𝐿+𝜎(𝑞𝐻−𝑞𝐿)−2𝛽𝑓]2
+8
+≥𝛱𝐻
+𝑁= 𝑞𝐻+𝑞𝐿
+8
+when 𝑓≤
+√
+𝑞𝐻+𝑞𝐿+𝜎(𝑞𝐻−𝑞𝐿)[√
+𝑞𝐻+𝑞𝐿+𝜎(𝑞𝐻−𝑞𝐿)−√𝑞𝐻+𝑞𝐿
+]
+2𝛽
+. (2)
+if ̇𝐹ℎ≤𝑓≤𝑓ℎ, we have 𝛱𝐻
+𝑅𝑠= [𝑞𝐻+𝑞𝐿+𝜎(𝑞𝐻−𝑞𝐿)−2𝛽𝑓]2
+8
+≥[(1+𝜎)𝑞𝐻−(1−𝜎+2𝜎𝛽)𝑓]2
+4(1+𝜎)2𝑞𝐻
+> 𝛱𝐻
+𝑁= (𝑞𝐻−𝑓)2
+4𝑞𝐻
+. (3) if 𝑓≤̇𝐹ℎ, we have 𝛱𝐻
+𝑅𝑠= [(1+𝜎)𝑞𝐻−(1−𝜎+2𝜎𝛽)𝑓]2
+4(1+𝜎)2𝑞𝐻
+and 𝛱𝐻
+𝑁= (𝑞𝐻−𝑓)2
+4𝑞𝐻
+, and thus 𝛱𝐻
+𝑅𝑠≥𝛱𝐻
+𝑁.
+Case 2: 𝑓ℎ≤
+̇𝐹ℎ. (1) if 𝑓≥
+̇𝐹ℎ, we have 𝛱𝐻
+𝑅𝑠= [𝑞𝐻+𝑞𝐿+𝜎(𝑞𝐻−𝑞𝐿)−2𝛽𝑓]2
+8
+≥𝛱𝐻
+𝑁= 𝑞𝐻+𝑞𝐿
+8
+when 𝑓≤
+√
+𝑞𝐻+𝑞𝐿+𝜎(𝑞𝐻−𝑞𝐿)[√
+𝑞𝐻+𝑞𝐿+𝜎(𝑞𝐻−𝑞𝐿)−√𝑞𝐻+𝑞𝐿
+]
+2𝛽
+.
+(2) if 𝑓ℎ≤𝑓≤
+̇𝐹ℎ, we have 𝛱𝐻
+𝑅𝑠=
+[(1+𝜎)𝑞𝐻−(1−𝜎+2𝜎𝛽)𝑓]2
+4(1+𝜎)2𝑞𝐻
+≥𝛱𝐻
+𝑁=
+𝑞𝐻+𝑞𝐿
+8
+when 𝑓≤
+(1+𝜎)√𝑞𝐻
+1−𝜎+2𝜎𝛽
+(√𝑞𝐻−
+√
+𝑞𝐻+𝑞𝐿
+2
+). (3) if 𝑓≤𝑓ℎ, we have
+𝛱𝐻
+𝑅𝑠= [(1+𝜎)𝑞𝐻−(1−𝜎+2𝜎𝛽)𝑓]2
+4(1+𝜎)2𝑞𝐻
+and 𝛱𝐻
+𝑁= (𝑞𝐻−𝑓)2
+4𝑞𝐻
+, and thus 𝛱𝐻
+𝑅𝑠≥𝛱𝐻
+𝑁.
+Note that if
+√
+𝑞𝐻+𝑞𝐿+𝜎(𝑞𝐻−𝑞𝐿)[√
+𝑞𝐻+𝑞𝐿+𝜎(𝑞𝐻−𝑞𝐿)−√𝑞𝐻+𝑞𝐿
+]
+2𝛽
+>
+̇𝐹ℎ, then we have
+(1+𝜎)√𝑞𝐻
+1−𝜎+2𝜎𝛽
+(√𝑞𝐻−
+√
+𝑞𝐻+𝑞𝐿
+2
+)
+>
+̇𝐹ℎ; otherwise when
+√
+𝑞𝐻+𝑞𝐿+𝜎(𝑞𝐻−𝑞𝐿)[√
+𝑞𝐻+𝑞𝐿+𝜎(𝑞𝐻−𝑞𝐿)−√𝑞𝐻+𝑞𝐿
+]
+2𝛽
+≤̇𝐹ℎ, then we have
+(1+𝜎)√𝑞𝐻
+1−𝜎+2𝜎𝛽
+(√𝑞𝐻−
+√
+𝑞𝐻+𝑞𝐿
+2
+) < ̇𝐹ℎ.
+By summarizing, 𝛱𝐻
+𝑅𝑠≥𝛱𝐻
+𝑁when 𝑓≤max{
+√
+𝑞𝐻+𝑞𝐿+𝜎(𝑞𝐻−𝑞𝐿)[√
+𝑞𝐻+𝑞𝐿+𝜎(𝑞𝐻−𝑞𝐿)−√𝑞𝐻+𝑞𝐿
+]
+2𝛽
+,
+(1+𝜎)√𝑞𝐻
+1−𝜎+2𝜎𝛽
+(√𝑞𝐻−
+√
+𝑞𝐻+𝑞𝐿
+2
+)} in this interval.
+3. when 𝛽≤min{𝛽ℎ
+1 , 𝛽ℎ
+2 }, there are two sub-cases, (1) if
+̇𝑓ℎ
+2 ≤̇𝑓ℎ
+1 , the result is the same to Case 2 above. (2) if
+̇𝑓ℎ
+2 ≥̇𝑓ℎ
+1 , (a) if 𝑓≥max{ ̇𝑓ℎ
+2 , 𝑓ℎ},
+we have 𝛱𝐻
+𝑅𝑠= [𝑞𝐻+𝑞𝐿+𝜎(𝑞𝐻−𝑞𝐿)−2𝛽𝑓]2
+8
+≥𝛱𝐻
+𝑁= 𝑞𝐻+𝑞𝐿
+8
+when 𝑓≤
+√
+𝑞𝐻+𝑞𝐿+𝜎(𝑞𝐻−𝑞𝐿)[√
+𝑞𝐻+𝑞𝐿+𝜎(𝑞𝐻−𝑞𝐿)−√𝑞𝐻+𝑞𝐿
+]
+2𝛽
+. (b) if 𝑓≤min{ ̇𝑓ℎ
+1 , 𝑓ℎ}, we have
+𝛱𝐻
+𝑅𝑠= [(1+𝜎)𝑞𝐻−(1−𝜎+2𝜎𝛽)𝑓]2
+4(1+𝜎)2𝑞𝐻
+and 𝛱𝐻
+𝑁= (𝑞𝐻−𝑓)2
+4𝑞𝐻
+, and thus 𝛱𝐻
+𝑅𝑠≥𝛱𝐻
+𝑁. However, it is hard to compare 𝛱𝐻
+𝑅𝑠and 𝛱𝐻
+𝑁, we would show the result
+through numerical experiment in Fig. 5.
+(c) if min{ ̇𝑓ℎ
+1 , 𝑓ℎ} ≤𝑓≤max{ ̇𝑓ℎ
+2 , 𝑓ℎ}, there are several cases below.
+Case-c1: 𝑓ℎ≤
+̇𝑓ℎ
+1
+≤
+̇𝑓ℎ
+2 . In this case, (c1-1) if 𝑓ℎ≤𝑓
+≤
+̇𝑓ℎ
+1 , we have 𝛱𝐻
+𝑅𝑠=
+[(1+𝜎)𝑞𝐻−(1−𝜎+2𝜎𝛽)𝑓]2
+4(1+𝜎)2𝑞𝐻
+≥𝛱𝐻
+𝑁
+=
+𝑞𝐻+𝑞𝐿
+8
+when 𝑓
+≤
+(1+𝜎)√𝑞𝐻
+1−𝜎+2𝜎𝛽
+(√𝑞𝐻−
+√
+𝑞𝐻+𝑞𝐿
+2
+); (c1-2) if
+̇𝑓ℎ
+1 ≤𝑓≤̇𝑓ℎ
+2 , 𝛱𝐻
+𝑅𝑠=
+[ [𝑞𝐻+𝑞𝐿+𝜎(𝑞𝐻−𝑞𝐿)](1−𝛽)𝑓
+(1+𝜎)(𝑞𝐻−𝑞𝐿)
+−𝛽𝑓
+][
+1 −
+2𝑞𝐻(1−𝛽)𝑓
+(1+𝜎)𝑞𝐻(𝑞𝐻−𝑞𝐿)
+]
+and 𝛱𝐻
+𝑁= 𝑞𝐻+𝑞𝐿
+8
+.
+Case-c2:
+̇𝑓ℎ
+1 ≤𝑓ℎ≤̇𝑓ℎ
+2 . In this case, (c2-1) if
+̇𝑓ℎ
+1 ≤𝑓≤𝑓ℎ, 𝛱𝐻
+𝑅𝑠=
+[ [𝑞𝐻+𝑞𝐿+𝜎(𝑞𝐻−𝑞𝐿)](1−𝛽)𝑓
+(1+𝜎)(𝑞𝐻−𝑞𝐿)
+−𝛽𝑓
+][
+1 −
+2𝑞𝐻(1−𝛽)𝑓
+(1+𝜎)𝑞𝐻(𝑞𝐻−𝑞𝐿)
+]
+> 𝛱𝐻
+𝑁= (𝑞𝐻−𝑓)2
+4
+; (c2-2) if
+𝑓ℎ≤𝑓≤̇𝑓ℎ
+2 , 𝛱𝐻
+𝑅𝑠=
+[ [𝑞𝐻+𝑞𝐿+𝜎(𝑞𝐻−𝑞𝐿)](1−𝛽)𝑓
+(1+𝜎)(𝑞𝐻−𝑞𝐿)
+−𝛽𝑓
+][
+1 −
+2𝑞𝐻(1−𝛽)𝑓
+(1+𝜎)𝑞𝐻(𝑞𝐻−𝑞𝐿)
+]
+> 𝛱𝐻
+𝑁= 𝑞𝐻+𝑞𝐿
+8
+.
+Case-c3:
+̇𝑓ℎ
+1 ≤̇𝑓ℎ
+2 ≤𝑓ℎ. In this case, (c2-1) if
+̇𝑓ℎ
+1 ≤𝑓≤̇𝑓ℎ
+2 , 𝛱𝐻
+𝑅𝑠=
+[ [𝑞𝐻+𝑞𝐿+𝜎(𝑞𝐻−𝑞𝐿)](1−𝛽)𝑓
+(1+𝜎)(𝑞𝐻−𝑞𝐿)
+−𝛽𝑓
+][
+1 −
+2𝑞𝐻(1−𝛽)𝑓
+(1+𝜎)𝑞𝐻(𝑞𝐻−𝑞𝐿)
+]
+> 𝛱𝐻
+𝑁= (𝑞𝐻−𝑓)2
+4
+; (c2-2) if
+̇𝑓ℎ
+2 ≤𝑓≤𝑓ℎ, 𝛱𝐻
+𝑅𝑠= [𝑞𝐻+𝑞𝐿+𝜎(𝑞𝐻−𝑞𝐿)−2𝛽𝑓]2
+8
+> 𝛱𝐻
+𝑁= (𝑞𝐻−𝑓)2
+4
+.
+Combining all cases above, we have 𝛱𝐻
+𝑅𝑠≥𝛱𝐻
+𝑅
+when (1)
+̇𝑓ℎ
+1
+≤min{ ̇𝑓ℎ
+2 , 𝑓ℎ}, and 𝑓≤
+√
+𝑞𝐻+𝑞𝐿+𝜎(𝑞𝐻−𝑞𝐿)[√
+𝑞𝐻+𝑞𝐿+𝜎(𝑞𝐻−𝑞𝐿)−√𝑞𝐻+𝑞𝐿
+]
+2𝛽
+; (2)
+̇𝑓ℎ
+2 ≤̇𝑓ℎ
+1 ≤𝑓ℎ, and 𝑓≤
+(1+𝜎)√𝑞𝐻
+1−𝜎+2𝜎𝛽
+(√𝑞𝐻−
+√
+𝑞𝐻+𝑞𝐿
+2
+).
+By summarizing, we obtain the conditions when 𝛱𝐻
+𝑅𝑠≥𝛱𝐻
+𝑁in Table B.13.
+Case II: 𝑞= 𝑞𝐿.
+When 𝑞= 𝑞𝐿, we compare 𝛱𝐿
+𝑅𝑠with 𝛱𝐿
+𝑁regarding the size of 𝑓𝑙,
+𝑞𝐻−𝑞𝐿
+4
+̇𝑓𝑙
+1 and
+̇𝑓𝑙
+2, 𝛽𝑙
+1 and 𝛽𝑙
+2 in Table B.12.
+1. when 𝛽≥𝛽𝑙
+1, there are three sub-cases as follows.
+(1) if 𝑓≥
+𝑞𝐻−𝑞𝐿
+4
+, 𝛱𝐿
+𝑅𝑠=
+[𝑞𝐻𝑞𝐿−𝑡(𝑞𝐻−𝑞𝐿)−(1−𝛽)𝑓𝑞𝐻+𝛽𝑓𝑞𝐿]2
+4𝑞𝐿(𝑞𝐻)2
+−
+4𝑞𝐿𝑞𝐻𝑓[(2𝛽−1)𝑞𝐻−2 1−𝛽
+1−𝜎(𝛽𝑓+𝑡)]
+4𝑞𝐿(𝑞𝐻)2
+and 𝛱𝐿
+𝑁=
+𝑞𝐻+𝑞𝐿
+8
+. Then, 𝛱𝐿
+𝑅𝑠≥𝛱𝐿
+𝑁when 𝜎≥̇𝜎1
+3 =
+2(1−𝛽)𝑓(𝛽𝑓+𝑡)
+𝑞𝐻−𝑞𝐿
+8
+−[𝑞𝐻𝑞𝐿−𝑡(𝑞𝐻−𝑞𝐿)−(1−𝛽)𝑓𝑞𝐻+𝛽𝑓𝑞𝐿]2
+4𝑞𝐿(𝑞𝐻)2
++(2𝛽−1)𝑓
+.
+(2) if 𝑓𝑙≤𝑓≤
+𝑞𝐻−𝑞𝐿
+4
+, 𝛱𝐿
+𝑅𝑠=
+[𝑞𝐻𝑞𝐿−𝑡(𝑞𝐻−𝑞𝐿)−(1−𝛽)𝑓𝑞𝐻+𝛽𝑓𝑞𝐿]2
+4𝑞𝐿(𝑞𝐻)2
+−
+4𝑞𝐿𝑞𝐻𝑓[(2𝛽−1)𝑞𝐻−2 1−𝛽
+1−𝜎(𝛽𝑓+𝑡)]
+4𝑞𝐿(𝑞𝐻)2
+and 𝛱𝐿
+𝑁=
+(𝑞𝐻+𝑞𝐿)𝑓(𝑞𝐻−𝑞𝐿−2𝑓)
+𝑞𝐻−𝑞𝐿
+. Then, we have
+𝛱𝐿
+𝑅𝑠≥𝛱𝐿
+𝑁when 𝜎≥̇𝜎2
+3 =
+2(1−𝛽)𝑓(𝛽𝑓+𝑡)
+𝑞𝐻
+[ (𝑞𝐻+𝑞𝐿)𝑓(𝑞𝐻−𝑞𝐿−2𝑓)
+(𝑞𝐻−𝑞𝐿)2
+−[𝑞𝐻𝑞𝐿−𝑡(𝑞𝐻−𝑞𝐿)−(1−𝛽)𝑓𝑞𝐻+𝛽𝑓𝑞𝐿]2
+4𝑞𝐿(𝑞𝐻)2
++(2𝛽−1)𝑓].
+(3) if 𝑓≤𝑓𝑙, 𝛱𝐿
+𝑅𝑠=
+[𝑞𝐻𝑞𝐿−𝑡(𝑞𝐻−𝑞𝐿)−(1−𝛽)𝑓𝑞𝐻+𝛽𝑓𝑞𝐿]2
+4𝑞𝐿(𝑞𝐻)2
+−
+4𝑞𝐿𝑞𝐻𝑓[(2𝛽−1)𝑞𝐻−2 1−𝛽
+1−𝜎(𝛽𝑓+𝑡)]
+4𝑞𝐿(𝑞𝐻)2
+and 𝛱𝐿
+𝑁=
+[𝑞𝐻(𝑞𝐿−𝑓−𝑡)+𝑡𝑞𝐿]2+4𝑞𝐻𝑞𝐿(𝑞𝐻+2𝑡)𝑓
+4𝑞𝐿(𝑞𝐻)2
+. Then, we have
+𝛱𝐿
+𝑅𝑠≥𝛱𝐿
+𝑁when 𝜎≥̇𝜎3
+3 =
+2(1−𝛽)𝑓(𝛽𝑓+𝑡)
+[𝑞𝐻(𝑞𝐿−𝑓−𝑡)+𝑡𝑞𝐿]2+4𝑞𝐻𝑞𝐿(𝑞𝐻+2𝑡)𝑓
+4𝑞𝐿(𝑞𝐻)2
+−[𝑞𝐻𝑞𝐿−𝑡(𝑞𝐻−𝑞𝐿)−(1−𝛽)𝑓𝑞𝐻+𝛽𝑓𝑞𝐿]2
+4𝑞𝐿(𝑞𝐻)2
++(2𝛽−1)𝑓
+.
+2. when 𝛽𝑙
+2 ≤𝛽≤𝛽𝑙
+1, there are three sub-cases as follows.
+
+
+========== PAGE 27 ==========
+International Journal of Production Economics 256 (2023) 108752
+27
+X. Li et al.
+Table B.14
+Conditions of 𝛱𝐿
+𝑅𝑠≥𝛱𝐿
+𝑁.
+Region
+Condition
+𝛽≥𝛽𝑙
+1
+𝑓≥𝑞𝐻−𝑞𝐿
+4
+𝜎≥̇𝜎1
+3
+𝑓𝑙< 𝑓< 𝑞𝐻−𝑞𝐿
+4
+𝜎≥̇𝜎2
+3
+𝑓≤𝑓𝑙
+𝜎≥̇𝜎3
+3
+𝛽𝑙
+2 ≤𝛽≤𝛽𝑙
+1
+𝑓≤min{ ̇𝑓𝑙
+1, 𝑓𝑙}
+𝜎≥̇𝜎3
+3
+𝑓𝑙≤𝑓≤min{ ̇𝑓𝑙
+1, 𝑞𝐻−𝑞𝐿
+4
+}
+𝜎≥̇𝜎2
+3
+𝑞𝐻−𝑞𝐿
+4
+≤𝑓≤̇𝑓𝑙
+1
+𝜎≥̇𝜎1
+3
+𝛽≤𝛽𝑙
+2
+𝑓∈(0, min{ ̇𝑓𝑙
+1, ̇𝑓𝑙
+2}) ∩(𝑓𝑙, 𝑞𝐻−𝑞𝐿
+4
+)
+𝜎≥̇𝜎3
+2
+𝜎≥̇𝜎𝑠, 𝑓∈( ̇𝑓𝑙
+2, max{ ̇𝑓𝑙
+1, ̇𝑓𝑙
+2}) ∩(𝑓𝑙, 𝑞𝐻−𝑞𝐿
+4
+)
+𝑓∈(0, min{ ̇𝑓𝑙
+1, ̇𝑓𝑙
+2}) ∩(𝑓𝑙, 𝑞𝐻−𝑞𝐿
+4
+)
+𝜎≥̇𝜎3
+3
+𝜎≥̇𝜎𝑠, 𝑓∈( ̇𝑓𝑙
+2, max{ ̇𝑓𝑙
+1, ̇𝑓𝑙
+2}) ∩(0, 𝑓𝑙)
+(1) 𝑓𝑙≤
+̇𝑓𝑙
+1 ≤
+𝑞𝐻−𝑞𝐿
+4
+. In this case, (a) if 𝑓≥
+𝑞𝐻−𝑞𝐿
+4
+, we have 𝛱𝐿
+𝑅𝑠= [ [𝑞𝐻+𝑞𝐿−𝜎(𝑞𝐻−𝑞𝐿)](1−𝛽)𝑓
+(1−𝜎)(𝑞𝐻−𝑞𝐿)
+−𝛽𝑓][1 −
+2(1−𝛽)𝑓
+(1−𝜎)(𝑞𝐻−𝑞𝐿)
+] and 𝛱𝐿
+𝑁=
+𝑞𝐻+𝑞𝐿
+8
+.
+Note that 𝛱𝐿
+𝑅𝑠< 𝛱𝐿
+𝑅< 𝛱𝐿
+𝑁from the proof of Proposition 5. Thus, 𝛱𝐿
+𝑅𝑠≤𝛱𝐿
+𝑁in this interval. (b) if
+̇𝑓𝑙
+1 ≤𝑓≤
+𝑞𝐻−𝑞𝐿
+4
+, we have
+𝛱𝐿
+𝑅𝑠= [ [𝑞𝐻+𝑞𝐿−𝜎(𝑞𝐻−𝑞𝐿)](1−𝛽)𝑓
+(1−𝜎)(𝑞𝐻−𝑞𝐿)
+−𝛽𝑓][1 −
+2(1−𝛽)𝑓
+(1−𝜎)(𝑞𝐻−𝑞𝐿)
+] and 𝛱𝐿
+𝑁= (𝑞𝐻+𝑞𝐿)𝑓(𝑞𝐻−𝑞𝐿−2𝑓)
+(𝑞𝐻−𝑞𝐿)2
+. Their difference is 𝛱𝐿
+𝑅𝑠−𝛱𝐿
+𝑁=
+2𝑓
+(1−𝜎)2(𝑞𝐻−𝑞𝐿)2 [(1 −
+𝜎)(𝑞𝐻−𝑞𝐿)[(𝜎−𝛽)𝑞𝐿(𝑞𝐻−𝑞𝐿) −𝛽(1 −𝜎)(𝑞𝐻−𝑞𝐿)] −[−(𝑞𝐻+ 𝑞𝐿)(1 −𝜎)2 + (1 −𝛽)(1 −2𝛽)(𝑞𝐻−𝑞𝐿)(1 −𝜎+ 2(1 −𝛽)2𝑞𝐿)]
+⏟⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏟⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏞⏟
+𝑋(𝜎)
+𝑓].
+Denote the term [−(𝑞𝐻+𝑞𝐿)(1−𝜎)2 +(1−𝛽)(1−2𝛽)(𝑞𝐻−𝑞𝐿)(1−𝜎+2(1−𝛽)2𝑞𝐿)] as 𝑋(𝜎). To show 𝛱𝐿
+𝑅𝑠−𝛱𝐿
+𝑁≥0, it is equivalent to show
+(1−𝜎)(𝑞𝐻−𝑞𝐿)[(𝜎−𝛽)𝑞𝐿(𝑞𝐻−𝑞𝐿)−𝛽(1−𝜎)(𝑞𝐻−𝑞𝐿)]−𝑋(𝜎)𝑓≥0. Note that (1−𝜎)(𝑞𝐻−𝑞𝐿)[(𝜎−𝛽)𝑞𝐿(𝑞𝐻−𝑞𝐿)−𝛽(1−𝜎)(𝑞𝐻−𝑞𝐿)] > 0 when
+𝜎≥
+𝛽𝑞𝐻
+𝑞𝐿+𝛽(𝑞𝐻−𝑞𝐿). As for the term 𝑋(𝜎), it is obvious that 𝑋(𝜎) is concave in 𝜎. Note that 𝑋(1) = 2[1 −𝛽]2𝑞𝐿≥0, 𝑋(0) = −𝛽(2𝑞𝐻(1 −𝛽) +
+𝑞𝐻−𝑞𝐿) < 0 and 𝑋(
+𝛽𝑞𝐻
+𝑞𝐿+𝛽(𝑞𝐻−𝑞𝐿)) =
+𝛽(1−𝛽)2𝑞𝐿(𝑞2
+𝐻−𝑞2
+𝐿)
+(𝑞𝐿+𝛽(𝑞𝐻−𝑞𝐿))2
+> 0. Denote 𝜎1
+𝑥= min{𝜎|𝑋(𝜎) = 0}, then (1) for 𝜎< 𝜎1
+𝑥, 𝑋(𝜎) < 0, and thus we have
+𝛱𝐿
+𝑅𝑠−𝛱𝐿
+𝑁is increasing in 𝑓. However, when 𝑓= 𝑞𝐻−𝑞𝐿
+4
+, we have 𝛱𝐿
+𝑅𝑠−𝛱𝐿
+𝑁= −(1−𝛽)2𝛽𝑞𝐿(𝑞𝐻+𝑞𝐿)(𝑞𝐻−𝑞𝐿)2
+4(𝛽(𝑞𝐻−𝑞𝐿)+𝑞𝐿)2
+< 0. Hence, 𝛱𝐿
+𝑅𝑠−𝛱𝐿
+𝑁< 0. (2) For
+𝜎1
+𝑥≤𝜎<
+𝛽𝑞𝐻
+𝑞𝐿+𝛽(𝑞𝐻−𝑞𝐿), we have (1−𝜎)(𝑞𝐻−𝑞𝐿)[(𝜎−𝛽)𝑞𝐿(𝑞𝐻−𝑞𝐿)−𝛽(1−𝜎)(𝑞𝐻−𝑞𝐿)]−𝑋(𝜎)𝑓≤0. (3) For 𝜎>
+𝛽𝑞𝐻
+𝑞𝐿+𝛽(𝑞𝐻−𝑞𝐿), we have 𝑋(𝜎) > 0,
+and thus 𝛱𝐿
+𝑅𝑠−𝛱𝐿
+𝑁is decreasing in 𝑓. However, when 𝑓= 𝑓𝑙, we have 𝛱𝐿
+𝑅𝑠−𝛱𝐿
+𝑁= −
+𝛽(𝑞𝐻−𝑞𝐿)[𝑞3
+𝐻−𝑞𝐻𝑞2
+𝐿+2(1−𝛽)𝑡𝑞𝐻(𝑞𝐻−𝑞𝐿)−2𝛽𝑞𝐿𝑞2
+𝐻−𝑡(𝑞2
+𝐻−𝑞2
+𝐿)]
+𝑞𝐻(𝑞𝐻+3𝑞𝐿)
+< 0.
+Hence, 𝛱𝐿
+𝑅𝑠−𝛱𝐿
+𝑁< 0.
+By summarizing, we have 𝛱𝐿
+𝑅𝑠−𝛱𝐿
+𝑁< 0 in this interval.
+(c) if 𝑓𝑙≤𝑓≤
+̇𝑓𝑙
+1, the case is the same to case-(2) in region 1, then 𝛱𝐿
+𝑅𝑠≥𝛱𝐿
+𝑁when 𝜎≥̇𝜎2
+3. (d) if 𝑓≤𝑓𝑙, the case is the same to
+case-(3) in region 1, then 𝛱𝐿
+𝑅𝑠≥𝛱𝐿
+𝑁when 𝜎≥̇𝜎3
+3.
+(2)
+̇𝑓𝑙
+1 ≤𝑓𝑙≤
+𝑞𝐻−𝑞𝐿
+4
+. In this case, (a) if 𝑓
+≥
+𝑞𝐻−𝑞𝐿
+4
+, the case is the same as case (1)-a, and 𝛱𝐿
+𝑅𝑠≤𝛱𝐿
+𝑁in this interval. (b) If
+𝑓𝑙≤𝑓≤
+𝑞𝐻−𝑞𝐿
+4
+, the case is the same to case (1)-b, and 𝛱𝐿
+𝑅𝑠≥𝛱𝐿
+𝑁when 𝜎≤𝛽, 𝑓≥
+(1−𝜎)(𝜎−𝛽)𝑞𝐿(𝑞𝐻−𝑞𝐿)
+[ −(𝑞𝐻+𝑞𝐿)𝜎2+[2𝑞𝐿+𝛽(𝑞𝐻−𝑞𝐿)]𝜎−𝛽(𝑞𝐻+𝑞𝐿)−2𝛽(1−𝛽)𝑞𝐿
+1−𝜎
+],
+or 𝜎
+∈(𝜎1
+𝑥, 𝜎2
+𝑥), 𝑓
+≤
+(1−𝜎)(𝜎−𝛽)𝑞𝐿(𝑞𝐻−𝑞𝐿)
+[ −(𝑞𝐻+𝑞𝐿)𝜎2+[2𝑞𝐿+𝛽(𝑞𝐻−𝑞𝐿)]𝜎−𝛽(𝑞𝐻+𝑞𝐿)−2𝛽(1−𝛽)𝑞𝐿
+1−𝜎
+], or 𝜎
+∈(𝛽, 𝜎1
+𝑥) ∪(𝜎2
+𝑥, 1). (c) If
+̇𝑓𝑙
+1
+≤𝑓
+≤𝑓𝑙, we have 𝛱𝐿
+𝑅𝑠
+=
+[ [𝑞𝐻+𝑞𝐿−𝜎(𝑞𝐻−𝑞𝐿)](1−𝛽)𝑓
+(1−𝜎)(𝑞𝐻−𝑞𝐿)
+−𝛽𝑓
+][
+1 −
+2(1−𝛽)𝑓
+(1−𝜎)(𝑞𝐻−𝑞𝐿)
+]
+and 𝛱𝐿
+𝑁=
+[𝑞𝐻(𝑞𝐿−𝑓−𝑡)+𝑡𝑞𝐿]2+4𝑞𝐻𝑞𝐿(𝑞𝐻+2𝑡)𝑓
+4𝑞𝐿(𝑞𝐻)2
+. We illustrate 𝛱𝐿
+𝑅𝑠≥𝛱𝐿
+𝑁through Fig. 5. (d)
+If 𝑓≤̇𝑓𝑙
+1, the case is the same as case (1)-d, and 𝛱𝐿
+𝑅𝑠≥𝛱𝐿
+𝑁when 𝜎≥̇𝜎3
+3.
+(3) 𝑓𝑙≤𝑞𝐻−𝑞𝐿
+4
+≤
+̇𝑓𝑙
+1. (a) If 𝑓≥
+̇𝑓𝑙
+1, the case is the same as case (1)-a, and 𝛱𝐿
+𝑅𝑠≤𝛱𝐿
+𝑁. (b) If 𝑞𝐻−𝑞𝐿
+4
+≤𝑓≤
+̇𝑓𝑙
+1, the case is the same as the
+case of Region 1, and we have 𝛱𝐿
+𝑅𝑠≥𝛱𝐿
+𝑁when 𝜎≥𝜎1
+3. (c) If 𝑓𝑙≤𝑓≤𝑞𝐻−𝑞𝐿
+4
+, the case is the same as case (1)-c, thus 𝛱𝐿
+𝑅𝑠≥𝛱𝐿
+𝑁when
+𝜎≥̇𝜎2
+3. (d) If 𝑓≤𝑓𝑙, the case is the same to case (1)-d, and 𝛱𝐿
+𝑅𝑠≥𝛱𝐿
+𝑁when 𝜎≥̇𝜎3
+3.
+3. when 𝛽≤𝛽𝑙
+2, (1) if 𝑓≥𝑞𝐻−𝑞𝐿
+4
+, we have 𝛱𝐿
+𝑅𝑠< 𝛱𝐿
+𝑅< 𝛱𝐿
+𝑁by the same argument in the proof of Proposition 5. Otherwise, if 𝑓≤𝑞𝐻−𝑞𝐿
+4
+, there
+are several sub-cases as follows. (2) If (a) 𝑓∈(0, min{ ̇𝑓𝑙
+1, ̇𝑓𝑙
+2})∩(0, 𝑓𝑙), or if (b) 𝜎≥̇𝜎𝑠, 𝑓∈( ̇𝑓𝑙
+2, max{ ̇𝑓𝑙
+1, ̇𝑓𝑙
+2})∩(0, 𝑓𝑙), the case is same to case-(3)
+in Region 1, and we have 𝛱𝐿
+𝑅𝑠≥𝛱𝐿
+𝑁when 𝜎≥̇𝜎3
+3. (3) If 𝑓∈(0, min{ ̇𝑓𝑙
+1, ̇𝑓𝑙
+2}) ∩(𝑓𝑙, 𝑞𝐻−𝑞𝐿
+4
+), or if (b) 𝜎≥̇𝜎𝑠, 𝑓∈( ̇𝑓𝑙
+2, max{ ̇𝑓𝑙
+1, ̇𝑓𝑙
+2}) ∩(𝑓𝑙, 𝑞𝐻−𝑞𝐿
+4
+),
+the case is same to case-(2) in Region 1, and we have 𝛱𝐿
+𝑅𝑠≥𝛱𝐿
+𝑁when 𝜎≥̇𝜎3
+2. (4) As for other cases, it is cumbersome to analyze 𝛱𝐿
+𝑅𝑠≥𝛱𝐿
+𝑁,
+thus we give an illustration in Fig. 6(b).
+We summarize the above cases in the following Table B.14.
+□
+Proof of Monopoly Insurance Company with Reversed Sequence of. (1) and (2).
+With the reversed sequence of (1) and (2), the insurance company first decides the RFI premium 𝑎. Then, the retailer decides whether to adopt
+the RFI service and sets the price.
+Therefore, given the customer’s return and purchase behaviors in Proposition 1, we next explore the pricing and RFI strategies of the retailer
+of 𝑞𝑖, 𝑖= 𝐻, 𝐿respectively. Under this setting, the retailer solves 𝑝𝑅by eliminating the constraint 𝑎= 𝛽𝑓in Optimization Programs (B.2) to (B.4).
+Case I: 𝑞= 𝑞𝐻.
+Regarding 𝑞= 𝑞𝐻, we obtain the optimal prices for the high-quality retailer, which is denoted as 𝑝𝐻
+𝑅𝑚in Table B.15.14 The optimal profit for
+the high-quality retailer is denoted as 𝛱𝐻
+𝑅𝑚.
+14 Note that we have 𝑎ℎ
+2 ≥𝑎ℎ
+1.
+
+
+========== PAGE 28 ==========
+International Journal of Production Economics 256 (2023) 108752
+28
+X. Li et al.
+Table B.15
+The optimal price for the high-quality retailer.
+Condition
+𝑝𝐻
+𝑅𝑚
+𝛱𝐻
+𝑅𝑚
+𝑓≥̇𝑓ℎ
+𝑚
+𝑎≤𝑎ℎ
+1
+𝑞𝐻+𝑞𝐿+𝜎(𝑞𝐻−𝑞𝐿)+2𝑎
+4
+[𝑞𝐻+𝑞𝐿+𝜎(𝑞𝐻−𝑞𝐿)−2𝑎]2
+8[𝑞𝐻+𝑞𝐿+𝜎(𝑞𝐻−𝑞𝐿)]
+𝑎≥𝑎ℎ
+1
+𝑎+𝑞𝐻
+2
+−(1−𝜎)(1−𝛽)𝑓
+2(1+𝜎)
+[(1+𝜎)(𝑞𝐻−𝑎)−(1−𝜎)(1−𝛽)𝑓]2
+4(1+𝜎)2𝑞𝐻
+(1+𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+≤𝑓≤̇𝑓ℎ
+𝑚
+𝑎≥𝑎ℎ
+2
+[𝑞𝐻+𝑞𝐿+𝜎(𝑞𝐻−𝑞𝐿)](1−𝛽)𝑓
+(1+𝜎)(𝑞𝐻−𝑞𝐿)
+[ [𝑞𝐻+𝑞𝐿+𝜎(𝑞𝐻−𝑞𝐿)](1−𝛽)𝑓
+(1+𝜎)(𝑞𝐻−𝑞𝐿)
+−𝑎][1 −
+2(1−𝛽)𝑓
+(1+𝜎)(𝑞𝐻−𝑞𝐿)
+]
+𝑎≤𝑎ℎ
+2
+𝑞𝐻+𝑞𝐿+𝜎(𝑞𝐻−𝑞𝐿)+2𝑎
+4
+[𝑞𝐻+𝑞𝐿+𝜎(𝑞𝐻−𝑞𝐿)−2𝑎]2
+8[𝑞𝐻+𝑞𝐿+𝜎(𝑞𝐻−𝑞𝐿)]
+𝑓≤(1+𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+𝑎+𝑞𝐻
+2
+−(1−𝜎)(1−𝛽)𝑓
+2(1+𝜎)
+[(1+𝜎)(𝑞𝐻−𝑎)−(1−𝜎)(1−𝛽)𝑓]2
+4(1+𝜎)2𝑞𝐻
+where 𝑎ℎ
+1 =
+√
+𝑞𝐻[𝑞𝐻+𝑞𝐿+𝜎(𝑞𝐻−𝑞𝐿)]
+2
+−𝑞𝐻+ (1−𝜎)
+1+𝜎(1−𝛽)𝑓
+√
+2𝑞𝐻
+𝑞𝐻+𝑞𝐿+𝜎(𝑞𝐻−𝑞𝐿) −1
+, 𝑎ℎ
+2 = (𝑞𝐻+ 𝑞𝐿+ 𝜎(𝑞𝐻−𝑞𝐿))[
+2(1−𝛽)𝑓
+(1+𝜎)(𝑞𝐻−𝑞𝐿) −1
+2
+]
+̇𝑓ℎ
+𝑚=
+(1+𝜎)𝑞𝐻(𝑞𝐻−𝑞𝐿)
+(1−𝛽)[3𝑞𝐻+𝑞𝐿+𝜎(𝑞𝐻−𝑞𝐿)] .
+Table B.16
+Conditions of 𝛱𝐻
+𝑅𝑚≥𝛱𝐻
+𝑁.
+Region
+Condition
+𝑓≥̇𝑓1
+0 ≤𝑎≤̇𝑎5
+max{ ̇𝑓ℎ
+𝑚, 𝑓ℎ} ≤𝑓≤̇𝑓1
+𝑎ℎ
+1 ≤𝑎≤̇𝑎1
+0 ≤𝑎≤𝑎ℎ
+1
+𝜎≥4(1−𝛽)
+𝑞𝐻−𝑞𝐿𝑓ℎ−1
+(1+𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+≤𝑓≤̇𝑓ℎ
+𝑚
+𝑎ℎ
+2 ≤𝑎≤min{𝑎ℎ
+2, ̇𝑎6}
+𝑎≤min{𝑎ℎ
+2, ̇𝑎5}
+𝑓ℎ≤𝑓≤(1+𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+0 ≤𝑎≤̇𝑎1
+̇𝜎ℎ≤𝜎≤4(1−𝛽)
+𝑞𝐻−𝑞𝐿𝑓ℎ−1
+𝑓ℎ≤𝑓≤̇𝑓ℎ
+𝑚
+𝑎ℎ
+2 ≤𝑎≤min{𝑎ℎ
+2, ̇𝑎6}
+0 ≤𝑎≤min{𝑎ℎ
+2, ̇𝑎5}
+(1+𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+≤𝑓≤𝑓ℎ
+𝑎ℎ
+2 ≤𝑎≤min{𝑎ℎ
+2, ̇𝑎3}
+0 ≤𝑎≤min{𝑎ℎ
+2, ̇𝑎4}
+𝜎≤̇𝜎ℎ
+̇𝑓ℎ
+𝑚≤𝑓≤𝑓ℎ
+𝑎ℎ
+1 ≤𝑎≤min{𝑎ℎ
+1, ̇𝑎2}
+0 ≤𝑎≤min{𝑎ℎ
+1, ̇𝑎4}
+(1+𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+≤𝑓≤̇𝑓ℎ
+𝑚
+𝑎ℎ
+2 ≤𝑎≤̇𝑎3
+0 ≤𝑎≤min{𝑎ℎ
+2, ̇𝑎4}
+𝑓≤min{𝑓ℎ, (1+𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+}
+0 ≤𝑎≤̇𝑎2
+Note ̇𝑎1 = 𝑞𝐻−(1−𝜎)(1−𝛽)𝑓
+1+𝜎
+−
+√
+𝑞𝐻(𝑞𝐻+𝑞𝐿)
+2
+,
+̇𝑎3 = [𝑞𝐻+𝑞𝐿+𝜎(𝑞𝐻−𝑞𝐿)](1−𝛽)𝑓
+(1+𝜎)(𝑞𝐻−𝑞𝐿)
+−
+(𝑞𝐻−𝑓)2
+4𝑞𝐻[1−2(1−𝛽)𝑓∕((1+𝜎)(𝑞𝐻−𝑞𝐿))] ,
+̇𝑎2 = [1 −(1−𝜎)(1−𝛽)
+1+𝜎
+]𝑓,
+̇𝑎4 =
+𝑞𝐻+𝑞𝐿+𝜎(𝑞𝐻−𝑞𝐿)−(𝑞𝐻−𝑓)
+√
+𝑞𝐻+𝑞𝐿+𝜎(𝑞𝐻−𝑞𝐿)
+𝑞𝐻
+2
+, ̇𝑎5 =
+𝑞𝐻+𝑞𝐿+𝜎(𝑞𝐻−𝑞𝐿)−
+√
+(𝑞𝐻+𝑞𝐿)[𝑞𝐻+𝑞𝐿+𝜎(𝑞𝐻−𝑞𝐿)]
+2
+,
+̇𝑎6 = [𝑞𝐻+𝑞𝐿+𝜎(𝑞𝐻−𝑞𝐿)](1−𝛽)𝑓
+(1+𝜎)(𝑞𝐻−𝑞𝐿)
+−
+𝑞𝐻+𝑞𝐿
+8[1−2(1−𝛽)𝑓∕((1+𝜎)(𝑞𝐻−𝑞𝐿))] , ̇𝜎ℎ=
+(1−𝛽)(3𝑞𝐻+𝑞𝐿)𝑓ℎ−𝑞𝐻(𝑞𝐻−𝑞𝐿)
+(𝑞𝐻−𝑞𝐿)[𝑞𝐻−(1−𝛽)𝑓ℎ]
+.
+̇𝑓1 =
+𝑞𝐻−
+√
+𝑞𝐻(𝑞𝐻+𝑞𝐿)
+2
+−[
+√
+𝑞𝐻[𝑞𝐻+𝑞𝐿+𝜎(𝑞𝐻−𝑞𝐿)]
+2
+−𝑞𝐻]∕[
+√
+2𝑞𝐻
+𝑞𝐻+𝑞𝐿+𝜎(𝑞𝐻−𝑞𝐿) −1]
+(1−𝜎)(1−𝛽)
+1+𝜎
+[1+1∕(
+√
+2𝑞𝐻
+𝑞𝐻+𝑞𝐿+𝜎(𝑞𝐻−𝑞𝐿) −1)]
+.
+Table B.17
+Numerical results for the case of reversed sequence. (𝑞𝐻= 0.8, 𝑞𝐿= 0.2, 𝑡= 0.1, 𝛽= 0.5).
+𝑓
+𝜎
+𝑎𝐻
+𝑚
+𝛱𝐻
+𝑅𝑚−𝛱𝐻
+𝑅
+0.15
+0.6
+0.075
+<0
+0.15
+0.8
+0.075
+<0
+0.35
+0.6
+0.124
+<0
+0.35
+0.8
+0.148
+<0
+0.55
+0.6
+0.099
+<0
+0.55
+0.8
+0.122
+<0
+Given the optimal price for the high-quality retailer under the RFI case, we then compare 𝛱𝐻
+𝑅𝑚and 𝛱𝐻
+𝑁to find the retailer’s RFI strategy, where
+RFI is adopted when 𝛱𝐻
+𝑅𝑚≥𝛱𝐻
+𝑁. It is obvious that 𝛱𝐻
+𝑅𝑚is decreasing in 𝑎, thus the retailer offers RFI only when 𝑎is small. For instance, when
+𝑓≥max{ ̇𝑓ℎ
+𝑚, 𝑓ℎ}, 𝑎≥𝑎ℎ
+1, we have 𝛱𝐻
+𝑅𝑚= [(1+𝜎)(𝑞𝐻−𝑎)−(1−𝜎)(1−𝛽)𝑓]2
+4(1+𝜎)2𝑞𝐻
+and 𝛱𝐻
+𝑁= 𝑞𝐻+𝑞𝐿
+8
+, then we have 𝛱𝐻
+𝑅𝑚≥𝛱𝐻
+𝑁when 𝑎≤̇𝑎1. Following similar
+logic, we obtain the specific conditions that the high-quality retailer uses RFI as is shown in Table B.16. One can find that in each region, if the
+RFI premium is small, the high-quality retailer always has incentives to use RFI.
+Given the optimal retail prices and the conditions when the high-quality retailer adopts the RFI service, the insurance company finally decides
+the RFI premium 𝑎, and solves the following optimization program.
+max
+𝜋(𝑎) = 𝑎𝑑𝑅−𝛽𝑓𝑑𝑟
+𝑅
+(B.5)
+s.t.
+𝐼𝑅= 1,
+𝑎≤𝛽𝑓.
+Even though the RFI premiums are cumbersome to analyze due to the complicated bounds as is shown in Table B.16, we can shape the following
+intuitions. For the high-quality retailer, 𝑑𝑟
+𝑅= 0, which implies zero compensation cost for the insurance company. Hence, the insurance company
+always chooses a small positive 𝑎to gain positive profit and ensure the participation of the retailer. Consequently, in equilibrium, the high-quality
+retailer always uses RFI but earns less profit compared to our base model.
+
+
+========== PAGE 29 ==========
+International Journal of Production Economics 256 (2023) 108752
+29
+X. Li et al.
+Table B.18
+The optimal price for the low-quality retailer.
+Condition
+𝑝𝐿
+𝑅𝑚
+𝛱𝑙
+𝑅𝑚
+𝑓≥max{ (1−𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+,
+̄𝑓𝑙
+𝑜}
+𝑎≥𝑎𝑙
+1
+𝑞𝐻𝑞𝐿−(𝑞𝐻−𝑞𝐿)𝑡+𝑞𝐿𝑎+𝑞𝐻(1−𝛽)𝑓
+2𝑞𝐻
+𝛱𝑙
+𝑅𝑚1
+𝑎𝑙
+2 ≤𝑎≤𝑎𝑙
+1
+[𝑞𝐻+𝑞𝐿−𝜎(𝑞𝐻−𝑞𝐿)](1−𝛽)𝑓
+(1−𝜎)(𝑞𝐻−𝑞𝐿)
+𝛱𝑙
+𝑅𝑚2
+0 < 𝑎≤𝑎𝑙
+2
+𝑞𝐻+𝑞𝐿−𝜎(𝑞𝐻−𝑞𝐿)+2𝑎
+4
+𝛱𝑙
+𝑅𝑚3
+(1−𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+≤𝑓≤max{ (1−𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+,
+̄𝑓𝑙
+𝑜}
+𝑎≤𝑎𝑙
+3
+𝑞𝐻+𝑞𝐿−𝜎(𝑞𝐻−𝑞𝐿)+2𝑎
+4
+𝛱𝑙
+𝑅𝑚3
+0 < 𝑎≥𝑎𝑙
+3
+𝑞𝐻𝑞𝐿−(𝑞𝐻−𝑞𝐿)𝑡+𝑞𝐿𝑎+𝑞𝐻(1−𝛽)𝑓
+2𝑞𝐻
+𝛱𝑙
+𝑅𝑚1
+𝑓2
+𝑙≤𝑓≤(1−𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+0 < 𝑎≤𝑎𝑙
+1
+[𝑞𝐻+𝑞𝐿−𝜎(𝑞𝐻−𝑞𝐿)](1−𝛽)𝑓
+(1−𝜎)(𝑞𝐻−𝑞𝐿)
+𝛱𝑙
+𝑅𝑚2
+𝑎≥𝑎𝑙
+1
+𝑞𝐻𝑞𝐿−(𝑞𝐻−𝑞𝐿)𝑡+𝑞𝐿𝑎+𝑞𝐻(1−𝛽)𝑓
+2𝑞𝐻
+𝛱𝑙
+𝑅𝑚1
+𝑓≤𝑓2
+𝑙
+𝑞𝐻𝑞𝐿−(𝑞𝐻−𝑞𝐿)𝑡+𝑞𝐿𝑎+𝑞𝐻(1−𝛽)𝑓
+2𝑞𝐻
+𝛱𝑙
+𝑅𝑚1
+Note 𝑓2
+𝑙= (1−𝜎)(𝑞𝐻−𝑞𝐿)[𝑞𝐻𝑞𝐿−(𝑞𝐻−𝑞𝐿)𝑡]
+(1−𝛽)𝑞𝐻[4𝑞𝐿+(1−𝜎)(𝑞𝐻−𝑞𝐿)] , ̄𝑓𝑙
+𝑜= (1−𝜎)[(1−𝜎)𝑞𝐻(𝑞𝐻−𝑞𝐿)−2(𝑞𝐻−𝑞𝐿)𝑡]
+2(1−𝛽)[𝑞𝐻+2𝑞𝐿−𝜎(𝑞𝐻−2𝑞𝐿)]
+,
+𝑎𝑙
+1 = 𝑞𝐻[𝑞𝐻+3𝑞𝐿−𝜎(𝑞𝐻−𝑞𝐿)]
+(1−𝜎)𝑞𝐿(𝑞𝐻−𝑞𝐿)
+(1 −𝛽)𝑓−[𝑞𝐻−(𝑞𝐻−𝑞𝐿)𝑡
+𝑞𝐿
+], 𝑎𝑙
+2 = [𝑞𝐻+ 𝑞𝐿−𝜎(𝑞𝐻−𝑞𝐿)] 4(1−𝛽)𝑓−(1−𝜎)(𝑞𝐻−𝑞𝐿)
+2(1−𝜎)(𝑞𝐻−𝑞𝐿)
+,
+𝑎𝑙
+3 solves
+[𝑞𝐻𝑞𝐿−(𝑞𝐻−𝑞𝐿)𝑡+𝑞𝐿𝑎−(1−𝛽)𝑓𝑞𝐻]2
+4𝑞𝐿(𝑞𝐻)2
++ 2(𝑡+𝑎)(1−𝛽)𝑓+(1−𝜎)((1−𝛽)𝑓−𝑎)
+(1−𝜎)𝑞𝐻
+= [𝑞𝐻+𝑞𝐿−𝜎(𝑞𝐻−𝑞𝐿)−2𝑎]2
+8[𝑞𝐻+𝑞𝐿−𝜎(𝑞𝐻−𝑞𝐿)] .
+𝛱𝑙
+𝑅𝑚1 = [𝑞𝐻𝑞𝐿−(𝑞𝐻−𝑞𝐿)𝑡+𝑞𝐿𝑎−(1−𝛽)𝑓𝑞𝐻]2
+4𝑞𝐿(𝑞𝐻)2
++ 2(𝑡+𝑎)(1−𝛽)𝑓+(1−𝜎)((1−𝛽)𝑓−𝑎)
+(1−𝜎)𝑞𝐻
+,
+𝛱𝑙
+𝑅𝑚2 = [ [𝑞𝐻+𝑞𝐿−𝜎(𝑞𝐻−𝑞𝐿)](1−𝛽)𝑓
+(1−𝜎)(𝑞𝐻−𝑞𝐿)
+−𝑎][1 −
+2(1−𝛽)𝑓
+(1−𝜎)(𝑞𝐻−𝑞𝐿)
+], 𝛱𝑙
+𝑅𝑚3 = [𝑞𝐻+𝑞𝐿−𝜎(𝑞𝐻−𝑞𝐿)−2𝑎]2
+8[𝑞𝐻+𝑞𝐿−𝜎(𝑞𝐻−𝑞𝐿)] .
+Table B.19
+Conditions of 𝛱𝐿
+𝑅𝑚≥𝛱𝐿
+𝑁.
+Region
+Condition
+max{𝑓𝑙, 𝑓2
+𝑙} ≤𝑓≤min{ (1−𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+, 𝑞𝐻−𝑞𝐿
+4
+}
+𝑓≤̃𝑓1
+𝑎≤min{𝑎𝑙
+1, 𝑎1}
+𝑎𝑙
+1 ≤𝑎≤𝑎2
+𝑓𝑙≤𝑓≤max{𝑓𝑙, 𝑓2
+𝑙}
+0 ≤𝑎≤𝑎2
+𝑓≤𝑓𝑙
+𝑓≥max{ (1−𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+,
+̄𝑓𝑙
+𝑜}
+𝑓≤̃𝑓4
+𝑎𝑙
+1 ≤𝑎≤𝑎4
+𝑎𝑙
+2 ≤𝑎≤min{𝑎6, 𝑎𝑙
+1}
+0 ≤𝑎≤min{𝑎𝑙
+2, 𝑎5}
+(1−𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+≤𝑓≤max{ (1−𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+,
+̄𝑓𝑙
+𝑜}
+0 ≤𝑎≤min{𝑎𝑙
+3, 𝑎5}
+𝑎𝑙
+3 ≤𝑎≤min{𝑎𝑙
+3, 𝑎4}
+𝑓2
+𝑙≤𝑓≤(1−𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+𝑓≤̃𝑓2
+𝑎≤min{𝑎𝑙
+1, 𝑎6}
+𝑎𝑙
+1 ≤𝑎≤𝑎4
+𝑓≤𝑓2
+𝑙
+0 ≤𝑎≤𝑎4
+where 𝑎1 = [𝑞𝐻+𝑞𝐿−𝜎(𝑞𝐻−𝑞𝐿)](1−𝛽)𝑓
+(1−𝜎)(𝑞𝐻−𝑞𝐿)
+−
+(𝑞𝐻+𝑞𝐿)𝑓(𝑞𝐻−𝑞𝐿−2𝑓)
+(𝑞𝐻−𝑞𝐿)2[
+1−
+2(1−𝛽)𝑓
+(1−𝜎)(𝑞𝐻−𝑞𝐿)
+] , ̃𝑓1 = (1−𝜎)(𝑞𝐻−𝑞𝐿)[(1−𝜎)(𝑞𝐻+𝑞𝐿)−(1−𝛽)[𝑞𝐻+𝑞𝐿−𝜎(𝑞𝐻−𝑞𝐿)]]
+2[(1−𝜎)2(𝑞𝐻+𝑞𝐿)−(1−𝛽)2[𝑞𝐻+𝑞𝐿−𝜎(𝑞𝐻−𝑞𝐿)]]
+𝑎2 solves
+[𝑞𝐻𝑞𝐿−(𝑞𝐻−𝑞𝐿)𝑡+𝑞𝐿𝑎−(1−𝛽)𝑓𝑞𝐻]2
+4𝑞𝐿(𝑞𝐻)2
++ 2(𝑡+𝑎)(1−𝛽)𝑓+(1−𝜎)((1−𝛽)𝑓−𝑎)
+(1−𝜎)𝑞𝐻
+= (𝑞𝐻+𝑞𝐿)𝑓(𝑞𝐻−𝑞𝐿−2𝑓)
+(𝑞𝐻−𝑞𝐿)2
+,
+𝑎4 solves
+[𝑞𝐻𝑞𝐿−(𝑞𝐻−𝑞𝐿)𝑡+𝑞𝐿𝑎−(1−𝛽)𝑓𝑞𝐻]2
+4𝑞𝐿(𝑞𝐻)2
++ 2(𝑡+𝑎)(1−𝛽)𝑓+(1−𝜎)((1−𝛽)𝑓−𝑎)
+(1−𝜎)𝑞𝐻
+= [𝑞𝐻(𝑞𝐿−𝑓−𝑡)+𝑡𝑞𝐿]2+4𝑞𝐻𝑞𝐿(𝑞𝐻+2𝑡)𝑓
+4𝑞𝐿(𝑞𝐻)2
+,
+𝑎5 =
+√
+𝑞𝐻+ 𝑞𝐿−𝜎(𝑞𝐻−𝑞𝐿)[ √
+𝑞𝐻+𝑞𝐿−𝜎(𝑞𝐻−𝑞𝐿)
+2
+−
+√
+[[𝑞𝐻(𝑞𝐿−𝑓−𝑡)+𝑡𝑞𝐿]2+4𝑞𝐻𝑞𝐿(𝑞𝐻+2𝑡)𝑓]
+2𝑞𝐿(𝑞𝐻)2
+], ̃𝑓4 solves 𝑎5 = 0,
+𝑎6 = [𝑞𝐻+𝑞𝐿−𝜎(𝑞𝐻−𝑞𝐿)](1−𝛽)𝑓
+(1−𝜎)(𝑞𝐻−𝑞𝐿)
+−[𝑞𝐻(𝑞𝐿−𝑓−𝑡)+𝑡𝑞𝐿]2+4𝑞𝐻𝑞𝐿(𝑞𝐻+2𝑡)𝑓
+4𝑞𝐿(𝑞𝐻)2[
+1−
+2(1−𝛽)𝑓
+(1−𝜎)(𝑞𝐻−𝑞𝐿)
+]
+, ̃𝑓2 solves 𝑎6 = 0.
+Next, we conduct an extensive numerical analysis to show the optimal RFI premium by designing a 3 ∗2 design for 𝑓and 𝜎as shown in
+Table B.17.
+Case II: 𝑞= 𝑞𝐿.
+Similarly, regarding 𝑞= 𝑞𝐿, we can obtain the optimal retail prices for the low-quality retailer in Table B.18. Given the optimal pricing
+strategies of the low-quality retailer, we then compare 𝛱𝑙
+𝑅𝑚with 𝛱𝑙
+𝑁to find the conditions that the retailer is willing to adopt the RFI service.
+It is obvious that 𝛱𝑙
+𝑅𝑚2 and 𝛱𝑙
+𝑅𝑚3 are decreasing in 𝑎. As for 𝛱𝑙
+𝑅𝑚1 = 𝑞𝐻𝑞𝐿−(𝑞𝐻−𝑞𝐿)𝑡+(𝑞𝐿−2𝑞𝐻)𝑎+𝑞𝐻(1−𝛽)𝑓
+2𝑞𝐻
+𝑑𝑘
+𝑅−(𝑡+ 𝑎)𝑑𝑟
+𝑅, where 𝑑𝑘
+𝑅= 1 −
+𝑝𝐿
+𝑅𝑚−(1−𝛽)𝑓
+𝑞𝐿
+,
+𝑑𝑟
+𝑅=
+𝑝𝐿
+𝑅𝑚−(1−𝛽)𝑓
+𝑞𝐿
+−
+(1−𝜎)𝑝𝐿
+𝑅𝑚+(1+𝜎)(1−𝛽)𝑓
+(1−𝜎)𝑞𝐻
+. Note that 𝑑𝑘
+𝑅
+′(𝑎) = −
+𝑝𝐿
+𝑅𝑚
+′
+𝑞𝐿
+< 0 and 𝑑𝑟
+𝑅
+′(𝑎) = 𝑞𝐻−𝑞𝐿
+𝑞𝐻𝑞𝐿𝑝𝑙
+𝑅𝑚
+′ > 0, then we must have 𝛱𝑙
+𝑅𝑚1
+′(𝑎) < 0. Hence, all
+the equilibrium profits for the low-quality retailer are decreasing in 𝑎, and we argue that the low-quality retailer adopts the RFI service only
+when the RFI premium is small. For instance, when max{𝑓𝑙, 𝑓2
+𝑙} ≤𝑓≤min{ (1−𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+, 𝑞𝐻−𝑞𝐿
+4
+}, we have max 𝛱𝐿
+𝑅𝑚=
+[(1−𝜎)𝑞𝐻+(1+𝜎)𝑞𝐿−2𝑎]2
+8
+and
+𝛱𝐿
+𝑁=
+(𝑞𝐻+𝑞𝐿)𝑓(𝑞𝐻−𝑞𝐿−2𝑓)
+(𝑞𝐻−𝑞𝐿)2
+, then we have 𝛱𝐿
+𝑅𝑚≥𝛱𝐿
+𝑁when 𝑎≤𝑎1 =
+[𝑞𝐻+𝑞𝐿−𝜎(𝑞𝐻−𝑞𝐿)](1−𝛽)𝑓
+(1−𝜎)(𝑞𝐻−𝑞𝐿)
+−
+(𝑞𝐻+𝑞𝐿)𝑓(𝑞𝐻−𝑞𝐿−2𝑓)
+(𝑞𝐻−𝑞𝐿)2[
+1−
+2(1−𝛽)𝑓
+(1−𝜎)(𝑞𝐻−𝑞𝐿)
+]. However, when 𝑓≥
+̃𝑓1 =
+(1−𝜎)(𝑞𝐻−𝑞𝐿)[(1−𝜎)(𝑞𝐻+𝑞𝐿)−(1−𝛽)[𝑞𝐻+𝑞𝐿−𝜎(𝑞𝐻−𝑞𝐿)]]
+2[(1−𝜎)2(𝑞𝐻+𝑞𝐿)−(1−𝛽)2[𝑞𝐻+𝑞𝐿−𝜎(𝑞𝐻−𝑞𝐿)]]
+, we have 𝑎1 < 0, i.e., under this condition, the retailer has no incentive to use RFI in this region. By
+similar logic, we find that the retailer does not use RFI when 𝑓> ̃𝑓4 in the region of min{ (1−𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+, 𝑓𝑙} ≤𝑓≤𝑓𝑙, or when 𝑓> ̃𝑓2 in the region of
+𝑓2
+𝑙≤𝑓≤min{ (1−𝜎)(𝑞𝐻−𝑞𝐿)
+4(1−𝛽)
+, 𝑓𝑙} ( ̃𝑓4, ̃𝑓2 are shown in Table B.19). Otherwise, the retailer has incentives to use RFI, the conditions that the low-quality
+retailer uses RFI is shown in Table B.19 as follows.
+Given the optimal retail prices and the conditions of when the low-quality retailer adopts the RFI service, the insurance company finally decides
+the RFI premium 𝑎, and solves the following optimization program.
+max
+𝜋(𝑎) = 𝑎𝑑𝑅−𝛽𝑓𝑑𝑟
+𝑅
+(B.6)
+s.t.
+𝐼𝑅= 1,
+𝑎≤𝛽𝑓.
+
+
+========== PAGE 30 ==========
+International Journal of Production Economics 256 (2023) 108752
+30
+X. Li et al.
+Table B.20
+Numerical results for the case of reversed sequence. (𝑞𝐻= 0.8, 𝑞𝐿= 0.2, 𝑡= 0.1, 𝛽= 0.3).
+𝑓
+𝜎
+𝑎𝐿
+𝑚
+𝛱𝐿
+𝑅𝑚−𝛱𝐿
+𝑅
+0.02
+0.6
+0.003
+<0
+0.02
+0.8
+0.006
+<0
+0.04
+0.6
+0.005
+<0
+0.04
+0.8
+0.012
+<0
+Fig. B.7. The Optimal RFI Strategy for the Low-quality Retailer. (𝑞𝐻= 0.8, 𝑞𝐿= 0.2, 𝑡= 0.1, 𝛽= 0.2.)
+It is too complicated to solve the above program due to the complex condition as is shown in Table B.19. Hence, we illustrate the decision of the
+insurance company through a 2 ∗2 numerical experiment design for 𝑓and 𝜎as is shown in Table B.20.
+Finally, we illustrate the RFI strategy of the low-quality retailer by varying 𝑓and 𝜎in Fig. B.7.
+□
+References
+Alba, J.W., Hutchinson, J.W., 1987. Dimensions of consumer expertise. J. Consum. Res. 13 (4), 411–454.
+Anderson, E.T., Hansen, K., Simester, D., 2009. The option value of returns: Theory and empirical evidence. Mark. Sci. 28 (3), 405–423.
+Azevedo, E.M., Gottlieb, D., 2017. Perfect competition in markets with adverse selection. Econometrica 85 (1), 67–105.
+Board, O., 2009. Competition and disclosure. J. Ind. Econ. 57 (1), 197–213.
+Bower, A.B., Maxham, III, J.G., 2012. Return shipping policies of online retailers: Normative assumptions and the long-term consequences of fee and free returns. J. Mark. 76 (5),
+110–124.
+Cao, Y., Ajjan, H., Hong, P., 2018. Post-purchase shipping and customer service experiences in online shopping and their impact on customer satisfaction: an empirical study with
+comparison. Asia Pac. J. Mark. Logist.
+Chen, B., Chen, J., 2017a. Compete in price or service?—a study of personalized pricing and money back guarantees. J. Retail. 93 (2), 154–171.
+Chen, B., Chen, J., 2017b. When to introduce an online channel, and offer money back guarantees and personalized pricing? European J. Oper. Res. 257 (2), 614–624.
+Chen, Z., Fan, Z.-P., Zhao, X., 2021. Offering return-freight insurance or not: Strategic analysis of an e-seller’s decisions. Omega 103, 102447.
+Chen, T., Ma, K., Zheng, C., 2018. Does freight insurance really work? Effect of freight insurance on consumers’ attitude in online shopping. Int. J. Internet Mark. Advert. 12 (3),
+209–232.
+Coupey, E., Irwin, J.R., Payne, J.W., 1998. Product category familiarity and preference construction. J. Consum. Res. 24 (4), 459–468.
+Davis, S., Hagerty, M., Gerstner, E., 1998. Return policies and the optimal level of ‘‘hassle’’. J. Econ. Bus. 50 (5), 445–460.
+Edgeworth, F.Y., 1925. The pure theory of monopoly. Pap. Relat. Political Econ. 1 (111), 42.
+Fan, Z.-P., Chen, Z., 2020. When should the e-tailer offer complimentary return-freight insurance? Int. J. Prod. Econ. 230, 107890.
+Feng, Z., Xiao, T., Yu, Y., Robb, D.J., 2020. Quality disclosure strategy in a decentralized supply chain with consumer returns. Int. Trans. Oper. Res. 27 (4), 2139–2156.
+Geng, S., Li, W., Qu, X., Chen, L., 2017. Design for the pricing strategy of return-freight insurance based on online product reviews. Electron. Commer. Res. Appl. 25, 16–28.
+Grossman, S.J., 1981. The informational role of warranties and private disclosure about product quality. J. Law Econ. 24 (3), 461–483.
+Guan, X., Chen, Y.-J., 2015. Hierarchical quality disclosure in a supply chain with cost heterogeneity. Decis. Support Syst. 76, 63–75.
+Guo, Q., Chen, Y.-J., Huang, W., 2022. Dynamic pricing of new experience products with dual-channel social learning and online review manipulations. Omega 102592.
+Guo, L., Zhao, Y., 2009. Voluntary quality disclosure and market interaction. Mark. Sci. 28 (3), 488–501.
+Gupta, A., Su, B.-C., Walter, Z., 2004. An empirical study of consumer switching from traditional to electronic channels: A purchase-decision process perspective. Int. J. Electron.
+Commer. 8 (3), 131–161.
+He, Y., Xu, Q., Wu, P., 2020. Omnichannel retail operations with refurbished consumer returns. Int. J. Prod. Res. 58 (1), 271–290.
+Hsiao, L., Chen, Y.-J., 2012. Returns policy and quality risk in e-business. Prod. Oper. Manage. 21 (3), 489–503.
+Hsiao, L., Chen, Y.-J., 2014. Return policy: Hassle-free or your money-back guarantee? Nav. Res. Logist. 61 (5), 403–417.
+Hürlimann, W., 1998. On stop-loss order and the distortion pricing principle. Astin Bull. 28 (1), 119–134.
+Hwang, I., Radhakrishnan, S., Su, L., 2006. Vendor certification and appraisal: Implications for supplier quality. Manage. Sci. 52 (10), 1472–1482.
+Kang, M., Johnson, K., 2009. Identifying characteristics of consumers who frequently return apparel. J. Fash. Mark. Manag. Int. J.
+Kwark, Y., Chen, J., Raghunathan, S., 2014. Online product reviews: Implications for retailers and competing manufacturers. Inf. Syst. Res. 25 (1), 93–110.
+Lewis, T.R., Sappington, D.E., 1994. Supplying information to facilitate price discrimination. Internat. Econom. Rev. 309–327.
+Li, Y., Li, G., Cheng, T., 2018. Return freight insurance: implications for online platforms, third-party retailers and consumers. In: 2018 8th International Conference on Logistics,
+Informatics and Service Sciences. LISS, IEEE, pp. 1–6.
+
+
+========== PAGE 31 ==========
+International Journal of Production Economics 256 (2023) 108752
+31
+X. Li et al.
+Li, Y., Li, G., Pan, X.A., 2021a. Optimal return shipping insurance policy with consumers’ anticipated regret. Available at SSRN 3912844.
+Li, Y., Li, G., Tayi, G.K., Cheng, T., 2021b. Return shipping insurance: Free versus for-a-fee? Int. J. Prod. Econ. 235, 108110.
+Lin, J., Zhang, J., Cheng, T., 2020. Optimal pricing and return policy and the value of freight insurance for a retailer facing heterogeneous consumers with uncertain product
+values. Int. J. Prod. Econ. 229, 107767.
+Ma, B., Di, C., Hsiao, L., 2020. Return window decision in a distribution channel. Prod. Oper. Manage. 29 (9), 2121–2137.
+Moorthy, S., Srinivasan, K., 1995. Signaling quality with a money-back guarantee: The role of transaction costs. Mark. Sci. 14 (4), 442–466.
+Narayanan, S., Manchanda, P., 2009. Heterogeneous learning and the targeting of marketing communication for new products. Mark. Sci. 28 (3), 424–441.
+Narayanan, S., Manchanda, P., Chintagunta, P.K., 2005. Temporal differences in the role of marketing communication in new product categories. J. Mar. Res. 42 (3), 278–290.
+Nelson, P., 1970. Information and consumer behavior. J. Polit. Econ. 78 (2), 311–329.
+Olshavsky, R.W., et al., 1985. Perceived quality in consumer decision making: an integrated theoretical perspective. Perceived Qual. 4 (1), 3–29.
+Ren, M., Liu, J., Feng, S., Yang, A., 2021. Pricing and return strategy of online retailers based on return insurance. J. Retail. Consum. Serv. 59, 102350.
+Rothschild, M., Stiglitz, J., 1978. Equilibrium in competitive insurance markets: An essay on the economics of imperfect information. In: Uncertainty in Economics. Elsevier, pp.
+257–280.
+Shao, B., Chang, L., Zhang, L., 2013. The effect of online return shipping insurance and regulatory focus on consumer behavior. In: Proc. 23rd International Business Research
+Conference. pp. 18–20.
+Shulman, J.D., Coughlan, A.T., Savaskan, R.C., 2009. Optimal restocking fees and information provision in an integrated demand-supply model of product returns. Manuf. Serv.
+Oper. Manag. 11 (4), 577–594.
+Shulman, J.D., Coughlan, A.T., Savaskan, R.C., 2011. Managing consumer returns in a competitive environment. Manage. Sci. 57 (2), 347–362.
+Söderlund, M., 2002. Customer familiarity and its effects on satisfaction and behavioral intentions. Psychol. Mark. 19 (10), 861–879.
+Wells, J.D., Valacich, J.S., Hess, T.J., 2011. What signal are you sending? How website quality influences perceptions of product quality and purchase intentions. MIS Q. 373–396.
+Zhang, T., Li, G., Lai, K.K., Leung, J.W., 2018. Information disclosure strategies for the intermediary and competitive sellers. European J. Oper. Res. 271 (3), 1156–1173.
+Zhang, C., Yu, M., Chen, J., 2021. Signaling quality with return insurance: Theory and empirical evidence. Manage. Sci.
+Zou, T., Zhou, B., Jiang, B., 2020. Product-line design in the presence of consumers’ anticipated regret. Manage. Sci. 66 (12), 5665–5682.

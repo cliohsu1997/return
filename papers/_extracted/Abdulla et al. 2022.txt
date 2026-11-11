@@ -1,0 +1,909 @@
+Received: 22 March 2021       Accepted: 10 November 2021
+
+DOI: 10.1111/poms.13640
+
+
+ORIGINAL ARTICLE
+
+
+
+
+How consumers value retailer’s return policy leniency levers:
+An empirical investigation
+
+Huseyn Abdulla                       James D. Abbey                  Michael Ketzenberg
+
+Mays Business School, Texas A&M University,         Abstract
+College Station, Texas, USA
+                                                    Due to the ongoing and dramatic growth in the volume of consumer returns, retailers
+Correspondence
+                                                    continue to struggle with the trade-off in returns service strategies between implement-
+James D. Abbey, Mays Business School, A&M           ing stricter return policies to lower operational costs and environmental footprint ver-
+University, 4217 TAMU, College Station, TX          sus providing customers with lenient return policies to positively stimulate customers’
+77843, USA.
+Email: jabbey@mays.tamu.edu
+                                                    value perceptions and patronage intentions. This paper argues that effective manage-
+                                                    ment of this trade-off requires a deep understanding of the process through which con-
+Handling editor: Aleda Roth                         sumers perceive, evaluate, and respond to return policies that vary in terms of leniency
+                                                    across five key dimensions identified in the literature: monetary, time, effort, scope, and
+                                                    exchange. To this end, we theorize on a cognitive process model and empirically test
+                                                    the model using randomized experiments with diverse consumer samples. By view-
+                                                    ing each of the five leniency dimensions as returns service design levers, we examine
+                                                    (1) how a retailer’s return policy leniency across different levers impacts a consumer’s
+                                                    intention to purchase from a retailer, through the influence of leniency on the percep-
+                                                    tions regarding returns service quality and transaction costs that jointly form perceived
+                                                    returns service value, and (2) how different leniency levers are compared in terms of
+                                                    their impacts. We find significant heterogeneity in the effectiveness of different leniency
+                                                    levers in influencing consumers’ purchase intentions through increased perceived ser-
+                                                    vice quality, reduced perceived transaction costs, and subsequently increased perceived
+                                                    service value.
+
+                                                    KEYWORDS
+                                                    consumer returns, mediation analysis, return policy, service design, vignette-based experiment
+
+
+
+1         INTRODUCTION                                                              opportunistic returns, which recently surpassed $25 billion
+                                                                                    per year (National Retail Federation, 2021). More dramati-
+Consumer returns are endemic to US retail practice. The                             cally, excessive returns driven by such lenient policies pose
+annual value of returned products in the United States has                          significant environmental problems. For instance, products
+grown to over $428 billion, representing 10.6% of total sales                       returned to US retailers in a year generate 5 billion pounds
+(National Retail Federation, 2021). Product proliferation, het-                     of landfill, which is equivalent to trash produced by 5 million
+erogeneity in customer expectations and valuations, and the                         Americans (Constable, 2017). Handling processes of these
+rise of e-commerce can all be listed among the drivers for this                     returns annually generate 15 million metric tons of carbon
+growth (Cheng, 2015). Another key contributor is the pro-                           dioxide (Optoro, 2018).
+liferation of generous return policies (Shang et al., 2017b).                          Lenient return policies have a long history in the United
+Fierce competition, decreased consumer switching costs, and                         States, starting with J.R. Watkins’ “Satisfaction guaranteed,
+a “Customer is the King” mantra lead many retailers to offer                        or your money back!” policy in 1868. Today, consumer
+overly lenient return policies. Yet, these retailers bear returns-                  return policies come in a myriad of forms. Some retailers
+related operational costs that exceed $100 billion per year                         offer a no-questions-asked, full-refund return policy, whereas
+(Blanchard, 2007). Generous return policies also engender                           others try to disincentivize returns by charging restocking
+moral hazard issues and result in the rise of fraudulent and                        fees, setting strict return deadlines, and imposing hassles.
+                                                                                    Recently, the tide seems to be turning against leniency. Many
+Accepted by Aleda Roth, after 1 revision.                                           large retailers, such as Best Buy, Macy’s, and Bed Bath and
+
+Prod Oper Manag. 2022;31:1719–1733.                             wileyonlinelibrary.com/journal/poms   © 2021 Production and Operations Management Society   1719
+1720                                                                                                                                   ABDULLA ET AL.
+        Production and Operations Management
+
+Beyond, have tightened their return policies over the last cou-      TA B L E 1        Conceptual definitions of return policy leniency levers
+ple of years to reign in the cost of returns, though the specifics   Leniency
+of how they choose to do so have significantly varied (Con-          lever                 Definition and explanation
+sumerWorld.org, 2018). Some retailers imposed restocking
+                                                                     Monetary              Amount of refund as percentage of the price paid.
+fees on certain product categories, whereas others shortened                                Return policies offering a full refund are more lenient.
+the allowable time window for making returns. The variety                                   Less lenient policies impose “restocking fees” or a
+of changes observed may be in part due to the lack of com-                                  “nonrefundable shipping and handling fee”
+prehensive research into the impact that these changes have          Time                  Duration allowed for a return. Return policies that allow
+on consumer responses—a primary purpose of this research.                                   a longer return period are considered more lenient
+   In general, return policy design poses an interesting             Effort                Consumer effort required to execute return. Effort
+operations–marketing interface problem in today’s retail                                    leniency varies based on the hassles imposed by a
+environment. From the marketing perspective, more leniency                                  retailer. Hassles take various forms, such as filling out
+                                                                                            forms, providing receipts, requiring original
+can stimulate customer purchases through positive product
+                                                                                            packaging/tags, ID verification, etc.
+and service-quality signaling and a reduction in purchase-
+                                                                     Scope                 The extent of return-eligible products (i.e., the degree of
+related risks and thereby enhance the consumer value
+                                                                                            exclusivity). For example, less scope lenient policies
+proposition. From the operations perspective, return policies                               may completely exclude sales and clearance items
+constitute an important strategic lever in the front-end of                                 from being returned
+closed-loop supply chains, which influences the volume,              Exchange              Whether the retailer offers cash refund or allows only
+timing, and quality of product returns (Guide & Van Wassen-                                 store credit/exchange. A more lenient policy allows a
+hove, 2009). Further, the choice of return policies, through                                cash refund as an option
+documented influences on consumer purchase and return                Source: Adapted from Janakiraman et al. (2016) and Abdulla et al. (2019).
+behaviors, is intertwined with and carries significant implica-
+tions for other retail planning and execution activities. Such
+activities range from product pricing to assortment decisions        et al., 2017b) and performance impacts (Ertekin & Agrawal,
+to inventory management (Abdulla et al., 2019). Thus,                2021) of return policy leniency. Though valuable contribu-
+retailers face a challenge to find a solution that balances          tions, these studies leverage unique contexts involving a sin-
+the fundamental operational cost versus consumer value               gle retailer or eBay auctions and use quasi-experimental or
+proposition trade-off. In this paper, we contend that effective      nonexperimental approaches to estimate the impact of return
+management of this trade-off requires an understanding of            policy leniency based on observed transactional data. As
+the process through which consumers perceive, value, and             such, these works do not propose or empirically test causal
+react to different return policies.                                  consumer cognitive mechanisms that potentially drive the
+   From the customer’s standpoint, a return policy is an             observed behaviors.
+important element of the returns service offered by a retailer          Empirical research in the operations–marketing and
+and plays a role in the valuation of the returns service (Davis      operations–information system interfaces focus on the effect
+et al., 1998). Anecdotal evidence from popular press often           of return policy leniency on various cognitive, affective, and
+suggests that “the best” return policies share some common           behavioral reactions such as purchase risk, willingness to
+characteristics that signal leniency (Kirkham, 2015; Mash,           pay, product- and service-quality perceptions, dissonance and
+2017). These characteristics include a full refund, a long           regret, among others (e.g., Mollenkopf et al., 2007; Suwelack
+return window, low return effort, among others. Janakira-            et al., 2011). The vast majority of the studies operationalize
+man et al. (2016) develop a typology of return policies that         and manipulate return policy leniency through only one or
+consists of five leniency dimensions: monetary, time, effort,        two levers or use an overall leniency measure. In general, the
+scope, and exchange. We note that all five dimensions of             collective evidence from the existing literature signals that
+return policy leniency can be strategically chosen by retailers      different leniency levers may have varying effects on these
+to influence consumer perceptions and behaviors. Following           perceptual and behavioral constructs. Nevertheless, the exist-
+Abdulla et al. (2019), we refer to these dimensions as return        ing studies vary significantly in terms of their empirical mod-
+policy leniency levers. Table 1 provides definitions for each        els and study designs. As such, making comparisons on the
+of the five leniency levers.                                         relative effects of these levers is not feasible. In fact, there
+   Consumer return policies are studied extensively in the           are inconclusive and even conflicting findings regarding the
+analytical operations management (OM) literature as a strate-        effect of a particular leniency lever when results across stud-
+gic instrument that can be used to stimulate sales (Ketzen-          ies are cross-examined.
+berg & Zuidwijk, 2009), control opportunistic returns (Shang            A comparative analysis of the relative effectiveness of the
+et al., 2017a), signal quality (Moorthy & Srinivasan, 1995),         leniency levers in terms of influencing consumer cognitive
+compete (Shulman et al., 2011), and coordinate a supply              and behavioral responses has not been conducted to date.
+chain (Su, 2009a). However, these papers predominantly               A limited number of works that discuss consumer valua-
+focus on the monetary leniency lever with only rare exam-            tion of a returns service have acknowledged this gap and
+ples studying other levers (for a list, see Abdulla et al., 2019).   made a call for future research in this direction (Griffis et al.,
+Empirically, several studies examine the antecedents (Shang          2012; Jeng, 2017; Mollenkopf et al., 2007). Janakiraman et al.
+HOW CONSUMERS VALUE RETAILER’S RETURN POLICY LENIENCY LEVERS                                                                    1721
+                                                                            Production and Operations Management
+
+(2016) conduct a meta-analytical review of 21 studies to           return policies, not through monetary and exchange leniency
+derive insights regarding the effectiveness of each of the five    levers. Rather, the retailers should prioritize the remaining
+leniency levers. Though a valuable contribution, the consider-     three levers in order to alleviate the cost burden of returns,
+able variation in the theoretical frameworks, research designs,    because these levers minimally impact PSV and purchase
+and empirical contexts of the previous studies, as well as         intention. Overall, our paper constitutes an important inquiry
+the exclusion of several more recent studies from the anal-        into sustainable consumer return policies and can motivate
+ysis, limits generalizability and applicability of the results     future research to understand how retailers can design return
+(Abdulla et al., 2019). Therefore, there is a need for a sys-      policies that still provide value to customers (people), do not
+tematic examination of all return policy leniency levers in the    hurt the financial bottom-line of retailers (profit), and reduce
+context of a unified empirical framework, in order to recon-       the volume of returns, more than half of which end up in land-
+cile the earlier findings and obtain more reliable and action-     fills (planet) (Constable, 2017; Howland, 2017).
+able insights for retailers. Our research addresses this need.         The remainder of this paper is organized as follows: In
+We theoretically and empirically explore how consumers per-        Section 2, we set forth the conceptual background, theory,
+ceive and value return policy leniency levers available to         and hypotheses. Section 3 introduces the empirical method-
+retailers and how this valuation process influences a con-         ology to test the hypotheses and presents the data analysis
+sumer’s intention to purchase from a retailer. In particular,      and results. Finally, Section 4 is dedicated to theoretical and
+we investigate how different levers influence consumer pur-        managerial insights, along with future research opportunities
+chase intentions (PI) through a cognitive process that involves    and some limitations of our work.
+perceived service quality (PSQ), perceived transaction costs
+(PTCs), and perceived value of a returns service.
+   We make several contributions to the literature on con-         2   THEORY DEVELOPMENT
+sumer return policies with managerial implications. Using          AND HYPOTHESES
+general merchandise stores (i.e., department stores, big-box
+stores, variety stores) as the empirical context, first, we        We start with a brief conceptual background for the key con-
+explain how return policy leniency across different levers         structs and provide several propositions based on theories
+indirectly influences a consumer’s purchase intention through      from behavioral economics, cognitive psychology, and mar-
+a cognitive process model predicated on a mental accounting        keting as well as empirical findings from the existing return
+framework that combines transaction cost economics (TCE)           policy literature. We then combine these propositions to the-
+and signaling theoretical lenses. Second, we demonstrate that      orize on a cognitive process model that explains how return
+the policy aspects of a service (i.e., attributes pertaining to    policy leniency influences a consumer’s purchase intention
+terms and conditions), rather than solely the process aspects      through a parallel-serial mediation mechanism that involves
+(i.e., attributes pertaining to service encounter and experi-      PSQ, PTCs, and PSV. We propose a set of hypotheses for test-
+ence), can generate service quality and transaction cost per-      ing this parallel-serial mediation mechanism. Then, through
+ceptions. Further, we find that these perceptions can trigger      deductive reasoning, we hypothesize that leniency levers with
+service value assessment and influence subsequent behavioral       direct financial risks to both retailers and consumers (i.e.,
+intentions and outcomes. In particular, we show that return        monetary and exchange) have a stronger effect on purchase
+policy leniency positively affects the valuation of a returns      intentions than the other three levers. The cognitive process
+service and that the perceived value of the returns service        model is introduced in Figure 1.
+significantly impacts a consumer’s purchase intention. This           Service quality is the degree of discrepancy between the
+finding supports the view that a return policy, which is funda-    customer expectations for a service and the actual percep-
+mental to a retailer’s returns service, is an important element    tions of performance (Parasuraman et al., 1985). Expand-
+of the overall service bundle, and may influence patronage         ing on this definition, service quality is the overall evalua-
+decisions of consumers.                                            tion of service performance, compared to the customer’s gen-
+   The cognitive process model also provides a foundation          eral expectations of what a service should offer (Parasuraman
+for limited theorizing, through deductive reasoning, on the        et al., 1988). In general, researchers agree that expectations
+relative influence of the levers. In particular, we hypothe-       have a strong effect on the perceptions of service quality (e.g.,
+size and our empirical findings support that consumer pur-         Boulding et al., 1993; Cronin & Taylor, 1994). Customers
+chase intentions are more sensitive to levers that pose direct     may have different sources of information that lead to expec-
+financial risks to both retailers and consumers (monetary and      tations about a potential service encounter with a particular
+exchange) than those that do not (effort, time, scope). Essen-     provider. Among the listed sources, exposure to similar ser-
+tially, we find that monetary leniency, followed by exchange       vices of competitors, word of mouth, and company-controlled
+leniency, are the two most influential levers. Time, effort, and   communications are most relevant to the returns service con-
+scope leniency show significantly lower impact on the per-         text (Parasuraman et al., 1991).
+ceived service value (PSV) and purchase intention of a con-           We draw upon the signaling theory to establish the relation-
+sumer. These findings imply that retailers who consider their      ship between return policy leniency and PSQ (Spence, 1973).
+return policies to be overly lenient and unsustainable from        Signaling theory posits that sellers can use costly mechanisms
+an operational perspective should consider restricting their       to reduce information asymmetry between buyers and sellers,
+1722                                                                                                                      ABDULLA ET AL.
+        Production and Operations Management
+
+
+
+
+FIGURE 1       Cognitive process model and empirical directionalities
+
+
+
+signaling positive characteristics such as quality. An effica-          strong evidence that both classes of expectations influence
+cious signal is one that is costly to the sender and observable         a customer’s perceptions of service quality. Specifically, the
+to the receiver (Connelly et al., 2011). Return policy leniency         study reveals that “will expectations” have a positive impact,
+embodies both characteristics. Lenient return policies are              whereas “should expectations” have a negative impact
+costly to retailers. For example, higher time leniency allows           on PSQ.
+consumers to return products after a potentially long trial                The will–should expectations framework of service qual-
+period, resulting in revenue loss, decreased salvage value,             ity has implications for the returns service context. A clearly
+and increased return handling costs. Offering full refunds              stated return policy sets customer “will expectations,” as the
+(high monetary leniency) or making returns process hassle-              policy specifies what customers will go through if they have
+free (high effort leniency) may stimulate convenience and               to use a retailer’s returns service. Meanwhile, prior return
+opportunistic returns, resulting in revenue loss and increased          experience or familiarity with the return policies of other
+operational costs. Further, offering cash refunds as opposed            retailers engender “should expectations.” When a customer
+to store credits or exchange-only policies (high exchange               faces the return policy of the retailer under consideration, we
+leniency) leads to significant opportunity costs, as the retailer       expect the customer’s will and should expectations to acti-
+becomes unable to secure repeat transactions and exchanges.             vate. As a result, different levels of PSQ emerge, depending
+More generally, lenient return policies make retailers vulner-          on the retailer’s return policy leniency across different levers.
+able to opportunistic and even fraudulent return behaviors,             Therefore, combining the signaling theory and will–should
+which further increases the costs of returns (National Retail           expectations framework leads us to the following proposition:
+Federation, 2021). With respect to observability, return poli-
+cies are observable to consumers as retailers are required by           Proposition 1. Higher (a) monetary, (b) time, (c) effort, (d)
+law to clearly communicate their return policies in stores or           scope, (e) exchange leniency leads to higher perceived quality
+on websites.                                                            of a returns service.
+   To reinforce the signaling theoretical perspective, we
+employ the “will–should” expectations framework to explain                 The concept of transaction costs has its roots in TCE the-
+the ex ante impact of return policy leniency on PSQ (Bould-             ory, which posits that buyers and sellers experience costs
+ing et al., 1993). The framework proposes two expectation               embedded within different aspects of transactions (Coase,
+standards—will and should expectations—and look at their                1937; Williamson, 1989). The theory suggests that the price
+influences on PSQ in a behavioral process model. “Will                  of goods and services is not the sole criterion that influences
+expectations” are those expectations that pertain to what               a buyer’s decision. The buyer tends to have an overall assess-
+will happen during a service contact with a provider. “Will             ment of nonprice transaction costs before deciding whether
+expectations” can arise due to a company’s service process              to engage in a particular exchange. Originally employed to
+descriptions, terms, and conditions. Prior experience with              examine interfirm exchanges, the TCE perspective has been
+the same service provider can also generate such expecta-               applied by researchers in a multitude of exchange contexts
+tions. “Should expectations” are formed on the basis of a cus-          between economic agents, including between consumers and
+tomer’s perceptions regarding what is feasible and reasonable           retail firms (e.g., Griffis et al., 2012; Grønhaug & Gilly,
+to receive in a service encounter. “Should expectations” can            1991). Asset specificity, uncertainty, and transaction fre-
+also arise due to experiencing or being told of competitors’            quency are important characteristics of a transaction that gen-
+services. Through field studies, Boulding et al. (1993) find            erates transaction costs (Williamson, 1989).
+HOW CONSUMERS VALUE RETAILER’S RETURN POLICY LENIENCY LEVERS                                                                      1723
+                                                                              Production and Operations Management
+
+   In the retail exchange and consumer returns con-                  perceived disutility, which encompasses all types of transac-
+text, transaction costs encompass monetary-type, time-type,          tion costs discussed above. Based on this mental accounting
+and psychological-type costs (Chircu & Mahajan, 2006).               process, consumers realize a perceived net utility (i.e., value).
+Monetary-type costs may include restocking fees, nonrefund-          The perceived value of the transaction then leads to behav-
+able forward or return shipping fees, transportation costs,          ioral intentions and outcomes of consumers.
+return packaging costs, etc. Time-type costs capture time               Perceived value is defined as a consumer’s overall assess-
+spent on initiating a return order, commuting to store, waiting      ment of the utility of a product or service based on percep-
+for refund processing, searching for a new product to make           tions of what is received and what is given (Zeithaml, 1988).
+an exchange, etc. Psychological-type costs are hard to quan-         The construct of perceived value has been studied exten-
+tify yet are believed to have a strong impact on customer’s          sively in both product (e.g., Simpson et al., 2019) and ser-
+perceived sacrifice while engaging in an exchange (Woodall,          vice (e.g., Buell & Norton, 2011) contexts in the OM domain.
+2003). Costs of this type may pertain to mental and physi-           Many researchers report a strong impact of PSV on consumer
+cal effort, stress, inconvenience, frustration, and annoyance        behavioral outcomes such as loyalty, (re)purchase intentions,
+experienced in the postpurchase period.                              and positive word of mouth (Cronin et al., 2000; Kuo et al.,
+   In line with the TCE perspective, consumers incur                 2009).
+transaction-specific costs (i.e., asset specificity) described          There is a significant body of service literature that pro-
+above when searching for, deciding on, and purchasing a              vides evidence of a positive relationship between PSQ and
+product from a retailer and when returning the purchase to           PSV. For example, Bolton and Drew (1991) develop a con-
+the retailer. Significant uncertainty exists in such transactions    ceptual model for assessing service performance, quality, and
+due to uncertainties related to product fit, quality, and per-       value. The authors apply the model to residential telephone
+sonal valuation (Abdulla et al., 2019). Return policies can be       services and find a significant, positive association between
+viewed as contractual mechanisms that govern the allocation          service quality and service value. Gooding (1995) finds that
+of transaction-specific costs generated due to these uncertain-      perceived quality is a key antecedent to PSV, where the latter
+ties between retailers and consumers. Customers who have             largely determines the choice of a healthcare service provider.
+prior experiences of purchasing and returning to a particular        Andreassen and Lindestad (1998) report the same effect in the
+retailer (i.e., transaction frequency) are likely to have an over-   context of package tour services.
+all assessment of transaction costs that they incur. We posit           Research also documents the negative effect of PTCs on
+that regardless of transactional history, retailers, by offering a   PSV. In fact, following the standard definition of service
+lenient return policy, can reduce ex ante PTCs of consumers          value as the difference between what is received and what
+and subsequently increase purchase intentions.                       is given, PTCs stand for the sacrifice involved in a service
+   For instance, low monetary leniency (e.g., a 15% restock-         exchange. Most of the works on this theme use the con-
+ing fee) may increase the perceived risk of losing a cer-            structs of perceived sacrifice, perceived risk, or perceived cost
+tain amount of money in case of a product mismatch. Low              to represent PTCs in our model. For example, Spreng et al.
+time leniency implies opportunity costs to consumers who             (1993) report that a consumer’s anticipation of future sacri-
+could otherwise procrastinate returning and may generate             fice, including purchase, psychological, and time costs, has
+time pressure in assessing the fit and value of the product.         significant effect on the ex ante PSV. Gooding (1995) opera-
+Low exchange leniency (i.e., a store credit or exchange-only         tionalizes perceived sacrifice through distance, transportation
+policy) may increase psychological costs associated with the         time to a hospital, and out-of-pocket costs, providing empir-
+possibility of getting locked-in with the retailer by impos-         ical evidence in which perceived sacrifice (i.e., transaction
+ing a requirement to choose one of the products offered by           costs) decreases PSV. By defining PTCs as a sum of price,
+the retailer. Low effort leniency may trigger consumers to           time, and effort, Brady and Robertson (1999) show a nega-
+mentally simulate the return process and perceive high time-         tive association between PTCs and PSV. Finally, the market-
+, monetary-, and psychological-type transaction costs. Low           ing literature provides significant evidence from broad ser-
+scope leniency, such as being disallowed to return discounted        vice contexts in which PSQ and PTCs are key antecedents
+products, may generate psychological costs such as antici-           of perceived value (Cronin et al., 2000; Dodds et al., 1991;
+pated regret. Thus, we have the following proposition:               Teas & Agarwal, 2000). Combining the mental accounting
+                                                                     perspective and perceived value framework, we have the fol-
+Proposition 2. Higher (a) monetary, (b) time, (c) effort, (d)        lowing proposition:
+scope, and (e) exchange leniency leads to lower PTCs.
+                                                                     Proposition 3. PSQ is positively and PTCs are negatively
+   Mental accounting theory explains consumers’ patronage            associated with the perceived value of a returns service.
+and purchase decisions under risk and uncertainty (Thaler,
+1985). The theory posits that consumers evaluate a transac-             A return service is a postsales service included in a
+tion with a party in two stages: (1) evaluating the potential        retailer’s overall service bundle and consists of policy and
+transaction (judgment process) and (2) approving or disap-           process aspects (Mollenkopf et al., 2007). Policy aspects
+proving the transaction (decision process). To evaluate the          include the terms and conditions of the returns service offer-
+transaction, consumers weigh the perceived utility against           ing and are communicated through formalized return policy
+1724                                                                                                               ABDULLA ET AL.
+        Production and Operations Management
+
+statements. Therefore, a return policy is a fundamental ele-      levers would have different signal strengths or salience (Con-
+ment of the returns service design and is subject to consumer     nelly et al., 2011). In particular, unlike high time, effort,
+evaluation (Davis et al., 1998). In addition, a return policy     and scope leniency, high monetary and exchange leniency
+is a means of marketing communication that informs con-           involve direct financial risks and constitute cost-risking sig-
+sumers what to expect in case they need to return a purchase.     nals for the retailers (Kirmani & Rao, 2000). The implied
+As discussed earlier, we can characterize any return policy by    costs to low-quality retailers, therefore, are higher when mon-
+the degree of leniency offered across five levers. We contend     etary and exchange leniency is high relative to high leniency
+that all five leniency levers are important design levers for a   across the other three levers. Consequently, high monetary
+retailer’s return service and can be used to influence the per-   and exchange leniency would become a stronger, more salient
+ceived value of the returns service. These arguments together     quality signal and increase PSQ of the retailer. Further, con-
+with a logical combination of Propositions 1–3 lead us to the     sumers would perceive greater transaction costs when mon-
+following proposition:                                            etary and exchange leniency is low due to direct finan-
+                                                                  cial losses, in addition to associated psychological transac-
+Proposition 4. Higher (a) monetary, (b) time, (c) effort, (d)     tion costs (Chircu & Mahajan, 2006). Due to their poten-
+scope, and (e) exchange leniency leads to higher perceived        tially stronger influences on PSQ and PTCs, we expect a
+value of a returns service.                                       stronger effect on PSV and subsequently on purchase inten-
+                                                                  tion from monetary and exchange leniency levers relative to
+   Perceived value is found to be the most important pre-         time, effort, and scope levers. Hence, we hypothesize:
+dictor of purchase intentions in a variety of service settings
+(Baker et al., 2002; Parasuraman, 1997; Parasuraman & Gre-        Hypothesis 6. Monetary and exchange leniency levers have
+wal, 2000). With respect to our context, research on return       stronger effects on a consumer’s purchase intention than
+policies lends support where the overall leniency of a return     time, effort, and scope levers.
+policy is positively associated with purchase intention (Boni-
+field et al., 2010; Oghazi et al., 2018). Jeng (2017) finds
+that the perceived value of a return policy mediates the rela-    3      EMPIRICAL METHOD
+tionship between overall return policy leniency and purchase
+intention. Therefore, we state the final proposition:             To test the research hypotheses, we use primary data col-
+                                                                  lected from six experimental studies involving US-based
+Proposition 5. Higher (a) monetary, (b) time, (c) effort, (d)     consumers. The first five of these studies are prestudies that
+scope, and (e) exchange leniency leads to a higher intention      are conducted to (1) develop robust measurement scales, (2)
+to purchase from a retailer, by increasing the perceived value    empirically validate the constructs in our model, (3) pretest
+of the returns service that the retailer offers.                  the experimental vignettes and manipulations, and (4) inform
+                                                                  various design trade-offs and choices for the main study
+   Based on the theoretical grounding above, we now present       (Eckerd et al., 2021). In Sections 3.1 and 3.2, we provide
+the formal hypotheses regarding the proposed cognitive pro-       background regarding the first two purposes. Detailed dis-
+cess for a consumer’s returns service valuation and the           cussions that are related to purposes (3) and (4) are provided
+resultant purchase intention by anchoring on the degree of        in Supporting Information Appendix A.
+leniency across five levers. In particular, we posit that given      All prestudies and the main study are designed using
+two return policies, ceteris paribus, the policy with a higher    Qualtrics and are conducted via Amazon Mechanical Turk
+leniency in one of the levers results in higher PSQ and lower     (MTurk) online crowdsourcing platform. MTurk enables data
+PTCs, which then leads to a higher PSV, and ultimately            collection from a diverse and representative consumer pop-
+results in a higher purchase intention. More formally, we         ulation, which is important in terms of the external validity
+hypothesize:                                                      of the empirical findings (Berinsky et al., 2012; Goodman &
+                                                                  Paolacci, 2017; Paolacci & Chandler, 2014). The platform
+Hypothesis 1–5. PSQ and PTCs in parallel and PSV in               also allows participants to complete studies in their natural
+series mediate the relationship between (1) monetary, (2)         living or working environments—which mitigates concerns
+time, (3) effort, (4) scope, and (5) exchange leniency and pur-   regarding observer effects—and provides a lab-in-the-field
+chase intention, such that higher leniency leads to a higher      setting. Each participant received a compensation of $1.00
+purchase intention through increased PSQ, decreased PTCs,         for completing a study, which took, on average, 7 minutes.
+and increased PSV.                                                On an hourly basis, the payment is significantly higher-than-
+                                                                  average incentives paid to MTurk workers ($1.66; Paolacci
+   We hypothesize on the positive effects of leniency across      & Chandler, 2014) as well as above the federal minimum
+all five return policy levers on purchase intentions through      wage ($7.25; US Department of Labor, 2021).
+the cognitive process model described above. However, the            All experimental studies use vignette-based methods.
+overarching theoretical model also leads us to expect signif-     Experimental vignette methods, particularly when combined
+icant heterogeneity among the levers in terms of their rel-       with diverse samples such as ours, are viewed as an effec-
+ative effectiveness. As signals of service quality, leniency      tive, balancing solution to the methodological dilemma in
+HOW CONSUMERS VALUE RETAILER’S RETURN POLICY LENIENCY LEVERS                                                                    1725
+                                                                            Production and Operations Management
+
+choosing between conventional lab experiments with ques-           3.2.1       Experimental procedure and sample
+tionable external, but high internal validity and nonexperi-
+mental or quasi-experimental methods that provide greater          The main study has a completely randomized, full-factorial
+external validity, but engender many threats to internal valid-    between-subject design (i.e., five levers manipulated at low
+ity (Aguinis & Bradley, 2014). Experimental vignettes are          vs. high leniency levels constituting 32 cells). In designing
+particularly relevant when the goal is to study cognitive-         the experimental manipulations of each leniency lever, care-
+affective perceptions (Eckerd et al., 2021). Service con-          ful consideration was given to achieve a balance among the
+texts provide an ideal setting for vignette-based experiments      following: (1) the operationalization of low and high levels
+because participants tend to be familiar with the contexts         of leniency should be realistic and actionable from a man-
+and can easily engage with the described situations or, more       agerial perspective (Bachrach & Bendoly, 2011), (2) the low
+applicable to our context, innately comprehend the informa-        and high levels of leniency need to constitute significant con-
+tion provided in the vignettes (Eckerd et al., 2021; Rungtu-       trasts to be salient (Rungtusanatham et al., 2011), and (3) the
+sanatham et al., 2011).                                            nature of manipulations are aligned with the existing litera-
+                                                                   ture (Abdulla et al., 2019). To this end, the prestudy phase
+                                                                   provided significant conceptual knowledge and preliminary
+3.1    Measurement scale development                               empirical insights. In addition, we made a number of obser-
+and construct validation                                           vations from practice to inform the design of the main study.
+                                                                   We provide details for the design process in Supporting Infor-
+We go through a rigorous scale development and con-                mation Appendices A and B.
+struct validation process through a multisample, experimental         A total of 840 participants (45.1% females) were randomly
+approach with a replication logic (Pagell, 2020) for two key       assigned to one of the 32 treatment conditions. Participants
+reasons. First, well-established measurement scales are not        were asked to view a vignette designed as a website of retailer
+readily available in the extant return policy literature to mea-   “ABC,” which was presented as one of the large retailers in
+sure the constructs of interest in our empirical model. Second,    the United States who sells products in multiple categories
+our research objective is to provide a comparative assessment      through online and offline channels. Our choice of a multiple-
+of different leniency levers, and robust measurement scales        category retailer based in the United States as the vignette
+are crucial for conducting such an assessment with reliable        context for this study is predicated on the following. First,
+results. To this end, the five prestudies involve joint experi-    the choice allows estimating the average treatment effects of
+mental manipulations of different leniency levers, enabling a      different return policy leniency levers in a broad context (i.e.,
+cross-validation and stress testing of measurement scales.         without priming participants on a narrow set of product types
+   In developing the measurement scales and validating the         or price levels). Indeed, understanding the effect of differ-
+constructs, we follow the methodological practices recom-          ent leniency levers averaged across all potential product cat-
+mended by O’Leary-Kelly and Vokurka (1998) and MacKen-             egories and/or price levels would be of practical significance
+zie et al. (2011). We start by generating measurement items        to the large retailers (i.e., big-box stores, department stores)
+to capture the domain of the constructs of interest. To do so,     who may have negative connotations about offering complex
+we analyze the existing return policy literature and theoret-      return policies with many category-based exclusions. Second,
+ical research in marketing to generate an initial set of mea-      we surveyed the top 20 US-based retailers by sales revenue.
+surement items. These measurement items are either adapted         We found that 16 of them were general merchandise stores
+from the scales in the existing literature to the context of our   (i.e., department stores, big-box stores) and e-tailers that car-
+research or developed, as needed, based on theoretical and         ried multiple-category assortments sold through online and
+conceptual foundations of the constructs. All measurement          offline channels (the remainder was supermarkets specialized
+items use a 7-point Likert scale. We empirically validate our      in grocery). Considering that the sales volume of these retail-
+constructs by assessing four key components: unidimension-         ers constitute a significant percentage of all US retail sales
+ality, reliability, convergent validity, and discriminant valid-   (i.e., $1.4 of $5.5 trillion as of 2019), at an average return
+ity. The full set of the measurement items and details of our      rate of 10%, these retailers alone would account for approx-
+construct validation process are provided in Supporting Infor-     imately $140 of $369 billion of annual returns in the United
+mation Appendix D.                                                 States (National Retail Federation, 2019). Therefore, among a
+                                                                   myriad of other options, choosing a multiple-category retailer
+                                                                   selling through both online and offline channels for the
+3.2       Main study                                               vignette served the purpose for broader managerial relevance.
+                                                                      The vignette is designed to include common features in a
+Following the prestudies that establish empirically validated      typical retailer website (e.g., search box, product categories,
+constructs and measurement scales, this section presents the       store finder, member login, etc.) in addition to the return
+main study in which we formally test our hypotheses. The           policy statement. This is to increase the realism and eco-
+next section discusses the details of the experimental proce-      logical validity of the experimental environment (Aguinis
+dure and sample characteristics, while Section 3.1 presents        & Bradley, 2014). To check the perceived realism of the
+the data analysis and results.                                     experimental vignettes by participants, we asked two realism
+1726                                                                                                                                   ABDULLA ET AL.
+        Production and Operations Management
+
+check questions. In particular, on a 7-point Likert scale with      TA B L E 2        Covariates included in the mediation analysis
+1 (Strongly disagree) to 7 (Strongly agree), the participants       Covariate             Type                 Definition
+indicated a score with mean = 5.110 (SD = 1.350) to the
+                                                                    RETURNRATE            Continuous           Return to purchase ratio on an annual
+statement “The ABC website presented in the study carried
+                                                                                                                basis, based on the self-reported
+most of the elements that I find in other retailers’ websites.”                                                 average number of nongrocery
+Second, the participants indicated a score with mean =                                                          purchases made in a month and the
+5.255 (SD = 1.100) to the statement “ABC return policy was                                                      number of returns made in the last
+realistic in its wording and format considering other return                                                    12 months.
+policies I have seen.” The vignettes for the highest and the        POLICYREAD            Ordinal              To what degree a consumer reviews
+lowest leniency (across all levers) treatment conditions are                               (7-point             return policies before purchasing
+                                                                                           Likert)              from a retailer.
+provided in Supporting Information Appendix C.
+   Demographic characteristics of the sample were compara-          NRETAILERS            Count                Number of distinct retailers that a
+                                                                                                                consumer shops during a typical
+ble with those from prestudies (see Table A1 in Supporting
+                                                                                                                year.
+Information Appendix A). At the end of the study, partici-
+                                                                    CHANNEL               Categorical          Consumer’s channel preference
+pants were required to answer two attention check questions,
+                                                                                                                (brick-and-mortar vs. online vs. no
+asking the restocking fee amount and return time window                                                         strict preference (both)).
+indicated in the return policy (Abbey & Meloy, 2017). These
+                                                                    AGE                   Ordinal              Participant’s age.
+attention check questions qualify as factual manipulation
+                                                                    GENDER                Categorical          Participant’s gender.
+checks (Kane & Barabas, 2019), meaning that (1) they have
+objective, correct answers and (2) they are directly related to     INCOME                Ordinal              Participant’s household income level.
+the experimental manipulations used. Factual manipulation
+checks are considered more effective compared to other com-
+mon types of manipulation checks, such as instructional or          TA B L E 3        Descriptive statistics for focal variables
+subjective manipulation checks (Oppenheimer et al., 2009).          Variable       PSQ                PTC               PSV               PI
+Of the 840 participants who completed the study, 650 par-
+                                                                    Mean [SD]      5.031 [1.437]      4.300 [1.750]     4.113 [1.804]     4.823 [1.570]
+ticipants (77.4%) answered the two attention checks (factual
+manipulation checks) correctly and whose locations were ver-        Abbreviations: PSQ, perceived service quality; PSV, perceived service value; PTC, per-
+                                                                    ceived transaction cost.
+ified to be in the United States are included in the final anal-
+ysis reported in the next section. In the final sample, we did
+not observe significant imbalances in terms of the number of        mediation analysis and notations to facilitate the discussion.
+observations per treatment condition, which ranged between             Table 4 reports the results of the analyses and includes
+19 and 22.                                                          the estimated individual path coefficients, direct effects, total
+                                                                    indirect effects, and all path-specific indirect effects with 95%
+                                                                    percentile-based bootstrap confidence intervals (henceforth
+3.2.2       Analysis and results                                    CI for brevity). A significant mediation effect exists when
+                                                                    the CI for the estimate of an indirect effect does not con-
+To test the hypotheses, we perform a regression-based media-        tain zero. The analyses provide support for Hypotheses 1–5.
+tion analysis with the nonparametric bootstrapping approach         In particular, we find statistically significant between-subject
+using the PROCESS macro for SPSS (Hayes & Little, 2018).            mediation effect for all five levers. Further, we find that
+This is a modern method to reliably estimate mediation              PSQ, PTC, and PSV fully mediate the relationship between
+effects with adequate statistical power (Hayes & Little, 2018;      return policy leniency across a given lever and PI, evi-
+Rungtusanatham et al., 2014).                                       denced by the fact that the direct effects of leniency on PI
+   We use 10,000 bootstrap resamples for the analysis. In           are not statistically significant when PSQ, PTC, and PSV
+all regression equations estimating the path coefficients,          are accounted for. By estimating the contrast between the
+we also include several covariates to further improve the           two indirect effects (through PSQ vs. PTC), we find that in
+statistical power and precision of the estimates (i.e., to reduce   transmitting the effect of monetary leniency onto PI, PTC
+the standard errors). These covariates and definitions are          is a significantly stronger mediator (𝜃1 − 𝜃2 = −0.263, CI =
+reported in Table 2. Latent variable scores are calculated as       [−0.441, −0.100]). Meanwhile, for the remaining leniency
+averages of the respective measurement items. Again, the            levers, PTC and PSQ demonstrate statistically equivalent
+measurement scales and constructs are successfully validated        strengths in transmitting the effect of leniency onto PI.
+via an exploratory factor analysis (EFA), using the same            Among the covariates included in the mediation analysis,
+two-factor extraction-rotation methods as in the prestudies,        the demographic variables (i.e., age, gender, income) did not
+and via confirmatory factor analysis (CFA) (see Supporting          explain significant variability in the purchase intentions. Indi-
+Information Appendix E for details). Descriptive statistics         viduals with higher self-reported return rates and who had
+for the latent variables are provided in Table 3 and the inter-     higher tendency to review return policies before purchasing
+variable correlations are reported in Supporting Information        expressed lower purchase intentions, on average, controlling
+Appendix E. Figure 2 shows the statistical diagram for the          for the treatment effects of return policy leniency levers.
+HOW CONSUMERS VALUE RETAILER’S RETURN POLICY LENIENCY LEVERS                                                                           1727
+                                                                                   Production and Operations Management
+
+
+
+
+FIGURE 2       Statistical diagram and notations for mediation analysis
+
+
+   Next, we compare the total indirect (mediation) effects of             3.3     Robustness and generalizability
+the five levers on PI and find support for Hypothesis 6. In               of findings
+particular, we find that monetary leniency—operationalized
+through practically common cases of a full refund vs. 15%                 Results of the main study suggest statistically significant and
+restocking fee—proves to be the most effective lever in influ-            heterogeneous causal effects of the five leniency levers on
+encing purchase intentions through the mediators. The second              purchase intentions through their influences on PSQ, PTCs,
+most effective lever is the exchange lever, which is manipu-              and PSV. One may wonder about the role of contextual
+lated through offering a cash refund versus store credit only.            dependencies (i.e., moderators) in the relative effects of the
+The effort lever comes third, with a slightly higher total indi-          five levers in order to gauge the generalizability of the find-
+rect effect compared to the time lever. Scope leniency, oper-             ings. Relevant contextual dependencies would be the assort-
+ationalized through whether sales items are allowed to be                 ment focus of the retailer (e.g., general merchandise vs. spe-
+returned, demonstrates the smallest effect. Figure 3 provides             cialized stores), sales channel (i.e., online vs. offline), prod-
+a visual representation of the total indirect effects and CIs for         uct category (e.g., electronics vs. apparel), and price (i.e.,
+each lever. In order to test whether the differences are statis-          high vs. low) of products being considered for purchase. We
+tically significant, we estimate the differences between total            know from the meta-analysis conducted by Janakiraman et al.
+indirect effects of adjacent levers in the effect size rank order-        (2016) that the assortment focus of a retailer and the sales
+ing (i.e., adjacent contrast effects), using nonparametric boot-          channel does not moderate the effect of return policy leniency
+strapping. The point estimates for these differences and the              on purchase intentions. Further, our empirical results from
+95% bootstrap CIs are provided in Table 5. Overall, while we              prestudy (1), where we manipulated the product category as
+find that there are statistically significant differences among           electronics versus apparel (two product categories with the
+the mediation effects observed, the practical significance of             highest return rates and volumes), suggest that product cate-
+the differences among effort, time, and scope leniency levers             gory may not be a significant moderator. However, this is by
+in particular is not very high.                                           no means conclusive and warrants further examination.
+   Finally, we also analyze the interactions between different               We experimentally examined the moderating role of price
+leniency levers in their impact on PI through the mediation               in determining the effect of monetary and exchange leniency
+mechanism that we study. To do so, we estimate an ANCOVA                  (two levers with a significant financial risk) on consumers’
+model that includes all leniency levers as fixed factors, PI as           purchase intentions. The experiment had a six-cell (partial
+the outcome variable, and the remaining variables included in             factorial) design, price level (low = $50, high = $500),
+the mediation analysis above as covariates. We find no statis-            monetary leniency (low = 15% restocking fee, high = no
+tically significant (at p < 0.05 level) two-way or higher order           restocking fee), and exchange leniency (low = no cash
+interaction effects among the five leniency levers.                       refund/store credit only, high = both cash refund and store
+1728                                                                                                                                ABDULLA ET AL.
+           Production and Operations Management
+TA B L E 4     Mediation results
+
+Focal lever   Direct effect [CI]       Total indirect effect [CI]   Mediation paths/subpaths with effect sizes   Indirect effects   95% CIs
+                                                                       1.014        0.491     0.605
+Monetary      0.084 [−0.075, 0.242]    1.244 [1.048, 1.449]         M → PSQ → PSV → PI                0.301             [0.217, 0.396]
+                                                                       −1.791        −0.521       0.605
+                                                                    M → PTC → PSV → PI            0.564             [0.426, 0.721]
+                                                                       0.276        0.605
+                                                                    M → PSV → PI                          0.167             [0.051, 0.289]
+                                                                       1.014        0.213
+                                                                    M → PSQ → PI                          0.216             [0.113, 0.338]
+                                                                       −1.791        0.003
+                                                                    M → PTC → PI                       −0.005             [−0.118, 0.114]
+                                                                      0.444        0.491      0.605
+Time          −0.089 [−0.225, 0.047]   0.381 [0.206, 0.558]         T → PSQ → PSV → PI                0.132             [0.068, 0.202]
+                                                                      −0.600        −0.521       0.605
+                                                                    T → PTC → PSV → PI            0.189             [0.116, 0.272]
+                                                                      −0.055        0.605
+                                                                    T → PSV → PI                       −0.033             [−0.126, 0.055]
+                                                                      0.444        0.213
+                                                                    T → PSQ → PI                          0.095             [0.041, 0.161]
+                                                                      −0.600        0.003
+                                                                    T → PTC → PI                        0.002             [−0.041, 0.039]
+                                                                      0.512        0.491      0.605
+Effort        −0.252 [−0.387, 0.116]   0.414 [0.240, 0.585]         F → PSQ → PSV → PI                0.152             [0.087, 0.223]
+                                                                      −0.683        −0.521       0.605
+                                                                    F → PTC → PSV → PI            0.215             [0.135, 0.304]
+                                                                      −0.100        0.605
+                                                                    F → PSV → PI                       −0.060             [−0.155, 0.030]
+                                                                      0.512        0.213
+                                                                    F → PSQ → PI                          0.109             [0.050, 0.181]
+                                                                      −0.683        0.003
+                                                                    F → PTC → PI                       −0.002             [−0.046, 0.042]
+                                                                      0.361        0.491      0.605
+Scope         0.021 [−0.117, 0.160]    0.243 [0.071, 0.424]         S → PSQ → PSV → PI                0.107             [0.044, 0.174]
+                                                                      −0.373        −0.521       0.605
+                                                                    S → PTC → PSV → PI            0.118             [0.047, 0.195]
+                                                                      −0.095        0.605
+                                                                    S → PSV → PI                       −0.058             [−0.149, 0.034]
+                                                                      0.361        0.213
+                                                                    S → PSQ → PI                          0.077             [0.026, 0.143]
+                                                                      −0.373        0.003
+                                                                    S → PTC → PI                       −0.001             [−0.027, 0.024]
+                                                                      0.441        0.491      0.605
+Exchange      −0.024[−0.162, 0.115]    0.588 [0.407, 0.772]         X → PSQ → PSV → PI                0.131             [0.067, 0.203]
+                                                                      −0.620         −0.521      0.605
+                                                                    X → PTC → PSV → PI            0.195             [0.119, 0.282]
+                                                                      0.280        0.605
+                                                                    X → PSV → PI                          0.169             [0.075, 0.267]
+                                                                      0.441        0.213
+                                                                    X → PSQ → PI                          0.094             [0.041, 0.162]
+                                                                      −0.620         0.003
+                                                                    X → PTC → PI                       −0.002             [−0.041, 0.040]
+Abbreviations: M, monetary; T, time; F, effort; S, scope; X, exchange leniency.
+Covariates: Nonfocal levers, RETURNRATE, POLICYREAD, NRETAILERS, CHANNEL, AGE, GENDER, INCOME.
+
+
+
+credit as options) as the manipulated factors. We excluded                     important, how important they find leniency across different
+low monetary and exchange leniency conditions from this                        return policy levers in choosing which retailers to shop (i.e.,
+study because they (i.e., charging a restocking fee on a store                 no restocking fees (monetary), a long return time window
+credit) are unrealistic from a practical standpoint. We chose                  (time), easy and hassle-free return process (effort), not only
+desk chairs for the purchase scenario because they have con-                   store-credit/exchange but also cash refund option (exchange),
+siderably high price variability in the market and signifi-                    sale and clearance items allowed to be returned as regularly
+cant product fit/quality uncertainty. We used experimental                     priced items (scope)). The statements associated with the
+vignettes that are consistent with our earlier studies. As a                   five leniency levers were provided in a randomized order to
+result, we did not find a significant moderating effect of the                 each participant. Here, we found consistent evidence across
+price level of the product being considered for purchase, for                  all five prestudies (which manipulated different subsets of
+either leniency levers that we tested (see Supporting Infor-                   these five levers) that on average, consumers have an order of
+mation Appendix F for detailed results). As such, we cannot                    importance of leniency across different levers (see Support-
+reject the null hypothesis that price too, is not a significant                ing Information Appendix A). In particular, all five prestud-
+moderating factor.                                                             ies revealed that on average, monetary leniency was by far
+   The prestudy phase provides supporting empirical evi-                       the most important, followed by exchange leniency, followed
+dence that consumers do have a general perception of what                      by effort, which was followed by scope and time leniency.
+leniency levers matter most and perceive a consistent hier-                    Multiple t-tests showed that monetary, exchange, and effort
+archy of importance. Specifically, we asked participants to                    leniency were considered to be significantly more impor-
+indicate on a Likert scale of (1) Most important to (7) Least                  tant relative to time and scope leniency. The difference in
+HOW CONSUMERS VALUE RETAILER’S RETURN POLICY LENIENCY LEVERS                                                                                    1729
+                                                                                           Production and Operations Management
+
+
+
+
+FIGURE 3         Total indirect effects of the leniency levers
+
+
+
+TA B L E 5 Statistical tests for the significance of the differences              and PTCs. However, our investigation further reveals hetero-
+between total indirect effects                                                    geneous effects of different leniency levers. This implies that
+𝚫𝜽L                        Point estimate                        95% CI           retailers need to be careful in choosing the right leniency
+                                                                                  levers to tighten the return policies in order to reduce the oper-
+𝜃LM − 𝜃LX                  0.660                                 [0.658, 0.663]
+                                                                                  ational cost burden, and our findings provide new insights
+𝜃LX − 𝜃LF                  0.175                                 [0.172, 0.177]
+                                                                                  regarding this decision as we discuss below.
+𝜃LF − 𝜃LT                  0.033                                 [0.030, 0.035]      We find that monetary leniency is the most effective
+𝜃LT − 𝜃LS                  0.135                                 [0.133, 0.137]   lever in influencing the cognitive perceptions that ultimately
+                                                                                  impact purchase intentions. The positive effect of monetary
+                                                                                  leniency on purchase intentions has been documented in the
+the importance of time versus scope leniency was not sig-                         prior literature. Extending this, we show that the effect of
+nificant. Moreover, monetary leniency was considered sig-                         monetary leniency dominates the effects of the other four
+nificantly more important than exchange leniency, which in                        levers. Indeed, monetary leniency has the greatest salience
+turn was considered more important than effort leniency. This                     among all levers in terms of financial risk. Consequently,
+empirical evidence suggests that the relative effects that we                     anticipated regret can also be expected to be the greatest when
+identify in the main study are fairly generalizable to different                  leniency along this particular lever is low, increasing PTCs
+retail contexts, contextual dependencies, and to the presenta-                    (Inman & Zeelenberg, 2002). From the retailer’s perspective,
+tion ordering of the return policy levers.                                        offering a full refund as a part of the returns service offer-
+                                                                                  ing would send strong signals regarding the retailer’s under-
+                                                                                  standing of consumer needs and willingness to absorb the
+4           CONCLUSION                                                            consumer’s risk regarding product fit and valuation uncer-
+                                                                                  tainty (Abdulla et al., 2019) and thereby significantly stim-
+In light of the empirical findings from the main study, this                      ulate returns service quality. The financial costs that a retailer
+section discusses managerial and theoretical implications of                      bears from offering a full refund for all returns is also more
+our research and highlights a number of limitations and future                    salient to the consumer compared to cost of offering leniency
+research opportunities.                                                           across other levers. This may also explain the dominance of
+   Overall, our findings support the contention that the value                    the monetary leniency lever over the other levers.
+of a retailer’s returns service is an important determinant of                       A direct managerial implication of this finding is that
+a consumer’s purchase intention. We also demonstrate that                         retailers who impose or consider imposing restocking
+each of the five levers that constitute return policy leniency                    fees should be aware of strong negative perceptions and
+is a significant antecedent of the perceived value of a returns                   subsequent consumer behaviors (e.g., decreased purchase
+service, through each lever’s ability to ex ante signal PSQ                       intention, negative word of mouth, switching). For example,
+1730                                                                                                                ABDULLA ET AL.
+        Production and Operations Management
+
+many retail stores, such as Best Buy, Macy’s, and Sears,          customers to fill a return authorization form, may also help
+currently charge restocking fees on returns made in select        prevent some of the returns ex post, with a relatively smaller
+product categories (ConsumerWorld.org, 2018). Our results         negative impact on purchase intentions. As a case in point,
+suggest that in these product categories, such retailers may be   Nordstorm, well known for its generous return policy, has
+losing customers to their competitors who offer a full refund.    recently imposed tag requirements for special-occasion
+Anecdotal evidence supports the view that customers typi-         dresses and designer items. The smaller effect of effort
+cally avoid purchasing from retailers who charge restocking       leniency on ex ante purchase intentions relative to mone-
+fees, finding such fees unfair.                                   tary and exchange leniency is likely to be due to expected
+   A more interesting finding is the second strongest impact      transaction costs of nonmonetary nature (i.e., psychological,
+of exchange leniency, previously unexplored in a causal           time, physical) that loom less than financial costs implied by
+framework, on purchase intentions through its impact on           monetary and exchange levers.
+PSQ, PTCs, and PSV. Research on mental accounting has                Further, we show that consumers may not dramatically
+established that restricted-use funds, such as store credits,     decrease their value perceptions and purchase intentions if a
+are evaluated and spent differently than equivalent cash, even    retailer disallows discounted (i.e., sales or clearance) prod-
+in the context of the same retailer (Reinholtz et al., 2015).     ucts being returned relative to when it applies a standard
+Our research suggests that offering a return policy that allows   return policy for discounted products. The practically small
+customers only to make an exchange or receive store credit        effect of the particular operationalization of scope leniency
+in case of a return, instead of getting a cash refund, can be     in our context mirrors the dual entitlement principle (Kahne-
+detrimental to the perceived value of a returns service and       man et al., 1986). The dual entitlement principle posits that
+reduce purchase intentions ex-ante. The strong impact of the      most consumers believe that they are entitled to a reason-
+exchange lever would be due to financial risks associated         able price and that firms are entitled to a reasonable profit.
+with customer lock-in with the retailer (Johnson et al., 2003;    Knowing that offering products at discounted prices implies
+Zauberman, 2003). In fact, this explanation is supported by       giving up on the usual sales revenue the retailer would be
+the anecdotal accounts from several participants at the end of    entitled to, consumer may feel that the retailer can also fairly
+the main study.                                                   disallow returns on discounted products, in order to attain a
+   The overall conclusion is that retailers should avoid          reasonable profit margin. Thus, decreasing scope leniency,
+restricting their return policies through monetary and            particularly by disallowing returns for discounted products,
+exchange levers in order to reduce the cost burden of returns     provides another viable opportunity for retailers to decrease
+and make the returns service more sustainable from an             the burden of returns while keeping negative reactions at a
+operational standpoint. Instead, retailers should consider        minimum. Such a strategy, particularly when combined with
+opportunities across the remaining three levers. For example,     effective pricing tactics (i.e., seasonal discounts, individu-
+our results imply that a longer return time window may            alized pricing) can prove a better alternative to imposing
+not have a strong, positive effect on a consumer’s ex-ante        restocking fees and other nonrefundable charges with simi-
+returns service value perception and purchase intention. In       lar or a greater positive financial impact. Many apparel retail-
+fact, almost 60% of the participants in the aggregated sample     ers, such as Gap, Tommy Hilfiger, and Michael Kors, do not
+of the prestudies indicated in a survey question that they        allow returns or exchanges for final sale items. Dillard’s does
+would typically need less than a week to make a keep/return       not allow returns for clearance sales and also the products
+decision, with only 10% of the participants indicating that       sold under stacked discounts (e.g., items marked down 20%
+they would need more than two weeks. Therefore, provid-           plus an additional 30% discount for a limited time). Overall,
+ing excessively long return time windows, such as several         our research provides actionable guidelines to retail managers
+months, may not provide any significant advantage to retail-      regarding how to make return policies more sustainable from
+ers. Rather, driven by customer inertia and procrastination,      an operational perspective, without significantly deteriorating
+a time-to-return distribution with a long tail may cause          consumer value perceptions and patronage intentions.
+unsustainable losses in recoverable value (Ferguson et al.,          Our research has multiple theoretical contributions to
+2006; Su, 2009b). This is because the longer the time it          research on consumer return policy design and, more gen-
+takes for a product to be returned after purchase, the larger     erally, on service design. First, while the previous litera-
+the deterioration in salvage value of the product (Blackburn      ture on consumer return policies has predominantly focused
+et al., 2004). Moreover, products that are returned late tend     on the quality signaling aspect of return policy leniency,
+to have fewer disposition options that can generate value to      our research postulates and demonstrates that return policy
+retailers (Shang et al., 2019). Thus, by reducing the time        leniency can also influence transaction cost perceptions. In
+window, retailers can better reduce the operational cost of       fact, we demonstrate that the strength of influence on pur-
+returns. From this perspective, it is noteworthy that many        chase intentions through transaction cost perceptions is sta-
+of the recently restricted return policies involve tightening     tistically no different than through service-quality percep-
+return time windows, such as the policies of Macy’s, L.L.         tions for all leniency levers, except the monetary lever. Thus,
+Bean, and Bed Bath & Beyond (ConsumerWorld.org, 2018).            accounting for both service quality and transaction cost per-
+   Decreasing effort leniency by imposing additional hassles,     ceptions provides a more complete cognitive process model
+such as tag and original packaging requirements or asking         predicated on a PSV framework. In turn, this provides greater
+HOW CONSUMERS VALUE RETAILER’S RETURN POLICY LENIENCY LEVERS                                                                      1731
+                                                                              Production and Operations Management
+
+explanatory power to understand the relationship between             impact of monetary and exchange leniency on aggregate
+return policy leniency and consumer perceptions and pur-             market demand should be modeled to be greater than the
+chase intentions. A broader theoretical implication is the           marginal impact of scope and effort leniency. Similarly, in
+importance of recognizing that service design decisions of           terms of individual consumer utility, the ex ante utility gain
+firms may not only influence consumer behavioral outcomes            from purchasing due to monetary or exchange leniency of
+through the service-quality mechanism but also through the           return policies needs to be modeled as greater, by a factor,
+transaction cost mechanism. As a result, different service pol-      than that due to time and effort leniency.
+icy levers may influence both service quality and transaction           There are a number of limitations to our work that we
+cost perceptions, resulting in heterogeneous effects on behav-       believe can motivate future research. First, we examine cog-
+ioral outcomes.                                                      nitive perceptions and purchase intentions but not manifest
+   Second, we test value perceptions regarding a service and         behavioral outcomes such as actual purchases. This allowed
+the resultant purchase intentions solely based on the service        us to study consumer attitudes toward a retailer based on
+policy itself without any exposure to the process aspects of         the return policy leniency operationalized through five levers
+the service. An important theoretical implication is that cer-       available to the retailer. The theory of planned behavior and
+tain attributes of a service—as indicated in service terms and       empirical evidence from marketing literature suggests that
+conditions—can ex ante stimulate quality, transaction costs,         purchase intentions can reasonably predict actual purchase
+and value perceptions that influence a consumer’s patron-            decisions (Ajzen, 1985; Chandon et al., 2005). Still, testing
+age decisions. This highlights the importance of empirical           how return policy leniency across the five levers influences
+research with respect to policy aspects of service design, in        different behavioral outcomes when real monetary stakes are
+addition to the process aspects that are more commonly stud-         involved (i.e., purchase and return transactions) can be an
+ied in the OM domain. Continued research can extend the              interesting future research. This would strengthen the find-
+boundaries of our cognitive model to other service contexts          ings and implications by establishing predictive validity.
+commonly studied in the OM literature, such as credit card,             As a matter of scope, we propose a high-level, parsimo-
+insurance, travel, and ticketing services.                           nious theory and document consistent empirical evidence for
+   Third, our cognitive process model is predicated on mul-          heterogeneous average treatment effects of leniency across
+tiple theoretical perspectives and provides a generalizable          different levers on purchase intentions. We do so by focus-
+framework to examine, in a comparative sense, the influ-             ing on a broadly applicable context motivated from prac-
+ence of different service design levers on the consumer valua-       tice. Though we empirically examine product category in a
+tion process and subsequent behavioral outcomes. Our model,          prestudy and price level in a poststudy and find no statisti-
+combined with the study design, is a particularly good fit to        cally significant effect of these two contextual factors on the
+study service contexts where levers, attributes, or strategies       average treatment effects, our inquiries along these lines are
+of interest involve trade-offs from the firm’s perspective (e.g.,    not exhaustive. Future research can examine more systemat-
+retailers typically do not simultaneously manipulate multiple        ically and exhaustively the role of different practically rel-
+levers while changing a return policy but rather try to choose       evant contingencies on the overarching treatment effects of
+which lever to optimize) and not necessarily from the con-           each leniency lever on purchase intentions.
+sumer’s perspective (e.g., participants did not have to make a          Another line of fruitful research would be to investigate
+trade-off between leniency across different levers and could         consumer perceptions of the complexity of return policies
+value leniency across all levers). To illustrate a future applica-   (e.g., the number of category-specific policies in the over-
+tion of our approach in a different service operations context,      all return policy offering of a retailer) that could also gen-
+researchers can study how different omni-channel capabili-           erate interesting insights. Here, researchers can note that
+ties available to today’s retailers would be compared in their       imposing category-based exclusions to a standard return pol-
+effects on service quality, transaction cost perceptions, and        icy would be another form of low scope leniency. Given
+resultant behavioral intentions and outcomes.                        that many retailers have tremendous amount of transac-
+   Abdulla et al. (2019) call for continuing analytical research     tional data on consumers’ purchase and return behavior,
+that studies nonmonetary leniency levers, decisions across           an examination of the feasibility of and consumer reac-
+multiple levers, as well as design of return policies that           tions to personalized return policies (in a similar vein to
+involve the interaction amongst levers (e.g., time-based             personalized pricing) would also be a fruitful direction for
+restocking fees). Our empirical findings have implications           future research.
+for continuing and growing analytical OM research involv-               In this paper, we provide insights for retail practitioners on
+ing consumer return policies. First, as we find no significant       how to make return policies more sustainable from an oper-
+interaction effects across multiple pairs of leniency levers, the    ational perspective, while minimizing damage to the value
+utility gain due to return policy leniency can be reasonably         proposition offered to customers. Future research is needed to
+modeled through an additive, rather than a multiplicative,           understand if there might be negative implications of restrict-
+functional form. Second, it is important to recognize the            ing a long-established lenient return policy due to negative
+differences across levers in terms of their effect on purchase       signaling (Connelly et al., 2011). Another interesting future
+intentions while modeling aggregate demand or individual             research avenue would be to investigate how retail managers
+consumer purchase decisions. For instance, the marginal              evaluate potential costs and benefits of leniency across each
+1732                                                                                                                                           ABDULLA ET AL.
+          Production and Operations Management
+
+lever, to understand whether the managerial perceptions are                       Cronin, J. J., Brady, M. K., & Hult, G. T. M. (2000). Assessing the effects
+aligned with those of consumers.                                                     of quality, value, and customer satisfaction on consumer behavioral inten-
+                                                                                     tions in service environments. Journal of Retailing, 76(2), 193–218.
+                                                                                  Cronin, J. J., & Taylor, S. A. (1994). SERVPERF versus SERVQUAL: Rec-
+REFERENCES                                                                           onciling performance-based and perceptions-minus-expectations mea-
+Abbey, J. D., & Meloy, M. G. (2017). Attention by design: Using attention            surement of service quality. Journal of Marketing, 58(1), 125–131.
+   checks to detect inattentive respondents and improve data quality. Journal     Davis, S., Hagerty, M., & Gerstner, E. (1998). Return policies and the opti-
+   of Operations Management, 53–56(November), 63–70.                                 mal level of “hassle.” Journal of Economics and Business, 50(5), 445–
+Abdulla, H., Ketzenberg, M., & Abbey, J. D. (2019). Taking stock of con-             460.
+   sumer returns: A review and classification of the literature. Journal of       Dodds, W. B., Monroe, K. B., & Grewal, D. (1991). Effects of price, brand,
+   Operations Management, 65(6), 560–605.                                            and store information on buyers’ product evaluations. Journal of Market-
+Aguinis, H., & Bradley, K. J. (2014). Best practice recommendations for              ing Research, 28(3), 307–319.
+   designing and implementing experimental vignette methodology studies.          Eckerd, S., DuHadway, S., Bendoly, E., Carter, C. R., & Kaufmann, L.
+   Organizational Research Methods, 17(4), 351–371.                                  (2021). On making experimental design choices: Discussions on the use
+Ajzen, I., (1985). From intentions to actions: A theory of planned behavior.         and challenges of demand effects, incentives, deception, samples, and
+   In J. Kuhl & J. Beckmann (Eds.), Action control (pp. 11–39). Springer.            vignettes. Journal of Operations Management, 67(2), 261–275.
+Andreassen, T., & Lindestad, B. (1998). Customer loyalty and complex ser-         Ertekin, N., & Agrawal, A. (2021). How does a return period policy change
+   vices: The impact of corporate image on quality, customer satisfaction and        affect multichannel retailer profitability? Manufacturing & Service Oper-
+   loyalty for customers with varying degrees of service expertise. Interna-         ations Management, 23(1), 210–229.
+   tional Journal of Service Industry Management, 9(1), 7–23.                     Ferguson, M., Guide, V. D. R., & Souza, G. C. (2006). Supply chain coor-
+Bachrach, D. G., & Bendoly, E. (2011). Rigor in behavioral experiments: A            dination for false failure returns. Manufacturing & Service Operations
+   basic primer for supply chain management researchers. Journal of Supply           Management, 8(4), 376–393.
+   Chain Management, 47(3), 5–8.                                                  Gooding, S. K. S. (1995). Quality, sacrifice, and value in hospital choice.
+Baker, J., Parasuraman, A., Grewal, D., & Voss, G. B. (2002). The influence          Marketing Health Services, 15(4), 24–31.
+   of multiple store environment cues on perceived merchandise value and          Goodman, J. K., & Paolacci, G. (2017). Crowdsourcing consumer research.
+   patronage intentions. Journal of Marketing, 66(2), 120–141.                       Journal of Consumer Research, 44(1), 196–210.
+Berinsky, A. J., Huber, G. A., & Lenz, G. S. (2012). Evaluating online labor      Griffis, S. E., Rao, S., Goldsby, T. J., & Niranjan, T. T. (2012). The cus-
+   markets for experimental research: Amazon.com’s Mechanical Turk.                  tomer consequences of returns in online retailing: An empirical analysis.
+   Political Analysis, 20(3), 351–368.                                               Journal of Operations Management, 30(4), 282–294.
+Blackburn, J. D., Guide, V. D. R., Souza, G. C., & Van Wassenhove, L. N.          Grønhaug, K., & Gilly, M. C. (1991). A transaction cost approach to con-
+   (2004). Reverse supply chains for commercial returns. California Man-             sumer dissatisfaction and complaint actions. Journal of Economic Psy-
+   agement Review, 46(2), 6–22.                                                      chology, 12(1), 165–183.
+Blanchard, D. (2007). Supply chains also work in reverse. IndustryWeek.           Guide, V. D. R., & Van Wassenhove, L. N. (2009). OR FORUM—The evo-
+   https://www.industryweek.com/supply-chain/planning-forecasting/                   lution of closed-loop supply chain research. Operations Research, 57(1),
+   article/21954433/supply-chains-also-work-in-reverse                               10–18.
+Bolton, R. N., & Drew, J. H. (1991). A multistage model of customers’             Hayes, A. (2018). Introduction to mediation, moderation, and conditional
+   assessments of service quality and value. Journal of Consumer Research,           process analysis: A regression-based approach. New York: Guilford Pub-
+   17(4), 375–384.                                                                   lications.
+Bonifield, C., Cole, C., & Schultz, R. L. (2010). Product returns on the inter-   Howland, D. (2017). Study: 5B pounds of retail returns end up in land-
+   net: A case of mixed signals? Journal of Business Research, 63(9), 1058–          fills. Retail Dive. https://www.retaildive.com/news/study-5b-pounds-of-
+   1065.                                                                             retail-returns-end-up-in-landfills/513769/
+Boulding, W., Kalra, A., Staelin, R., & Zeithaml, V. A. (1993). A dynamic         Inman, J. J., & Zeelenberg, M. (2002). Regret in repeat purchase versus
+   process model of service quality: From expectations to behavioral inten-          switching decisions: The attenuating role of decision justifiability. Jour-
+   tions. Journal of Marketing Research, 30(1), 7–27.                                nal of Consumer Research, 29(1), 116–128.
+Brady, M. K., & Robertson, C. J. (1999). An exploratory study of service          Janakiraman, N., Syrdal, H. A., & Freling, R. (2016). The effect of return pol-
+   value in the USA and Ecuador. International Journal of Service Industry           icy leniency on consumer purchase and return decisions: A meta-analytic
+   Management, 10(5), 469–486.                                                       review. Journal of Retailing, 92(2), 226–235.
+Buell, R. W., & Norton, M. I. (2011). The labor illusion: How operational         Jeng, S.-P. (2017). Increasing customer purchase intention through product
+   transparency increases perceived value. Management Science, 57(9),                return policies: The pivotal impacts of retailer brand familiarity and prod-
+   1564–1579.                                                                        uct categories. Journal of Retailing and Consumer Services, 39, 182–189.
+Chandon, P., Morwitz, V. G., & Reinartz, W. J. (2005). Do intentions really       Johnson, E. J., Bellman, S., & Lohse, G. L. (2003). Cognitive lock-in and the
+   predict behavior? Self-generated validity effects in survey research. Jour-       power law of practice. Journal of Marketing, 67(2), 62–75.
+   nal of Marketing, 69(2), 1–14.                                                 Kahneman, D., Knetsch, J. L., & Thaler, R. (1986). Fairness as a con-
+Cheng, A. (2015). Consumers return $642.6 billion in goods each year. Mar-           straint on profit seeking: Entitlements in the market. American Economic
+   ketWatch. https://www.marketwatch.com/story/consumers-return-6426-                Review, 76(4), 728–741.
+   billion-in-goods-each-year-2015-06-18                                          Kane, J. V., & Barabas, J. (2019). No harm in checking: Using factual manip-
+Chircu, A. M., & Mahajan, V. (2006). Managing electronic commerce retail             ulation checks to assess attentiveness in experiments. American Journal
+   transaction costs for customer value. Decision Support Systems, 42(2),            of Political Science, 63(1), 234–249.
+   898–914.                                                                       Ketzenberg, M. E., & Zuidwijk, R. A. (2009). Optimal pricing, ordering, and
+Coase, R. H. (1937). The nature of the firm. Economica, 4(16), 386–405.              return policies for consumer goods. Production and Operations Manage-
+Connelly, B. L., Certo, S. T., Ireland, R. D., & Reutzel, C. R. (2011). Sig-         ment, 18(3), 344–360.
+   naling theory: A review and assessment. Journal of Management, 37(1),          Kirkham, E. (2015). 10 stores with the best return policies—and 5 with the
+   39–67.                                                                            worst. Money. https://money.com/return-policies-best-worst/
+Constable, H. (2017). Your brand new returns end up in landfill. BBC              Kirmani, A., & Rao, A. R. (2000). No pain, no gain: A critical review of the
+   Earth. https://www.bbcearth.com/blog/?article=your-brand-new-returns-             literature on signaling unobservable product quality. Journal of Market-
+   end-up-in-landfill                                                                ing, 64(2), 66–79.
+ConsumerWorld.org (2018). Some stores tighten the rules. Consumer World.          Kuo, Y.-F., Wu, C.-M., & Deng, W.-J. (2009). The relationships among ser-
+   http://www.consumerworld.org/pages/returns.htm                                    vice quality, perceived value, customer satisfaction, and post-purchase
+HOW CONSUMERS VALUE RETAILER’S RETURN POLICY LENIENCY LEVERS                                                                                              1733
+                                                                                             Production and Operations Management
+
+   intention in mobile value-added services. Computers in Human Behav-            Shang, G., Ferguson, M. E., & Galbreth, M. R. (2019). Where should i focus
+   ior, 25(4), 887–896.                                                              my return reduction efforts? Empirical guidance for retailers. Decision
+MacKenzie, S. B., Podsakoff, P. M., & Podsakoff, N. P. (2011). Con-                  Sciences, 50(4), 877–909.
+   struct measurement and validation procedures in mis and behavioral             Shang, G., Ghosh, B. P., & Galbreth, M. R. (2017a). Optimal retail
+   research: Integrating new and existing techniques. MIS Quarterly, 35(2),          return policies with wardrobing. Production and Operations Manage-
+   293–334.                                                                          ment, 26(7), 1315–1332.
+Mash, J. K. (2017). These 10 stores have the best return policies. NBC            Shang, G., Pekgün, P., Ferguson, M., & Galbreth, M. (2017b). How much do
+   Today. https://www.today.com/style/stores-best-return-policies-l-l-bean-          online consumers really value free product returns? Evidence from ebay.
+   zappos-athleta-nordstrom-t106819                                                  Journal of Operations Management, 53, 45–62.
+Mollenkopf, D. A., Rabinovich, E., Laseter, T. M., & Boyer, K. K. (2007).         Shulman, J. D., Coughlan, A. T., & Savaskan, R. C. (2011). Managing con-
+   Managing internet product returns: A focus on effective service opera-            sumer returns in a competitive environment. Management Science, 57(2),
+   tions. Decision Sciences, 38(2), 215–250.                                         347–362.
+Moorthy, S., & Srinivasan, K. (1995). Signaling quality with a money-back         Simpson, D., Power, D., Riach, K., & Tsarenko, Y. (2019). Consumer moti-
+   guarantee: The role of transaction costs. Marketing Science, 14(4), 442–          vation for product disposal and its role in acquiring products for reuse.
+   466.                                                                              Journal of Operations Management, 65(7), 612–635.
+National Retail Federation (2019). Top 100 retailers. Author. https://nrf.com/    Spence, M. (1973). Job market signaling. Quarterly Journal of Economics,
+   resources/top-retailers/top-100-retailers/top-100-retailers-2019                  87(3), 355–374.
+National Retail Federation (2021). $428 billion in merchandise returned           Spreng, R. A., Dixon, A. L., & Olshavsky, R. W. (1993). The impact of per-
+   in 2020. Author. https://nrf.com/media-center/press-releases/428-billion-         ceived value on consumer satisfaction. Journal of Consumer Satisfaction,
+   merchandise-returned-2020                                                         Dissatisfaction and Complaining Behavior, 6(1), 50–55.
+Oghazi, P., Karlsson, S., Hellström, D., & Hjort, K. (2018). Online purchase      Su, X. (2009a). Consumer returns policies and supply chain performance.
+   return policy leniency and purchase decision: Mediating role of consumer          Manufacturing & Service Operations Management, 11(4), 595–612.
+   trust. Journal of Retailing and Consumer Services, 41, 190–200.                Su, X. (2009b). A model of consumer inertia with applications to dynamic
+O’Leary-Kelly, S. W., & Vokurka, R. J. (1998). The empirical assess-                 pricing. Production and Operations Management, 18(4), 365–380.
+   ment of construct validity. Journal of Operations Management, 16(4),           Suwelack, T., Hogreve, J., & Hoyer, W. D. (2011). Understanding money-
+   387–405.                                                                          back guarantees: Cognitive, affective, and behavioral outcomes. Journal
+Oppenheimer, D. M., Meyvis, T., & Davidenko, N. (2009). Instructional                of Retailing, 87(4), 462–478.
+   manipulation checks: Detecting satisficing to increase statistical power.      Teas, R. K., & Agarwal, S. (2000). The effects of extrinsic product cues
+   Journal of Experimental Social Psychology, 45(4), 867–872.                        on consumers’ perceptions of quality, sacrifice, and value. Journal of the
+Optoro (2018). 2018 Optoro impact report. https://www.optoro.com/2018-               Academy of Marketing Science, 28(2), 278–290.
+   impact-report/                                                                 Thaler, R. (1985). Mental accounting and consumer choice. Marketing Sci-
+Pagell, M. (2020). Replication without repeating ourselves: Addressing the           ence, 4(3), 199–214.
+   replication crisis in operations and supply chain management research.         US Department of Labor. (2021). https://www.dol.gov/agencies/whd/
+   Journal of Operations Management, 67(1), 105–115.                                 minimum-wage
+Paolacci, G., & Chandler, J. (2014). Inside the turk: Understanding Mechan-       Williamson, O. E. (1989). Transaction cost economics. Handbook of Indus-
+   ical Turk as a participant pool. Current Directions in Psychological Sci-         trial Organization, 1, 135–182.
+   ence, 23(3), 184–188.                                                          Woodall, T. (2003). Conceptualising “value for the customer”: An attribu-
+Parasuraman, A. (1997). Reflections on gaining competitive advantage                 tional, structural and dispositional analysis. Academy of Marketing Sci-
+   through customer value. Journal of the Academy of Marketing Science,              ence Review, 12(1), 1–42.
+   25(2), 154.                                                                    Zauberman, G. (2003). The intertemporal dynamics of consumer lock-in.
+Parasuraman, A., Berry, L. L., & Zeithaml, V. A. (1991). Understanding cus-          Journal of Consumer Research, 30(3), 405–419.
+   tomer expectations of service. MIT Sloan Management Review, 32(3), 39–         Zeithaml, V. A. (1988). Consumer perceptions of price, quality, and value: A
+   48.                                                                               means-end model and synthesis of evidence. Journal of Marketing, 52(3),
+Parasuraman, A., & Grewal, D. (2000). Serving customers and consumers                2–22.
+   effectively in the twenty-first century: A conceptual framework and
+   overview. Journal of the Academy of Marketing Science, 28(1), 9–16.
+Parasuraman, A., Zeithaml, V. A., & Berry, L. L. (1985). A conceptual model       S U P P O R T I N G I N F O R M AT I O N
+   of service quality and its implications for future research. Journal of Mar-   Additional supporting information may be found in the online
+   keting, 49(4), 41–50.                                                          version of the article at the publisher’s website.
+Parasuraman, A., Zeithaml, V. A., & Berry, L. L. (1988). SERVQUAL: A
+   multiple-item scale for measuring consumer perceptions of service qual-
+   ity. Journal of Retailing, 64(1), 12.
+Reinholtz, N., Bartels, D. M., & Parker, J. R. (2015). On the mental account-
+   ing of restricted-use funds: How gift cards change what people purchase.           How to cite this article: Abdulla, H., Abbey, J. D.,
+   Journal of Consumer Research, 42(4), 596–614.                                      & Ketzenberg, M. (2022). How consumers value
+Rungtusanatham, M., Miller, J., & Boyer, K. K. (2014). Theorizing, testing,           retailer’s return policy leniency levers: An empirical
+   and concluding for mediation in SCM research: Tutorial and procedural              investigation. Production and Operations
+   recommendations. Journal of Operations Management, 32(3), 99–113.
+                                                                                      Management, 31, 1719–1733.
+Rungtusanatham, M., Wallin, C., & Eckerd, S. (2011). The vignette in a
+   scenario-based role-playing experiment. Journal of Supply Chain Man-               https://doi.org/10.1111/poms.13640
+   agement, 47(3), 9–16.
+

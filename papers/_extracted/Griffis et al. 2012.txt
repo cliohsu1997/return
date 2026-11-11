@@ -1,0 +1,2831 @@
+--- PAGE 1 ---
+Journal of Operations Management 30 (2012) 282–294
+Contents lists available at SciVerse ScienceDirect
+Journal of Operations Management
+jo  ur  n al  homep  a ge:  www.elsevier.com/locate/jom
+The customer consequences of returns in online retailing: An empirical analysis
+Stanley
+ E. Grifﬁs a,∗, Shashank  Rao b,1, Thomas J. Goldsby c, Tarikere T. Niranjan d
+a Logistics,
+ Eli Broad College of Business, Michigan State University, East Lansing, MI 48824, USA
+b Supply Chain Management, Auburn University College of Business, Auburn, AL 36849, USA
+c Logistics, Fisher College of Business, The Ohio State University, Columbus, OH 43210, USA
+d Supply Chain Management, Shailesh J. Mehta School of Management, Indian Institute of Technology, Bombay, India
+a r t i c l e i n f o
+Article history:
+Received
+ 15 June 2011
+Received
+ in revised form 11 February 2012
+Accepted 13 February 2012
+Available
+ online 10 March 2012
+Keywords:
+Product
+ returns
+Repurchase
+ behavior
+Archival data
+Supply
+ chain
+Logistics
+Seemingly
+ Unrelated Regression (SUR)
+Procedural
+ justice
+Customer satisfaction
+Service recovery
+Transaction
+ cost
+a b s t r a c t
+Pressure continues to build on the operations management function to facilitate system and ﬁrm  level
+beneﬁts.
+ In the online marketplace, one area of growing interest is that of product returns. Though com-
+monly viewed as a cost center from an operations perspective, operations’ actions have the potential
+to strongly inﬂuence  future customer buying behavior in several ways. Using an archival database of
+actual
+ purchase and returns history provided by a moderately sized online retailer, this study examines
+the
+ relationship between a customer’s experience of product returns, and subsequent shopping behav-
+ior. Employing transaction cost, consumer risk, and procedural justice theories, we demonstrate that
+the
+ returns management process, rather than being regarded as an afterthought to the production and
+deployment
+ of goods, can signiﬁcantly  and positively inﬂuence  repurchase behavior. Additionally, we
+provide
+ evidence that certain customers should be considered for prioritization in the returns process.
+We suggest ways through which operations managers can take care in discharging their responsibilities
+in
+ this area – to make returns processing more than simply a “necessary cost of doing business” rather,
+using
+ it to their advantage in engendering repeat and increased purchase behavior.
+©
+ 2012 Elsevier B.V. All rights reserved.
+1. Introduction
+The
+ use of the Internet as a channel for the sale and distribution
+of goods from businesses to consumers (B2C) continues to grow,
+as does the research interest it garners from Operations, Logis-
+tics,
+ and Supply Chain Management researchers. Online retailing
+increased from just about 3% of total retail sales in 2002 to over 6%
+of 
+total
+ 
+retail
+ 
+sales
+ 
+in
+ 
+the
+ 
+United
+ 
+States
+ 
+by
+ 
+2008
+ 
+(Forester,
+ 
+2010).
+ 
+In
+fact, online retail store growth appears robust even in the face of
+economic hardships given that online retailers registered 11% year-
+over-year
+ sales growth in 2009, even as most conventional retailers
+were struggling to generate sales. Forrester (2010) expects the com-
+pounded
+ annual growth rate of online retail to average 10% over the
+next ﬁve  years. The reasons for this are twofold: ﬁrstly,  the number
+of
+ people connected to the Internet has increased substantially in
+the
+ last decade. Secondly, the percent of Internet users who make
+purchases on-line has gone up from 10% in 2005 to 40% in 2007
+(Nielsen, 2008).
+∗ Corresponding
+ author. Tel.: +1 517 432 4320.
+E-mail
+ addresses: grifﬁs@bus.msu.edu  (S.E. Grifﬁs),  Shashank.rao@auburn.edu
+(S. Rao), Goldsby.2@osu.edu (T.J. Goldsby), ttniranjan@iitb.ac.in (T.T. Niranjan).
+1 Tel.: +1 334 844 6845.
+While
+ the above arguments indicate good tidings for the online
+retailing
+ industry, individual retailers nevertheless continue to face
+several challenges. One key issue faced by online retailers is returns
+management (Ryder, 2010; Brohan, 2005). Returns management is
+deﬁned
+ as the process by which activities associated with returns,
+gatekeeping, and avoidance that are managed within the ﬁrm  and
+across
+ key members of the supply chain (Rogers et al., 2002).
+Long considered the forgotten step-child of operations and logistics
+managers, returns become increasingly important as ﬁrms  seek to
+maximize
+ the value they create for themselves and for customers
+(Mollenkopf et al., 2007; Stock, 1998). In a recent industry sur-
+vey
+ of supply chain managers, 87% of the respondents mentioned
+that effective management of returns was either important or very
+important
+ to their organization’s operational and ﬁnancial  success
+(Aberdeen, 2009). Returns management is an extremely important
+issue, causing reductions to proﬁt  of 3.8% per year (Petersen and
+Kumar,
+ 2010). It has been further been argued that returns are
+even more relevant in online retailing than ofﬂine  retailing given
+that
+ consumers often do not have the opportunity to examine the
+product physically (Dholakia et al., 2005), an important aspect of
+product evaluation and assessment (Peck and Childers, 2003).
+Yet,
+ limited knowledge exists regarding if and how returns
+experience
+ actually impacts customer loyalty, given that very few
+academic
+ 
+studies
+ 
+have
+ 
+heretofore
+ 
+quantiﬁed
+ 
+the
+ 
+impact
+ 
+of
+ 
+product
+0272-6963/$ – see front matter © 2012 Elsevier B.V. All rights reserved.
+doi:10.1016/j.jom.2012.02.002
+
+--- PAGE 2 ---
+S.E. Grifﬁs  et al. / Journal of Operations Management 30 (2012) 282–294 283
+returns
+ on subsequent customer shopping behavior. Most studies
+on
+ returns are typically anecdotal ‘war stories,’ or singular case
+studies in practitioner outlets or in the popular press (e.g., Brohan,
+2005). Indeed, researchers have argued that there is a lack of
+research in the returns management area, especially on the effects
+of
+ returns management in the supply chain (Mollenkopf and Closs,
+2005; Mollenkopf et al., 2007; Mollenkopf et al., 2011). Also, most
+research
+ focusing on returns management employs a single dis-
+cipline approach, or remains focused on tactical and operational
+aspects such as production planning, inventory management, or
+reverse
+ logistics (Mollenkopf et al., 2011). This leaves open a vast
+avenue of research regarding the customer impacts of returns. The
+current
+ study ﬁlls  this research gap. In this study we ask “Does
+customer experience with the product return process affect pur-
+chasing
+ patterns following the return, and if so, how?” In particular,
+we focus on customers’ experiences with the processing of returns
+and the speed of the ensuing credit issuance.
+Our
+ research question has strong implications for operations
+management. It is a given that it would be unwise for online retail-
+ers
+ to offer a liberal returns policy without efﬁcient  and capable
+operational
+ processes behind it. Thus, operations managers should
+be interested in knowing whether resource investment to build up
+operational
+ capabilities in returns processing offers ﬁrm  level bene-
+ﬁts.
+ Additionally, any insights into customer speciﬁc  characteristics
+related to how returns should be managed would be instructive as
+well.
+ This study seeks to answer the question of whether and how
+retailers should invest in this operational capability, by investigat-
+ing the quick, effective provision of returns impact upon the top
+line
+ (sales) for online retailers. We focus upon returns speed given
+its potential to inﬂuence  the various transactional cost elements
+(i.e.,
+ price-type, time-type, psychological-type costs of Chircu and
+Mahajan,
+ 2006), consumer risk costs (Taylor, 1974), and proce-
+dural
+ justice (Lind and Tyler, 1988) valuations made by consumers
+while
+ awaiting their returns credit. We employ TCE (Williamson,
+1975), consumer risk theory (Taylor, 1974), and procedural justice
+theory
+ (Lind and Tyler, 1988) to answer this question. We col-
+lect a set of detailed archival data by collaborating closely with an
+online
+ retailer of educational items based in Asia, with customers
+all
+ over the world. We study the purchase pattern of customers
+who returned a purchased product for credit to the online retailer
+in
+ a chosen one-month period, and then track their purchase pat-
+tern for one year post-return and compare it with their purchase
+pattern
+ one year pre-return. By comparing this group of customers
+with a second, similar group of customers who did not return any
+of
+ their purchases, but were active with the retailer in the same
+time
+ period, we isolate the effect of returns on customer purchase
+behavior.
+This
+ study contributes to the operations literature in three ways.
+Firstly, as already implied, it investigates an area in need of urgent
+and
+ focused research – the value (if any) accrued to online retailers
+were they to invest in returns management processes. Secondly, it
+contributes
+ to the academic literature by exploring an underrepre-
+sented
+ body of literature – B2C customer service and, speciﬁcally,
+B2C returns service. Finally, it answers the call to more seriously
+pursue
+ archival data sources for research in operations manage-
+ment (Boyer and Swink, 2008; Calantone and Vickery, 2009). We
+demonstrate
+ that archival data can be used for quantifying the
+customer-level
+ impact of B2C returns management – a research
+stream that can be very beneﬁcial  to future researchers.
+The
+ remainder of this paper is organized as follows. The next
+section summarizes the relevant literature from the operations,
+marketing,
+ and logistics domains, and subsequently presents the
+research hypotheses. The research method is then presented, fol-
+lowed by the data analyses and a detailed discussion of the ﬁndings.
+Finally,
+ 
+the
+ 
+last
+ 
+section
+ 
+presents
+ 
+the
+ 
+implications
+ 
+of
+ 
+the
+ 
+study
+ 
+before
+concluding.
+2.
+ Literature and theoretical background
+2.1.
+ Returns management in online retailing—a balancing act
+The
+ provision of returns allowance by retailers is not new. The
+marketing
+ tagline “Satisfaction guaranteed or your money back,”
+originated
+ in the late 1800s when Montgomery Ward ﬁrst  imple-
+mented this commitment to its customers (Brennan, 1991). In the
+contemporary
+ business environment, most retailers offer some
+form of returns provision to shoppers. However, retailers continue
+to face several challenges with respect to returns, which are forc-
+ing some to rethink the value of offering liberal and easy returns
+policies.
+ A retailer’s offer of liberal returns hinges largely on one
+basic
+ assumption: that consumers will not abuse the privilege by
+returning used merchandise without justiﬁcation.  However, ﬁnd-
+ings
+ from academic research as well as the popular press suggest
+otherwise.
+ According to Rosenbaum and Kuntze (2005), nearly 20%
+of all consumers may be violating this assumption by buying prod-
+ucts
+ with the speciﬁc  intention of returning them after satisfactory
+use. Similarly, Piron and Young (2000) ﬁnd  that almost 18% of all
+shoppers engaged in such behavior, a practice termed “retail bor-
+rowing.”
+ According to a report by Ryder (2010), over 13% of all
+HDTVs and 14% of all cellular phones are returned – with well over
+half
+ having no fault: again suggesting the incidence of retail bor-
+rowing.
+ It is because of retail borrowing (one form of return fraud)
+that
+ several retailers such as Target, Home Depot, and Saks have
+reassessed
+ their return policies. Yet, it is believed that tightening
+or liberalizing the policy can have impacts on consumer shopping
+behavior
+ (Haarlander, 2001; Passy, 2002; Cha, 2004).
+It is reasonable to assume that increasing the restrictiveness of
+returns
+ will carry its own risks, the largest of which is losing cus-
+tomers,
+ since an easy return policy is a part of the overall value
+proposition provided by the retailer (Dholakia et al., 2005). This risk
+is
+ even higher in online retail than it is in other forms of retail given
+that online customers generally experience high levels of product
+uncertainty
+ 
+on
+ 
+account
+ 
+of
+ 
+not
+ 
+having
+ 
+actually
+ 
+seen
+ 
+or
+ 
+handled
+ 
+the
+product
+ (Peck and Childers, 2003). According to Stock (1998), in the
+early days of online retail almost 40% of all online shoppers resisted
+buying
+ online because of the perceived difﬁculty  of returns. Even
+in more recent times, this rate of 40% persists (see Charlton, 2007;
+Boniﬁeld
+ et al., 2010).
+There is some consensus that online retailers see a higher level
+of
+ product returns than do conventional retailers, and yet, evidence
+suggests
+ their cost of processing these returns on a per item basis
+is generally higher than it is for conventional retailers (Grewal
+et
+ al., 2004; Dholakia et al., 2005), in part because conventional
+retailers can use existing physical sites to gatekeep returns (Grewal
+et
+ al., 2004). Online retailers, lacking these pre-existing facilities to
+share with the returns process, are often required to establish dis-
+tinct
+ returns facilities, potentially increasing the return processing
+costs
+ relative to their traditional retailer competitors. Thus, online
+retailers tightening their returns policy could impact their ability
+to
+ appeal to prospective shoppers, conceivably imparting a com-
+petitive disadvantage in light of the importance of returns in the
+online
+ retailing business. Retailers, and more speciﬁcally,  online
+retailers thus walk a ﬁne  line between developing customer loyalty
+through 
+liberal
+ 
+returns
+ 
+and
+ 
+losing
+ 
+money
+ 
+to
+ 
+retail
+ 
+borrowing
+ 
+and
+return fraud. Consequently, understanding the loyalty impacts of
+product returns is critically important for online retailers. Accord-
+ingly,
+ our research model focuses upon the inﬂuence  that returns
+management has upon a ﬁrm-level  measure of customer loyalty–
+repurchase
+ behavior.
+2.2.
+ Hypothesis development
+We focus our attention on three post-purchase measures related
+to economic aspects of customer purchase patterns viz., order
+ 18731317, 2012, 4, Downloaded from https://onlinelibrary.wiley.com/doi/10.1016/j.jom.2012.02.002 by Hong Kong University Of, Wiley Online Library on [03/09/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+
+--- PAGE 3 ---
+284 S.E. Grifﬁs  et al. / Journal of Operations Management 30 (2012) 282–294
+frequency,
+ number of items per order, and the average dollar-value
+of
+ purchased items. We choose these measures due to their con-
+sistency with previous research in the online retailing industry
+(Reinartz and Kumar, 2002), as well as their similarity to commonly
+used metrics in the online and catalogue based retail industry.
+There
+ is considerable evidence in the literature to suggest
+that customers’ comfort and conﬁdence  with a service provider
+are
+ important determinants of purchase behavior with that ser-
+vice provider. The classic Howard-Sheth model of buyer behavior
+included customer conﬁdence  as a key determinant of purchase
+behavior
+ (Howard and Sheth, 1969). Customer conﬁdence  with a
+service provider can be understood as the customer’s feeling of trust
+and
+ comfort with the service provider (Gwinner et al., 1998). The
+customer conﬁdence  model has become a classic in understanding
+buyer
+ behavior in response to various independent variables (e.g.,
+Laroche et al., 1996; Oliver, 1980; Sheth et al., 1988). Similarly, cus-
+tomer comfort has been used to explain the choices that reduce the
+complexity
+ of the buying situation from the customer’s perspective
+(Sheth and Parvatiyar, 1995). Paul et al. (2009, p. 223) deﬁne  cus-
+tomer
+ comfort as “the customer beneﬁts  [accrued because] his/her
+anxiety
+ concerning a service encounter has been erased, and the
+consequent peace of mind associated with the same.” Spake et al.
+(2003)
+ demonstrate that customer comfort is positively related
+with
+ the commitment that a customer has to a service provider
+– a precursor to loyalty. Thus, customers who have higher com-
+fort
+ with a service provider are expected to demonstrate higher
+commitment and increased loyalty to the service provider.
+In the current study, customer comfort and conﬁdence  is best
+explained
+ in conjunction with transaction cost economics (TCE)
+theory. Williamson (1975) bases his initial formulation of TCE upon
+the
+ seminal work of Coase (1937) and shows that buyers and sell-
+ers
+ experience costs associated with each step in the transactions
+involved
+ with marketplace exchanges. In an exchange involving
+rational
+ buyers and sellers, the price of the product is not the
+sole criterion contributing to transactional culmination; other costs
+exist
+ that the buyer considers when arriving at a decision to pur-
+chase or not (Williamson, 1975, 1985). In an online setting Chircu
+and
+ Mahajan (2006) conceptualize the online retail transaction as
+a
+ sequence of steps, including store access, search, evaluation and
+selection, ordering, payment, order fulﬁllment,  and post-sales ser-
+vice.
+ Each of these steps has associated cost components. In an
+online retailing environment, TCE’s costs can be quantiﬁed  as price-
+type
+ costs (credit charges, taxes, etc.), time-type costs (waiting
+time, delivery time, etc.), or psychological-type costs (perceived
+ease
+ of use, inconvenience, frustration, annoyance, anxiety, etc.)
+(Chircu and Mahajan, 2006).
+2.2.1.
+ Order frequency
+Consistent
+ with prior research on TCE theory, we propose that
+consumers
+ who are familiar with a ﬁrm’s  returns process exhibit
+higher comfort and conﬁdence  levels with a retailer (Gwinner et al.,
+1998;
+ Sheth and Parvatiyar, 1995). This increased comfort and con-
+ﬁdence
+ in turn reduces their psychological-type transaction costs
+of future transactions, and we propose that these customers will
+purchase
+ more from the retailer in the future as a result of these
+lowered transactions costs. The rationale for this assertion is as fol-
+lows.
+ Given that a customer has completed a successful return, they
+possess
+ increased levels of familiarity and conﬁdence  in the returns
+process. This is in line with the arguments of Taylor (1974), who
+argues
+ that as customers get more “handling information” (experi-
+ence) about a process, they become more comfortable with it. In the
+current
+ context, this comfort arises from the knowledge that it is
+possible to return a product to the retailer in case of dissatisfaction
+with the purchase. This knowledge should then create perceptions
+of
+ 
+reduced
+ 
+risk
+ 
+and
+ 
+consequently,
+ 
+enhanced
+ 
+conﬁdence
+ 
+(Gefen,
+2000). As argued earlier, we expect this conﬁdence  to manifest itself
+through
+ increased loyalty with the retailer, which would result in
+increased
+ activity (i.e., purchases) with the retailer (see Cooil et al.,
+2007; Wirtz et al., 2007; Gefen, 2000).
+Therefore,
+ we contend that as customer’s conﬁdence  in a retailer
+grows, through series’ of transactions, they experience the offer-
+ings
+ of the retailer, and the associated transactional costs. Once
+these customers become, in this context, returns experienced, they
+have
+ more complete understanding of the process, and as such their
+comfort and convenience is increased. As a result, post returns, we
+expect customers to increase their purchase frequency with the
+retailer.
+ This gives rise to our ﬁrst  hypothesis.
+H1.
+ Returns-experienced customers purchase more frequently
+than
+ customers having no returns experience with a retailer.
+2.2.2.
+ Number of items
+We adopt a related, but subtly different theoretic lens to under-
+stand
+ consumers’ return experience’s inﬂuence  upon the number
+of
+ items purchased following a returns experience. Taylor’s (1974)
+theory on the role of risk in consumer choice holds that uncertainty
+on
+ the consumer’s part is felt as risk, and that consumer risk inﬂu-
+ences repurchase behavior. According to Taylor (1974), customer
+uncertainty
+ can be considered to consist of two components: uncer-
+tainty
+ about the outcome and uncertainty about the consequences. It
+is the combination of these two forms of uncertainty that often
+prevents
+ trial of new or additional products.
+In an online retail environment, uncertainty about the outcome
+(outcome
+ uncertainty) can be understood as the concern aris-
+ing from the ambiguity about the extent to which the outcome
+of
+ a transaction could vary from successful product fulﬁllment
+(i.e., delivering the right product in a timely manner and standing
+behind it) (Pavlou et al., 2007). The online retailing environment
+provides
+ 
+numerous
+ 
+opportunities
+ 
+for
+ 
+outcome
+ 
+uncertainty
+ 
+because
+customers usually do not have the beneﬁt  of examining the product
+physically and are thus left “exposed” to risk (Peck and Childers,
+2003;
+ Pavlou et al., 2007). Tedeschi (2001) demonstrates that
+because of this “direct touch-and-feel experience” with the prod-
+uct,
+ the likelihood of customers in an online environment ending
+up with a product that they do not like is quite high. Arguably,
+then, online retail shoppers are subjected to elevated levels of out-
+come
+ uncertainty (Pavlou et al., 2007). Certain non-experiential
+attributes, such as product ratings and store satisfaction surveys,
+can
+ help to reduce outcome uncertainty in an online retailing con-
+text (see Forsythe and Shi, 2003; Weathers et al., 2007).
+Consequence
+ uncertainty can be understood as the extent of per-
+ceived
+ damage that would be done if the consequences of the act
+(in
+ this case, the purchase) did not prove to be favorable (Gupta
+and
+ Karahanna, 2004; Derbaix, 1983). Unlike outcome uncer-
+tainty, there is limited investigation of consequence uncertainty
+and
+ how it impacts shopping behavior in online contexts. We pro-
+pose
+ that past experience with returns should reduce consequence
+uncertainty
+ on subsequent orders, given that returns-experienced
+shoppers will realize that the consequence of an unsatisfactory
+purchase are limited, given conﬁdence  in the returns process (see
+Mann and Wissink, 1988). This consequence uncertainty reduc-
+tion should result in a reduction of overall purchase uncertainty
+(Taylor, 1974) similar to how reduced outcome uncertainty reduces
+purchase uncertainty, and this should manifest itself in customers
+“taking
+ 
+more
+ 
+chances”
+ 
+and
+ 
+trying
+ 
+out
+ 
+products
+ 
+that
+ 
+they
+ 
+may
+ 
+not
+have
+ purchased previously. Thus, one would expect to observe
+that returns-experienced customers would purchase more items
+post-returns
+ than pre-returns since their consequence uncertainty
+regarding the returns process has been reduced. These arguments
+lead
+ 
+to
+ 
+our
+ 
+second
+ 
+hypothesis.
+H2. Returns-experienced customers purchase more items per
+order
+ than customers having no returns experience with a retailer.
+ 18731317, 2012, 4, Downloaded from https://onlinelibrary.wiley.com/doi/10.1016/j.jom.2012.02.002 by Hong Kong University Of, Wiley Online Library on [03/09/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+
+--- PAGE 4 ---
+S.E. Grifﬁs  et al. / Journal of Operations Management 30 (2012) 282–294 285
+2.2.3.
+ Item value
+The
+ previous two hypotheses on ordering frequency and num-
+ber of items per order suggest increased customer loyalty. Based on
+these,
+ we argue that returns-experienced-customers have a higher
+level
+ of loyalty as compared to non-returns-experienced (regular)
+customers. Several researchers have suggested that loyal customers
+are
+ willing to pay more for their purchases compared to less loyal
+customers (Zeithaml et al., 1996; Phillips et al., 1983). Kotler and
+Armstrong (1996) argue that loyal customers are likely to buy more
+volume,
+ try new products, or switch to higher proﬁt  (i.e., more
+expensive) items. Narasimhan (1988) ﬁnds  that companies with
+more loyal customers are able to charge higher prices for simi-
+lar
+ products, compared to companies who enjoy lower levels of
+customer loyalty. Raju et al. (1990) demonstrate that ﬁrms  with
+more
+ loyal customers tend to rely less on discounts to sell items.
+The
+ implications from these studies, as far as order dollar values
+are concerned, underscore that higher loyalty levels translate into
+purchase of higher priced items – an argument that, as we have
+argued,
+ has some precedence in the literature (Reichheld, 1996;
+Reichheld and Schefter, 2000; Kotler and Armstrong, 1996). Based
+on
+ the above arguments, we propose our third hypothesis.
+H3.
+ Returns-experienced customers purchase items with higher
+average
+ item- value (average dollar value of purchased items) than
+customers having no returns experience with a retailer.
+2.2.4.
+ Speed of returns processing
+As mentioned previously, returns processing can be thought of
+as a service recovery event. Mollenkopf et al. (2007, p. 219) note
+“an
+ online retail return presents an opportunity for the Internet
+retailer to attempt a service recovery, even if the retailer has ﬂaw-
+lessly delivered the product as promised, because the customer was
+not
+ satisﬁed  with the overall purchase experience.” To connect the
+consumers’ evaluations of their returns process experiences to the
+degree
+ of their subsequent behavior change, we introduce proce-
+dural justice theory.
+Procedural justice theory has been applied in the marketing
+literature
+ extensively to understand how consumers respond to
+service recovery events like the returns process (Tax et al., 1998;
+Maxham
+ and Netemeyer, 2002; Smith and Bolton, 2002; Maxham
+and Netemeyer, 2003; Homburg and Furst, 2005). Procedural jus-
+tice refers to the fairness of policies and processes employed in
+pursuit of organizational outcomes (Lind and Tyler, 1988). Seiders
+and
+ Berry (1998) suggest that processes are integral to the offer-
+ings presented to consumers, and that retailers enhance customer
+satisfaction when they engage in activities that enhance customer
+perceptions
+ of procedural justice (Maxham and Netemeyer, 2002).
+Maxham and Netemeyer (2002), in assessing customer reactions to
+service
+ recovery efforts show that procedural justice has a strong
+inﬂuence  upon customers’ overall ﬁrm  satisfaction. Smith and
+Bolton (2002) test the inﬂuence  of procedural justice upon a range
+of emotions customers experience amid service recovery. These
+emotions,
+ as experienced by the consumer result in the psycholog-
+ically
+ based TCE costs viz. inconvenience, frustration, annoyance,
+anxiety, described by Chircu and Mahajan (2006). Further, Smith
+and Bolton (2002) ﬁnd  that customer perceptions of procedural
+justice
+ helps alleviate these costs in the customers mind, thereby
+facilitating improved satisfaction with recover efforts.
+The
+ current research examines the speed with which returns
+are handled and credit processed, a key component of the overall
+returns
+ experience. The operational steps that precede the issuance
+of credit include: the receipt of the return request, the routing of
+the
+ return (including the generation of a return material authoriza-
+tion (RMA) in many cases), receipt of the return (with veriﬁcation
+and inspection of the merchandise to conﬁrm  the legitimacy of
+the return (i.e., gatekeeping)), and selection of the appropriate
+disposition
+ of the merchandise (resell as new, secondary markets,
+donation,
+ or disposal) (Rogers et al., 2002). Therefore, the speed
+of the refund is the culmination of the previous steps performed
+jointly
+ by the consumer, transportation service provider (physi-
+cally moving the item), and the retailer in the returns management
+process.
+Literature
+ suggests that when customers perceive the service
+recovery
+ effort by the ﬁrm  to be high, the original negative opin-
+ion of the ﬁrm  is diminished considerably (Oliver, 1997; Bearden
+and Teel, 1983; Oliver and Swan, 1989). Indeed, Boshoff (1997)
+ﬁnds  that the subsequent customer satisfaction with the service
+recovery is positively related to the level of recovery effort on the
+part
+ of the ﬁrm.  Similarly, Harris et al. (2006) demonstrate that
+the level of recovery provided by a ﬁrm  attempting to come back
+from
+ a faulty service incident inﬂuences  the subsequent satisfac-
+tion level, repurchase intentions, and word-of-mouth intentions
+of the affected customers. Several other studies in the customer
+satisfaction
+ literature also ﬁnd  that the level of service recovery
+is positively related with service encounter satisfaction (Kelley and
+Davis,
+ 1993; McCollough et al., 2000). Thus, there is evidence to sug-
+gest
+ that the level of service delivered by operations management
+activities in the returns process (service recovery) should show a
+positive
+ relationship with the degree of satisfaction held by the
+customer
+ (c.f. Smith and Bolton, 1998). As noted earlier, increased
+satisfaction with a service encounter leads to an increased inclina-
+tion
+ towards maintaining loyalty to the service provider, which, in
+turn, manifests itself in increased order frequency, number of items
+per order, and the purchase of higher priced items.
+Consistent
+ with previous research, we argue that in an online
+retailing return scenario, operations performance, represented by
+the
+ speed of refunds to the customer, will inﬂuence  the customer’s
+future
+ purchase actions (Grewal et al., 2004; Dholakia et al., 2005).
+Maxham
+ and Netemeyer (2002), also applying a procedural justice
+theory
+ lens to service recovery operations, operationalize proce-
+dural justice in part as customer perceptions of recovery speed,
+ﬁnding
+ that as recovery speed quickens, customers satisfaction
+improves. Similarly, we contend that the customer is sensitive to
+operations
+ performance, and that the speed of refund should be
+related
+ to the extent of customer based loyalty measures already
+established (order frequency, number of items per order, and aver-
+age
+ item value). This extent of increase can be measured as the
+percentage increase that these loyalty measures exhibit, over and
+above
+ their initial values. This leads to our fourth through sixth
+hypotheses.
+H4.
+ Refund speed is positively related to the percentage increase
+in
+ order frequency;
+H5. Refund speed is positively related to the percentage increase
+in average number of items per order.
+H6. Refund speed is positively related to the percentage increase
+in
+ average item value.
+2.2.5.
+ Control variables
+It is important to control for product and transaction level
+factors
+ that may impact overall satisfaction and subsequent repur-
+chase
+ behavior. At the transaction level, prior research has shown
+that
+ customers are more forgiving of service failure as the length
+of
+ their relationship with the ﬁrm  increases (Anderson and Weitz,
+1989; Bitner and Hubbert, 1994). Established customers appear to
+employ
+ a more broad-based perspective across multiple purchase
+experiences,
+ as opposed to an individual transactional experience
+(Folkes, 1984; Hess et al., 2003). Established customers are, there-
+fore,
+ usually more understanding when something goes wrong, and
+more willing to overlook small failures (Anderson and Weitz, 1989;
+Ganesan,
+ 
+1994;
+ 
+Lusch
+ 
+and
+ 
+Brown,
+ 
+1996).
+ 
+In
+ 
+light
+ 
+of
+ 
+these
+ 
+obser-
+vations, it is important to control for the effect of the history of
+ 18731317, 2012, 4, Downloaded from https://onlinelibrary.wiley.com/doi/10.1016/j.jom.2012.02.002 by Hong Kong University Of, Wiley Online Library on [03/09/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+
+--- PAGE 5 ---
+286 S.E. Grifﬁs  et al. / Journal of Operations Management 30 (2012) 282–294
+Fig. 1. Summary of research hypotheses6 .
+the
+ relationship (purchase history) between the consumer and the
+ﬁrm.
+Similarly,
+ among product level factors we chose to control for
+the
+ dollar value (purchase price) of the returned order, as cus-
+tomers
+ may be more forgiving of faults with small-value orders
+than with orders of larger value. Mangini et al. (2007) demonstrate
+that
+ the cost of the service being recovered is an important factor
+that
+ determines satisfaction with the recovery efforts.
+The research model is summarized in Fig. 1. As can be seen,
+we propose two distinct yet related sets of hypotheses – the
+ﬁrst  three hypotheses (H1–H3) deal with understanding the dif-
+ference between the pre-return and the post-return purchase
+patterns
+ 
+of
+ 
+customers
+ 
+on
+ 
+key
+ 
+online
+ 
+shopping
+ 
+metrics,
+ 
+thus
+laying
+ the foundation for the next three hypotheses. The sec-
+ond
+ set of hypotheses (H4–H6) deals with assessing the degree
+with
+ which speed of refund affects the percent change in out-
+comes for returns-experiencing customers. We control for the
+effect
+ of relationship length, as measured by the number of
+transactions
+ between the consumer and retailer, and the dol-
+lar value of the returned orders. Effectively then, the research
+model
+ investigates the relationship between the completion of
+the returns experience and key factors that drive ﬁrm  value
+(Fornell
+ et al., 2006; Ittner and Larcker, 1998; Gupta and Zeithaml,
+2006), and particularly, in an online retail context (Reinartz
+and
+ Kumar, 2002). The next section describes the research
+method.
+3.
+ Research method
+This
+ research was conducted in collaboration with an online
+retailing company having interests in several different media
+retail
+ businesses (books, magazines, CDs, DVDs, etc.), all related
+to
+ the educational sector. It has a total database of several hun-
+dred thousand active or semi-active consumer customers, the
+majority
+ (>50%) of whom are in the age group of 20 to 25
+years, while the 25 to 30 year age group represents 23% of
+their
+ customers. In terms of dollar value of annual sales, the
+company
+ would rank between 500 and 1000 within the United
+States,
+ had it been located there, according to the Second IR500
+guide
+ (IR 500, 2011). The results reported here are from the
+6 Dotted paths represent controls.
+high-value
+ book retail business, which sells and ships books
+to
+ consumers in several different countries subject to selling
+rights.
+We
+ choose the book business for several reasons. First, books
+are among the earliest and most successful products to be sold
+online
+ (Pavlou et al., 2007). Second, this is one product category
+where there is substantial repeat purchase (Gefen, 2002), and
+thus
+ we should be able to observe our hypothesis test results
+much more readily than in other product lines. According to
+the 2009 Internet Retailer top 500 report, online book retail-
+ers
+ have the second highest percentage of returning shoppers
+(an estimated 42.82% of shoppers at online book retailers are
+repeat
+ shoppers, second only to mass merchants who have 44.43%
+repeat shoppers) (IR500, 2010). Additionally, books are also one
+of
+ the top three categories for product returns, in online retail-
+ing, with return rates exceeding 15%, and sometimes reaching
+as high as 30% (Canadian Business, 2008; Hugos and Thomas,
+2005). Finally, it has been suggested that the impact of returns
+policies is most explicitly observable in products that cannot be
+consumed
+ immediately and that have fairly high salvage value
+(Davis et al., 1998), which is another characteristic applicable to
+the book retail business. Given that book purchasing customers
+exhibit
+ substantial repeat purchase behavior (Gefen, 2002), and
+it
+ is the second-most returned product type (IR500, 2010), the
+study of online book sales is appropriate for this returns focused
+research.
+Typical
+ of online retailers today, the returns policy of the focal
+company conveys a ﬁrm’s  ease and openness to product returns.
+The
+ company’s policy states that a full refund is issued subject to
+the return of merchandise so long as the item(s) is/are handed to
+their
+ chosen carrier within 7 days of receipt of the merchandise.
+As
+ is common with online sales, customers must authorize the
+return
+ in advance of sending the merchandise back to the retailer.
+Instructions
+ to this effect are provided to customers with each
+delivery, with the returns policy stated explicitly on the retailer’s
+website.
+The
+ company allowed the research team access to the computer
+servers
+ where the retail sales and returns data were logged and
+also
+ provided cooperation on several other data collection mat-
+ters. Multiple site visits were made to the company’s ofﬁces  in
+order
+ to access the data logs. The data were collected in January
+2011 and since the research design called for at least one year of
+post-return
+ purchases to be available for analysis (to nullify sea-
+sonal effects), we studied those customers who returned a product
+between
+ 15 December 2009 and 15 January 2010 (a total “returns
+window”
+ of 31 days). These dates were chosen because, accord-
+ing to the company, this date range represents the highest period
+of
+ returns requests during the year. We identiﬁed  617 product
+returns during this time period. While it is not possible to divulge
+the
+ exact percent of all orders that this number represents for
+conﬁdentiality  reasons, this percent does indeed lie within the
+industry
+ norm of 2–11% suggested by trade publications (Brohan,
+2005).
+Out of the 617 returns, we removed customers who could not
+be
+ paired with potential future purchases due to a lack of a login ID
+(i.e., anonymous customers), and those who had a purchase history
+of
+ less than a year prior to the return. This provided us with 195
+customers
+ who fulﬁlled  all the required criteria to remain a part
+of the sample, we call this treatment group of customers “product
+returners”.
+In
+ order to isolate the effect of the return, we needed to compare
+the
+ product returners with a control group of randomly selected
+customers with no returns history (“non returners”). If the return-
+experiencing group of customers shows a change in behavior in
+the
+ 
+second
+ 
+time
+ 
+period
+ 
+(consistent
+ 
+with
+ 
+H1–H3),
+ and the control
+group does not, and if both these groups were similar in all respects
+ 18731317, 2012, 4, Downloaded from https://onlinelibrary.wiley.com/doi/10.1016/j.jom.2012.02.002 by Hong Kong University Of, Wiley Online Library on [03/09/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+
+--- PAGE 6 ---
+S.E. Grifﬁs  et al. / Journal of Operations Management 30 (2012) 282–294 287
+Table
+ 1
+Study design.
+Time period Treatment Group–(Product Returners) Control Group–(Non Returners)
+January 2009–December 2009 Product Returner–Before Return Episode Non Returner–Period 1
+January
+ 2010–December 2010 Product Returner–After Return Episode Non Returner–Period 2
+ 
+Start 
+Generate  list of 
+customers  who 
+purchased between  15 
+Dec. 200 9 and 15 Jan. 
+Iden/g415ﬁable 
+via  login  ID? 
+History > 1 
+year on 
+return date?
+Discard 
+195 Sample  
+Returners  
+Collect shopping  behavio r 
+(1 yea r pre-ret urn and 1 
+year pos t-retu rn,  i. e. 200 9 
+and 201 0 calendar years ) 
+End 
+No 
+No 
+Yes
+Step 1: Ge nera/g415ng th e Tr eatme nt Gr oup (Cu stomers  Engag ing  in  a Return)  
+Start 
+Generate  list of all  
+customers  who shopped  
+between 15 Dec.  200 9 
+and 15 Jan. 201 0
+Filter ou t cu stomers  with 
+history < 1 yea r as of 31 
+December  2009  
+Filter ou t retu rn-engaging  
+customers from A*  (see  
+Step  1) 
+Randomly select 25 0 
+customers  without  
+replacement 
+Collect shopping  
+beha vior  (f or 200 9 
+and 201 0 calendar 
+year s) 
+End 
+Step 2: Ge nera/g415ng th e Control  Gr oup (Customers  Not  Engag ing  in  Retu rn)  
+617 Re turn  
+Incidents  (A*) 
+Yes
+Fig. 2. Flowchart of research method.
+in
+ the ﬁrst  time period, then it can be argued that experiencing
+product
+ returns is correlated with a change in behavior, as the
+two groups are otherwise similar. To populate the control sample
+for this comparison, we generated a list of customers who had at
+least a year-long purchase history with the retailer as of 1 January
+2010. 
+Two
+ 
+hundred
+ 
+and
+ 
+ﬁfty
+ 
+observations
+ 
+were
+ 
+randomly
+ 
+drawn
+from this list and their purchase history was tracked for the twelve
+months prior (January 2009–December 2009) and twelve months
+post
+ (January 2010 to December 2010). This cutoff date (1 January
+2010) was chosen to correspond as closely as possible to the returns
+occurrence
+ in our treatment group, since it is almost exactly in the
+middle of our “returns window.” Thus, the treatment group (prod-
+uct returners) and the control group (non returners) data were both
+available
+ for a 24-month period (January 2009–December 2010).
+As a result, we employ a 2 × 2 factorial type quasi-experimental
+design
+ for the research. This is illustrated in Table 1. Fig. 2 provides
+a ﬂowchart  of the research method. We now proceed to describe
+the various items of interest in this study, and how they were
+measured.
+3.1.
+ Speed of refund
+We deﬁne  a return episode as a customer originated contact
+made
+ with the retailer, in order to return a purchased product
+to the retailer. A return is considered complete once the retailer
+has
+ received the returned merchandise and authorized a refund to
+the customer. With our online retailer (as with most other online
+retailers),
+ numerous operations activities are involved in process-
+ing
+ these returns, including authorizing the return, receiving the
+return, verifying and inspecting the merchandise, determining dis-
+position, and authorizing the refund for the customer. Depending
+on a variety of factors including the product itself, the day of the
+week that the return is received, the facility where the return
+is made the process of refunding the customer currently varies
+ 18731317, 2012, 4, Downloaded from https://onlinelibrary.wiley.com/doi/10.1016/j.jom.2012.02.002 by Hong Kong University Of, Wiley Online Library on [03/09/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+
+--- PAGE 7 ---
+288 S.E. Grifﬁs  et al. / Journal of Operations Management 30 (2012) 282–294
+between
+ 2 and 7 days2 from the time of receipt of the returned
+merchandise.
+3.2.
+ Order frequency
+Order
+ frequency is measured as the number of times in a given
+time period that a customer places an order (Waller et al., 1999).
+In
+ the current study, we measure it as the number of orders placed
+in
+ the two 12-month windows under consideration. The reason for
+choosing a 12-month window is because a shorter window might
+not be sufﬁcient  to capture all purchases especially the seasonality
+of
+ 
+purchases,
+ 
+while
+ 
+longer
+ 
+time
+ 
+windows
+ 
+make
+ 
+tracking
+ 
+customer
+behavior more difﬁcult  as shipping addresses, credit card numbers,
+and
+ login IDs are likely to change over time.
+Additionally,
+ it is conceivable that customers returning prod-
+ucts may order a replacement in place of the returned product.
+As
+ such, this replacement order should not be considered a new
+order
+ for the purposes of this study, as it might serve to replace the
+already-returned item(s). Conservatively, we decreased the num-
+ber
+ of orders for all returns customers in the treatment group in
+the post-return time period by one, in order to account for this
+possibility.
+ Arguably, this approach may be overly conservative.
+However, any other approach opens up the possibility of inap-
+propriately counting orders that should not be considered.3 The
+percent
+ increase in order frequency between these two time peri-
+ods is thus calculated as: ((F2 −  F1)/F1) × 100.
+3.3.
+ Average number of items per order
+The
+ percent change in average number of items per order
+was
+ measured as a separate variable from the orders themselves,
+because customers may place several small orders while others
+may place fewer large ones (Fader and Hardie, 2001). The percent
+increase in the average number of items per order between these
+two time periods is thus calculated as: ((N2 −  N1)/N1) × 100.
+3.4.
+ Item value
+We
+ operationalize the percent change in average item value
+as
+ the total of the customer expenditure on shopping with the
+retailer in the 12-month period divided by the total number of items
+ordered
+ in that time. The percent increase in item value between
+these two time periods is thus calculated as: ((V2 −  V1)/V1) × 100.
+3.5.
+ Total relationship value
+One
+ concern with changing customer purchase behavior is that
+customers average item value, frequency, and number of items
+ordered
+ may all change at the same time, and that without an
+aggregate representation of the overall value of the relationship,
+offsetting
+ changes could be interpreted incorrectly. As an exam-
+ple, if after a successful product return a customer modiﬁed  their
+behavior
+ and purchased twice as frequently with the same average
+item value, but ordered half as many items each time, assessing
+only the individual indicators may show signiﬁcant  changes while
+the
+ overall value of the relationship to the retailer would not have
+changed at all. To account for this, we develop the measure of
+total
+ relationship value, which are the total expenditures that the
+2 Not
+ including the time taken by the credit card companies to put the paid
+amount
+ back on the card, which we do not capture here, and over which the retailer
+has
+ no control.
+3 All subsequently reported statistics for the treatment group’s post-return order
+frequency, refer to this reduced frequency number. The unreduced results are avail-
+able 
+upon
+ 
+request,
+ 
+and
+ 
+show
+ 
+even
+ 
+stronger
+ 
+effects.
+customer
+ has with the online retailer in a deﬁned  amount of time.
+It
+ is calculated using the formula: TRVi = Fi × Ni × Vi where:
+Fi = order frequency in time period i, Ni = average number of
+items
+ in each order in time period i, and Vi = Average item value
+in time period i.
+Thus,
+ the percent increase in relationship value between time
+period 2 (post return), and time period 1 (pre-return) is calcu-
+lated
+ as ((TRV2 −  TRV1)/TRV1) × 100. Note that while we do not
+propose a formal hypothesis around this measure, it is an important
+check against the potential of internally shifting customer purchase
+behavior,
+ and thus we include it in the model.
+3.6.
+ 
+Purchase
+ 
+history
+Past
+ research indicates that purchase history between buyers
+and
+ sellers should be operationalized in terms of the number of
+previous transactions between the parties, rather than chronolog-
+ical time elapsed in the relationship (Hess et al., 2003). This is
+because
+ while a customer may have a long-standing chronological
+relationship with a retailer, the number of purchase experiences
+with
+ the retailer better informs the customer about the retailer’s
+performance
+ than mere time. For example, a customer purchas-
+ing
+ from a particular retailer only once in a two-year period is less
+experienced with that retailer than a customer who has purchased
+four or ﬁve  times within the past year. Consequently, we measure
+purchase
+ history as the number of previous transactions between
+the customer and the online retailer. This is consistent with previ-
+ous
+ research on cumulative customer purchase behavior (e.g., Hess
+et al., 2003; Rossi et al., 1996; Holloway et al., 2005).
+3.7.
+ Purchase price of returned order
+It
+ has been argued that the consequences of failure for more
+expensive items are greater than the consequence for less expen-
+sive ones (c.f. Hart, 1988). Mangini et al. (2007) demonstrate that
+the
+ cost of the failure being recovered is an important factor
+that determines satisfaction with the recovery efforts and conse-
+quent
+ customer behavior with the retailer. Consequently, when
+investigating the relationship between product returns and future
+purchase
+ measures, it is important to control for the purchase price
+of the returned order.
+4.
+ Data analysis and results
+In
+ this section, we describe the data analysis and present the
+results.
+ We begin by establishing the equivalence of the treat-
+ment and control group in the initial, pre-return, time period. Upon
+demonstrating
+ equivalence, we then focus on the testing of our
+research hypotheses.
+4.1.
+ Establishing control group and treatment group equivalence
+The
+ descriptive statistics for all the groups are presented in
+Table 2. Control group purchases between January 2009 and
+December 2010 were split into two 12-month segments; time
+segment
+ 1 corresponded to the purchase data between January
+2009–December 2009, while time segment 2 corresponded to pur-
+chase
+ data between January 2010–December 2010 (see Table 1 for
+an illustration of group and time assignments).
+Unpaired
+ t-tests performed to ensure that the purchase pattern
+for
+ the control group is similar to the treatment group in the pre-
+return time period (Time 1) indicated that all three measures of
+order frequency [M = 0.01, t = 0.06, p = 0.946], average number of
+items per order [M = 0.03, t = 1.18, p = 0.24], and average item value
+[M = 1.57, t = 1.28, p = 0.20]) fell below the critical difference thresh-
+old for statistical signiﬁcance,  evidence that the treatment group
+ 18731317, 2012, 4, Downloaded from https://onlinelibrary.wiley.com/doi/10.1016/j.jom.2012.02.002 by Hong Kong University Of, Wiley Online Library on [03/09/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+
+--- PAGE 8 ---
+S.E. Grifﬁs  et al. / Journal of Operations Management 30 (2012) 282–294 289
+Table
+ 2
+Descriptive statistics for the treatment and control group.
+Group Measurement January–December 2009 (Time 1) January–December 2010 (Time 2)
+Order Freq. Avg. No. of Items Avg. Item Value Order Freq. Avg. No. of
+Items
+Avg. Item
+Value
+Control Group (Non-Returners) Mean 2.17 1.13 40.91 2.11 1.11 41.38
+Standard
+ Deviation 1.54  0.29 14.22 1.62 0.28 14.02
+Order
+ Frequency 1 1
+Avg. No. of Items − 0.06 1 − 0.03 1
+Avg.
+ Item Value 0.029 − 0.33 1 0.18 − 0.38 1
+Treatment
+ Group (Product Returners) Mean 2.16 1.10 42.48 2.83 1.21 45.57
+Standard
+ Deviation 1.57 0.23 10.74 1.64 0.36 12.38
+Order Frequency 1 1
+Avg. No. of Items − 0.03 1 − 0.09 1
+Avg.
+ Item Value − 0.002 − 0.47 1 0.26 − 0.32 1
+and the control group exhibited similar purchase patterns in the
+ﬁrst
+ 
+time
+ 
+period.
+ 
+Additionally,
+ 
+paired
+ 
+t-tests
+ 
+indicated
+ 
+that
+ 
+for
+ 
+the
+control group the second time period (corresponding to the post-
+return time) was similar to the ﬁrst  in terms of order frequency
+[M
+ = − 0.064, t = 1.452, p = 0.148], average number of items ordered
+[M
+ = 0.020, t = 0.78, p = 0.43], and average item value [M = 0.476,
+t = 1.385, p = 0.167], indicating the control group did not change
+their
+ purchase pattern signiﬁcantly  in the two time periods.
+4.2.
+ Hypothesis test results
+Paired
+ t-tests were performed to test H1–H3. Results indicated
+that
+ the treatment group demonstrated signiﬁcantly  increased
+order
+ frequency [M = 0.65, t = 12.92, p < 0.001], increased aver-
+age number of items per order [M = 0.12, t = 5.13, p < 0.001], and
+increased
+ average item value [M = 3.09, t = 4.54, p < 0.001], indi-
+cating
+ support for H1–H3. Additionally, given that we have
+demonstrated that the control group did not change signiﬁcantly
+in
+ these corresponding time periods, there is evidence that this
+change in purchase patterns in the second time period was, indeed,
+coincident
+ with the treatment in question–i.e., the returns expe-
+rience.
+ These results are illustrated in Fig. 3. We will discuss the
+detailed implications of these results in the next section.
+Given
+ support for H1–H3, we now proceed to examine Hypothe-
+ses H4–H6, which examine the inﬂuence  of returns processing and
+its
+ inﬂuence  upon economic aspects of post-return purchase pat-
+terns. Recall that these hypotheses relate the percent increase in
+our
+ three economic dependent variables (order frequency, aver-
+age
+ number of items per order, and average item value) with the
+speed of purchase refund for the product returners. Thus, hypothe-
+ses
+ H4–H6 propose direct paths between the speed of refund and
+the increase across the three dependent variables (order frequency,
+average
+ items per order, and average item value) after controlling
+for the effect of purchase history and purchase price of the returned
+order.
+ The model to be tested for H4–H6 appears in Fig. 1. In this
+context,
+ the percent of increase in all these dependent variables is
+measured between the post-return levels (calendar year 2010) and
+the
+ pre-return levels (calendar year 2009).
+In the current study, we are interested in simultaneously testing
+the
+ relation between the independent variable, controls, and multi-
+ple
+ dependent variables represented in Fig. 1. Seemingly unrelated
+regression (SUR) was used to test H4–H6 out of concern for poten-
+tial
+ error correlations across some of these terms. As argued, two
+of our variables – purchase history and price of the returned order
+may
+ be related with each other (Narasimhan, 1988), which could
+give rise to correlated error terms. Testing of our data with the
+Breusch-Pagan test indicated that the errors were not completely
+uncorrelated
+ 
+(Chi-squared
+ 
+=
+ 
+58.20;
+ 
+6
+ 
+DF,
+ 
+p
+ 
+<
+ 
+0.001),
+ 
+suggesting
+ 
+SUR
+is appropriate, given it was developed speciﬁcally  to address
+situations
+ like this (Zellner, 1962; Greene, 2003). SUR’s ability to
+account
+ 
+for
+ 
+contemporaneous
+ 
+cross-equation
+ 
+error
+ 
+correlations
+makes it superior to other approaches like path modeling, in sit-
+uations like ours, where several equations are being tested and the
+possibility
+ exists that variables in the models are related (Devaraj
+et al., 2010; Autry and Golicic, 2010).
+The results are summarized in Fig. 4 and demonstrate support
+for
+ H4 [Z = − 12.23, p < 0.001]. To reiterate, the independent vari-
+able in this case is the number of days taken by the retailer to issue
+the refund. The negative sign of the coefﬁcient  [− 12.23] indicates
+that
+ as refund speed increases, the greater the increase in subse-
+quent order frequency, thus supporting H4. Similarly, support is
+also
+ obtained for H5 [Z = − 12.23, p < 0.001], indicating that as refund
+speed
+ increases, subsequent number of items per order increases.
+Similarly, support is found for H6, regarding average item value,
+which
+ also increases with faster returns processing time [Z = − 4.31,
+p
+ < 0.001]. Taken together, we see that customers appear to change
+their
+ purchase pattern after a return experience in ways that may
+be favorable to the retailer, but more importantly from an opera-
+tions
+ perspective, as the speed of returns processing increases, the
+beneﬁcial
+ impact upon future purchase behavior increases as well.
+As previously discussed with regard to relationship value,
+though
+ not directly hypothesized, we also tested to ensure cus-
+tomers were not trading frequency for numbers of items purchased,
+or
+ item value, or any of the other potential tradeoffs between these
+three
+ outcomes. As can be seen in Fig. 4, these types of behavior
+were not apparent, indicating that the individual effects seen in
+order
+ frequency, numbers of items purchased, and average item
+value are aggregating into increased overall relationship value.
+Among
+ the controls, one factor possessed signiﬁcant  explana-
+tory power regarding changes in shopping pattern – the purchase
+price of the returned order. The path from this controlling factor to
+the
+ percent increase in order frequency is positive and signiﬁcant,
+indicating that the higher the purchase price of the returned order,
+the
+ 
+more
+ 
+likely
+ 
+the
+ 
+customer
+ 
+is
+ 
+to
+ 
+increase
+ 
+their
+ 
+order
+ 
+frequency
+with the retailer in the future. However, this increase is limited only
+to
+ order frequency and does not substantially impact the percent
+increase
+ in number of items purchased per order or the item value.
+Additionally, limited support for the purchase history link suggests
+that
+ established customers do not demonstrate lower expectations
+than new customers regarding speed in returns processing. Existing
+customers
+ are just as likely to increase (decrease) purchases with
+the
+ retailer if the returns experience is fast (slow), as compared to
+new
+ ones.
+4.3.
+ Post hoc testing
+Subsequent
+ 
+to
+ 
+the
+ 
+hypothesis
+ 
+testing,
+ 
+post
+ 
+hoc
+ 
+testing
+ 
+was
+performed to ensure that the potential inﬂuence  that pre-return
+ 18731317, 2012, 4, Downloaded from https://onlinelibrary.wiley.com/doi/10.1016/j.jom.2012.02.002 by Hong Kong University Of, Wiley Online Library on [03/09/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+
+--- PAGE 9 ---
+290 S.E. Grifﬁs  et al. / Journal of Operations Management 30 (2012) 282–294
+Fig. 3. Graphical illustration of results.
+Purchase Pric e
+of Re turned
+Order
+Purchase 
+History
+Speed of  
+Returns
+% increase  in 
+Order  Frequency
+% increase  in  Nu mber 
+of Items  per Order 
+% incre ase  in 
+Avg. Item Valu e
+% increase 
+in Total 
+Relationship 
+Value
+Z = -12.2 3 
+(p<0.001) 
+Z = -12.2 3 
+(p<0.001)
+Z = -4.31 
+(p=0.006)
+Z = -0.64 
+(p=0.5 2)
+Z = 9.29 
+(p<0.001)
+Z = -1.98 
+(p=0.0 5)
+Z = 1.23 
+(p=0.2 2) Z = 0.79 
+(p=0.43)Z = 0.38 
+(p=0.70)
+Z = 23 .28 
+(p<0.001)
+Z = 17 .35 
+(p<0.001)
+Z = 22 .92 
+(p<0.001)
+Fig. 4. Seemingly unrelated regression results7.
+scaling
+ factors of the customers (their individual order frequency,
+number
+ of items ordered, average item value) did not affect the
+analysis. This was performed because the hypothesized model
+7 Z values reported. Signiﬁcant  relations are highlighted in bold. Signiﬁcance  lev-
+els
+ of all paths are noted in parentheses.
+considers the proportional difference in these outcomes and their
+relationship
+ with percentage of increase in total relationship value.
+In developing the model the outcomes needed to be either actual
+values,
+ 
+or
+ 
+proportional,
+ 
+and
+ 
+so
+ 
+to
+ 
+ensure
+ 
+that
+ 
+the
+ 
+most
+ 
+thorough
+analysis was performed, we have accounted for the potential of
+these scaling inﬂuences  in a post hoc assessment. To accomplish
+this, the pre-return order frequency, number of items per order,
+ 18731317, 2012, 4, Downloaded from https://onlinelibrary.wiley.com/doi/10.1016/j.jom.2012.02.002 by Hong Kong University Of, Wiley Online Library on [03/09/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+
+--- PAGE 10 ---
+S.E. Grifﬁs  et al. / Journal of Operations Management 30 (2012) 282–294 291
+and
+ the average item value were regressed against the relation-
+ship
+ value measure. The overall model results did not change as
+a result of this, and all signiﬁcant  and non-signiﬁcant  relation-
+ships
+ remained the same, although slight differences in values
+occurred as a result of including extra factors in the analysis. With
+regard
+ to the scaling factors’ relationship with the relationship
+value construct, all three factors (order frequency, number of items
+ordered,
+ average item value) were not signiﬁcant,  indicating that
+the original value of these factors did not signiﬁcantly  affect the
+percentage of increase in total relationship value observed. Essen-
+tially,
+ ‘large’ and ‘small’ customers experienced similar proportions
+(percentages) of increase in the overall relationship value. The
+implications
+ of this and the other ﬁndings  will be discussed in
+section ﬁve.
+5. Implications, limitations, and future research
+5.1.
+ Implications for operations managers
+Online
+ retail purchases can involve a high amount of risk, as
+customers
+ do not have an opportunity to examine the product pre-
+purchase. Given that 8% to 11% of all online purchases are returned
+(Shop.org, 2009; Brohan, 2005) and that many online retailers lack
+the
+ expertise to efﬁciently  process and manage returns (Grewal
+et al., 2004), it comes as no surprise that online retailers ﬁnd  it
+hard to retain customers (Shop.org, 2009; Rao et al., 2011a). Our
+ﬁndings
+ demonstrate that rather than solely viewing the 8–11%
+return
+ rate as a challenge, it might also be viewed as an opportu-
+nity
+ to delight customers and create more loyal shoppers. As we
+show,
+ faster returns processing is correlated with customer reten-
+tion, increased purchase frequency, and purchase amount. All these
+should
+ translate into top-line sales growth for the online retailer.
+We
+ argued earlier that online retailers now compete not only
+with themselves, but also with brick-and-mortar retailers who
+have
+ traditionally had substantial experience with handling prod-
+uct returns. We thus contend that online retailers investing in
+operations
+ management practices, training, and capital invest-
+ments
+ focused upon increased returns processing speed should be
+rewarded in the marketplace with more loyal customers who pur-
+chase
+ more, and with greater frequency. Additionally, our results
+suggest that when customers approach an online retailer with an
+intention
+ to return a purchased product, for some customers, the
+retailer may beneﬁt  from encouraging, rather than discouraging,
+such
+ intentions. This is a fundamental change in how returns are
+currently
+ viewed, both by operations and sales functions within a
+ﬁrm  (see Davis et al., 1998). Typically, operations managers would
+prefer
+ to handle as few returns as possible, and sales managers
+prefers to keep sales from falling off the books through returns. This
+is
+ consistent with the literature as well; several researchers suggest
+that ﬁrms  view returns as a necessary cost of doing business rather
+than
+ as an opportunity to create customer loyalty (Blackburn et al.,
+2004).
+That much said, retailers of all kinds struggle with gatekeep-
+ing,
+ ensuring that only legitimate returns are authorized for credit
+(Rogers et al., 2002; Davis et al., 1998). Gatekeeping is particularly
+challenging
+ for online retailers that lack the ability to inspect mer-
+chandise
+ until it is received at the processing facility–an ironic twist
+to that risk faced by consumers upon pondering an online purchase
+(noted
+ earlier in the hypothesis development). A good returns pol-
+icy is not merely liberal, but has effective gatekeeping that can
+distinguish
+ legitimate returns from illegitimate ones. Further, ana-
+lytics that help retailers to capture not only the most proﬁtable
+customers, who one seeks to make more loyal, but also identify the
+abusers
+ 
+of
+ 
+liberal
+ 
+returns
+ 
+policies
+ 
+are
+ 
+essential
+ 
+to
+ 
+maximizing
+ 
+the
+value of a ﬁrm’s  returns service offering.
+We
+ contend, however, that these investments in returns pro-
+cesses
+ are merited, as a positive returns experience can reinforce
+in the customers’ minds that they are making the right choice
+by
+ buying from a retailer. This, in turn, encourages the customer
+to try other items that they may not have otherwise considered,
+as
+ demonstrated by the increase in number of items ordered,
+after a completed return. One easy-to-implement implication for
+managers
+ is allowing product return reviews. A casual browse of
+most online retailers will reveal that they provide places where
+customers can provide product reviews and/or order fulﬁllment
+reviews,
+ but there is rarely a review column for customer returns
+experiences. As we have demonstrated, returns have the potential
+to
+ create loyalty, and allowing return-reviews could be a valuable
+add-on to many online retailers. Further, results associated with
+our
+ control variables suggest that this beneﬁcial  result is not exclu-
+sive to dealing with new customers. The beneﬁcial  effects of returns
+engagement also inﬂuence  experienced customers.
+Related
+ to this issue, and directly impacting operations’ activi-
+ties in managing the returns process, we uncover some interesting
+evidence
+ as to how operations managers should consider sequenc-
+ing
+ the processing of returned items. In our post hoc testing we
+sought to assess whether the observed effects of the percentage of
+increase
+ in total relationship value was inﬂuenced  by pre-return
+on
+ order frequency, number of items ordered and average order
+value or not. The results showed that the scaling of these factors
+did
+ not signiﬁcantly  inﬂuence  the relationship; the proportion of
+increase in the relationship value was consistent whether the cus-
+tomers were large or small (on order frequency, number of items
+ordered
+ and average order value).
+From a returns management processing perspective, this is an
+important
+ ﬁnding.  This indicates that whether the original order
+frequency,
+ number of items ordered, and average order value are
+smaller
+ or larger, the percentage increase in relationship value in
+response
+ to improved returns speed, is not signiﬁcantly  different.4
+However, this does not mean the increase in relationship value
+in
+ dollars are not signiﬁcantly  different, only the percentage. Two
+customers, one with a base relationship value of $20 and another
+with
+ a base value of $100 are not signiﬁcantly  different in their
+reaction,
+ percentage-wise, to increased returns speed. This implies
+that the customer with the higher relationship value at the out-
+set
+ should probably be given priority over lesser-valued customer
+in the returns process. Operationally speaking, this means that
+when
+ confronted with a bin full of returns, the returns operation
+should consider implementing an ABC priority system, where the
+high
+ relationship value customers are assigned the highest priority,
+and
+ the remaining customer assigned appropriate classiﬁcations
+based upon their value to the retailer. While this is not an unusual
+notion,
+ ABC priority systems are not uncommon, to the best of the
+authors’ knowledge, empirical evidence of this in a returns setting is
+unique,
+ and instructive to those operating returns processes. Build-
+ing upon this, retailers can facilitate returns operations during their
+outbound
+ distribution process, potentially indicating the priority a
+returning
+ delivery should be managed by in the data embedded
+within the preprinted return label or return authorization (where
+used).
+Shifting
+ our focus to policy issues, our results also suggest that
+even
+ though retailers incur costs associated with restocking and
+other
+ returns activities, it might be prudent to bear these costs
+themselves, rather than pass them on to the consumer, as the sub-
+sequent
+ loyalty and enhanced relationship value may be more than
+enough to offset these costs. In an industry report, Brohan (2005)
+4 Similar analysis regressing aggregated pre-return relationship value (rather
+than
+ its three components) against percentage increase in relationship value was
+also
+ 
+not
+ 
+signiﬁcant.
+ 18731317, 2012, 4, Downloaded from https://onlinelibrary.wiley.com/doi/10.1016/j.jom.2012.02.002 by Hong Kong University Of, Wiley Online Library on [03/09/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+
+--- PAGE 11 ---
+292 S.E. Grifﬁs  et al. / Journal of Operations Management 30 (2012) 282–294
+reports
+ that 88% of responding online retailers said they are able to
+process
+ a return for less than $15. As we have demonstrated, the
+increased purchase frequency and willingness to buy higher priced
+(and,
+ potentially, higher margin) products could more than offset
+this cost of returns processing for online retailers.
+Finally,
+ online retailers can gain one simple, yet practical insight
+from this study. Given that customers are sensitive to the speed
+of
+ the refund process (as demonstrated in H4–H6), and given
+the insigniﬁcance  of purchase history as a control variable indi-
+cates that speed of return is more important than familiarity with
+the
+ retailer, it likely that merely informing customers when their
+refund has been issued may be helpful in engendering customer
+loyalty.
+ Indeed, often times, retailers have limited control over
+how quickly customers receive their money back, especially given
+that
+ different customers use different modes of payment. Differ-
+ent credit/debit card companies, and other ﬁnancial  intermediaries
+(e.g., paypal) take varying amounts of time to put the money back
+on
+ the credit card, and thus an informing the customer that a refund
+has been released and the customer’s money is now “out of their
+hands,”
+ may comfort the customers, and expedite the perceived
+speed
+ of refund provided by the retailer. This is consistent with the
+suggestion of Taylor (1974), who argues that customers privy to
+more
+ “handling information” about a process are more comfortable
+with
+ it, as well as Maxham and Netemeyer’s (2002) operational-
+ization of procedural justice as the speed with which customers
+perceive
+ a service recovery to have been addressed, and is consis-
+tent with our ﬁnding  that customers receiving faster returns are
+more comfortable with the retailer, and purchase more in subse-
+quent
+ periods5.
+5.2.
+ Implications for research
+From
+ an academic perspective, we test an empirical model of
+returns in online retailing–an area that has heretofore received very
+limited
+ attention in the literature. Indeed, researchers have sug-
+gested that operations and supply chain management researchers
+were
+ giving insufﬁcient  attention to factors affecting the success of
+Internet
+ retailing (Boyer et al., 2002). While several recent studies
+have
+ addressed this criticism by investigating operations-related
+issues
+ in this growing business (e.g., Rabinovich and Bailey, 2004;
+Rabinovich et al., 2007, 2008, 2010; Rabinovich and Evers, 2003;
+Boyer
+ and Hult, 2005, 2006; Thirumalai and Sinha, 2005; Rao et al.,
+2011b), signiﬁcant  work remains in order to understand the role of
+operations
+ in the overall landscape of online retailing, especially in
+areas such as returns management. To a large extent, the returns
+management
+ literature has not been explicit in addressing issues
+related
+ to the customer value that returns create (Mollenkopf et al.,
+2011). Granted, some researchers have made initial attempts to
+investigate
+ customer-centric issues concerning returns manage-
+ment
+ in online retail (e.g. Mollenkopf and Closs, 2005; Mollenkopf
+et al., 2007), but even these studies have been devoid of actual pur-
+chase
+ data, or have stopped short of tracking customers over an
+extended period of time (e.g. Rabinovich et al., 2010). We contend
+that
+ 
+this
+ 
+research
+ 
+extends
+ 
+of
+ 
+the
+ 
+work
+ 
+of
+ 
+these
+ 
+previous
+ 
+researchers
+by
+ incorporating measures of actual purchase behavior subsequent
+to
+ a return, rather than perceptual measures of the same.
+At
+ a more general level, interest shown by operations manage-
+ment
+ researchers in areas such as returns management, reverse
+logistics,
+ and product recovery is increasing (Guide and van
+Wassenhove, 2006; Mollenkopf et al., 2011; Rogers et al., 2002;
+Kocabasoglu
+ et al., 2007; Rubio et al., 2008). Yet, most of this
+5 Indeed, some retailers like Amazon.com follow this practice, but in our conver-
+sations
+ with industry executives, we have found that a large number of them do not
+have
+ 
+such
+ 
+a
+ 
+system
+ 
+in
+ 
+place.
+research tends to focus on tactical and operational aspects of
+the
+ problem, addressing issues related with how to deal with
+returns, especially issues such as production planning or inventory
+management
+ in the face of returns (Mollenkopf et al., 2011). While
+these are valuable, what is lacking is research in returns that focuses
+on
+ the strategic implications of operations management invest-
+ments in customer facing services like returns processing – i.e. why
+to
+ accept returns (Rubio et al., 2008; Mollenkopf et al., 2011). The
+current study addresses this gap by demonstrating that improved
+operations performance in returns can be a means to nurturing
+long-term
+ customer commitment, loyalty, and enhanced overall
+relationship value.
+Second,
+ this study illustrates the synergies generated by
+bridging operations management and marketing in online retail.
+Researchers
+ increasingly assert the value of linking business pro-
+cesses within and across companies (e.g., Cooper et al., 1997)
+and have long-suggested that operations and marketing should do
+more
+ than just coexist (Abernathy, 1976). Flint and Mentzer (2000)
+demonstrate the critical role that operations management can play
+in
+ creating customer value. Yet few other studies have explicitly
+investigated
+ the impact of operations performance on measures
+typically considered outside of the operations sphere. By investi-
+gating
+ the relationship between returns (typically an operations
+issue)
+ on post-return shopping patterns (typically a marketing
+issue), this study ventures into this relatively under-researched
+area.
+ This is consistent with the ﬁndings  of Mollenkopf et al. (2011),
+who advocate that returns management is critically important to
+both operations and marketing, and that future research examin-
+ing
+ such cross-functional collaboration is important, and can help
+address critical business issues. Further we argue that increased
+investments
+ in operations performance focused upon returns are
+valuable,
+ and potentially proﬁt-driving  for the ﬁrm.
+5.3.
+ Limitations
+As
+ with any study, this research too has limitations and its
+results should thus be interpreted accordingly. We list below some
+of
+ the limitations of this study, each of which also provides avenues
+of
+ further investigation. For instance, in the current analysis, we do
+not distinguish reasons cited among the returners for their deci-
+sions
+ to return the product. Thus, we do not differentiate between
+customers who returned the product because of factors such as
+product/delivery
+ issues and other factors, such as buyer’s remorse
+or retail borrowing. Indeed, the argument could be made that post-
+return
+ purchase patterns would differ based on the cause of the
+return.
+We
+ focused our assessment of returns upon the speeds of refund
+to
+ the consumer. Several other indicators of returns quality could
+also inﬂuence  the consumers and their decision to make follow-
+on
+ purchases. While these could possibly be included herein (e.g.,
+restocking fees, return policy liberalness, number of days allowed
+for
+ returns), we chose instead to hold each of these factors constant
+by
+ dealing with a single retailer. We recognize they could have
+inﬂuence  as well, and suggest that subsequent research examine
+varying
+ levels of these factors.
+This research examined a single product category (books).
+Though
+ examining any type of retailer serves to present generalize-
+ability
+ limitations, the current analysis provides a basis upon which
+subsequent studies can introduce additional factors and outcomes
+to
+ different products and different settings. With regard to books
+as the product category examined, differences between books and
+other
+ product types may merit future examination. The purchasing
+motivations of book customers, purchasing what may be classiﬁed
+as a luxury good, may differ from the motivations of more basic
+product
+ 
+types.
+ 
+Similarly
+ 
+their
+ 
+buying
+ 
+behaviors,
+ 
+reasons
+ 
+for
+ 
+return-
+ing the product, and expectations of return speed could differ from
+ 18731317, 2012, 4, Downloaded from https://onlinelibrary.wiley.com/doi/10.1016/j.jom.2012.02.002 by Hong Kong University Of, Wiley Online Library on [03/09/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+
+--- PAGE 12 ---
+S.E. Grifﬁs  et al. / Journal of Operations Management 30 (2012) 282–294 293
+purchasers
+ of other product types such as clothing and electron-
+ics.
+ It is possible, for instance, that electronics buyers may be even
+more sensitive to return speed given the short life cycle of those
+products.
+ Further, books are usually smaller ticket items relative to
+other
+ items sold online. According to the Internet Retailer Top 500
+Report for 2011, the average dollar value of a transaction at an online
+book
+ retailer was $79, while the same was $133 for apparel, and
+$339 for electronics. Thus, one could argue that the perceived “value
+at
+ risk” with book retailers would be less than it would be other pop-
+ular product categories. While we contend that these differences
+would likely amplify the observed effect rather than minimize it,
+the
+ nature of that relationship is worthy of further consideration in
+future research. Hence is the nature of replication and extension,
+both
+ of which are strongly encouraged in operations and supply
+chain management as well as throughout the business literature
+(Hubbard
+ et al., 1998; Hunter, 2001). Despite the observed model
+results
+ 
+the
+ 
+current
+ 
+analysis
+ 
+should
+ 
+not
+ 
+serve
+ 
+as
+ 
+the
+ 
+“ﬁnal
+ 
+word”
+ 
+on
+consumer response to returns management operations, and fur-
+ther
+ empirical work regarding the value of returns operations to
+ﬁrm  outcomes is merited.
+Finally, a limitation of our study is how customer purchases
+were
+ tracked in order to pair them with subsequent and prior pur-
+chases. We made use of login IDs to track returning customers and
+subsequent purchases. However, this gives rise to some complica-
+tions; ﬁrst,  it is feasible that a customer may generate more than
+one login ID make purchases. Second, customers may choose to
+make
+ purchases without logging in at all. While these purchases
+could
+ have been captured by credit card details, this information
+was, understandably, not made available to us. However, there is
+reason to believe that this bias would be minimal, our focal retailer
+offers
+ “reward points” for every purchase, therefore customers are
+incentivized to login and then make a purchase so that they can
+take
+ advantage of the points. However, it is still a concern that we
+cannot completely ignore.
+References
+Aberdeen,
+ 2009. Reverse logistics: driving improved returns directly to the bottom
+line. Available online at http://www.aberdeen.com/aberdeen-library/6323/RA-
+reverse-logistics-return-refurbishment.aspx
+ (accessed 9 June 2011).
+Abernathy, W.J., 1976. Production process structure and technological change. Deci-
+sion
+ Science 7 (4), 607–619.
+Anderson, E., Weitz, B., 1989. Determinants of continuity in conventional industrial
+channel
+ dyads. Marketing Science 8 (4), 310–323.
+Autry, C., Golicic, S., 2010. Evaluating buyer-supplier performance spirals: a longi-
+tudinal study. Journal of Operations Management 28 (2), 87–100.
+Bearden, W.O., Teel, J.E., 1983. Selected determinants of customer satisfaction and
+complaint
+ reports. Journal of Marketing Research 20 (1), 21–28.
+Bitner, M.J., Hubbert, A.R., 1994. Encounter satisfaction versus overall satisfaction
+versus
+ quality: The customer’s voice. Service Quality: New Directions in Theory
+and Practice. In: Roland T. Rust, Richard L. Oliver (Eds.). Sage, Thousand Oaks,
+CA,
+ pp. 72–94.
+Blackburn, J., Guide, D., Souza, G., Wassenhove, L., 2004. Reverse supply chains for
+commercial
+ returns. California Management Review 46 (2), 6–22.
+Boniﬁeld,  C., Cole, C., Schultz, R., 2010. Product returns on the Internet—a case of
+mixed
+ signals. Journal of Business Research 63 (10), 1058–1065.
+Boshoff, C., 1997. An experimental study of service recovery options. International
+Journal
+ of Service Industry Management 8 (2), 110–130.
+Boyer, K.K., Hallowell, R., Roth, A., 2002. E-services operating strategy—a case study
+and
+ method for analyzing operational beneﬁts.  Journal of Operations Manage-
+ment 20 (2), 175–188.
+Boyer,
+ K.K., Hult, G.T.M., 2005. Extending the supply chain–Integrating operations
+and marketing in the grocery industry. Journal of Operations Management 23
+(6),
+ 642–661.
+Boyer,
+ K.K., Hult, G.T.M., 2006. Customer behavioral intentions for online purchases:
+An
+ examination of fulﬁllment  method and customer experience level. Journal
+of Operations Management 24 (2), 124–147.
+Boyer,
+ K.K., Swink, M., 2008. Editorial–Empirical elephants: Why multiple methods
+are
+ essential to quality research in operations and supply chain management.
+Journal
+ 
+of
+ 
+Operations
+ 
+Management
+ 
+26
+ 
+(3),
+ 
+345–348.
+Brennan, B., 1991. Remarks on marketing ethics. Journal of Business Ethics 10 (4),
+255–258.
+Brohan, M., 2005. Online retailers learn to live with that persistent prob-
+lem 
+of
+ 
+returns.
+ 
+Available
+ 
+online
+ 
+at
+ 
+http://www.internetretailer.com/2005/
+09/01/online-retailers-learn-to-live-with-that-persistent-problem-of-r?p=1
+(accessed
+ 9 June 2011).
+Calantone, R.J., Vickery, S.K., 2009. Introduction to the special topic forum: Using
+archival
+ and secondary data sources in supply chain management research.
+Journal of Supply Chain Management 46 (3), 68–69.
+Canadian
+ Business, 2008. E-Commerce Returns, available online at http://www.
+elcnetwork.ca/ebusiness/efc e-c returns.pdf (accessed 17 Aug 2011).
+Cha,
+ A., 2004. Some shoppers ﬁnd  fewer happy returns. The Washing-
+ton
+ Post, November 7, 2004, Page–A01. Available online at http://www.
+washingtonpost.com/ac2/wp-dyn/A30908-2004Nov6
+ (accessed October 9,
+2011).
+Charlton
+ G. Returning online purchases is too much hassle – survey.  Posted March
+15; 2007. www.e-consultancy.com.
+Chircu,
+ A., Mahajan, V., 2006. Managing electronic commerce retail transaction costs
+for
+ customer value. Decision Support Systems 42 (2), 898–914.
+Coase,
+ R.H., 1937. The nature of the ﬁrm.  Economica 4 (16), 386–405.
+Cooil,
+ B., Keiningham, T.L., Aksoy, L., Hsu, M., 2007. A longitudinal analysis of cus-
+tomer satisfaction and share of wallet. Journal of Marketing, 71 (1). 67–83.
+Cooper,
+ M.C., Lambert, D.M., Pagh, J.D., 1997. Supply chain management—More than
+a new name for logistics. The International Journal of Logistics Management 8
+(1),
+ 1–14.
+Davis, S., Hagerty, M., Gerstner, E., 1998. Returns policies and the optimal level of
+hassle.
+ Journal of Economics and Business 50 (5), 445–460.
+Derbaix,
+ C., 1983. Perceived risk and risk relievers. Journal of Economic Psychology
+3
+ (1), 19–38.
+Devaraj, S., Hollingwood, D., Schroeder, G.R., 2010. Generic manufacturing strategies
+and
+ plant performance. Journal of Operations Management 22 (3), 313–333.
+Dholakia, R., Zhao, M., Dholakia, N., 2005. Multi-channel retailing: A case study of
+early
+ experiences. Journal of Interactive Marketing 19 (2), 63–74.
+Fader, P.S., Hardie, B.G.S., 2001. Common ground exists. Marketing Research 13 (4),
+41–49.
+Flint,
+ D.J., Mentzer, J.T., 2000. Logisticians as marketers: Their role when customers’
+desired
+ value changes. Journal of Business Logistics 21 (2), 19–45.
+Folkes,
+ V.S., 1984. Consumer reactions to product failure: An attributional approach.
+Journal of Consumer Research 10 (4), 398–409.
+Fornell, C., Mithas, S., Morgenson, F., Krishnan, M.S., 2006. Customer satisfaction and
+stock
+ prices: High returns, low risk. Journal of Marketing 70 (1), 3–14.
+Forrester,
+ 2010. U.S. online retail forecast – 2009 to 2014. Available online at
+http://www.alacrastore.com/research/forrester-US Online Retail Forecast
+2009 To 2014-56551 (accessed 1 June, 2011).
+Forsythe, S., Shi, B., 2003. Consumer patronage and risk perceptions in Internet
+shopping.
+ Journal of Business Research 56 (11), 867–875.
+Ganesan, S., 1994. Determinants of long-term orientation in buyer-seller relation-
+ships.
+ Journal of Marketing 58 (2), 1–19.
+Gefen, D., 2000. E-Commerce: The role of familiarity and trust. Omega. The Interna-
+tional
+ Journal of Management Science 28, 725–737.
+Gefen, D., 2002. Customer loyalty in e-commerce. Journal of the Association for
+Information
+ Systems 2 (1), 27–51.
+Greene, W., 2003. Econometric Analysis. Prentice Hall, NJ.
+Grewal, D., Iyer, G.R., Levy, M., 2004. Internet retailing: Enablers, limiters, and market
+consequences.
+ Journal of Business Research 57 (7), 703–713.
+Guide@@Jr., V.D.R., van Wassenhove, L.N., 2006. Closed loop supply chains: An intro-
+duction
+ to the feature issue (part 1). Production and Operations Management
+15 (3), 345–350.
+Gupta,
+ S., Karahanna, E., 2004. Technology Adoption in Complex Systems–Southern
+Association
+ of Information Systems 2004 Proceedings, Paper 27
+(http://aisel.aisnet.org/sais2004/27).
+Gupta, S., Zeithaml, V., 2006. Customer metrics and their impact on ﬁnancial  perfor-
+mance.
+ Marketing Science 25 (6), 718–739.
+Gwinner, K.P., Gremler, D.D., Bitner, M.J., 1998. Relational beneﬁts  in service indus-
+tries:
+ The customer’s perspective. Journal of the Academy of Marketing Science
+26 (Spring), 101–114.
+Haarlander,
+ L., 2001. Diminishing returns: target, home depot tighten return poli-
+cies.
+ The Buffalo News 17 (September), B1.
+Harris,
+ K., Grewal, D., Mohr, L., Bernhardt, K., 2006. Consumer responses to service
+recovery strategies–The moderating role of online versus ofﬂine  environment.
+Journal
+ of Business Research 59 (4), 425–431.
+Hart, C.W., 1988. The power of unconditional service guarantees. Harvard Business
+Review
+ 66 (4), 54–62.
+Hess, R., Ganesan, S., Klein, M., 2003. Service failure and recovery–The impact of
+relationship
+ factors on service satisfaction. Journal of the Academy of Marketing
+Science
+ 31 (2), 127–145.
+Holloway,
+ B.B., Wang, S., Parish, J.T., 2005. The role of cumulative online purchasing
+experience in service recovery management. Journal of Interactive Marketing
+19
+ (3), 54–66.
+Homburg, C., Furst, A., 2005. How organizational complaint handling drives cus-
+tomer
+ loyalty: An analysis of the mechanistic and organic approach. Journal of
+Marketing 69, 95–114.
+Howard,
+ J.A., Sheth, J.N., 1969. The Theory of Buyer Behavior, Wiley, New York. 1969.
+Hubbard, R., Vetter, D.E., Little, E.L., 1998. Replication in strategic management:
+Scientiﬁc
+ testing for validity, generalizability, and usefulness. Strategic Man-
+agement
+ Journal 19 (3), 243–254.
+Hugos, 
+M.,
+ 
+Thomas,
+ 
+C.,
+ 
+2005.
+ 
+Supply
+ 
+Chain
+ 
+Management
+ 
+in
+ 
+the
+ 
+Retail
+ 
+Industry.
+ 
+NJ,
+Wiley, Hoboken.
+Hunter,
+ J.E., 2001. The desperate need for replications. Journal of Consumer Research
+28 (1), 149–158.
+ 18731317, 2012, 4, Downloaded from https://onlinelibrary.wiley.com/doi/10.1016/j.jom.2012.02.002 by Hong Kong University Of, Wiley Online Library on [03/09/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+
+--- PAGE 13 ---
+294 S.E. Grifﬁs  et al. / Journal of Operations Management 30 (2012) 282–294
+Ittner,
+ C., Larcker, D., 1998. Are nonﬁnancial  measures leading indicators of ﬁnan-
+cial
+ performance? An analysis of customer satisfaction. Journal of Accounting
+Research 36 (Supplement), 1–36.
+Kelley,
+ S.W., Davis, M.A., 1993. Antecedents to customer expectations for service
+recovery. Journal of the Academy of Marketing Science 22 (1), 52–61.
+Kocabasoglu,
+ C., Prahinski, C., Klassen, R.D., 2007. Linking forward and reverse sup-
+ply chain investments: The role of business uncertainty. Journal of Operations
+Management
+ 25, 1141–1160.
+Kotler,
+ P., Armstrong, G., 1996. Principles of Marketing, seventh ed. Prentice-Hall,
+Englewood
+ Cliffs, NJ.
+Laroche, M., Kim, C., Zhou, L., 1996. Brand familiarity and conﬁdence  as determinants
+of
+ purchase intention–An empirical test. Journal of Business Research 37 (2),
+115–120.
+Lind,
+ A.E., Tyler, T.R., 1988. The Social Psychology of Procedural Justice. Plenum Press,
+New
+ York.
+Lusch,
+ R.F., Brown, J.R., 1996. Interdependency, contracting, and relational behavior
+in
+ marketing channels. Journal of Marketing 60 (4), 19–38.
+Mangini, V., Ford, J., Markowski, E., Honeycutt, E., 2007. The service recovery
+paradox–justiﬁable
+ theory or smoldering myth? Journal of Services Marketing
+21 (3), 213–225.
+Mann,
+ D.P., Wissink, J.P., 1988. Money-back contracts with double moral hazard. The
+RAND Journal of Economics 19 (2), 285–292.
+Maxham,
+ J.G.III, Netemeyer, R.G., 2002. Modeling customer perceptions of complaint
+handling
+ over time: The effects of perceived justice on satisfaction and intent.
+Journal
+ of Retailing 78, 239–252.
+Maxham, J.G.III, Netemeyer, R.G., 2003. Firms reap what they sow: The effects of
+shared
+ values and perceived organizational justice on customers’ evaluations of
+complaint handling. Journal of Marketing 67, 46–62.
+McCollough,
+ M., Berry, L., Yadav, M., 2000. An empirical investigation of customer
+satisfaction after service failure and recovery. Journal of Service Research 3 (2),
+121–137.
+Mollenkopf,
+ D., Closs, D.J., 2005. The hidden value in reverse logistics. Supply Chain
+Management
+ Review July/August, 34–43.
+Mollenkopf,
+ D., Frankel, R., Russo, I., 2011. Creating value through returns man-
+agement: Exploring the Marketing-Operations interface. Journal of Operations
+Management 29 (5), 391–403.
+Mollenkopf,
+ D., Rabinovich, E., Laseter, T.M., Boyer, K.K., 2007. Managing internet
+product
+ returns: A focus on effective service operations. Decision Sciences 38
+(2),
+ 215–250.
+Narasimhan,
+ 
+C.,
+ 
+1988.
+ 
+Competitive
+ 
+promotional
+ 
+strategies.
+ 
+Journal
+ 
+of
+ 
+Business
+ 
+61
+(4),
+ 427–449.
+Nielsen,
+ 2008. Trends in online shopping. Available online at http://th.nielsen.com/
+site/documents/GlobalOnlineShoppingReportFeb08.pdf (Accessed 10 June
+2011).
+Oliver,
+ R.L., 1980. A cognitive model of the antecedents and consequences of satis-
+faction
+ decisions. Journal of Marketing Res 17, 460–469.
+Oliver, R. L. 1997. Satisfaction: A behavioral perspective on the consumer. McGraw-
+Hill,
+ New York.
+Oliver, R.L., Swan, J.E., 1989. Consumer perceptions of interpersonal equity and sat-
+isfaction in transactions: A ﬁeld  survey approach. Journal of Marketing 53 (2),
+21–35.
+Passy,
+ C., 2002. Cranky consumer: get set for many unhappy returns. Wall Street
+Journal
+ 12 (November), D2.
+Paul, M., Hennig-Thurau, T., Gremler, D., Gwinner, K., Wiertz, C., 2009. Toward a
+theory
+ of repeat purchase drivers for consumer services. Journal of the Academy
+of
+ Marketing Science 37 (Fall), 215–237.
+Pavlou,
+ P., Liang, H., Xue, Y., 2007. Understanding and mitigating uncertainty in
+online
+ exchange relationships: A principal-agent perspective. MIS Quarterly 31
+(1),
+ 105–136.
+Peck, J., Childers, T.L., 2003. To have and to hold: The inﬂuence  of haptic information
+on
+ product judgments. Journal of Marketing 67 (2), 35–48.
+Petersen, J.A., Kumar, V., 2010. Can product returns make you money? Sloan Man-
+agement
+ Review, 51 (3), 84–91.
+Phillips,
+ L.D., Chang, D.R., Buzzell, R., 1983. Product quality, cost position and busi-
+ness
+ performance: A test of some key hypotheses. Journal of Marketing 47
+(Spring), 26–43.
+Piron,
+ F., Young, M., 2000. Retail borrowing: insights and implications on returning
+used merchandise. International Journal of Retail & Distribution 28 (1), 27–36.
+Rabinovich,
+ E., Bailey, J.P., 2004. Physical distribution service quality in internet
+retailing: Service pricing, transaction attributes, and ﬁrm  attributes. Journal of
+Operations
+ Management 21 (6), 651–672.
+Rabinovich,
+ E., Evers, P., 2003. Product fulﬁllment  in supply chains supporting
+internet-retailing
+ operations. Journal of Business Logistics 24 (2), 205–236.
+Rabinovich, E., Knemeyer, A.M., Mayer, C., 2007. Why do Internet commerce ﬁrms
+incorporate
+ logistics service providers in their distribution channels? The role
+of transaction costs and network strength. Journal of Operations Management
+25
+ (3), 661–681.
+Rabinovich, E., Rungtusanatham, M., Laseter, T.M., 2008. Physical distribution service
+performance
+ and internet retailer margins: The drop-shipping context. Journal
+of Operations Management 26 (6), 767–780.
+Rabinovich,
+ E., Sinha, R., Laseter, T., 2010. Unlimited shelf space in internet supply
+chains:
+ Treasure trove or wasteland? Journal of Operations Management, 29 (4),
+305-317.
+Raju,
+ J., Srinivasan, V., Lal, R., 1990. The effects of brand loyalty on competitive price
+promotional strategies. Management Science 36 (3), 276–304.
+Rao,
+ S., Grifﬁs,  S.E., T. Goldsby, T.J., 2011. Failure to deliver? Linking order fulﬁllment
+glitches with future purchase behavior. Journal of Operations Management,
+29(7-8),
+ 692-703.
+Rao,
+ S., Goldsby, T.J., Grifﬁs,  S.E., Iyengar, D., 2011b. Electronic Logistics Service Qual-
+ity
+ (e-LSQ): Its impact on the customer’s purchase satisfaction and retention.
+Journal of Business Logistics 32 (2), 167–179.
+Reichheld,
+ F., 1996. The Loyalty Effect: The Hidden Force Behind Growth, Proﬁts,
+and Lasting Value, Boston: Harvard Business School Press.
+Reichheld,
+ F.F., Schefter, P., 2000. E-loyalty–Your secret weapon on the web. Harvard
+Business
+ Review 78 (4), 105–113.
+Reinartz,
+ W., Kumar, V., 2002. The mismanagement of customer loyalty. Harvard
+Business
+ Review 80 (7), 86–94.
+Rogers, D.S., Lambert, D.M., Croxton, K.L., Garcia-Dastugue, S.J., 2002. The returns
+management
+ process. International Journal of Logistics Management 13 (2),
+1–18.
+Rosenbaum,
+ M., Kuntze, R., 2005. Looking good at the retailer’s expense: Investigat-
+ing unethical retail disposition behaviour among compulsive shoppers. Journal
+of
+ Retailing and Consumer Services 12 (3), 217–225.
+Rossi,
+ P.E., McCulloch, R., Allenby, G., 1996. The value of purchase history data in
+target
+ marketing. Marketing Science 15 (4), 321–340.
+Rubio, S., Chamorro, A., Miranda, F.J., 2008. Characteristics of the research on reverse
+logistics
+ (1995–2005). International Journal of Production Research 46 (4),
+1099–1120.
+Ryder,
+ 2010. Reverse logistics–From black hole to untapped revenue stream. Avail-
+able online at: http://www.scmr.com/article/reverse logistics from black hole
+to untapped revenue stream/ (accessed 9 June 2011).
+Seiders, K., Berry, L.L., 1998. Service fairness: What it is and why it matters. Academy
+of
+ Management Executive 12 (2), 8–20.
+Sheth,
+ J.N., Parvatiyar, A. 1995. Relationship marketing in consumer markets:
+Antecedents and consequences. Journal of the Academy of Marketing Science,
+23 (Fall), 255-271.
+Sheth,
+ J.N., Gardner D.M., Garrett D.E., 1988. Marketing Theory: Evolution and Eval-
+uation.
+ New York, NY et al: John Wiley & Sons, Inc.
+Smith,
+ A., Bolton, A., 1998. An experimental investigation of service fail-
+ure
+ 
+and
+ 
+recovery:
+ 
+Paradox
+ 
+or
+ 
+peril?
+ 
+Journal
+ 
+of
+ 
+Service
+ 
+Research
+ 
+1
+ 
+(1),
+65–81.
+Smith,
+ A.K., Bolton, R.N., 2002. The effect of customers’ emotional responses to ser-
+vice failures on their recovery effort evaluations and satisfaction judgements.
+Journal
+ of the Academy of Marketing Science 30 (1), 5–23.
+Shop.org 2009. State of Online Retailing. Available online at:
+http://www.shop.org/soro. Assessed 10 June 2011.
+Spake, D.F., Beatty, S.E., Brockman, B.K., Crutchﬁeld,  T.N., 2003. Consumer
+comfort
+ in service relationships. Journal of Service Research 5 (5),
+316–333.
+Stock,
+ J., 1998. Development and Implementation of Reverse Logistics Programs. Oak
+Brook,
+ Illinois, Council of Logistics Management.
+Taylor, J.W., 1974. The role of risk in consumer behavior. Journal of Marketing 38
+(2),
+ 54–60.
+Tax, S.S., Brown, S.W., Chandrashekaran, M., 1998. Customer evaluations of ser-
+vice
+ complaint experiences: implications for relationship marketing. Journal of
+Marketing
+ 62 (2), 60–76.
+Tedeschi,
+ B., 2001. Online Retailers Grapple with the Age-old Problem of
+Handling
+ Returned Merchandise. The New York Times (May 28, Page-
+C6).
+ Available online at http://www.nytimes.com/2001/05/28/business/e-
+commerce-report-online-retailers-grapple-with-ageold-problem-
+handling.html?pagewanted=all&src=pm
+ (accessed October 9, 2011).
+Thirumalai, S., Sinha, K.K., 2005. Customer satisfaction with order fulﬁllment  in
+retail
+ supply chains: Implications of product type in electronic B2C transactions.
+Journal
+ of Operations Management 23 (3-4), 291–303.
+Waller,
+ M., Johnson, E., Davis, T., 1999. Vendor managed inventory in the retail supply
+chain. Journal of Business Logistics 20 (1), 183–203.
+Weathers,
+ D., Sharma, S., Wood, S., 2007. Effects of online communication practices
+on consumer perceptions of performance uncertainty for search and experience
+goods.
+ Journal of Retailing 83 (4), 393–401.
+Williamson, O.E., 1975. Markets and Hierarchies: Analysis and Antitrust Implica-
+tions.
+ Free Press, New York.
+Williamson,
+ O.E., 1985. Economic Institutions of Capitalism: Firms, Markets, and
+Relational
+ Contracting, New York: The Free Press.
+Wirtz, J., Mattila, A., Lwin, M., 2007. How effective are reward programs in driving
+share
+ of wallet? Journal of Service Research 9 (4), 327–334.
+Zeithaml, V., Berry, L., Parasuraman, A., 1996. The behavioral consequences of service
+quality.
+ Journal of Marketing 60 (2), 31–46.
+Zellner, A., 1962. An efﬁcient  method of estimating seemingly unrelated regres-
+sion
+ equations and tests for aggregation bias. Journal of the American Statistical
+Association 57, 348–368.
+ 18731317, 2012, 4, Downloaded from https://onlinelibrary.wiley.com/doi/10.1016/j.jom.2012.02.002 by Hong Kong University Of, Wiley Online Library on [03/09/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
