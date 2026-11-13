@@ -398,7 +398,7 @@ Shock $x$ & $\rho_x$ & $\mu_x$ & $\Sigma_x$ & $dCS/dx$ & $dPS/dx$ & $I_x$ \\
 \hline
 Production cost $c$ & $\rho_c$ & $0$ & $-Q$ & $-Q(1-r)\rho_c$ & $Q(\mu_p\rho_c - 1)$ & $\displaystyle \frac{(1-r)\rho_c}{1-\mu_p\rho_c}$ \\
 Handling cost $h$ & $r\rho_c$ & $-r$ & $0$ & $-Q(1-r)r\rho_c$ & $Qr(\mu_p\rho_c - 1)$ & $\displaystyle \frac{(1-r)\rho_c}{1-\mu_p\rho_c}$ \\
-Tax $t$ & $\theta\rho_c$ & $-\theta$ & $0$ & $-Q(1-r)\theta\rho_c$ & $\theta Q(\mu_p\rho_c - 1)$ & $\displaystyle \frac{(1-r)\rho_c}{1-\mu_p\rho_c}$ \\
+Tax $t$ & $\theta\rho_c$ & $-\theta$ & $0$ & $-Q(1-r)\theta\rho_c$ & $Q\theta(\mu_p\rho_c - 1)$ & $\displaystyle \frac{(1-r)\rho_c}{1-\mu_p\rho_c}$ \\
 \hline
 \end{tabular}
 \caption{Local incidence for each shock.}
@@ -475,7 +475,7 @@ into \eqref{eq:dW-c-raw} gives
 \begin{equation}
   \frac{dW}{dc}=-Q\Lambda,
   \qquad
-  \Lambda\equiv 1+r'(p)\bigl[p+h-(1-\beta)t\bigr]\rho_c.
+  \Lambda\equiv 1+r'(p)\rho_c\bigl[p+h-(1-\beta)t\bigr].
   \label{eq:Lambda}
 \end{equation}
 Pass-through of the production cost changes the price by $\rho_c$ on each
@@ -498,7 +498,7 @@ of keeping, but the buyer who switches from keep to return was indifferent
 between the two, so the switch offsets that lower value. The cost of the
 switch falls on the seller, who gives up the price $p$, pays the handling
 cost $h$, and recovers the refunded part $(1-\beta)t$ of the tax. The price moves the return rate by $r'(p)\rho_c$, so these
-switches change joint surplus by $-Q\bigl[p+h-(1-\beta)t\bigr]r'(p)\rho_c$. Added to the direct
+switches change joint surplus by $-Qr'(p)\rho_c\bigl[p+h-(1-\beta)t\bigr]$. Added to the direct
 loss $-Q$, the change is $-Q\Lambda$.
 
 Handling cost scales this change by $r$, and the tax scales it by $\theta$.
@@ -518,20 +518,20 @@ cost on each of the $Q$ units sold, a rectangle of height one and width $Q$. Han
 rectangle $Q\theta$. These rectangles are the ex-ante term, what the change
 would be if returns did not respond to the price. The gap between the actual
 change $-Q\Lambda$ and this rectangle is the ex-post term
-$-Q\,r'(p)\bigl[p+h-(1-\beta)t\bigr]\rho_c$, scaled by $r$ or by $\theta$ for the other two shocks.
+$-Q\,r'(p)\rho_c\bigl[p+h-(1-\beta)t\bigr]$, scaled by $r$ or by $\theta$ for the other two shocks.
 \begin{result}[Ex-ante and ex-post decomposition]
 \label{res:EA-EP}
 \begin{align}
   \frac{dW}{dc}
   &=
-  -Q-Q\,r'(p)\bigl[p+h-(1-\beta)t\bigr]\rho_c,
+  -Q-Q\,r'(p)\rho_c\bigl[p+h-(1-\beta)t\bigr],
   \label{eq:dW-decomp} \\
   \frac{dW}{dh}
   &=
-  -Qr-Qr\,r'(p)\bigl[p+h-(1-\beta)t\bigr]\rho_c, \\
+  -Qr-Qr\,r'(p)\rho_c\bigl[p+h-(1-\beta)t\bigr], \\
   \frac{dW}{dt}
   &=
-  -Q\theta-Q\theta\,r'(p)\bigl[p+h-(1-\beta)t\bigr]\rho_c.
+  -Q\theta-Q\theta\,r'(p)\rho_c\bigl[p+h-(1-\beta)t\bigr].
 \end{align}
 \end{result}
 
@@ -623,7 +623,7 @@ Let
   \label{eq:r-thresholds}
 \end{equation}
 Then $0<r'_0<\bar{r}'$. For the ex-post term
-$-Q\bigl[p+h-(1-\beta)t\bigr]r'(p)\rho_c$,
+$-Qr'(p)\rho_c\bigl[p+h-(1-\beta)t\bigr]$,
 \begin{enumerate}
 \item[(i)] if $r'(p)<0$, supply slopes up, $\rho_c>0$, and the term is a gain;
 \item[(ii)] if $0<r'(p)<\bar{r}'$, then $\rho_c>0$ and the term is a loss.
@@ -649,26 +649,43 @@ gap and $\rho_c$ are negative when $r'>\bar{r}'$.
 
 For the tax, platform revenue is part of social surplus. The platform
 receives $t$ on a kept sale and $\beta t$ on a return, so revenue is
-$G=t\theta Q$. Social surplus is $V\equiv W+G$. The marginal effect of the tax on
+$G=tQ\theta$. Social surplus is $V\equiv W+G$. The marginal effect of the tax on
 social surplus is
 \begin{equation}
   \frac{dV}{dt}
   =
-  -Q\theta\Lambda+\theta Q+t\frac{d(\theta Q)}{dt}
-  =
-  -Q\theta\,r'(p)\bigl[p+h-(1-\beta)t\bigr]\rho_c
-  +
-  t\frac{d(\theta Q)}{dt}.
+  -Q\theta\Lambda+Q\theta
+  +t\theta\rho_c\bigl[\theta D'(p)-(1-\beta)Q r'(p)\bigr].
   \label{eq:dV}
 \end{equation}
 Without returns, $r'(p)=0$ and $\theta=1$. The ex-ante term $-Q$ is a transfer
-to the platform, and there is no ex-post term. What remains is $t\,dQ/dt$, the
-underprovision caused by the wedge between the consumer's value and the
-production cost. An infinitesimal tax starts from $t=0$, so the first-order
-effect on social surplus is zero.
+to the platform, and there is no ex-post term. What remains is the tax term
+$t\,dQ/dt$, the underprovision caused by the wedge between the consumer's
+value and the production cost.
 With returns, the ex-ante term $-Q\theta$ is still a transfer to the platform.
-What remains is the ex-post term, scaled by $\theta$, and
-$t\,d(\theta Q)/dt$.
+What remains is the ex-post term and the tax term. Expanding the tax term
+and cancelling the terms in $(1-\beta)$, we have
+\[
+  -Q\theta\,r'(p)\rho_c(p+h)
+  +
+  t\theta^{2}\rho_c D'(p).
+\footnote{The tax term is $t\,d(Q\theta)/dt$. The product rule gives
+$d(Q\theta)/dt=Q\,d\theta/dt+\theta\,dQ/dt$.
+Quantity follows demand, so $dQ/dt=D'(p)\rho_t$.
+The tax weight is $\theta=1-(1-\beta)r$, and the tax moves the return rate
+through the price, so $d\theta/dt=-(1-\beta)r'(p)\rho_t$.
+Substituting both gives
+$d(Q\theta)/dt=\rho_t[\theta D'(p)-(1-\beta)Q r'(p)]$.
+Added to the ex-post term, the pieces in $(1-\beta)$ cancel.}
+\]
+
+A higher $\beta$ makes the tax more costly for the seller. The supply curve
+then shifts inward by more, and both the ex-post term and the tax term scale
+with $\beta$. Result~\ref{res:expost-r} separates the cases. A higher $\beta$
+amplifies the gain when the selection channel dominates. It amplifies the gain
+again when the behavioral channel is strong enough that pass-through is
+negative. It amplifies the loss when the behavioral channel dominates and
+pass-through stays positive.
 
 %=============================================================================
 \section{Global Incidence}
