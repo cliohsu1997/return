@@ -142,8 +142,8 @@ refunds the full price, so the buyer pays nothing. The seller pays net
 handling $h$ on the good, which is gross handling cost minus scrap value,
 and a share $\beta\in[0,1]$ of the tax is retained by the platform on each
 returned unit. The seller therefore loses $\beta t+h$ on that returned unit.
-We maintain $p+h>0$, which holds whenever scrap value does not exceed list
-price. With return rate $r(p)$, the seller's expected payoff per unit is
+We maintain $p+h-(1-\beta)t>0$. This is the seller's loss when a kept sale
+is returned. With return rate $r(p)$, the seller's expected payoff per unit is
 the effective marginal revenue
 \begin{equation}
   \mu(p,h,t,\beta)
@@ -398,10 +398,10 @@ Shock $x$ & $\rho_x$ & $\mu_x$ & $\Sigma_x$ & $dCS/dx$ & $dPS/dx$ & $I_x$ \\
 \hline
 Production cost $c$ & $\rho_c$ & $0$ & $-Q$ & $-Q(1-r)\rho_c$ & $Q(\mu_p\rho_c - 1)$ & $\displaystyle \frac{(1-r)\rho_c}{1-\mu_p\rho_c}$ \\
 Handling cost $h$ & $r\rho_c$ & $-r$ & $0$ & $-Q(1-r)r\rho_c$ & $Qr(\mu_p\rho_c - 1)$ & $\displaystyle \frac{(1-r)\rho_c}{1-\mu_p\rho_c}$ \\
-Tax $\tau$ & $\theta\rho_c$ & $-\theta$ & $0$ & $-Q(1-r)\theta\rho_c$ & $\theta Q(\mu_p\rho_c - 1)$ & $\displaystyle \frac{(1-r)\rho_c}{1-\mu_p\rho_c}$ \\
+Tax $t$ & $\theta\rho_c$ & $-\theta$ & $0$ & $-Q(1-r)\theta\rho_c$ & $\theta Q(\mu_p\rho_c - 1)$ & $\displaystyle \frac{(1-r)\rho_c}{1-\mu_p\rho_c}$ \\
 \hline
 \end{tabular}
-\caption{Local incidence for each shock. The tax column is evaluated at a zero rate.}
+\caption{Local incidence for each shock.}
 \label{tab:incidence_components}
 \end{table}
 
@@ -453,7 +453,7 @@ pass-through. When pass-through is negative, raising production cost,
 handling cost, or the tax lowers the price, reduces return rates, and saves
 enough handling costs to more than offset the direct resource drain. Both
 consumers and producers benefit. When pass-through is positive, all three
-shocks reduce both surpluses, as in the classical model, where $\mu_p=1$
+cost shocks reduce both surpluses, as in the classical model, where $\mu_p=1$
 and $\rho_c>0$.
 
 %=============================================================================
@@ -470,12 +470,12 @@ Table~\ref{tab:incidence_components},
   -Q(1-r)\rho_c+Q(\mu_p\rho_c-1).
   \label{eq:dW-c-raw}
 \end{equation}
-At a zero tax, $\mu_p=1-r(p)-(p+h)r'(p)$. Substituting $\mu_p$
+Substituting $\mu_p$
 into \eqref{eq:dW-c-raw} gives
 \begin{equation}
   \frac{dW}{dc}=-Q\Lambda,
   \qquad
-  \Lambda\equiv 1+r'(p)(p+h)\rho_c.
+  \Lambda\equiv 1+r'(p)\bigl[p+h-(1-\beta)t\bigr]\rho_c.
   \label{eq:Lambda}
 \end{equation}
 Pass-through of the production cost changes the price by $\rho_c$ on each
@@ -485,7 +485,8 @@ gain the same amount. These price effects cancel, so what remains is the
 direct effect of the higher production cost on the equilibrium quantity
 sold, a change of $-Q$.
 
-With returns, hold fixed who buys and who returns. Buyers then lose
+With returns, consider the case in which the price does not change who
+buys or who returns. Buyers lose
 $\rho_c$ on each kept unit and lose nothing on a returned unit, because the
 refund equals the price. There are $Q(1-r)$ kept units, so buyers lose
 $Q(1-r)\rho_c$. Sellers gain the same amount on those units. These price
@@ -495,54 +496,54 @@ A change in who buys or who returns does not add a further consumer loss. A
 buyer who stops buying had zero surplus. The higher price lowers the value
 of keeping, but the buyer who switches from keep to return was indifferent
 between the two, so the switch offsets that lower value. The cost of the
-switch falls on the seller, who gives up the price $p$ and pays the handling
-cost $h$. The price moves the return rate by $r'(p)\rho_c$, so these
-switches change joint surplus by $-Q(p+h)r'(p)\rho_c$. Added to the direct
+switch falls on the seller, who gives up the price $p$, pays the handling
+cost $h$, and recovers the refunded part $(1-\beta)t$ of the tax. The price moves the return rate by $r'(p)\rho_c$, so these
+switches change joint surplus by $-Q\bigl[p+h-(1-\beta)t\bigr]r'(p)\rho_c$. Added to the direct
 loss $-Q$, the change is $-Q\Lambda$.
 
 Handling cost scales this change by $r$, and the tax scales it by $\theta$.
 \begin{equation}
   \frac{dW}{dh}=-Qr\Lambda,
   \qquad
-  \frac{dW}{d\tau}=-Q\theta\Lambda.
+  \frac{dW}{dt}=-Q\theta\Lambda.
   \label{eq:dW-shocks}
 \end{equation}
 
-Freezing the return rate separates an ex-ante rectangle on the purchase margin
-from an ex-post term on the keep-or-return margin. With $r'(p)=0$, the factor
+Freezing the return rate separates the ex-ante purchase margin
+from an ex-post term on the keep or return margin. With $r'(p)=0$, the factor
 $\Lambda$ equals one. A unit production-cost increase then shifts supply up by
 one dollar at every quantity. The price changes in consumer and producer
-surplus cancel, and joint surplus falls by the rectangle of height one and
-width $Q$. Handling cost leaves the rectangle $Qr$, and the tax leaves the
+surplus cancel. Joint surplus then falls by the extra dollar of production
+cost on each of the $Q$ units sold, a rectangle of height one and width $Q$. Handling cost leaves the rectangle $Qr$, and the tax leaves the
 rectangle $Q\theta$. These rectangles are the ex-ante term, what the change
 would be if returns did not respond to the price. The gap between the actual
 change $-Q\Lambda$ and this rectangle is the ex-post term
-$-Q\,r'(p)(p+h)\rho_c$, scaled by $r$ or by $\theta$ for the other two shocks.
+$-Q\,r'(p)\bigl[p+h-(1-\beta)t\bigr]\rho_c$, scaled by $r$ or by $\theta$ for the other two shocks.
 \begin{result}[Ex-ante and ex-post decomposition]
 \label{res:EA-EP}
 \begin{align}
   \frac{dW}{dc}
   &=
-  -Q-Q\,r'(p)(p+h)\rho_c,
+  -Q-Q\,r'(p)\bigl[p+h-(1-\beta)t\bigr]\rho_c,
   \label{eq:dW-decomp} \\
   \frac{dW}{dh}
   &=
-  -Qr-Qr\,r'(p)(p+h)\rho_c, \\
-  \frac{dW}{d\tau}
+  -Qr-Qr\,r'(p)\bigl[p+h-(1-\beta)t\bigr]\rho_c, \\
+  \frac{dW}{dt}
   &=
-  -Q\theta-Q\theta\,r'(p)(p+h)\rho_c.
+  -Q\theta-Q\theta\,r'(p)\bigl[p+h-(1-\beta)t\bigr]\rho_c.
 \end{align}
 \end{result}
 
-The ex-post term offsets the rectangle when $0<\Lambda<1$, amplifies it when
+The ex-post term offsets the ex-ante loss when $0<\Lambda<1$, amplifies it when
 $\Lambda>1$, and reverses it when $\Lambda<0$. Because $dW/dc=-Q\Lambda$, joint surplus falls when
 $\Lambda$ is positive and rises when $\Lambda$ is negative.
 Result~\ref{res:incidence-ratio} says that the two surpluses move together.
 They fall when $\rho_c>0$ and rise when $\rho_c<0$, so $\Lambda$ has the same
 sign as $\rho_c$.
 
-When pass-through is positive, the sign of $r'(p)$ decides whether the ex-post
-term offsets or amplifies the rectangle. When the selection channel dominates,
+When pass-through is positive, $r'(p)$ decides whether the ex-post
+term offsets or amplifies the ex-ante loss. When the selection channel dominates,
 $r'(p)<0$, so $\mu_p>0$. The higher list price screens out frequent
 returners, the return rate falls, and the effective marginal revenue
 improves. The ex-post term is then a gain, and it
@@ -550,25 +551,26 @@ cuts the loss from $Q$ to $Q\Lambda$ with $0<\Lambda<1$. When the behavioral
 channel dominates, $r'(p)>0$, so $\mu_p<1$. The higher list price makes
 keeping less attractive, the return rate rises, and the effective marginal
 revenue worsens. The ex-post term is then a further loss, and it raises the
-loss from $Q$ to $Q\Lambda$ with $\Lambda>1$. In both cases the gap from the rectangle is larger when the return rate
+loss from $Q$ to $Q\Lambda$ with $\Lambda>1$. In both cases the gap from the ex-ante loss is larger when the return rate
 responds more strongly to the price, or when a return is more costly to
 handle.
 
-When pass-through is negative, the ex-post term reverses the rectangle and
+When pass-through is negative, the ex-post term reverses the ex-ante loss and
 joint surplus rises. Result~\ref{res:negative-pt} says that negative
-pass-through occurs only when the behavioral channel dominates. The lower
-list price makes keeping more attractive. The return rate then falls by
-enough to outweigh the loss of revenue on kept units, so the effective
-marginal revenue rises as the price falls and supply slopes down. The ex-post
-term is then a gain larger than the rectangle, and it turns the loss of $Q$
-into a gain of $Q|\Lambda|$. The rise is larger when the return rate responds
-more strongly to the price, when a return is more costly to handle, or when
-the price falls by more.
+pass-through occurs only when the behavioral channel dominates. In this
+case, a lower price makes keeping more attractive, so the return rate falls
+and the seller pays the return cost on fewer units. When that saving outweighs
+the lower revenue on kept units, effective marginal revenue rises as the
+price falls, and supply slopes down. The behavioral effect is so strong that
+a lower price raises supply by more than demand and closes the excess-demand
+gap. The ex-post term is then a gain, and it turns the loss of $Q$ into a
+gain of $Q|\Lambda|$. The gain is larger than the ex-ante loss when the return
+rate responds strongly to the price, when the return cost is high (large
+$\beta$ and $h$), or when the magnitude of pass-through is large.
 
-The no-return formula keeps the rectangle and omits the ex-post term, so its
-entire error is that omission. For a production-cost increase it reports a
-loss of $Q$ against the true change $-Q\Lambda$, and the three regimes above
-translate directly into the direction of the error.
+The following result summarizes these three cases by pass-through and
+$r'(p)$. It shows the direction of the error when the no-return formula is
+used.
 \begin{result}[No-return joint-surplus bias]
 \label{res:welfare-bias}
 Consider a unit production-cost increase. Relative to the returns-adjusted
@@ -609,18 +611,19 @@ consumers, the return rate falls, and the ex-post term is again a gain.
 Result~\ref{res:expost-r} states these three cases as thresholds on $r'(p)$.
 \begin{result}[Thresholds for the ex-post term]
 \label{res:expost-r}
-At a zero tax, let
+Let
 \begin{equation}
   r'_0
   \equiv
-  \frac{1-r(p)}{p+h},
+  \frac{1-r(p)}{p+h-(1-\beta)t},
   \qquad
   \bar{r}'
   \equiv
-  \frac{1-r(p)-D'(p)/S'(\mu)}{p+h}.
+  \frac{1-r(p)-D'(p)/S'(\mu)}{p+h-(1-\beta)t}.
   \label{eq:r-thresholds}
 \end{equation}
-Then $0<r'_0<\bar{r}'$. For the ex-post term $-Q(p+h)r'(p)\rho_c$,
+Then $0<r'_0<\bar{r}'$. For the ex-post term
+$-Q\bigl[p+h-(1-\beta)t\bigr]r'(p)\rho_c$,
 \begin{enumerate}
 \item[(i)] if $r'(p)<0$, supply slopes up, $\rho_c>0$, and the term is a gain;
 \item[(ii)] if $0<r'(p)<\bar{r}'$, then $\rho_c>0$ and the term is a loss.
@@ -631,55 +634,60 @@ than demand in absolute value, $\rho_c<0$, and the term is a gain.
 \end{enumerate}
 \end{result}
 \begin{proof}
-At a zero tax, $\mu_p=1-r-(p+h)r'=(p+h)(r'_0-r')$. The supply elasticity
-has the sign of $\mu_p$, so supply slopes up when $r'<r'_0$ and slopes down
-when $r'>r'_0$.
+From \eqref{eq:mu-p},
+$\mu_p=(1-r)-\bigl[p+h-(1-\beta)t\bigr]r'=\bigl[p+h-(1-\beta)t\bigr](r'_0-r')$.
+The supply elasticity has the sign of $\mu_p$, so supply slopes up when
+$r'<r'_0$ and slopes down when $r'>r'_0$.
 Supply slopes down and is more elastic than demand in absolute value when
 $\varepsilon_S<\varepsilon_D<0$. The demand elasticity is negative. At the
 equilibrium $S=D$, the gap $\varepsilon_S-\varepsilon_D$ has the sign of
 $S'\mu_p-D'$, the denominator of $\rho_c$ in \eqref{eq:rho-links}.
-Substituting $\mu_p$ gives $S'(p+h)(\bar{r}'-r')$. The factor $S'(p+h)$ is
-positive, so this gap and $\rho_c$ are negative when $r'>\bar{r}'$.
-Since $-D'(p)/S'(\mu)>0$, $\bar{r}'>r'_0$.
+Substituting $\mu_p$ gives
+$S'\bigl[p+h-(1-\beta)t\bigr](\bar{r}'-r')$. This factor is positive, so the
+gap and $\rho_c$ are negative when $r'>\bar{r}'$.
 \end{proof}
 
-For the tax, adding platform revenue cancels the ex-ante rectangle and leaves
-the ex-post term as the social effect. The platform receives $\tau p$ on a
-kept sale and $\beta\tau p$ on a return, so revenue is $G=\tau\theta Q$.
-Social surplus is $V\equiv W+G$, so
+For the tax, platform revenue is part of social surplus. The platform
+receives $t$ on a kept sale and $\beta t$ on a return, so revenue is
+$G=t\theta Q$. Social surplus is $V\equiv W+G$. Differentiating revenue in
+$t$ gives the tax on the current base, $\theta Q$, and the induced change in
+that base, $t\,d(\theta Q)/dt$. Adding this revenue to joint surplus cancels
+the ex-ante loss. The change in social surplus is
 \begin{equation}
-  \frac{dV}{d\tau}
+  \frac{dV}{dt}
   =
-  \frac{dW}{d\tau}+\frac{dG}{d\tau}
+  \frac{dW}{dt}+\frac{dG}{dt}
   =
-  -Q\theta\Lambda+\theta Q
+  -Q\theta\Lambda+\theta Q+t\frac{d(\theta Q)}{dt}
   =
-  -Q\theta\,r'(p)(p+h)\rho_c.
+  -Q\theta\,r'(p)\bigl[p+h-(1-\beta)t\bigr]\rho_c
+  +
+  t\frac{d(\theta Q)}{dt}.
   \label{eq:dV}
 \end{equation}
-The surviving term is $\theta$ times the ex-post term. Without returns,
-$r'(p)=0$ and $\theta=p$, so an infinitesimal tax only transfers $pQ$ to the
-platform. The impact on social surplus is zero.
-The social effect of the tax depends on $\beta$ only through $\theta$. At least
-locally, a higher $\beta$ raises $\theta$. With returns, society gains when the
+The first term is $\theta$ times the ex-post term. The second term is zero
+at a zero tax. At that tax the return margin equals $p+h$, and the social
+effect is the ex-post term scaled by $\theta$. Without returns, $r'(p)=0$
+and $\theta=1$, so an infinitesimal tax only transfers $Q$ to the platform.
+The impact on social surplus is zero.
+At a zero tax the social effect depends on $\beta$ only through $\theta$. A
+higher $\beta$ raises $\theta$. With returns, society gains when the
 selection channel dominates. The higher $\beta$ enlarges that gain. Society
 loses when the behavioral channel dominates but pass-through stays positive.
 The higher $\beta$ enlarges that loss. Society gains again when the behavioral
 channel is strong enough that supply is more elastic than demand. The higher
-$\beta$ enlarges that gain as well.
+$\beta$ enlarges that gain as well. At a positive tax, $\beta$ also enters
+the return margin and the change in the tax base.
 
 %=============================================================================
 \section{Global Incidence}
 \label{sec:global-incidence}
 %=============================================================================
 
-The tax row of Table~\ref{tab:incidence_components} is the derivative at a
-zero rate, using $\mu_p$ and $\rho_c$. It is not the integrand for a finite
-change in $\tau$. Along a path with $\tau>0$, that integrand uses
-$\mu^{\tau}$, $\mu_p^{\tau}$, and $\rho_c^{\tau}$.
-
-A finite production-cost or handling-cost change integrates that shock's row
-in the same table, with the row re-evaluated at the current equilibrium.
+Each row of Table~\ref{tab:incidence_components} is the local derivative at
+the current equilibrium, using the current $\mu_p$ and $\rho_c$. A finite
+change in production cost, handling cost, or the tax integrates that row,
+with the row re-evaluated at the current equilibrium.
 
 Along such a path, the global incidence ratio
 $I_{x_0}^{x_1}\equiv \Delta CS/\Delta PS$, when $\Delta PS\neq 0$, is the
@@ -693,8 +701,8 @@ where $\omega(x)\equiv (dPS/dx)/\Delta PS$.
 The global ratio can be negative, even though $I(x)$ is positive at every
 point on the path. If $dPS/dx$ changes sign along the path, the weights
 $\omega(x)$ take both signs, and the weighted average of positive local
-ratios can be negative. A finite production-cost or handling-cost change
-therefore need not preserve the sign of local incidence.
+ratios can be negative. A finite change therefore need not preserve the
+sign of local incidence.
 
 \clearpage
 \appendix
@@ -702,14 +710,15 @@ therefore need not preserve the sign of local incidence.
 \label{app:welfare-bias-primitives}
 Result~\ref{res:welfare-bias} has an equivalent statement in elasticities.
 Recall $\varepsilon_r(p)\equiv p\,r'(p)/r(p)$ and
-$\mu_p=1-r(p)-r'(p)(p+h)$. Then
-$r'(p)(p+h)=\varepsilon_r(p)\,r(p)\,(p+h)/p$, so
+$\mu_p=(1-r(p))-\bigl[p+h-(1-\beta)t\bigr]r'(p)$. Then
+$r'(p)\bigl[p+h-(1-\beta)t\bigr]
+=\varepsilon_r(p)\,r(p)\,\bigl[p+h-(1-\beta)t\bigr]/p$, so
 \begin{equation}
   \mu_p>0
     \;\iff\;
   \varepsilon_r(p)
   <
-  \frac{p}{p+h}\,\frac{1-r(p)}{r(p)},
+  \frac{p}{p+h-(1-\beta)t}\,\frac{1-r(p)}{r(p)},
   \label{eq:app-mu-er}
 \end{equation}
 
