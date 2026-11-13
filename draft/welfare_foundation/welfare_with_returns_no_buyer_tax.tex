@@ -132,22 +132,23 @@ directions. Below, $r'(p)$ is left unsigned.
 
 Producer $j$ takes the list price $p$ and the
 return rate $r$ as given and chooses quantity $q_j$ at cost $C_j(q_j)$, with
-strictly increasing marginal cost. The platform charges an ad valorem
-tax at rate $\tau$, so the seller keeps $(1-\tau)p$ on a kept unit. On a returned unit the seller refunds the full
-price, so the buyer pays nothing. The seller pays net handling $h$ on
-the good, which is gross handling cost minus scrap value, and a share $\beta\in[0,1]$ of the tax is retained by
-the platform on each returned unit. The seller therefore
-loses $\beta\tau p + h$ on that returned unit.\footnote{Amazon's refund
-  administration fee is this rule for a referral fee.  On a return Amazon
-  keeps the lesser of \$5 or 20 percent of the referral fee, and gives
-  the rest back to the seller.  When the \$5 cap does not bind,
-  $\beta=0.2$.}  We maintain $p+h>0$, which holds whenever scrap value
-does not exceed list price. With return rate $r(p)$, the seller's
-expected payoff per unit is the effective marginal revenue
+strictly increasing marginal cost. The platform charges a unit tax $t$,\footnote{We
+use a unit tax rather than the platform's ad valorem referral fee. An ad
+valorem tax interacts with the price inside effective marginal revenue even
+when the return rate is fixed, and the pass-through formula is then hard to
+interpret at a positive tax.} so
+the seller receives $p-t$ on a kept unit. On a returned unit the seller
+refunds the full price, so the buyer pays nothing. The seller pays net
+handling $h$ on the good, which is gross handling cost minus scrap value,
+and a share $\beta\in[0,1]$ of the tax is retained by the platform on each
+returned unit. The seller therefore loses $\beta t+h$ on that returned unit.
+We maintain $p+h>0$, which holds whenever scrap value does not exceed list
+price. With return rate $r(p)$, the seller's expected payoff per unit is
+the effective marginal revenue
 \begin{equation}
-  \mu(p,h,\tau,\beta)
+  \mu(p,h,t,\beta)
   =
-  \bigl(1-r(p)\bigr)(1-\tau)p - r(p)(\beta\tau p + h).
+  \bigl(1-r(p)\bigr)(p-t) - r(p)(\beta t + h).
   \label{eq:mu}
 \end{equation}
 
