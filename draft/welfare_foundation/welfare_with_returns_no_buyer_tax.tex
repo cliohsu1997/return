@@ -217,10 +217,10 @@ $\mu_{c}=0$, yet a unit increase in $c$ shifts supply as if $\mu$
 fell by one unit, so $S_c=-S'(\mu)$. The handling cost and the tax have no
 direct effect on supply at a fixed effective marginal revenue, so $S_h=S_{\tau}=0$.
 The handling cost reduces the effective marginal revenue when a consumer returns the
-product, so $\mu_{h}=-r(p)$. The tax reduces the seller's effective marginal revenue
-on each purchase, but a return restores the share $1-\beta$ of that tax, so
-$\mu_{\tau}=-\theta$ where
-$\theta\equiv p\bigl[1-(1-\beta)r(p)\bigr]$. Substituting these into
+product, so $\mu_{h}=-r(p)$. The tax reduces effective marginal revenue by $p$ on a kept unit and by
+$\beta p$ on a returned unit, so $\mu_{\tau}=-\theta$ with
+$\theta\equiv p\bigl[1-r(p)+\beta r(p)\bigr]$. This factor is positive because
+$\theta=p[1-r+\beta r]\geq p(1-r)$ and $1-r>0$. Substituting these into
 \eqref{eq:pass-through} gives the three pass-throughs,
 \begin{equation}
   \rho_c
@@ -302,15 +302,12 @@ the findings.
 
 Result~\ref{res:pt-bias-er} can be linked to the handling
 cost and which channel of $r'(p)$ dominates.
-The slope of effective marginal revenue is likely to be above one when the selection
-channel dominates and the handling cost is large, and to fall
-below one when the behavioral channel dominates and the handling
-cost is large. Differentiating effective marginal revenue at $\tau=0$
-gives $\mu_p^0=1-r(p)-(p+h)\,r'(p)$. A strong selection channel has $r'(p)<0$, so a higher price
-lowers the return rate and saves handling cost, pushing
-$\mu_p^0$ above one, whereas a strong behavioral channel has
-$r'(p)>0$, so a higher price raises the return rate and adds
-handling cost, pushing $\mu_p^0$ below one. A larger handling cost
+Differentiating effective marginal revenue at $\tau=0$
+gives $\mu_p^0=1-r(p)-(p+h)\,r'(p)$. When the selection
+channel dominates, $r'(p)<0$, so a higher price lowers the return rate and saves handling
+cost, pushing $\mu_p^0$ above one when $h$ is large. When the behavioral channel dominates,
+$r'(p)>0$, so a higher price raises the return rate and adds handling
+cost, pushing $\mu_p^0$ below one. A larger handling cost
 amplifies both effects.
 
 %=============================================================================
@@ -506,10 +503,7 @@ cost $h$. The price moves the return rate by $r'(p)\rho_c$, so these
 switches change joint surplus by $-Q(p+h)r'(p)\rho_c$. Added to the direct
 loss $-Q$, the change is $-Q\Lambda$.
 
-Handling cost and the tax scale this change by $r$ and by $\theta$. In
-Table~\ref{tab:incidence_components}, their consumer and producer changes are
-the production-cost changes multiplied by those factors. Both pieces of
-$\Lambda$ therefore scale, and
+Handling cost scales this change by $r$, and the tax scales it by $\theta$.
 \begin{equation}
   \frac{dW}{dh}=-Qr\Lambda,
   \qquad
@@ -543,35 +537,36 @@ $-Q\,r'(p)(p+h)\rho_c$, scaled by $r$ or by $\theta$ for the other two shocks.
 \end{align}
 \end{result}
 
-The ex-post term offsets, amplifies, or reverses the rectangle, and these
-cases line up with the sign of pass-through.
-Offsetting means $0<\Lambda<1$, amplification means $\Lambda>1$, and reversal
-means $\Lambda<0$. Because $dW/dc=-Q\Lambda$, joint surplus falls when
+The ex-post term offsets the rectangle when $0<\Lambda<1$, amplifies it when
+$\Lambda>1$, and reverses it when $\Lambda<0$. Because $dW/dc=-Q\Lambda$, joint surplus falls when
 $\Lambda$ is positive and rises when $\Lambda$ is negative.
 Result~\ref{res:incidence-ratio} says that the two surpluses move together.
 They fall when $\rho_c>0$ and rise when $\rho_c<0$, so $\Lambda$ has the same
 sign as $\rho_c$.
 
-When the selection channel dominates, the ex-post term offsets part of the
-rectangle and cannot reverse the loss. Then $r'(p)<0$, so $\mu_p^0>0$ and
-pass-through is positive. The list price rises and screens out frequent
-returners, so the return rate falls. The product $r'(p)\rho_c$ is therefore
-negative, and the ex-post term $-Q\,r'(p)(p+h)\rho_c$ is a gain that cuts the
-loss from $Q$ to $Q\Lambda$ with $0<\Lambda<1$. The offset is larger when
-$|r'(p)|$ or $h$ is larger.
-
-When the behavioral channel dominates and pass-through is positive, the
-ex-post term amplifies the rectangle. Then $r'(p)>0$ and $\rho_c>0$. The list
-price rises and the return rate rises with it, so $r'(p)(p+h)\rho_c$ is
-positive, $\Lambda>1$, and $-Q\,r'(p)(p+h)\rho_c$ is a further loss. The added
-loss is larger when $r'(p)$ or $h$ is larger.
+When pass-through is positive, the sign of $r'(p)$ decides whether the ex-post
+term offsets or amplifies the rectangle. When the selection channel dominates,
+$r'(p)<0$, so $\mu_p^0>0$. The higher list price screens out frequent
+returners, the return rate falls, and the effective marginal revenue
+improves. The ex-post term is then a gain, and it
+cuts the loss from $Q$ to $Q\Lambda$ with $0<\Lambda<1$. When the behavioral
+channel dominates, $r'(p)>0$, so $\mu_p^0<1$. The higher list price makes
+keeping less attractive, the return rate rises, and the effective marginal
+revenue worsens. The ex-post term is then a further loss, and it raises the
+loss from $Q$ to $Q\Lambda$ with $\Lambda>1$. In both cases the gap from the rectangle is larger when the return rate
+responds more strongly to the price, or when a return is more costly to
+handle.
 
 When pass-through is negative, the ex-post term reverses the rectangle and
-joint surplus rises. Result~\ref{res:negative-pt} requires $\mu_p^0<0$ and
-therefore $r'(p)>0$. The list price falls and the return rate falls with it,
-so $-Q\,r'(p)(p+h)\rho_c$ is again a gain. Because $\Lambda<0$, the gain is
-larger than the rectangle $Q$, and joint surplus rises by $Q|\Lambda|$. The
-rise is larger when $r'(p)(p+h)|\rho_c|$ is larger.
+joint surplus rises. Result~\ref{res:negative-pt} says that negative
+pass-through occurs only when the behavioral channel dominates. The lower
+list price makes keeping more attractive. The return rate then falls by
+enough to outweigh the loss of revenue on kept units, so the effective
+marginal revenue rises as the price falls and supply slopes down. The ex-post
+term is then a gain larger than the rectangle, and it turns the loss of $Q$
+into a gain of $Q|\Lambda|$. The rise is larger when the return rate responds
+more strongly to the price, when a return is more costly to handle, or when
+the price falls by more.
 
 The no-return formula keeps the rectangle and omits the ex-post term, so its
 entire error is that omission. For a production-cost increase it reports a
@@ -595,22 +590,21 @@ the tax they compare $-Q\theta\Lambda$ with $-Q\theta$.
 \end{result}
 \begin{proof}
 The three cases above give the direct statements. For the converses, suppose
-$0<\Lambda<1$. Then $\rho_c>0$ and $r'(p)\rho_c<0$, so $r'(p)<0$. This is
-(i). Suppose $\Lambda>1$. Then $r'(p)\rho_c>0$, and $\Lambda>0$ forces
-$\rho_c>0$, so $r'(p)>0$. This is (ii). Suppose $\Lambda<0$. Then
-$\rho_c<0$ and therefore $r'(p)>0$. This is (iii). The tax multiplies the
-true change and the benchmark by $\theta$. This factor is positive because
-$\theta=p[1-(1-\beta)r]\geq p(1-r)$ and $1-r>0$. The handling-cost comparison
-is unchanged when $r>0$.
+$0<\Lambda<1$. Then $r'(p)\rho_c<0$, and $\Lambda>0$ forces $\rho_c>0$ by
+positive incidence, so $r'(p)<0$. This is (i). Suppose $\Lambda>1$. Then $r'(p)\rho_c>0$, and
+$\Lambda>0$ forces $\rho_c>0$, so $r'(p)>0$. This is (ii). Suppose
+$\Lambda<0$. Then $\rho_c<0$ and therefore $r'(p)>0$. This is (iii). Since $r$ and $\theta$ are positive, the handling-cost and tax
+comparisons follow the same logic.
 \end{proof}
 
 For the tax, adding platform revenue cancels the ex-ante rectangle and leaves
 the ex-post term as the social effect. The platform receives $\tau p$ on a
 kept sale and $\beta\tau p$ on a return, so revenue is $G=\tau\theta Q$.
-Social surplus is $V\equiv W+G$. At a zero tax, marginal revenue equals the
-rectangle $\theta Q$. Adding it to $dW/d\tau=-Q\theta\Lambda$ gives
+Social surplus is $V\equiv W+G$, so
 \begin{equation}
   \frac{dV}{d\tau}
+  =
+  \frac{dW}{d\tau}+\frac{dG}{d\tau}
   =
   -Q\theta\Lambda+\theta Q
   =
@@ -619,14 +613,15 @@ rectangle $\theta Q$. Adding it to $dW/d\tau=-Q\theta\Lambda$ gives
 \end{equation}
 The surviving term is $\theta$ times the ex-post term. Without returns,
 $r'(p)=0$ and $\theta=p$, so an infinitesimal tax only transfers $pQ$ to the
-platform and social surplus does not change. With returns, society gains when
-the tax lowers the return rate and loses when the tax raises it. The gain
-occurs in the offsetting and reversal cases, when selection dominates or
-pass-through is negative. The loss occurs in the amplification case, when the
-behavioral channel dominates and pass-through is positive.
-At a zero tax, $\beta$ does not enter $\rho_c$, because the retained share
-multiplies $\tau$ in the effective marginal revenue. A larger $\beta$ raises $\theta$
-and scales the social effect. The sign does not change.
+platform. The impact on social surplus is zero.
+The social effect of the tax depends on $\beta$ only through $\theta$. At least
+locally, whether the seller should keep part of the referral fee depends on
+whether that effect is a gain or a loss. Letting the seller keep more lowers
+$\theta$. With returns, society gains when the tax lowers the return rate and
+loses when the tax raises it. Keeping more of the fee reduces the gain in the
+offsetting and reversal cases, when selection dominates or pass-through is
+negative. It reduces the loss in the amplification case, when the behavioral
+channel dominates and pass-through is positive.
 
 %=============================================================================
 \section{Global Incidence}
