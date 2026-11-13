@@ -132,7 +132,7 @@ directions. Below, $r'(p)$ is left unsigned.
 
 Producer $j$ takes the list price $p$ and the
 return rate $r$ as given and chooses quantity $q_j$ at cost $C_j(q_j)$, with
-strictly increasing marginal cost. The platform charges a unit tax $t$,\footnote{We
+strictly increasing marginal cost. The platform charges a unit tax $t<p$,\footnote{We
 use a unit tax rather than the platform's ad valorem referral fee. An ad
 valorem tax interacts with the price inside effective marginal revenue even
 when the return rate is fixed, and the pass-through formula is then hard to
@@ -186,14 +186,14 @@ where $S(\mu)$ is market supply.
 %=============================================================================
 
 We study pass-through of a production-cost increase, a handling-cost
-increase, and the platform's ad valorem tax, and denote these pass-throughs
-by the subscripts $c$, $h$, and $\tau$. For the production-cost increase, we
+increase, and the platform's unit tax, and denote these pass-throughs
+by the subscripts $c$, $h$, and $t$. For the production-cost increase, we
 consider a parallel increase in marginal production cost, so marginal
 production cost is $C_j'(q_j)+c$. These three shocks shift supply but not
 demand, because consumers' purchase and return decisions respond only to
 the list price $p$.
 
-Pass-through $\rho_x\equiv dp/dx$, for $x\in\{c,h,\tau\}$, is determined by the
+Pass-through $\rho_x\equiv dp/dx$, for $x\in\{c,h,t\}$, is determined by the
 market clearing condition. Its general form is
 \begin{equation}
   m(p,x)\equiv D(p)-S\bigl(\mu(p,x),x\bigr).
@@ -210,12 +210,12 @@ $\mu(p,x)$, and $S_x$ is the direct shift of supply at a fixed
 effective marginal revenue. The production-cost shock does not enter $\mu$, so
 $\mu_{c}=0$, yet a unit increase in $c$ shifts supply as if $\mu$
 fell by one unit, so $S_c=-S'(\mu)$. The handling cost and the tax have no
-direct effect on supply at a fixed effective marginal revenue, so $S_h=S_{\tau}=0$.
+direct effect on supply at a fixed effective marginal revenue, so $S_h=S_{t}=0$.
 The handling cost reduces the effective marginal revenue when a consumer returns the
-product, so $\mu_{h}=-r(p)$. The tax reduces effective marginal revenue by $p$ on a kept unit and by
-$\beta p$ on a returned unit, so $\mu_{\tau}=-\theta$ with
-$\theta\equiv p\bigl[1-r(p)+\beta r(p)\bigr]$. This factor is positive because
-$\theta=p[1-r+\beta r]\geq p(1-r)$ and $1-r>0$. Substituting these into
+product, so $\mu_{h}=-r(p)$. The tax reduces effective marginal revenue by $1$ on a kept unit and by
+$\beta$ on a returned unit, so $\mu_{t}=-\theta$ with
+$\theta\equiv 1-r(p)+\beta r(p)$. This factor is positive because
+$\theta=1-r+\beta r\geq 1-r>0$. Substituting these into
 \eqref{eq:pass-through} gives the three pass-throughs,
 \begin{equation}
   \rho_c
@@ -223,26 +223,17 @@ $\theta=p[1-r+\beta r]\geq p(1-r)$ and $1-r>0$. Substituting these into
   \qquad
   \rho_h = r(p)\,\rho_c,
   \qquad
-  \rho_{\tau} = \theta\,\rho_c,
+  \rho_{t} = \theta\,\rho_c,
   \label{eq:rho-links}
 \end{equation}
-In the classical model without returns, a unit tax rate and a unit
-production-cost increase create the same per-dollar wedge, so
-$\rho_{\tau}=p\,\rho_c$ differs from $\rho_c$ only by the ad valorem
-scaling $p$. With returns, each shock shifts the supply curve to the left
+In the classical model without returns, a unit tax and a unit
+production-cost increase create the same wedge, so
+$\rho_{t}=\rho_c$. With returns, each shock shifts the supply curve to the left
 by $S'(\mu)$ times a scale factor. The factor is $1$ for production
 cost, $r$ for handling cost, and $\theta$ for the tax.
 Since supply and demand are locally linear, pass-through depends only
 on how far the supply curve shifts. That shift is proportional to the
 factor, so each pass-through is $\rho_c$ scaled by its factor.
-
-In general, effective marginal revenue and the pass-through above depend
-on $\tau$. The pass-through of a production-cost change and of a
-handling-cost change then interacts with the prevailing tax. We focus on the case $\tau=0$ to abstract away from
-the interaction. This focus covers a production-cost change, a handling-cost
-change, and a tax change near zero. When a tax change goes beyond a local
-shift, $\mu^{\tau}$, $\mu_p^{\tau}$, and $\rho_c^{\tau}$ replace $\mu$,
-$\mu_p$, and $\rho_c$. The superscript marks the dependence on $\tau$.
 
 These pass-throughs take a more transparent form in price
 elasticities, which also exposes the role of returns. The demand and supply elasticities are
@@ -251,11 +242,16 @@ elasticities, which also exposes the role of returns. The demand and supply elas
 \qquad
 \varepsilon_S(p)\equiv S'(\mu)\,\mu_p\,\frac{p}{S(\mu)}.
 \]
-The supply elasticity $\varepsilon_S$ has the sign of $\mu_p$. With no
-returns, $\mu_p=1$ and the supply elasticity is positive. With returns,
-the supply elasticity can be negative. When the behavioral channel is
-strong enough, a higher price raises the return rate, reduces the
-effective marginal revenue, and lowers quantity supplied.
+The supply elasticity $\varepsilon_S$ has the sign of $\mu_p$, which can be
+written explicitly as
+\begin{equation}
+  \mu_p=(1-r)-\bigl[p+h-(1-\beta)t\bigr]r'.
+  \label{eq:mu-p}
+\end{equation}
+With no returns, $r=0$ and $r'=0$, so $\mu_p=1$ and the supply elasticity is positive. With returns,
+the supply elasticity can be negative. A higher price raises the return rate.
+When the behavioral channel is strong enough, the higher price can reduce
+effective marginal revenue and thus lower quantity supplied.
 
 Multiplying numerator and denominator of $\rho_c$ by $p/S(\mu)$
 gives the elasticity form,
@@ -299,15 +295,15 @@ the findings.
   when $0\leq\mu_p<1$.
 \end{result}
 
-Result~\ref{res:pt-bias-er} can be linked to the handling
-cost and which channel of $r'(p)$ dominates.
-Differentiating effective marginal revenue at $\tau=0$
-gives $\mu_p=1-r(p)-(p+h)\,r'(p)$. When the selection
-channel dominates, $r'(p)<0$, so a higher price lowers the return rate and saves handling
-cost, pushing $\mu_p$ above one when $h$ is large. When the behavioral channel dominates,
-$r'(p)>0$, so a higher price raises the return rate and adds handling
-cost, pushing $\mu_p$ below one. A larger handling cost
-amplifies both effects.
+Result~\ref{res:pt-bias-er} depends on which channel dominates the return
+rate, on the net handling cost, and on the share $\beta$ of the tax kept
+on a return. When the selection channel dominates, $r'(p)<0$. A higher
+price lowers the return rate and saves cost, so $\mu_p$ rises above one.
+When the behavioral channel dominates, $r'(p)>0$. A higher price raises
+the return rate and adds cost, so $\mu_p$ falls below one. A larger
+handling cost and a low refund of the tax amplify both effects. A low
+refund leaves the seller with less of the tax on a return, so the return
+is more costly.
 
 %=============================================================================
 \section{Local incidence}
