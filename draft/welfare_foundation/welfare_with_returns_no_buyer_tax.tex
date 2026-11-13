@@ -589,12 +589,61 @@ For a handling-cost shock the same cuts compare $-Qr\Lambda$ with $-Qr$. For
 the tax they compare $-Q\theta\Lambda$ with $-Q\theta$.
 \end{result}
 \begin{proof}
-The three cases above give the direct statements. For the converses, suppose
-$0<\Lambda<1$. Then $r'(p)\rho_c<0$, and $\Lambda>0$ forces $\rho_c>0$ by
-positive incidence, so $r'(p)<0$. This is (i). Suppose $\Lambda>1$. Then $r'(p)\rho_c>0$, and
-$\Lambda>0$ forces $\rho_c>0$, so $r'(p)>0$. This is (ii). Suppose
-$\Lambda<0$. Then $\rho_c<0$ and therefore $r'(p)>0$. This is (iii). Since $r$ and $\theta$ are positive, the handling-cost and tax
-comparisons follow the same logic.
+The three regimes above give the direct statements. For the converses,
+$0<\Lambda<1$ forces $\rho_c>0$ by positive incidence and $r'(p)\rho_c<0$,
+so $r'(p)<0$. This is (i). $\Lambda>1$ forces $r'(p)\rho_c>0$ and $\rho_c>0$,
+so $r'(p)>0$. This is (ii). $\Lambda<0$ forces $\rho_c<0$ and therefore
+$r'(p)>0$. This is (iii). Since $r$ and $\theta$ are positive, the
+handling-cost and tax comparisons follow the same logic.
+\end{proof}
+
+The sign of the ex-post term depends on the relative strength of the two
+channels, and it is not monotone. When the selection channel is stronger,
+supply still slopes up and pass-through is positive. The higher price screens
+out consumers with a high return probability, the return rate falls, and the
+ex-post term is a gain. When the behavioral channel dominates but supply is
+not yet both downward sloping and more elastic than demand in absolute value,
+pass-through remains positive. The higher price raises the return probability
+of the remaining consumers, the return rate rises, and the ex-post term is a
+loss. When the behavioral channel is strong enough that supply is both
+downward sloping and more elastic than demand in absolute value, pass-through
+is negative. The lower price lowers the return probability of the remaining
+consumers, the return rate falls, and the ex-post term is again a gain.
+Result~\ref{res:expost-r} states these three cases as thresholds on $r'(p)$.
+\begin{result}[Thresholds for the ex-post term]
+\label{res:expost-r}
+At a zero tax, let
+\begin{equation}
+  r'_0
+  \equiv
+  \frac{1-r(p)}{p+h},
+  \qquad
+  \bar{r}'
+  \equiv
+  \frac{1-r(p)-D'(p)/S'(\mu)}{p+h}.
+  \label{eq:r-thresholds}
+\end{equation}
+Then $0<r'_0<\bar{r}'$. For the ex-post term $-Q(p+h)r'(p)\rho_c$,
+\begin{enumerate}
+\item[(i)] if $r'(p)<0$, supply slopes up, $\rho_c>0$, and the term is a gain;
+\item[(ii)] if $0<r'(p)<\bar{r}'$, then $\rho_c>0$ and the term is a loss.
+Supply slopes up when $r'(p)<r'_0$ and slopes down when
+$r'_0<r'(p)<\bar{r}'$;
+\item[(iii)] if $r'(p)>\bar{r}'$, supply slopes down and is more elastic
+than demand in absolute value, $\rho_c<0$, and the term is a gain.
+\end{enumerate}
+\end{result}
+\begin{proof}
+At a zero tax, $\mu_p^0=1-r-(p+h)r'=(p+h)(r'_0-r')$. The supply elasticity
+has the sign of $\mu_p^0$, so supply slopes up when $r'<r'_0$ and slopes down
+when $r'>r'_0$.
+Supply slopes down and is more elastic than demand in absolute value when
+$\varepsilon_S<\varepsilon_D<0$. The demand elasticity is negative. At the
+equilibrium $S=D$, the gap $\varepsilon_S-\varepsilon_D$ has the sign of
+$S'\mu_p^0-D'$, the denominator of $\rho_c$ in \eqref{eq:rho-links}.
+Substituting $\mu_p^0$ gives $S'(p+h)(\bar{r}'-r')$. The factor $S'(p+h)$ is
+positive, so this gap and $\rho_c$ are negative when $r'>\bar{r}'$.
+Since $-D'(p)/S'(\mu)>0$, $\bar{r}'>r'_0$.
 \end{proof}
 
 For the tax, adding platform revenue cancels the ex-ante rectangle and leaves
