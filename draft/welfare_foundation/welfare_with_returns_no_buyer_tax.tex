@@ -510,7 +510,7 @@ Handling cost scales this change by $r$, and the tax scales it by $\theta$.
 \end{equation}
 
 Freezing the return rate separates the ex-ante purchase margin
-from an ex-post term on the keep or return margin. With $r'(p)=0$, the factor
+from the ex-post keep-or-return margin. With $r'(p)=0$, the factor
 $\Lambda$ equals one. A unit production-cost increase then shifts supply up by
 one dollar at every quantity. The price changes in consumer and producer
 surplus cancel. Joint surplus then falls by the extra dollar of production
@@ -535,7 +535,7 @@ $-Q\,r'(p)\rho_c\bigl[p+h-(1-\beta)t\bigr]$, scaled by $r$ or by $\theta$ for th
 \end{align}
 \end{result}
 
-The ex-post term offsets the ex-ante loss when $0<\Lambda<1$, amplifies it when
+The ex-post margin offsets the ex-ante loss when $0<\Lambda<1$, amplifies it when
 $\Lambda>1$, and reverses it when $\Lambda<0$. Because $dW/dc=-Q\Lambda$, joint surplus falls when
 $\Lambda$ is positive and rises when $\Lambda$ is negative.
 Result~\ref{res:incidence-ratio} says that the two surpluses move together.
@@ -543,19 +543,19 @@ They fall when $\rho_c>0$ and rise when $\rho_c<0$, so $\Lambda$ has the same
 sign as $\rho_c$.
 
 When pass-through is positive, $r'(p)$ decides whether the ex-post
-term offsets or amplifies the ex-ante loss. When the selection channel dominates,
+margin offsets or amplifies the ex-ante loss. When the selection channel dominates,
 $r'(p)<0$, so $\mu_p>0$. The higher list price screens out frequent
 returners, the return rate falls, and the effective marginal revenue
-improves. The ex-post term is then a gain, and it
+improves. The ex-post margin is then a gain, and it
 cuts the loss from $Q$ to $Q\Lambda$ with $0<\Lambda<1$. When the behavioral
 channel dominates, $r'(p)>0$, so $\mu_p<1$. The higher list price makes
 keeping less attractive, the return rate rises, and the effective marginal
-revenue worsens. The ex-post term is then a further loss, and it raises the
+revenue worsens. The ex-post margin is then a further loss, and it raises the
 loss from $Q$ to $Q\Lambda$ with $\Lambda>1$. In both cases the gap from the ex-ante loss is larger when the return rate
 responds more strongly to the price, or when a return is more costly to
 handle.
 
-When pass-through is negative, the ex-post term reverses the ex-ante loss and
+When pass-through is negative, the ex-post margin reverses the ex-ante loss and
 joint surplus rises. Result~\ref{res:negative-pt} says that negative
 pass-through occurs only when the behavioral channel dominates. In this
 case, a lower price makes keeping more attractive, so the return rate falls
@@ -563,7 +563,7 @@ and the seller pays the return cost on fewer units. When that saving outweighs
 the lower revenue on kept units, effective marginal revenue rises as the
 price falls, and supply slopes down. The behavioral effect is so strong that
 a lower price raises supply by more than demand and closes the excess-demand
-gap. The ex-post term is then a gain, and it turns the loss of $Q$ into a
+gap. The ex-post margin is then a gain, and it turns the loss of $Q$ into a
 gain of $Q|\Lambda|$. The gain is larger than the ex-ante loss when the return
 rate responds strongly to the price, when the return cost is high (large
 $\beta$ and $h$), or when the magnitude of pass-through is large.
@@ -596,18 +596,18 @@ $r'(p)>0$. This is (iii). Since $r$ and $\theta$ are positive, the
 handling-cost and tax comparisons follow the same logic.
 \end{proof}
 
-The sign of the ex-post term depends on the relative strength of the two
+The sign of the ex-post margin depends on the relative strength of the two
 channels, and it is not monotone. When the selection channel is stronger,
 supply still slopes up and pass-through is positive. The higher price screens
 out consumers with a high return probability, the return rate falls, and the
-ex-post term is a gain. When the behavioral channel dominates but supply is
+ex-post margin is a gain. When the behavioral channel dominates but supply is
 not yet both downward sloping and more elastic than demand in absolute value,
 pass-through remains positive. The higher price raises the return probability
-of the remaining consumers, the return rate rises, and the ex-post term is a
+of the remaining consumers, the return rate rises, and the ex-post margin is a
 loss. When the behavioral channel is strong enough that supply is both
 downward sloping and more elastic than demand in absolute value, pass-through
 is negative. The lower price lowers the return probability of the remaining
-consumers, the return rate falls, and the ex-post term is again a gain.
+consumers, the return rate falls, and the ex-post margin is again a gain.
 Result~\ref{res:expost-r} states these three cases as thresholds on $r'(p)$.
 \begin{result}[Thresholds for the ex-post term]
 \label{res:expost-r}
@@ -664,7 +664,7 @@ $t\,dQ/dt$, the underprovision caused by the wedge between the consumer's
 value and the production cost.
 With returns, the ex-ante term $-Q\theta$ is still a transfer to the platform.
 What remains is the ex-post term and the tax term. Expanding the tax term
-and cancelling the terms in $(1-\beta)$, we have
+and cancelling the refunded tax terms in $(1-\beta)$, the remaining terms are
 \[
   -Q\theta\,r'(p)\rho_c(p+h)
   +
@@ -676,16 +676,58 @@ The tax weight is $\theta=1-(1-\beta)r$, and the tax moves the return rate
 through the price, so $d\theta/dt=-(1-\beta)r'(p)\rho_t$.
 Substituting both gives
 $d(Q\theta)/dt=\rho_t[\theta D'(p)-(1-\beta)Q r'(p)]$.
-Added to the ex-post term, the pieces in $(1-\beta)$ cancel.}
+Added to the ex-post term, the pieces in $(1-\beta)$ cancel. A returned sale
+pays the platform only part of the tax. The seller recovers the rest, and
+the platform loses the same amount. These are the same dollars, so they
+cancel in social surplus. What remains is the real cost of a return.}
 \]
 
-A higher $\beta$ makes the tax more costly for the seller. The supply curve
-then shifts inward by more, and both the ex-post term and the tax term scale
-with $\beta$. Result~\ref{res:expost-r} separates the cases. A higher $\beta$
-amplifies the gain when the selection channel dominates. It amplifies the gain
-again when the behavioral channel is strong enough that pass-through is
-negative. It amplifies the loss when the behavioral channel dominates and
-pass-through stays positive.
+The first term captures the ex-post keep-or-return margin without the refunded
+part of the tax. Because the refunded tax $(1-\beta)t$ is a pure transfer
+between the seller and the platform, only the real return cost $p+h$ enters
+social surplus. Since $Q$ and $p+h$ are positive, whether the ex-post margin
+is a gain or a loss depends only on the sign of the return-rate change
+$r'(p)\rho_t = \theta r'(p)\rho_c$. The second term captures the tax wedge on
+the ex-ante purchase margin. On existing units, the tax is a pure transfer to
+the platform. For marginal units, the buyer is indifferent at $p$ and the
+seller's effective marginal revenue equals marginal cost, so a small change
+in quantity leaves private surplus unchanged and alters social surplus only
+through the expected tax $t\theta$ per unit. Multiplying $t\theta$ by the
+change in units purchased $D'(p)\rho_t = \theta\rho_c D'(p)$ gives the
+second term. Because $D'(p)<0$, the ex-ante margin is negative when
+pass-through is positive and quantity falls, and it is positive when
+pass-through is negative and quantity rises.
+
+By Result~\ref{res:expost-r}, the signs of the two margins and whether they
+offset or reinforce each other depend on how strong the behavioral channel is
+relative to the selection channel. When the behavioral channel is weak,
+pass-through is positive and quantity falls, so the ex-ante margin is a loss.
+At the same time, the higher price screens out high-return buyers, so the
+return rate falls and the ex-post margin is a gain. The two margins therefore
+trade off. When the behavioral channel is intermediate, pass-through remains
+positive and quantity still falls, while the return rate now rises with the
+price. Both the ex-ante margin and the ex-post margin are losses, so they
+reinforce each other. When the behavioral channel is very strong, pass-through
+turns negative, so both the price and the return rate fall while quantity
+rises. Both margins are then gains, and they again reinforce each other.
+
+These signs also determine whether letting the platform keep more of the tax
+on returns raises or lowers social surplus. At a positive tax with $r>0$,
+raising $\beta$ lowers the seller's effective marginal revenue on returns and
+shifts supply inward, just like raising the tax $t$. Because the extra
+retained tax on existing returns is a pure transfer to the platform, raising
+$\beta$ changes social surplus in the same direction as raising the
+tax.\footnote{Since $\mu_\beta=-rt$, $\beta$
+shifts pass-through and joint surplus like a handling-cost shock scaled by
+$t$, giving $\rho_\beta=rt\rho_c$ and $dW/d\beta=-Qrt\Lambda$. For revenue
+$G=tQ\theta$, $dG/d\beta=tQr+t\theta D'(p)\rho_\beta-t(1-\beta)Qr'(p)\rho_\beta$.
+Adding the two cancels $Qrt$ and the $(1-\beta)t$ terms, leaving
+$dV/d\beta=(tr/\theta)\,dV/dt$.}
+When the behavioral channel is very strong, both margins are gains, so a
+higher $\beta$ raises social surplus. When the behavioral channel is
+intermediate, both margins are losses, so a lower $\beta$ reduces the
+welfare loss. When the behavioral channel is weak, the ex-ante loss and the
+ex-post gain trade off, so the effect of $\beta$ is ambiguous.
 
 %=============================================================================
 \section{Global Incidence}
