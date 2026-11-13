@@ -1,0 +1,454 @@
+\documentclass[11pt]{article}
+
+\usepackage{amsmath,amssymb}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\usepackage[round,authoryear]{natbib}
+
+\title{Literature Review Detailed:\\
+Key Results and Intuition}
+\author{Draft notes}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+%=============================================================================
+\section{Introduction}
+%=============================================================================
+
+A platform referral fee acts like a tax on the sale.  The platform charges
+the seller a share of the transaction price, and that charge can be passed
+through into the price the buyer pays.  Earlier work asks whether a platform
+should be allowed to charge this fee.  \citet{wang_advalorem_2018} study an
+ad valorem fee and connect it to third-degree price discrimination.  They
+evaluate the welfare consequences of banning such fees.  The use of ad
+valorem fees generally increases welfare, including in calibrated versions of
+the model based on data from Amazon's marketplace and Visa's signature debit
+cards.
+
+%=============================================================================
+\section{Platform fees}
+%=============================================================================
+
+\subsection{Should Platforms Be Allowed to Charge Ad Valorem Fees? (Wang \& Wright, 2018)}
+
+\citet{wang_advalorem_2018} ask whether a platform should be allowed to charge
+a fee that depends on the transaction price.
+
+\begin{itemize}
+    \item \textbf{Background.}
+    Marketplaces, card networks, and booking platforms charge sellers a
+    percentage of the price even though the platform's cost is largely fixed
+    or per transaction.  Critics treat that fee as not cost-reflective and
+    ask whether it should be banned.
+
+    \item \textbf{Setting.}
+    A monopoly platform carries many goods that differ in cost and value.
+    Sellers of a given good are identical Bertrand competitors, so the model
+    shuts down double marginalization.  Demand belongs to the generalized
+    Pareto class, which has constant curvature of inverse demand.
+
+    \item \textbf{Problem.}
+    What happens to welfare if a policymaker bans any fee that depends on
+    transaction value, while leaving the level of the fee unregulated?
+
+    \item \textbf{Methodology.}
+    Banning the ad valorem fee is the same problem as banning third-degree
+    price discrimination across goods.  The paper compares welfare
+    analytically for two goods and for a continuum of goods, then calibrates
+    the model to the distribution of prices and sales on Amazon's marketplace
+    and to Visa signature debit transactions.
+
+    \item \textbf{Perspective.}
+    The paper evaluates social welfare.  The platform maximizes profit.  A
+    tax-revenue-maximizing government is formally the same agent.
+
+    \item \textbf{Ad valorem fees raise welfare when goods differ in value.}
+    \begin{itemize}
+        \item \textbf{Key result:} Within this demand class, welfare is higher
+        when the platform may use an ad valorem fee if demand is exponential
+        or log-convex, and also if demand is log-concave and the goods are
+        sufficiently dispersed in cost and value.  When goods are close,
+        discrimination raises welfare under log-convex demand and can lower it
+        under log-concave demand.
+        \item \textbf{Intuition:} The platform's fee is separate from the
+        price the seller sets.  A single dollar fee is set near the large fee
+        that is best for the expensive good, because cutting it gives up
+        revenue on every expensive sale.  Under log-convex demand, sales never
+        hit zero, so the cheap good still sells a trickle, and that trickle is
+        too small to justify the cut.  A percentage fee leaves seller prices
+        unchanged and makes the dollar fee large on the expensive good and
+        small on the cheap good.  Sales of the cheap good recover, and that
+        expansion is the welfare gain.
+        \item \textbf{Log-concave demand, when values differ a lot:}
+        Sales hit zero once the fee passes a threshold.  The fee that suits
+        the expensive good is already past that threshold for the cheap good,
+        so the cheap good does not sell.  Cutting the uniform fee far enough
+        to run a low-fee, high-sales strategy on the cheap good gives up too
+        much on every expensive sale, so the uniform fee stays high.  A
+        percentage fee keeps the high dollar fee on the expensive good and
+        puts a low dollar fee on the cheap good.  The cheap good's market
+        opens.  When values are close instead, both goods already sell, and
+        the percentage fee mostly moves buyers from the expensive good to the
+        cheap one.
+    \end{itemize}
+
+    \item \textbf{Calibration.}
+    \begin{itemize}
+        \item \textbf{Key result:} On the skewed distributions of Amazon DVD
+        sales and Visa signature debit transactions, banning ad valorem fees
+        lowers welfare in most cases.
+        \item \textbf{Intuition:} Real platforms trade many goods whose prices
+        and sales are highly skewed.  A uniform fee then falls especially
+        hard on low-cost, low-value goods.
+    \end{itemize}
+
+    \item \textbf{Policy.}
+    A ban on ad valorem fees, adopted so that fees track cost without a
+    regulator setting the fee level, tends to reduce welfare.  The same logic
+    says that a revenue-maximizing government raises welfare by using an ad
+    valorem tax rather than a unit tax.
+\end{itemize}
+
+\subsection{Asymmetric Price Competition on Hybrid Platforms: Theory and Evidence from Amazon (Eisfeld, Yan, \& Yu, 2026)}
+
+\citet{eisfeld_asymmetric_2026} study a platform that sells on its own
+marketplace and charges third-party sellers an ad valorem commission.
+
+\begin{itemize}
+    \item \textbf{Background.}
+    Hybrid platforms such as Amazon compete with the third-party sellers from
+    whom they collect a commission.  Commission rates can be large.  Antitrust
+    cases have focused on self-preferencing and data use.  This paper asks how
+    the commission itself changes price competition.
+
+    \item \textbf{Setting.}
+    The platform and third-party sellers set retail prices.  The commission is
+    taken as given.  The empirical setting is Amazon's U.S.\ marketplace,
+    including entry and exit of offers and commodity-cost shocks in coffee and
+    cocoa.
+
+    \item \textbf{Problem.}
+    Does platform entry put as much downward pressure on third-party prices as
+    entry by another third-party seller, and do common cost shocks pass
+    through more strongly for third-party sellers than for the platform?
+
+    \item \textbf{Methodology.}
+    An oligopoly model isolates two channels of the ad valorem commission.
+    Third-party sellers face a double markup.  The platform earns a share of
+    third-party revenue, so it internalizes diversion toward those sellers.
+    The empirical part uses event studies of entry and exit and distributed-lag
+    pass-through of coffee- and cocoa-bean prices.
+
+    \item \textbf{Perspective.}
+    The paper is a positive study of pricing incentives.  It does not rank
+    commission regimes by social welfare.  That comparison is left for later
+    structural work.
+
+    \item \textbf{Platform entry presses third-party prices less than third-party entry.}
+    \begin{itemize}
+        \item \textbf{Key result:} Amazon entry is followed by a 6 percent
+        fall in the prices of third-party sellers of the same product, and
+        Amazon exit by a 3 percent rise.  Third-party prices move modestly
+        more after third-party entry or exit than after Amazon entry or exit.
+        \item \textbf{Intuition:} Platform entry still intensifies competition
+        relative to no entry.  Revenue sharing offsets part of the platform's
+        advantage from avoiding the double markup, so the platform competes
+        less aggressively than an otherwise identical third-party seller.
+    \end{itemize}
+
+    \item \textbf{Third-party sellers pass through common costs more than the platform.}
+    \begin{itemize}
+        \item \textbf{Key result:} Commodity-cost pass-through is higher for
+        third-party sellers than for Amazon at every horizon in coffee, with
+        a statistically significant gap at 12, 24, and 48 weeks.  Cocoa has
+        the same ordering, significant at 48 weeks.  Amazon's own response is
+        often indistinguishable from zero or negative.
+        \item \textbf{Intuition:} The double markup amplifies a common cost
+        shock for third-party sellers.  The platform, which is vertically
+        integrated on its own sales and also earns commission revenue, raises
+        its retail price by less.  That cushions buyers on the platform's own
+        offers when costs rise, and it puts more of the cost increase onto
+        third-party prices.
+    \end{itemize}
+\end{itemize}
+
+%=============================================================================
+\section{Public finance and deadweight loss}
+%=============================================================================
+
+\subsection{The Measurement of Waste (Harberger, 1964)}
+
+\citet{harberger_measurement_1964} develops a linearized framework for measuring
+aggregate efficiency losses from taxes and related price distortions.  The paper
+emphasizes six results.
+
+\begin{itemize}
+    \item \textbf{Measuring deadweight loss ($\Delta W$) as a policy tool}
+    \begin{itemize}
+        \item \textbf{Key result:} Deadweight loss can be calculated with a
+        linearized aggregate framework that measures efficiency changes across
+        distorted markets:
+        \[
+        \Delta W = \frac{1}{2} \sum_{i} \sum_{j} R_{ij} T_i T_j.
+        \]
+        \item \textbf{Intuition:} Rather than only asking whether an allocation
+        is Pareto optimal, policymakers need a quantitative measure of
+        efficiency loss to weigh tax reforms, tariffs, and other real-world
+        trade-offs.
+    \end{itemize}
+
+    \item \textbf{Neutrality of uniform value-added taxes}
+    \begin{itemize}
+        \item \textbf{Key result:} An equal percentage tax on value added across
+        all productive activities yields zero net efficiency loss:
+        \[
+        \sum_{j} v_j R_{ij} = 0
+        \implies
+        \Delta W = 0
+        \quad\text{when } t_i = t \text{ for all } i.
+        \]
+        \item \textbf{Intuition:} Uniform value-added taxation leaves relative
+        price ratios across activities unchanged, so it does not induce
+        distortionary factor substitution.
+    \end{itemize}
+
+    \item \textbf{Equivalence of product taxes and value-added taxes}
+    \begin{itemize}
+        \item \textbf{Key result:} Product taxes can be translated into
+        equivalent taxes on value added when intermediate inputs enter output
+        in fixed proportions.
+        \item \textbf{Intuition:} Taxing final output creates the same
+        behavioral incentives and equilibrium as taxing all factor inputs
+        (labor, capital, materials) at the same effective rate.
+    \end{itemize}
+
+    \item \textbf{Cross-tax distortions and welfare-improving tax increases}
+    \begin{itemize}
+        \item \textbf{Key result:} Introducing or raising a tax on a good can
+        raise total social welfare if that good is a substitute for another
+        already heavily taxed good:
+        \[
+        \frac{\partial (\Delta W)}{\partial T_k} > 0
+        \quad\text{when } T_j > 0 \text{ and } R_{kj} > 0.
+        \]
+        \item \textbf{Intuition:} If Good~$A$ is heavily taxed, consumers
+        substitute toward Good~$B$.  Taxing Good~$B$ shifts demand back toward
+        Good~$A$, reducing the preexisting distortion in Sector~$A$ by enough
+        to offset the new distortion in Sector~$B$.
+    \end{itemize}
+
+    \item \textbf{Distortion of the labor--leisure choice}
+    \begin{itemize}
+        \item \textbf{Key result:} A uniform tax on all market labor is
+        non-neutral unless leisure (non-market activity) can also be taxed:
+        \[
+        \sum_{j=1}^{n+1} M_{ji} = 0.
+        \]
+        \item \textbf{Intuition:} Leisure is hard to tax.  Taxing all market
+        labor therefore induces substitution into untaxed leisure and creates
+        an efficiency loss in labor supply.
+    \end{itemize}
+
+    \item \textbf{Capital--labor cross-factor interaction effects}
+    \begin{itemize}
+        \item \textbf{Key result:} When taxes distort both capital ($B_i$) and
+        labor ($E_i$), cross-factor interaction terms
+        ($H_{ij}=\partial K_i/\partial E_j$) must be included to measure total
+        efficiency loss:
+        \[
+        \Delta W
+        = \frac{1}{2}\sum_{i}\sum_{j} M_{ij} E_i E_j
+        + \frac{1}{2}\sum_{i}\sum_{j} G_{ij} B_i B_j
+        + \sum_{i}\sum_{j} H_{ij} B_i E_j.
+        \]
+        \item \textbf{Intuition:} A tax on capital in one industry reallocates
+        both capital and labor across sectors.  Ignoring how labor responds to
+        capital taxation (and vice versa) misstates total efficiency loss.
+    \end{itemize}
+\end{itemize}
+
+\subsection{Salience and Taxation: Theory and Evidence (Chetty, Looney, \& Kroft, 2009)}
+
+\citet{chetty_salience_2009} show that consumer responses to taxation depend on
+whether the tax is salient at the point of choice.  The paper combines a field
+experiment with evidence from alcohol taxation to argue that standard tax
+theory misses an important channel when buyers do not fully perceive
+non-salient taxes.
+
+\begin{itemize}
+    \item \textbf{Underreaction to non-salient taxes}
+    \begin{itemize}
+        \item \textbf{Key result:} Consumers consistently underreact to taxes
+        that are not explicitly included in posted price tags.
+        \item \textbf{Intuition:} Standard models assume buyers continuously
+        compute the full final price.  In practice, doing so requires active
+        mental effort, so many consumers fail to fully incorporate taxes that
+        are added only at checkout.
+    \end{itemize}
+
+    \item \textbf{The salience parameter $\theta$}
+    \begin{itemize}
+        \item \textbf{Key result:} The paper summarizes attention with a
+        salience parameter $\theta \in [0,1]$, so consumers behave as if they
+        face the perceived price $\tilde{p}=p+\theta t$ rather than the true
+        price $p+t$.
+        \item \textbf{Intuition:} When $\theta=1$, the model collapses to the
+        standard full-optimization benchmark and consumers treat a tax increase
+        like a base-price increase.  When $\theta=0$, consumers ignore the tax
+        completely while shopping.  The empirically relevant case is
+        $0<\theta<1$, where consumers notice the tax but underreact to it.
+    \end{itemize}
+
+    \item \textbf{Grocery store field experiment}
+    \begin{itemize}
+        \item \textbf{Key result:} Posting tax-inclusive shelf tags reduced
+        demand by about 8 percent.
+        \item \textbf{Intuition:} Consumers rely heavily on the visible shelf
+        price as a decision shortcut.  Making the tax visible at the moment of
+        choice changes behavior because it converts a hidden cost into an
+        immediately attended price signal.
+    \end{itemize}
+
+    \item \textbf{Excise tax versus sales tax impact}
+    \begin{itemize}
+        \item \textbf{Key result:} State-level increases in alcohol excise
+        taxes, which are embedded in posted prices, reduced beer consumption by
+        an order of magnitude more than equivalent increases in general sales
+        taxes, which are added at checkout.
+        \item \textbf{Intuition:} Taxes that are already incorporated in shelf
+        prices affect the price consumers actually see while shopping, whereas
+        register-added taxes remain less salient until after most purchase
+        decisions are made.
+    \end{itemize}
+
+    \item \textbf{Economic incidence depends on statutory form}
+    \begin{itemize}
+        \item \textbf{Key result:} Economic incidence depends on the statutory
+        form of the tax once salience matters, so excise taxes and register-added
+        sales taxes need not place the same burden on consumers and producers.
+        \item \textbf{Intuition:} When a tax is non-salient, consumers do not
+        reduce demand as much as they would under full attention.  Because
+        quantity demanded remains artificially high, producers do not need to
+        cut pre-tax prices as much to sustain sales, and inattentive consumers
+        bear a larger share of the burden.  This overturns the standard view
+        that statutory form is irrelevant for incidence.
+    \end{itemize}
+
+    \item \textbf{Incidence formula adjustment under inattention}
+    \begin{itemize}
+        \item \textbf{Key result:} In the standard model, the producer burden
+        depends on relative elasticities, with
+        $\text{Burden on producers} \propto \epsilon_D/(\epsilon_S+\epsilon_D)$.
+        In the behavioral model, the demand response to a tax is attenuated to
+        $\theta \epsilon_D$.
+        \item \textbf{Intuition:} Because consumers react only to the salient
+        fraction of the tax, demand falls less after a tax increase than a
+        standard model predicts.  Producers therefore do not need to lower
+        pre-tax prices as much, so more of the tax is shifted onto consumers.
+        In the limiting case $\theta=0$, demand does not respond to the tax at
+        all and producers can pass through the full tax without absorbing any
+        of the burden through lower prices.
+    \end{itemize}
+
+    \item \textbf{Decision miscalculation and overconsumption}
+    \begin{itemize}
+        \item \textbf{Key result:} Consumers choose based on a perceived price
+        $\tilde{p}=p+\theta t$ with $\theta<1$, rather than the true tax-inclusive
+        price $p+t$, so non-salient taxes can generate excess burden even if
+        observed demand barely moves.
+        \item \textbf{Intuition:} Consumers buy extra units whose marginal
+        benefit is below their true marginal cost because the tax is only
+        partially internalized at the time of choice.  Section~V of the paper
+        formalizes this point: decision errors themselves generate deadweight
+        loss, even when observed quantity responses are very small or zero.
+    \end{itemize}
+
+    \item \textbf{Deadweight-loss formula adjustment}
+    \begin{itemize}
+        \item \textbf{Key result:} Welfare loss from demand distortion shrinks
+        with tax inattention, so a useful generalized Harberger benchmark is
+        $\text{DWL}_{\text{behavioral}} \approx \tfrac12 pQ\epsilon_D \theta t^2$.
+        But total consumer welfare still falls because inattentive consumers
+        make costly decision errors even when observed demand changes very
+        little ($\Delta Q \approx 0$).
+        \item \textbf{Intuition:} Standard tax analysis measures harm mainly by
+        how many purchases are canceled.  When taxes are hidden, a small
+        $\Delta Q$ does not mean the tax is harmless; it means consumers are
+        being induced to buy goods whose true cost exceeds their value.
+        Welfare losses therefore arise through optimization mistakes and
+        unexpected budget squeezes, not only through the usual demand-drop
+        channel.
+    \end{itemize}
+
+    \item \textbf{Unexpected budget squeezes and suboptimal cutbacks}
+    \begin{itemize}
+        \item \textbf{Key result:} Non-salient taxes can worsen welfare by
+        causing consumers to violate their intended budget allocation while
+        browsing and then forcing unplanned adjustments at checkout.
+        \item \textbf{Intuition:} Because the omitted tax is not reflected in
+        the posted price, consumers do not initially choose bundles that satisfy
+        their true budget constraint $Z=(p+t)x+y$.  Once the tax is charged,
+        they must cut spending on other goods unexpectedly, ending up with a
+        worse overall consumption bundle than they would have chosen under full
+        information.
+    \end{itemize}
+\end{itemize}
+
+%=============================================================================
+\section{Product returns and pricing}
+%=============================================================================
+
+\subsection{Optimal Pricing and Product Returns (Cakmak, Bronnenberg, \& Klein, 2022)}
+
+\citet{cakmak_optimal_2022} study how a seller should set prices when buyers can return the good and the return rate depends on the price. The claims below are the paper's own estimates. The descriptive price--return link is in Section~4, the elasticity gap is in Section~7.3, and the equilibrium changes are in Table~6 and the conclusion.
+
+\begin{itemize}
+    \item \textbf{Background.}
+    Online apparel is often returned. Historical retail return rates are about 5 to 8 percent. A typical e-commerce rate is 15 to 20 percent, and apparel can reach about 40 percent. The authors cite industry figures that only 20 to 40 percent of return costs are recovered. Sellers often price from orders. Orders are observed before the return is linked to the sale, and the usual pricing formula treats the sale as final.
+
+    \item \textbf{Setting.}
+    Sellers on a large Turkish apparel marketplace set prices. Buyers order, then keep or return. The seller pays a constant handling cost on each return. The structural exercise is the top 100 women's jeans, which account for the products in the pricing table. Five apparel categories appear in the descriptive evidence. Prices in the raw data are rescaled.
+
+    \item \textbf{Problem.}
+    How should the multi-product pricing rule change once kept sales and return costs replace orders, and which of the two forces dominates the price?
+
+    \item \textbf{Methodology.}
+    Transactions and clickstreams cover 105 days from June 29 to October 11, 2019, about 1.4 million users and 1.3 million transactions. Orders are a multinomial logit with observed consideration sets from five days of clickstream data. Buyers without clickstreams get simulated consideration sets drawn from that distribution. Returns are a binary logit. The price coefficient is identified from within-product price changes, which the authors attribute to seller experiments and sales campaigns, together with variation in choice sets. Marginal cost is recovered from the standard pricing rule under the assumption that observed prices ignore returns. The counterfactual then resolves a Nash equilibrium in which every firm uses the returns-adjusted rule. A one-firm best response, holding rivals' prices fixed, gives similar price changes.
+
+    \item \textbf{Perspective.}
+    The paper approaches the problem from the \textit{seller's} perspective, evaluating \textit{profit and equilibrium prices}. Welfare is not the object. The return policy and the handling cost are taken as given.
+
+    \item \textbf{Return rates differ across products and rise with price.}
+    \begin{itemize}
+        \item \textbf{Key result:} Among the 100 best-selling women's jeans, product return rates run from about 5 percent to about 46 percent. The market-level average in that category is about 21 percent unweighted and about 17 percent weighted by sales. A kernel regression of return rates on a product's price relative to its category mean shows a higher return rate for more expensive products. Over the interquartile range of those price deviations, the return rate is about 30 percent higher, or 4.7 percentage points. The same 30 percent gap appears when the regression uses only within-product price changes. In logits with product and week fixed effects, the price coefficient on the return decision stays positive. Better-rated products are less likely to be returned. The most common stated reason for a return is a size mismatch.
+        \item \textbf{Intuition:} A higher price raises the money the buyer gives up by keeping a poor fit, so the buyer is more willing to send the good back. The within-product evidence is the cleaner check, because the comparison is the same product sold at a lower price and at a higher price. Confirmation bias would have predicted the opposite sign. In these data the mismatch-cost effect is the one that shows up.
+    \end{itemize}
+
+    \item \textbf{Kept sales are more price-elastic than orders.}
+    \begin{itemize}
+        \item \textbf{Key result:} For the same 100 products, the elasticity of sales net of returns is 1 to 6 percent larger than the elasticity of orders, and about 2 percent larger on average. The introduction states the average gap as 2.1 percent.
+        \item \textbf{Intuition:} Kept sales equal orders times \(1-r(p)\). The elasticity of that product is the elasticity of orders minus \(p\,r'(p)/(1-r(p))\). With \(r'(p)>0\), the second term is positive and is subtracted, so kept sales respond more to price. Under their logit return function the add-on simplifies to \(\alpha_r\, r(p)\, p\), where \(\alpha_r\) is the price coefficient in the return logit. An elasticity fit to orders alone misses it and is biased toward zero.
+    \end{itemize}
+
+    \item \textbf{The handling-cost force dominates the markup force.}
+    \begin{itemize}
+        \item \textbf{Key result:} The introduction and conclusion report a counterfactual with handling cost set to zero. Equilibrium prices then fall by 1.5 percent on average, and by as much as 5 percent. That fall is only the extra elasticity. With the marketplace's handling cost, the conclusion reports prices higher by 2.1 percent on average. The authors decompose that into a 1.5 percent smaller markup and a 3.6 percent higher effective marginal cost. Table~6 is the with-cost equilibrium, at the firm level. The two large sellers, with 53 and 36 products, raise prices by 1.3 percent and 1.8 percent. Smaller sellers rise by more. The largest entry in the table is 7.9 percent, for a one-product seller. Products with higher baseline return rates get larger price increases.
+        \item \textbf{Intuition:} Revenue is earned on kept units. A higher price cuts orders and raises the return rate, so the quantity that earns the markup is more elastic and the optimal markup shrinks. That is the downward force, and it is the whole effect when handling cost is zero. Handling cost is the upward force. If a share \(r\) of orders comes back, each kept sale is bundled with \(r/(1-r)\) returns. That bundle sits next to production cost. A higher baseline return rate loads more handling cost onto each kept sale, which is why the price increase in Figure~6 rises with the product's return rate. In this market the bundled-cost term is the larger of the two.
+    \end{itemize}
+
+    \item \textbf{Orders and total return costs fall. Profit rises a little.}
+    \begin{itemize}
+        \item \textbf{Key result:} In Table~6, initial orders fall by 3.2 percent and 2.4 percent at the two large sellers, and by as much as 22 percent at a one-product seller. Total return cost falls by 3.3 percent and 2.8 percent at the two large sellers. Profit rises by 0.42 percent and 0.40 percent there, and by 0.4 percent to 6.3 percent across all sellers in the table. The authors' sales-weighted average profit gain is 0.6 percent. Weighted return rates fall by 0.15 percent and 0.39 percent at the two large sellers and rise at the smaller ones, by as much as 1.7 percent.
+        \item \textbf{Intuition:} The higher price cuts orders, and that is what cuts the number of units shipped back. The return rate on the orders that remain can move either way. At the large sellers the mix shifts toward products with lower return rates, so their weighted return rate falls. At small sellers the higher price raises the return rate on the products they have. Either way, fewer orders mean less handling cost in total, and that cost saving is what raises profit.
+    \end{itemize}
+
+    \item \textbf{Managerial implication.}
+    A seller who prices from orders understates how elastic kept sales are. With handling costs shut off, the correction is a lower price, by about 1.5 percent in this market. Once the marketplace's handling costs are counted, the correction is a higher price, fewer orders, and lower total return cost. The two large sellers move by about 1 to 2 percent on price and about 0.4 percent on profit. The large price and profit changes in the table belong to sellers with one or two products.
+\end{itemize}
+
+\bibliographystyle{plainnat}
+\bibliography{references}
+
+\end{document}

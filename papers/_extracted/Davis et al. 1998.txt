@@ -1,0 +1,748 @@
+--- PAGE 1 ---
+Return Policies and the Optimal Level of
+“Hassle”
+Scott Davis, Michael Hagerty, and Eitan Gerstner
+Return policies vary significantly across retailers; some offer very generous return
+policies, while others impose many restrictions on returns. We employ an analytical model
+to help identify potential causes for variation among retailers’ return policies. A retailer
+is more likely to offer a low-hassle return policy when: 1) its products’ benefits cannot be
+consumed in a short period of time; 2) its product line offers opportunities for cross-
+selling; and 3) it can obtain a high salvage value for returned merchandise. Data collected
+from a variety of retail stores gives support to our theoretical predictions. © 1998
+Elsevier Science Inc.
+Keywords: Return policies; Money-back guarantees; Customer satisfaction
+JEL classification: M31, L15, D61
+“Once you have their money, you never give it back.” - First Ferengi Rule of Acquisition (From Star
+Trek: Deep Space Nine, episode “The Nagus”)
+“If they want their money back, give it to them.” - First Ferengi Rule of Acquisition (Revised)† (From
+the Star Trek: Deep Space Nine, episode “The Prophet Motive”)
+I. Introduction
+Return policies which allow consumers to easily return products for a refund are com-
+monly offered by retailers [Schmidt and Kernan (1985); Hart (1988); Davis et al. (1985);
+Moorthy and Srinivasan (1995)]. However, recently, retailers have begun to scale back
+generous return policies in favor of more restrictive ones. Longo (1995) has noted that:
+The easy, flexible return policies you’ve come to expect are quietly vanishing at many chain stores that
+sell home electronics, including Wal-Mart, Target, Best Buy, and Circuit City. Those retailers and others
+are cracking down on what they say are excessive home-electronics returns. So find out before you buy
+The first author is affiliated with Strategic Marketing Decisions, Sacramento, California; the second and third
+authors are affiliated with the University of California at Davis, Graduate School of Management, Davis,
+California.
+Address correspondence to: Dr. M. R. Hagery, University of California at Davis, Graduate School of
+Management, One Shields Avenue, Davis, CA 95616.
+Journal of Economics and Business 1998; 50:445– 460 0148-6195 / 98 / $19.00
+© 1998 Elsevier Science Inc., New York, New York PII S0148-6195(98)00013-7
+
+--- PAGE 2 ---
+a VCR, TV, computer or other high-tech item whether return policies where you shop have changed
+(Longo 1995, p. 103).
+Customer abuse and a harder line by manufacturers on returns were cited as the main
+reasons for tighter restrictions.
+These actions are not limited to the sales of home electronics. Recently, we conducted
+a survey of 133 stores in the Sacramento, California area. The survey shows that return
+policies vary significantly across different types of retailers. As shown in Table 1, some
+of the retailers surveyed (most often department stores) offered low-hassle return policies.
+Other retailers offered refunds with restrictions. These included strict time limits for
+returns, return of the original packaging materials, and acceptance of only those products
+which showed no visible signs of use. Finally, some retailers (most often single outlet
+stores) offered only store credit for returns, which is obviously inferior to a cash-back
+return, as it restricts consumers to redeeming the refund on other merchandise carried by
+the retailer.
+Why do some retailers offer a low-hassle return policy, while others impose many
+restrictions? Under what circumstances should a retailer offer a low-hassle return policy?
+This paper provides insights to these questions by explicitly considering the optimal level
+of hassle with a return policy when a retailer faces opportunistic returns such as those
+mentioned by Longo (1995).
+Earlier research has focused on product warranties by manufacturers to assure good
+product performance. Such policies usually promise to fix or replace defective products
+[Grossman (1981); Padmanabhan and Rao (1993); Menezes and Currim (1992); Lutz
+(1989); Mann and Wissink (1988, 1990)]. Return policies may also provide a way for a
+manufacturer or a retailer to vouch for product quality when customers cannot verify
+quality prior to purchase [Welling (1989); Moorthy and Srinivasan (1995); Shieh (1996)].
+Mann and Wissink (1988), Lutz (1989), and Welling (1989) showed that when unverifi-
+able consumer effort is required to maintain the product’s performance, the optimal policy
+is to refund only part of the purchase price. However, when the primary purpose of the
+warranty is quality signaling in the absence of consumer moral hazard in product
+maintenance, full refunds tend to be optimal [Moorthy and Srinivasan (1995); Sheih
+(1996)].
+More recently, researchers have explicitly considered money-back guarantee policies
+under which consumers are allowed to return merchandise for a full refund for any reason,
+even if the product or service fully performs its intended functions . In contrast to a
+manufacturer’s warranty, which allows returns if the product is defective, a refund policy
+allows a consumer to obtain a refund, even if the product or service fully performs its
+intended functions. When such a policy is offered, consumers may have an incentive to
+Table 1. Relative Frequencies of Different Refund Policies by Store Type
+Store Type
+Cash Back
+Store Credit OnlyNo Restrictionsa With Restrictions
+Department store chain ( n 5 10) 60% 40% 0%
+Specialty store chain ( N 5 60) 39% 44% 16%
+Single outlet specialty stores ( N 5
+61) 19% 37% 44%
+a May or may not require a receipt.
+446 S. Davis et al.
+
+--- PAGE 3 ---
+purchase merchandise, use it and return it, even if they are satisfied with the product
+[Longo (1995); Neuborne (1996)]. We refer to this behavior as moral hazard in con-
+sumption, as opposed to the typical use of the term “moral hazard” in the product warranty
+literature, which describes a consumer’s incentive to under-maintain products which are
+covered under warranty.
+Davis et al. (1995) modeled this “moral hazard in consumption” behavior. They
+showed that offering a full refund of the purchase price to consumers who claimed to be
+dissatisfied can be more profitable than selling the product, as is, if a seller has more
+ability to salvage an unsatisfactory product than the buyers. They treated the refund
+decision as dichotomous: whether or not to offer a full refund. They did not consider the
+possibility of imposing costs or hassles on consumers who return merchandise. The
+profitability of this practice is a key theme of this paper.
+There is a variety of ways a seller can increase the consumer’s cost of returning
+merchandise. As mentioned above, these might include refusal of items which are returned
+without receipts, original packaging, instructions, or accessories, time limits on returns, or
+disallowing returns of opened merchandise.
+An alternate approach to control for “moral hazard in consumption” would be to offer
+a partial refund or charge a restocking fee. Hess et al. (1996) observed that catalog
+marketers use a pricing scheme in which they charge a separate shipping and handling fee
+which is not refundable when a product is returned. This amounts to a partial refund
+because the full cost to the consumer is the purchase price plus the shipping and handling
+fee. These approaches differ from hassles in that they effectively involve a payment by
+consumers to the seller to accept returned merchandise. In contrast, hassles are costs
+imposed on consumers which do not involve cash transfers back to the sellers.
+Unfortunately, there has been almost no empirical research to test these differing
+theories. This paper narrows this gap by presenting an empirical study of return policies
+offered by 133 retailers. Of these, we found that none had a partial refund policy. It seems
+that empirically, the retail practice of offering a partial refund or charging a restocking fee
+is uncommon (aside from mail-order sellers). Instead, the most common way of control-
+ling for excessive returns is imposing some hassles or restrictions on consumers who wish
+to return merchandise.
+What are the advantages of imposing hassles as opposed to offering a partial refund?
+First, partial refunds impose a monetary cost which is readily noticeable and measurable
+by consumers. In contrast, the cost associated with hassles is more difficult to quantify and
+is therefore likely to be less negatively perceived by consumers. Further, consumers may
+view partial refunds as unfair because the store keeps the non-refundable portion.
+Moreover, under a partial refund, stores cannot advertise that they have a 100% money-
+back policy, which may have a negative impact on the seller’s image and consumer loyalty
+[Schmidt and Kernan (1985); Hart (1988)]. In contrast, sellers can impose other costs
+which make returns less attractive, yet still claim that they have a 100% money-back
+refund policy.
+Clearly, the evidence above indicates that most traditional retail stores offer full refund
+return policies with some degree of hassle on returns. Therefore, we will focus on this type
+of policy in our model. In Section II, we introduce a model which explicitly deals with the
+level of hassle that should be imposed with a full refund when consumers behave
+opportunistically. In Section III, we find that the profit-maximizing refund policy con-
+sisting of the optimal levels of hassle and price levels. In Section IV, we derive hypotheses
+concerning the circumstances under which low-hassle returns will exist. The model
+Return Policies and the Optimal Level of “Hassle” 447
+
+--- PAGE 4 ---
+predicts that retailers are more likely to offer a low-hassle return policy when: 1) they sell
+products with benefits which cannot be consumed in a short period of time; 2) their
+product line offers opportunities for cross-selling; and 3) they can obtain a high salvage
+value for returned merchandise. We test these hypotheses with survey data in Section V.
+The paper concludes with a summary of the model’s key findings, a discussion of related
+issues, and suggestions for future research.
+II. The Model
+The Retailer
+We will consider a monopolistic retailer who offers a full refund, and derive the optimal
+return policy consisting of the level of price and hassle which should be offered with the
+refund (the optimal return policy).
+1 The return policy is advantageous to consumers who
+are uncertain whether a purchased product will fit their needs. The retailer, on the other
+hand, can profit from such a policy if it has an advantage over consumers in salvaging a
+returned product, or if it can sell other merchandise when consumers return unsatisfactory
+products.
+The return policy is characterized by a set of restrictions imposed on consumers who
+return the product after a given trial period. To measure the negative impact of these
+restrictions on the consumer’s refund value, a hassle index, H, is used (we will later
+introduce a measure for this index in the empirical section).
+To simplify the analysis, we will consider a product that is typical of the entire product
+mix sold by the retailer. The retailer purchases this product at a wholesale price, W, and
+sells the product for a retail price, P. Retailers receive a salvage value, S, when a product
+is returned. This value reflects the retailer’s ability to resell the product or obtain credit
+from its suppliers.
+We assume that the retailer also has opportunities for cross-selling other products to
+consumers who return a previously-purchased product to the store. These opportunities
+arise because a trip to return merchandise was not originally planned and this additional
+trip provides an occasion for consumers to make additional impulse purchases [Hess and
+Gerstner (1987)]. The expected profit margin from cross-selling per product return is
+denoted by M. This cross-selling margin is likely to be greater when the store is large and
+offers a wide variety of products. We will now formalize the retailer’s profit maximization
+problem as a function of P and H.
+Consumers
+Each consumer plans to purchase the representative product. Prior to purchase, consumers
+are uncertain about the product’s fit with their tastes. We model this uncertainty by
+assuming that a representative consumer is facing a distribution of potential values which
+she might obtain after product trial. Let V be a random variable which represents the
+consumer’s potential value from the product. Consumers know the distribution of V, but
+no individual knows the exact value she will receive until she buys the product and tries
+1 A monopolistic framework allows us to isolate the incentive to provide full refund to unsatisfied consumers
+even in the absence of competitive pressure to do so, and it can be applied to a retail store which has a unique
+appeal because of a location advantage or a differentiated selection of merchandise.
+448 S. Davis et al.
+
+--- PAGE 5 ---
+it. Let F(V) be the cumulative distribution of V, and let f(V) be the corresponding density
+function. Prior to purchase, the consumer’s expected value from consuming the product
+over its useful life is:
+E@V# 5 E
+2`
+`
+Vf ~V!dV.
+Once the product is purchased and tried, the consumer observes the value she will
+receive during the product’s lifetime, which we will denote byv. During trial, she receives
+a portion, b, from the lifetime value of the product. The realized trial value to the
+consumer is bn. If the consumer decides to keep the product after the trial period, she will
+obtain a residual consumption value of (1 2 b)n.2
+If a consumer returns the product, the purchased price is refunded. However, the value
+of this refund to the consumer is reduced by the dollar value of the hassles incurred in
+claiming the refund.
+3 Consumers make buying and product return decisions to maximize
+their expected surplus (i.e., product value less all expenses involved).
+III. Optimal Return Policy
+The sequence of events in this market is described in Figure 1. The retailer chooses the
+price, P, and the level of hassle, H, to maximize its expected profits given the expected
+behavior by consumers. Given the retailer’s decisions, consumers decide whether or not
+to purchase the product. If they purchase the product, consumers observe how well the
+product fits their tastes and decide whether to keep the product or return it to the retailer
+2 The trial value can be modeled in the framework of a durable good product which is consumed at a constant
+rate per period. Let u be the value per period obtained by a given consumer. This value is discovered during the
+trial period T. Assume for simplicity that the value from the durable good is discounted from now to infinity at
+an interest rate of r. The total value, v, the consumer will receive if she keeps the product can be composed of
+the value that she gets during the trial period plus the value she gets after the trial period: v 5* O
+T ue2rtdt 1* T
+`
+ue2rtdt 5 1 2e2rT/ru 1 e2rT/ru . The transition from this model to the model above is obtained by defining
+b 5 1 2 e2rT and v 5 u/4.
+3 Returning a product to a store is costly even without the store’s hassle costs. To simplify the model, we
+normalized the dollar value of any costs of returning the product other than those imposed by the retailer to be
+equal to zero.
+Figure 1. The sequence of decisions and payoffs.
+Return Policies and the Optimal Level of “Hassle” 449
+
+--- PAGE 6 ---
+for a refund. When maximizing profit, the retailer considers the consumers’ decisions
+which are based on the surplus they expect to receive from a purchase. The expected
+surplus is influenced by the price, the likelihood that consumers will return the product,
+and the level of hassle associated with claiming a refund.
+4
+The Consumer’s Return Decision. A random consumer will return the product if the
+realized residual consumption value after trial, (1 2 b)n, is less than or equal to
+consumer’s value from claiming the refund: the refunded price minus the hassle involved,
+P 2 H. Therefore, the condition under which a random consumer will return the product
+is:
+n #
+P 2 H
+1 2 b . (1)
+Given the distribution, F(V), the probability that a consumer will return the product is:
+FF
+P 2 H
+1 2 b G. (2)
+Note that the probability of a return increases when the price increases and the level of
+hassle decreases. It follows that the probability that a consumer will keep the product is:
+1 2 FF
+P 2 H
+1 2 b G. (3)
+The Consumer’s Purchase Decision. A random consumer will purchase the prod-
+uct if her expected consumer surplus from purchase is non-negative. Before purchase,
+a consumer knows that she might find the product to be a poor fit and return it. In this
+case, she will obtain a value from trial but also will incur the return hassle. Let E[VuR]
+denote the expected product value conditional on returning the product. The expected
+consumer surplus conditional on returning the product is therefore the expected trial
+value conditional on returning the product,
+bE[VuR], less the cost of the hassle
+imposed on returns by the retailer.
+bE@VuR# 2 H. (4)
+Conversely, a consumer knows prior to purchase that she might find the product to be
+a good fit with her tastes and decide to keep the product. In this case, she will obtain the
+product value over its lifetime and pay the price. Let E[VuK] denote the expected product
+value conditional on keeping the product. The expected surplus of a consumer who
+decides to keep the product is equal to the expected product value conditional on keeping
+the product, E[VuR], less the price.
+E@VuK# 2 P. (5)
+The consumer’s expected surplus, E[U], before purchase is given by:
+4 For simplicity, we assume, as is common in economics, that the seller does not face liquidity constraints.
+This assumption might be limiting for small “mom and pop” stores because money-back policies may create a
+liquidity problem for them.
+450 S. Davis et al.
+
+--- PAGE 7 ---
+Expected Surplus 5 Probability of a return
+3 Expected surplus conditional on returning the product
+1 Probability of keeping the product
+3 Expected surplus conditional on keeping the product,
+which for given values of P and H is equal to:
+E@U~H, P!# 5 FF
+P 2 H
+1 2 b G ~bE@VuR# 2 H! 1 S1 2 FF
+P 2 H
+1 2 b GD~E@VuK# 2 P!.
+(6)
+Because all consumers have the same a` priori expectations in this model, they all have
+the same expected surplus and make the same decision regarding purchase. Therefore, to
+ensure sales, the retailer must choose a price and level of hassle which will provide a
+random consumer with a non-negative expected surplus.
+The Profit-Maximizing Return Policy: The retailer chooses the levels of hassle and
+price which will yield the highest profit. A consumer will keep the product with a
+probability given by equation (3), in which case the retailer obtains a margin of P 2 W.
+The probability the consumer will return the product is given in equation (2), in which
+case the retailer obtains a margin of S 2 W, plus an expected contribution from
+cross-selling, M. Therefore the retailer’s expected profit is:
+P~H, P! 5 S1 2 FF
+P 2 H
+1 2 b GD~P 2 W! 1 FF
+P 2 H
+1 2 b G~S 2 W 1 M!. (7)
+The retailer will choose the combination of price and hassle which maximizes the
+expected profit subject to the buying constraint which requires that equation (6) is
+non-negative. The profit-maximizing policy can be found using the Lagrangian optimi-
+zation method. In the next section, we will analyze the case in which F(V) is represented
+by a uniform distribution, which allows us to obtain closed-form solutions and more easily
+interpret theoretical predictions for empirical testing.
+IV. Sensitivity Analysis with a Uniform Distribution
+Assuming that F(V) is uniform over the interval [0, 1], we show in the Appendix that for
+an interior solution, the profit-maximizing hassle and price are given by the expressions:
+H* 5
+1
+9 @1 1 2b 1 3~M 1 S! 2 2 ÎZ#; (8)
+P* 5
+1
+9 @4 2 b 1 3~M 1 S! 1 ÎZ #, (9)
+Return Policies and the Optimal Level of “Hassle” 451
+
+--- PAGE 8 ---
+where Z is equal to (1 2 b)[6(M 1 S) 2 (2 1 b)]. The optimal hassle will be positive only
+if the combination of salvage value (S) and cross-selling margin (M) are sufficiently large
+relative to the consumer trial usage rate ( b) so that 6( M 1 S) $ (2 1 b) is satisfied. 5
+Taking partial derivatives with respect to the exogenous variables M, S, and b,w e
+found how the optimal values of price and hassle vary with these exogenous parameters
+(the Appendix gives the derivations). The directions of the predicted variations for internal
+solutions are given in Table 2.
+Impact of the Trial Value Parameter. Table 2 indicates that the optimal hassle will
+increase and the optimal price will decrease as the fraction of the product’s value
+consumed during trial,
+b, increases. When b is larger, consumers obtain a greater fraction
+of the product’s benefits during trial, the remaining benefits from keeping the product are
+smaller, and they are more motivated to return the product. To discourage excessive
+returns, the retailer will raise the hassle associated with its return policy. The price level
+should be lower because increased hassle reduces the consumer’s expected value from
+purchasing the product. The lower price also discourages returns because the consumer’s
+expected value from returning a product is reduced.
+Impact of Cross-Selling and Salvage Value. Table 2 suggests that the optimal hassle
+should decrease and the optimal price should increase when the cross-selling margin ( M)
+and salvage value ( S) increase. If the potential contribution from cross-selling and the
+retailer’s salvage value are larger, the cost to the retailer from accepting returned
+merchandise is relatively smaller. In such a case, the retailer will have less incentive to
+discourage returns, and will choose to impose less hassle on consumers who return
+merchandise. Why will the retailer charge a higher price? First, by providing a return
+policy with less hassle, the retailer is providing more value to consumers which can be
+captured through a higher price. Second, when the price is higher, consumers have a
+greater incentive to return the product, and returns are more profitable.
+The comparative statics summarized in Table 2 suggests three hypotheses:
+Retailers are more likely to have a low-hassle return policy and a high price level when:
+H
+1: Consumers cannot receive most of the benefits from their products during a short
+period of time ;
+H2: They have substantial opportunities for cross -selling; and
+5 There are two possible corner solutions: the retailer offers a hassle-free return policy ( H* equals zero) or
+the retailer refuses to offer refunds altogether. A hassle-free refund policy may prevail if M and S are very large
+relative to b. At the other extreme, a retailer may decide to not offer refunds at all. This policy will be sensible
+if b is very large relative to M and S.
+Table 2. Predicted Sensitivity of Hassle and Price to Exogenous Parameters
+Optimal Policy Parameter
+Exogenous Parameter
+Trial Value
+(b) Cross-Selling Margin ( M) Salvage Value ( S)
+Hassle (H*) 12 2
+Price (P*) 21 1
+452 S. Davis et al.
+
+--- PAGE 9 ---
+H3: They carry products for which they have a high salvage value .
+In the next section, we will describe the data and measures used to test these
+hypotheses.
+V. Empirical Findings
+Data and Measures
+To test the three hypotheses, we collected data and constructed measures ofH, P, b, M and
+S. The data were obtained through surveys of retailers in the Sacramento, California area.
+Specifically we obtained information concerning type of refund policies (cash-back or
+store credit), price levels relative to competitors, store characteristics, types and breadth
+of merchandise offered, and the means by which retailers salvage returns.
+We sampled retailers which were located in shopping centers and free-standing outlets.
+The shopping centers were selected at random from a list of all malls satisfying the
+following restrictions: they contained more than 40 stores and they were within a 20-mile
+radius of the University of California at Davis. Interviewers were assigned to nine
+shopping centers satisfying the stated criteria. Within each center, interviewers sampled
+stores by selecting every third door, counting from the left of the entrance, to a maximum
+of 20 stores in that shopping center. Doors were counted instead of stores in order to
+weight larger stores (with more doors) proportionate to their size.
+6
+A different sample of free-standing stores was used to ensure that we had representa-
+tion of a large variety of stores. They were selected by randomly sampling from a set of
+stores compiled from the Yellow Pages which also satisfied the travel constraint men-
+tioned above. Surveys were conducted during Spring and Summer to avoid the large
+returns and clearance sales held after Christmas. Of the 143 stores contacted in both
+phases of the sampling, 10 refused to cooperate. (The most common reason for refusal was
+a policy of never divulging operating information.) Thus, 133 surveys were completed and
+analyzed.
+7
+Upon entering a store, interviewers first observed the type and breadth of goods sold
+by the store and the posted return policy.8 They then introduced themselves to the manager
+and elicited estimates of price level relative to competing stores, and how returns are
+handled. The specific measures we used are described next.
+Hassle (H). To develop a measure of hassle, we observed five variables, h
+1–h5, which
+affect the value of a return policy to consumers. Each of the variables took a value of 1
+if the retailer’s policy reduced the consumer’s value relative to a no-hassle return policy,
+and 0 otherwise:
+6 Due to location and variations in product lines, most of the stores in our sample are likely to possess some
+degree of market power. Therefore, we expect that the monopoly model in Section II should be useful in
+predicting the behavior of their product precludes a return policy.
+7 The final distribution of stores contained 26% women’s clothing stores, 12% men’s clothing stores, 11%
+shoe stores, 14% CD, tape, or videocassettes, 5% books, and less than 5% in: drug stores, furniture, computer
+software, jewelry, and opticians. Note that in Table 1 we reported only 131 observations because two stores had
+missing data. Our sample is not representative of all types of stores because the locations we sampled did not
+include category-killer stores such as Home Depot and Toys R Us.
+8 If a department store was selected, the interviewer elicited the policy for the specific department located
+at the selected door.
+Return Policies and the Optimal Level of “Hassle” 453
+
+--- PAGE 10 ---
+1. Store exchange only ( h1 5 1) vs. cash refunds offered ( h1 5 0);
+2. Receipt required for returns ( h2 5 1) vs. not required ( h2 5 0);
+3. Need original box or packaging material ( h3 5 1) vs. not required ( h3 5 0);
+4. Must show no visible signs of use or wear ( h4 5 1) vs. not required ( h4 5 0);
+5. Time limit for returns ( h5 5 1) vs. no time limit ( h5 5 0).
+For example, if a store offered a cash refund with receipt, but allowed exchange only with
+no receipt, it was coded as h1 5 0, h2 5 1. If it also required goods to be unopened (as
+with many CD stores), then h3 5 1. These five variables, h1–h5, were summed to get an
+index of total hassle for returns (HASSLE). Of the retailers surveyed, less than 10% of the
+stores received a zero rating on all five measures and no retailers had a policy of “all sales
+final” for regularly stocked merchandise.
+9
+Relative Price Level (P). To obtain a measure of relative price level, managers were
+asked the following question: “Relative to your competitors, would you say your prices
+are: Above Average ( p 5 3), About Average ( p 5 2), or Below Average ( p 5 1).” The
+response to this question was used as the price index ( RELPRICE). Relative price was
+collected instead of absolute price because our interest was to compare across different
+product categories and price levels. Buzzell and Gale (1987) used a similar question to
+survey managers’ perceptions about relative prices in a competitive environment.
+10
+Trial-Value Fraction (b). As discussed in Longo (1995), some products can be quickly
+consumed or copied before the return period expires, which means that their b value is
+likely to be large. Some products which are likely to have high b are CDs, videos, books,
+and computer software. We coded the index BETA as equal to 1 for stores that specialized
+in selling these products. For other stores, the index was set equal to 0.
+Cross-Selling Margin (M). Stores which are large and sell a large variety of products
+have more opportunities to cross-sell relative to stores which do not, and therefore their
+expected margin from cross-selling is likely to be larger. To develop measures of these
+opportunities, we determined surrogates for variety and size. In our store surveys, we
+observed that department stores offered a wide variety of merchandise when compared to
+specialty stores. Further, we could not directly measure the store size of most of the stores
+surveyed. Because stores that were part of a chain tended to be larger than “mom and pop”
+stores, we used a dummy variable to capture whether the store was part of a chain as a
+surrogate for size. The cross-selling index ( CROSSELL) was formed as the sum of the
+following two (standardized) scores: 1) the variety of merchandise sold by the store ( m
+1
+5 3 if department store; m1 5 1 if a specialty stores; m1 5 2 if intermediate, such as a
+variety store), and 2) whether the store was part of a chain ( m2 5 1) or not ( m2 5 0).
+9 This finding suggests that the conditions which would result in a corner resolution (no-hassles or selling
+as-is) do not hold for most retailers. Thus, the three hypotheses above, which are based on the internal solution,
+seem appropriate for empirical testing.
+10 The advantage of using managers’ perceptions is that competitors need not be located and surveyed
+directly. The disadvantage is that the ratings may be biased because managers prefer to say their prices beat
+competitors. However, even with a constant bias in the ratings, the stores would retain their relative positions
+with respect to price.
+454 S. Davis et al.
+
+--- PAGE 11 ---
+Retailer’s Salvage Value (S). Finally, to find a measure for a retailer’s salvage value,
+managers were asked about the return policy of their manufacturers and about their ability
+to resell returned merchandise at their stores. First, salvage value was coded high ( s
+1 5
+3) if the manufacturers would typically take back returned goods, low ( s1 5 1) if they
+typically would not take them back, and intermediate ( s1 5 2) if they typically imposed
+restrictions on returns or offered partial refunds. Second, salvage through direct retail
+action was coded high ( S
+2 5 3) if retailers could repackage returned merchandise and
+return it to the shelf, and low ( s2 5 1) otherwise. The salvage index ( SALVAGE) was the
+sum of these two (standardized) variables.
+Estimation Method and Results
+To test the three hypotheses derived in the previous section, we used regression analysis.
+Equations (8) and (9) suggest that linear functional forms would allow a reasonable
+approximation of the relationships between the dependent variables hassle and price and
+the independent variables
+b, M, and S. Hence, the estimated equations were:
+HASSLE 5 a11 1 b11 BETA 1 b12 CROSSELL 1 b13 SALVAGE 1« 1, and
+RELPRICE 5 a21 1 b21 BETA 1 b22 CROSSELL B23 SALVAGE 1« 2,
+where «i are error terms.
+We estimated each equation separately, using an ordinary least squares (OLS) proce-
+dure because the residuals were only slightly correlated ( r 52 .03). The results are
+summarized in Table 3. Note that the signs of the regression coefficients are all consistent
+with the hypothesized relationships described in Table 2. In addition, each of the
+independent variables is statistically significant for at least one of the dependent variables.
+Finally, the last column shows that both of the equations explain a statistically significant
+amount of the variance in the dependent variables. The R
+2 values we obtained are not
+uncommon for cross-sectional data of the type used here. The model seems to provide a
+better explanation for the variation in hassle than it does variations in price. This result is
+not surprising because the relative price level is likely to have been influenced by a
+number of factors, such as relative quality, which were not included in the model.
+Furthermore, managers of high-priced stores may have hesitated to report their prices as
+relatively high, which might have reduced the variation in price. As a result, the
+explanatory power of the price equation may have been reduced.
+Overall, the empirical estimates helped to explain the variation in return policies across
+retailers.
+Table 3. OLS Estimates of HASSLE and RELPRICE Equations
+Policy Parameter
+Parameter
+R2BETA (b) CROSSELL ( M) SALVAGE ( S)
+HASSLE (H) .34 2.22 2.05 0.12
+(1.70)* ( 23.56)*** ( 20.64) ( F 55.55)***
+RELPRICE (P) 2.21 .03 .13 0.07
+(21.64) (0.64) (2.45)** ( F 52.89)**
+* p , .10; ** p , .05; *** p , .01.
+Return Policies and the Optimal Level of “Hassle” 455
+
+--- PAGE 12 ---
+VI. Conclusion
+Our model predicted that a retailer is more likely to offer a low-hassle return policy when:
+1) its products’ benefits cannot be consumed during a short period of time; 2) its products
+provide opportunities for cross-selling; and 3) it can obtain a high salvage value for
+returned merchandise. The empirical study presented supports these hypotheses. The
+model also suggests that perhaps stores can better manage their return policy by having
+different policies for different products—a more restrictive policy for products which have
+large potential for moral-hazard (e.g., CDs), and a less restrictive policy for products
+which this potential is small (e.g., calendars). Our observations suggest that, currently,
+most stores do not have product-by-product policies. However, they often exclude or have
+especially restrictive policies on CDs, video tapes, and software, all products for which
+consumers can extract all benefits in a short time by making copies before returning them
+to the stores.
+We believe that the main assumptions that drove the model are: 1) the consumer
+uncertainty and heterogeneity with respect to the utility obtained after product trial; 2) the
+ability of the retailer to capture additional value when the product is returned, through
+either salvage or cross-selling; and 3) the ability of the seller to impose hassle on
+consumers who return products. Under these conditions, a refund policy with hassle is
+likely to be profitable.
+In the process of making the model easy to interpret and evaluate, we excluded a
+number of factors which a retailer should consider when designing a refund policy.
+Hassle as a Single Dimensioned Variable. Our model focused on the level of hassle
+rather than the type of hassle to be used. In this model, we combined several different
+types of conditions on returns into a single-dimensioned index of hassle. Such a single
+measure may be useful for an overall assessment of hassle. However, refund policies
+should also be optimized by choosing specific conditions to be used. The type of hassle
+chosen may both influence and be influenced by other variables in the model. To illustrate
+this point, consider the following three examples.
+First, the length of the period over which returns are allowed may have a direct impact
+on the fraction of the product’s value a consumer can obtain during trial (
+b in the model).
+Shortening the return period may reduce the relative value a consumer obtains by using
+and returning a satisfactory product. However, the short trial period may limit the
+consumer’s ability to determine the product’s fit with their tastes as they learn appropriate
+uses for the product.
+A second example is a policy which allows store credit only. In addition to reducing
+the value of the refund to consumers, such a policy forces them to make other purchases
+from the store to obtain the full value of the refund. Because consumers will often spend
+more than the original purchase price in redeeming their store credit, the policy will
+increase the seller’s gain from cross-selling ( M in the model).
+Third, consider a situation in which the retailer may impose several restrictions on
+refunds that may influence its salvage value (S in the model). For example, a retailer may
+require that a returned product be in resellable condition. If the product can be resold, then
+the retailer receives a salvage value equal to the product’s wholesale price. Similarly, a
+policy of charging a restocking fee or offering only a partial refund allows the retailer to
+increase the revenue it receives from returned merchandise.
+456 S. Davis et al.
+
+--- PAGE 13 ---
+Hassle and Transaction Costs. In the model, we normalized the transaction costs
+associated with returning merchandise to zero. If many consumers have high transaction
+costs of returning merchandise, the optimal level of hassle on returns should be adjusted
+downward, or else the return policy will lose its value to consumers. To optimize hassle,
+it would be helpful to estimate the disutilities created by the different types of hassles
+associated with returning a product, and to examine the impact of different types of
+restrictions on returns. Such estimates would allow managers to evaluate the trade-offs
+between different types of hassles and the prices which can be charged. To optimize the
+types of hassles imposed, it is important to obtain more precise measures of the disutility
+of each type of hassle. It may be possible to estimate these disutilities using a conjoint
+analysis or a related methodology. This would be a valuable direction for future research.
+Strategic Roles of Return Policies. This model did not consider the impact of com-
+petition on the design of the return policy. Sellers facing heterogeneous consumers may
+be able to use return policies as a basis for differentiating themselves from competitors.
+Consumers who are less informed or risk averse are likely to place a great value on a
+generous return policy. Some retailers may target these consumers by offering generous
+return policies with higher prices. Other retailers may target experienced consumers by
+offering less generous return policies and lower prices. This practice appears to be
+occurring in the retail market for personal computers. Mail-order suppliers offer personal
+computers at low prices but consumers who wish to return the product often must go
+through considerable hassle and pay shipping and handling charges. In contrast, local
+retail outlets have more generous return policies, but charge higher prices [Wildstrom
+(1995)].
+Refund Policies in the Channel Relationship. In focusing on retailer behavior, our
+model took the wholesale price and salvage value as given. These values will be
+influenced by the manufacturer’s pricing and return policy. Manufacturers may be able to
+use their own return policies to induce retailers to offer more generous refund policies. A
+model similar to the one presented here may be useful in describing the relationship
+between the manufacturer of a new product and retailers. A retailer may be uncertain as
+to whether a new product will fit with the rest of its product line and its consumers. A
+manufacturer may offer a generous return policy to mitigate the risk to the retailer
+[Padmanabhan and Png (1994)]. Focusing on channel inter-relationships with respect to
+return policies would be a worthwhile project for future research decisions.
+The subject of return policies has received little attention in the marketing literature. A
+return policy is one element of a bundle of services that may be provided by retailers.
+Whereas some authors seem to suggest that sellers should maximize the level of service
+they provide [e.g., Davidow and Uttal (1990)], our analysis provides a rationale for why
+retailers such as Best Buy and Target are moving toward optimizing rather than maxi-
+mizing their service level when designing return policies. We hope that this work will
+stimulate more research in this area.
+Return Policies and the Optimal Level of “Hassle” 457
+
+--- PAGE 14 ---
+Appendix
+Deriving the Optimal Price and Hassle using the Uniform
+Distribution
+Assuming that V is distributed uniformly over the interval [0, 1] we get the following:
+Probability of a return 5 FF~P 2 H!/~1 2 b# 5
+~P 2 H!
+~1 2 b! .
+Probability of keeping the product 5 1 2 FF~P 2 H!/~1 2 b# 5 1 2
+~P 2 H!
+~1 2 b! .
+Expected surplus from a return 5 bE@VuR# 2 H 5 S
+b~P 2 H!
+2~1 2 b! 2 H!.
+Expected surplus from keeping 5 E@VuK# 2 P 5 S
+~1 2 b! 1 P 2 H
+2~1 2 b! 2 P!.
+Consumer expected surplus (also shown in equation (6)) becomes:
+E@U~P,H!# 5
+~P 2 H!
+~1 2 b! S
+b~P 2 H!
+2~1 2 b! 2 HD
+1 F1 2
+~P 2 H!
+~1 2 b! G S
+~1 2 b! 1 P 2 H
+2~1 2 b! 2 PD.
+The retailer’s expected profit (3) becomes:
+E@P~P, H!# 5 F1 2
+~P 2 H!
+~1 2 b! D ~P 2 W! 1
+~P 2 H!
+~1 2 b! ~S 2 W 1 M!.
+The seller chooses P, H, to maximize the profit function subject to the constraint that the
+consumer expected surplus ( E[U(P, H)]) is non-negative. To find an interior solution for
+the profit-maximizing retail price and return hassle, we differentiate the Lagrangian
+function, £, with respect to P, H, and
+l, setting the derivatives equal to zero and checking
+the second order conditions.
+£ 5 ~1 2 PrR!~P 2 W! 1 PrR~S 2 W 1 M! 1 lFPrRS
+b~P 2 H 2 T!
+2~1 2 b! 2 H 2 TD
+1 ~1 2 PrR!S
+~1 2 b! 1 P 2 H 2 T
+2~1 2 b! 2 PDG.
+Doing so yields the profit-maximizing price and hassle levels given in the expressions (8)
+and (9). The shadow price of the constraint l:
+l* 5
+2
+3 2
+ÎZ
+3~1 2 b!,
+458 S. Davis et al.
+
+--- PAGE 15 ---
+where Z is equal to (1 2 b)[6(M 1 S) 2 (2 1 b)]. For a refund policy to be profitable,
+Z must be positive.
+Sensitivity Analysis
+The signs of the sensitive analysis in Table 2 above were derived as follows:
+We can assess the impact of the modeled parameters on the profit-maximizing level of
+hassle. Differentiating equation (8) with respect to M and S, each, yields:
+­H*
+­M 5
+­H*
+­S 5
+1
+3 2
+2~1 2 b!
+3 ÎZ ,
+which is always negative when l* is positive (i.e., the purchase constraint is binding).
+Thus, hassle will decrease as the cross-selling margin or salvage value increases.
+Finally, taking the derivative of equation (8) with respect to b, we get:
+­H*
+­b 5
+1
+9F2 1
+6~M 1 S! 2 ~1 1 2b!
+Z G,
+which is positive when Z is non-negative. This means that the optimal level of hassle will
+increase as the fraction of product benefits which can be used during trial increases.
+We can also determine the impact of the modeled parameters on the profit-maximizing
+price. Differentiating equation (9) with respect to M and S, each, yields:
+­P*
+­M 5­ P 4­ S 5
+1
+3 2
+~1 2 b!
+3 ÎZ .
+Clearly this derivative is always positive. This means that the retail price should increase
+as the retailer’s salvage value or the margin from cross-selling increases.
+Differentiating equation (9) with respect to b,
+­P*
+­b 5 2
+1
+9 F1 1
+6~M 1 S! 2 ~1 1 2b!
+ÎZ G,
+which is always negative when Z is non-negative. This result means that the retail price
+should decrease as the fraction of the product’s benefits used by consumers during trial
+increases.
+We would like to thank Stephen Hoeffler and Jonathan Schell for their research assistance.
+References
+Buzzell, R. D., and Gale, B. T. 1987. The PIMS principles: Linking Strategy to Performance . New
+York: Free Press.
+Davis, S., Gerstner, E., and Hagerty, M. 1995. Money back guarantees: Helping retailers market
+experience goods. Journal of Retailing : 72(2):7–22.
+Davidow, W., and Ottal, B. 1989. Total Customer Service: The Ultimate Weapon . New York:
+Harper & Row.
+Return Policies and the Optimal Level of “Hassle” 459
+
+--- PAGE 16 ---
+Grossman, S. 1981. The informational role of warranties and private disclosure about product
+quality. Journal of Law and Economics 24(3):461–483.
+Hart, C. July–August 1988. The power of unconditional service guarantees. Harvard Business
+Review 66(4):36–43.
+Hart, C., Heskett, J. L., and Sasser, W. E. July–August 1990. The profitable art of service recovery.
+Harvard Business Review 68(4):148–156.
+Hess, J., and Gerstner, E. Fall 1987. Loss leader pricing and rain check policy. Marketing Science
+6(4):358–374.
+Hess, D. J., Chu, W., and Gerstner, E. 1996. Controlling product returns in direct marketing.
+Marketing Letters 7(4):307–317.
+Hess, D. J., and Mayhew, G. Forthcoming. Modeling returns and direct marketed merchandise.
+Journal of Direct Marketing .
+Hunter, E. R., and Rafio, T. Fall 1992. Implementing service guarantees - The Delta Dental Plan
+study. Sloan Management Review 34:101–110.
+Judge, G., Griffiths, W., Hill, R., Lutkepohl, H., and Lee, T. 1985. The Theory and Practice of
+Econometrics (2nd ed.). New York: John Wiley.
+Longo, T. June 1995. At stores, many unhappy returns. Kiplinger’s Personal Finance Magazine
+103–104.
+Lutz, N. A. Summer 1989. Warranties as signals under consumer moral hazard. Rand Journal of
+Economics 20(2):239–255.
+Mann, D., and Wissink, J. Summer 1988. Money-back contracts with double moral-hazard. Rand
+Journal of Economics 19(2):285–282.
+Mann, D., and Wissink, J. May 1990. Money-back warranties vs. replacement warranties. American
+Economic Review 80(2):432–436.
+Menezes, M. A. J., and Currim, I. S. 1992. An approach for determination of warranty length.
+International Journal of Research in Marketing 9(2):177–195.
+Moorthy, S., and Srinivasan, K. 1995. Signaling quality with money-back guarantees: The role of
+transaction costs. Marketing Science 14(4):442–466.
+Neuborne, E. June 2, 1996. Burned retailers are fed up, clamping down. USA Today, ccc.
+Padmanabhan, V., and Png, I. P. L. 1994. The effect of returns policies on pricing of services and
+perishable goods. Working paper. Graduate School of Business, Stanford University.
+Padmanabhan, V., and Rao, R. 1993. Warranty policy and extended service contracts: Theory and
+an application to automobiles. Marketing Science 12(3):230–247.
+Schmidt, S., and Kernan, J. Winter 1985. The many meanings (and implications) of satisfaction
+guaranteed. Journal of Retailing 61(4):89–108.
+Shieh, S. Fall 1996. Price and money-back guarantees as signals of product quality. Journal of
+Economics of Managerial Strategy , 5(3):361–377.
+Welling, L. Feb. 1989. Satisfaction guaranteed or money (partially) refunded: Efficient refunds
+under asymmetric information. Canadian Journal of Economics 22(1):62–78.
+Wildstrom, S. Sept. 18, 1995. Price wars power up quality. Business Week :26.
+460 S. Davis et al.

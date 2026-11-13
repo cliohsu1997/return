@@ -13,46 +13,35 @@ $r'(p)(p+h)=\varepsilon_r(p)\,r(p)\,(p+h)/p$, so
   \frac{p}{p+h}\,\frac{1-r(p)}{r(p)},
   \label{eq:app-mu-er}
 \end{equation}
-$\mu_p<0$ is the reverse strict inequality, and $\varepsilon_r$ has the same
-sign as $r'$ (throughout, $r(p)\in(0,1)$).
 
 Result~\ref{res:welfare-bias} becomes:
 \begin{enumerate}
-\item[(i)] underestimation iff $\varepsilon_r(p)>0$ and either $\mu_p>0$,
+\item[(i)] overestimation iff $\varepsilon_r(p)<0$;
+\item[(ii)] underestimation iff $\varepsilon_r(p)>0$ and either $\mu_p>0$,
 or both $\mu_p<0$ and $|\varepsilon_S|\le -\varepsilon_D$;
-\item[(ii)] overestimation iff $\varepsilon_r(p)<0$;
-\item[(iii)] wrong sign (predicted loss, actual gain) iff $\mu_p<0$ and
-$|\varepsilon_S|>-\varepsilon_D$.
+\item[(iii)] overestimation with wrong sign (predicted loss, actual gain)
+iff $\mu_p<0$ and $|\varepsilon_S|>-\varepsilon_D$.
 \end{enumerate}
 \begin{proof}
-By Result~\ref{res:welfare-bias}, underestimation is $\rho_c>0$ with
-$r'>0$, overestimation is $r'<0$, and the wrong-sign case is $\rho_c<0$.
+By Result~\ref{res:welfare-bias}, overestimation with $0<\Lambda<1$ is
+$r'<0$, underestimation is $r'>0$ with $\rho_c>0$, and overestimation with
+wrong sign is $r'>0$ with $\rho_c<0$.
 Since $\varepsilon_r$ has the same sign as $r'$, write these in
-$\varepsilon_r$.  Result~\ref{res:negative-pt} translates the sign of
-$\rho_c$ into conditions on $\mu_p$ and $|\varepsilon_S|\gtrless -\varepsilon_D$:
-with $\varepsilon_r>0$ this is~(i), and $\rho_c<0$ is~(iii).
-For~(ii), $\varepsilon_r<0$ forces $\mu_p>1-r>0$ and hence $\rho_c>0$, so
-$0<\Delta<1$.
+$\varepsilon_r$.  For~(i), $\varepsilon_r<0$ forces $\mu_p>1-r>0$ and hence
+$\rho_c>0$, so $0<\Lambda<1$.
+Result~\ref{res:negative-pt} translates the sign of $\rho_c$ into conditions
+on $\mu_p$ and $|\varepsilon_S|\gtrless -\varepsilon_D$: with
+$\varepsilon_r>0$ this is~(ii), and $\rho_c<0$ is~(iii).
 \end{proof}
-Corollary~\ref{cor:welfare-bias-buyer} becomes:
-\begin{enumerate}
-\item[(i)] If $\mu_p>0$, underestimation iff
-$\displaystyle\frac{\varepsilon_S-\varepsilon_D}{\varepsilon_D}
->\varepsilon_r(p)\frac{p+h}{p}$,
-and overestimation iff
-$\displaystyle\frac{\varepsilon_S-\varepsilon_D}{\varepsilon_D}
-<\varepsilon_r(p)\frac{p+h}{p}$;
-\item[(ii)] If $\mu_p<0$, surplus rises iff
-$|\varepsilon_S|\le -\varepsilon_D$ and falls iff
-$|\varepsilon_S|>-\varepsilon_D$.
-\end{enumerate}
-\begin{proof}
-Under $\mu_p>0$ we have $\varepsilon_S>0$, so
-$\varepsilon_S-\varepsilon_D>0$, and also $\rho_c>0$, $\Delta>0$.  Write
-$\mu_p=1-r(p)-r'(p)(p+h)$ and $\Delta=1+r'(p)(p+h)\rho_c$.  Using
+\begin{proof}[Proof of Corollary~\ref{cor:welfare-bias-buyer}]
+The true change is $-Q\mu_p\Lambda$ and the no-return prediction is $-Q$, so
+the no-return loss figure $Q$ understates the returns-adjusted figure
+$Q\mu_p\Lambda$ if and only if $\mu_p\Lambda>1$ and overstates it if and only
+if $\mu_p\Lambda<1$.  Write
+$\mu_p=1-r(p)-r'(p)(p+h)$ and $\Lambda=1+r'(p)(p+h)\rho_c$.  Using
 $\mu_p\rho_c=\varepsilon_S/(\varepsilon_S-\varepsilon_D)$,
 \begin{align*}
-  \mu_p\Delta-1
+  \mu_p\Lambda-1
   &=\mu_p\bigl(1+r'(p)(p+h)\rho_c\bigr)-1
   \\
   &=\mu_p-1+r'(p)(p+h)\,(\mu_p\rho_c)
@@ -65,12 +54,54 @@ $\mu_p\rho_c=\varepsilon_S/(\varepsilon_S-\varepsilon_D)$,
   &=-r(p)\Biggl(1-\varepsilon_r(p)\,\frac{p+h}{p}\,
        \frac{\varepsilon_D}{\varepsilon_S-\varepsilon_D}\Biggr).
 \end{align*}
-Hence $\mu_p\Delta>1$ iff
-$\varepsilon_r(p)\frac{p+h}{p}\frac{\varepsilon_D}{\varepsilon_S-\varepsilon_D}>1$.
-Since $\varepsilon_D/(\varepsilon_S-\varepsilon_D)<0$, multiplying through
-reverses the inequality and yields the underestimation cut in~(i).  The
-overestimation cut is the reverse; under $\mu_p>0$ and $\Delta>0$ it is
-exactly $0<\mu_p\Delta<1$.  Part~(ii): under $\mu_p<0$, surplus rises iff
-$\rho_c>0$ and falls iff $\rho_c<0$, which is Result~\ref{res:negative-pt}.
-Regions may be read in $\varepsilon_r$ via~\eqref{eq:app-mu-er}.
+Hence $\mu_p\Lambda<1$ if and only if
+$\varepsilon_r(p)\,\varepsilon_D/(\varepsilon_S-\varepsilon_D)<p/(p+h)$.
+Multiplying by $-1$ gives
+\[
+  \varepsilon_r(p)\,
+  \frac{-\varepsilon_D}{\varepsilon_S-\varepsilon_D}
+  >
+  -\frac{p}{p+h},
+\]
+which is \eqref{eq:V-buyer-cut}.  The reverse strict inequality is
+$\mu_p\Lambda>1$.
 \end{proof}
+
+\section{Tax partial of the return rate}
+\label{app:rtau}
+
+The average return rate is $\tilde{r}(p,\tau)=N/D$ with
+\[
+  N=\int_p^\infty \phi(v,p-\tau)\,dF(v;\tau),
+  \qquad
+  D=1-F(p;\tau).
+\]
+Differentiating at fixed $p$,
+\[
+  \tilde{r}_{\tau}
+  =\frac{N_{\tau}D-ND_{\tau}}{D^{2}}
+  =\frac{N_{\tau}}{D}-\tilde{r}\,\frac{D_{\tau}}{D}.
+\]
+At $\tau=0$, $D=D(p)$ and $\tilde{r}=r(p)$.  Among remaining buyers, recovery
+falls one-for-one, which contributes
+$-\int_p^\infty \partial\phi(v,p)/\partial p\,dF(v)$ to $N_{\tau}$.  Buyer mass
+changes at rate $D_{\tau}\le 0$.  The types who leave are those at $v=p$.  Over
+an interval $d\tau$ they have measure $-D_{\tau}\,d\tau$ and cell return
+probability $\phi(p,p)$, so $N$ changes by
+\[
+  -\phi(p,p)\,(-D_{\tau})\,d\tau
+  =\phi(p,p)\,D_{\tau}\,d\tau.
+\]
+Collecting the two pieces,
+\[
+  N_{\tau}
+  =-\int_p^\infty \frac{\partial\phi(v,p)}{\partial p}\,dF(v)
+  +\phi(p,p)\,D_{\tau}.
+\]
+Substituting yields
+\begin{equation}
+  \tilde{r}_{\tau}
+  =-\frac{1}{D(p)}\int_p^\infty \frac{\partial\phi(v,p)}{\partial p}\,dF(v)
+  +\frac{-D_{\tau}}{D(p)}\bigl(r(p)-\phi(p,p)\bigr).
+  \label{eq:rtau-split}
+\end{equation}

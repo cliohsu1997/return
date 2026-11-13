@@ -1,0 +1,655 @@
+--- PAGE 1 ---
+The impact of returns policies on pro ﬁtability: A fashion e-commerce case☆
+Klas Hjort a,⁎, Björn Lantz b
+a Department of Design Sciences, Faculty of Engineering, Lund University, P.O. Box 118, 221 00 Lund, Sweden
+b Department of Technology Management and Economics, Chalmers University of Technology, 412 96 Gothenburg, Sweden
+abstractarticle info
+Article history:
+Received 1 February 2016
+Received in revised form 1 March 2016
+Accepted 1 April 2016
+Available online 1 May 2016
+Research on returns policies is scarce and inconclusive. This study is aﬁrst attempt to empirically analyze and de-
+scribe the effects of returns policies on consumer behavior and the moderating effects of the policies on pro ﬁt-
+ability. The method involves analyzing the transactional data of a Swedish online fashion retailer. The results
+of the regression analyses show that with a lenient returns policy, repeat customers generate a signi ﬁcantly
+higher contribution per order, while returners and customers who enjoy free returns generate a signi ﬁcantly
+lower contribution per order. In addition, returners and repeat customers generate a signi ﬁcantly higher total
+contribution, while customers who enjoy free returns generate a signi ﬁcantly lower total contribution. Hence,
+returns policies that are free of charge do not necessarily bene ﬁt retailers in terms of long-term pro ﬁtability.
+From a managerial perspective, the results provide guidance on how to address the recent changes in
+European consumer legislation.
+© 2016 Elsevier Inc. All rights reserved.
+Keywords:
+Returns policy
+Fashion e-commerce
+Returns
+Reverse logistics
+Consumer behavior
+1. Introduction
+A trend towards more liberalized or lenient returns policies is evi-
+dent in the fashion e-commerce business. We may consider that re-
+tailers use the returns policy as a tool to reduce consumer risk and
+increase consumer demand (Janakiraman, Syrdal, & Freling, 2015). Re-
+tailers use returns policy in different ways: pre-purchase, to signal a cer-
+tain level of retailer or product quality (Boniﬁeld, Cole, & Schultz, 2010;
+Mukhopadhyay & Setaputra, 2007), and post-purchase, to alter product
+evaluations (Kim & Wansink, 2012). Returns policies can have varying
+degrees of leniency; Janakiraman et al. (2015)classify ﬁve returns poli-
+cy leniency dimensions: time, money, effort, scope, and exchange.
+Many markets do not have a law that requires retailers to accept
+returns (Chen & Grewal, 2013 ). In the European Union (EU), the law
+entitled consumers ( Directive 97/7/EC, 1997 ) to return what they
+purchase online. Certain countries, such as Finland and Germany,
+interpreted the previous Distance Selling Directive (Directive 97/7/EC,
+1997) in a way that allows customers to return products without having
+to pay for the return postage (monetary leniency). However, this direc-
+tive has recently changed: by Jun. 13, 2014, all member states have im-
+plemented a new directive ( Directive 2011/83/EU, 2011 ), which no
+longer requires organizations in the EU to allow their customers to re-
+turn products free of charge (European Parliament, 2011). With this re-
+cent change, e-commerce organizations in Sweden and other EU
+nations that previously accepted free returns when selling online in
+Finland and Germany can now decide whether to continue to do so or
+to shift the cost of returns to consumers or segments of consumers, as
+Boniﬁeld et al. (2010) suggest.
+Opinions differ regarding returns policies and their level of restric-
+tion (Bahn & Boyd, 2014 ). In addition, the research is inconclusive on
+the effects of these policies ( Janakiraman et al., 2015 ). Research indi-
+cates that returns policies used for short-term gain can have long-
+term negative consequences for retailers ( Bower & Maxham, 2012 ).
+Retailers may use lenient return polices based on the belief that these
+policies increase purchases more than returns, despite the cost of pro-
+cessing returns ( Janakiraman et al., 2015 ). This study sheds light on
+these issues and evaluates both the short- (order) and long-term (re-
+purchase) effects of returns policy leniency on one dimension at a
+time, as Janakiraman et al. (2015)suggest, albeit the study is not a con-
+trolled ﬁeld study.
+The empirical study presented in this paper examines the impact of
+returns policies on consumer purchase and return behaviors (habits) in
+e-commerce, and the moderating effects of returns policies on pro ﬁt-
+ability. The study examines the effects in a European context and ad-
+dresses the recent changes in the European directive ( Directive 2011/
+83/EU, 2011) on consumer rights that was implemented in a national
+legislation in the EU in June 2014. Since the legislation is relatively
+new, the results presented in this paper can assist managers in deciding
+whether to continue to offer lenient policies or to segment customers
+and offer differentiated policies, as researchers ( Boniﬁeld et al., 2010 )
+suggest.
+Journal of Business Research 69 (2016) 4980–4985
+☆ The authors are grateful for the contributions of two colleagues during the initial stage
+of this study. They also thank two anonymous reviewers for their careful review and
+suggestions on how to improve the manuscript. The Swedish Retail and Wholesale
+Development Council through the Centre for Retail Research at Lund University, as well
+as Helsingborg City and VINNOVA through the ReLog research platform, ﬁnancially
+supported this research. These organizations provided long-termﬁnancial support to the
+research group but were not actively involved at any stage of the research.
+⁎ Corresponding author.
+E-mail addresses:Klas.Hjort@plog.lth.se(K. Hjort), Bjorn.Lantz@chalmers.se(B. Lantz).
+http://dx.doi.org/10.1016/j.jbusres.2016.04.064
+0148-2963/© 2016 Elsevier Inc. All rights reserved.
+Contents lists available at ScienceDirect
+Journal of Business Research
+
+--- PAGE 2 ---
+This research continues a trend in the recent literature that use and
+analyze transactional data from the e-commerce industry ( Bower &
+Maxham, 2012; Grif ﬁs, Rao, Goldsby, & Niranjan, 2012; Hjort, Lantz,
+Ericsson, & Gattorna, 2013; Lantz & Hjort, 2013 ). The aim of the study
+is to complement the existing literature by adding the complexity of
+returns policies to the analysis of the proﬁtability of consumer purchase
+and return habits. This study also examines whether the conclusions of
+Lantz and Hjort (2013) are valid outside of their randomized and con-
+trolled experiment: that retailers should probably not offer free returns
+policies to all or some of the customers given that such policies are not
+mandatory from a legislative and/or competitive point of view. From a
+managerial perspective, this research intends to help guide organiza-
+tions on how to set their returns policies with regard to the recent leg-
+islative changes.
+The organization of the remainder of this paper is as follows.
+Section 2 presents the literature review, and Section 3 describes the
+methodology. Section 4 presents the results of the statistical analysis,
+and Section 5 discusses the results. Section 6 presents the conclusions
+and implications of the study.
+2. Literature and theoretical background
+2.1. Returns policy, buyer behavior, and proﬁtability
+We may consider the consumer's relationship with a retailer in an
+online setting as a series of transactions where the consumer evaluates
+the risks in terms of all the perceived transactions, and this series of
+transactions all boils down to a decision to purchase or not ( Grifﬁs
+et al., 2012). This concept implies that transaction cost economy theory
+can explain consumer-retailer transactions (Williamson, 1979). Chircu
+and Mahajan (2006) deﬁne a retail transaction as “an exchange be-
+tween a consumer and a retailer in which the two parties obtain some-
+thing from each other at a cost to each ” (p. 899). Reducing risks or
+lowering transaction costs, such as by providing post-sale services and
+returns, can increase customer value (Chircu & Mahajan, 2006). Grifﬁs
+et al. (2012) show that the customer's con ﬁdence in a retailer grows
+through a series of successful transactions, which includes returns
+processing.
+The goal of lenient return conditions is often to create a market-
+ing incentive ( Rogers & Tibben-Lembke, 1999, Chapter 1 )t oa t t r a c t
+and create loyal and repeat custome rs, and thus, to increase sales.
+However, a fundamental correlation between increasing sales and
+maximizing pro ﬁtability does not exist, and pro ﬁti sa l w a y st h e
+ﬁrm's ﬁrst consideration ( Yan, 2009 ). Lantz and Hjort (2013) show
+in their experiment that free returns are actually associated with a
+decrease in the average value of orders, an increased probability of
+returns, as well as an increased order frequency. Nevertheless, even
+though a liberal returns policy increases returns ( Wood, 2001 ), a
+returns policy is still always valuable for e-commerce according to
+Yan (2009) . Research on returns policies is still in development
+(Bower & Maxham, 2012; Janakiraman et al., 2015 ). An increasing
+stream of this research addresses r eturns policies in a B2C setting,
+and more speci ﬁcally, in e-commerce with regard to consumer
+returns. Researchers often discuss the effects of these policies in
+terms of either pro ﬁtability ( Lantz & Hjort, 2013; Mukhopadhyay &
+Setaputra, 2007 ) or loyalty and behavioral aspects ( Boniﬁeld et al.,
+2010; Grif ﬁs et al., 2012; Hjort & Lantz, 2012; Pei, Paswan, & Yan,
+2014; Wood, 2001 ). This research trend leaves a gap in the literature
+regarding how returns policies affect purchase and return behaviors
+and whether and/or how these policies affect pro ﬁtability. The behav-
+ioral aspects often discuss pre- and post-returns spending in relation
+to different returns policies ( Bower & Maxham, 2012 ). Knowledge re-
+garding spending, behavior, loyalty, and purchase intentions is interest-
+ing and insightful, but one can argue that without a direct and empirical
+connection with proﬁtability, these aspects are of more interest to aca-
+demics than to practitioners.
+Returns policies are clearly aspects of the online consumer experi-
+ence, and liberal policies increase sales (i.e., demand) ( Bower &
+Maxham, 2012; Mukhopadhyay & Setaputra, 2007; Petersen & Kumar,
+2010). Grifﬁs et al. (2012) suggest that the increased value of consumer
+loyalty can offset the incurred cost of a lenient returns policy. Another
+empirical study (Hjort et al., 2013 ), where repeat customers and non-
+returners, on average, generate a higher contribution per order, pro-
+vides partial support for this ﬁnding. However, the total contribution
+of repeat customers per year is higher if they are also returners. Hjort
+et al. (2013) , though, do not control for the degree of returns policy
+leniency.
+Meanwhile, returns policies also decrease proﬁtability. In a random-
+ized and controlled experiment with real e-customers as participants,
+Hjort and Lantz (2012) conﬁrm increased sales but conclude that, gen-
+erally, it is not optimal in term of proﬁtability to offer the same delivery
+and return conditions to all types of customers. Lantz and Hjort (2013)
+go on to argue that the main managerial implication of their study is to
+not offer free delivery and return policies, given that they are not re-
+quired from a legislative and/or competitive point of view. They argue
+that an economic perspective would not recommend such policies due
+to the absence of a signi ﬁcant upside to compensate for the downside
+(i.e., a decreased coverage of costs).
+Janakiraman et al. (2015) challenge what they describe as an “un-
+derlying assumption in most prior returns policy research — that all
+forms of returns policies affect product purchase and returns in a similar
+manner” (p. 8). They also suggest that returns policies per se beneﬁtr e -
+tailers, at least in increased product purchase. However, literature ap-
+pears to report an inconclusive understanding of the effects of returns
+policies in prior research as Janakiraman et al. (2015) previously men-
+tion, or at least that prior research describes the effects only for one as-
+pect at a time, that is, for either behavior/intention or proﬁtability. This
+tendency might also explain why (as the introduction states) retailers
+use lenient returns policies based on the belief that such policies in-
+crease purchases more than returns, despite the cost of processing
+returns (Janakiraman et al., 2015 ). Consequently, this study analyzes
+the moderating effects of returns policies on consumer behavior and
+whether and/or how these affect proﬁtability per customer by measur-
+ing the contribution per order and the total contribution over time, ag-
+gregating actual repurchase behavior, not intention (see Fig. 1 ). The
+study aims to determine whether and/or how the moderating effects
+vary between customers with and without experience with the retailer,
+as the literature states ( Hernández, Jiménez, & Martín, 2010 ). The
+existing research indicates that customer behavior does not remain sta-
+ble over time because past purchases in ﬂuence subsequent behavior
+(Hernández et al., 2010).
+The study's three hypotheses based on the theoretical and empirical
+literature reviewed above are as follows:
+H1. Repeat customers are, on average, more proﬁtable than non-repeat
+customers are.
+H2. Non-returners are, on average, more proﬁtable than returners are.
+Fig. 1. Returns policy effects on consumer behavior and its moderating effects on
+proﬁtability.
+4981K. Hjort, B. Lantz / Journal of Business Research 69 (2016) 4980–4985
+
+--- PAGE 3 ---
+H3. Customers who do not enjoy free returns are, on average, more
+proﬁtable than customers who do.
+3. Methodology
+The subject of this study is a Swedish online fashion retailer operat-
+ing in Northern Europe. The company, which started operations in 2003,
+is one of the leading online fashion retailers in Northern Europe catering
+to female and male customers between the ages of 18 and 35. At the
+time of the research, the company offers two different returns policies
+(see Table A.1 in the Appendix A) depending on the location of order
+placement. For Danish, Norwegian, and Swedish consumers, the return
+freight costs approximately€4. In contrast, customers from other coun-
+tries do not pay for the return freight. The company provided transac-
+tional data exported from its enterprise resource planning system for
+this study's quantitative analysis. The data contain those for all of the
+company's orders (1185,000 orders) for a period of two years across
+their markets in Denmark, Finland, Germany, The Netherlands, Norway,
+Sweden, and the UK.
+The study conducts the analysis at the customer level and performs
+detailed calculations to reveal various aspects of each customer's behav-
+iors, including the customer's order sales ﬁgures, return ﬁgures, and
+contribution per order. After that, the study analyzes each customer in
+terms of total sales, average sales per order, average contribution, total
+contribution, total number of orders, and total number of returns.
+The organization's operations manager supplied us with vital infor-
+mation regarding the exported data set, freight costs, return freight
+costs, and costs related to order and return handling.
+The study describes differences in contribution per order and total
+contribution per customer and further analyzes them using multiple re-
+gression analysis based on three explanatory variables:
+▪ PH (purchase habits)— a binary variable indicating whether the cus-
+tomer is a repeat customer during the study period;
+▪ RH (return habits) — a binary variable indicating whether the cus-
+tomer returns at least one item during the period; and
+▪ FR (free returns)— a binary variable indicating whether the custom-
+er enjoys free returns during the period.
+The study uses SPSS version 22 to perform all statistical analyses.
+4. Results
+4.1. Contribution per order
+Table 1 presents the descriptive statistics regarding the average con-
+tribution per order for all combinations of PH, RH, and FR.
+The study initially analyzes the observed differences in average con-
+tribution per order using the following regression model:
+AVCONT ¼ β
+0 þ PHβ1 þ RHβ2 þ FRβ3 þ ε
+where AVCONT is the average contribution (in SEK) per order. Table 2
+shows the results of this regression. As expected, all factors are signi ﬁ-
+cant owing to the large sample size, and this result means that the
+study estimated the coef ﬁcients with very high accuracy, as the very
+small standard errors indicate. Repeat customers generate a signiﬁcant-
+ly higher contribution per order (B = 33.1, p b 0.001). Returners and
+customers who enjoy free returns generate a signiﬁcantly lower contri-
+bution per order (B = − 185.1, p b 0.001 and B = − 66.4, p b 0.001,
+respectively). Finally, the variance inﬂation factor (VIF) analysis shows
+no multicollinearity problems with the conducted regression, as all var-
+iance inﬂation factors are very small.
+However, previous research (e.g. Hjort et al., 2013, Lantz & Hjort,
+2013) indicate the presence of interaction effects between the factors.
+In order to capture such interaction, the study analyzes the observed
+differences in average contribution per order using the following ex-
+tended regression model:
+AVCONT ¼ β0 þ PHβ1 þ RHβ2 þ FRβ3 þ PH /C2 RHðÞ β4 þ PH /C2 FRðÞ β5
+þ RH /C2 FRðÞ β6 þ ε:
+Table 3 shows the results of this regression. While returners and cus-
+tomers who enjoy free returns still generate a signiﬁcantly lower contri-
+bution per order (B = − 254.3, p b 0.001 and B = − 38.4, p b 0.001,
+respectively), repeat customers now also generate a signi ﬁcantly
+lower contribution per order (B = −16.8, p b 0.001). However, the re-
+sults also indicate signiﬁcant interaction effects between the examined
+factors. For repeat customers, the average contribution per order is sig-
+niﬁcantly higher if the customers are also returners (B = 145.4,
+p b 0.001). Furthermore, customers who enjoy free returns generate a
+signiﬁcantly lower contribution per order if they are also repeat cus-
+tomers (B = −40.0, p b 0.001) or returners (B = −13.5, p b 0.001). Fi-
+nally, the VIF analysis shows no apparent multicollinearity problems
+with the conducted regression, as all variance inﬂation factors are rela-
+tively small.
+4.2. Total contribution per customer
+Table 4 presents the descriptive statistics regarding the total contri-
+bution per customer for all combinations of PH, RH, and FR. Note that
+the values for non-repeat customers are the same as in Table 1.
+Table 1
+Average contribution (SEK) per order.
+Purchase
+habits
+Return
+habits
+Free
+returns Mean SD No. of orders
+(thousands)
+0
+0
+0 429 443 333
+1 387 398 139
+Total 417 431 472
+1
+0 169 327 75
+1 126 246 104
+Total 144 284 180
+Total
+0 381 436 408
+1 275 365 244
+Total 342 414 652
+1
+0
+0 409 334 177
+1 342 322 39
+Total 397 333 217
+1
+0 304 259 212
+1 207 221 105
+Total 272 251 317
+Total
+0 352 300 389
+1 244 260 144
+Total 323 294 533
+Total
+0
+0 423 409 511
+1 378 383 179
+Total 411 403 689
+1
+0 269 285 287
+1 167 237 209
+Total 226 270 496
+Total
+0 367 376 798
+1 264 330 387
+Total 333 365 1185
+Table 2
+Average contribution (SEK) per order explained by purchase habits (PH), return habits
+(RH), and return conditions (free returns; FR).
+B S.E. t p VIF
+(Constant) 417.6 0.525 796.1 b0.001
+PH 33.3 0.696 47.8 b0.001 1.151
+RH −185.1 0.708 −261.4 b0.001 1.171
+FR −66.4 0.710 −93.5 b0.001 1.063
+F = 30,990 (p b 0.001), R = 0.270.
+4982 K. Hjort, B. Lantz / Journal of Business Research 69 (2016) 4980–4985
+
+--- PAGE 4 ---
+The study initially analyzes the observed differences in total contri-
+bution per customer using the following regression model:
+TOTCONT ¼ β0 þ PHβ1 þ RHβ2 þ FRβ3 þ ε
+where TOTCONT is the total contribution (in SEK) per customer.Table 5
+shows the results of this regression. As before, all factors are signiﬁcant
+owing to the large sample size. Not surprisingly, repeat customers gen-
+erate a signi ﬁcantly higher total contribution (B = 951.5, p b 0.001).
+Furthermore, returners also generate a signiﬁcantly higher total contri-
+bution (B = 22.0, p b 0.001), while customers who enjoy free returns
+generate a signi ﬁcantly lower total contribution (B = − 314.0,
+p b 0.001). Again, the VIF analysis shows no multicollinearity problems
+with the conducted regression, as all variance inﬂation factors are very
+small.
+In order to capture possible interaction effects, the study analyzes
+the observed differences in total contribution per customer using the
+following extended regression model:
+TOTCONT ¼ β0 þ PHβ1 þ RHβ2 þ FRβ3 þ PH /C2 RHðÞ β4 þ PH /C2 FRðÞ β5
+þ RH /C2 FRðÞ β6 þ ε:
+Table 6 shows the results of this regression. Repeat customers
+still generate a signi ﬁcantly higher total contribution (B = 907.0,
+p b 0.001). However, returne rs now generate a signi ﬁcantly lower
+total contribution (B = − 166.0, p b 0.001), and customers who
+enjoy free returns generate a signi ﬁcantly higher total contribution
+(B = 16.9, p b 0 . 0 0 1 ) .F u r t h e r m o r e ,t h er e s u l t si n d i c a t ec e r t a i ns i g -
+niﬁcant interaction effects between the examined factors. For repeat
+customers, the total contribution is signiﬁcantly higher if they are also
+returners (B = 491.0, pb 0.001). Customers who enjoy free returns gen-
+erate a signiﬁcantly lower total contribution if they are also repeat cus-
+tomers (B = −540.6, p b 0.001) or returners (B = −192.9, p b 0.001).
+As before, the VIF analysis shows no apparent multicollinearity prob-
+lems with the conducted regression, as all variance in ﬂation factors
+are relatively small.
+5. Discussion
+Retailers often use lenient return policies based on the belief that
+such policies will increase purchases more than returns ( Janakiraman
+et al., 2015). Boniﬁeld et al. (2010)note that“given the interest in online
+purchase behavior, it is somewhat surprising that researchers have not
+extensively studied product returns” (p. 1058). Indeed, research on this
+area is scarce. This research is the ﬁrst attempt to empirically analyze
+and describe the effects of returns policies on consumer behavior and
+the policies' moderating effects on pro ﬁtability, using transactional
+data from a Swedish Fashion online retailer. From a managerial perspec-
+tive, the results can help provide guidance on how to address the chang-
+es in consumer legislation ( Directive 2011/83/EU, 2011) and the legal
+right to reconsider the previous law's mandatory lenient and free
+returns in certain markets (Finland and Germany). Consistent with
+ﬁndings from prior research ( Janakiraman et al., 2015; Lantz & Hjort,
+2013), the results from this research suggest that retailers should be
+careful in their choice of leniency factors, the levels of leniency, and
+the usage of such leniency factors. Using free returns (monetary lenien-
+cy) for short-term bene ﬁts, such as to increase sales/demand, do not
+necessarily increase bene ﬁts for retailers in terms of pro ﬁtability,
+which includes the associated costs of handling returns. Prior research
+suggests that a lenient returns policy decreases average order value
+and increases both order frequency and return probability. Consistent
+with these suggestions, the study ﬁnds initial support for all three hy-
+potheses (seeTable 1), as all three can affect contribution. However, re-
+peat customers generate a lower average contribution per order but a
+higher total contribution. This ﬁnding can be the result of a decreased
+coverage of cost together with an increased return probability (order
+level) and increased order frequency (total contribution). One potential
+explanation for the decrease in average pro ﬁtability at the order level
+Table 3
+Average contribution (SEK) per order explained by purchase habits (PH), return habits
+(RH), return conditions (free returns; FR), and interactions.
+B S.E. t p VIF
+(Constant) 428.3 0.594 720.7 b0.001
+PH −16.8 0.970 −17.3 b0.001 2.255
+RH −254.3 1.256 −202.4 b0.001 3.720
+FR −38.4 1.041 −36.8 b0.001 2.310
+PH ∗ RH 145.4 1.467 99.1 b0.001 4.081
+PH ∗ FR −40.0 1.547 −25.9 b0.001 2.472
+RH ∗ FR −13.5 1.530 −8.8 b0.001 3.292
+F = 17,530 (p b 0.001), R = 0.286.
+Table 4
+Total contribution (SEK) per customer.
+Purchase
+habits
+Return
+habits
+Free
+returns Mean SD No. of orders
+(thousands)
+0
+0
+0 429 443 333
+1 387 398 139
+Total 417 431 472
+1
+0 169 327 75
+1 126 246 104
+Total 144 284 180
+Total
+0 381 436 408
+1 275 365 244
+Total 342 414 652
+1
+0
+0 1286 1410 177
+1 943 1110 39
+Total 1224 1367 217
+1
+0 1671 2305 212
+1 872 1367 105
+Total 1407 2078 317
+Total
+0 1496 1958 389
+1 892 1302 144
+Total 1333 1825 533
+Total
+0
+0 727 993 511
+1 509 668 179
+Total 671 925 689
+1
+0 1277 2094 287
+1 500 1051 209
+Total 950 1775 496
+Total
+0 925 1510 798
+1 504 895 387
+Total 788 1355 1185
+Table 5
+Total contribution (SEK) per customer explained by purchase habits (PH), return habits
+(RH), and return conditions (free returns; FR).
+B S.E. t p VIF
+(Constant) 453.1 1.871 242.2 b0.001
+PH 951.5 2.483 383.3 b0.001 1.151
+RH 22.0 2.525 8.7 b0.001 1.171
+FR −314.0 2.531 −124.1 b0.001 1.063
+F = 66,380 (p b 0.001), R = 0.379.
+Table 6
+Total contribution (SEK) per customer explained by purchase habits (PH), return habits
+(RH), return conditions (free returns; FR), and interactions.
+B S.E. t p VIF
+(Constant) 412.0 2.109 195.3 b0.001
+PH 907.0 3.442 263.5 b0.001 2.255
+RH −166.0 4.458 −37.2 b0.001 3.720
+FR 16.9 3.695 4.6 b0.001 2.310
+PH ∗ RH 491.0 5.207 94.3 b0.001 4.081
+PH ∗ FR −540.6 5.491 −98.4 b0.001 2.472
+RH ∗ FR −192.9 5.430 −35.5 b0.001 3.292
+F = 37,661 (p b 0.001), R = 0.401.
+4983K. Hjort, B. Lantz / Journal of Business Research 69 (2016) 4980–4985
+
+--- PAGE 5 ---
+from using free returns is related to Janakiraman et al.'s (2015) ﬁnding
+that consumers with minor product grievances are likely to return prod-
+ucts when no cost is (for the returner) associated. This tendency dimin-
+ishes the credited value of low-value products in particular.
+Studying the proﬁtability of online sales with regard to returns pol-
+icies is a complex issue with inherent interaction effects, as Lantz and
+Hjort (2013) describe. Hence, analyzing the moderating effects of
+returns policies on consumer purchase and return behaviors produces
+completely different pro ﬁtability results when studying interactions.
+This outcome is especially the case for repurchase behavior, which
+adds up over time to a total contribution per customer. For the repeat
+customers in this study, the average contribution per order and the
+total contribution are higher if they are also returners, and for repeat
+customers, the average contribution per order and the total contribution
+are lower if they also enjoy free returns. From these results, the only (ﬁ-
+nancial) reason for allowing consumers to return products free of
+charge is to attract new customers (see Table 6 ), because customers
+who enjoy free returns are less pro ﬁtable if they are either returners
+and repeat customers or both. This ﬁnding is in line with Lantz and
+Hjort's (2013) ﬁnding that free returns do not offer a signiﬁcant upside
+to cover the increasing cost of returns. This study'sﬁnding also supports
+Bower and Maxham's (2012)ﬁnding that policy changes for short-term
+gain can have long-term negative consequences for retailers.
+This research contributes to the scarce body of literature on returns
+policy research, especially empirical studies on the effects of lenient pol-
+icies on pro ﬁtability. Boniﬁeld et al. (2010) found that retailers use
+returns policies in different ways to signal a certain level of quality to
+the consumers. High-end consumers may expect high-quality products
+when they see a lenient returns policy ( Boniﬁeld et al., 2010 ). For re-
+tailers, selling a typical product using different returns policies in differ-
+ent markets may send the wrong signals, and that approach could
+increase product returns.Janakiraman et al. (2015)advise a segmented
+solution rather than a blanket returns policy that applies to all cus-
+tomers. Boniﬁeld et al. (2010) also suggest different policies according
+to customer segments. This study also supports a customized returns
+policy, as the evidence suggests that the use of a free returns policy
+can attract new customers (short-term gain) to the channel without
+negatively affecting proﬁtability, as seen in Table 6, at least for products
+whose return is unlikely. The results clearly show that returns policies
+can bene ﬁt retailers (in the long term) since returners are the most
+proﬁtable customers if they also are repeat customers and do not
+enjoy free returns. This ﬁnding is new and highly relevant for the com-
+pany under study as well as other organizations considering the recent
+legislative changes regarding returns policies within the EU.
+6. Conclusion
+This study examines a previously unexplored area, namely the mod-
+erating effects of returns policies on proﬁtability in fashion e-commerce.
+Its ﬁndings add new knowledge to the existing body of literature and
+provide support for earlierﬁndings in both empirical and theoretical re-
+search. However, the connection between e-commerce proﬁtability and
+the three explanatory variables this study addresses is complex and
+needs further exploration in empirical and theoretical research.
+This study'sﬁndings have several implications. First, the evidence sug-
+gests that managers should be careful when implementing a lenient
+returns policy when doing so is not mandatory. Second, managers should
+reconsider the use of a blanket returns policy in markets that previously
+require a free returns policy, in regards to the recently altered consumer
+legislation (Directive 2011/83/EU, 2011). Third, managers should instead
+customize their returns policy according customer segments.
+7. Limitations and future research
+This study has some limitations. Empirically analyzing the moderat-
+ing effects of returns policies on pro ﬁtability is, of course, context-
+speciﬁc. Hence, the results for the company studied may be the product
+of its speciﬁc target customers and thus, are not generalizable. This war-
+rants further research to determine whether theseﬁndings are valid in
+other contexts as well.
+Appendix A
+A.1. Returns policy of the retail company under study
+Returns policy
+Customer location
+Denmark,
+Norway,
+and Sweden
+All other
+countries
+Does the merchant :
+Include a pre-printed shipping label? Yes Yes
+Impose a time limit on returns? 14 days 14 days
+Pay for all return shipping costs? No Yes
+Charge restocking fees? No No
+Refund original shipping and handling fees? Yes Yes
+Provide the customer service contact information? Yes Yes
+Require pre-authorization? No No
+References
+Bahn, K. D., & Boyd, E. (2014). Information and its impact on consumers' reactions to re-
+strictive return policies. Journal of Retailing and Consumer Services , 21,4 1 5–423.
+http://dx.doi.org/10.1016/j.jretconser.2014.03.002.
+Boniﬁeld, C., Cole, C., & Schultz, R. L. (2010). Product returns on the Internet: A case of
+mixed signals? Journal of Business Research , 63,1 0 5 8–1065. http://dx.doi.org/10.
+1016/j.jbusres.2008.12.009.
+Bower, A. B., & Maxham, J. G., III (2012). Return shipping policies of online retailers:
+Normative assumptions and the long-term consequences of fee and free returns.
+Journal of Marketing, 76,1 1 0–124. http://dx.doi.org/10.1509/jm.10.0419.
+Chen, J., & Grewal, R. (2013). Competing in a supply chain via full-refund and no-refund
+customer returns policies. International Journal of Production Economics , 146,
+246–258. http://dx.doi.org/10.1016/j.ijpe.2013.07.005.
+Chircu, A. M., & Mahajan, V. (2006). Managing electronic commerce retail transaction
+costs for customer value. Decision Support Systems , 42, 898 –914. http://dx.doi.org/
+10.1016/j.dss.2005.07.011.
+Directive 2011/83/EU of the European Parliament and of the Council of 25 October 2011 on
+consumer rights, amending Council Directive 93/13/EEC and Directive 1999/44/EC of
+the European Parliament and of the Council and repealing Council Directive 85/577/
+EEC and Directive 97/7/EC of the European Parliament and of the Council Text with EEA
+relevance. (2011). (O. J. (L 304)).
+Directive 97/7/EC of the European Parliament and of the Council of 20 May 1997 on the pro-
+tection of consumers in respect of distance contracts— Statement by the Council and the
+Parliament re Article 6 (1)— Statement by the Commission re Article 3 (1).(1997). (O. J.
+(L 144)).
+European Parliament (2011). Consumer rights deal overwhelmingly endorsed by In-
+ternal Market Committee [pres s release]. (Retrieved from) http://www.
+europarl.europa.eu/news/en/news-room /20110614IPR21334/Consumer-rights-
+deal-overwhelmingly-endorsed-by-Internal-Market-Committee
+Grifﬁs, S. E., Rao, S., Goldsby, T. J., & Niranjan, T. T. (2012). The customer consequences of
+returns in online retailing: An empirical analysis. Journal of Operations Management,
+30,2 8 2–294. http://dx.doi.org/10.1016/j.jom.2012.02.002.
+Hernández, B., Jiménez, J., & Martín, M. J. (2010). Customer behavior in electronic com-
+merce: The moderating effect of e-purchasing experience. Journal of Business
+Research, 63,9 6 4–971. http://dx.doi.org/10.1016/j.jbusres.2009.01.019.
+Hjort, K., & Lantz, B. (2012). (R)e-tail borrowing of party dresses: An experimental study.
+International Journal of Retail & Distribution Management
+, 40,9 9 7–1012. http://dx.doi.
+org/10.1108/09590551211274964.
+Hjort, K., Lantz, B., Ericsson, D., & Gattorna, J. (2013). Customer segmentation based on
+buying and returning behaviour. International Journal of Physical Distribution and
+Logistics Management, 43,8 5 2–865. http://dx.doi.org/10.1108/IJPDLM-02-2013-0020.
+Janakiraman, N., Syrdal, H. A., & Freling, R. (2015). The effect of return policy leniency on
+consumer purchase and return decisions: A meta-analytic review.Journal of Retailing.
+http://dx.doi.org/10.1016/j.jretai.2015.11.002(Advance online publication).
+Kim, J., & Wansink, B. (2012). How retailers' recommendation and return policies alter
+product evaluations. Journal of Retailing , 88, 528 –541. http://dx.doi.org/10.1016/j.
+jretai.2012.04.004.
+Lantz, B., & Hjort, K. (2013). Real e-customer behavioural responses to free delivery and
+free returns. Electronic Commerce Research, 13, 183–198. http://dx.doi.org/10.1007/
+s10660-013-9125-0.
+Mukhopadhyay, S. K., & Setaputra, R. (2007). A dynamic model for optimal design quality
+and return policies. European Journal of Operational Research, 180, 1144–1154. http://
+dx.doi.org/10.1016/j.ejor.2006.05.016.
+4984 K. Hjort, B. Lantz / Journal of Business Research 69 (2016) 4980–4985
+
+--- PAGE 6 ---
+Pei, Z., Paswan, A., & Yan, R. (2014). E-taile r's return policy, consumer's perception
+of return policy fairness and purchase intention. Journal of Retailing and
+Consumer Services , 21, 249 –257. http://dx.doi.org/10.1016/j.jretconser.2014.
+01.004 .
+Petersen, J. A., & Kumar, V. (2010). Can product returns make you money? MIT Sloan
+Management Review, 51,8 5–89.
+Rogers, D. S., & Tibben-Lembke, R. S. (1999). Going backwards: Reverse logistics trends and
+practices. Pittsburgh, PA: Reverse Logistics Executive Council.
+Williamson, O. E. (1979). Transaction-cost economics: The governance of contractual re-
+lations. Journal of Law and Economics, 22,2 3 3–261.
+Wood, S. L. (2001). Remote purchase environments: The in ﬂuence of return policy le-
+niency on two-stage decision processes. Journal of Marketing Research, 38, 157–169.
+http://dx.doi.org/10.1509/jmkr.38.2.157.18847.
+Yan, R. (2009). Product categories, returns policy and pricing strategy for e-marketers.The
+Journal of Product and Brand Management , 18, 452 –460. http://dx.doi.org/10.1108/
+10610420910989776.
+4985K. Hjort, B. Lantz / Journal of Business Research 69 (2016) 4980–4985

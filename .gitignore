@@ -28,3 +28,6 @@ credentials
 # OS
 .DS_Store
 Thumbs.db
+
+# Extracted paper text
+papers/bundling/extracted/

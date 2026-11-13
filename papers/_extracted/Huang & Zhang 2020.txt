@@ -1,0 +1,974 @@
+                                                                                                               MARKETING SCIENCE
+                                                                                                      Vol. 39, No. 2, March–April 2020, pp. 366–381
+http://pubsonline.informs.org/journal/mksc                                                          ISSN 0732-2399 (print), ISSN 1526-548X (online)
+
+
+
+
+Service Product Design and Consumer Refund Policies
+Xiao Huang,a Dan Zhangb
+a
+  John Molson School of Business, Concordia University, Montreal, Quebec H3G 1M8, Canada; b Leeds School of Business,
+University of Colorado Boulder, Boulder, Colorado 80309
+Contact: xiao.huang@concordia.ca,    https://orcid.org/0000-0002-5978-8280 (XH); dan.zhang@colorado.edu,
+    https://orcid.org/0000-0003-0115-8291 (DZ)
+
+Received: February 9, 2018                   Abstract. Customers often exhibit considerable uncertainty in their service valuations. In
+Revised: November 28, 2018; July 16, 2019    response, ﬁrms may tailor their products and allow service cancellations. We consider the
+Accepted: October 7, 2019                    joint product customization and refund policy decisions of a monopolistic ﬁrm selling to a
+Published Online in Articles in Advance:     heterogeneous customer population with imperfect signals on their valuations. Our results
+March 5, 2020                                shed light on how customers’ valuation uncertainty, characterized by the valuation het-
+https://doi.org/10.1287/mksc.2019.1204       erogeneity and signal quality, drives the interaction between product line and refund
+                                             policy designs. In particular, when the valuation heterogeneity is high, the ﬁrm may choose
+Copyright: © 2020 INFORMS                    to offer a single quality level with a full refund, leading to a variety reduction in the product
+                                             line. In contrast, when the valuation heterogeneity is low, the ﬁrm will always offer a full
+                                             product line without any refund. At moderate valuation heterogeneity, both qualities and
+                                             refunds are subject to more customization, and a partial refund can be optimal when the
+                                             signal quality is high, even though our setup does not involve aggregate demand un-
+                                             certainty, capacity limitations, competition, or channel conﬂicts. Interestingly, despite its
+                                             appeal, generous refund terms do not increase aggregate customer surplus. Furthermore,
+                                             the ﬁrm may not have incentives to reduce customers’ valuation uncertainty even if
+                                             doing so is costless. We verify the robustness of our results and discuss their practical
+                                             implications.
+
+                                             History: Yuxin Chen served as the senior editor and Dmitri Kuksov served as associate editor for this
+                                               article.
+                                             Funding: This work was supported by Natural Sciences and Engineering Research Council of Canada
+                                               [Grant RGPIN-2011-402324] and the Concordia University Research Chair.
+                                             Supplemental Material: The online appendix is available at https://doi.org/10.1287/mksc.2019.1204.
+
+Keywords: product line design • cancellations • return policy • partial refunds • consumer uncertainty • services • quality
+
+
+1. Introduction                                                                substantially different from those for the economy
+Customers often exhibit considerable uncertainty in                            class—only a single, premium service level is offered
+their service valuations.1 In response, ﬁrms may tailor                        for the business class, along with various refund-pricing
+their products and allow service cancellation along-                           options. Unlike the airline industry, however, theme
+side some refunds. A prime example is the airline                              parks such as Disney World offer numerous admission
+industry. At Air Canada, for instance, the economy-                            options and in-park services, but all are nontransferable
+class customers are offered different peripheral services,                     and nonrefundable.
+in addition to a seat on the airplane, at different rates                         The joint product customization and refund design
+and sometimes drastically different refund terms. As                           is often observed when there is a temporal separation
+illustrated in Figure 1, an Economy Standard ticket is                         between purchase and consumption. At the time of
+nonrefundable, whereas an Economy Latitude ticket                              purchase, customers have valuation uncertainty and
+is fully refundable at Air Canada. An Economy Lat-                             can only make product choices based on their per-
+itude ticket also enjoys other beneﬁts including free                          ceived valuations. Once the uncertainty is resolved,
+same-day change, complementary checked baggage,                                customers may exercise the return (or, equivalently,
+and priority check-in, all of which are not available for                      cancel the service) depending on their revealed val-
+Economy Standard. Therefore, Air Canada simulta-                               uations. Therefore, even though both product cus-
+neously customizes its products and varies its refund                          tomization and refund policies are levers for customer
+terms for its economy-class tickets.                                           discrimination, the former acts ex ante, whereas the
+   Product customization and refund terms can vary                             latter acts ex post.
+dramatically across industries, or even within the                                Product design and consumer refunds have each
+same ﬁrm. Indeed, for Air Canada, the product op-                              been studied extensively in the marketing and op-
+tions and refund terms for business-class tickets are                          erations literature. Much of this literature, however,
+                                                                         366
+Huang and Zhang: Service Product Design and Consumer Refund Policies
+Marketing Science, 2020, vol. 39, no. 2, pp. 366–381, © 2020 INFORMS                                                         367
+
+Figure 1. (Color online) Economy-Class Offerings for a Flight from Denver to Montreal at Air Canada
+
+
+
+
+considers refund policies under a given product line                   the signal captures the intertemporal difference
+and often assumes that a single product or quality                     between customers’ perceived and true valuations.
+level is offered. For the research on product line de-                 We show that both dimensions are important drivers
+sign, the main focus has been on quality custom-                       of our results.
+ization and has not incorporated refund policies. In                      We fully characterize the ﬁrm’s optimal product
+this paper, we aim to bridge the gap by incorporating                  line with an endogenous refund policy, which allows
+refund terms as an important dimension of product                      us to investigate the interaction between product
+design. Several research questions naturally arise:                    customization and refund policies. As a baseline, we
+  1. How do product customization and customer                         show that when refunds are not allowed, it is opti-
+refunds interact with each other?                                      mal to offer quality-differentiated products to dif-
+  2. How does customers’ valuation uncertainty drive                   ferent customer segments. However, when refunds
+a ﬁrm’s product customization and refund terms?                        are allowed, the ﬁrm’s product line is subject to
+  3. When should ﬁrms reduce customers’ valuation                      change except when customers’ valuation heteroge-
+uncertainty via information provision?                                 neity is low. As valuation heterogeneity increases, the
+                                                                       quality difference within the optimal product line
+1.1. Summary of Main Results                                           shrinks and the refunds become more generous. In
+We consider the following setup: A monopolistic ﬁrm                    particular, when the valuation heterogeneity is high,
+serves a customer population with uncertain valua-                     it can be optimal for the seller to offer a single
+tions. Customers are of either the high type or the low                product with a full refund to all customers, leading
+type, valuing product quality differently. Customers                   to a variety reduction effect. In this way, the ﬁrm
+do not observe their types before the purchase but                     can engage all the high-type customers even when
+receive imperfect signals indicating their types. The                  their valuation perception is uncertain ex ante, which
+ﬁrm conﬁgures its product qualities, prices, and re-                   cannot be achieved without ex post refunds. There-
+fund policies. Consumers self-select the product to                    fore, the ﬂexibility to vary refund policies allows the
+purchase based on the signal they receive. After the                   ﬁrm to work with a narrower span of quality levels
+purchase, customers discover their true types and de-                  while earning higher proﬁt.
+cide whether to return the product and obtain a refund.                   In answering the second research question, we sum-
+   In this setup, we explicitly model customers’ valuation             marize the optimal product line design as follows:
+uncertainty in two dimensions. The ﬁrst dimension,                        1. When the customers’ valuation heterogeneity is
+valuation heterogeneity, measures the discrepancy be-                  high, it is optimal for the ﬁrm to offer fully refundable
+tween the high and low valuation types. It concerns                    premium-quality products to all customers.
+the heterogeneity among customers’ true valuations                        2. When customers’ valuation heterogeneity is mod-
+that are revealed only ex post. The second dimension,                  erate and the signal quality is low, it is optimal for the
+imperfect signal, determines the customers’ ex ante                    ﬁrm to offer nonrefundable good-quality service to
+perception of their valuation types. The quality of                    customers who are optimistic about their valuations
+                                                              Huang and Zhang: Service Product Design and Consumer Refund Policies
+368                                                                      Marketing Science, 2020, vol. 39, no. 2, pp. 366–381, © 2020 INFORMS
+
+
+and fully refundable premium-quality service to pes-             one, we allow customers to upgrade if they turn out to
+simistic customers.                                              be of the high type. We show that our key insights are
+   3. When customers’ valuation heterogeneity is mod-            robust in both extensions.
+erate and the signal quality is high, it is optimal for the         The rest of the paper is organized as follows:
+ﬁrm to offer a premium product with a partial refund             Section 2 surveys the most recent and relevant liter-
+to the optimistic customers and a nonrefundable low-             ature. Section 3 presents the model preliminaries and
+quality product to the pessimistic customers.                    analyzes a benchmark case when refunds are not
+   4. When customers’ valuation heterogeneity is low,            allowed. Section 4 analyzes the optimal product line
+it is optimal for the ﬁrm to adopt a no-refund policy            design with and without standardization and dis-
+while providing high- and low-quality products to the            cusses the implications on customer welfare. Section 5
+optimistic and pessimistic customers, respectively.              investigates the ﬁrm’s incentive to improve the signal
+   These ﬁndings suggest that the optimal product                quality. Section 6 considers two model extensions and
+line design is jointly determined by both dimensions             veriﬁes the robustness of our main results. Section 7
+of the valuation uncertainty. Speciﬁcally, the product           concludes. All technical proofs are relegated to the
+line is mainly driven by the valuation heterogeneity             online appendix.
+when it is extremely high or low (Results 1 and 4);
+otherwise, it critically depends on the signal qual-             2. Literature
+ity (Results 2 and 3). These results seem to match               Our research intersects with two streams of literature:
+many observations in the marketplace. For instance,              consumer refund policy and product line design.
+business-class airfare can be rather standardized and               There is an extensive literature on consumer refund
+is often fully refundable. This may be attributed to the         policies, covering the various reasons that may trig-
+signiﬁcant valuation heterogeneity for business trips,           ger consumer returns, such as opportunism (Chu et al.
+which either is mission critical or has almost no value,         1998, Shang et al. 2017), product quality (Moorthy
+depending on the business needs (Result 1). On the               and Srinivasan 1995, Hsiao and Chen 2012), prod-
+contrary, visitors to Disney World theme parks are               uct mismatch (Davis et al. 1995, Guo 2009, Shulman
+offered only nonrefundable tickets because they all              et al. 2010), alternate options (Xie and Gerstner 2007),
+place a reasonably similar value on such an experi-              unattended service (Gallego et al. 2015), customer no-
+ence, implying low valuation heterogeneity (Results 4).          shows (Ringbom and Shy 2004, Ringbom and Shy
+Results 2 and 3 emphasize the role of the signal the             2008), and valuation uncertainty (Che 1996, Courty
+customers receive. Notably, in Result 3, partial refunds         and Li 2000, Liu and Xiao 2008, Su 2009, Chen 2011,
+can emerge as an optimal policy, even though our setup           Shulman et al. 2011, Akcay et al. 2013, Akan et al.
+does not involve aggregate demand uncertainty, ca-               2015, Shulman et al. 2015), just to list a few. Further-
+pacity limitations, competition, or channel conﬂicts,            more, consumer refund policies have been studied
+which are common causes identiﬁed in the existing                in both manufacturing and service settings. Most of
+literature for partial refunds. Instead, partial refunds         the aforementioned papers focus on the manufactur-
+in our paper result from moderate valuation hetero-              ing setting, with a few dedicated to service settings,
+geneity and high signal quality, which make it more              such as Courty and Li (2000), Xie and Gerstner (2007),
+efﬁcient to jointly customize quality ex ante and tailor         Liu and Xiao (2008), Ringbom and Shy (2008), Guo
+refunds ex post.                                                 (2009), and Akan et al. (2015). Because of the high
+   For the last research question, we ﬁnd that reducing          volume of papers involving consumer refund poli-
+customers’ valuation uncertainty does not always                 cies, we do not attempt to conduct a comprehensive
+beneﬁt the ﬁrm; that is, a ﬁrm may not be interested             literature review. Rather, we will discuss only those
+in improving the signal quality or letting customers             papers that are most relevant to ours, namely, papers
+have more accurate valuations ex ante, even if it can be         that study the service settings where returns are
+done at little or no cost. Indeed, when the valuation            triggered by consumers’ valuation uncertainty, and
+heterogeneity is high, it is advisable for the ﬁrm not to        those that offer insights on partial refunds.
+take any action at all. When the valuation heteroge-                In the service context, customer refunds are usually
+neity is moderate, the ﬁrm should weaken the signal              triggered by valuation uncertainty, as cancellation
+quality if it is low or strengthen it if it is high. When        normally takes place before a service is experienced.
+the valuation heterogeneity is low, the ﬁrm should               Courty and Li (2000) introduce a price–refund menu
+weaken any existing signal. In general, information              as a way for the seller to screen customers of different
+provision is preferable only when customers have                 valuation distributions. Akan et al. (2015) extend the
+higher valuation heterogeneity.                                  problem by allowing customers to learn their valu-
+   We consider two extensions of our main model.                 ations at different times so that the seller can screen
+In the ﬁrst one, we allow the cost of the cancelled              on both the amount and timing of the refund. Liu
+product to be only partially recoverable. In the second          and Xiao (2008) suggest that either the service or the
+Huang and Zhang: Service Product Design and Consumer Refund Policies
+Marketing Science, 2020, vol. 39, no. 2, pp. 366–381, © 2020 INFORMS                                                        369
+
+refund should be offered on a more restricted basis                    result. We show that partial refunds can emerge as an
+when there is a capacity constraint; in addition, they                 optimal policy, even when there are no capacity lim-
+study the impact of capacity rationing on the price–                   itations, aggregate demand uncertainty, risk aversion,
+refund menu design. Chen (2011) considers a capacity-                  competition, or channel conﬂicts, and the key drivers
+constrained seller facing both aggregate demand un-                    lie in quality customization and valuation uncertainty.
+certainty and heterogeneous customer valuations, and                      With respect to the stream of research that con-
+develops an optimal selling scheme that induces                        siders product line design, the existing literature has
+truthful revelation. Even though we do not consider                    examined this issue under various contexts, including
+the capacity issue in the current paper, our results                   market segmentation (see Moorthy 1984 and refer-
+corroborate the idea that a refund may not be offered                  ences therein), distribution channels (e.g., Villas-Boas
+to all customers because of quality customization.                     1998, Liu and Cui 2010), advertising (e.g., Villas-Boas
+Our work is also related to the recent literature on the               2004), consumer evaluation and research costs (e.g.,
+impact of information provision regarding uncer-                       Villas-Boas 2009, Kuksov and Villas-Boas 2010), and
+tain valuations. Shulman et al. (2015) ﬁnd that in-                    preference structure (e.g., Orhun 2009, Kim et al.
+formation provision may increase the cancellation                      2013), just to list a few. We, however, focus on how
+rate, particularly when the prepurchase valuation is                   the product line design can be affected by customers’
+moderate with regard to the price. By conﬁguring the                   valuation uncertainty. In this regard, this paper is
+optimal quality–price–refund menu, our study fur-                      closely related to those considered in Guo and Zhang
+ther shows that information provision may harm the                     (2012) and Xiong and Chen (2014). Both papers con-
+ﬁrm’s proﬁt, depending on the level of valuation                       sider a mixture of high- and low-type customers and
+uncertainty.                                                           study how to design the best product offerings for each
+   Another research question that has attracted con-                   type. Speciﬁcally, Guo and Zhang (2012) study the
+siderable attention in the literature is when full or                  impact of consumer deliberation on optimal product
+partial refunds should be offered. Davis et al. (1995)                 design. Xiong and Chen (2014) allow consumers to
+use a stylized model to demonstrate the conditions                     choose a standard product before learning about their
+under which a full refund should be offered. Ringbom                   types, or pay a learning fee and choose afterward.
+and Shy (2004) propose the use of common prices but                    However, neither of the two papers considers the option
+different partial refunds in order to discriminate                     of refunds after customers discover their true types.
+among customers of different no-show rates. Xie and
+Gerstner (2007) show that in the presence of ﬁnite                     3. Model Preliminaries
+capacity, a seller can beneﬁt from a partial refund for                A service provider (henceforth referred to as the
+service cancellation, as freed capacity can be used to                 “ﬁrm”) serves a market with total demand normal-
+serve other consumers. Ringbom and Shy (2008)                          ized to 1. The ﬁrm can serve the market with one or
+study collusive pricing and refund policies in the                     more products. Each product is deﬁned by a triplet
+service industry. They show that monopolistic and                      (q, p, β) with quality q, price p, and the refund rate
+collusive service providers offer full refunds, whereas                β ∈ [0, 1]. Products can differ from each other on all or
+competitive service providers offer partial refunds.                   a subset of these attributes. For example, two prod-
+Guo (2009) studies the rationale behind offering par-                  ucts can share the same quality but have different
+tial refunds in a competitive setting and identiﬁes                    prices or refund rates. The cost of serving one unit of
+capacity scarcity as a key driver for partial refunds that             product at quality level q is q2 /2. If the product is
+are adopted in equilibrium. Su (2009) studies con-                     returned, no cost will be incurred, and an amount βp
+sumer refund policies in a supply chain setting. He                    will be refunded to the customer. This setup is meant
+shows that it is optimal to offer partial refunds,                     to resonate with service settings, where cancelled
+which are driven by aggregate demand uncertainty.                      service does not incur any materialized cost. How-
+Shulman et al. (2010) also demonstrate the optimal-                    ever, such a setup may not be suitable for physical
+ity of partial refunds in a supply chain. Their focus                  goods, where product cost is incurred prior to pur-
+is whether the manufacturer or the retailer should                     chase and returns may involve nontrivial costs such
+process product returns. Shulman et al. (2011) further                 as shipping and repackaging. Nevertheless, as will
+show that partial refunds can be more frugal in a                      be discussed later in Section 6.1, allowing only part of
+competitive than monopolistic environment. Hsiao                       the product cost q2 /2 to be recoverable does not im-
+and Chen (2012) illustrate that there are conditions                   pose structural changes to our main results.
+under which a refund can exceed the full price. Tran
+et al. (2018) study return policy design in a supply                   3.1. Valuation Uncertainties
+chain setting and ﬁnd that a partial refund can be                     Each customer (henceforth referred to by a feminine
+introduced to decrease proﬁt variability. Partial re-                  pronoun) has a quality valuation θ and derives a
+funds also constitute an important element of our                      product valuation θq for a product with quality q
+                                                                     Huang and Zhang: Service Product Design and Consumer Refund Policies
+370                                                                             Marketing Science, 2020, vol. 39, no. 2, pp. 366–381, © 2020 INFORMS
+
+
+(Mussa and Rosen 1978). The parameter θ is uncertain                    The expected valuations for good- and bad-signal cus-
+for each customer, who can be of the high type, with                    tomers are θG  αG θH + (1 − αG )θL and θB  αB θH +
+quality valuation θH , or the low type, with quality                    (1 − αB )θL , respectively. Observe that, because ρ ∈
+valuation θL . Speciﬁcally,                                             (1/2, 1], a good signal implies a higher chance of being
+               {                                                        a high-type customer, as well as higher expected
+                 θH with probability α,
+           θ                                                           quality valuations; that is, αG > α > αB and θG > θB .
+                 θL with probability 1 − α,                                After the purchase, valuation uncertainty is re-
+                                                                        solved, and customers learn their true types. The
+where 0 ≤ α ≤ 1 and θL ≤ θH . In order to simplify our
+                                                                        customers again fall into two segments—a fraction α
+notation, we use ȳ to denote 1 − y for any y ∈ [0, 1] in
+                                                                        are of the high type, and the rest, ᾱ, are of the low type.
+the rest of this paper. The distribution of θ is known to
+                                                                        Customers make return decisions based on their true
+both the ﬁrm and the customers, and the ratio θH /θL ,
+                                                                        valuation types.
+henceforth referred to as the valuation heterogeneity,
+is an important characteristic of customers’ valuation
+uncertainty.                                                            3.2. Customer Choice and Market Outcomes
+   Customers do not observe their valuations prior to                   Given that the signals are private for individual
+purchase. Instead, each customer receives a private                     customers, the ﬁrm faces an adverse selection prob-
+signal, “good” or “bad,” indicating her true type.                      lem. The ﬁrm needs to design a product line with at most
+Subsequently, we refer to these customers as the                        two products, product G, (qG , pG , βG ), and product B,
+good-signal and bad-signal customers, respectively.                     (qB , pB , βB ), catering to the good- and bad-signal cus-
+The quality of the signal can be measured by the                        tomers, respectively. When (qG , pG , βG )  (qB , pB , βB ),
+probability of getting the right signal conditional on                  the two products are identical, and only one product
+one’s true type:                                                        is offered to all customers. The ﬁrm can also choose
+       {                  }    {                }                       not to serve the good- or bad-signal customers; in our
+     P Good | High type  P Bad | Low type  ρ,                         analysis, this can be done by assigning them a dummy
+                                                                        product (0, 0, 1).
+where we assume ρ ∈ (1/2, 1]; thus, the signals are
+                                                                            Let usi denote the expected surplus for customers
+informative. As one’s valuation type is revealed only
+                                                                        receiving signal s and purchasing product i, where
+after the purchase, the signal quality ρ reﬂects the
+                                                                        s, i ∈ {G, B}. To induce the good-signal customers to
+disparity between the perceived and true valuations,
+                                                                        choose product G and bad-signal customers to choose
+representing another important characteristic of cus-
+                                                                        product B, the ﬁrm needs to ensure that both indi-
+tomers’ valuation uncertainty.
+                                                                        vidual rationality (IR) and incentive compatibility
+   The signal and valuation types jointly divide cus-
+                                                                        (IC) constraints are satisﬁed, that is,
+tomers into four categories based on their perceived
+valuation ex ante and true valuation ex post, as il-                                              uGG ≥ 0,                                  (IRG )
+lustrated in Table 1.
+                                                                                                  uBB ≥ 0,                                  (IRB )
+   Prior to purchase, there are two segments of customers—
+a fraction ρG  ρα + ρ̄ᾱ are good-signal customers, and                                          uGG ≥ uGB ,                               (ICG )
+the rest, a fraction ρB  ρ̄G  ρᾱ + ρ̄α, are bad-signal                                         uBB ≥ uBG .                               (ICB )
+customers. Customers in each segment can apply
+Bayes’ rule with the knowledge of valuation distri-                     The following lemma is a result of the IR constraints,
+bution to estimate their true types. For instance, a                    noting that a customer will return the product if and
+good-signal customer is of the high type with proba-                    only if the potential refund exceeds the true product
+bility αG , and a bad-signal customer is of the high type               valuation.
+with probability αB , where
+                                                                        Lemma 1. Only the low-type customers may exercise the
+                     ρα                      ρ̄α
+            αG              ,    αB               .                   refunds.
+                   ρα + ρ̄ᾱ              ρ̄α + ρᾱ
+                                                                          Therefore, the expected surplus for customers re-
+                                                                        ceiving signal s and purchasing product i is
+Table 1. Customer Categorization Based on Ex Ante and Ex                             (           )          {                  }
+Post Types                                                                  usi  αs θH qi − pi + ᾱs max θL qi − pi , −β̄i pi
+                                                                                                    {             }              (1)
+                                                                                 αs θH qi + ᾱs max θL qi , βi pi − pi ,
+                                        Prior to purchase
+
+After purchase             Good signal                  Bad signal      and a customer who has purchased product i ∈ {G, B}
+                                                                        will return the product if and only if (i) she turns out to
+High valuation                   ρα                         ρ̄α         be of the low type (θ  θL ) and (ii) the refund exceeds
+Low valuation                    ρ̄ᾱ                       ρᾱ
+                                                                        her product valuation (θL qi ≤ βi pi ). In other words, a
+Huang and Zhang: Service Product Design and Consumer Refund Policies
+Marketing Science, 2020, vol. 39, no. 2, pp. 366–381, © 2020 INFORMS                                                              371
+
+customer will keep the product with quality qi should                    (ii) When θθHL ≥ φ0 , the ﬁrm is better off with dual-quality
+her valuation turn out to be high, or return the                       design and full market coverage (θG > θ0 > 0); otherwise,
+product and obtain a refund of βi pi if her valuation                  the ﬁrm is better off with single-quality design and partial
+turns out to be low. In any event, the quality qi and                  market coverage (θG > θ0  0).
+refund βi pi jointly determine the customer’s reward                     Lemma 2 shows that each customer segment will
+after the uncertainty resolves. It then follows that                   be assigned a distinct quality level. Good-signal
+there are four possible market outcomes with regard                    customers will be served with moderate quality
+to customer refunds:
+                                                                         G  θG ), and bad-signal customers will be served
+                                                                       (qNN
+  RR: All low-type customers will claim the refund.                    with inferior quality (qNN    θ0 ) or unserved when
+                                                                                                B
+  NR: Only bad-signal (purchasing product B) low-                      θ0  0. When some threshold condition is satisﬁed,
+type customers will claim the refund.                                  the entire market will be covered at two distinct
+  RN: Only good-signal (purchasing product G) low-                     quality levels; otherwise, the market will be partially
+type customers will claim the refund.                                  covered by one product. Speciﬁcally, dual-quality
+  NN: No customer will claim the refund.                               design is optimal for any valuation heterogeneity
+  In order to design the optimal product line, the ﬁrm                                                              ρ2 +ρ−1
+                                                                       (θL /θH ) when α0 ≥ 0, or, equivalently, α ≥ ρ(2ρ−1). As
+needs to investigate the optimal product line design
+under each market outcome and compare the proﬁts                       will be shown in the next section, this may not be true
+across the four candidate solutions.                                   when refund is allowed.
+
+                                                                       4. Optimal Product Line Design
+3.3. Benchmark: Product Line Design                                    We now analyze the optimal product line design
+      Without Refund                                                   where refunds are allowed. The ﬁrm needs to design
+We ﬁrst analyze the benchmark case where no refund                     two products, (qG , pG , βG ) and (qB , pB , βB ), targeting
+is allowed. It also corresponds to the product design                  good- and bad-signal customers, respectively. As
+under the market outcome NN. Before proceeding,                        discussed in Section 3.2, in order to ﬁnd the optimal
+we introduce the following notations and relations                     product line design, the ﬁrm compares the optimal
+that will be used in the remainder of this paper:                      product lines under each possible market outcome.
+                                                                       As an example, the optimal design with the market
+                 λα2 − α1                                              outcome RR can be identiﬁed by solving
+φ(λ, α1 , α2 )             , ∀ 0 ≤ α1 < α2 ≤ 1, 0 ≤ λ ≤ 1,
+                 ᾱ1 − λᾱ2                                                                               (                         )
+                 αB − ρα                                                                                                     αG q2G
+            α0            ≤ αB ≤ α ≤ αG ,                                      max              ΠRR  ρG pG − ᾱG βG pG −
+                     ρ̄G                                               qG ,qB ,pG ,pB ,βG ,βB ≥0                               2
+                                                                                                            (                        )
+            θ0  max{α0 θH + ᾱ0 θL , 0} ≤ θB ≤ θG ≤ θH ,                                                                     αB q2B
+                                                                                                       + ρ̄G pB − ᾱB βB pB −
+                     α0                                                                                                         2
+            φ0  −        .
+                   1 − α0                                                               uGG ≥ 0,                               (IRG )
+                                                                                        uBB ≥ 0,                               (IRB )
+Whenever comparison arises, we refer to θ0 as “in-
+                                                                                        uGG ≥ uGB ,                            (ICG )
+ferior,” θG as “moderate,” and θH as “high.”
+  When no refund is allowed, that is, βG  βB  0, the                        s.t.      uBB ≥ uBG ,                            (ICB )
+ﬁrm solves the following optimization problem:                                          β G pG ≥ θL q G ,                      (RRG )
+                    (          )     (            )                                     β B pB ≥ θ L q B ,                     (RRB )
+          max    ρG pG − q2G /2 + ρ̄G pB − q2B /2
+         qG ,qB ,pG ,pB ≥0                                                              βG ≤ 1,
+                s.t.         (IRG ), (IRB ), (ICG ), (ICB ).                            βB ≤ 1.
+
+Note that this formulation allows both single- and                     The ﬁrm’s proﬁt in the objective function includes
+dual-quality design, as well as partial or full market                 initial revenues, net of refunds issued to customers,
+coverage. The results are summarized in the fol-                       minus the service cost for customers who choose to
+lowing lemma.                                                          keep the product. The IR and IC constraints ensure
+Lemma 2 (Optimal Product Line Design Without Refund).                  that the products are targeting the right set of cus-
+When no refund is offered,                                             tomers, and the RR constraints ensure the RR market
+ (i) the optimal product line is                                       outcome—that all low-valuation customers, whether
+                                                                       purchasing product G or B, will exercise the refund.
+           ( NN NN )                                                     The solution under the market outcome NN was
+            qG , pG  (θG , θG (θG − θ0 ) + θ0 θB ),
+           ( NN NN )                                                   characterized in Lemma 2. The problem formulations
+            qB , pB  (θ0 , θ0 θB );                                   for market outcomes NR and RN can be written in a
+                                                                           Huang and Zhang: Service Product Design and Consumer Refund Policies
+372                                                                                     Marketing Science, 2020, vol. 39, no. 2, pp. 366–381, © 2020 INFORMS
+
+
+fashion similar to that of RR above; we relegate the                           fact, it can be shown that there always exists situa-
+details to Online Appendix A. Comparing the proﬁts                             tions where the optimal design with refund entails a
+across all market outcomes gives the results in Table 2.                       single, high quality level, whereas the optimal design
+The key ﬁndings of the optimal design are summa-                               with no refund calls for two distinct quality levels.
+rized in the following theorem.
+                                                                               Corollary 1 (Variety Reduction). There are always φ0 < φ∗ ,
+Theorem 1 (Optimal Product Line Design). When refunds                          and customer refund induces a variety reduction in product
+are allowed, there exists φ̄∗ ≥ φ∗ ≥ 0 and 12 ≤ ρ̂ ≤ 1 such that               line design when vL /vH ∈ (φ0 , φ∗ ].
+   (i) if θθHL ≤ φ∗ , the market outcome is RR, and the ﬁrm
+may offer a single, high-quality, fully refundable product                        Recall from Lemma 2 and Theorem 1 that φ0 is the
+(qG  qB  θH , βG  βB  1) to all customers;                                 threshold above which the no-refund design uses
+   (ii) if φ∗ ≤ θθHL ≤ φ̄∗ and ρ ≤ ρ̂, the market outcome is NR,               dual quality, and φ∗ is the threshold below which the
+and the ﬁrm should offer a moderate-quality product                            customized design offers a single quality. As shown
+to good-signal customers (qG  θG ) without any refund                         in the proof of Corollary 1, there is a nontrivial region
+(βG  0) and a high-quality product to bad-signal cus-                         within which customized design offers fewer quality
+tomers (qB  θH ) with a full refund (βB  1);                                 levels than the benchmark no-refund design. We refer
+   (iii) if φ∗ ≤ θθHL ≤ φ̄∗ and ρ > ρ̂, the market outcome is                  to this effect as variety reduction. This variety re-
+                                                                               duction effect is akin to the seminal result of Moorthy
+RN, and the ﬁrm should offer a high-quality product to
+                                                                               (1984), who shows that customers’ incentive com-
+good-signal customers (qG  θH ) with a partial refund
+                                                                               patibility constraints sometimes cause the ﬁrm to
+(0 < βG < 1) and an inferior-quality product to bad-signal
+                                                                               combine products for different customer segments.
+customers (qB  θ0 ) without any refund (βB  0);
+                                                                               The single-quality design entails extracting value
+   (iv) if θθHL ≥ φ̄∗ , the market outcome is NN, and the ﬁrm
+                                                                               from the high-type customers only. Because low-type
+should offer a moderate-quality product to good-signal                         customers do not value the product much, serving
+customers (qG  θG ) and an inferior-quality product to                        them will cannibalize the revenue from high-type
+bad-signal customers (qB  θ0 ) without any refund                             customers. The strategy of targeting high-type cus-
+(βG  βB  0).                                                                 tomers only, however, cannot be operationalized
+   The results clearly demonstrate how the optimal                             without refund; because customers do not know their
+product line varies with respect to the valuation un-                          types at the time of purchase, type-based screening at
+certainty. To begin with, we observe that when the                             the time of purchase is infeasible. Therefore, without
+valuation heterogeneity is high (θL /θH ≤ φ∗ ), so the                         refund, the ﬁrm is heavily dependent on imperfect,
+valuation uncertainty is high ex post, the ﬁrm should                          signal-based screening tools ex ante, such as qual-
+defer all customer discrimination ex post accordingly;                         ity customization, for customer discrimination. With
+that is, the ﬁrm can rely on a single, high-quality                            refund, the ﬁrm can perform more effective, type-
+(q∗G  q∗B  θH ) product that is fully refundable (β∗G                       based screening ex post, by offering premium-quality
+β∗B  1) to serve both good- and bad-signal customers.                         service at high-type customers’ maximum willing-
+Even though there is room for refund customization                             ness to pay.
+(product G tolerates some price–refund trade-off, as                              When the valuation heterogeneity is rather low
+shown in Table 2), only one quality level will be of-                          (θL /θH > φ̄∗ ), and hence the valuation uncertainty is
+fered to all customers. This is in stark contrast to the                       low ex post, offering refunds will encourage returns
+case where refund is not allowed, where the ﬁrm                                from some customers and leave these customers
+may adopt a dual-quality design (qNN    G  θ G > qB                          unserved, potentially hurting the ﬁrm’s revenue.
+                                                    NN
+
+θ0 > 0) under certain conditions (e.g., when α0 ≥ 0). In                       Thus, the ﬁrm will discriminate customers ex ante via
+
+Table 2. Optimal Product Line
+
+                       High valuation heterogeneity:                 Moderate valuation heterogeneity:                    Low valuation heterogeneity:
+                               θL /θH ≤ φ∗                                  φ∗ < θL /θH ≤ φ̄∗                                     θL /θH > φ̄∗
+
+Optimal                                                Low signal quality:            High signal quality:
+product line                                                 ρ ≤ ρ̂                          ρ > ρ̂
+
+Quality (q∗G , q∗B )             (θH , θH )                 (θG , θH )                         (θH , θ0 )                            (θG , θ0 )
+Price (p∗G , p∗B )           (αG θ2H ∼ θ2H , θ2H )          (θ2G , θ2H )     (θG (θH − θ0 ) + θ0 θB ∼ θH (θH − θ0 ) +      (θG (θG − θ0 ) + θ0 θB , θ0 θB )
+                                                                                              θ0 θB , θ0 θB )
+                          (               )                                      (                                   )
+Refund rate                 1 αG θ2H                            (0, 1)             1 αG θ2H − (θG − θB )θ0                              (0, 0)
+    ∗    ∗
+  (βG , βB )                   −     ∗ , 1                                            −                ∗          , 0
+                           ᾱG ᾱG pG                                             ᾱG             ᾱG pG
+Market outcome                   RR                              NR                              RN                                     NN
+                                 √̅̅̅̅            √̅̅̅̅                           √̅̅̅̅             √̅̅̅̅
+Note. In this table, φ∗  min {φ( αG , αG , 1), φ( αB , α0 , 1)} and φ̄∗  max {φ( αG , αG , 1), φ( αB , α0 , 1)}.
+Huang and Zhang: Service Product Design and Consumer Refund Policies
+Marketing Science, 2020, vol. 39, no. 2, pp. 366–381, © 2020 INFORMS                                                                     373
+
+Table 3. Customization Strategy                                             Corollary 3 (Partial Refunds). Partial refunds (0 < β < 1)
+                                                                            may arise when the valuation heterogeneity is moderate and
+  Valuation uncertainty                   Product line customization        the signal is strong (ρ > ρ̂).
+ Ex post            Ex ante                Ex post                Ex ante     Note that the threshold signal quality ρ̂ changes
+High                                  Full                       None       with α. The next proposition characterizes the values
+Moderate            High              Full or none               Low        of ρ̂ for different α values.
+Moderate            Low               Partial or none            High
+Low                                   None                       Moderate   Proposition 1 (Threshold Signal Quality). The threshold
+                                                                            signal quality ρ̂ varies with α. In particular, we have (i) ρ̂ 
+quality customization, and will not offer any refund.                       0.5 for any α ∈ (0, 19], (ii) 0.5 < ρ̂ ≤ 1 when α ∈ (19 , 12), and
+Coupled with the no-refund policy, the ﬁrm offers the                       (iii) ρ̂  1 for any α ∈ [0.5, 1].
+lowest quality among all scenarios, that is, θG for good-                      Together, Theorem 1 and Proposition 1 suggest that
+signal customers and θ0 for bad-signal customers,                           whether a partial refund should be offered is inﬂu-
+because customers pay only for the expected quality                         enced by both valuation uncertainty and market
+and do not have a recourse when their valuations turn                       composition. In a market dominated by low-type
+out to be low.                                                              customers (α < 19), offering a full-refund policy can
+  Finally, when valuation heterogeneity is moderate                         undermine the proﬁtability of the ﬁrm. The ﬁrm
+(φ∗ < θL /θH ≤ φ̄∗ ), the optimal product line depends                      should use partial refunds at all times (ρ̂  0.5). As the
+on the signal quality, namely, the ex ante valuation                        fraction of low-type customers drops (α increases),
+uncertainty. In this case, both refund and quality                          the ﬁrm can afford to offer more liberal refund pol-
+are customized, and refund is allowed only for one                          icies coupled with higher quality when the signal
+product. When the signal is weak (ρ ≤ ρ̂), the ex ante                      is less accurate (ρ < ρ̂ ∈ (0.5, 1)). When the majority
+valuation uncertainty is high. The ﬁrm should then                          of customers are high-type customers (α ≥ 0.5), the
+tone down ex ante quality customization and put                             threshold quality ρ̂  1, and the ﬁrm can restrict to full
+more weight on ex post refund customization. As                             or no refunds without regard to the signal quality.
+shown in the third column in Table 2, customers are
+offered good- and premium-quality products, whereas                         4.1. Numerical Examples
+one is nonrefundable and the other is fully refund-                           We conduct a numerical study to illustrate the
+able. When the signal is strong (ρ > ρ̂) and the ex                         impact of valuation uncertainties and market com-
+ante valuation uncertainty is low, however, the ﬁrm                         position on the optimal product line. The results
+should shift more weight to ex ante quality custom-                         are shown in Figure 2. The vertical axes correspond
+ization. Indeed, this is the scenario where product                         to market composition (α), and the horizontal axes
+qualities exhibit the largest gap, θH versus θ0 , and a                     represent signal strength (ρ). We consider several
+partial refund may arise as a result of reduced dis-                        different valuation heterogeneities corresponding to
+crimination ex post. In light of the above discussion,                      different values of θL /θH .
+we summarize the collection of customization strat-                           The top left graph describes the scenario where
+egies in Table 3 and the effects of valuation uncer-                        the low-valuation customer will derive zero utility
+tainty in Corollary 2.                                                      (θL /θH  0); therefore, the valuation heterogeneity is
+                                                                            high. In this scenario, the ﬁrm will make refunds
+Corollary 2 (Effects of Valution Uncertainty).
+                                                                            available to all customers (i.e., the market outcome is
+   (i) The ﬁrm offers higher quality levels and more liberal
+                                                                            RR), regardless of the market composition (α) or
+refund policies as the valuation heterogeneity increases.
+                                                                            signal quality (ρ).
+   (ii) Under moderate valuation heterogeneity, the bad-
+                                                                              As the valuation heterogeneity decreases (θL /θH
+signal customers are offered a high-quality product and more
+                                                                            increases), it is more likely that the refund will be
+generous refund than the good-signal customers when the
+                                                                            restricted to one of the products, but RR is still optimal
+signal is weak; the opposite is true when the signal is strong.
+                                                                            as long as the fraction of high-valuation customers (α)
+  Note that in Corollary 2(ii), when the valuation                          and the valuation heterogeneity are reasonably high.
+heterogeneity is moderate and the signal is strong, it is                   In other words, the boundary conditions for the RR
+valuable for the ﬁrm to ﬁne-tune the refund terms and                       outcome (φ∗ ) are characterized by both the fraction
+offer a partial refund (0 < β∗G < 1). Speciﬁcally, such                     α and signal quality ρ. For example, to ensure that
+ﬁne-tuning of refund terms does not add value in the                        θL /θH  0.2 falls below φ∗ , the fraction α should ex-
+scenario when the valuation heterogeneity is mod-                           ceed 0.07 for the null signal (ρ  0.5) and 0.18 for near-
+erate but the signal is weak (ρ ≤ ρ̂). Hence, partial                       perfect signal (ρ approaching 1). For a relatively low
+refunds reﬂect the adjustment in ex post customer                           heterogeneity level, θL /θH  0.48, α should be over
+discrimination in response to a more accurate signal.                       0.9 (for the null signal) or 0.42 (for the near-perfect
+This ﬁnding is summarized in Corollary 3.                                   signal) for the market outcome to be RR.
+                                                           Huang and Zhang: Service Product Design and Consumer Refund Policies
+374                                                                   Marketing Science, 2020, vol. 39, no. 2, pp. 366–381, © 2020 INFORMS
+
+
+Figure 2. Optimal Market Outcomes (RR, RN, NR, and NN) Based on Valuation Uncertainties (Valuation Heterogeneity
+θL /θH and Signal Quality ρ) and Market Composition (Fraction of High-Type Customers α)
+
+
+
+
+   When the valuation heterogeneity drops below a             before purchase, that is, ρ  1. It can be veriﬁed that
+certain threshold, for example, θL /θH > 0.5, RR is           market outcomes shown on the right edge of each
+never optimal, and NN becomes more dominant.                  graph in Figure 2 will yield the same proﬁt for the ﬁrm
+In all four graphs, the market outcome NN is optimal          as NN. Thus, the ﬁrm can simply use the product line
+under conditions that are opposite to those inductive         developed in Lemma 2 corresponding to the market
+to RR—when the fraction of high-valuation customers           outcome NN.
+(α) and the valuation heterogeneity are both low.
+Speciﬁcally, when θL /θH approaches 1, NN will al-            4.2. Standardization
+ways be adopted.                                              We have now fully characterized the optimal product
+   The bottom left graph (θL /θH  0.48) illustrates the      line. Next, we consider product line standardization
+ranges for RN and NR when the valuation hetero-               where either a standard quality or a common refund is
+                                                              offered to all customers. Standardization can simplify
+geneity is moderate (φ∗ ≤ θL /θH ≤ φ̄∗ ). In general, RN
+                                                              the product line and can be useful when the cost
+occupies the southeast region, whereas NR occupies
+                                                              of introducing additional products or managing a
+the northwest. Consistent with our analytical re-
+                                                              complicated refund policy is high. We also ﬁnd that
+sults, refund will only be exercised by the good-signal
+                                                              sometimes it can be optimal to customize either the
+customers (RN) if the signal is strong but high-
+                                                              product quality or the refund terms, but not both,
+valuation customers are rare, and only by bad-signal          even if the ﬁrm possesses such capability.
+customers (NR) when the signal is weak but high-
+valuation customers are plentiful. The actual market          Proposition 2 (Optimality of Standardization).
+outcome depends on the valuation heterogeneity                  (i) A standard refund maximizes the ﬁrm’s expected
+(θL /θH ). For example, consider the case with α  0.7        proﬁt when the signal is strong and the high-type cus-
+and ρ  0.6. The optimal product line would yield the         tomers does not form the majority.
+market outcome RR → NR → NN as θL /θH increased                 (ii) A standard quality maximizes the ﬁrm’s expected
+from 0 to 1; but with α  0.3 and a more accurate             proﬁt when the valuation heterogeneity is high.
+signal ρ  0.95, the market outcome would vary from             When the valuation heterogeneity is low or high
+RR → RN → NN as θL /θH increased from 0 to 1.                 (θL /θH ≥ φ̄∗ or θL /θH ≤ φ∗ , respectively), it can be
+   We also wish to comment on the instance where the          derived from Theorem 1 that a common refund rate
+signal is perfect and customers know their true types         (βG  βB ) is optimal. When the valuation heterogeneity
+Huang and Zhang: Service Product Design and Consumer Refund Policies
+Marketing Science, 2020, vol. 39, no. 2, pp. 366–381, © 2020 INFORMS                                                                      375
+
+is moderate (φ∗ ≤ θL /θH ≤ φ̄∗ ) and the signal is strong                          In general, customers who are offered a full refund
+(ρ ≥ ρ̂), the optimal design involves an RN market                               will always end up with a zero surplus. Other than
+outcome with a partial refund to the good-signal                                 that, high-valuation customers receive a positive sur-
+customers. In this scenario, we are able to show                                 plus, whereas low-valuation customers receive a neg-
+that the optimality would be sustained even if                                   ative surplus. Ex ante, good-signal customers expect
+the same partial refund were extended to the entire                              a positive surplus θ0 (θG − θB ), whereas bad-signal
+population, as the bad-signal customers would prefer                             customers expect a zero surplus under both stan-
+not to exercise such a refund, and the market out-                               dard and customized refund policies. This suggests
+come would remain as RN; see the details in Online                               that customizing the refund policy does not neces-
+Appendix C. Thus, a standard refund is optimal when                              sarily change customers’ ex ante expected surplus.
+the signal quality ρ is over the threshold ρ̂. In addi-                            Note that the optimal product lines under the
+tion, given that ρ̂  1 when α > 0.5, as shown in                                standard and customized refunds may coincide with
+Proposition 1, the optimality of standard refunds                                each other, for example, when the conditions in
+requires that the high-type customers do not form the                            Proposition 2 hold. To make the comparison more
+majority of the market (α < 0.5).                                                meaningful, we consider scenarios where the policies
+   Proposition 2(ii) follows immediately from Theo-                              are distinct under the standard and customized re-
+rem 1. As shown in Theorem 1, offering a single                                  funds, which occur under moderate valuation het-
+quality (qG  qB ) is optimal if and only if the valua-                          erogeneity, that is, θL /θH ∈ [φ∗ , φ̄∗ ]. In this region, a
+tion heterogeneity is high (θL /θH ≤ φ∗ ). Otherwise,                            standard refund will allow no refund, whereas
+there is always a need for quality customization. The                            the customized refunds will offer distinct refunds.
+driving force of quality standardization was dis-                                From Tables 4 and 5, high-type customers are always
+cussed after Corollary 1.                                                        better off under the standard refund, whereas low-
+   In addition, we investigate the optimal design                                type customers are better off under a customized
+when the ﬁrm is required to offer a single quality level                         refund. These ﬁndings are summarized in the fol-
+across all customers but may customize refunds; see                              lowing proposition.
+details in Online Appendix B. It turns out that the ﬁrm
+                                                                                 Proposition 3.
+will always apply highly differentiated refund terms
+                                                                                    (i) The refund policy does not change the expected cus-
+(none or full) to effectively discriminate the customers
+                                                                                 tomer surplus based on signals.
+ex post, because offering a standard quality makes it
+                                                                                    (ii) High-type customers receive more (respectively, less)
+impossible to discriminate customers ex ante. Con-
+                                                                                 surplus under the standard (respectively, customized)
+sequently, a partial refund will not be used together
+                                                                                 refund policy, whereas the reverse applies to low-type
+with offering a standard quality.
+                                                                                 customers.
+                                                                                    (iii) The standard refund increases the variance in cus-
+4.3. Consumer Welfare                                                            tomer surplus, whereas the customized refund reduces the
+How does customer welfare vary across customers?                                 variance in the customer surplus.
+Would customers be better off under customized
+refund rates than under a standard refund rate? We
+summarize customers’ surplus in Tables 4 and 5.                                  5. Reducing Customer Uncertainty via
+Overall, customers fall into four categories depending                              Information Provision
+on the signals they receive and their valuation types,                           In our model, one source of valuation uncertainty
+denoted by GH, GL, BH and BL, where the ﬁrst letter                              originates from the imperfect signal customers re-
+represents the signal (good or bad) and the second                               ceive. Refunds can be viewed as an ex post infor-
+reﬂects the valuation type (high or low). The surplus                            mation provision device that allows customers to
+for each customer category is calculated under all                               adjust their purchase decisions. Should customers
+possible market outcomes induced by the optimal                                  have better knowledge of their types, however, the
+design with a standard (Proposition 6 in Online                                  ﬁrm may serve them differently. We therefore would
+Appendix C) as well as a customized (Theorem 1)                                  like to investigate whether the ﬁrm may beneﬁt from
+refund policy.                                                                   any ex ante information provision by improving the
+
+                      Table 4. Consumer Welfare Under the Standard Refund Policy
+
+                      Customer type        Full refund                 Partial refund                       No refund
+
+                      GH                         0            θH (θH − θG ) + θ0 (θG − θB )        θG (θH − θG ) + θ0 (θG − θB )
+                      GL                         0          −θH (θG − θL ) + θ0 (θG − θB ) < 0   −θG (θG − θL ) + θ0 (θG − θB ) < 0
+                      BH                         0                   θ0 (θH − θB )                        θ0 (θH − θB )
+                      BL                         0                 −θ0 (θB − θL ) < 0                   −θ0 (θB − θL ) < 0
+                                                               Huang and Zhang: Service Product Design and Consumer Refund Policies
+376                                                                         Marketing Science, 2020, vol. 39, no. 2, pp. 366–381, © 2020 INFORMS
+
+
+                 Table 5. Consumer Welfare Under the Customized Refund Policy (When Not Coinciding
+                 with the Standard Policy)
+                 Customer type       Full refund      Customized refund                           No refund
+
+                 GH                       0              θG (θH − θG )                  θG (θH − θG ) + θ0 (θG − θB )
+                 GL                       0            −θG (θG − θL ) < 0             −θG (θG − θL ) + θ0 (θG − θB ) < 0
+                 BH                       0                    0                               θ0 (θH − θB )
+                 BL                       0                    0                             −θ0 (θB − θL ) < 0
+
+
+signal strength, which is the focus of this section. The             When valuation heterogeneity is low, for exam-
+ﬁndings are summarized as follows:                                ple, when θL /θH  0.8, as Theorem 1(iv) suggests,
+                                                                  the ﬁrm inclines to use quality customization than
+Proposition 4 (Information Provision).                            information provision. Therefore, the ﬁrm does not
+   (i) When the valuation heterogeneity is high, the ﬁrm has      gain much from information provision. In fact, the ﬁrm
+no incentive to improve the signal quality.                       may wish to weaken the signal to make the customers
+   (ii) When the valuation heterogeneity is low, the ﬁrm has      less informed ex ante.
+incentive to weaken the signal.                                      When the valuation heterogeneity is moderate, the
+   (iii) When the valuation heterogeneity is moderate, the        beneﬁt of ex ante information provision can go both
+ﬁrm may have an incentive to strengthen the signal when           ways. On one hand, strengthening the signal may
+it is high and weaken the signal when it is low.                  reduce the ﬁrm’s proﬁt, particularly when the sig-
+   To illustrate the ﬁndings, we conduct a numerical              nal is weak to begin with, for example, when ρ < 0.7,
+study under a similar set of parameters as in Figure 2.           θL /θH = 0.48, and α  0.7. According to the discussion
+The ﬁrm’s optimal proﬁt as a function of the signal               under Theorem 1, this is when quality customization
+strength ρ is plotted in Figure 3.                                dominates refund. Following the same line of reasoning
+   When the valuation heterogeneity is high, as in the            as the above case, information provision is not rewarding
+top left graph of Figure 3 (θL /θH = 0), the ﬁrm can rely         to the ﬁrm.
+solely on the refund to extract all surplus from the                 On the other hand, signal improvement can bene-
+high-type customers. Therefore, improving the signal              ﬁt the ﬁrm when it is already high, for example,
+adds little value to the ﬁrm.                                     when θL /θH  0.48 or 0.2 and α < 0.5. This is the case
+
+
+Figure 3. The Optimal Expected Proﬁt as the Customer Valuation, Composition and Signal Quality Vary
+Huang and Zhang: Service Product Design and Consumer Refund Policies
+Marketing Science, 2020, vol. 39, no. 2, pp. 366–381, © 2020 INFORMS                                                                                             377
+
+where the ﬁrm puts more weight on ex post infor-                                 portion of the product cost that is unrecoverable upon
+mation provision than ex ante quality customization.                             service cancellation. The introduction of λ has lit-
+Therefore, the ﬁrm may beneﬁt from signal improve-                               tle impact on the IC and IR constraints, but calls
+ment as a form of information provision.                                         for revising objective functions for market out-
+   We summarize the managerial implications of the                               comes involving customer returns, that is, RR, RN,
+above ﬁndings in Table 6. When the valuation het-                                and NR.
+erogeneity is high, the ﬁrm can solely rely on ex post                              For example, the optimal design under market
+information provision devices such as customer re-                               outcome RR is given by
+funds. When the valuation heterogeneity is low, the                                                                         (                                      )
+ﬁrm may abandon ex post information provision                                                                                                  αG q2G          q2G
+                                                                                          max                 Π   RR
+                                                                                                                        ρG pG − ᾱG βG pG −          − ᾱG λ
+and proactively engage in activities that weaken                                  qG ,qB ,pG ,pB ,βG ,βB ≥0                                       2             2
+customers’ signals ex ante, for example, providing                                                                           (                                   )
+                                                                                                                                               α B qB
+                                                                                                                                                    2          2
+                                                                                                                                                              qB
+complicated catalogues or overwhelming advertise-                                                                       + ρ̄G pB − ᾱB βB pB −        − ᾱB λ
+                                                                                                                                                 2            2
+ments, adding to the difﬁculty for customers to
+evaluate their valuations. When the valuation het-                                           s.t.             (IRG ), (IRB ), (ICG ), (ICB ), RRG ), (RRB ).
+erogeneity is moderate, the ﬁrm may adopt both
+ex post and ex ante information provision devices.                               Following a similar analysis as in Section 4, we derive
+Speciﬁcally, the ﬁrm may wish to magnify the cur-                                the optimal design in the following theorem.
+rent signal—that is, strengthen the signal if it is al-
+                                                                                 Theorem 2 (Optimal Product Line Design Under Partially
+ready strong, for example, via customer consulta-
+                                                                                 Recoverable Product Cost). Under a partially recoverable
+tion or product review, or weaken the signal if
+it is noisy. We should point out that the above                                  product cost where 0 ≤ λ ≤ 1,
+                                                                                                           αG
+analysis did not consider the cost of information                                  (i) if θθHL ≤ min {φ(√̅̅̅̅̅̅̅̅
+                                                                                                         αG +λᾱG
+                                                                                                                                  αB
+                                                                                                                  , αG , 1), φ(√̅̅̅̅̅̅̅̅
+                                                                                                                                αB +λᾱB
+                                                                                                                                         , α0 , 1)}, the
+provision. In practice, the ﬁrm may need to do a                                 market outcome is RR, and the ﬁrm may offer fully re-
+                                                                                                                                                αG
+beneﬁt/cost analysis to determine whether any ex                                 fundable products at close quality levels (qG  αG +λ             ᾱG θH ,
+                                                                                          αB
+ante information provision activity is worthwhile                                qB  αB +λᾱB θH , and βG  βB  1);
+                                                                                                αG
+to pursue.                                                                         (ii) if φ(√̅̅̅̅̅̅̅̅
+                                                                                               α +λᾱ
+                                                                                                                               αB
+                                                                                                       , αG , 1) ≤ θθHL ≤ φ(√̅̅̅̅̅̅̅̅
+                                                                                                                             α +λᾱ
+                                                                                                                                     , α0 , 1), the mar-
+                                                                                                       G        G                          B    B
+                                                                                 ket outcome is NR, and the ﬁrm should offer a moderate-
+6. Extensions                                                                    quality product to good-signal customers (qG  θG )
+In this section, we verify the robustness of the re-
+                                                                                 without any refund (βG  0) and a high-quality product to
+sults by exploring two extensions. Section 6.1 studies                                                                   αB
+                                                                                 bad-signal customers (qB  αB +λ           ᾱB θH ) with a full refund
+whether the insights will hold when returned prod-
+                                                                                 (βB  1);
+ucts incur some cost. Section 6.2 considers the pos-                                               αB                                  αG
+                                                                                    (iii) if φ(√̅̅̅̅̅̅̅̅
+                                                                                                 αB +λᾱB
+                                                                                                          , α0 , 1) ≤ θθHL ≤ φ(√̅̅̅̅̅̅̅̅
+                                                                                                                                     αG +λᾱG
+                                                                                                                                              , αG , 1), the
+sibility of service upgrades.
+                                                                                 market outcome is RN, and the ﬁrm should offer a high-
+                                                                                                                                                  αG
+6.1. Partially Recoverable Cost                                                  quality product to good-signal customers (qG  αG +λ                ᾱG θH )
+In our analysis so far, we assume that a returned                                with a partial refund (0 < βG < 1) and an inferior-quality
+product or service cancellation would not incur any                              product to bad-signal customers (qB  θ0 ) without any
+quality-related cost. This assumption is reasonable                              refund (βB  0);
+                                                                                                                   αG
+as long as no cost is incurred until service deliv-                                 (iv) if θθHL ≥ max{φ(√̅̅̅̅̅̅̅̅α +λᾱ
+                                                                                                                                            αB
+                                                                                                                          , αG , 1), φ(√̅̅̅̅̅̅̅̅
+                                                                                                                                          α +λᾱ
+                                                                                                                                                  , α0 , 1)},
+                                                                                                                              G    G                B    B
+ery. However, it is still valuable to examine whether                            the market outcome is NN, and the ﬁrm should offer a
+similar results hold in a more general setting. In                               moderate-quality product to good-signal customers
+this section, we verify the robustness of our results                            (qG  θG ) and an inferior-quality product to bad-signal
+by considering the scenario where only part of the                               customers (qB  θ0 ) without any refund (βG  βB  0).
+quality-related cost is recoverable for a returned
+product.                                                                            Theorem 2 shows that the structure of the results
+  Assume that in the event of a return, a unit of                                does not change when part or all of the product cost
+product at quality level q will cost the ﬁrm λq2 /2,                             is unrecoverable. At λ  0.2, Figure 4 demonstrates
+where λ ∈ [0, 1]. Our analysis so far corresponds to                             strong similarity to Figure 2, where λ  0. It also shows
+the special case λ  0. In other words, λ reﬂects the                            that as the valuation heterogeneity increases (θL /θH
+
+Table 6. Firm’s Information Provision Strategy
+
+                 High valuation heterogeneity                          Moderate valuation heterogeneity                                Low valuation heterogeneity
+
+Ex ante                   No action                       Strengthen strong signal, weaken ambiguous signal                                 Weaken all signals
+Ex post                   Full refunds                    Customized refunds                                                                No refund
+                                                           Huang and Zhang: Service Product Design and Consumer Refund Policies
+378                                                                   Marketing Science, 2020, vol. 39, no. 2, pp. 366–381, © 2020 INFORMS
+
+
+Figure 4. Optimal Market Outcome with Partially Recoverable Product Cost (λ  0.2)
+
+
+
+
+decreases), the ﬁrm relies more on the refund than              Corollary 4 provides additional insights on how the
+quality customization to maximize its proﬁt. Speciﬁ-          cost of refunds may affect the optimal product line design.
+cally, the quality difference between the two products
+shrinks when the valuation heterogeneity is high. The         Corollary 4. The ﬁrm tends to offer more quality custom-
+variety reduction effect identiﬁed in Corollary 1 con-        ization and less generous refunds as the unrecoverable
+tinues to hold if we deﬁne variety as the span, rather        portion of the product cost, λ, increases.
+than the number, of quality levels.                              Corollary 4 identiﬁes the nonrecoverable cost as
+   The effect of signal strength is also similar to what      a factor that affects the trade-off between ex ante
+was identiﬁed in Theorem 1. Although doing the same           (quality customization) and ex post (customer re-
+analytical characterization on signal quality ρ is chal-      funds) customer discrimination. As a result, a ﬁrm
+lenging for general λ, Figure 5 conﬁrms that NR               should carefully examine the nature of its customer
+dominates when the signal is weak (small ρ), and RN           base as well as its cost structure when deciding on
+dominates when the signal is strong (large ρ).                its quality and refund terms. That is, in service
+
+
+Figure 5. Optimal Market Outcome with Partially Recoverable Product Cost (λ  0.2) Under Moderate Aggregate Uncertainty
+Huang and Zhang: Service Product Design and Consumer Refund Policies
+Marketing Science, 2020, vol. 39, no. 2, pp. 366–381, © 2020 INFORMS                                                                          379
+
+domains where cancellation yields little quality-related                            Similar to the discussion in Section 3.2, there are
+sunk cost, a ﬁrm should focus more on refund de-                                 still four market outcomes with regard to product
+sign and less on quality customization; for industries                           returns. Together with possible upgrades, there are
+where returns may cause substantial, irreversible                                eight scenarios to consider. We use a superscript U to
+quality-related costs, for example, tailored services and                        denote the upgrading outcome. For example, RNU
+make-to-order products, the ﬁrm should offer more                                means that bad-signal customers who purchased a
+differentiated quality levels and be less generous on                            nonrefundable product will upgrade.
+refund terms.                                                                       We summarize our ﬁndings as follows:
+                                                                                 Theorem 3. There exists a φU ≥ 0 such that
+6.2. Service Upgrade
+                                                                                   (i) when θθHL ≤ φU , RNU is the optimal design, where
+A refund policy gives low-type customers the re-
+                                                                                 qG  θH , qB  0, βG ≤ 1, and βB  0;
+course to withdraw from a current service after
+                                                                                   (ii) when θθHL > φU , NU N is the optimal design, where
+learning about their true valuation. A natural ques-
+                                                                                 qG  θL , θH > qB > θL , and βG  βB  0.
+tion to ask is whether similar recourse should be
+extended to high-type customers as well, and to what                                  Furthermore, in both cases, the upgrade fee f can
+extent it may impact the refund policy design.                                   take any value within the range [ 0, ᾱG (θH − θL )|qG − qB | ],
+   In this subsection, we explore the possibility that a                         and the price pi and the refund rate βi of the higher-
+customer may upgrade the service after discovering                               quality product linearly decrease in f .
+her true valuation; that is, a customer can switch to an                              Theorem 3 suggests that when valuation hetero-
+alternate product ex post and pay the difference in                              geneity is high (θθHL ≤ φU ), the ﬁrm should offer a
+prices plus a certain upgrade fee ( f ) if the quality of                        single high-quality, refundable product to good-
+the alternate product is higher. Intuitively, the scope                          signal customers. The upgrade fee f can take any
+of upgrade should be limited to high-type customers                              value within a range as long as the price pG and the
+only; otherwise, all customers would upgrade ex post                             refund rate βG are adjusted accordingly; the higher f
+and no one would rationally purchase the low-quality                             is, the lower pG and βG are. Speciﬁcally, if the ﬁrm
+product to begin with, making the problem trivial to                             makes upgrade free ( f  0), product G becomes fully
+study.                                                                           refundable (βG  1), and the ﬁrm charges the maxi-
+   The expected surplus for customers receiving sig-                             mum willingness to pay θ2H for product G. Bad-signal
+nal s and purchasing product i is                                                customers are always awarded a zero-quality prod-
+            (         )              {              }                            uct at zero price. Effectively, this allows bad-signal
+      ⎪
+      ⎧
+      ⎪
+      ⎪ αs θH qi − pi + ᾱs max θL qi − pi , −β̄i pi ,
+      ⎪
+      ⎪                                                                          customers to buy ex post should their valuations turn
+      ⎪
+      ⎨                                           when qi > qj ,
+usi  ⎪         {                               }                                out to be high.2 This essentially yields the same
+      ⎪
+      ⎪
+      ⎪ α s max   θ  q
+                    H i − p i − f , θ  q
+                                      H j − p j                                  revenue and market outcome as in RR without the
+      ⎪
+      ⎩ + ᾱ max {θ q − p , −β̄ p },
+      ⎪
+                                                  when q ≤ q ,                   service upgrade option. Thus, the variety reduction
+                 s           L i     i     i i                         i   j
+                                                                                 effect characterized in Corollary 1 is sustained even in
+                                                                           (2)   the presence of service upgrade. This also conforms to
+where {s, i, j} ∈ {G, B} and i  j. Depending on which                           airline practice for business-class tickets, where the
+product has higher quality, the upgrade decision will                            refund policy and purchase timing are quite ﬂexible
+apply one way or the other: when qG ≥ qB , high-type                             and service quality is consistently high.
+customers who have purchased product B will up-                                       When valuation heterogeneity is relatively low
+grade to product G, and those who have purchased                                 (θθHL > φU ), no refund is allowed; a low-quality product
+product G can only stay with the same product, and                               is offered to good-signal customers and a good-
+vice versa.                                                                      quality product is offered to bad-signal customers,
+
+
+Table 7. Implications of the Optimal Product Line Design
+
+Characteristics of valuation                     Optimal product line (G for good-signal            Allow standard-         Information provision
+uncertainty                                      customers; B for bad-signal customers)              quality refund               strategy
+
+High valuation heterogeneity                     G: high quality, partial/full refund;              Yes         Yes           No action
+                                                 B: high quality, full refund
+Moderate valuation heterogeneity,                G: good quality, no refund;                        No          No            Weaken signal
+  low signal quality                             B: high quality, full refund
+Moderate valuation heterogeneity,                G: high quality, partial refund;                   No          Yes           Strengthen signal
+  high signal quality                            B: low quality, no refund
+Low valuation heterogeneity                      G: good quality, no refund;                        No          Yes           Weaken signal
+                                                 B: low quality, no refund
+                                                          Huang and Zhang: Service Product Design and Consumer Refund Policies
+380                                                                  Marketing Science, 2020, vol. 39, no. 2, pp. 366–381, © 2020 INFORMS
+
+
+and the former will upgrade to the good-quality                 Second, given the perishability of service capacity,
+product if their valuations turn out to be high.3 The        it is promising to consider the problem under a
+market outcome is the same as in NN without the              multiperiod capacitated setting and study the extent
+service upgrade option. However, the customers are           to which the perishability and capacity availability
+getting a reversed signal-based quality assignment,          may affect the optimal product line. Although the
+in that good-signal customers will obtain a lower-           capacity issue has not been the central focus for most
+quality product than bad-signal customers because of         marketing papers, its relevance has been shown to be
+the availability of service upgrade. This allows the         critical in some recent literature (Xie and Gerstner
+ﬁrm to extract all surplus from customers regard-            2007, Liu and Xiao 2008, Guo 2009).
+less of their signal types, which cannot be obtained            Third, there are different ways to specify valuation
+without service upgrade (e.g., good-signal customers         uncertainty and how this uncertainty resolves over
+receive positive surplus under NN according to               time. For example, valuation uncertainty for an air
+Lemma 2). This is consistent with the practice of some       ticket can be caused by whether the trip will be made
+service providers, such as theme parks and concerts          or preferences for different departure times, resulting
+venues, who are more likely to allow service upgrades        in quite different valuation heterogeneity ex post. It
+than refunds.                                                would be interesting to investigate the implications of
+  In general, service upgrade suppresses refund              such differences in the future.
+customization, and only market outcomes resem-                  Finally, whereas our results are derived under a
+bling RR and NN without service upgrade may ap-              monopolistic setting, it would also be interesting to in-
+pear. Therefore, it is still beneﬁcial for the ﬁrm to        vestigate them in a competitive environment. The effect
+adopt refunds under some conditions.                         of competition has been studied in several recent papers
+                                                             (e.g., Guo 2009, Shulman et al. 2011). However, to our
+7. Concluding Remarks                                        knowledge, competitive product line design with
+In this paper, we investigate the optimal product line       consumer refunds has not been considered so far. This
+design with endogenous consumer refund policies. In          is another fruitful avenue for future research.
+our model, returns occur because of customer valu-
+ation uncertainty, reﬂected by the heterogeneity             Acknowledgments
+in their true valuations revealed ex post and the            The authors thank senior editor Yuxin Chen, the associate
+imperfect signals that determine their perceived             editor, and two anonymous referees for their valuable
+valuations ex ante. We study how the valuation un-           comments and suggestions during the review process.
+certainty may affect the quality and refund options
+available to customers. In general, higher quality and       Endnotes
+more liberal refund terms are offered with higher            1
+                                                               We use “product” and “service” interchangeably throughout this
+valuation heterogeneity. Speciﬁcally, when the val-          paper.
+                                                             2
+uation heterogeneity is high, the ﬁrm can safely rely         In fact, all customers are indifferent between the two products—
+                                                             regardless of their signal, one may either purchase product G up
+on a single-quality design with full refunds, whereas
+                                                             front or buy nothing (product B) and upgrade to G later.
+when the valuation heterogeneity is low, a dual-             3
+                                                              In this instance, good-signal customers are indifferent between
+quality design with no refund. When the valuation            the two products, whereas bad-signal customers strictly prefer
+heterogeneity is moderate, the ﬁrm should customize          product B.
+both quality and refunds, and it is the signal quality
+that determines which customer segment will get              References
+the refunds. We also study the effect of either quality
+                                                             Akan M, Ata B, Dana JD Jr (2015) Revenue management by sequential
+or refund standardization, and whether the ﬁrm may               screening. J. Econom. Theory 159(Part B, September):728–774.
+have incentive to reduce valuation uncertainty via ex        Akcay Y, Boyaci T, Zhang D (2013) Selling with money-back guar-
+ante information provision. Our main results are                 antees: The impact on prices, quantities, and retail proﬁtability.
+summarized in Table 7. The ﬁndings are consistent                Production Oper. Management 22(4):777–791.
+                                                             Che YK (1996) Customer return policies for experience goods. J. Indust.
+with many observations in practice and offer some
+                                                                 Econom. 44(1):17–24.
+general guidelines for managers to create the best           Chen YJ (2011) Optimal selling scheme for heterogeneous consumers
+service offerings for their target market.                       with uncertain valuations. Math. Oper. Res. 36(4):695–720.
+   There are several meaningful dimensions in which          Chu W, Gerstner E, Hess JD (1998) Managing dissatisfaction how to
+this paper can be extended. First, we focused on                 decrease customer opportunism by partial refunds. J. Service Res.
+                                                                 1(2):140–155.
+quality-related cost and ignored other related costs.
+                                                             Courty P, Li H (2000) Sequential screening. Rev. Econom. Stud. 67(4):
+It would be valuable to examine the impact of the ﬁxed           697–717.
+salvage value and transaction costs (e.g., Economides        Davis S, Gerstner E, Hagerty M (1995) Money back guarantees in re-
+1999) on the optimal product line and refund policies.           tailing: matching products to consumer tastes. J. Retailing 71(1):7–22.
+Huang and Zhang: Service Product Design and Consumer Refund Policies
+Marketing Science, 2020, vol. 39, no. 2, pp. 366–381, © 2020 INFORMS                                                                       381
+
+Economides N (1999) Quality choice and vertical integration.               Ringbom S, Shy O (2004) Advance booking, cancellations, and partial
+    Internat. J. Indust. Organ. 17:903–914.                                     refunds. Econom. Bull. 13(1):1–7.
+Gallego G, Wang R, Hu M, Ward J, Beltran JL (2015) No claim? Your          Ringbom S, Shy O (2008) Refunds and collusion in service industries.
+    gain: Design of residual value extended warranties under risk               J. Econom. Bus. 60(6):502–516.
+    aversion and strategic claim behavior. Manufacturing Service           Shang G, Ghosh BP, Galbreth MR (2017) Optimal retail return
+    Oper. Management 17(1):87–100.                                              policies with wardrobing. Production Oper. Management 26(7):
+Guo L (2009) Service cancellation and competitive refund policy.                1315–1332.
+    Marketing Sci. 28(5):901–917.                                          Shulman JD, Coughlan AT, Savaskan RC (2010) Optimal reverse
+Guo L, Zhang J (2012) Consumer deliberation and product line de-                channel structure for consumer product returns. Marketing Sci.
+    sign. Marketing Sci. 31(6):995–1007.                                        29(6):1071–1085.
+Hsiao L, Chen YJ (2012) Returns policy and quality risk in e-business.     Shulman JD, Coughlan AT, Savaskan RC (2011) Managing consumer
+    Production Oper. Management 21(3):489–503.                                  returns in a competitive environment. Management Sci. 57(2):
+Kim K, Chhajed D, Liu Y (2013) Can commonality relieve canni-                   347–362.
+    balization in product line design? Marketing Sci. 32(3):510–521.       Shulman JD, Cunha M Jr, Saint Clair JK (2015) Consumer uncertainty
+Kuksov D, Villas-Boas JM (2010) When more alternatives lead to less             and purchase decision reversals: Theory and evidence. Marketing
+    choice. Marketing Sci. 29(3):507–524.                                       Sci. 34(4):590–605.
+Liu Q, Xiao W (2008) Selling to heterogeneous customers with un-           Su X (2009) Consumer returns policies and supply chain performance.
+    certain valuations under returns policies. Working paper, Hong              Manufacturing Service Oper. Management 11(4):595–612.
+    Kong University of Science and Technology, Hong Kong.                  Tran T, Gurnani H, Desiraju R (2018) Optimal design of return
+Liu Y, Cui TH (2010) The length of product line in distribution                 policies. Marketing Sci. 37(4):649–667.
+    channels. Marketing Sci. 29(3):474–482.                                Villas-Boas JM (1998) Product line design for a distribution channel.
+Moorthy KS (1984) Market segmentation, self-selection, and product              Marketing Sci. 17(2):156–169.
+    line design. Marketing Sci. 3(4):288–307.                              Villas-Boas JM (2004) Communication strategies and product line
+Moorthy S, Srinivasan K (1995) Signaling quality with a money-                  design. Marketing Sci. 23(3):304–316.
+    back guarantee: The role of transaction costs. Marketing Sci. 14(4):   Villas-Boas JM (2009) Product variety and endogenous pricing with
+    442–466.                                                                    evaluation costs. Management Sci. 55(8):1338–1346.
+Mussa M, Rosen S (1978) Monopoly and product quality. J. Econom.           Xie J, Gerstner E (2007) Service escape: Proﬁting from customer
+    Theory 18(2):301–317.                                                       cancellations. Marketing Sci. 26(1):18–30.
+Orhun AY (2009) Optimal product line design when consumers exhibit         Xiong H, Chen YJ (2014) Product line design with seller-induced
+    choice-set dependent preferences. Marketing Sci. 28(5):868–886.             learning. Management Sci. 60(3):784–795.
+Copyright 2020, by INFORMS, all rights reserved. Copyright of Marketing Science is the
+property of INFORMS: Institute for Operations Research and its content may not be copied or
+emailed to multiple sites or posted to a listserv without the copyright holder's express written
+permission. However, users may print, download, or email articles for individual use.
+

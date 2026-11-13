@@ -21,24 +21,63 @@
 \section{Introduction}
 %=============================================================================
 
-About one in five products sold online is returned.  Pass-through, tax
-incidence, and the efficiency cost of taxation are well understood when
-purchase settles who keeps the good.  In that classical setting, the demand
-and supply curves are sufficient for consumer surplus, producer surplus, and
-deadweight loss.  With returns, allocation is decided in two stages.  Buyers
-first choose whether to purchase, then whether to keep or return after
-receiving the item.  Never buying and buying then returning leave the same
-final allocation---the consumer does not keep the good---yet their welfare
-costs differ.  A returned purchase incurs shipping, hassle, and handling that
-a non-purchase avoids, so demand and supply alone omit an economically
-relevant margin.
+Under the European Union's standard value-added tax (VAT), the seller charges
+tax on the invoice and remits it to the government, known as seller
+remittance.  For many cross-border business-to-business supplies, the reverse
+charge mechanism instead shifts that obligation to the buyer, known as buyer
+remittance.  Under reverse charge, the seller invoices without VAT, and the
+buyer accounts for the tax.  A similar distinction appears in the United States
+between sales tax, collected and remitted by the seller, and use tax, which
+the buyer self-assesses on out-of-state purchases when the seller has no
+nexus.\footnote{Since the 2018 \emph{Wayfair} decision, nearly every state
+  with a sales tax has adopted ``marketplace facilitator'' laws that require
+  platforms such as Amazon, eBay, and Etsy to collect and remit tax on behalf
+  of their third-party sellers.  As a result, the platform, not the
+  independent seller, has become the statutory remittance agent for the vast
+  majority of U.S.\ e-commerce transactions.  This shift has reduced the
+  frequency with which consumers must self-assess use tax, while concentrating
+  remittance responsibility in a small number of large platforms.}
+
+When the transaction is final and the good is kept, these remittance rules
+are economically equivalent.  The treasury receives the same revenue, and
+which party remits is only an administrative detail.  A return changes that
+picture, because the tax paid to the government must itself be unwound.
+Reclaiming that tax typically requires filing and can involve delay or
+incomplete recovery, so the remitter's effective tax refund is smaller than
+the statutory amount.  We take the extreme case in which the remitter
+recovers none of the tax from the government on a returned unit---whether
+the seller or the buyer remitted.\footnote{Partial reclaim from the
+  government would lie between full recovery of $\tau$ and this zero-reclaim
+  benchmark.  We use the extreme to put both remittance regimes on the same
+  footing with respect to treasury friction.}
+Even so, the private refund between buyer and seller still differs by
+regime.  Under seller remittance the seller refunds the full tax-inclusive
+list price, while under buyer remittance the seller refunds only the
+pre-tax price and the buyer does not recover the tax.  The keep-or-return
+decision and the seller's effective margin therefore depend on which party
+remits.
+
+Most incidence and pass-through analysis abstracts from this difference.  It
+assumes remittance neutrality and treats a return as undoing the purchase, so
+pass-through, incidence, and deadweight loss are read off demand and supply
+alone.  That abstraction is hard to justify in practice.  About one in five
+online purchases is
+returned,\footnote{National Retail Federation and Happy Returns, \emph{2025
+  Retail Returns Landscape}, October 15, 2025,
+  \url{https://nrf.com/research/2025-retail-returns-landscape}.
+  The report estimates that 19.3\,\% of online sales will be returned in 2025.}
+and a return is not a free reversal of the transaction.  Never buying and buying then returning leave the same final
+allocation---the consumer does not keep the good---yet a returned purchase
+incurs shipping, hassle, and handling that a non-purchase avoids.  Demand and
+supply alone therefore omit a margin between purchase and final ownership that
+matters for welfare.
 
 What objects then replace the classical demand and supply curves, and how
-misleading is an analysis that ignores returns?  We study these questions under
-perfect competition with product returns and seller handling costs.  We
-characterize pass-through, incidence, and welfare losses with returns, compare
-them to the no-return benchmark, and identify where omitting the return margin
-changes conclusions.
+misleading is tax analysis that omits returns?  We study these questions
+under perfect competition with product returns and seller handling costs.
+We characterize pass-through, incidence, and welfare losses with returns,
+compare them to the no-return benchmark, and identify where omitting the
+return margin changes conclusions.
 
 Even with a return margin, surplus continues to rest on a small set of market
 aggregates.  What changes is which aggregates matter and at which prices they
@@ -54,28 +93,21 @@ margin, how that margin moves with the list price governs pass-through from
 cost shocks into list prices.  The response of the effective margin to the
 list price reflects two forces.  First, a higher price directly raises
 revenue on kept units.  Second, the return rate itself may change with price.
-When the behavioral channel dominates---consumers become more likely to return
+When the behavioral response dominates---consumers become more likely to return
 as price rises---the effective margin can actually fall with the list price.
-This creates a downward-sloping supply curve in list-price space.
-
-A related departure concerns tax remittance.  In the standard model, it does
-not matter which party remits a tax.  With returns, this neutrality fails
-because the refund price differs by remittance regime.  Under seller
-remittance, the tax-inclusive checkout price is refunded.  Under buyer
-remittance, only the pre-tax list price is.  Since the return decision
-depends on the refund price, the two regimes generate different effective
-margins and equilibria.  Together with the behavioral response of returns to
-price, this remittance wedge shapes the pass-through and incidence results
-below.
+This creates a downward-sloping supply curve in list-price space.  Because the
+refund after a return differs by remittance regime, seller and buyer remittance
+generate different effective margins and equilibria, and therefore different
+pass-through and incidence.
 
 We show that pass-through of a one-dollar production-cost shock equals that
 of a seller-remitted unit tax, but differs under buyer remittance.  The ratio
 of handling to production-cost pass-through equals the aggregate return rate.
 When the behavioral response of returns to price is strong enough that the
 effective margin falls in the list price, buyer- and seller-remitted
-pass-through carry opposite signs.  This is a sharp reversal of the classical
-tax-neutrality intuition.  Which regime yields a negative pass-through depends
-on the relative magnitudes of the supply and demand elasticities.  Intuitively,
+pass-through carry opposite signs---a reversal of the classical tax-neutrality
+intuition.  Which regime yields a negative pass-through depends on the
+relative magnitudes of the supply and demand elasticities.  Intuitively,
 negative pass-through arises when the list-price supply curve slopes
 downward---a higher price lowers the effective margin and hence quantity
 supplied---and more steeply than demand.  In this region, a cost increase
@@ -84,18 +116,19 @@ expands by more than demand.
 
 Despite pass-through of a cost shock potentially being negative, the
 incidence ratio---the burden on consumers relative to producers---is always
-positive and identical across all four shocks: production cost, handling
-cost, and both seller- and buyer-remitted taxes.  Consumer and producer
-surplus therefore always move together, as in the classical model without
-returns.
+positive and identical across production cost, handling cost, and
+seller-remitted taxes.  For those shocks, consumer and producer surplus
+therefore always move together, as in the classical model without returns.
+Buyer remittance adds a direct loss to returners at fixed $p$, so its
+incidence ratio differs and need not inherit that common value.
 
-The common direction of those surpluses nevertheless hinges on the sign of
-pass-through and on remittance.  When cost pass-through is negative,
+The common direction of those price-only surpluses nevertheless hinges on the
+sign of pass-through and on remittance.  When cost pass-through is negative,
 production cost, handling cost, and seller tax shocks raise both surpluses,
-yielding a Pareto improvement, while buyer-remitted taxes lower both.  In
-contrast, when pass-through is positive, all four shocks reduce both
+yielding a Pareto improvement, while the buyer-remitted tax need not.
+In contrast, when pass-through is positive, the price-only shocks reduce both
 surpluses.  Remittance therefore matters for the welfare direction of a tax
-precisely when pass-through is negative.
+when pass-through is negative.
 
 These welfare effects also reshape first-order changes in total private
 surplus.  We decompose the change from a cost or tax increase into an
@@ -109,7 +142,10 @@ With returns, that fall is joined by an ex-post adjustment that the
 classical no-return formula omits entirely.  The same two pieces
 appear for the other shocks after a simple rescaling.  A handling-cost shock
 scales both by the return rate, and under buyer remittance both are scaled by
-the response of the effective margin to list price.
+the response of the effective margin to list price.  For taxes we then add
+treasury revenue $G=\tau Q(\tau)$ back to obtain social surplus, so the
+first-order deadweight loss of a seller-remitted tax is only the ex-post
+return-margin term.
 
 Whether the omitted ex-post term adds to or offsets that market-quantity fall
 hinges on how the return rate responds to the price change.  When
@@ -141,7 +177,9 @@ in return hassle $\kappa_i$, the disutility of sending the good back, and in
 the post-purchase match distribution $G_i$ over match quality $u$.  After
 buying, type $i$ draws $u\sim G_i$ and keeps the item when
 $u-p\geq -\kappa_i$, earning $u-p$, and returns it otherwise, earning
-$-\kappa_i$.
+$-\kappa_i$.  These payoffs are written for the case in which the refund on a
+return equals the purchase price; that coincidence is relaxed under buyer
+remittance in Section~\ref{sec:tax-neutrality}.
 
 Expected surplus from buying at price $p$ is therefore
 \[
@@ -223,11 +261,11 @@ among inframarginal buyers,
   = -cs(p,p)\,f(p)+\int_p^\infty cs_p(v,p)\,dF(v),
 \]
 where $cs_p(v,p)\equiv \partial cs(v,p)/\partial p$.  On the extensive margin,
-$cs(p,p)=0$, so entry and exit contribute nothing at first order.  On the intensive margin, $cs_p(v,p)$
-equals minus the keep probability, because a higher price harms the consumer
-only when she keeps the purchase,
+$cs(p,p)=0$, so entry and exit contribute nothing at first order.  On the intensive margin, a higher price harms a buyer only when she keeps, so the cell average is minus the keep probability in that WTP cell,
 \[
-  cs_p(v,p)=-\Pr(u\geq p-\kappa_i).
+  cs_p(v,p)
+  =
+  -\Pr(\text{keep}\mid v_i=v).
 \]
 Aggregating over buyers who purchase then gives
 \[
@@ -301,15 +339,15 @@ $\mu$, and $\mu(p,h)$ can fail to rise with $p$ when refunds and handling
 eat into the list-price gain.  Which firms are active at each $\mu$
 determines both the market quantity and total profit.
 
-Differentiating $PS(\mu)$ with respect to $\mu$ gives, for each firm,
+Differentiating the profit of firm $j$ with respect to $\mu$ gives
 \[
   \frac{d}{d\mu}\Bigl[\mu\,q_j-C_j(q_j)\Bigr]
   = q_j + q_j'(\mu)\,\bigl[\mu-C_j'(q_j)\bigr].
 \]
 Active firms satisfy $C_j'(q_j)=\mu$ at their chosen output, so the adjustment
-term $q_j'(\mu)\,[\mu-C_j'(q_j)]$ is zero for each firm---equivalently, the
-envelope theorem applied to each firm's profit problem gives
-$d\pi_j/d\mu=q_j(\mu)$.  Summing over firms,
+term $q_j'(\mu)\,[\mu-C_j'(q_j)]$ is zero---equivalently, the envelope theorem
+applied to firm $j$'s profit problem gives $d\pi_j/d\mu=q_j(\mu)$.  Summing
+over firms,
 \[
   PS'(\mu)=\sum_j q_j(\mu)=S(\mu).
 \]
@@ -330,43 +368,211 @@ $PS=\int_0^{\mu(p,h)}S(z)\,dz$.
 With firms responding to the effective margin rather than the list price, a
 natural question is whether the classical result---that it does not matter
 which party remits a unit tax---survives.  \citet{weyl2013pass}
-establish this neutrality without returns.  With returns, the refund amount
-depends on the checkout price, and the answer is regime-dependent.  To see
-the contrast, write the two clearing conditions at a common checkout price
-$p$---the total payment at the register---and a per-unit tax $\tau$.  Fix
-$p$ and $\tau$.  Seller remittance clears at
+establish this neutrality without returns.  Write $p$ for the list
+price and $\tau$ for a per-unit tax.
+Write superscripts $s$ and $b$ for seller and buyer remittance respectively.
+Under seller remittance the seller refunds the tax-inclusive list price
+and recovers none of $\tau$ from the government, so purchase price and return
+recovery both equal list price $p$.  The return rate is therefore the earlier
+$r(p)$, while the seller's effective margin subtracts the unreclaimed tax,
+\[
+  \mu^{s}(p,\tau,h)=p-\tau-r(p)(p+h)=\mu(p,h)-\tau,
+\]
+and clearing is
 \begin{equation}
-  D(p) = S\bigl(p - \tau - r(p)(p+h)\bigr),
+  D(p) = S\bigl(\mu^{s}(p,\tau,h)\bigr).
+  \label{eq:clear-seller}
 \end{equation}
-because both the return rate and per-return cost $p+h$ are evaluated at
-checkout price $p$.  Buyer remittance clears at
+Consumer surplus depends on list price $p$ alone, as in Section~3, and producer
+surplus is the area under supply at $\mu^{s}$,
+\[
+  CS^{s}=CS(p),
+  \qquad
+  PS^{s}=\int_0^{\mu^{s}}S(z)\,dz.
+\]
+A tax therefore reaches consumers only by moving the equilibrium list
+price.  Write $Q\equiv D(p)$.  Differentiating at $\tau=0$, where
+$\mu^{s}_{\tau}=-1$ at fixed $p$ and $\rho^{s}_{\tau}\equiv dp^{s}/d\tau$,
 \begin{equation}
-  D(p) = S\bigl((p-\tau) - r(p-\tau)(p-\tau+h)\bigr),
-\end{equation}
-because the seller posts list price $p-\tau$, so returns and refund cost are
-evaluated there.  The two conditions define the same equilibrium only if the
-arguments of $S(\cdot)$ coincide.  Canceling $p-\tau$ yields
-\begin{equation}
-  r(p)(p+h) = r(p-\tau)(p-\tau+h).
+  \frac{dCS^{s}}{d\tau}
+  =-Q\bigl(1-r\bigr)\rho^{s}_{\tau},
+  \qquad
+  \frac{dPS^{s}}{d\tau}
+  =Q\bigl(\mu_p\rho^{s}_{\tau}-1\bigr).
+  \label{eq:dCS-dPS-seller}
 \end{equation}
 
+\subsection{Buyer remittance: purchase price and recovery}
+
+Buyer remittance breaks that coincidence.  The buyer pays $p$ in
+total, of which $\tau$ goes to the government and $p-\tau$ to the seller.  On
+a return the seller refunds that same pre-tax amount $p-\tau$, and the buyer
+recovers none of $\tau$ from the government.  Purchase is still at list price
+$p$, but the buyer's recovery is only
+\[
+  R=p-\tau.
+\]
+Expected surplus from buying therefore depends on the tax through the return
+option,
+\[
+  cs_i(p,\tau)
+  =\mathbb{E}_{u\sim G_i}\bigl[\max(u-p,\,-\tau-\kappa_i)\bigr].
+\]
+For each fixed $\tau$, type $i$'s willingness to pay $v_i(\tau)$ is defined by
+$cs_i\bigl(v_i(\tau),\tau\bigr)=0$: she buys if and only if $p\leq v_i(\tau)$.
+Differentiating the identity $cs_i\bigl(v_i(\tau),\tau\bigr)=0$ gives
+\[
+  v_i'(\tau)
+  =-\frac{\partial cs_i/\partial\tau}{\partial cs_i/\partial p}.
+\]
+At list price $p$, $\partial cs_i/\partial p=-\Pr(\text{keep})$ and
+$\partial cs_i/\partial\tau=-\Pr(\text{return})$, so
+\[
+  v_i'(\tau)
+  =-\frac{\Pr(\text{return})}{\Pr(\text{keep})}
+  \leq 0.
+\]
+A higher tax weakly lowers every type's willingness to pay by
+worsening the return option.
+
+Across types, $v_i(\tau)$ has distribution $F(\,\cdot\,;\tau)$ with density
+$f(\,\cdot\,;\tau)$.  At $\tau=0$,
+recovery equals the list price, $cs_i(p,0)$ coincides with the earlier $cs_i(p)$, and
+$v_i(0)$ recovers the earlier $v_i$, so $F(\,\cdot\,;0)=F$ and $f(\,\cdot\,;0)=f$.
+Because $v_i'(\tau)\leq 0$ for every $i$, a rise in $\tau$ shifts the distribution of
+willingness to pay down in the first-order stochastic dominance (FOSD) sense:
+for $\tau'>\tau$ and every $p$,
+\[
+  F(p;\tau')\geq F(p;\tau).
+\]
+Demand is $D(p,\tau)=1-F(p;\tau)$.  If the list price is unchanged, a higher
+tax reduces demand only because types with $v_i(\tau)=p$ stop buying.  Those
+types have density $f(p;\tau)$, and each of them has willingness to pay falling
+at rate $v_i'(\tau)$, so
+\[
+  D_\tau
+  =f(p;\tau)\,\mathbb{E}\bigl[v_i'(\tau)\bigm|v_i(\tau)=p\bigr]
+  \leq 0.
+\]
+Because $v_i'=-\Pr(\text{return})/\Pr(\text{keep})$, this is not $-f(p;\tau)$.
+
+Among those who buy, the return decision depends on recovery $R=p-\tau$.
+The average return rate is
+\begin{equation}
+  \tilde{r}(p,\tau)
+  =\frac{1}{D(p,\tau)}\int_p^\infty \phi(v,p-\tau)\,dF(v;\tau).
+\end{equation}
+A higher tax at fixed list price lowers recovery, so remaining buyers are
+less likely to return.  It also causes types with the lowest willingness to
+pay to stop buying.
+Differentiating at $\tau=0$,
+\[
+  \tilde{r}_{\tau}
+  =
+  \underbrace{
+    -\frac{1}{D(p)}\int_p^\infty \frac{\partial\phi(v,p)}{\partial p}\,dF(v)
+  }_{\text{Behavioral channel}}
+  +
+  \underbrace{
+    \frac{-D_{\tau}}{D(p)}\bigl(r(p)-\phi(p,p)\bigr)
+  }_{\text{Selection channel}}.
+\]
+The first term is the behavioral effect.  Remaining buyers face lower recovery
+and become strictly less likely to return, so that channel is negative.  The
+second is selection, with outflow $f(p)$ replaced by $-D_{\tau}$.  Selection is
+unsigned in general, as in $r'(p)$.  When $\phi(v,p)$ decreases in $v$, both
+channels are non-positive, so $\tilde{r}_{\tau}\le 0$.
+
+On the firm side, producer surplus is still the area under supply, but
+evaluated at the effective margin under buyer remittance
+\begin{equation}
+  \tilde{\mu}^{b}(p,\tau,h)
+  =(p-\tau)-\tilde{r}(p,\tau)\,(p-\tau+h),
+  \label{eq:mu-tilde}
+\end{equation}
+rather than at $\mu(p,h)$.  Clearing and producer surplus are therefore
+\begin{equation}
+  D(p,\tau)=S\bigl(\tilde{\mu}^{b}(p,\tau,h)\bigr),
+  \qquad
+  PS=PS\bigl(\tilde{\mu}^{b}(p,\tau,h)\bigr)
+  =\int_0^{\tilde{\mu}^{b}(p,\tau,h)}S(z)\,dz.
+  \label{eq:clear-buyer}
+\end{equation}
+The derivative of producer surplus with respect to $\tau$, evaluated at
+$\tau=0$, is
+\begin{equation}
+  \frac{dPS}{d\tau}
+  =Q\bigl(\mu_p\rho^{b}_{\tau}+\tilde{\mu}^{b}_{\tau}\bigr),
+  \label{eq:dPS-buyer}
+\end{equation}
+where $\rho^{b}_{\tau}\equiv dp^{b}/d\tau$ is the pass-through of the tax into
+list price and
+\begin{equation}
+  \tilde{\mu}^{b}_{\tau}
+  =-\bigl(1-r+(p+h)\,\tilde{r}_{\tau}\bigr)
+\end{equation}
+is the partial of $\tilde{\mu}^{b}$ with respect to $\tau$ at fixed
+$p$.\footnote{At $\tau=0$, $\tilde{\mu}^{b}(p,0,h)=\mu(p,h)$ and
+  $\partial\tilde{\mu}^{b}/\partial p=\mu_p$.  The tax partial at fixed $p$
+  uses $\tilde{r}_{\tau}$, not $r'(p)$.}
+
+Write $cs(v,p,\tau)$ for expected surplus among types with willingness to pay
+$v_i(\tau)=v$, and set
+\begin{equation}
+  CS(p,\tau)
+  =\int_p^\infty cs(v,p,\tau)\,dF(v;\tau).
+\end{equation}
+The total derivative with respect to $\tau$ is
+\[
+  \frac{dCS}{d\tau}
+  =\frac{\partial CS}{\partial p}\Bigm|_{\tau}\rho^{b}_{\tau}
+  +\frac{\partial CS}{\partial \tau}\Bigm|_{p}.
+\]
+The marginal buyer included or excluded by $p$ or $\tau$ has surplus
+zero, so the extensive-margin contribution is zero at first order.  The
+price partial then harms keepers only, as before.  At fixed list
+price, the direct effect of a buyer tax harms returners only, so
+$\partial CS/\partial\tau=-D(p,\tau)\,\tilde{r}(p,\tau)$.\footnote{Differentiating
+  $\int cs\,dF(v;\tau)$ appears to add a term from $F(\,\cdot\,;\tau)$ shifting
+  among buyers with $v>p$.  That is only a relabeling of types.  Among buyers
+  the tax changes surplus only through return probabilities, already averaged
+  into $-D\tilde{r}$.}
+At $\tau=0$,
+\begin{equation}
+  \frac{\partial CS}{\partial p}\Bigm|_{\tau}
+  =-D(p)\bigl(1-r(p)\bigr),
+  \qquad
+  \frac{\partial CS}{\partial \tau}\Bigm|_{p}
+  =-D(p)\,r(p),
+\end{equation}
+and therefore
+\begin{equation}
+  \frac{dCS}{d\tau}
+  =-Q\bigl(1-r\bigr)\rho^{b}_{\tau}-Qr.
+  \label{eq:dCS-buyer}
+\end{equation}
+Compared with \eqref{eq:dCS-dPS-seller}, the producer formula differs only in
+the direct tax effect on the effective margin:
+$\tilde{\mu}^{b}_{\tau}$ replaces $-1$.  The consumer formula adds the
+direct returner term $-Qr$.
+
+\subsection{Neutrality fails}
+
+The two regimes clear through $D(p)=S(\mu^{s})$ and
+$D(p,\tau)=S(\tilde{\mu}^{b})$.  Remittance is therefore neutral only if
+demand and the effective margins match at a common list price,
+$D(p)=D(p,\tau)$ and $\mu^{s}(p,\tau,h)=\tilde{\mu}^{b}(p,\tau,h)$.
+Canceling $p-\tau$ in the margins,
 \begin{result}[Failure of tax neutrality with returns]
   Seller and buyer taxes define the same equilibrium if and only if
-  $r(p)(p+h)=r(p-\tau)(p-\tau+h)$.\footnote{Neutrality requires the return
-  wedge to be the same at checkout price $p$ and at posted list price
-  $p-\tau$.  That holds for all taxes only if $r(p)(p+h)$ is constant in
-  posted list price, which requires $r(p)=C/(p+h)$ for some constant $C$;
-  without that functional form on $r$, the two clearing conditions need not
-  define the same equilibrium.}
+  $D(p)=D(p,\tau)$ and
+  $r(p)(p+h)=\tilde{r}(p,\tau)\,(p-\tau+h)$.
 \end{result}
-
-Tax neutrality breaks down because the refunded amount---and therefore the
-keep-or-return decision---depends on which party remits the tax.  Under seller
-remittance the tax-inclusive checkout price is refunded; under buyer remittance
-only the pre-tax list price is.  Purchase is always based on checkout price
-$p$, but returns are evaluated at $p$ under seller remittance and at $p-\tau$
-under buyer remittance, so the effective margin generally differs and the two
-clearing conditions are not equivalent.
+Demand matches locally if and only if $D_{\tau}=0$.  That partial is in
+general nonzero unless types at the purchase margin $v_i(\tau)=p$ never
+return.  If the marginal buyer returns, $D_{\tau}<0$, so
+$D(p,\tau)<D(p)$ for a small positive tax, the demand sides of the two
+clearing equations differ, and neutrality fails.
 
 %=============================================================================
 \section{Pass-through}
@@ -414,32 +620,26 @@ The two shocks differ in which margin moves at fixed $p$ or fixed $\mu$,
 \end{align}
 The production term is $S_c=-S'(\mu)$ because a one-dollar parallel rise in
 every firm's marginal cost is equivalent, at fixed $\mu$, to evaluating market
-supply at $\mu-1$.  Handling moves $\mu$ by only $r(p)$ per dollar relative to
-that unit production shift, so its numerator in \eqref{eq:pass-through} is the
-fraction $r(p)$ of the production numerator.
+supply at $\mu-1$.  Handling instead lowers the effective margin at a fixed
+list price.  Only returned units incur $h$, so a one-dollar rise lowers that
+margin by $r(p)$.  Supply then falls by $r(p)\,S'(\mu)$, the fraction $r(p)$
+of the production numerator.
 
-Turning to the unit tax, failure of tax neutrality requires separate checkout
-prices $p^s$ and $p^b$ under seller and buyer remittance.  Write
-$\rho^s_\tau\equiv dp^s/d\tau$ and $\rho^b_\tau\equiv dp^b/d\tau$.  At
-$\tau=0$, \eqref{eq:pass-through} with $S_\tau=0$ gives
-\begin{equation}
-  \rho^s_\tau
-  = \frac{-S'(\mu)\,\mu^s_\tau}{S'(\mu)\,\mu_p-D'(p^s)},
-  \qquad
-  \rho^b_\tau
-  = \frac{-S'(\mu)\,\mu^b_\tau}{S'(\mu)\,\mu_p-D'(p^b)}.
-\end{equation}
-The regimes differ only through $\mu^s_\tau$ and $\mu^b_\tau$ at a fixed
-checkout price.  At $\tau=0$, $\mu^s_\tau=-1$.  Under buyer remittance,
-$\tau$ enters the effective margin in the same way as $-p$: a tax increase
-lowers the pre-tax price entering $\mu(p-\tau,h)$ by one dollar, changing
-$\mu$ by $-\mu_p$.  Hence $\mu^b_\tau=-\mu_p$ and
-$\rho^b_\tau=\mu_p\,\rho_c$.  The sign of buyer-remitted pass-through is
-thus tied to that of seller-remitted pass-through by the sign of $\mu_p$.
-When returns are absent ($r=0$), $\mu_p=1$ and the two pass-through rates
-coincide, recovering the classical neutrality benchmark.  If $\mu_p<0$,
-however, the two rates always carry opposite signs.  This is a striking
-reversal of that neutrality intuition.
+Turning to the unit tax, seller and buyer remittance support different list
+prices $p^{s}$ and $p^{b}$.  Seller remittance keeps purchase and recovery
+together at $p$, so demand remains $D(p)$.  At a fixed list price the
+unreclaimed tax lowers the effective margin by one dollar along an
+unchanged $S(\mu)$.  Quantity supplied then falls by $S'(\mu)$, the same
+gap as a one-dollar production-cost rise, so $\rho^{s}_{\tau}=\rho_c$ at
+$\tau=0$.
+
+Buyer remittance clears through
+$D(p,\tau)=S\bigl(\tilde{\mu}^{b}(p,\tau,h)\bigr)$.  At
+$\tau=0$, $\partial\tilde{\mu}^{b}/\partial p=\mu_p$, so the denominator
+$S'(\mu)\,\mu_p-D'(p)$ is the same as for production.  The numerator is
+$-S'(\mu)\,\tilde{\mu}^{b}_{\tau}+D_{\tau}$.  The additional term $D_{\tau}$
+captures how demand is shifted by the tax at a fixed list price.
+Summarizing, the pass-through rates are collected in the following result.
 \begin{result}[Pass-through into list price and remittance-dependent sign]
 \label{res:pass-through}
   \textbf{(i)} Production-cost pass-through is
@@ -452,29 +652,32 @@ reversal of that neutrality intuition.
   \begin{align}
     \rho_h &= r(p)\,\rho_c,
     &
-    \rho^s_\tau &= \rho_c,
+    \rho^{s}_{\tau} &= \rho_c,
     &
-    \rho^b_\tau &= \mu_p\,\rho_c.
+    \rho^{b}_{\tau}
+    &= \Bigl(-\tilde{\mu}^{b}_{\tau}+\frac{D_{\tau}}{S'(\mu)}\Bigr)\rho_c.
     \label{eq:rho-links}
   \end{align}
-  \textbf{(ii)} If $\mu_p<0$, then
+  \textbf{(ii)} If $\tilde{\mu}^{b}_{\tau}>D_{\tau}/S'(\mu)$ and
+  $\rho_c\neq 0$, then
   \[
-  \operatorname{sgn}(\rho^b_\tau)=-\operatorname{sgn}(\rho_c)
+  \operatorname{sgn}(\rho^{b}_{\tau})=-\operatorname{sgn}(\rho_c).
   \]
-  provided $\rho_c\neq 0$.  A unit tax therefore moves the equilibrium
-  checkout price in opposite directions depending on which side of the
-  market remits it.
+  A unit tax therefore moves the equilibrium list price in opposite
+  directions depending on which side of the market remits it.
 \end{result}
-The condition $\mu_p<0$ requires the behavioural response of returns to
-price to be strong enough that the effective margin falls when $p$ rises: from
-$\mu_p=1-r(p)-r'(p)(p+h)$, we have $\mu_p<0$ exactly when
-$r'(p)(p+h)>1-r(p)$.  In that case buyer remittance raises $\mu$ while
-seller remittance lowers it, shifting supply outward and inward
-respectively.  The checkout price must therefore adjust in opposite
-directions to restore equilibrium.  Which regime raises the price and which
-lowers it depends on the sign of $\rho_c$, which in turn hinges on the
-relative magnitudes of the supply and demand elasticities---a point
-developed in the next subsection.
+Because $D_{\tau}\le 0$ and $S'(\mu)>0$, the inequality holds whenever
+$\tilde{\mu}^{b}_{\tau}>0$.  That requires the return rate to fall in
+$\tau$, and to fall fast enough that $-\tilde{r}_{\tau}(p+h)>1-r$, so that
+saved refunds and handling outweigh the tax on kept units.  Buyer
+remittance then raises the effective margin and weakly contracts demand,
+while seller remittance lowers the effective margin along unchanged demand.
+The list price must therefore adjust in opposite directions to restore
+equilibrium.  Which regime raises the price and which lowers it depends on
+the sign of $\rho_c$, which in turn hinges on the relative magnitudes of the
+supply and demand elasticities, a point developed in the next subsection.
+When returns are absent, $\tilde{\mu}^{b}_{\tau}=-1$ and $D_{\tau}=0$, so
+$\rho^{b}_{\tau}=\rho_c$.
 
 \subsection{Elasticity representation}
 
@@ -607,18 +810,24 @@ no-return formula underestimates pass-through.
 \section{Local incidence}
 %=============================================================================
 
-Having established how prices respond to different shocks, we now turn to how
-those price changes affect welfare.  The same pass-through objects determine
-the distribution of surplus between consumers and producers.  Throughout,
-$Q\equiv D(p)$ and $r\equiv r(p)$ denote the equilibrium gross quantity and the
-return rate.  From the consumer-side analysis in Section~3, a small increase in
-any shifter $x$ changes consumer surplus by
+Having established how prices respond to different shocks, we turn to local
+incidence: how each shock's pass-through $\rho_x$ splits the resulting surplus
+change between consumers and producers.  Throughout, $Q\equiv D(p)$ and
+$r\equiv r(p)$ denote the equilibrium gross quantity and the return rate.
+For shocks that reach consumers only through the list price---production
+cost, handling cost, and seller remittance---the consumer-side analysis in
+Section~3 gives
 \begin{equation}
   \frac{dCS}{dx} = -Q(1-r)\rho_x,
   \label{eq:CSx_incidence}
 \end{equation}
-where $\rho_x\equiv dp/dx$ is the pass-through of the shock into the list
-price.
+where $\rho_x\equiv dp/dx$.  Buyer remittance adds the direct recovery channel
+derived above, so
+\begin{equation}
+  \frac{dCS}{d\tau^{b}}
+  =-Q(1-r)\rho^{b}_{\tau}-Qr
+\end{equation}
+as in \eqref{eq:dCS-buyer}.
 
 Producer surplus is $PS(\mu,x)=\int_0^{\mu} S(z,x)\,dz$.  Differentiating with
 respect to $x$ and applying the equilibrium condition $S(\mu,x)=Q$ gives
@@ -634,15 +843,19 @@ $\frac{d\mu}{dx} = \mu_p \rho_x + \mu_x$, yields
   \frac{dPS}{dx} = Q(\mu_p \rho_x + \mu_x) + \Sigma_x.
   \label{eq:PSx_incidence}
 \end{equation}
+Under buyer remittance this is \eqref{eq:dPS-buyer}, with
+$\mu_x=\tilde{\mu}^{b}_{\tau}$ and $\rho_x=\rho^{b}_{\tau}$ from
+\eqref{eq:rho-links} at $\tau=0$.
 
-The local incidence ratio is $I_x \equiv (dCS/dx)/(dPS/dx)$, so
+The local incidence ratio is $I_x \equiv (dCS/dx)/(dPS/dx)$.  For the three
+price-only shocks,
 \[
-  I_x = \frac{-Q(1-r)\rho_x}{Q(\mu_p \rho_x + \mu_x) + \Sigma_x}.
+  I_x = \frac{-Q(1-r)\rho_x}{Q(\mu_p \rho_x + \mu_x) + \Sigma_x},
 \]
-The components needed to evaluate $I_x$ for each shock are reported in
-Table~\ref{tab:incidence_components}.  Across the four shocks the last column
-collapses to the same expression in $\rho_c$ and $\mu_p$: the shock-specific
-pass-through and direct effects cancel in the ratio.
+and the components in Table~\ref{tab:incidence_components} reduce to a common
+expression in $\rho_c$ and $\mu_p$.  The buyer-tax row uses
+\eqref{eq:dCS-buyer}--\eqref{eq:dPS-buyer} instead, so its ratio differs by the
+direct $-Qr$ term.
 
 \begin{table}[htbp]
 \centering
@@ -652,48 +865,67 @@ Shock $x$ & $\rho_x$ & $\mu_x$ & $\Sigma_x$ & $dCS/dx$ & $dPS/dx$ & $I_x$ \\
 \hline
 Production cost $c$ & $\rho_c$ & $0$ & $-Q$ & $-Q(1-r)\rho_c$ & $Q(\mu_p\rho_c - 1)$ & $\displaystyle \frac{(1-r)\rho_c}{1-\mu_p\rho_c}$ \\
 Handling cost $h$ & $r\rho_c$ & $-r$ & $0$ & $-Q(1-r)r\rho_c$ & $Qr(\mu_p\rho_c - 1)$ & $\displaystyle \frac{(1-r)\rho_c}{1-\mu_p\rho_c}$ \\
-Seller tax $\tau^s$ & $\rho_c$ & $-1$ & $0$ & $-Q(1-r)\rho_c$ & $Q(\mu_p\rho_c - 1)$ & $\displaystyle \frac{(1-r)\rho_c}{1-\mu_p\rho_c}$ \\
-Buyer tax $\tau^b$ & $\mu_p\rho_c$ & $-\mu_p$ & $0$ & $-Q(1-r)\mu_p\rho_c$ & $Q\mu_p(\mu_p\rho_c - 1)$ & $\displaystyle \frac{(1-r)\rho_c}{1-\mu_p\rho_c}$ \\
+Seller tax $\tau^{s}$ & $\rho_c$ & $-1$ & $0$ & $-Q(1-r)\rho_c$ & $Q(\mu_p\rho_c - 1)$ & $\displaystyle \frac{(1-r)\rho_c}{1-\mu_p\rho_c}$ \\
+Buyer tax $\tau^{b}$ & $\rho^{b}_{\tau}$ & $\tilde{\mu}^{b}_{\tau}$ & $0$ & $-Q(1-r)\rho^{b}_{\tau}-Qr$ & $Q(\mu_p\rho^{b}_{\tau}+\tilde{\mu}^{b}_{\tau})$ & $\displaystyle \frac{-(1-r)\rho^{b}_{\tau}-r}{\mu_p\rho^{b}_{\tau}+\tilde{\mu}^{b}_{\tau}}$ \\
 \hline
 \end{tabular}
 \caption{Pass-through, direct effects, surplus changes, and incidence ratio for
-each shock.}
+each shock.  Buyer-tax pass-through $\rho^{b}_{\tau}$ is as in
+\eqref{eq:rho-links}.}
 \label{tab:incidence_components}
 \end{table}
 
 \begin{result}
 \label{res:incidence-ratio}
-For all four shocks, the local incidence ratio is identical:
+For production cost, handling cost, and seller remittance, the local incidence
+ratio is identical:
 \begin{equation}
   I_x = \frac{(1-r)\rho_c}{1-\mu_p \rho_c}>0.
   \label{eq:incidence_result}
 \end{equation}
+Under buyer remittance,
+\begin{equation}
+  I_{\tau^{b}}
+  =\frac{-(1-r)\rho^{b}_{\tau}-r}{\mu_p\rho^{b}_{\tau}+\tilde{\mu}^{b}_{\tau}},
+\end{equation}
+with $\rho^{b}_{\tau}$ as in \eqref{eq:rho-links}.  When $D_\tau=0$, so that
+$\rho^{b}_{\tau}=-\tilde{\mu}^{b}_{\tau}\,\rho_c$, this becomes
+\[
+  I_{\tau^{b}}
+  =\frac{(1-r)\tilde{\mu}^{b}_{\tau}\rho_c-r}{\tilde{\mu}^{b}_{\tau}\bigl(1-\mu_p\rho_c\bigr)},
+\]
+which coincides with \eqref{eq:incidence_result} only in special cases (for
+example $r=0$, or $\tilde{\mu}^{b}_{\tau}=-1$ with no direct recovery loss).
 \end{result}
 
 Result~\ref{res:incidence-ratio} establishes that the incidence ratio is
-identical across all four shocks, but the algebra alone can obscure the deeper
-economic mechanism.  The key to understanding this result is that every shock
-is a scaled perturbation of the same equilibrium geometry.  Production cost
-and seller-tax shocks shift the effective margin $\mu$ down by one unit.
-Handling cost shifts it down by $r$ units.  A buyer tax shifts the mapping
-from list price to $\mu$ by $\mu_p$ units.  Locally, the equilibrium condition
-$D(p)=S(\mu)$ is linear in the shock's direct effect on $\mu$.  The resulting
-supply shift is proportional to $\mu_x$, and the price adjustment $\rho_x$ that
-restores market clearing inherits that same proportionality.
+identical across the three price-only shocks, but the algebra alone can obscure
+the deeper economic mechanism.  The key to understanding this result is that
+each of those shocks is a scaled perturbation of the same equilibrium
+geometry.  Production cost and seller-tax shocks shift the effective margin
+$\mu$ down by one unit.  Handling cost shifts it down by $r$ units.  Locally,
+the equilibrium condition $D(p)=S(\mu)$ is linear in the shock's direct effect
+on $\mu$.  The resulting supply shift is proportional to $\mu_x$, and the price
+adjustment $\rho_x$ that restores market clearing inherits that same
+proportionality.  A buyer tax replaces the unit fixed-price response
+$-1$ with $\tilde{\mu}^{b}_{\tau}$, but it also taxes returners directly at
+fixed $p$, so the consumer side is no longer a pure multiple of $\rho_x$
+and the common ratio breaks.
 
 Because both $S(\mu)$ and $PS(\mu)$ are locally linear in $\mu$, the entire
-equilibrium response scales with the shock's effect on the effective margin.
-The shock's scalar therefore multiplies both consumer and producer surplus
-changes in the same proportion and cancels out in the incidence ratio.  The
-shock determines how far the equilibrium moves.  How that movement is split
-between consumers and producers depends on the local demand and supply slopes
-and on local $\mu_p$.\footnote{Consumers care about the list-price change
-$\rho_x$.
+equilibrium response to a price-only shock scales with the shock's effect on
+the effective margin.  The shock's scalar therefore multiplies both consumer
+and producer surplus changes in the same proportion and cancels out in the
+incidence ratio.  The shock determines how far the equilibrium moves.  How that
+movement is split between consumers and producers depends on the local demand
+and supply slopes and on local $\mu_p$.\footnote{Consumers care about the
+list-price change $\rho_x$.
 Producers recover only through the effective margin, which a list-price rise
 moves by $\mu_p\rho_x$.  Thus $\mu_p$ governs how much of each dollar of $p$
 feeds into producer surplus.}
-Incidence is therefore fixed by market structure, not by which side of the
-market is hit first.  What remains is why that common ratio is positive.
+Incidence for those shocks is therefore fixed by market structure, not by
+which side of the market is hit first.  What remains is why that common ratio
+is positive.
 
 The denominator $1-\mu_p\rho_c$ in \eqref{eq:incidence_result} is the per-unit
 loss in producer surplus.  A \$1 cost shock initially reduces producer surplus
@@ -709,27 +941,25 @@ means the recovery exceeds the cost, so producers are net gainers.  This
 recovery factor can be written as
 $\mu_p\rho_c=\varepsilon^S/(\varepsilon^S-\varepsilon^D)$.  This expression
 closely mirrors the pass-through formula, and now we argue that
-$\rho_c<0$ if and only if $\mu_p\rho_c>1$.  The condition
+$\mu_p\rho_c>1$ if and only if $\rho_c<0$.  The condition
 $\mu_p\rho_c>1$ requires $\varepsilon^S<0$, which implies $\mu_p<0$, and hence
 $\rho_c<0$.  Conversely, $\rho_c<0$ requires $\varepsilon^S<0$ and
 $|\varepsilon^S|>-\varepsilon^D$, which gives $\mu_p\rho_c>1$.  Therefore, the
 condition governing producer gain from an increase in production cost is
 exactly the same as that governing negative pass-through.
 
-At first glance, the price drop may seem puzzling.  It raises
-the effective margin ($\mu_p<0$ and $\rho_c<0$) and necessarily more than
-offsets
-the original one-dollar cost increase.  The key is that the price fall must do
-double duty to clear the market.  A one-dollar cost increase shifts the supply
-curve left, creating an initial excess demand gap.  To fill this gap, quantity
-supplied must increase.  Since quantity supplied increases with the
-effective margin $\mu$, restoring enough supply to cover the original gap
-already requires $\mu$ to rise by one dollar.  But the price fall also
-increases quantity demanded, creating additional excess demand on top of the
-initial gap.  To satisfy both the original supply shortfall and this new
-demand, supply must increase by more than the original shift, so the
-effective margin must rise by more than one dollar.  Thus, $\mu_p\rho_c>1$ is
-precisely the market-clearing requirement when pass-through is negative.
+At first glance it may seem puzzling that, under negative pass-through, the
+effective-margin recovery more than offsets the initial producer-surplus
+loss of $Q$.  The price fall must do double duty to clear the market.  A one-dollar cost increase shifts the supply curve upward, creating
+an initial excess demand gap.  To fill this gap, quantity supplied must
+increase.  Since quantity supplied increases with the effective margin
+$\mu$, restoring enough supply to cover the original gap already requires
+$\mu$ to rise by one dollar.  But the price fall also increases quantity
+demanded, creating additional excess demand on top of the initial gap.  To
+satisfy both the original supply shortfall and this new demand, supply must
+increase by more than the original shift, so the effective margin must rise
+by more than one dollar.  Thus, $\mu_p\rho_c>1$ is precisely the
+market-clearing requirement when pass-through is negative.
 
 The preceding observation implies a striking result: the uniformly positive
 incidence ratio means consumer and producer surplus always move together,
@@ -747,9 +977,12 @@ When $\rho_c>0$, all four shocks reduce both surpluses.  Such gains are
 impossible in the classical model, where pass-through is always positive,
 underscoring how profoundly returns alter standard welfare analysis.
 
-\subsection{Deadweight loss and the returns-augmented Harberger triangle}
+\subsection{First-order private surplus and deadweight loss}
+\label{sec:DWL}
 
-Private surplus is $W=CS+PS$.  Summing (\ref{eq:CSx_incidence}) and
+Local incidence separates the burden between consumers and producers.  Their
+joint payoff---private surplus---is the sum of consumer and producer surplus,
+$W\equiv CS+PS$.  Summing (\ref{eq:CSx_incidence}) and
 (\ref{eq:PSx_incidence}) gives
 \[
   \frac{dW}{dx}
@@ -769,99 +1002,84 @@ with $\mu_x$ and $\Sigma_x$ as in Table~\ref{tab:incidence_components}.
 The term $-Q\,r'(p)(p+h)\rho_x$ is new relative to the classical model.  It
 captures the efficiency consequence of the price-induced change in the return
 rate.  Each returned unit consumes real handling resources $h$, so a change in
-the return rate has a first-order welfare impact that is absent when returns
-are shut down.
+the return rate has a first-order effect on private surplus that is absent
+when returns are shut down.
 
 Without returns, $r=0$ and $r'=0$, so \eqref{eq:DWL_incidence} reduces to
 \[
   \frac{dW}{dx} = Q\,\mu_x + \Sigma_x.
 \]
 For a unit production-cost increase, the supply curve shifts vertically upward
-by one dollar at every quantity.  The immediate surplus loss is therefore the
-area of that shift---a rectangle of height one and width $Q$.  Algebraically,
-private surplus is $W=CS(p)+PS(p-c)$.  Differentiating, the price-change terms
-$-Q\rho_c$ and $+Q\rho_c$ cancel, leaving $dW/dc=-Q$: a pure resource drain
-that begins at once.
+by one dollar at every quantity.  The surplus loss is therefore the area of
+that shift---a rectangle of height one and width $Q$.  Algebraically, private
+surplus is $W=CS(p)+PS(p-c)$.  Differentiating, the price-change terms
+$-Q\rho_c$ and $+Q\rho_c$ cancel, leaving $dW/dc=-Q$: a first-order real
+resource loss of $Q$ dollars.
 
-A unit tax has the same initial impact on private surplus:
-$W=CS(p)+PS(p-\tau)$ gives $dW/d\tau=-Q$, with the same cancellation of
-price-change terms.  The difference is that the government now collects
-revenue $\tau Q$.  Adding it back, total surplus is $V=W+\tau Q$, whose
-derivative $dV/d\tau=\tau Q'(\tau)$ is zero at $\tau=0$.  Hence an
-infinitesimal tax creates no net loss; the loss appears only as the tax
-grows, accumulating quadratically as the classic Harberger triangle
-\citep{harberger1964taxation},
-$\Delta V\approx -\tfrac12\tau^2 Q'(0)$.
+For a unit tax the same cancellation gives $dW/d\tau=-Q$, but government
+revenue $G=\tau Q(\tau)$ is transferred rather than lost.  Total surplus
+$V=W+G$ therefore satisfies
+$dV/d\tau=dW/d\tau+Q(\tau)+\tau Q'(\tau)=\tau Q'(\tau)$, which is zero at
+$\tau=0$.  Locally, a cost shock has a first-order private-surplus effect of
+$-Q$, while an infinitesimal tax has no first-order social loss---the dollar
+is lost in one case and merely transferred in the other.
 
-Without returns, cost shocks therefore produce an immediate rectangle of real
-resource loss, while taxes produce a triangle of distortionary loss that
-starts from zero.  The two are cleanly separated by whether the dollar is
-lost or merely transferred.
-
-Product returns overturn the clean dichotomy between resource drains and pure
-transfers that characterizes the textbook model.  The return-rate term in
-\eqref{eq:DWL_incidence} is generally nonzero for every shock, so
-production-cost increases, handling-cost increases, and unit taxes under both
-remittance regimes all generate first-order welfare changes that cannot be
-written as mere transfers.
+Product returns overturn that clean private-versus-transfer contrast.  The
+return-rate term in \eqref{eq:DWL_incidence} is generally nonzero for every
+shock, so production-cost increases, handling-cost increases, and unit taxes
+under both remittance regimes all change private surplus at first order in a
+way that is not a pure transfer between buyers and sellers.  We first track
+these private-surplus changes for all four shocks.  For taxes, treasury
+revenue remains a transfer; we add $G=\tau Q(\tau)$ back when measuring
+deadweight loss below.
 
 Plugging the values of $\mu_x$ and $\Sigma_x$ from
-Table~\ref{tab:incidence_components} into the general welfare expression
+Table~\ref{tab:incidence_components} into
 $dW/dx=Q\bigl[\mu_x-r'(p)(p+h)\rho_x\bigr]+\Sigma_x$, and using the
 pass-through links from Result~\ref{res:pass-through}, yields
 \begin{align}
   \frac{dW}{dc}
-  &= -Q\,\Delta,
+  &= -Q\,\Lambda,
   &
   \frac{dW}{dh}
-  &= -Q\,r\,\Delta,
+  &= -Q\,r\,\Lambda,
   &
   \frac{dW}{d\tau^s}
-  &= -Q\,\Delta,
+  &= -Q\,\Lambda,
   &
   \frac{dW}{d\tau^b}
-  &= -Q\,\mu_p\,\Delta,
+  &= -Q\,\mu_p\,\Lambda,
   \label{eq:DWL_shocks}
 \end{align}
 where the common factor is defined as
 \begin{equation}
-  \Delta \equiv 1 + r'(p)(p+h)\,\rho_c.
-  \label{eq:Delta}
+  \Lambda \equiv 1 + r'(p)(p+h)\,\rho_c.
+  \label{eq:Lambda}
 \end{equation}
-The unit term in $\Delta$ is the mechanical welfare effect that remains even
-if returns do not respond to price.  The term $r'(p)(p+h)\rho_c$ is the extra
-efficiency cost of reallocating units between kept and returned states after
-the price moves.  Each change $r'(p)\rho_c$ in the return rate costs $p+h$
-per unit sold.  We decompose any of the welfare changes in
-\eqref{eq:DWL_shocks} into an ex-ante loss on the purchase margin and an
-ex-post loss on the keep-or-return margin.  This decomposition is simplest
-for a production-cost or seller-tax shock, where $dW/dx=-Q\Delta$.  Handling
-and buyer-remitted taxes then rescale the ex-ante and ex-post losses by $r$
-and $\mu_p$, respectively.
+Private surplus moves because consumers change either how much they buy or
+whether they return what they bought.  The unit term in $\Lambda$ is the
+mechanical effect on the purchase margin that remains even if the return rate
+does not respond to price.  The term $r'(p)(p+h)\rho_c$ is the extra
+efficiency cost on the keep-or-return margin after the price moves: each
+change $r'(p)\rho_c$ in the return rate costs $p+h$ per unit sold.  We
+therefore decompose the private-surplus changes in \eqref{eq:DWL_shocks} into
+an ex-ante loss on the purchase margin and an ex-post loss on the
+keep-or-return margin.  That split is simplest for a production-cost or
+seller-tax shock, where $dW/dx=-Q\Lambda$; handling and buyer-remitted taxes
+rescale both pieces by $r$ and $\mu_p$, respectively.
 
-To isolate the mechanical effect, hold the keep-or-return margin fixed while
-purchase can still adjust.  This is the natural benchmark because the true
-first-order change mixes two responses.  Quantity adjusts on the purchase
-margin, and the return rate reallocates units between kept and returned
-states.  Holding the return rate fixed shuts down only the second response,
-so the welfare change in the resulting economy is the ex-ante loss on the
-purchase margin.  The residual relative to the true change $dW/dx$ is the
-ex-post loss on the keep-or-return margin.
-
-Freeze the aggregate return rate at its initial value $r_0\equiv r(p_0)$.  In
-the resulting ex-ante economy the effective margin is \eqref{eq:mu-def} with
-$r(p)$ replaced by that constant,
+Freeze the aggregate return rate at its initial value $r_0\equiv r(p_0)$.
+In the resulting ex-ante economy the effective margin is
+\eqref{eq:mu-def} with $r(p)$ replaced by that constant,
 \begin{equation}
   \mu^{\mathrm{EA}}(p)\equiv p-r_0(p+h).
   \label{eq:mu-EA}
 \end{equation}
 Applying \eqref{eq:DWL_incidence} then yields
 $dW/dx\big|_{\mathrm{EA}}=-Q$, the classical rectangle from changing gross
-quantity alone.
-
-The ex-post change is that residual,
+quantity alone.  The ex-post change is that residual,
 $dW/dx\big|_{\mathrm{EP}}\equiv dW/dx-dW/dx\big|_{\mathrm{EA}}$.  Since
-$dW/dx=-Q\Delta$ for these shocks,
+$dW/dx=-Q\Lambda$ for these shocks,
 \begin{equation}
   \frac{dW}{dx}\Big|_{\mathrm{EP}}
   =-Q\,r'(p)(p+h)\rho_c.
@@ -883,55 +1101,49 @@ $dW/dx=-Q\Delta$ for these shocks,
   $-Q\mu_p\,r'(p)(p+h)\rho_c$, so the ex-ante loss is not $-Q$ whenever
   $\mu_p\neq 1$.
 \end{result}
-Because consumer and producer surplus always move together, $\Delta$ has the
+Because consumer and producer surplus always move together, $\Lambda$ has the
 same sign as $\rho_c$.  The no-return formula retains only the ex-ante
-rectangle $-Q$ and omits the ex-post loss $-Q\,r'(p)(p+h)\rho_c$, so the
-comparison with that rectangle is governed by the size and sign of the
-ex-post term.
+rectangle $-Q$, so the comparison with that benchmark is governed only by the
+ex-post term $-Q\,r'(p)(p+h)\rho_c$.  That term may partially offset the
+rectangle, amplify it, or reverse the private-surplus change.
 
-When $\rho_c>0$, two regimes are possible.  If $\mu_p>0$, supply slopes
-upward in list-price space, so a cost increase raises $p$.  Whenever
-$r'(p)>0$, that price increase raises the return rate, adds handling costs,
-and makes the ex-post loss amplify the ex-ante rectangle, so $\Delta>1$.
-Whenever $r'(p)<0$, the return rate falls and the ex-post term partially
-offsets the ex-ante loss, yielding $0<\Delta<1$.  The welfare loss $Q\Delta$
-is larger when $r'(p)$ is positive and large or when $h$ is large, because
-each dollar of pass-through raises returns and wastes an additional $p+h$
-per unit sold.
+The simplest case is when the selection channel in the return rate
+dominates, so $r'(p)<0$.  A cost increase raises the list price (since
+$r'<0$ forces $\mu_p>0$ and hence $\rho_c>0$), screens out frequent
+returners, and lowers the return rate.  The ex-post term is then a gain that
+partially offsets the ex-ante rectangle, so $0<\Lambda<1$.  It cannot reverse
+the private-surplus change: $\rho_c>0$ keeps both consumer and producer
+surplus falling, hence $\Lambda>0$.
 
-If instead $\rho_c>0$ and $\mu_p<0$ (so $|\varepsilon_S|<-\varepsilon_D$),
-supply slopes downward in list-price space.  A higher $p$ lowers $\mu$ and
-contracts both quantity supplied and quantity demanded, yet pass-through
-remains positive because demand is more price-responsive than this
-downward-sloping supply.  The return-rate response must already be steep,
-since $\mu_p<0$ requires $r'(p)(p+h)>1-r$.  Even a modest $\rho_c$ can then
-make the ex-post loss large relative to the ex-ante rectangle, leaving
-$\Delta$ substantially above one.
+When instead $r'(p)>0$, the bias hinges on the sign of pass-through.  If
+$\rho_c>0$, the higher list price raises returns and adds handling costs, so
+the ex-post loss amplifies the ex-ante rectangle and $\Lambda>1$.  That
+amplification is larger when $r'(p)$ or $h$ is large.
+% The same qualitative conclusion holds when $\mu_p<0$ but pass-through
+% remains positive ($|\varepsilon_S|<-\varepsilon_D$): $\mu_p<0$ already
+% requires a steep return response, so even a modest $\rho_c$ can push
+% $\Lambda$ well above one.
 
-When $\rho_c<0$, pass-through is negative.  A production-cost or seller-tax
-increase then lowers the list price.  That fall in $p$ reduces the return
-rate, so units that would have been returned are instead kept.  Each such
-switch saves $p+h$, and the ex-post term turns into a gain.  Those savings
-can exceed the ex-ante resource cost of the shock, so private surplus rises
-by $Q|\Delta|$ and a Pareto improvement is possible.  The ex-post gain is
-larger when $r'(p)(p+h)\,|\rho_c|$ is large.
-
-Relative to the no-return benchmark that keeps only the ex-ante rectangle,
-the true change $-Q\Delta$ under- or overstates according to whether the
-omitted ex-post term adds to or offsets that rectangle, and predicts a loss
-when surplus in fact rises if and only if the ex-post gain dominates.
-\begin{result}[Bias from ignoring returns in first-order welfare]
+If instead $\rho_c<0$, a production-cost or seller-tax increase lowers the
+list price, so consumer surplus rises.  Positive incidence then raises
+producer surplus as well---a Pareto improvement---and private surplus rises
+by $Q|\Lambda|$ ($\Lambda<0$).  The gain is larger when
+$r'(p)(p+h)\,|\rho_c|$ is large.  These three comparisons are summarized in
+Result~\ref{res:welfare-bias}.
+\begin{result}[No-return private-surplus bias]
 \label{res:welfare-bias}
   Consider a unit production-cost or seller-tax increase.  Relative to the
-  correct returns-adjusted change $dW/dc=-Q\Delta$, the no-return formula
+  correct returns-adjusted change $dW/dc=-Q\Lambda$, the no-return formula
   $dW/dc=-Q$
   \begin{enumerate}
-  \item[(i)] underestimates the welfare loss if and only if $\rho_c>0$ and
-  $r'(p)>0$ (hence $\Delta>1$);
-  \item[(ii)] overestimates the welfare loss if and only if $r'(p)<0$
-  (which implies $\mu_p>0$ and hence $\rho_c>0$, so $0<\Delta<1$);
-  \item[(iii)] predicts a loss of $Q$ when private surplus in fact rises if
-  and only if $\rho_c<0$, in which case the rise is $Q|\Delta|$.
+  \item[(i)] overestimates the private-surplus loss if and only if
+  $r'(p)<0$ (which implies $\mu_p>0$ and hence $\rho_c>0$, so
+  $0<\Lambda<1$);
+  \item[(ii)] underestimates the private-surplus loss if and only if
+  $r'(p)>0$ and $\rho_c>0$ (hence $\Lambda>1$);
+  \item[(iii)] overestimates the private-surplus loss with the wrong
+  sign---reporting a loss of $Q$ when the shock in fact raises private
+  surplus by $Q|\Lambda|$---if and only if $r'(p)>0$ and $\rho_c<0$.
   \end{enumerate}
 \end{result}
 For production-cost and seller-tax shocks that bias is purely ex-post.  The
@@ -942,43 +1154,149 @@ scaled by $\mu_p$,
   \frac{dW}{d\tau^b}
   =-Q\mu_p
   -Q\mu_p\,r'(p)(p+h)\rho_c
-  =-Q\mu_p\Delta,
+  =-Q\mu_p\Lambda,
 \end{equation}
-so relative to $-Q$ the bias is both ex-ante ($-Q\mu_p$ vs $-Q$) and
-ex-post (the omitted keep-or-return term, also scaled by $\mu_p$),
-interacting through $\mu_p\Delta$.  When $\mu_p>0$, the no-return formula underestimates the ex-ante loss if and
-only if $\mu_p>1$, and overestimates it otherwise.  That cut is the same
-threshold as Result~\ref{res:pt-bias-er}: $\mu_p>1$ if and only if
-$\varepsilon_r(p)<-p/(p+h)$.  Whenever the classical formula overestimates
-pass-through, it therefore underestimates the ex-ante loss, and whenever it
-underestimates pass-through it overestimates that loss.
+so relative to the returns-adjusted change $-Q\mu_p\Lambda$, the no-return
+formula $-Q$ errs on both the ex-ante piece ($-Q$ vs $-Q\mu_p$) and the
+ex-post piece.  When $\mu_p>0$, the no-return formula underestimates the
+ex-ante loss if and only if $\mu_p>1$, and overestimates it otherwise.  That
+cut is the same threshold as Result~\ref{res:pt-bias-er}: $\mu_p>1$ if and
+only if $\varepsilon_r(p)<-p/(p+h)$.  Overestimation of pass-through by the
+no-return formula is therefore underestimation of the ex-ante loss.
 
-For the ex-post piece, as in Result~\ref{res:welfare-bias}(ii), $r'(p)<0$
-pins the term as a gain.  Selection improves the composition of buyers, so a
-higher list price lowers the return rate and raises the effective margin more
-steeply: $\mu_p>0$ and hence $\rho_c>0$.  When $r'(p)>0$, the sign of the
-ex-post term depends on $\rho_c$ and has no succinct formula.  The corollary
-below records when the joint effect $\mu_p\Delta$ under- or overstates
-relative to $-Q$.
-\begin{corollary}[Bias under buyer remittance]
+For the ex-post piece, as in Result~\ref{res:welfare-bias}(i), $r'(p)<0$
+pins the term as a gain.  When selection dominates the behavioral response, the
+higher list price from cost pass-through screens out consumers who return
+frequently, so the return rate and the associated refund-and-handling cost
+fall.  When $r'(p)>0$, the sign of the ex-post term depends on $\rho_c$ and
+has no succinct formula.
+\begin{corollary}[Buyer-remittance no-return bias]
 \label{cor:welfare-bias-buyer}
-  Relative to the no-return prediction $dW/d\tau=-Q$, a unit buyer-remitted
-  tax has true change $-Q\mu_p\Delta$.
-  \begin{enumerate}
-  \item[(i)] If $\mu_p>0$ (which implies $\rho_c>0$ and hence $\Delta>0$),
-  both components keep the seller-remittance signs but scale with $\mu_p$.
-  The no-return formula underestimates the welfare loss if and only if
-  $\mu_p\Delta>1$ and overestimates it if and only if $0<\mu_p\Delta<1$.
-  \item[(ii)] If $\mu_p<0$, the ex-ante piece flips relative to $-Q$ and the
-  ex-post piece flips with it.  The no-return formula predicts a loss of $Q$,
-  whereas private surplus rises by $Q\,|\mu_p|\Delta$ if and only if
-  $\rho_c>0$ and falls by $Q\,|\mu_p\Delta|$ if and only if $\rho_c<0$.
-  \end{enumerate}
+  Relative to the correct returns-adjusted change $-Q\mu_p\Lambda$, the
+  no-return prediction $dW/d\tau=-Q$ underestimates the private-surplus loss
+  if and only if $\mu_p\Lambda>1$ and overestimates it if and only if
+  $\mu_p\Lambda<1$.  The latter cut is equivalent to
+  \begin{equation}
+    \varepsilon_r(p)\,
+    \frac{-\varepsilon_D}{\varepsilon_S-\varepsilon_D}
+    >
+    -\frac{p}{p+h}.
+    \label{eq:V-buyer-cut}
+  \end{equation}
 \end{corollary}
-Appendix~\ref{app:welfare-bias-primitives} restates these cases in the
-return-rate elasticity $\varepsilon_r(p)$ and the observed supply and demand
-elasticities $\varepsilon_S(p)$ and $\varepsilon_D(p)$---the form most useful
-for empirical checks.
+Appendix~\ref{app:welfare-bias-primitives} proves the corollary.
+Which sign of $\mu_p\Lambda-1$ obtains depends on the return-rate slope
+and on pass-through.  Table~\ref{tab:buyer-bias-cases} summarizes the four
+cases.  The first columns record the primitives and the two pass-throughs:
+$\rho_c$ is cost pass-through, and buyer-tax pass-through into the list
+price is $\rho^b_\tau=\mu_p\rho_c$.  The last three columns split the private
+change $-Q\mu_p\Lambda$.  EA is the ex-ante (frozen-return) term $-Q\mu_p$: a
+loss when $\mu_p>0$ and a gain when $\mu_p<0$.  EP is the ex-post keep-or-return
+term $-Q\mu_p\,r'(p)(p+h)\rho_c$.  Bias vs $-Q$ reports the corollary cut:
+overestimate when $\mu_p\Lambda<1$ and underestimate when $\mu_p\Lambda>1$.
+Wrong sign is not a third category: it is the extreme case of overestimation
+in which private surplus rises.  The no-return formula still reports a loss
+of $Q$, while the true change is a gain, so $-Q$ both overestimates the loss
+and gets its direction wrong.
+\begin{table}[htbp]
+\centering
+\begin{tabular}{llccccc}
+\hline
+Case & Primitives & $\rho_c$ & $\rho^b_\tau$ & EA & EP & Bias vs $-Q$ \\
+\hline
+1 & $r'<0$ ($\Rightarrow\mu_p>0$) & $>0$ & $>0$ &
+  loss & gain & over- or under-estimate \\
+2 & $r'>0$, $\mu_p>0$ & $>0$ & $>0$ &
+  loss & loss & overestimate \\
+3 & $r'>0$, $\mu_p<0$, $|\varepsilon_S|<-\varepsilon_D$ & $>0$ & $<0$ &
+  gain & gain & overestimate (wrong sign) \\
+4 & $r'>0$, $\mu_p<0$, $|\varepsilon_S|>-\varepsilon_D$ & $<0$ & $>0$ &
+  gain & loss & over- or under-estimate \\
+\hline
+\end{tabular}
+\caption{Buyer-remittance bias relative to $-Q$.}
+\label{tab:buyer-bias-cases}
+\end{table}
+\begin{itemize}
+  \item Case~1 (selection).  Because $\mu_p>0$, a buyer-remitted tax lowers
+  the effective margin at a fixed list price, so the ex-ante
+  (frozen-return) private change $-Q\mu_p$ is a loss---larger than $-Q$ when
+  $\mu_p>1$ and smaller when $\mu_p<1$.  The ex-post term is a gain as above.
+  Overestimation ($\mu_p\Lambda<1$) further requires that
+  $-\varepsilon_D/(\varepsilon_S-\varepsilon_D)$ not be too large---demand
+  not too elastic relative to supply---so that pass-through remains large
+  enough for the fall in the return rate to deliver a sufficient $p+h$
+  saving.  When demand is very elastic, small positive pass-through weakens
+  equilibrium screening and reduces this ex-post gain.
+  \item Case~2 (mild behavioral).  Returns rise in price, but not enough to
+  flip the effective-margin slope: $0<\mu_p<1-r$.  The ex-ante term is
+  therefore a loss smaller than $Q$.  With $\rho_c>0$ we also have
+  $\Lambda>1$, so the ex-post term is a loss as well.  The combined loss is
+  nevertheless smaller than $Q$: writing
+  $\mu_p\Lambda-1=-r-r'(p)(p+h)(1-\mu_p\rho_c)$,
+  both summands are negative when $r'>0$ and $\rho_c>0$
+  (hence $\mu_p\rho_c<1$).
+  \item Case~3 (strong behavioral, positive cost pass-through).
+  Returns rise in price strongly enough that $\mu_p<0$, so at a fixed
+  list price a buyer-remitted tax \emph{raises} the seller's effective
+  margin and the ex-ante term is a gain.  Demand is steeper than supply, so
+  cost pass-through is positive and buyer-tax pass-through
+  $\rho^b_\tau=\mu_p\rho_c$ is negative.  The list price therefore falls,
+  and with $r'>0$ returns fall as well, making the ex-post term a gain.
+  Private surplus rises ($\mu_p\Lambda<0$), while $-Q$ still reports a loss
+  of $Q$---the extreme wrong-sign overestimate.
+  \item Case~4 (strong behavioral, negative cost pass-through).
+  Supply is steeper than demand, so cost pass-through is negative and
+  buyer-tax pass-through $\rho^b_\tau=\mu_p\rho_c$ is positive.  The
+  list price therefore rises, and with $r'>0$ returns rise as well,
+  making the ex-post term a loss that opposes the ex-ante gain from
+  $\mu_p<0$.  From the Case~2 identity
+  $\mu_p\Lambda-1=-r-r'(p)(p+h)(1-\mu_p\rho_c)$,
+  negative cost pass-through forces $\mu_p\rho_c>1$, so the second summand
+  is positive and offsets $-r$.  The Case~4 primitives alone therefore do
+  not pin whether $\mu_p\Lambda$ lies below or above one, nor whether
+  private surplus falls or rises.
+\end{itemize}
+
+For tax shocks, social surplus adds back treasury revenue.  Because the
+remitter recovers none of $\tau$ from the government on a return, revenue is
+$G=\tau Q(\tau)$ under both remittance regimes, with $Q$ the equilibrium
+gross quantity at that tax.  Write $V=W+G$.  Differentiating the product
+gives $dG/d\tau=Q+\tau Q'$, so at $\tau=0$ we have $dV/d\tau=dW/d\tau+Q$.
+Using \eqref{eq:DWL_shocks},
+\begin{align}
+  \frac{dV}{d\tau^s}
+  &= -Q(\Lambda-1)
+  = -Q\,r'(p)(p+h)\rho_c,
+  &
+  \frac{dV}{d\tau^b}
+  &= Q\bigl(1-\mu_p\Lambda\bigr).
+  \label{eq:DWL_V_tax}
+\end{align}
+Whether an infinitesimal tax creates a first-order social loss or gain
+follows the same cuts as Result~\ref{res:welfare-bias} and
+Corollary~\ref{cor:welfare-bias-buyer}.
+
+%=============================================================================
+\section{Global Incidence}
+\label{sec:global-incidence}
+%=============================================================================
+
+Integrating the local derivatives $\frac{dCS}{dx}$ and $\frac{dPS}{dx}$ listed
+in Table~\ref{tab:incidence_components} from $x_0$ to $x_1$ gives the global
+surplus changes $\Delta CS$ and $\Delta PS$ for any shock
+$x\in\{c,h,\tau^s,\tau^b\}$.  The global incidence ratio
+$I_{x_0}^{x_1}\equiv \Delta CS/\Delta PS$ (when $\Delta PS\neq0$) follows from
+the local relation $dCS/dx = I(x)\,dPS/dx$:
+\begin{equation}
+I_{x_0}^{x_1} = \int_{x_0}^{x_1} I(x)\,\omega(x)\,dx,
+\label{eq:global-incidence-final}
+\end{equation}
+where $\omega(x)\equiv (dPS/dx)/\Delta PS$.  Although $I(x)>0$ at every point,
+the global ratio need \emph{not} be positive: if $dPS/dx$ changes sign along
+the path, the weights $\omega(x)$ take both signs, and the weighted average
+can become negative.  Hence the classical sign-preserving property of local
+incidence does not extend globally.
 
 \input{appendix_welfare_bias_primitives}
 

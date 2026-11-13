@@ -1,0 +1,1146 @@
+Article
+
+                                                                                                                                Journal of Marketing
+                                                                                                                                                1-21
+Free Riding on Product Returns to                                                                            © American Marketing Association 2026
+                                                                                                                            Article reuse guidelines:
+
+Drive Proﬁts                                                                                                      sagepub.com/journals-permissions
+                                                                                                                 DOI: 10.1177/00222429251409673
+                                                                                                                    journals.sagepub.com/home/jmx
+
+
+
+
+Elisa Montaguti          , Scott Neslin, and Sara Valentini
+
+
+
+Abstract
+Returning products has become standard practice for consumers and a signiﬁcant “pain point” for retailers. The authors contend
+that returns can be harnessed to increase proﬁts. Doing so requires retailers to manage the interweaving dynamics of product
+returns and purchases. The strategy is to comanage a virtuous cycle, whereby current returns increase future purchases, and a
+vicious cycle, whereby current returns increase future returns. Marketing executes the strategy by generating purchases, and the
+returns that follow impose a direct cost due to the vicious cycle. However, the virtuous cycle of returns can offset the vicious
+cycle, enabling the retailer to “free ride” on returns by optimizing its marketing. The approach follows the decision support sys-
+tem paradigm by combining a conceptual model, a statistical model, data, and optimization. A core construct is a stock variable
+tracking consumers’ memory of return experiences, which drives both the virtuous and vicious cycles. The authors optimize mar-
+keting spend while accounting for return stock. The best results occur when dynamics are incorporated into both the statistical
+and optimization models. The results suggest that managers should avoid strict return policies aimed at eliminating returns.
+Instead, they should design policies that optimally balance the long-term beneﬁts and costs of returns.
+
+Keywords
+product returns, returns carryover effect, dynamic optimization, marketing ROI, return stock, return policies, online retailing,
+marketing spend allocation
+Online supplement: https://doi.org/10.1177/00222429251409673
+Submitted September 11, 2023
+
+
+
+Product returns are the bane of retail management. Retailers       mechanism behind this virtuous cycle has not been deﬁnitively
+bemoan the deduction from revenues they thought were in the        identiﬁed and boundary conditions remain to be clariﬁed, the
+bank and the costs of processing returned merchandise. The         evidence for a positive relationship between current returns
+problem is acute in online retailing, where return rates easily    and future purchases is compelling.
+approach 30%–40%.                                                     This evidence is provocative because it suggests that retailers
+   There is no doubt that returns saddle retailers with a short-   have an opportunity to manage returns to maximize long-term
+term reduction in proﬁts. However, research suggests that          proﬁts. How can this be achieved? Our work suggests that
+returns may beneﬁt retailers in the long run by increasing         ﬁrms can improve long-term proﬁts by devising a dynamic mar-
+future sales. Bower and Maxham (2012) ﬁnd that customers           keting strategy that accounts for the relationship between
+who make returns increase spending in the long run if return       product returns and future purchases. We refer to this as “free
+shipping costs are free. In an extensive empirical analysis,       riding” on product returns, which requires optimizing marketing
+Petersen and Kumar (2015) ﬁnd a positive relationship              dynamically over time.
+between current returns and future sales. Chen (2021) develops
+a structural model to investigate the returns/sales relationship
+and replicates the positive relationship, and El Kihal et al.      Elisa Montaguti is Full Professor of Marketing, Management Department,
+(2025) uncover this relationship in their research. In a meta-     University of Bologna, Italy (email: elisa.montaguti@unibo.it). Scott Neslin is
+                                                                   Albert Wesley Frey Professor of Marketing, Tuck School of Business,
+analysis, Janakiraman, Syrdal, and Freling (2016) ﬁnd that         Dartmouth College, USA (email: scott.a.neslin@dartmouth.edu). Sara
+lenient return policies unsurprisingly increase returns but also   Valentini (corresponding author) is Associate Professor, Marketing
+increase purchases to a greater extent. While the psychological    Department, Bocconi University, Italy (email: s.valentini@unibocconi.it).
+2                                                                                                                                      Journal of Marketing 0(0)
+
+
+    The complexity arises from the dynamics among marketing,                         insight is that the goal is not zero returns but rather to use mar-
+returns, and purchases. Marketing can produce a purchase in                          keting to generate enough returns to free ride on the virtuous
+period t that may be returned in period t. Due to the positive                       cycle without generating too much negative impact—the
+impact of returns on purchase, this would increase the chance                        vicious cycle.
+of a purchase in t + 1—the virtuous cycle.1 However, it may                              Our data cover a ﬁve-year period and include approximately
+also increase the likelihood of a return in t + 1—the vicious                        1,500 customers from several countries, observed from their
+cycle. If the virtuous cycle is large relative to the vicious                        ﬁrst purchase and known to have made at least one purchase
+cycle, the retailer can free ride on the period t return and                         per year. The data are provided by an online fashion retailer
+allow it to generate a purchase in period t + 1. The retailer                        with a “standard” 30% return rate. We show the role that cus-
+does not have to market in t + 1; instead, it can market in t + 2                    tomers’ memories of return experience play in shaping virtuous
+to generate a purchase and repeat the sequence.                                      and vicious cycles and measure the impact of marketing on
+    Marketing therefore plays a pivotal role because it can stim-                    these cycles. We also examine how optimal marketing varies
+ulate purchases that may be returned. These returns can generate                     across countries, which, due to different return policies, differ
+future purchases due to the virtuous cycle as well as additional                     in their potential to generate proﬁts through free riding.
+returns due to the vicious cycle. In this sense, marketing stimu-                        The estimated statistical model identiﬁes a positive direct impact
+lates both cycles. The “trick” is to use marketing to generate                       of current returns on future sales—the virtuous cycle—and a pos-
+enough returns to free ride on the virtuous cycle, but not too                       itive direct impact of current returns on future returns—the vicious
+many returns, which would amplify the vicious cycle. This                            cycle. We show that dynamic optimization can prescribe a market-
+requires a statistical model that captures these dynamics and a                      ing policy that pulses spending to exploit the virtuous cycle without
+dynamic optimization that increases long-term proﬁts.                                overgenerating the vicious cycle.
+    In this article we aim to show how retailers can use market-                         We also show that dynamic optimization outperforms
+ing to optimize long-term proﬁts by managing returns. Our goal                       myopic optimization that does not account for the future
+is to (1) develop a framework that describes the relationships                       beneﬁt of returns, and that the beneﬁt of dynamic optimization
+among current returns, future returns, and purchases; the inter-                     is not realized unless the statistical model also incorporates
+play between these vicious and virtuous cycles; and the role of                      dynamics. A successful free-riding strategy may therefore
+marketing in these dynamics; (2) develop and estimate the stat-                      skew marketing spend toward activities that have a large
+istical model that follows from this framework; (3) using those                      impact on sales but a smaller direct impact on returns. For
+estimates as inputs, apply dynamic programming to generate an                        example, free (outbound) shipping is problematic because it
+optimal free-riding policy; and (4) gain insights into how                           has a substantial impact both on sales and returns. The
+dynamic optimization increases proﬁts. Does it do so by free                         dynamic optimization consequently reallocates marketing
+riding on the future beneﬁts of returns? How does this affect                        spend away from free shipping and toward advertising that
+marketing spend, scheduling, and allocation across activities?                       builds sales without exerting a large direct effect on returns.
+How does the free-riding strategy interact with the ﬁrm’s                                We further show that the ﬁrm’s return policy inﬂuences the
+product return policy?                                                               proﬁtability of free riding. Strict policies reduce returns but in
+    By combining a model, data, statistics, and optimization, our                    so doing also reduce the opportunity to free ride on them.
+approach follows the decision support system (DSS) paradigm                          Lenient policies can strike a better balance between the long-
+(Lilien, Kotler, and Moorthy 1992; Little 1979). The model is                        term beneﬁts and costs of returns, thereby opening the door to
+the framework:2 It identiﬁes key phenomena—virtuous and                              free riding.3 For instance, when our focal company implements
+vicious cycles—and how they relate to marketing. The data                            strict return policies (e.g., in Denmark, Greece, and Russia), the
+consist of customer-level purchases and returns, while the stat-                     difference between the beneﬁts and costs of returns—between
+istical component comprises equations that mathematically rep-                       virtuous and vicious cycles—narrows, limiting the opportunity
+resent the framework and the econometrics required to estimate                       to capitalize on returns. In contrast, more lenient policies, as
+them. These estimates serve as the descriptive tool at the core of                   seen in the United States, increase this difference, offering
+the DSS. The optimization is a stochastic dynamic program.                           greater opportunity to free ride on returns and leading to
+    A DSS produces tangible recommendations and insights that                        higher proﬁts.
+guide decision-making. For example, in our study, we recom-                              This article contributes in three ways: integrating existing
+mend concrete marketing scheduling and allocation. One                               knowledge, generating insights, and showing how to implement
+                                                                                     the free-riding strategy. First, we integrate a statistical model of
+                                                                                     virtuous and vicious cycles with a dynamic optimization to
+1
+  To be concise, we sometimes use words like “inﬂuence,” “impact,” and               produce proﬁtable free riding. To our knowledge, no previous
+“affect” that suggest causal relationships. Our results should be interpreted as     research has done so. Second, in line with the DSS approach,
+associative and correlational and do not prove causality.
+2
+  The term “model” here is conceptual in the sense of Little (1979, p. 10), who
+deﬁnes it as “a preconceived idea of how the world works.” We will use the term
+“statistical model” to refer to the equations that express this mathematically. In   3
+                                                                                       We thank the anonymous reviewers for their insightful suggestions to examine
+sum, we translate the conceptual model into a statistical model that we estimate     regional differences, enabling us to distinguish regions with lenient versus strict
+with our data.                                                                       return policies.
+Montaguti et al.                                                                                                                       3
+
+
+we offer insights into how to manage free riding. We show that        customer to purchase now, but why would the return option also
+lenient return policies are associated with higher levels of free     increase purchasing in the future?
+riding and that free riding works not necessarily by reducing             One possibility is that product returns reduce consumers’
+marketing spend but by carefully scheduling and allocating it         future risk. Petersen and Kumar (2009) posit that returns
+across multiple marketing activities. We demonstrate that the         enable consumers to learn more about a retailer’s products,
+evolution of consumers’ memories of past return experiences,          thus reducing the risk of buying the wrong product in the
+quantiﬁed by “return stock,” is the fulcrum for generating virtu-     future. Venkatesan and Kumar (2004) argue that returns
+ous and vicious cycles and thereby enabling successful free           provide ﬁrms with the opportunity to increase customer satisfac-
+riding. We suggest that return stock translates into virtuous         tion. However, too many returns may prevent the ﬁrm from
+and vicious cycles by enhancing consumers’ perceptions of fair-       taking advantage of this opportunity. Venkatesan and Kumar
+ness and their relationship with the company while reducing           (2004) and Petersen and Kumar (2009) ﬁnd an inverted
+their concerns about purchase risk (buying the wrong product).        U-shaped relationship between returns and future purchases.
+    Also in line with the DSS paradigm, we investigate the key            Bower and Maxham (2012) show that when customers per-
+requirement for implementing the free-riding strategy: incorpo-       ceive that a retailer handles returns fairly, returning a product
+rating return dynamics into both the statistical and optimization     produces less regret and consumers may even experience
+models. Our formulation of return stock, combined with                “rejoicing or elation” (p. 133). This in turn increases customer
+dynamic stochastic optimization, generates the largest free-          satisfaction and generates more purchases in the future. If con-
+riding proﬁts. We ﬁnd that successful implementation requires         sumers perceive returns to be unfairly managed, they regret the
+a balance between virtuous and vicious cycles; the objective          purchase, presumably becoming dissatisﬁed and decreasing
+is a proﬁtable level of returns, not zero returns.                    future purchases.
+    In summary, we show how a novel dynamic statistical                   In sum, research to date suggests that risk reduction and per-
+model, optimized over time, can be applied in real-world con-         ceived fairness play a role in the empirical ﬁnding that returns
+texts to free ride on the long-term beneﬁts of product returns.       generate future purchases. More work is needed to probe these
+By combining model, statistics, data, and optimization, our           explanations as well as others. The key takeaway, however, is
+approach functions as a DSS. Free riding requires dynamics            that returns can exert a positive impact on future purchases.
+in both the statistical model and the optimization. Dynamic opti-         Petersen and Kumar (2015) leverage this ﬁnding to develop a
+mization paired with a nondynamic statistical model fails to          customer lifetime value model accounting for product returns.
+capture the necessary long-term effects; likewise, a dynamic          They estimate this model and optimize marketing spend one
+statistical model with myopic optimization fails to fully lever-      period at a time. This “myopic optimization” indicates that
+age those effects. A fully dynamic approach therefore provides        retailers can increase proﬁts by accounting for the beneﬁts
+a practical DSS for optimizing return management. By striking a       and costs of returns. Although their empirical model includes
+balance that avoids amplifying the vicious cycle while still          dynamics, they do not optimize dynamically. We propose that
+exploiting the beneﬁts of returns, ﬁrms can achieve both ﬁnan-        this is a key desideratum. An optimal marketing strategy
+cial and environmental gains.                                         might tolerate an acceptable level of returns in the short run
+                                                                      to free ride on the virtuous cycle. Doing so requires the optimi-
+                                                                      zation to look ahead and incorporate the impact of current
+Literature Review                                                     actions on future proﬁts, which in turn requires both the statis-
+                                                                      tical and optimization models to be dynamic.
+We summarize research in marketing focusing on three streams
+relevant to our work: the impact of returns on future purchase
+(the virtuous cycle), the impact of returns on future returns         The Vicious Cycle
+(the vicious cycle), and the impact of marketing on returns.
+                                                                      El Kihal et al. (2025) investigate how return rates evolve over
+                                                                      time. Returns provide customers with an opportunity to learn
+                                                                      about the brand’s product quality and ﬁt, potentially decreasing
+The Virtuous Cycle                                                    future returns. Return rates, however, could increase because
+Emerging evidence suggests that returns can increase future           customers develop a return habit or become more discerning
+purchases and revenues (Bower and Maxham 2012; Chen                   over time. The authors ﬁnd that return rates increase over
+2021; Petersen and Kumar 2009, 2015). This is intriguing and          time, suggesting a “vicious cycle” whereby current returns
+apparently not well accounted for by practitioners and academ-        beget future returns. This ﬁnding is important as it demonstrates
+ics. Previous research suggests two possible explanations for         that the direct impact of current returns on future returns must be
+this virtuous cycle: risk reduction (Chen 2021; Petersen and          included in any empirical model.
+Kumar 2015) and fairness (Bower and Maxham 2012).
+   Consumers often risk dissatisfaction by buying the “wrong”
+product. Anderson, Hansen, and Simester (2009) conceptualize          The Impact of Marketing on returns
+returns as an economic option that enables consumers to remedy        Shehu, Papies, and Neslin (2020) suggest that free-shipping
+this risk. This makes clear that the ability to return encourages a   promotions act as a risk premium that encourages riskier
+4                                                                                                              Journal of Marketing 0(0)
+
+
+purchases and a commensurate increase in returns. El Kihal and       returns fairly and expeditiously create favorable attitudes
+Shehu (2022) posit that marketing elevates both the expected         toward the retailer, increasing future purchases. This is the vir-
+and experienced value of a purchased product. If the expected        tuous cycle.
+value is less than the experienced value, the product is likely          The following factors help create memory: First, memory is
+to be returned. The authors ﬁnd that several marketing instru-       strengthened by multiple experiences. Second, the more recent
+ments increase returns, suggesting that marketing should be          these experiences, the stronger the memory. Third, a memory
+included when modeling the interplay among marketing, pur-           not strengthened by multiple recent experiences fades away.
+chases, and returns.                                                 For instance, if a customer returns four items within three
+    Table 1 summarizes the preceding discussion and highlights       months, they will have a strong memory of returning products.
+what distinguishes this article. Our work is unique in integrating   Conversely, if it has been three years since the last return, the
+a dynamic descriptive model with a dynamic optimization of           experience is likely forgotten. The process of building
+marketing. To our knowledge, no prior research has combined          memory through repeated recent experiences is “wear-in,”
+these approaches. This integration is essential because, as we       whereas losing it is “wearout” or “forgetting” (Engel and
+show, neglecting one of these dynamics undermines the other.         Blackwell 1982, pp. 249, 483).
+    In addition, our work is uniquely comprehensive.                     We thus operationalize return stock as a “stock variable,”
+Speciﬁcally, it investigates mediators that serve as mechanisms      consistent with previous advertising literature (e.g., Danaher,
+for translating returns into future behavior, considers the impact   Bonfrer, and Dhar 2008; Dinner, Van Heerde, and Neslin
+of multiple marketing activities on returns, conceptualizes          2014) and the return habit variable used by El Kihal et al.
+return stock to quantify consumers’ memory of the return expe-       (2025). Return stock equals previous return stock multiplied
+rience, and empirically studies the impact of different return       by a decay parameter to represent forgetting, plus a recent-
+policies. While previous studies examine a subset of these           experience factor incorporating recent returns. Forgetting pro-
+issues, none considers them jointly.                                 duces wearout, while recent experience produces wear-in. A
+    Our work can thus be viewed as a DSS (Little 1979), as it        high propensity to forget coupled with only sporadic experi-
+combines a model, statistics, data, and optimization to generate     ences yields a smaller return stock.
+tangible marketing plans and conceptual insights for free-riding         In sum, return stock reﬂects the connection between past
+returns. For example, we show that the gap between the magni-        behavior and future actions, making it central to understanding
+tudes of virtuous and vicious cycles provides room for free          virtuous and vicious cycles. Marketing can set these dynamics
+riding: Strict return policies minimize this gap, whereas            in motion through its direct impact on sales or returns. This sug-
+lenient policies increase it. Lenient policies therefore provide     gests that marketing can be adjusted—in terms of spending,
+the best opportunity for free riding. Capturing these dynamics       scheduling, and allocation across activities—to leverage
+is important, yet to our knowledge no prior work has investi-        returns to drive sales. Such adjustments increase proﬁts if the
+gated them in this integrated manner. Our approach explicitly        gains triggered by the virtuous cycle exceed the costs associated
+models these inherently dynamic cycles and optimizes decisions       with vicious cycles. A crucial issue for marketing, therefore, is
+accordingly.                                                         the strength of its direct effects on sales and returns and its indi-
+                                                                     rect effects through return stock. We measure these using a
+                                                                     dynamic statistical model to capture return stock and a
+Conceptual Framework                                                 dynamic optimization to recommend marketing spend, timing,
+Figure 1 portrays the conceptual framework suggested by the          and allocation among activities.
+previous discussion, depicting the relationships among
+returns, marketing, and customer-level sales. The ﬁgure shows
+that marketing induces both sales and returns, as documented         Research Context and Data
+in our literature review, and that the role of returns is captured   Our research context is online retailing in the fashion industry
+by return stock. The Engel, Blackwell, and Miniard model of          (e.g., clothing, shoes, accessories). This is a particularly appro-
+consumer decision-making (1995, p. 152) motivates this               priate setting for our study for several reasons. First, online sales
+concept. Because return stock is a key component of our frame-       of fashion items represent more than one-third of e-commerce
+work, we elaborate on it subsequently.                               revenues worldwide. They accounted for $668 billion (U.S.
+   The Engel, Blackwell, and Miniard model posits that               dollars) in 2021 (Statista 2022a), underscoring the importance
+memory governs beliefs, attitudes, and intentions regarding          of this industry to the global economy.
+future behavior. In our framework, return stock captures this           Second, returns data (Statista 2022b) show that clothing and
+memory. We are concerned with two behaviors: returns and             fashion items have signiﬁcant return rates: 26% in the United
+purchases. When considering whether to return a product, cus-        States, 32% in the United Kingdom, and even higher in some
+tomers assess their beliefs about factors such as ease of return-    European countries (e.g., Austria, Germany, and the Netherlands
+ing and hassle costs (Bower and Maxham 2012). If, based on           at 33%). The business press documents online retailers trying to
+memory, these beliefs are favorable, they foster attitudes and       ﬁnd an optimal way to manage product returns (Ader et al.
+intentions that encourage returns, creating the vicious cycle.       2021; Eley 2022). Many retailers (e.g., Asos, Zara, Net-a-Porter)
+However, memory-supported beliefs that the retailer handles          monitor competitors’ return policies and consumers’ return
+Table 1. Literature Review Summary.
+
+                   Returns →            Returns →                               Number of
+                     Future               Future                                 Marketing
+                    Purchase             Returns          Mediating the          Activities    Quantifying                    Dynamic        Dynamic         Dynamic Model
+                   (Virtuous             (Vicious         Virtuous and          Inﬂuencing     the Returns     Return        Descriptive   Optimization of    and Dynamic
+Research             Cycle)               Cycle)          Vicious Cycles          Returns      Experience      Policy          Model         Marketing        Optimization
+Petersen and             ✓                    ✓                              Single           Total returns    Single       Yes            Myopic            No
+  Kumar
+  (2009)
+Petersen and             ✓                    ✓                              Single           One-period lag   Single       Yes            Myopic            No
+  Kumar
+  (2015)
+Chen (2021)              ✓                    ✓                              Single                            Single       Yes
+El Kihal et al.          ✓                    ✓                              Multiple         Stock variable                Yes
+  (2025)
+El Kihal and                                                                 Multiple
+  Shehu
+  (2022)
+Shehu,                                                                       Single                                         Yes
+  Papies, and
+  Neslin
+  (2020)
+Wood                     ✓                    ✓                                                                Strict vs.
+  (2001)                                                                                                         lenient
+Bower and                ✓                                Fairness                                             Free vs.
+  Maxham                                                                                                         fee
+  (2012)
+This article             ✓                    ✓           Fairness,          Multiple         Stock variable   Strict vs.   Yes +          Yes →             Free riding
+                                                           relationship,                                         lenient
+                                                           risk
+
+Notes: Empty cells indicate aspects not addressed by the respective study.
+6                                                                                                                                    Journal of Marketing 0(0)
+
+
+
+
+Figure 1. Conceptual Framework.
+
+behavior (Eley 2022).4 Perhaps overlooking the virtuous cycle,                            We focus on active customers, deﬁned as those who pur-
+some charge for returns (e.g., Boohoo) or make returns more                           chased at least once each year after they were acquired. We
+onerous for customers (e.g., Amazon). Returns are therefore                           used this sample for several reasons. First, these customers
+highly relevant to fashion industry management.                                       are managerially relevant: Although they represent a minority
+   Third, fashion retailers spend substantial amounts on price                        of customers, they account for 61% of revenues (Web
+promotions and marketing communications to boost sales.                               Appendix A, Table WA.2). Second, the requirement avoids sur-
+Given its role in inﬂuencing both vicious and virtuous cycles,                        vivor bias. Without the “every-year” requirement, we would
+marketing serves as the decision variable in our optimization.                        have included customers who “churned.” Customers remaining
+                                                                                      at the end of our data would be “survivors,” different from those
+                                                                                      we started with. Thus, what we infer as dynamic behavior could
+Data                                                                                  instead have reﬂected cross-customer differences.5 Third, focus-
+                                                                                      ing on longer purchase histories increases estimation precision.
+We obtained data from a leading retailer that sells fashion items
+                                                                                      Intuitively, a longer purchase series provides more within-
+online. Its core products are clothing and shoes for women,
+                                                                                      customer information for detecting dynamics. Theoretically,
+men, and kids, and it also sells accessories, home décor, and
+                                                                                      work related to initial conditions suggests that longer time
+art. It carries a large assortment of brands as well as its
+                                                                                      series improves estimates of dynamics (Keane 1997; Simonov
+private label and operates worldwide.
+                                                                                      et al. 2020). Finally, this approach is consistent with previous
+    Our framework requires data on the incidence and monetary
+                                                                                      research, which constructs long time series to estimate dynam-
+value of purchases and returns. When analyzing dynamics, it is
+                                                                                      ics (Ansari, Mela, and Neslin 2008; Dubé, Hitsch, and Rossi
+useful to observe consumers from their ﬁrst purchase to avoid
+                                                                                      2010; Erdem and Keane 1996; Erdem, Imai, and Keane 2003;
+confounding dynamic and cross-section effects. We also need
+                                                                                      Mark et al. 2013; Seetharaman 2004).
+detailed information about the ﬁrm’s marketing efforts over a
+                                                                                          The ﬁnal sample includes 1,498 customers and 291,096
+relatively long observation period. The retailer provided us
+                                                                                      observations, analyzed at the weekly level.6 Customers live in
+with data and information that fulﬁlled these requirements.
+                                                                                      78 different countries (52% in Europe, 16% in Russia, 15% in
+    We obtained a random sample of new customers acquired in
+                                                                                      the United States and Canada, 11% in Asia, and 6% in the
+2013, 2014, or 2015. Each customer is observed from their ﬁrst
+                                                                                      rest of the world). The return rate, as measured by the percent-
+purchase until the end of 2017. We also collected demographics
+                                                                                      age of purchases for which at least one item is returned, is 33%.
+(age, gender, country of residence, country of purchase).
+                                                                                      Figure 2 shows that return rates differ by country, and Figure 3
+Additionally, the ﬁrm provided its marketing calendar for
+                                                                                      shows how they trended over time.
+each country and day over the 2013–2017 period. We organized
+the information in the marketing calendar to create four market-
+ing variables: retailer advertising, brand advertising, mark-                         5
+                                                                                        We thank the Associate Editor for valuable insights on this issue. See Web
+downs, and free shipping.                                                             Appendix A for a discussion suggesting that survivor bias might not have
+                                                                                      been crucial in our application. However, at the outset, we thought it prudent
+                                                                                      to guard against it.
+4
+  Our data lack competitive information, limiting our analysis in this respect, but   6
+                                                                                        There were 330 customers acquired in 2013 observed for ﬁve years (85,800
+our region-speciﬁc ﬁndings suggest that ﬁrms should monitor returns other than        obs.), 444 acquired in 2014 observed for four years (92,352 obs.), and 724
+their own.                                                                            acquired in 2015 observed for three years (112,944 obs.).
+Montaguti et al.                                                                                                                                   7
+
+
+
+
+Figure 2. Return Rate by Country of Residence.
+Notes: The y-axis reports return incidence conditional on purchase (i.e., the percentage of purchases in which at least one item is returned).
+
+
+
+
+Figure 3. Return Rate over Time.
+Notes: The y-axis reports return incidence conditional on purchase (i.e., the percentage of purchases in which at least one item is returned).
+
+
+   Table 2 provides descriptive statistics for the outcome variables               Marketing Activity
+of interest: purchase incidence; order size (€), net of return size;
+                                                                                   The retailer’s core marketing activity varies by country and
+return incidence (whether the customer returned at least one item
+                                                                                   week but not by customer—it did not target marketing at the
+from a given week’s purchase); return size (€), deﬁned as the
+                                                                                   customer level. The retailer also did not advertise on television,
+value of the items returned; and customer proﬁt per week.7 In
+                                                                                   print, or radio, instead reaching consumers through display
+2013, customers returned at least one item from 26.54% of their
+                                                                                   advertising on its website partners’ websites, through email,
+purchases, at an average value of €167.21 per return.
+                                                                                   and/or through social media posts.
+                                                                                      Using documents provided by the retailer, we delineated four
+                                                                                   types of marketing campaigns: markdown (MKD), free ship-
+7
+  In total, 33% of customers who purchased in a given year returned at least one
+                                                                                   ping (FS), retailer advertising (RET), and brand advertising
+item. The average return size is €185, whereas the average order size is €210.     (BRD). Markdown campaigns offered a range of discounts,
+This means that customers typically returned part of the order.                    with reductions between 40% and 90%, typically at the end of
+8                                                                                                                                Journal of Marketing 0(0)
+
+
+Table 2. Descriptive Statistics of Purchase and Return Behavior.
+
+                                              Order Size per               Return Incidence |                                              Proﬁts per
+            Purchase Incidence               Purchase (Net of              Purchase (1 = Yes,                Return Size per              Customer per
+             (1 = Yes, 0 = No)                 Return Size)                     0 = No)                          Return                      Weeka
+
+Year       Percentage            SD        Mean (€)           SD         Percentage            SD           Mean (€)        SD         Mean (€)          SD
+2013             8.06           27.22        224.43         216.70            26.54           44.18          167.21       162.60           2.08         45.17
+2014             9.00           28.62        205.55         216.99            28.90           45.34          168.37       181.18           5.64         56.81
+2015             9.08           28.73        214.12         264.17            32.22           46.74          187.86       243.91          15.18         86.75
+2016            10.77           31.00        208.41         265.12            33.70           47.27          186.55       255.92          16.70         92.02
+2017            10.25           30.33        209.99         274.79            36.02           48.01          190.50       269.37          15.67         90.51
+Total            9.77           29.70        210.69         259.90            33.23           47.11          185.26       247.04          11.05         76.99
+a
+ Proﬁt calculations follow the methodology described in Equation 8, incorporating actual values of marketing and customer behavior within the sample during the
+observation period.
+
+
+the season. Free-shipping campaigns did not follow a consistent                  BRDt would equal 10 days. For instance, in 2017 the retailer
+timing pattern and were not associated with speciﬁc brands;                      offered markdowns (MKD) on average .30 days per week,
+rather, they applied to the entire order. Retailer advertising                   with a maximum of 7, and retailer advertising (RET) on
+aimed to boost the retailer’s brand and promote a speciﬁc                        average .65 times per week, with a maximum of 8.
+feature (e.g., wish list, private label, sustainable actions
+room). These campaigns often included shallow discounts
+(10% or 15% off), typically co-occurring with holidays or
+                                                                                 Statistical Model
+special events (e.g., Mother’s Day, preview of the new
+season). Brand advertising featured manufacturer brands                          The DSS conceptual model—our framework in Figure 1—sug-
+carried by the retailer and did not involve discounts. The retailer              gests four customer decisions: (1) whether to purchase in a
+funded brand advertising campaigns itself, without                               given week (purchase incidence); (2) how much to spend, con-
+co-participation from manufacturers. This reﬂects the role of                    ditional on purchase (order size); (3) whether to return at least
+the focal ﬁrm as an outlet e-retailer that manages its brand                     one item from a given week’s purchase (return incidence);
+assortment and related marketing actions autonomously.                           and (4) how much to return, conditional on returning (return
+Figure 4 provides examples of these campaign types.                              size). Accordingly, we specify a statistical model consisting
+                                                                                 of four equations. Purchase incidence is conditional on positive
+                                                                                 latent utility for purchase, and order size is observed only if a
+Operationalization of the Marketing Variables                                    purchase occurs. Return incidence is conditional on purchase
+                                                                                 and positive latent utility for return. Return size is observed
+We know the start and end dates of each campaign in each                         only if both purchase and return occur. Purchase and return inci-
+country. Therefore, for each week t and country c, we observe                    dence are estimated using probit models, whereas order and
+the number of days the retailer ran each campaign type and                       return size are estimated using regressions in which the depen-
+operationalize the marketing variables accordingly (for a                        dent variables are log-transformed. The four equations are the
+similar approach, see Blattberg and Neslin [1990, p. 368] and                    following:
+Mulhern and Leone [1991, p. 70]). For example, let week t be
+the week of Monday, February 6, through Sunday, February
+12, and let c be the United States. If the retailer ran a retailer               Purchase               
+advertising campaign in the United States from February 6 to                                                   Purchase if       P∗it > 0,
+                                                                                                Pit =                                                    (1.a)
+February 8 and a free-shipping campaign from February 7 to                                                  No Purchase if       otherwise,
+February 10, retailer advertising (RET) would equal three days                   where
+in week t, country c (United States), and free shipping (FS)                      P∗it = αPi + γP ReturnStockit + βPM Mktgct
+would equal four days. Table 3 summarizes the marketing
+                                                                                          + βPMLag Mktgct−1 + ιP Pit−1 + κP CCi + νP Tt + uPit . (1.b)
+variables.
+   Because marketing is operationalized as the number of days                    Order Size
+each campaign type ran in week t and country c, the minimum
+                                                                                              i + γ ReturnStockit + βM Mktgct
+                                                                                      OSit = αOS   OS                OS
+value of each marketing variable is 0. The maximum may be
+greater than 7, as the retailer could run two or more campaigns                               MLag Mktgct−1 + ι OSit−1 + κ CCi
+                                                                                            +βOS               OS         OS
+
+of the same type in the same week. For example, the retailer
+might run two brand-building campaigns, each for a different                                +νOS Tt + uOS
+                                                                                                       it        if Purchase; else unobserved.
+brand and each lasting ﬁve days, in week t. In that case,                                                                                                  (2)
+Montaguti et al.                                                                                                                                           9
+
+
+
+
+Figure 4. Examples of Marketing Activities.
+Notes: The retailer’s name has been removed from selected examples. Brand names shown in the BRD section are used solely for illustrative purposes and do not
+reﬂect any speciﬁc partnership.
+10                                                                                                                             Journal of Marketing 0(0)
+
+
+Table 3. Frequency of Marketing Activity.
+A: Non-Brand-Building Activity
+
+                                   Discounts (MKD)d                                                           Free Shipping (FS)
+             a                             b,c                d                                a
+Year       M         SD       % Nonzero             Cond. M        Min           Max       M       SD     % Nonzerob         Cond. Md      Min     Max
+2013       .47       .62          40.47                1.17          0            2        .07     .43        3.00              2.34        0        3
+2014       .92      1.82          41.88                2.20          0            7        .08     .45        3.28              2.44        0        3
+2015       .35       .60          30.88                1.14          0            5        .09     .46        3.29              2.73        0        3
+2016       .33       .57          28.83                1.13          0            4        .08     .45        3.24              2.47        0        3
+2017       .30       .47          30.08                1.01          0            7        .10     .47        3.54              2.82        0        3
+Total      .48       .82          34.43                1.33          0            7        .09     .46        3.21              2.80        0        3
+
+B: Brand-Building Activity
+
+                              Manufacturer Brand (BRD)                                                      Retailer Brand (RET)
+
+Year       Ma        SD       % Nonzerob           Cond. Md       Min          Max        Ma       SD     % Nonzerob         Cond. Md      Min     Max
+2013        .53       .60         47.61               1.12          0            2        1.37     2.28       45.57             3.00        0        7
+2014       3.43      2.97         67.53               5.08          0            8         .65     1.84       12.66             5.13        0        8
+2015       1.87      2.34         50.33               3.71          0            7         .64     1.83       12.43             5.13        0        8
+2016       3.37      1.82         90.69               3.72          0            7         .64     1.83       12.41             5.16        0        8
+2017       3.38      1.70         92.12               3.67          0            7         .65     1.85       12.58             5.17        0        8
+Total      2.52      1.88         69.66               3.46          0            8         .79     1.93       19.13             4.72        0        8
+a
+ M is the mean number of days per week each marketing activity was implemented, across countries.
+b
+  “% Nonzero” indicates the percentage of weeks with nonzero marketing.
+c
+ The percentage discount for MKD varies with deep discounts over 70%, usually at the end of the season, occurring in 8.17% of cases.
+d
+  “Cond. M” indicates the mean conditional on the presence of the marketing campaign.
+
+
+
+
+Return Incidence                                                                    with the theory of interference in memory research, which sug-
+                              Return if      R∗it > 0,                               gests that returning only part of an order leaves a weaker
+                  Rit =                                                  (3.a)       memory trace than returning the entire order because competing
+                            No Return if         otherwise,
+                                                                                     information interferes with memory encoding and retrieval
+where                                                                                (Kliegl and Bäuml 2021). ReturnStock is then
+    R∗it = αRi + γR ReturnStockit + βRM Mktgct + βRMLag Mktgct−1
+                                                                                        ReturnStockit = λ ReturnStockit−1 + Return Shareit−1 .       (5)
+                     + τR OSit + κR CCi + νR Tt + uRit                     .
+                      if Purchase; else unobserved                                      The parameters γP and γOS in Equations 1 and 2 quantify the
+                                                                         (3.b)       virtuous cycle, capturing the impact of ReturnStock on pur-
+Return Size                                                                          chase. The parameters γR and γRS in Equations 3 and 4 quantify
+                                                                                     the vicious cycle, quantifying the impact of ReturnStock on
+                i + γ ReturnStockit + βM Mktgct
+        RSit = αRS   RS                RS
+                                                                                     returns. Per our framework, we include the direct impact of mar-
+                      MLag Mktgct−1 + ι RSit−1 + τ OSit
+                   + βRS               RS         RS                                 keting on both purchase and returns by including Mktgct in all
+                                                              (4)                    four equations. Mktgct is a four-element vector of the four mar-
+               + κRS CCi + νRS Tt + uRS
+                                      it                                             keting types: retailer brand advertising, brand advertising, free
+              if Purchase and Return; else unobserved.                               shipping, and markdown. The subscripts c and t indicate that
+As suggested by our DSS-motivated conceptual model                                   marketing activity varies by country and week.
+(Figure 1), ReturnStockit represents consumer i’s memory or                             We include several control variables. Lagged values of the
+past return experiences, drawing on the concept of “adstock”                         dependent variable in Equations 1, 2, and 4 (ReturnStock
+(Broadbent 1984; Danaher, Bonfrer, and Dhar 2008). Deﬁne                             already includes lagged returns, so no additional lag is included
+ReturnShareit−1 as the ratio of return size (RSit−1) to order                        in Equation 3) reﬂect carryover in the dependent variable sepa-
+size (OSit−1)—that is, the fraction of an order that is returned.                    rate from other dynamics, notably ReturnStockit. CCi are cus-
+The parameter λ parsimoniously captures wear-in and forget-                          tomer i’s descriptors and include gender, age, country of
+ting. A large λ increases wear-in and inhibits forgetting. Thus,                     residence, and acquisition cohort, as well as past behavior mea-
+a vivid experience boosts memory signiﬁcantly and is less                            sured in the 26 weeks before the beginning of the observation
+likely to be forgotten easily. Using return share is consistent                      window. These include the number of purchases, average
+Montaguti et al.                                                                                                                                                  11
+
+
+order size, return share, average return size conditional on                          a purchase, and 2% returned all their purchases. Thus, 72%
+return, and the proportion of purchases made in each channel                          returned at least once but not always. Among these, the mean
+(tablet, smartphone, or desktop).8 Additional details are pro-                        return rate was 37% per customer, with a maximum of 93%
+vided in Web Appendix A.                                                              and a minimum of 4%. Regarding return size, among customers
+      The four equations also control for time trends (Tt), using                     who returned at least twice, 0% returned the same amount for
+ﬁxed effects for month and year of purchase. Finally, we                              each return. The mean return size per customer was €153,
+include current order size OSit in Equations 3 and 4, reﬂecting                       with a maximum of €1,407 and a min of €17. These return
+the assumption that larger orders are more likely to result in                        rate and return size numbers suggest adequate within-customer
+at least one item being returned and, naturally, in larger mone-                      variation to measure the impact of returns.
+tary return amounts.                                                                     A third factor aiding identiﬁcation is cross-country variation.
+      The error terms follow a multivariate normal distribution                       Countries vary in return policies—strict versus lenient—and in
+uPit , uOS
+        it ,          it ∼ N(0, Σ). The covariance matrix Σ
+              uRit , uRS                                                              the timing of marketing, creating temporal variation. Thus,
+among the error terms is                                                              cross-country differences systematically generate both temporal
+                    ⎡                               ⎤                                 and cross-sectional variation.
+                         1    σOS, P σR,P    σP,RS                                       The preceding three factors support our claim of parameter
+                    ⎢ σP,OS σ2OS σR,OS σOS, RS ⎥
+             Σ=⎢    ⎣ σP,R σOS,R      1
+                                                    ⎥
+                                             σR,RS ⎦.         (6)                     identiﬁcation, and the data provide substantial variation for
+                                                                                      identifying dynamics. However, we cannot guarantee causal
+                        σP,RS σOS,RS σR,RS σRS 2
+                                                                                      inference. For example, we cannot capture how consumers’ val-
+                                                                                      uations of returns evolve over time, nor do we observe their
+    As is common, we set the variance of the purchase and return
+                                                                                      opinions of the items they receive; these unobservables may
+probit model equations to 1.
+                                                                                      inﬂuence subsequent purchase and return behavior. This limita-
+    We identify the parameters for OSit in Equations 3 and 4
+                                                                                      tion is consistent with the DSS viewpoint, which emphasizes
+using exclusion restrictions. The CCi variables differ across
+                                                                                      insights as well as concrete policy. The resulting policies may
+equations: Equation 1 includes total purchase incidence,
+                                                                                      not be exact because parameters are not quantiﬁed perfectly;
+Equation 2 includes average order size, and Equations 3 and 4
+                                                                                      however, the insights, while judgmental, remain.
+do not include these variables. Lagged order size OSit−1
+                                                                                         We estimate the model jointly using the simulated maximum
+should inﬂuence current order size OSit but should not directly
+                                                                                      likelihood seemingly unrelated regression procedure in Stata’s
+affect current return incidence Rit or return size RSit. Therefore,
+                                                                                      CMP package (Roodman 2011, p. 160), which constitutes full-
+OSit−1 appears in Equations 1 and 2 but not in Equations 3 or
+                                                                                      information maximum likelihood. This approach considers the
+4. The lagged dependent variable also differs across equations.
+                                                                                      joint likelihood function of all equations, enabling consistent
+    We leverage the customer-level panel data to identify the
+                                                                                      estimation (Lahiri and Schmidt 1978; Roodman 2011).
+impact of ReturnStock. Recall that our sample includes customers
+who made purchases each year beginning with their acquisition
+year. This contributes to identiﬁcation in two ways. The ﬁrst is
+temporal variation: ReturnStockit captures customer i’s return                        Model Optimization
+experience up to time t. Because subsequent behavior is observed
+                                                                                      A key step in the DSS paradigm is optimization—in our case,
+after t, this reveals the impact of prior returns on future behavior,
+                                                                                      prescribing the marketing policy that exploits the virtuous and
+on a within-customer basis.9 We also include customer-speciﬁc
+                                                                                      vicious cycles produced by product returns. The estimated stat-
+temporal controls such as lagged return and purchases. The
+                                                                                      istical model provides the results required for this step.
+second factor is theoretical evidence. Consistent with intuition,
+                                                                                      Speciﬁcally, we derive the four-element vector Mktgt, repre-
+econometric work on initial conditions for data required by
+                                                                                      senting the number of days in week t allocated to each market-
+dynamic models suggests that more complete time series
+                                                                                      ing type: discounts (MKD), free shipping (FS), retailer
+improve the identiﬁcation of dynamic coefﬁcients (Erdem, Imai,
+                                                                                      advertising (RET), and brand advertising (BRD). Each cam-
+and Keane 2003; Simonov et al. 2020). As Simonov et al.
+                                                                                      paign has its own parameter in Equations 1–4. We optimize
+(2020) note, “only when we use larger values of Tpurch [do] we
+                                                                                      over N customers for a ﬁnite horizon of W = 25 weeks. We
+see the true values [of a loyalty effect]” (p. 797).10
+                                                                                      also initialize ReturnStockit at .75;11 the insights are not sensi-
+    These factors require sufﬁcient within-customer variation
+                                                                                      tive to the initial value. The optimization is
+over time in return incidence and return size, which the data
+provide. For example, only 26% of customers never returned
+                                                                                                                        N W
+                                                                                                                 max             Profitit ,                       (7)
+                                                                                                                 Mktgt i=1 t=1
+8
+  This is for initialization. The ﬁrst 26 weeks are not included in the estimation,
+yielding 252,148 observations instead of the 291,096 available.
+9
+  This also enables us to validate our results using propensity score matching
+                                                                                      11
+(PSM; see Web Appendix F for more details). The close alignment between                 We set the initial value of ReturnStock via an iterative search procedure.
+PSM and model-based results provides further support for our results.                 Using a 25-week horizon, we explored initial levels from .45 to .75 (step .10)
+10
+   The authors gratefully acknowledge Asim Ansari (Columbia University) for           and chose the smallest value that yielded stable process behavior (control
+his insights and suggestions on this issue.                                           chart) trajectories for ReturnStock; .75 was the ﬁrst to satisfy this criterion.
+12                                                                                                                             Journal of Marketing 0(0)
+
+
+     Profitit = Pit × Margin                                                   quantiﬁes these relationships, but this is a dynamic optimiza-
+                × {OSit − Rit × [RSit + ProcessingCostst ]}                    tion, not the sort of back-of-the-envelope calculation one
+                                                                        (8)    might make. We test whether dynamic optimization improves
+               − MKD Spendt + FS Spendt + RET Spendt
+                                                                               over myopic optimization.
+               + BRD Spendt .                                                      Customer-level purchases and returns are probabilistic, so
+                                                                               we require a stochastic dynamic optimization. Because the
+    Proﬁtit denotes proﬁt for customer i, and Pit is the probability           ﬁrm used a one-quarter time horizon when specifying its mar-
+that customer i purchases in week t. We use the average margin                 keting, we employ a ﬁnite horizon (Khan, Lewis, and Singh
+provided by the retailer (40%), which is multiplied by revenue.                2009). We use the generalized reduced gradient algorithm
+Revenue depends on order size and return costs: Order size (OS)                implemented in Frontline Solver, a nonlinear optimization algo-
+includes any price discount or free-shipping cost, and return                  rithm. When it converges to a solution, it means that there is no
+costs equal the probability of return (R) times the return                     other set of values for the decision variable close to the ones
+amount (RS), plus processing costs. Return size is customer-                   identiﬁed that yield higher proﬁts over our time horizon.
+speciﬁc and predicted by our model; however, processing cost                   However, there may be better solutions far away from the one
+is the same for each customer and therefore subscripted by                     identiﬁed. We address the possibility that the algorithm identi-
+t. Management indicated that return costs were the same each                   ﬁed a local optimum using multiple starting values (see Web
+week, €8, reﬂecting processing and return shipping.                            Appendix B for more details on optimization speciﬁcation).
+    Weekly spend for each campaign type equals the number of                       As previously noted, we use myopic optimization as a bench-
+days the campaign runs in week t times its daily cost. The                     mark to compare dynamic versus myopic (see Neslin et al.
+retailer used the same €.70 daily cost for each campaign type.                 2009, pp. 728–29). Our myopic optimization uses a simple
+This cost includes two main elements: copy and creative                        rule: Find the optimal level of marketing activity each week
+design, and the opportunity cost of house ads appearing on                     without considering its implications for future marketing activ-
+the retailer’s website; website space is precious, and using it                ities, which means considering only the current marketing
+for one activity precludes using it for another. Marketing                     efforts at time t. As Neslin et al. (2009) report, and as is some-
+spend is not contingent on purchase because, as noted previ-                   times the case, myopic optimization, a form of “greedy algo-
+ously, purchase-related costs such as discounts and free ship-                 rithm,” can do quite well, especially if the effect sizes of
+ping are included in order size OSit.                                          dynamics are not very large.
+    Overall, the cost structure means that our decision variables
+are the number of days each campaign runs in week t, with a
+cost of €.70 per day. The sum of costs across the four campaigns               Results
+equals total marketing spend.12
+    The optimization involves both immediate and long-term con-                Estimates of the Purchase/Returns Model
+siderations. First, as shown in Figure 1, marketing directly                   ReturnStock (Equation 5) captures the magnitude of each custom-
+increases purchases and returns. Thus, it immediately generates a              er’s memory of past returns. Its coefﬁcients in the statistical model
+beneﬁt (more sales) and either an additional beneﬁt (if it directly            represent its association with purchases and returns, that is, the
+decreases returns) or a cost (if it directly increases returns).               vicious and virtuous cycles. We performed a grid search to estimate
+Second, dynamic effects operate across periods. Returns in                     λ, allowing the value to range from 0 to 1 in increments of .1
+period t directly determine purchase and returns in future periods             (Dinner, Van Heerde, and Neslin 2014). Our ﬁrst pass suggested
+(through either the virtuous or vicious cycles), and purchases in              we explore the area above .7 more granularly. Figure 5 shows
+period t also determine purchases and returns in future periods.               the results, suggesting a peak between .9 and .95. We then nar-
+    How this plays out in optimal levels of marketing depends on               rowed the range and conducted another grid search using incre-
+the estimated statistical model parameters. One can nevertheless               ments of .01; the ﬁgure shows a clear peak at λ = .93. This
+see the need for dynamic optimization to resolve short- and                    suggests using .93 as the estimate of λ (see Fader, Lattin, and
+long-term trade-offs. For example, marketing may have a                        Little 1992). Such a large value suggests that consumers remember
+strongly positive impact in the current period if it increases pur-            return experiences for a long time,13 and the coefﬁcients for
+chases and does not have a positive direct effect on returns.                  ReturnStock measure how this memory affects returns and
+However, more purchases lead to more returns through                           purchases.
+Equation 3, and those returns may increase purchases in the                        Table 4 presents the estimates of the proposed statistical
+future due to the virtuous cycle. At the same time, the vicious                model, Equations 1–4 (Model 1). These estimates conﬁrm
+cycle operates: Current returns increase both ReturnStock and                  that returns are associated with future sales, as ReturnStockit
+returns in the future.                                                         has a signiﬁcant and positive impact on both purchase incidence
+    The optimization must determine weekly marketing spend                     (γP = .226, p = .000) and order size (γOS = .118, p = .000),
+that accounts for both virtuous and vicious cycles. Our model
+                                                                               13
+                                                                                  Calculating Equation 5 over time shows that with λ = .93, 90% of the impact
+12
+  When optimizing, we set constraints for marketing decision variables based   of returns occurs within 8.5 months, which seems reasonable given the relatively
+on the range of data in Table 2 and practical considerations.                  infrequent interpurchase time for fashion clothing.
+Montaguti et al.                                                                                                                                                   13
+
+
+
+
+Figure 5. Estimating ReturnStockit Carryover: Model Fit as a Function of λ.
+
+
+
+
+Table 4. Model 1 (M1): Full Product Return Dynamics.
+
+                                                                               Purchase               Order Size               Return                Return Size
+                                                                            Incidence (Pit)             (OSit)             Incidence (Rit)              (RSit)
+Macro Category                                 Variable                       Coef. (SE)              Coef. (SE)             Coef. (SE)               Coef. (SE)
+Marketing: non-brand-              Marketing discounts (βMKD)                       .010                   .006                  −.024                   −.012
+ building activity                                                                 (.004)                 (.005)                  (.012)                  (.008)
+                                   Free shipping (βFS)                              .143                   .110                    .092                    .028
+                                                                                   (.019)                 (.023)                  (.048)                  (.028)
+Marketing: brand-building          Retailer advertising (βRET)                      .014                   .006                  −.002                     .000
+ activity                                                                          (.002)                 (.002)                  (.005)                  (.003)
+                                   Brand advertising (βBRD)                         .102                 −.030                     .013                    .007
+                                                                                   (.028)                 (.032)                  (.066)                  (.045)
+Lagged marketing: non-             Marketing discounts lag                          .016                   .017                    .012                  −.001
+ brand-building activity            (βMKD.LAG)
+                                                                                   (.004)                 (.005)                  (.012)                  (.008)
+                                   Free-shipping lag (βFS.LAG)                    −.022                  −.021                     .001                    .032
+                                                                                   (.020)                 (.025)                  (.053)                  (.028)
+Lagged marketing: brand-           Retailer advertising lag                       −.005                  −.004                     .005                    .001
+ building activity                  (βRET.LAG)
+                                                                                   (.002)                 (.002)                  (.005)                  (.003)
+                                   Brand advertising lag                          −.064                  −.053                     .031                  −.098
+                                    (βBRD.LAG)
+                                                                                   (.029)                 (.033)                  (.077)                  (.067)
+Product return dynamics            Return stock (γ)                                 .226                   .118                    .249                    .090
+                                                                                   (.007)                 (.015)                  (.020)                  (.009)
+State dependence                   Purchase incidence lag (ιP)                      .320
+                                                                                   (.014)
+                                   Order size lag(ιOS)                                                     .082
+                                                                                                          (.004)
+                                   Return size lag (ιRS)                                                                                                   .737
+                                                                                                                                                          (.025)
+Recursive component                Order size (τ)                                                                                  .325                    .042
+                                                                                                                                  (.061)                  (.004)
+
+Notes: Number of observations = 252,148, LL = −124,990.48, Wald χ2 = 16,513.50, p < .001. The order size and return size variables are expressed as natural
+logarithms. The κP, κR, κOS, and κRS parameters for control variables and νP, νR, νOS, and νRS parameters for time trend variables are not reported. Complete results
+are available in Web Appendix C, Table W.C1.
+
+
+
+capturing the virtuous cycle. The table also reveals a vicious                          Both non-brand-building marketing (βPMKD = .010, p =
+cycle: ReturnStockit positively impacts return incidence (γR =                      .000, βPFS = .143, p = .025) and brand-building marketing
+.249, p = .000) and return size (γRS = .090, p = .000). Returns                     (βPRET = .014, p = .000, βPBRD = .102, p = .000) are positively
+increase future sales but generate more future returns as well.                     and signiﬁcantly associated with purchase. Free shipping and
+14                                                                                                                                   Journal of Marketing 0(0)
+
+
+retailer advertising also are associated with order size                             Table 5. The Full Dynamic Model (M1) Optimized Either Dynamically
+  FS = .110, p = .000, βRET = .006, p = .003). Lagged market-
+(βos                      os                                                         or Myopically: Average Sales, Returns, Proﬁts, and Marketing Costs per
+ing discounts are associated with purchase incidence and                             Customer per Week.
+order size (βPMKD.LAG = .016, p = .000, βos  MKD.LAG = .017, p =                                             (M1/Myopic)         (M1/Dynamic)               %
+.002), which may reﬂect consumers waiting for deeper dis-                                                        (€)                  (€)              Difference
+counts.14 Negative lags could reﬂect purchase acceleration, as
+                                                                                     Sales                       126.81               139.77              10.22
+purchases move forward in time. Free-shipping promotion is
+                                                                                     Marketing spend              15.08                 9.07             −39.87
+associated with purchase and order size and is the only market-
+                                                                                     Returns                        .40                  .27             −33.18
+ing associated with return incidence (βRFS = .092, p = .053), sup-
+                                                                                     Returns monetary             15.66                15.85               1.23
+porting the power of these promotions (Shehu, Papies, and                              value
+Neslin 2020).                                                                        Proﬁts                        26.17               38.36               46.56
+    We further test for dynamic effects of product returns by com-
+paring the proposed Model 1 (M1; Equations 1–4) with two bench-                      Notes: Figures represent averages calculated across all customers and over
+marks: Model 2 (M2) limits return dynamics by imposing λ = 0                         Weeks 4–25.
+when computing ReturnStockit, and Model 3 (M3) eliminates
+return dynamics by excluding ReturnStockit and RSit−1 from                           generate similar proﬁts and therefore suggest that M1’s
+Equations 1–4. The results, presented in Web Appendix C,                             complex modeling of dynamics is not required.
+Table W.C2, conﬁrm that the proposed model (M1) is superior                              To investigate further, we compute the optimal marketing
+to both M2 and M3 in terms of the Akaike information criterion                       policy dictated by M1, M2, and M3 under both dynamic and
+and the Bayesian information criterion. This supports a dynamic                      myopic optimization. This yields six policies: M1/Myopic,
+relationship between product returns and sales.                                      M1/Dynamic, M2/Myopic, and so on. M1 is treated as the
+    In summary, the statistical model reveals the following: (1) a                   “correct” model because it ﬁts the data best. We therefore sub-
+virtuous cycle, reﬂected in a positive association between                           stitute the marketing plan prescribed by each of the six policies
+returns and future purchases; (2) a vicious cycle, reﬂected in a                     into M1 to compute proﬁts. The objective is to quantify how
+positive association between returns and future returns; (3) a                       much one would lose by using the “wrong” statistical model/
+positive relationship between marketing and purchase; (4)                            optimization combination.
+a positive relationship between one marketing activity—free                              Figure 6 shows proﬁts for the six policies. The two bars on
+shipping—and return incidence; and (5) improved model ﬁt rel-                        the far right are from Table 5: Dynamic optimization of M1 gen-
+ative to models that exclude return dynamics.                                        erates more proﬁt than myopic optimization. The ﬁgure adds
+    Determining how to free ride on the positive association of                      two insights. First, dynamic optimization outperforms myopic
+returns with purchase is a complex task given its dynamic asso-                      whenever the statistical model includes dynamics: M1/
+ciations with purchase incidence, order size, return incidence,                      Dynamic exceeds M1/Myopic, M2/Dynamic exceeds M2/
+and return size. Doing so requires marketing to capitalize on                        Myopic, but M3/Dynamic does not exceed M3/Myopic.
+the virtuous cycle, which may entail adjustments to marketing                        Because M3 omits all return dynamics, dynamic optimization
+spend, the scheduling of marketing activities, and the allocation                    has no leverage. Second, dynamic optimization generates
+of spend across marketing efforts. We present results along                          more proﬁt the closer the statistical model gets to the fully
+these three dimensions.                                                              dynamic M1 (the black bars in the ﬁgure), whereas myopic opti-
+                                                                                     mization does not (the gray bars). Because myopic optimization
+                                                                                     does not consider dynamics, it cannot exploit a statistical model
+                                                                                     that includes them. Overall, the ﬁgure shows that it is important
+Free-Riding Product Returns: Optimal Marketing Spend                                 to include dynamics in both the statistical model and the
+Table 5 reports that dynamic optimization increases proﬁts by                        optimization.
+46.56% compared with myopic optimization,15 while decreas-
+ing both marketing spend (39.87% lower) and return costs
+(33.18% fewer returns at close to the same monetary value                            Free-Riding Product Returns: Optimal Marketing
+per return).                                                                         Scheduling
+   The table reports results based on the dynamic statistical
+                                                                                     Figure 7 presents the marketing spend and returns patterns for
+model M1. However, this may not be necessary. Perhaps limit-
+                                                                                     M1/Dynamic,16 showing a pulsing pattern in marketing and a
+ing or eliminating return dynamics—M2 and M3—would
+                                                                                     pulsing pattern in ReturnStock one week out of phase with
+                                                                                     the spend pattern. A marketing pulse increases purchases.
+14
+   In fact, the ﬁrm typically increases discount rates progressively (e.g., from     Some are returned, which increases ReturnStock in the
+60% in the ﬁrst week to 80% in the second week). Consumers adjust their behav-
+ior for this (Gonul and Srinivasan 1996).
+15                                                                                   16
+   The early periods of a dynamic optimization are often transitory. For our opti-      Proﬁt calculations are based on t4 through t25. Also note that t4 begins with
+mization, stability began in the ﬁfth period (t4). We therefore state proﬁts and     marketing spend not hitting 0 (Figure 7) and myopic showing a “bump”
+comparisons from t4 through t25, which we call the “evaluation period.”              (Figure 8), as both optimizations used MKD in t4.
+Montaguti et al.                                                                                                                                             15
+
+
+
+
+Figure 6. Optimal Proﬁts Generated by Each Descriptive Model/Optimization Combination.
+Notes: M1 (full model with ReturnStockit): the full proposed model described in Equations 1–6. M2 (limits return dynamics): uses λ = 0 to compute ReturnStockit,
+thereby limiting return dynamics. M3 (no return dynamics): completely eliminates return dynamics by excluding ReturnStockit and RSit−1 from Equations 1–6.
+
+
+
+
+Figure 7. Dynamic Optimization: Average ReturnStockit and Marketing Spend.
+Notes: The early periods of dynamic optimization are often transitory as the model approaches a stable solution. The progression of the key variable ReturnStock
+suggests that for our optimization, stability began in the ﬁfth period (t4). We therefore report all proﬁts and proﬁt comparisons from t4 through t25—the
+“evaluation period”—in Figures 7 and 8.
+
+
+
+following week. We can free ride on this increase because larger                    Figure 8 presents the myopic optimization of M1. It shows a
+ReturnStock is virtuous: It stimulates purchase, allowing mar-                   hint of pulsing but not nearly to the extent observed under
+keting spend to be reduced when ReturnStock increases. The                       dynamic optimization. Myopic optimization does not capitalize
+crucial insight is that ﬁrms can increase proﬁts by using market-                on the virtuous cycle because it does not consider the future
+ing to exploit the positive effects of returns—the virtuous cycle.               beneﬁts of current actions.
+16                                                                                                            Journal of Marketing 0(0)
+
+
+
+
+Figure 8. Myopic Optimization: Average ReturnStockit and Marketing Spend.
+
+Table 6. Marketing Spend Allocation: Full Dynamic Model (M1) Optimized Either Dynamically or Myopically.
+
+                                     Optimal Average Marketing
+                                     Spend (€) per Customer per                                                     Comparison in
+                                                Week                          Allocation Proportion (%)               Allocation
+                                                                                                                    Proportion (%)
+                                      Myopic            Dynamic               Myopic           Dynamic            Dynamic vs. Myopic
+Type of Marketing Activity          Optimization       Optimization         Optimization      Optimization           Optimization
+Non-brand-building Marketing               .22                .22                1.45                2.40                    .94
+                     discounts
+                   Free shipping         4.33               2.13                28.22               22.95                 −5.27
+Brand-building     Retailer              5.06               3.50                32.99               37.67                  4.68
+                     advertising
+                   Brand                 5.73               3.44                37.34               36.99                   −.36
+                     advertising
+Total                                    15.34              9.29               100                100.00                 100.00
+
+
+
+Free-Riding Product Returns: Optimal Marketing                         Dynamic optimization also realizes that retailer advertising
+Allocation                                                          positively relates to both purchase incidence and order size,
+                                                                    the only marketing other than free shipping that does this.
+The success of free riding in Figure 6 entails scheduling—a         However, retailer advertising does not directly increase
+pulsing strategy for M1/Dynamic. Table 6 shows the role of          returns, and therefore more funds can be allocated to it to gen-
+reallocating spend across marketing activities. Most notably,       erate the virtuous cycle without generating too many returns.
+dynamic optimization allocates 22.95% of the marketing              Recognizing this requires forward-looking optimization,
+budget to free shipping and 37.67% to retailer advertising. In      which myopic optimization does not perform.
+contrast, myopic optimization allocates 28.22% to free shipping        Again, we see that dynamic optimization works because it
+and 32.99% to retailer advertising.                                 incorporates future effects into its calculations. It therefore allo-
+    The parameter estimates in Table 4 suggest why this             cates funds among marketing activities to leverage the virtuous
+happens. Free shipping is strongly associated with purchase         cycle without creating too much of the vicious cycle.
+incidence and order size, initiating the virtuous cycle.
+However, it also stimulates returns. Some of these returns con-
+tribute to the virtuous cycle, but they also stimulate future
+                                                                    Quantifying Free-Riding Opportunities Across
+returns, the vicious cycle. The myopic optimization does not
+account for this and therefore allocates more of its budget to      Geographical Regions and Return Policies
+free shipping. Dynamic optimization, in contrast, recognizes        The focal ﬁrm operated in several countries, and its return
+the vicious cycle and pulls back from free shipping.                policy varied across countries due to country-speciﬁc
+Montaguti et al.                                                                                                                                                         17
+
+
+
+
+Figure 9. Quantifying the “Free-Riding” Opportunity.
+Notes: Europe includes only countries with stricter return regulations. The left y-axis is the excess of the virtuous cycle over the vicious cycle:
+Delta = (Virtuous Cycle − Vicious Cycle) = (Pit × OSit ) − (Rit × RSit ). The right y-axis reports the gain in proﬁts: Profits (M1 Profits
+                                                                                                                                   Dynamic)−Profits (M1 Myopic)
+                                                                                                                                           (M1 Myopic)          × 100.
+
+
+
+
+competition and culture. The United States and Asia/                                        Australia) and two representing strict policies (European
+Australia offered lenient policies entailing free returns and                               countries listed in Table W.D1 and Russia). The results are
+up to 100 days between purchase and a permissible return.                                   detailed in Web Appendix D.17
+Russia and European countries such as Denmark, Greece,                                      Step 2: We calculate revenues (purchase incidence × order
+and the Netherlands had strict return policies, with payment                                size) when ReturnStockit is at its mean plus one standard
+required for returns and short return windows (e.g., 15                                     deviation, minus revenues when ReturnStockit is at its
+days). This variation provides an opportunity to quantify                                   mean. This is the virtuous cycle. The vicious cycle is
+free riding by examining the impact of lenient versus strict                                return costs (return incidence × return size) when
+return policies.                                                                            ReturnStockit is at its mean plus one standard deviation,
+   Our analysis consists of the following steps for each                                    minus costs when ReturnStockit is at its mean. See Web
+country. First, we estimate the fully dynamic statistical                                   Appendix E for details.
+model, M1. We then calculate the virtuous and vicious                                       Step 3: The left y-axis in Figure 9 plots delta, the difference
+cycles using M1 and compute “delta,” deﬁned as the differ-                                  between virtuous and vicious cycles for each region. For
+ence between them. Next, we optimize marketing using M1                                     example, delta for the United States is €35.
+with both dynamic and myopic optimization; the difference                                   Step 4: We maximize proﬁts using dynamic and myopic
+between the two indicates free riding. Last, we relate this dif-                            optimization—the difference between the two represents
+ference to delta.                                                                           free riding. We graph this difference on the right y-axis in
+   Bower and Maxham (2012) and Wood (2001) suggest that                                     Figure 9. The United States gains 51% in proﬁts using
+lenient return policies increase the virtuous cycle, and thus                               dynamic rather than myopic optimization.
+delta should be highly positive for countries with lenient poli-                            Step 5: Figure 9 shows the correspondence between delta,
+cies. This suggests that lenient policies are associated with                               the excess of virtuous over vicious cycles, and the proﬁt
+more free riding through the following logical chain: large                                 beneﬁt achieved by dynamically taking advantage of this
+delta (virtuous minus vicious cycles) ≥ large difference in
+dynamic minus myopic optimization ≥ free riding. We investi-
+gate by following the steps outlined previously.                                       17
+                                                                                          As marketing activity varies by country, there is a potential concern for endo-
+                                                                                       geneity in aggregate, cross-country analysis. By running separate models and
+                                                                                       optimizations per geographical regions, we are accounting for country-speciﬁc
+   Step 1: We estimate M1 for four geographical regions: two                           variations in marketing efforts. We thank an anonymous reviewer for this
+   representing lenient policies (United States, Asia and                              suggestion.
+18                                                                                                               Journal of Marketing 0(0)
+
+
+     excess. The free-riding beneﬁt mirrors the difference               conceptualizes the key phenomena under study—in our case,
+     between virtuous and vicious cycles.18                              the virtuous and vicious cycles. The statistical component is
+                                                                         the quantiﬁcation of the model through the four equations we
+    Figure 9 shows that lenient policies are associated with larger      developed and estimated, and the data consist of the 1,500 cus-
+gaps between virtuous and vicious cycles and larger proﬁt gains          tomers we analyzed. Optimization is the stochastic dynamic
+from dynamic optimization that exploits free riding. In other            program we employed to generate an optimal free-riding
+words, delta ≥ gain from dynamic optimization ≥ more free                strategy.
+riding. To further investigate, we created a regional version of             The DSS produces both optimal marketing policies and man-
+Figure 7 (Web Appendix D, Figure W.D1) and found a                       agerial insights, as shown in Tables 5 and 6. The insights
+pulsing pattern in ReturnStock for lenient policy regions and            include the following: First, marketers may be able to free
+none in strict policy regions.                                           ride on the virtuous cycle if they develop marketing plans that
+    These results suggest that a large, positive difference              generate a large virtuous cycle without generating too large a
+between virtuous and vicious cycles creates free-riding opportu-         vicious cycle. Second, the goal is not zero returns but a market-
+nities. This difference is related to the return policy: Lenient pol-    ing strategy that exploits the virtuous cycle while accounting for
+icies amplify the difference, enabling ﬁrms to capitalize on             the vicious cycle. Third, the right marketing policy may require
+returns—to free ride on them—to increase proﬁts.                         reallocating spend among marketing activities rather than
+Conversely, strict policies shrink this advantage, limiting the          simply decreasing spending. Fourth, the opportunity to free
+potential to fully leverage returns. The patterns in Figure 9 are        ride depends on the ﬁrm’s return policy. Strict policies
+striking. Because the evidence is based on a “natural experi-            provide less opportunity to free ride—they do not generate a
+ment” due to country differences, we cannot unequivocally                strong enough virtuous cycle. Fifth, the build-up and decay of
+claim causality. Nevertheless, the ﬁndings encourage future ran-         consumer memory quantiﬁed by return stock generate virtuous
+domized ﬁeld tests.                                                      and vicious cycles. Finally, free riding requires dynamic statis-
+                                                                         tical and optimization models, which generate superior proﬁts
+                                                                         relative to when the empirical model, optimization, or both
+Discussion and Implications                                              are not dynamic. Free riding is a dynamic strategy—it requires
+Summary                                                                  dynamic measurement and optimization.
+                                                                             Our work contributes in three ways. First, it integrates
+The conventional wisdom is that returns are “bad”—a vicious              dynamic optimization with empirical research that identiﬁed
+cycle—but the intriguing ﬁnding is that current returns are asso-        virtuous and vicious cycles. Second, consistent with the DSS
+ciated with higher sales in the long run—a virtuous cycle. The           perspective, it provides insights, as noted previously.
+thesis of this article is that if marketing is speciﬁed optimally,       For example, our ﬁnding regarding the value of lenient return
+the ﬁrm can create and translate the virtuous cycle into higher          policies is provocative because many managers naturally shy
+proﬁts, that is, can free ride on returns.                               away from making it too easy to return. Third, also consistent
+    We investigated whether combining a dynamic descriptive              with the DSS paradigm, we show how to implement the free-
+model with dynamic optimization can increase proﬁts through              riding strategy, particularly the requirement to include dynamics
+free riding. The answer is yes. Optimal marketing in the pres-           in both the statistical model and optimization.
+ence of a virtuous cycle follows a pulsing pattern: return
+stock, representing consumers’ memory of returns, builds
+during low-marketing periods, amplifying the virtuous cycle.             Research Implications
+Dynamic optimization generates this pulsing behavior,                    Product returns must be included in transaction data models of
+whereas myopic does not, suggesting that both a dynamic stat-            consumer purchase, as they are associated with an immediate
+istical model and dynamic optimization are needed to achieve             and long-term impact on sales. The long-term impact also
+free riding. Moreover, dynamic optimization refrains from over-          requires that customer-targeted marketing maximize customer
+investing in free-shipping promotions because these generate             lifetime value. While there is strong support for the virtuous
+excessive returns—leading to a larger vicious cycle. Finally,            cycle, it is less obvious than the vicious cycle; therefore,
+lenient return policies are associated with larger differences           future research should measure it in different contexts (e.g.,
+between virtuous and vicious cycles and with larger proﬁt dif-           multichannel retailing environments). Additionally, the exact
+ferences between dynamic and myopic optimization, suggesting             mechanism that creates the virtuous cycle must be ironed out.
+that lenient policies produce more free riding.                          Bower and Maxham (2012) and Wood (2001) make a promis-
+    Our work ﬁts within the DSS paradigm. A DSS incorporates             ing start regarding perceived fairness. However, several possi-
+four ingredients (Little 1979; Lilien, Kotler, and Moorthy               ble mechanisms remain and need further investigation.
+1992): a model, statistics, data, and optimization. The model            Additional insights into these mechanisms are provided in
+                                                                         Web Appendix F.
+18
+   We perform a sensitivity analysis where we compare our best model         Dynamic statistical modeling coupled with dynamic optimi-
+(M1/Dynamic) with another benchmark (M3/Dynamic). The pattern shown in   zation represents the most effective conﬁguration, and our
+Figure 9 remains consistent across this comparison.                      results underscore how acute the differences are when one
+Montaguti et al.                                                                                                                                        19
+
+
+Table 7. Marketing Spend Allocation: Actual Versus Optimal: Average per Customer per Week.
+
+                                                                               Actuala                                           Optimal
+Type of Marketing Activity                                     Spend (€)             Proportion (%)               Spend (€)             Proportion (%)
+Non-brand-building             Marketing discounts                  .13                     11.70                      .22                      2.40
+                               Free shipping                        .11                      9.85                     2.13                     22.95
+Brand-building                 Retailer advertising                 .43                     39.82                     3.50                     37.67
+                               Brand advertising                    .42                     38.63                     3.44                     36.99
+Total                                                              1.09                    100.00                     9.29                    100.00
+a
+ To ensure consistency with the average optimal marketing, we calculated the average amount spent on various marketing activities during Weeks 4–25 in the
+observed sample.
+
+
+relaxes either the statistical or the optimization dynamics. In                of external validity. For this reason, we strongly recommend
+addition, the role of competition warrants further investigation.              ﬁeld experiments to provide more convincing evidence of virtu-
+Does competition learn that the focal ﬁrm is pulsing and hence                 ous and vicious cycles.
+market out of phase in the belief that it can override the ﬁrm’s
+free riding? What is the marketing and proﬁt equilibrium
+when multiple ﬁrms can free ride?                                              Managerial Implications
+    Future research should also consider customer heterogeneity.               The good news for managers is that returns are not the enemy;
+Certain customers may be susceptible to the virtuous cycle,                    rather, the enemy is the opportunity loss from not managing
+whereas others may be susceptible to the more vicious cycle.                   them effectively. Unfortunately, there is no simple prescription.
+Finally, we compiled our analysis sample to focus on every-year                We can say that marketing is the fulcrum, but we cannot gener-
+buyers. One of the beneﬁts of this approach was mitigating sur-                alize how much to spend on which types of marketing. The free-
+vivor bias by excluding “churners.” However, controlling churn                 riding strategy makes sense, but it requires a carefully optimized
+is a signiﬁcant issue; future work should therefore examine the                marketing schedule. With so much at stake, we suggest that
+relationship between vicious and virtuous cycles and customer                  managers replicate our statistical model, combine it with
+churn.                                                                         dynamic optimization, and test its implications. Our methods,
+    Finally, our analysis, and much of the empirical work on                   while nontrivial, are within reach of well-trained data scientists.
+returns, employs observational data. To explore this further, we                   Our DSS viewpoint guides managers on how to use the raw
+conducted two investigations detailed in Web Appendix F. The                   numbers the ﬁrm collects from its customers. The mantra is
+ﬁrst was propensity scoring matching (PSM). The treated group                  model, statistics, data, and optimization, where the model is
+consisted of customers who purchased in a given month and                      “a preconceived idea of how the world works and therefore of
+returned a product, and the control group consisted of those                   what is interesting and worthwhile in the data” (Little 1979,
+who purchased in that month but did not make a return. We                      p. 10). Our Figure 1 framework drives our DSS by pointing
+repeated the analysis across several different time periods using              to the key phenomena—virtuous and vicious cycles—that man-
+different PSM speciﬁcations. Our ﬁndings consistently revealed                 agers must balance. Statistics involves specifying and estimat-
+a positive average treatment effect, comparable in magnitude to                ing a set of equations (Equations 1–6) that follow from the
+what one would infer from our estimated model in Table 4.                      framework, and optimization refers to any effort to improve
+    We then conducted a preregistered, randomized online                       the ﬁrm’s current strategy. The statistical model provides the
+experiment where we manipulated the returns policy—lenient                     parameter values required to run the optimization and on its
+versus strict. As expected, the lenient policy generated more                  own yields the important insights noted previously. While it
+returns, thereby exogenously creating high- and low-returns                    is an important component of the DSS, the statistical model is
+groups. We found that the lenient group’s self-reported pur-                   based on observational data. Hence, it provides valuable
+chase intentions were larger than those of the strict group, sup-              descriptive insights that support decision-making, but we
+porting the virtuous cycle. In addition, the experiment generated              cannot guarantee that the results are causal.
+insights into the mechanisms underlying the virtuous cycle.                        The goal of a DSS is to improve managerial decisions, which
+Mediation analysis suggested that perceived fairness, relation-                suggests comparing the “optimal” marketing policy with that
+ship quality, and lower perceived risk of purchasing the                       currently employed by the focal ﬁrm. Table 7 reports this com-
+wrong product were key mechanisms translating the lenient                      parison. The “Optimal” columns are from the “Dynamic
+policy into larger future purchase intentions.                                 Optimization” allocation columns in Table 6, and the
+    These analyses support our ﬁndings of a positive relationship              “Actual” columns are drawn from records the retailer shared
+between returns and purchases—a virtuous cycle. However,                       with us. The retailer appeared to be underspending on market-
+they do not prove causality in the real world. The PSM                         ing, perhaps unaware of the power of marketing.
+remains subject to unobserved causal factors, and the online                   Interestingly, however, it allocated funds roughly consistent
+experiment is subject to measurement speciﬁcs and questions                    with our DSS-generated recommendations: 78% to brand-
+20                                                                                                                    Journal of Marketing 0(0)
+
+
+building efforts such as retailer brand and manufacturer brand             ORCID iDs
+advertising and 22% to more promotional activities such as                 Elisa Montaguti      https://orcid.org/0000-0002-0842-9202
+price discounts and free shipping. We would recommend reallo-              Sara Valentini     https://orcid.org/0000-0003-1389-4747
+cating some funds from discounting to free shipping, though not
+to overdo it. Such insights are the hallmark of the DSS                    Data Availability
+paradigm.                                                                  An alternative disclosure plan was approved for this article.
+   By comparing results at the country/region level, we show                   The data that support the ﬁndings of this article are not available
+that a strict returns policy generates less of a virtuous cycle            due to a nondisclosure agreement with the partnering ﬁrm. However,
+and thus less free riding. In countries where the ﬁrm adopts a             replication materials (including a synthetic dataset that mimics the
+lenient policy, the difference between virtuous and vicious                structure of the original data and all analysis code) have been
+effects is larger, creating the opportunity to free ride on                uploaded to the JM Dataverse in restricted form and are available
+returns. The gains from pursuing this opportunity are substantial          from the authors on reasonable request, subject to the terms of the
+(Figure 9). The key takeaway is a point of view: Rather than               NDA.
+treating returns as something to be suppressed through strict
+policies that decrease returns but alienate consumers, the ﬁrm             References
+should consider lenient policies that create virtuous cycles and           Ader, Jacob, Joyce Chai, Praveen Adhi, Sarah Touse, and
+increase proﬁts in the long run.                                              Hannah Yankelevich (2021), “Returning to Order: Improving
+   In summary, we build on previous ﬁndings in marketing to                   Returns Management for Apparel Companies,” McKinsey
+show that returns can be managed to increase proﬁts. The                      Quarterly (May), https://www.mckinsey.com/industries/retail/our-
+lever is marketing; the key phenomena are the dynamics of                     insights/returning-to-order-improving-returns-management-for-
+returns-induced virtuous and vicious cycles. Incorporating                    apparel-companies.
+dynamics into both statistical models and optimization yields              Anderson, Eric T., Kristan Hansen, and Duncan Simester (2009), “The
+the most effective means for marketing to exploit the virtuous                Option Value of Returns: Theory and Empirical Evidence,”
+cycle and increase proﬁts. Indeed, we hope that our work stim-                Marketing Science, 28 (3), 405–23.
+ulates researchers to continue the virtuous cycle of building on           Ansari, Asim, Carl Mela, and Scott A. Neslin (2008), “Customer
+previous work to replicate, validate, and extend our results.                 Channel Migration,” Journal of Marketing Research, 45 (1), 60–76.
+                                                                           Blattberg, Robert C. and Scott A. Neslin (1990), Sales Promotion:
+                                                                              Concepts, Methods, and Strategies. Prentice Hall.
+Acknowledgments                                                            Bower, Anthony B. and James G. Maxham (2012), “Return Shipping
+The authors thank Asim Ansari (Columbia University) for his insight-          Policies of Online Retailers: Normative Assumptions and the
+ful suggestions on issues related to the identiﬁcation of dynamic coef-       Long-Term Consequences of Fee and Free Returns,” Journal of
+ﬁcients, Jim Smith (Tuck School of Business) for his invaluable               Marketing, 76 (5), 110–24.
+guidance in implementing the optimization, and Joachim Vosgerau            Broadbent, Simon (1984), “Modeling with Adstock,” Journal of the
+(Bocconi University) for his helpful comments during the development          Market Research Society, 26 (4), 295–312.
+of this project. The authors also thank participants at the Marketing
+                                                                           Chen, Jialie (2021), “A Structural Model of Purchases, Returns and
+Science and EMAC conferences for their insightful suggestions and
+                                                                              Return-Based Targeting Strategies,” Journal of the Academy of
+comments.
+                                                                              Marketing Science (published online March 11, 2021), https://
+                                                                              doi.org/10.1007/s11747-020-00761-z.
+                                                                           Danaher, Peter J., André Bonfrer, and Sanjay Dhar (2008), “The Effect
+Coeditor                                                                      of Competitive Advertising Interference on Sales for Packaged
+Detelina Marinova                                                             Goods,” Journal of Marketing Research, 45 (2), 211–25.
+                                                                           Dinner, Isaac M., Harald J. Van Heerde, and Scott A. Neslin (2014),
+                                                                              “Driving Online and Ofﬂine Sales: The Cross-Channel Effects of
+                                                                              Traditional, Online Display, and Paid Search Advertising,”
+Associate Editor                                                              Journal of Marketing Research, 51 (5), 527–45.
+Pradeep Chintagunta                                                        Dubé, Jean-Pierre, Günter J. Hitsch, and Peter E. Rossi (2010), “State
+                                                                              Dependence and Alternative Explanations for Consumer Inertia,”
+                                                                              RAND Journal of Economics, 41 (3), 417–45.
+Declaration of Conﬂicting Interests                                        El Kihal, Siham, Tülin Erdem, Christian Schulze, and Weiqing Zhang
+The author(s) declared no potential conﬂicts of interest with respect to      (2025), “Customer Return Rate Evolution,” International Journal
+the research, authorship, and/or publication of this article.                 of Research in Marketing (published online March 27, 2025),
+                                                                              https://doi.org/10.1016/j.ijresmar.2025.03.003.
+                                                                           El Kihal, Siham and Edlira Shehu (2022), “It’s Not Only What They
+Funding                                                                       Buy, but It’s Also What They Keep: Linking Marketing
+The author(s) received no ﬁnancial support for the research, authorship,      Instruments to Product Returns,” Journal of Retailing, 98 (3),
+and/or publication of this article.                                           558–71.
+Montaguti et al.                                                                                                                             21
+
+
+Eley, Jonathan (2022), “Asos Warns on Proﬁts as Customers Send            Mulhern, Francis J. and Robert P. Leone (1991), “Implicit Price
+    Back More Purchases,” Financial Times (June 19), https://www.            Bundling of Retail Products: A Multiproduct Approach to
+    ft.com/content/33bc6b46-d23f-4178-94bf-4e7fbfb6a84c                      Maximizing Store Proﬁtability,” Journal of Marketing, 55 (4),
+Engel, James F. and Roger D. Blackwell (1982), Consumer Behavior,            63–76.
+    4th ed. Dryden Press.                                                 Neslin, Scott A., Thomas P. Novak, Kenneth R. Baker, and Donna
+Engel, James F., Roger D. Blackwell, and Paul W. Miniard (1995),             L. Hoffman (2009), “An Optimal Contact Model for Maximizing
+    Consumer Behavior, 8th ed. Dryden Press.                                 Online Panel Response Rates,” Management Science, 55 (5),
+Erdem, Tülin, Susumu Imai, and Michel P. Keane (2003), “Brand and            727–37.
+    Quantity Choice Dynamics Under Price Uncertainty,” Quantitative       Petersen, J. Andrew and V. Kumar (2009), “Are Product Returns a
+    Marketing and Economics, 1, 5–64.                                        Necessary Evil? Antecedents and Consequences,” Journal of
+Erdem, Tülin and Michael P. Keane (1996), “Decision-Making Under             Marketing, 73 (3), 35–51.
+    Uncertainty: Capturing Dynamic Brand Choice Processes in              Petersen, J. Andrew and V. Kumar (2015), “Perceived Risk, Product
+    Turbulent Consumer Goods Markets,” Marketing Science, 15 (1), 1–20.      Returns and Optimal Resource Allocation: Evidence from a Field
+Fader, Peter S., James M. Lattin, and John D.C. Little (1992),               Experiment,” Journal of Marketing, 73 (3), 35–51.
+    “Estimating Nonlinear Parameters in the Multinomial Logit             Roodman, David (2011), “Fitting Fully Observed Recursive
+    Model,” Marketing Science, 11 (4), 372–85.                               Mixed-Process Models with cmp,” Stata Journal, 11 (2),
+Gonul, Füsun F. and Kannan Srinivasan (1996), “Estimating the Impact of      159–206.
+    Consumer Expectations of Coupons on Purchase Behavior: A              Seetharaman, P.B. (2004), “Modeling Multiple Sources of State
+    Dynamic Structural Model,” Marketing Science, 15 (3), 262–79.            Dependence in Random Utility Models: A Distributed Lag
+Janakiraman, Narayan, Holly A. Syrdal, and Ryan Freling (2016). “The         Approach,” Marketing Science, 23 (2), 263–71.
+    Effect of Return Policy Leniency on Consumer Purchase and             Shehu, Edlira, Dominik Papies, and Scott A. Neslin (2020), “Free
+    Return Decisions: A Meta-Analytic Review,” Journal of                    Shipping Promotions and Product Returns,” Journal of Marketing
+    Retailing, 92 (2), 226–35.                                               Research, 57 (4), 640–58.
+Keane, Michael P. (1997), “Modeling Heterogeneity and State               Simonov, Andrey, Jean-Pierre Dubé, Günter Hitsch, and Peter Rossi
+    Dependence in Consumer Choice Behavior,” Journal of Business             (2020), “State-Dependent Demand Estimation with Initial
+    and Economic Statistics, 15 (3), 310–27.                                 Conditions Correction,” Journal of Marketing Research, 57 (5),
+Khan, Romana, Michael Lewis, and Vishal Singh (2009), “Dynamic               789–809.
+    Customer Management and the Value of One-to-One Marketing,”           Statista (2022a), “Fashion E-Commerce Worldwide,” Statista Dossier
+    Marketing Science, 28 (6), 1063–79.                                      on Fashion E-Commerce Worldwide, article number
+Kliegl, Oliver and Karl-Heinz T. Bäuml (2021), “When Retrieval               DID-111688-1 (accessed September 1, 2025), https://www.
+    Practice Promotes New Learning – The Critical Role of Study              statista.com/topics/9288/fashion-e-commerce-worldwide/.
+    Material,” Journal of Memory and Language, 120 (2021), 104253.        Statista (2022b), “Returns of Online Purchases by Category,” published
+Lahiri, Kajal and Peter Schmidt (1978), “On the Estimation of                by Alexander Kunst, https://www.statista.com/global-consumer-
+    Triangular Structural Systems,” Econometrica, 46 (5), 1217–21.           survey/tool/10/gcs_usa_202503?heatmap=0&missing=0&tgeditor=
+Lilien, Gary L., Philip Kotler, and K. Sridhar Moorthy (1992),               0&pendo=0&token=0&index=0&absolute=0&population=1&rows
+    Marketing Models. Prentice Hall.                                         %5B0%5D=v0280_ecom_returns.
+Little, John D.C. (1979), “Decision Support Systems for Marketing         Venkatesan, Rajkumar and V. Kumar (2004), “A Customer Lifetime
+    Managers,” Journal of Marketing, 43 (3), 9–26.                           Value Framework for Customer Selection and Resource
+Mark, Tanya, Katherine N. Lemon, Mark Vandenbosch, Jan Bulla, and            Allocation Strategy,” Journal of Marketing, 68 (4), 106–25.
+    Anonello Maruotti (2013), “Capturing the Evolution of                 Wood, Stacy L. (2001), “Remote Purchase Environments: The
+    Customer-Firm Relationships: How Customers Become More (or               Inﬂuence of Return Policy Leniency on Two-Stage Decision
+    Less) Valuable Over Time,” Journal of Retailing, 89 (3), 231–45.         Processes,” Journal of Marketing Research, 38 (2), 157–69.
+

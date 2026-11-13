@@ -1,0 +1,1140 @@
+                                                      Journal of Behavioral and Experimental Economics 54 (2015) 105–117
+
+
+
+                                                                 Contents lists available at ScienceDirect
+
+
+                                  Journal of Behavioral and Experimental Economics
+                                                         journal homepage: www.elsevier.com/locate/socec
+
+
+
+
+A prospect theory approach to assessing changes in parameters of
+insurance contracts with an application to money-back guarantees
+Amir Heiman a,∗, David R. Just b, Bruce P. McWilliams c, David Zilberman d
+a
+  Department of Agricultural Economics and Management, The Robert S. Smith Faculty of Agriculture, Food and Environment, The Hebrew University of Jerusalem,
+76100 Rehovot, Israel
+b
+  Cornell Center for Behavioral Economics in Child Nutrition Programs Charles H. Dyson School of Applied Economics and Management Cornell University,
+109 Warren Hall, Ithaca, NY 14853, United States
+c
+  School of Business, Instituto Tecnologico Autnomo de Mexico (ITAM), 01080, Mexico
+d
+  Department of Agricultural and Resource Economics, 337 Giannini Hall University of California, Berkeley, California 94720, United States
+
+
+
+
+a r t i c l e         i n f o                            a b s t r a c t
+
+Article history:                                         Prospect theory has changed the way economists think about decision making under uncertainty – yet after so
+Received 17 October 2013                                 many years there have been few applications of the theory and those appearing mostly in ﬁnance. One of the
+Revised 21 August 2014
+                                                         barriers to applying the prospect theory is that it is not designed to be applicable (Barberis, 2013). This study
+Accepted 22 November 2014
+                                                         applies prospect theory to the selection of money back guarantee (MBG) contracts. When consumers can
+Available online 10 December 2014
+                                                         choose from a menu of MBG contracts they are basically trading off risk with price in a way that resembles
+Keywords:                                                a choice of lotteries with multidimensional outcomes. Our application, which integrates reference based
+Risk                                                     utility models with elements of prospect theory and the disappointment model, helps in explaining the large
+Prospect-theory                                          premium attached to MBG contracts that cannot be explained by the expected utility framework. We further
+Information                                              show that the combination of probability weighting with disappointment aversion appears to provide a
+Money-back guarantees                                    better explanation for consumers’ high valuation of MBGs relative to each one when measured separately.
+Disappointment
+                                                         We empirically test how consumers’ valuation of the MBG option is affected by MBG duration, variation in the
+Loss-aversion
+                                                         likelihood of returns, and return conditions that affect consumers’ return cost. Our approach can be applied
+                                                         to model choices of risk reduction mechanisms such as extended warranties, demonstrations, and sampling.
+                                                                                                                                 © 2014 Elsevier Inc. All rights reserved.
+
+
+
+
+1. Introduction                                                                              (MBG). MBGs offer consumers the option to return a purchased prod-
+                                                                                             uct for a refund if the consumer is dissatisﬁed with the purchase
+    Empirical assessments of warranties suggest that they are over-                          for whatever reason. The U.S. National Retail Federation (NRF), esti-
+valued by consumers beyond the degree warranted by the expected                              mated that 8.7% of purchases are returned under MBG, reﬂecting a
+utility approach. For example, the annual costs of extended warranty                         total value of $174 billion of product returns, while Ofek, Katona and
+contracts for household appliances exceed the average expected costs                         Sarvary (2010) estimate that 4–6% of products is returned. Anderson,
+of repair by considerably more than what might be attributable to                            Hansen and Simester (2009), who analyzed market data taken from
+proﬁt and overhead (Chen, Kalra and Sun, 2009). Consumers pay 15–                            a mail-order catalog company, calculate that MBGs had the effect of
+25% premiums for 2-year, and 20–30% premiums for 3-year extended                             increasing sales by 53%, 16%, and 9% respectively for women’s shoes,
+warranties. The large difference between these premiums and the ex-                          women’s fashion items and men’s apparel. They explain these vari-
+pected value of repairs covered by the extended warranty contracts                           ations in demand effects as reﬂecting differences in risk such that
+is inconsistent with expected beneﬁt calculations and has been typi-                         women shoes are more risky than the other two categories. In this
+cally considered to reﬂect consumer judgment errors and asymmetric                           paper we estimate consumer’s willingness to pay for MBGs in one
+information (Bryant and Gerner, 1978; Center for Policy Alternatives,                        product category to see if these values represent exaggerated premi-
+1978).                                                                                       ums for reducing risks in the face of uncertainty from an expected
+    In this paper we explore whether a similar overvaluation ex-                             utility framework. Finding that indeed such exaggerated premiums
+ists of another risk-reduction mechanism, the money-back guarantee                           exist, we evaluate whether a weighted value function, disappoint-
+                                                                                             ment aversion or both might explain these risk reduction premiums.
+  ∗
+     Corresponding author. Tel.: +972 8 9489143/9489230; fax: +972 8 9466267.                    There are two distinct approaches for incorporating psychological
+     E-mail addresses: amir.heiman@mail.huji.ac.il, heiman@agri.huji.ac.il (A. Heiman),      response to losses and gains into models of decision making. One
+drj3@cornell.edu (D.R. Just), bruce@itam.mx (B.P. McWilliams), zilber11@berkeley.edu         approach incorporates expected losses and gains into the framework
+(D. Zilberman).
+
+http://dx.doi.org/10.1016/j.socec.2014.11.006
+2214-8043/© 2014 Elsevier Inc. All rights reserved.
+106                                      A. Heiman et al. / Journal of Behavioral and Experimental Economics 54 (2015) 105–117
+
+
+of expected utility theory by decomposing the utility into that of                    paid for bundling the MBG option with the product if the product is
+consumption and the utility from loss or gain (Bell, 1982; Gul, 1991).                not returned. It is typically assumed that the duration of the MBG
+Embedded in this approach is the assumption that people maximize                      contract is long enough to resolve ﬁt uncertainty—an assumption
+their expected utility and that disappointment (happiness) from an                    that has not been validated yet empirically. Notably, this approach
+outcome that falls (is higher) from a reference level is a separable                  does not account for the consumer’s psychological costs of anticipat-
+argument that is concave in gains and convex in losses (Kőszegi and                  ing loss such as the disappointment and regret when they consider
+Rabin, 2006, 2007, 2009; Shalev, 2000). The second approach deviates                  the forgone alternative (Loomes and Sugden, 1982) that can result
+from the expected utility (EU) framework, suggesting that people do                   from either buying too short of an MBG if the product did not deliver
+not really maximize expected utility, but are instead guided by their                 the expected beneﬁt, or from paying too much if a long MBG contract
+(limited) cognitive system. Perhaps the most prominent model of                       was purchased and the product provides high beneﬁt. Our proposed
+this approach is prospect theory (Kahneman and Tversky, 1979). The                    extension of the prospect theory framework enables us to estimate
+core assumptions of the prospect theory model are that outcomes are                   and explain consumers’ valuation of the MBG.
+compared to a certain reference point, which is usually zero, and that                    In this paper we develop an extension of a prospect theory frame-
+the absolute subjective value of losses (i.e., values that fall short of the          work that can assess multiple dimensions that vary in nature: some
+reference point) is larger than the subjective value of equivalent gains              discrete (e.g., whether or not the product ﬁts consumer’s idiosyncratic
+while extended expected utility models allow for non-zero multiple                    needs) and others continuous (e.g., duration of the return period).
+reference points. The cost that is attributed to losses depends on their              The analysis further allows us to assess how the premium for vari-
+context (Ert and Erev, 2013) and they are likely to increase when they                ous MBG contracts depends on the contract characteristics and other
+are attributed to making mistakes (Chua et al., 2009).                                parameters (return costs). We use this approach to model the MBG
+    In the current paper we develop a prospect theory framework for                   contract and develop testable hypotheses about the parameters of
+assessing consumers’ valuation of a popular risk-reduction mecha-                     interest. From survey data, we calculate individuals’ willingness-to-
+nism: the money back guarantee (MBG), considering product returns                     pay premiums (or accept discounts) for better (or worse) MBG terms
+and the loss from being stuck with a purchased product that turns out                 and estimate the implicit loss from disappointment. The value of dis-
+to not ﬁt the consumer’s needs (non-ﬁt) as disappointment. Prospect                   appointment is interpreted here as an extra loss, in addition to the
+theory was originally designed to describe risky choices between two-                 product price, that a consumer experiences when she is stuck with
+outcome gambles, and as such it evaluates the subjective values of                    a product that does not ﬁt her needs and this poor ﬁt is discovered
+monetary outcomes and their probabilities (Kahneman and Tversky,                      only after the MBG expired. Thus the reference point for a consumer
+1979). It was later generalized to capture choice between multiple                    buying a given product is the expectation that the product will ﬁt her
+outcome gambles (Tversky and Kahneman, 1992; Wakker, 1994), but                       needs, and the unexpected ex-post realization that these needs were
+has not been used to explain consumers’ choice of MBG, perhaps be-                    not satisﬁed generates a psychological sense of loss which can only be
+cause it is diﬃcult to apply (Barberis, 2013). In order to ﬁll this void              eliminated if the consumer receives a reimbursement when the prod-
+we develop an extension of the prospect theory model that can assess                  uct is returned under an MBG. Our modeling of disappointment as a
+discrete choices and choices between continuous alternatives at the                   separable component in the consumer’s beneﬁt is consistent with the
+same time and relates to outcomes that are more complex than win–                     aforementioned literature. Disappointment is integrated in our model
+lose scenarios. For example, our model allows for one state where the                 together with the notion of a weighting function drawn from Kahne-
+uncertainty is resolved and the beneﬁt (loss) is realized, and another                man and Tversky’s prospect theory. The combined disappointment
+where the uncertainty has not been resolved yet. The analysis allows                  and weighting functions result in valuations of MBGs that are differ-
+us to assess how the premium for various risk management contracts                    ent from those implied by using the expected net beneﬁt criterion,
+depends on a contract’s characteristics as well as on mental costs.                   both because of the extra valuation given to potential disappointment
+    While we apply the methodology to MBGs, its applicability is                      from a bad decision, as well as the weighting of probabilities that gives
+much wider and can be used to estimate the value of various tools                     bigger weights than merited to small likelihood outcomes. Because
+that reduce consumer risk, such as warranties, price guarantees, sec-                 return probabilities are relatively small, consumers may overweight
+ond hand markets, product sampling, leasing, trade-ins and product                    them, and that may lead to higher premiums for MBGs relative to the
+demonstrations.                                                                       standard expected net beneﬁts model. In interpreting the empirical
+    MBGs are ex post guarantees that provide the buyer a put option                   results, we compare the estimated premiums for MBGs when con-
+to return the purchased product for any reason. The standard MBG in                   sumers use their actual return probabilities to assess MBG contracts
+the U.S. is a 30-day guarantee that enables customers to return the                   with the estimated premiums when we assume weighted probabili-
+product for any reason for a full refund of the purchase price. In the                ties, and see how the weighting and disappointment together increase
+EU the law speciﬁes 14 days for online purchases while the refund                     the “expected” cost of a loss should the product not be a ﬁt.
+policy of goods bought in stores varies across stores and countries. In                   In the next section we develop and present the extended prospect
+addition, the EU retailer bears the shipping costs of returns, while in               theory model. In Section 3 we present the survey design, and in
+the U.S. shipping costs are generally paid by the consumer. There are                 Section 4 we estimate behavior with micro-level data to calibrate
+many variations of MBGs that include partial MBGs (the buyer pays                     empirically what the behavioral parameters would need to be in or-
+restocking fees and or shipping costs for returned products), time                    der to use disappointment aversion as an explanation. In this context,
+varying MBGs (the restocking fees are increasing with the duration of                 we estimate the perceived value of MBGs to consumers and provide
+the return), and lifetime MBGs (the guarantee has no time limit, e.g.                 an explanation for how consumers generate these MBG valuations. In
+Nordstrom) and returns being allowed only for products that have                      particular, we test whether prospect theory is a relevant framework
+not been used (in the EU).                                                            for valuing the MBG. We conclude with a discussion of the implica-
+    Studies of MBGs as risk management strategies have modeled con-                   tions of our ﬁndings.
+sumers’ choices between buying with and without an MBG, employ-
+ing either the expected net beneﬁts (Davis, Gerstner and Hagerty,                     2. Modeling consumes choice
+1995; Heiman et al., 2002; Matthews and Persico, 2005) or expected
+utility of beneﬁts (Che, 1996) models. In particular, consumers’ ben-                 2.1. The value and properties of MBG contract
+eﬁt from an MBG is assumed to be the reimbursement of the product
+price if it is returned, while the costs of the guarantee are the con-                   In this section we build a simple model, which is based on
+sumers’ return costs if the product is returned, and the price premium                expected utility principles, and show that the basic properties of
+                                          A. Heiman et al. / Journal of Behavioral and Experimental Economics 54 (2015) 105–117                                        107
+
+
+MBG contracts can be explained by using a simpliﬁed model that is                      not the products ﬁt with probability of 1 − f (t). The joint probability
+consistent with rational choice. A consumer considers purchasing a                     of not discovering a misﬁt and that the product will yield low beneﬁt
+product with uncertainty regarding the beneﬁts of using the product.                   is thus given by (1 − q)(1 − f (t)). The expected utility of a random
+Previous studies have modeled uncertainty about beneﬁts, i.e., con-                    buyer who purchases with MBG contract with the duration of t0 is
+sumers are aware to the distribution of beneﬁts but do not know their                  given by:
+idiosyncratic location (Hahn, 2005), uncertainty about ﬁt (Heiman                                    
+                                                                                       E Ut0 = q V − Pt0 − (1 − q)f (t0 )R − (1 − q)(1 − f (t0 ))Pt0 + W (1)
+and Oﬁr, 2010) or about both ﬁt and beneﬁt (Heiman et al., 2002;
+Nizovtsev and Novshek, 2004). In Section 2.2 we analyze MBGs test-                         A consumer will purchase the product if E(Ut0 ) ≥ 0. The value
+ing whether loss aversion (Kahneman and Tversky, 1979) and disap-                      of the MBG option with the duration of t0 equals to the difference
+pointment aversion (Gul, 1991) combined with a multiple reference                      between the expected value with and without MBG is represented
+point can better explain consumers choice of MBG contracts.                            by:
+    In order to be consistent with this literature, which demonstrated                                                       
+                                                                                       E Vt0 − E(Vt=0 ) = (1 − q)f (t0 ) Pt0 − R + Pt=0 − Pt 0                         (2)
+or developed its theory on consumers’ choices between lotteries, we
+assume that consumers are uncertain about whether or not the prod-                         The threshold price difference that makes a risk neutral consumer
+uct ﬁts their needs. Let V denote the beneﬁt of a random consumer                      indifferent between buying with and without an MBG (if both alter-
+from a product if it ﬁts consumer’s needs and expectations and zero                    natives are offered at the same retail establishment simultaneously)
+beneﬁt otherwise. The purchase of a product without MBG can be seen                    is represented by:
+as a lottery denoted by two pairs of value and probabilities. The prob-                                                          
+                                                                                         t0
+                                                                                       ΔPt=0 = Pt0 − Pt=0 = (1 − q)f (t0 ) Pt0 − R .                                   (3)
+abilities of ﬁt and misﬁt are denoted by q and 1 − q respectively. The
+price of a product sold without MBG, is denoted by Pt=0 (the subscript                       Consumers’ willingness to pay for an MBG of duration t0 , i.e.,
+                                                                                          t0
+t = 0 indicates that the duration of the MBG is zero). We assume that                  Pt=0 = Pt0 − Pt=0 , increases with the probability of discovering that
+the price paid is rather small relative to reference wealth, W allowing                the products does not ﬁt, i.e., (1 − q)f (t0 ), as well as with product
+us to assume a linear utility function similar to Kőszegi and Rabin                   price, and declines with return cost R.
+(2007). The expected utility of a random consumer without MBG is                          Let RP = (1 − q)f (t0 ) represent the return probability and RP =
+given by: E(Ut=0 ) = q(V − Pt=0 ) − (1 − q)Pt=0 + W. A consumer will                   (1 − q)f  (t0 ) therefore represents change in return probability as the
+purchase the product if E(Ut=0 ) ≥ 0. Thus all consumers will purchase                 duration of the MBG is changed. Now suppose that a random con-
+                           P
+the product when V ≥ t=0     q . Now suppose that the product comes with               sumer considers a change in the duration of the MBG contract. For
+a MBG with a duration of t days. Given the baseline duration t = t0                    the consumer to be indifferent between the two MBG durations, the
+consumers experience the product and learn about their idiosyncratic                   expected payment for the change in the duration of a MBG contract
+probability of ﬁt.                                                                     must be equal to the marginal change in the expected beneﬁts from
+    Learning calibrates consumers’ initial predictions about the prob-                 this change in duration and it is given by:
+ability of ﬁt that is based upon prior experience and indirect infor-
+                                                                                                  ∂ f (t)                             dP
+mation, i.e., advertisements, or other consumers’ beliefs and sellers’                 (1 − q)            (P − R) − (1 − (1 − q)f (t)) t
+information. Studies on the effect of learning on decisions under un-
+                                                                                                   ∂t t                               dt
+                                                                                                                      dPt
+certainty have shared the assumption that consumers maximize ex-                          = RPt0 (Pt − R) − 1 − RPt0                                                  (4)
+pected utility given the information they possess at the time of deci-                                                  dt
+sion making. New information about the product, which is received                           The ﬁrst element represents the increase in the “insurance value”,
+before the decision is taken, is integrate with prior beliefs using the                i.e., lowering the cost of being stuck with a product that does not ﬁt,
+Bayesian updating rule (Erdem and Keane, 1996; Meyer and Sathi,                        while the second element represents the loss from purchasing a better
+1985; Roberts and Urban, 1988). Posterior beneﬁts are assumed to be                    insurance contract when the contract is not exercised. The change in
+drawn from a distribution such as a uniform or log-normal (Roberts                     price with respect to changes in the duration of the MBG contract for
+and Urban, 1988). Thus an increase in the stock of information re-                     which the buyer will be indifferent is thus given by:
+sulting from buying a longer MBG contract is expected to reduce
+                                                                                        dPt     (1 − q) ∂ f∂(tt0 )             RP (t)
+uncertainty. The lower uncertainty does not imply that the longer the                       =                      (Pt − R) =          (Pt − R)                        (5)
+MBG the higher the likelihood of purchase, however. The probability                     dt    1 − (1 − q)f (t0 )              1 − RPt
+of purchase depends on the distributions of priors and the sampling                          It is easy to see that dP t
+                                                                                                                         > 0 and Hypothesis (1) is thus offered.
+                                                                                                                     dt
+signal (Halbheer et al., 2012). Arrow’s (1962) seminal paper expressed
+learning as a concave function of experience, a ﬁnding that since then                 Hypothesis 1. Increases in the duration of the return period increase
+has been supported by the management economics literature (e.g.,                       the premium consumers are willing to pay for a product with an MBG,
+Day and Montgomery, 1983; Lieberman, 1987), as well as by the psy-                     i.e., ∂∂Ptt ≥ 0.
+chology literature, where the “power law of practice” implies that
+                                                                                           The sign of the change in the marginal WTP depends on the spe-
+learning is concave with respect to trials (Delaney et al., 1998; Newell
+                                                                                       ciﬁc form of the learning curve. Speciﬁcally if the learning curve is
+and Rosenbloom, 1981). Following the aforementioned studies we
+                                                                                       S shaped than the sign of the change in the marginal WTP may be
+assume that the learning curve L(t) is concave with respect to the du-
+                                                                                       non-negative in earlier periods when marginal learning is very high1
+ration of the MBG contract, i.e., L (t) > 0 while the change in marginal
+                                                                                       other than that the second derivative of price with respect to time is
+learning can be negative L (t) < 0. L (t) changes sign when learning is
+                                                                                       negative throughout the possible durations of the MBG contract due
+assumed to follow a sigmoid learning pattern (Parente, 1994; Young,
+                        t                                                             to declining marginal learning. We assume that the second derivative
+2009). Let f (t) = L(1t) 0 L(z)dz where f (t = 0) = F0 = 0 and f (t = T ) = 1
+                                                                                       of learning. with respect to time is negative throughout the possible
+denote the accumulated learning during a MBG contract with the du-
+                                                                                       durations of the MBG. This implies the following hypothesis
+ration of t days. After trying the product for t days a buyer discovers
+whether the product ﬁts with probability of f (t). The probability of                  Hypothesis 2. Increases in the duration of the return period lead to
+discovering a poor ﬁt is thus given by(1 − q)f (t). A random consumer                  smaller changes in consumer willingness to pay for these additional
+                                                                                       durations, i.e., ∂∂ tP2t < 0.
+                                                                                                            2
+will return the product if a misﬁt is realized and the cost of returning
+the product is smaller than the beneﬁt of keeping a product that does
+not ﬁt, i.e., Pt − R > 0. If the later condition is not satisﬁed than the
+                                                                                             The sign of the second derivative of WTP is negative if 2(1−q)(f )
+                                                                                                                                                           2
+MBG contract is worthless. A consumer will not discover whether or                       1                                                                        
+                                                                                                                                                       (1−RP) < −f .
+108                                        A. Heiman et al. / Journal of Behavioral and Experimental Economics 54 (2015) 105–117
+
+
+   Total differentiation of Eq. (5) indicates that consumers will de-                   for the loss of experiencing time due to shipping time by starting the
+mand a higher price discount for buying without MBG when the prob-                      day count from the day the product arrived to the customer.4 If the
+ability of returns RP is higher, the product is more expensive and the                  retailers offer identical length of MBG contract to online then unless
+cost of return is lower, i.e.,                                                          the time constrain is not binding, f (t0C ) < f (t0S ). The lower probability
+dPt       dPt       dPt                                                                 of ﬁt and the lower learning intensity affect the probability of returns
+    > 0;       > 0;     < 0.                                                            in opposite directions, the former increases it and the later decreases
+dRP      dPt=0      dR
+                                                                                        it. The effect of online (catalog) lower probability of ﬁt dominates
+    These results enable us to hypothesize the valence of the signs                                                     C    f (t0S )
+                                                                                        the learning effect if 1−q  >                   . For the standard duration of MBG
+resulting from changes in MBG’s quality and importance. We study                                               1−qS          f (t0C )
+differences in consumer valuation between MBG on store and online                       and shipment given reasonable speed of learning the probability of
+(catalog) purchases and that between money and store credit refunds.                    returns for products that are bought online is higher than that of brick
+    Consumers return cost is a crucial variable that determines the                     and mortar purchases, i.e., (1 − qC )f (t0C ) > (1 − qS )f (t0S ). This results in
+value of MBG and the derived price with MBG. Previous studies sug-                      higher value of MBG for online (catalog) purchases relative to brick
+gested that increasing the return cost is an eﬃcient tactic in con-                     and mortar stores. Hypothesis 4 is thus offered:
+trolling returns (Chu, Gerstner, and Hess, 1998; Davis, Hagerty, and
+                                                                                        Hypothesis 4.a. MBGs for online and catalog purchases are valued
+Gerstner, 1998) other scholars suggested that the polar opposite
+                                                                                        more than are MBGs for brick-and-mortar purchase.
+strategy of offering unconditional and generous guarantees is more
+proﬁtable (Petersen and Kumar, 2009; Petersen and Kumar, 2010;                          Hypothesis 4.b. Additional durations of MBG are valued more for
+Reinartz and Kumar, 2003). One way to evaluate the relative impor-                      Internet purchases than for brick-and-mortar purchases.
+tance of the weight of return cost is to estimate its marginal con-
+tribution to price using cross retailer’s offers of the same product                       Consumer heterogeneity with respect to the probability of product
+category (Posselt, Gerstner, and Radic, 2008). However, this proce-                     return affects the value of MBG (Heiman et al., 2002; Nizovtsev and
+dure may produce noisy results due to variation in products, retail                     Novshek, 2004). Consumers whose probability of ﬁt are lower or who
+services and retailers’ cost of handling. Another way to proceed,                       learn more through the MBG are more likely to return products more
+as we propose in this paper, is to estimate the difference between                      frequently. The relevant factor in determining the value of MBG is
+the value of MBG and store credit at the same hypothetical retail                       the probability of return, or (1 − q)f (t0 ), and not just the probability
+establishment.                                                                          that the product does not match, i.e., 1 − q, as has been assumed in
+    Let PtSC denote the price consumers will be willing to pay for the                  previous studies that ignore learning effects. Just as we argued that
+           0
+purchase of a good with a t0 return period where the consumers re-                      MBGs will have a higher valuation for Internet purchases because of
+ceive store credit rather than cash upon returning the product. Since                   the higher likelihood of product return, we can argue that consumers
+the return cost of store credit are higher than that of cash it is hypoth-              that return products more will have a higher valuation of MBGs, and
+esized that                                                                             similarly will have a higher valuation of marginal extensions in the
+                                                                                        MBG duration, i.e., dPt > 0 and Hypothesis 5 is therefore offered:
+                                                                                                                 dRP̄
+Hypothesis 3. (store credit < cash). Consumers’ value store credit
+returns less than cash returns. (We provide a formal proof in                           Hypothesis 5.a. Consumers with a higher than average return prob-
+Appendix A1.)                                                                           ability will assign a higher valuation to MBGs.
+                                          dPt
+     We now employ the ﬁnding that dRP        > 0 in examining the dif-                 Hypothesis 5.b. Consumers with a higher than average return prob-
+ferences in willingness to pay for MBG between online (catalog) and                     ability will assign a higher valuation to incremental duration of MBGs.
+brick and mortar stores that offer the same product. The probability of
+                                                                                            Changes in the duration of MBG affect both the probability of re-
+ﬁt, q is lower for remote purchases since buyers are unable to inspect
+                                                                                        turns and the price of the product. These changes can be viewed as cre-
+and test products before purchase (Akaah and Korgaonkar, 1988;
+                                                                                        ation of a new lottery with higher probability of a bad outcome (in the
+Ofek, Katona and Sarvary, 2010; Van den Poel and Leunis, 1999) and
+                                                                                        case of lower duration) and higher price. The expected utility frame-
+because of the time lag between ordering and receiving the product,
+                                                                                        work, which was presented earlier, suggests that consumers would
+the consumer’s perception of the product may be distorted (Wood,
+                                                                                        choose the alternative with the highest expected beneﬁt. Suppose that
+2001). Data collected by the national federation of retailers (NFR) in
+                                                                                        a retailer offers two MBG contracts one of 30 days and the other of
+the U.S. indicate that overall customer return rates are about 8.7%
+                                                                                        7 days for a discount of 1 − β %. A consumer who would have chosen to
+of retail sales. Return rates are signiﬁcantly higher for catalog and
+                                                                                        purchase a product with 30 days MBG now needs to decide whether
+e-commerce retailers, where Internet purchases are about twice as
+                                                                                        to shift to a 7 days MBG contract and buy with a reduced price. A con-
+likely to be returned as are brick-and-mortar retail purchases,2 and
+                                                                                        sumer is expected to prefer the 7 day MBG over the standard 30 days
+catalog purchase return rates are similarly estimated to be around
+                                                                                        if (1 − β)P30 ≥ −(1 − q)( f30 − β f7 )P30 − (1 − q)( f30 − f7 )R. This con-
+16% (Petersen and Kumar, 2010). Consistent with this evidence we
+                                                                                        dition asserts that by choosing a 7 days MBG contract the consumer
+assume that the probability of ﬁt for catalog purchases is smaller,
+                                                                                        gains (1 − β)P30 but this gain is expected to be counterbalanced by
+resulting in lower probability of ﬁt, i.e., 1 − qS < 1 − qC , and higher
+                                                                                        the increase in the expected loss (1 − q)( f30 − β f7 )P30 (lower prob-
+return probability for catalog purchases relative to store purchases,
+                                                                                        ability of returns). However there are many empirical studies that
+i.e., RPt ≤ RPcat , where the S and C superscripts denote store and cata-
+                                                                                        showed violation of this prediction suggesting that the expected loss
+log (online) purchases respectively. Lower net duration of online MBG,
+                                                                                        is evaluated as larger than an equivalent monetary gain (Kahneman
+which may result from countdown of the MBG period from the day of
+                                                                                        and Tversky, 1979) or that consumers make choices based on multiple
+shipment and not the day of arrival reduce f (t0 ) and that may coun-
+                                                                                        reference points (Kőszegi and Rabin, 2007, 2009) that are not neces-
+terbalance the lower ﬁt. The majority of retailers who operate dual
+                                                                                        sarily zero as implied by (Kahneman and Tversky, 1979). Choosing
+online and brick and mortar channels offer identical MBG contracts in
+                                                                                        between MBG contracts is deﬁnitely a complex task since it refers to
+both cannels,3 others such as Amazon compensated the online buyer
+                                                                                        three outcomes: the product ﬁts, the product does not ﬁt and the con-
+                                                                                        sumer succeeded in discovering it when the product could be returned
+  2
+    http://www.skipmcgrath.com/articles/ebay-secondary-surplus-liquidation-
+market.shtml
+  3                                                                                      4
+    For example The GAP states that returns must be made “Within 45 days of pur-            “Amazon.com, and many sellers on Amazon.com, offer returns for most items
+chase.”                                                                                 within 30 days of receipt of shipment”
+                                                A. Heiman et al. / Journal of Behavioral and Experimental Economics 54 (2015) 105–117                                          109
+
+
+and the discovering a poor match too late and owning a product that                                We combine three elements from prospect theory, reference point,
+provides low net value. In addition consumers may refer to the norm                          concavity in gains and convexity in losses; and a probability weight-
+of 30 days if they considered buying the product. Or do they refer                           ing function with disappointment aversion, and choice under risk
+instead to the reference point of not buying at all? In Section 2.2 we                       considering reference points in separable functions within the util-
+extend and apply the prospect theory to model consumers’ choices of                          ity speciﬁcation. In particular, the weighted beneﬁt given a speciﬁc
+MBG with varying duration.                                                                   MBG duration is evaluated with respect to a ﬁxed, default return pe-
+                                                                                             riod, which we denote t0 . Different evaluations of gains and losses are
+                                                                                             captured by assigning a valuation function to each possible outcome,
+2.2. The extended prospect theory approach                                                   with greater weight given to losses than to gains with respect to the
+                                                                                             reference point. In our case, this will be achieved by assigning a “dis-
+    As an alternative to the rational EU framework, we analyze con-                          appointment” loss to the negative outcome. The third element, which
+sumers’ valuation of alternative MBG arrangements within a mod-                              is integrated, the probability weighting function π (·) : [0, 1] → [0, 1],
+eling framework that builds on Kahneman and Tversky’s (1979)                                 represents the systematic distortion of the probabilities they perceive.
+prospect theory. Various researchers have built on their ﬁndings, with                             While the probability weights are not subjective probabilities per
+a common assumption being that when consumers experience a loss                              se, individuals behave as if the value of the probability weights were
+with respect to their reference position, they experience an addi-                           the true probabilities. Hence, for convenience of discussing the ef-
+tional psychological cost that reﬂects the consumer’s aversion to loss.                      fects of probability weighting, we will refer to π (p) as the perceived
+While prospect theory has been widely discussed, there continues to                          probability, which is a function of the true probability. According to
+be debate about how reference points are selected and employed in                            Kahneman and Tversky (1979), the perceived probability increases
+decision-making. Gul (1991) supposes that outcomes of a gamble are                           with the actual probability, small probabilities are overestimated,
+compared to the certainty equivalent (CE). Others, suppose that the                          and large probabilities are underestimated. Thus, the probability
+outcomes are measured against the (reference based) expected utility                         of a non-ﬁt, 1 − q, translates into a perceived probability of non-
+(Shalev, 2000); or, against the best forgone alternative (Loomes and                         ﬁt π (1 − q), which is decreasing in q: π  (1 − q) < 0. And, for some
+                                                                                                                                                                      
+Sugden 1982). Kőszegi and Rabin (2006, 2007, 2009) provide some                             given level of expected ﬁt q̄, a q larger than q̄ implies π (1− q) > 1− q
+                                                                                                            
+evidence that when facing a choice with many dimensions, each di-                            and π  (1− q) < 0, while a q̃ less than q̄ implies π (1 − q̃) < 1 − q̃ and
+mension is measured against its own reference point. They model this                         π  (1 − q̃) > 0.
+as a sum of referenced based value functions.                                                      To assess the value of a change in the MBG duration, we set the
+    In the case of a product purchases, we can consider the refer-                           duration of a baseline MBG arrangement as 30 days, i.e., t0 = 30 days,6
+ence state to be the consumer’s anticipation of full beneﬁts received                        which is selected as the reference point in the empirical application
+from the consumption of the purchased good. If the consumer hap-                             because of evidence that this is the most common duration for MBGs
+pens to realize that the purchased product does not, in fact, ﬁt her                         in the United States (Heiman et al., 2002) and what represents the base
+needs, she is disappointed. Speciﬁcally, “disappointment” in this case                       (reference) case in our questionnaire. Let ΔPt denotes the change in
+reﬂects the psychological loss, above and beyond the price paid for                          the product price and Δf (t) denotes the change in learning associated
+the product, for having made a bad purchase decision in which the                            with a change in the MBG duration from t0 to t. A longer return
+expected beneﬁts can no longer be realized. We incorporate psycho-                           period (t > t0 ) is likely to result in a higher return probability from
+logical disappointment as an additively (negative) separable ﬁxed                            learning (1 − q)Δf (t) > 0 as well as a higher price (ΔPt > 0). The higher
+cost in the model, a practice that is consistent with the literature (e.g.,                  return probability reduces the probability that the consumer will be
+Bell, 1982, 1985; Loomes and Sugden, 1982, 1986; Kőszegi and Rabin,                         disappointed by being stuck with a product that does not ﬁt her needs.
+2007, 2009).5                                                                                      While the outcomes in standard prospect theory models are unidi-
+    In our model a consumer who considers buying an MBG with                                 mensional (generally monetary payoffs), the outcomes in our model
+a given duration weights three possible outcomes before deciding:                            are multidimensional. Tversky and Kahneman (1991) generalized
+(1) satisﬁed, i.e., the product ﬁts; (2) returned, i.e., the buyer discovers                 prospect theory to allow for multiple dimensions, with reference
+that the product does not ﬁt her needs within the guaranteed period                          points measured in product space. Heidhues and Kőszegi (2008) de-
+and returns it for a full refund; and (3) disappointed, i.e., the buyer                      velop a model in which consumers refer to two reference points: the
+discovers that the product does not ﬁt her needs, but only after the                         expected price of a product and its distance from idiosyncratic pref-
+MBG expires. The probability of realizing each of these three states                         erence, i.e., ﬁt. Our approach is similar, though our reference points
+depends not only on the duration of MBG, but also on the choice                              are measured in monetary outcomes and the duration of MBG.
+between retail channels, where buying online may save money but is                                 Following Kőszegi and Rabin (2007) who suggested that when the
+riskier, and some retail outlets may offer only store credit rather than                     choice involves relatively small expenditure relative to income we
+a full cash refund. Thus integration of prospect theory principles and                       deﬁne the valuation function (the equivalent of the utility function)
+those of multiple reference points should add value to the willingness                       in monetary terms. Under this assumption the monetary loss has the
+to pay that was calculated according to expected utility and presented                       same weight as the gain, whereas the notion of loss aversion as pre-
+in Hypotheses 2–4.                                                                           sented in prospect theory suggests concavity in gains and convexity
+    A consumer who consider buying the shorter (longer) MBG is                               on losses. Concavity or convexity is captured in our model through
+taking in mind that the shorter duration decreases (increases) the                           f(t) that yields non linear valuation functions.
+probability of discovery of non-ﬁt increasing the likelihood of disap-                             Integrating the notion of the consumer’s probability weighting
+pointment on one hand while beneﬁting from paying lower price that                           function, π , into Eq. (5), and recognizing that the consumer now
+increases the net value if satisﬁed and lowering the likelihood of the                       gains a net value of (Pt0 + D − R) when returning a product under
+state “returned” on the other hand.                                                          MBG (i.e., she eliminates her disappointment), implies that the con-
+                                                                                             sumer’s willingness to pay for a marginal change in duration can be
+
+  5
+    The literature generally treats the psychological loss or gains component as a func-
+tion of the size of the loss or gain of the realized outcome relative to the expected
+reference outcome. For MBGs the only relevant alternative state is when the consumer
+                                                                                               6
+realizes a loss (product non-ﬁt), so we only consider disappointment (loss). More-               Neither the theoretical nor empirical results depend on the choice of reference
+over, while we would expect consumer disappointment to depend on the size of the             duration since loss aversion is already captured separately through the disappointment
+purchase, our price is ﬁxed, so we adopt a ﬁxed disappointment level.                        parameter.
+110                                       A. Heiman et al. / Journal of Behavioral and Experimental Economics 54 (2015) 105–117
+
+
+expressed as:                                                                          Hypothesis 6. Consumers will have a greater willingness to pay
+                                                                                   for MBGs than is implied under expected beneﬁt analysis. That is,
+      π (1 − q) ∂∂f (tt) Pt0 + D − R    π  (RPt )                                   D > 0.
+ΔPt =                                =              P +D−R
+          π (1 − (1 − q)f (t))         π (1 − RPt ) t0                                    While learning and the probability function assures concavity,
+                                                                             (6)       our assumption that the disappointment function is linear is dif-
+                                                                                       ferent than that presented in previous studies (Gul, 1991; Kőszegi
+where, in the new notation given in the right term, RP represents
+                                                                                       and Rabin, 2007, 2009). We expect that the combination of weight-
+the probability of returning the product and π (RP) represents the
+                                                                                       ing probabilities and disappointment component of utility will pro-
+change in perceived probability of returning the product induced
+                                                                                       vide a better ﬁt relative to weighting probabilities or disappointment
+by the change in MBG duration. Eq. (6) suggests that the maximal
+                                                                                       alone.
+(minimal) amount that consumers will be willing to pay (receive)
+                                                                                          In order to test the six hypotheses presented in the previous sec-
+for longer (shorter) MBGs is a product of the increase (reduction) in
+                                                                                       tion, we use data from a survey that was conducted in northern Cali-
+the RP and the gain from returning an unﬁt product, divided by the
+                                                                                       fornia. In the next section we describe the design of the survey, ques-
+probability of keeping the product. Note that Eq. (6) is an extension
+                                                                                       tionnaire design and the characteristics of the sample.
+of Eq. (5) which denotes the willingness to pay for longer MBG under
+EU. The two additional elements in (6) are the weighting function                      3. Methodology
+(π ) and the addition of the disappointment cost D.
+     Consumers learn over time whether the product is a ﬁt or not as                   3.1. Design of data collection
+they experience the product. Marginal learning with respect to time
+is reﬂected in the equations by ΔRPt , which is adjusted by the prob-                      We used a hypothetical survey with real shoppers in order to es-
+ability weighting function in the form π (ΔRPt ). We have assumed                      timate consumers’ willingness to pay a premium for extending, and
+that learning is concave with respect to the number of trials, and                     accept discounts for reducing, the MBG duration. The limitations of
+that product trials are a linear function of time (for example, the con-               hypothetical surveys are well documented. However it provides sev-
+sumer uses the shirt once a week), leading us to conclude that learning                eral advantages that allow us to isolate the demand side (consumers)
+about ﬁt is a concave function of time: RPt > 0; RP t < 0. Following                from the supply side. Estimating consumers’ willingness to pay (ac-
+Kahneman and Tversky (1979), it is assumed that the probability                        cept) from real market data taken from a retailer (or retailers) without
+weighting function itself, π (·), is concave in the area of small prob-                having information on the demand side for returns (the retailer’s MBG
+abilities, so π (ΔRPt ) is concave. The combined concavity of both the                 policy) is theoretically problematic and may lead to misleading results
+learning and the probability weighting functions implies that the per-                 since the returns recorded reﬂect equilibrium rather than consumers’
+ceived probability of return increases with the duration of the return                 valuation (see Nerlove, 1995, p. 1715). Market data provides valid es-
+period, while this marginal effect declines, i.e., ∂ Δπ (RPt )/∂ t > 0 and             timations only if a retailer’s policy is exogenous of products’ returns,
+∂ 2 Δπ (RPt )/∂ t2 < 0, independently of whether t is greater than or less             which is an extreme assumption given the ﬁndings that retailers in-
+than t0 , although Δπ (RPt ) < 0 if t < t0 , and Δπ (RPt ) > 0 if t > t0 .             ﬂuence returns by controlling the cost of returns through hassle and
+     To illustrate the order of magnitude of a change in price, let us                 restocking fees (Hess, Chu and Gerstner, 1996; Posselt, Gerstner and
+consider the case where the reference price of the product is $40 and                  Radic, 2008). Furthermore, the ﬁndings that the relationship between
+the reference return period is 30 days, as in the case of our survey. Now              the ﬁrm’s proﬁtability and the rate of product returns is an inverted-
+suppose the perceived probability of return π (RPt0 ) under this initial               U shape (Reinartz and Kumar, 2003; Venkatesan and Kumar, 2004)
+arrangement is 10%. If the return cost is $5.00 and the disappointment                 indicates that ﬁrms control returns either by better selecting the prod-
+cost is $10 then the minimum discount a consumer will demand for                       ucts, suppliers, and/or customers, and calibrate their return policies.
+buying without the MBG at all is $5.00 (i.e., 0.1 × $45/0.9, where                     A laboratory experiment has the beneﬁt that consumers can select
+$45 = P + D − R). Now consider the case in which the consumer                          between alternatives and their choices can be analyzed through re-
+wants to extend the MBG to a longer return period, say, 60 days,                       vealed preferences, yet it has its shortcomings such as an artiﬁcial
+and assume that this will increase the perceived return probability,                   environment, and student responders. This work extends and applies
+rmπ (RPt ), by 5%. The updated perceived probability of retaining the                 prospect theory which has history of testing based on survey data
+item under the longer period, π (1 − RPt=60 ), is therefore 85. The extra              (Thaler, 1980). Hypothetical survey can provide reasonable predic-
+amount the customer would be willing to pay to extend the duration                     tions when changes in marginal WTP and WTA are to be estimated
+of the MBG to 60 days is $2.65 (i.e., .05 × $45/.85 = $2.65). Changes                  (Louviere, Hensher and Swait, 2000; Lusk and Schroeder, 2004). It is
+in D and the weighting function can signiﬁcantly alter the premiums                    therefore natural to use survey technique, and the decision to con-
+consumers are willing to pay for MBGs of different durations. For                      duct the survey in shopping malls has the advantage of interviewing
+example, if D = $5, then the additional amount the consumer will                       shoppers in a relevant place.
+pay for the 60-day MBG declines to $2.35. One of the main purposes                         Thus the variables that need to be estimated are past experi-
+of our empirical analysis is to estimate the order of magnitude of                     ence with returns, the willingness to pay for a baseline and ex-
+disappointment using the weighting function that where estimated                       tended/shortened MBG durations, and disappointment net of return
+in Tversky and Kahneman (1992).                                                        costs. Identifying the proportion of products returned in the past cap-
+     The value of the MBG to the customer is much lower when disap-                    tures the combination between making a wrong choice and the prob-
+pointment is not accounted for. The expected value of an MBG would                     ability of identify that the product is “wrong” during the duration
+otherwise be $3.89 (when D = 0), and the value of extending the                        of the MBG. The estimation of the willingness to pay for the MBG
+MBG to 60 days would be $2.05. Existing evidence, such as the em-                      option with respect to changes in duration represents the change in
+pirical ﬁnding that MBGs increase demand by 19% (Anderson et al.,                      the probability to discovering a “wrong” choice as duration increases
+2009). The value of MBG and changes in its duration are lower than                     (decreases).
+implied by the integrated prospect and disappointment theories. The
+expected value of MBG as presented in Eq. (3) given these ﬁgures is                    3.2. Questionnaire design and procedure
+$3.5 and the value of additional 30 days is $1.75 less than implied by
+Eq. (5) and lower than that implied by empirical ﬁndings that sug-                        The questionnaire consisted of 10 questions: seven were open-
+gest that MBG may increase demand by 19% (Anderson et al., 2009).                      ended questions and three are close-ended questions referring to so-
+Hypothesis 6 is thus suggested                                                         cio economic variables. The open questions asked consumers about
+                                       A. Heiman et al. / Journal of Behavioral and Experimental Economics 54 (2015) 105–117                                                                111
+
+
+their share of purchases in stores and catalogs, items that are re-
+
+
+
+
+                                                                                                            60
+turned more frequently, their willingness to accept a shorter du-
+ration MBG given a reference of 30 days or to get the refund in
+credit, and their willingness to pay for a longer (60-day) MBG. For
+example:
+
+
+
+
+                                                                                    No. of Observations
+
+                                                                                                            40
+    How much off on this $40 item would you demand if:
+
+(a) it did not come with a MBG? $_______;
+(b) it came with only a 7-day MBG? $_______;
+(c) if you only received store credit or replacement instead of your
+
+
+
+
+                                                                                                            20
+    money back? $_______
+
+    Respondents were randomly chosen at various shopping malls
+and instructed to assess their personal value of an item of clothing
+purchased with varying levels and types of MBGs. On average, the
+survey took about 10 min to complete. The survey design (ordered
+
+
+
+
+                                                                                                            0
+questions highlighting the duration changes) has the potential to pro-                                             0          20               40            60              80             100
+duce a demand effect. However, given the strong norm in the US of                                                                           Percentage of Returns
+a 30 day MBG, we felt the effect of framing in reference to the 30                                                           Fig. 1. Distribution of average returns.
+day MBG would be detectable and important. This demand effect is
+typical of the reference effect that would occur in the real world with              Table 1
+non-standard MBGs. Moreover, we sought to make the questions                         Discounts necessary to accept not having an MBG for in-store and catalog purchases.
+and mechanism as transparent as possible to create internally con-                                        Discounts                30-day MBG for                   30-day MBG for
+sistent answers in accordance with the principles of the non-market                                                                in-store purchases               catalog purchases
+valuation literature. While this does create the possibility for bias,                                                             Number             %             Number              %
+recent work suggests that the bias should be relatively mild relative
+to alternatives such as conjoint analysis (Miller et al., 2011).                                          Under $5                  54                 29            59                  31
+                                                                                                          $5 to under $10           28                 15            17                   9
+                                                                                                          $10 to under $15          41                 22            28                  15
+3.3. Sample                                                                                               $15 to under $25          48                 26            58                  31
+                                                                                                          $25 to $40                17                  9            26                  14
+   Of the 222 consumers interviewed, 48% were male and 52% were                                           Total                    188                100           188                 100
+female. The average age of respondents was 27, where 16 were below                                        Mean                     $10.43                           $11.84
+the age of 18. The oldest respondent was 76 years old. Thirty-four                                        Median                   $10.00                           $10.00
+responses were rejected, primarily because they failed in providing
+information that is consistent with rational decision making, e,g., they
+demanded more than the price of the product for shorter MBG, leaving                ing purchases, a signiﬁcant number return more than 20% of these
+188 usable responses.                                                               purchases. Similarly, Table 1 reveals a great deal of heterogeneity in
+                                                                                    the discount required for consumers to accept not having any MBG.
+4. Empirical estimation                                                             For in-store purchases, almost three-tenths of the sample requires a
+                                                                                    discount of under $5.00, while over a third requires over $15. The av-
+4.1. The effect of changes in MBG’s duration on MBG value                           erage discount required is $10.43, and the median is $10. The modal
+                                                                                    response was $0, and a $10 discount was the second most frequent
+    The baseline MBG option was a 30-day MBG on a $40 item of                       response. Responses were highly variable with nearly every whole
+clothing (a shirt). Respondents were asked the discount required for                number between $0 and $15 represented. For catalog purchases, the
+them to accept not having an MBG and to get a 7-day MBG on the same                 results were similar, although the number of respondents expressing
+article of clothing, as well as the monetary compensation required to               larger discounts was higher, with a mean of $11.84.
+switch from a 30-day full cash refund guarantee to a 30-day store                       The results that are presented in Table 1 support Hypothesis 6
+credit guarantee (SCG). They were also asked for their willingness to               that consumers will have a greater willingness to pay for MBGs than
+pay a premium to extend the MBG to a 60-day and to an inﬁnite-length                is implied by expected beneﬁt analysis. Respondents reported, on
+MBG. These same questions were repeated for the same item ordered                   average, about a 10% return rate, which, given that they pay $40 for
+from a catalog. Individuals were asked to estimate the percentage of                the product suggests that they should value the MBG at most at $4, and
+clothing purchases they returned (both in store and through catalogs)               even less if they account for the hassle costs of returning the product.
+during the last year.                                                                   Because Hypotheses 1 through 4 are not conditional on the pa-
+    On average, respondents demanded a $10.43 discount to forego                    rameters of the model, it is possible to test these hypotheses without
+the 30-day guarantee and buy the $40 shirt without guarantee. At                    estimating Eq. (4). While we appeal to the model to derive our hy-
+25% of the original product price, this assessment seems high given                 potheses, the hypotheses are stated in terms of comparing valuations
+the reported 10% probability of a return. However, there is anecdotal               over time, so our tests will be based on these comparisons.
+evidence leading us to believe that individuals are actually willing                    For each individual, we recorded changes in discounts/premiums
+                                                                                                                              ∞             t,catalog
+to pay such high prices for guarantees. Heiman et al. (2002) provide                for ΔMBG030 , ΔMBG730 , ΔMBG60 30 , ΔMBG30 , and ΔMBGt,store for both
+some evidence that buyers are willing to pay between 5 and 30% extra                in-store and catalog purchases, where the comparison group is the 30-
+                                                                                                          30
+for return options in various product categories. The percentage of                 day MBG (hence, ΔP30     = 0). This information allows us to construct
+clothing items returned in stores (10.13% on average) and through                   data on the slope of each segment. We can then check directly for vio-
+catalogs (18.63% on average) by our sample is similar to that reported              lations of the four hypotheses, and use classical hypothesis testing to
+in the professional literature cited earlier of 8.7% for regular store              check for signiﬁcant violations. Since a precursory examination of the
+sales versus 16% for catalog sales.                                                 data support Hypothesis 2 (that the marginal value of MBG duration
+    Fig. 1 displays the heterogeneity in average RP within our sam-                 declines as the MBG duration increases) over the full range of obser-
+ple. While over half of the respondents return 10% or less of cloth-                vations, the following tests will be based on a decreasing marginal
+112                                                   A. Heiman et al. / Journal of Behavioral and Experimental Economics 54 (2015) 105–117
+
+
+Table 2                                                                                            of the guarantee can be attributed to the excess uncertainty from not
+Violations of hypotheses.
+                                                                                                   being able to test a catalog product before purchase. After 30 days,
+  Hypothesis           Violations   Possible     Individuals     Results of                        the differences in marginal valuations of MBGs are no longer signiﬁ-
+                                    violations   violating       regression tests                  cant, which suggests that the marginal rates of learning are no longer
+  Hypothesis 1           7          1422          5              Reject violations, p < 0.01
+                                                                                                   signiﬁcantly different after one month.
+  Hypothesis 2          85          1046         51              Reject violations, p < 0.01
+  Hypothesis 3           0           361          0              Reject violations, p < 0.01
+  Hypothesis 4          56           698         34              Fail to reject violationsa
+                                                                                                   4.2. Heterogeneity and disappointment aversion
+  All hypotheses       148          3527         66
+                                                                                                       Testing Hypothesis 5 requires estimation of the relationship be-
+The results are based on a total of 181 respondents.
+  a
+    Can reject violations for one pair of line segments at the 0.01; cannot reject at any
+                                                                                                   tween the return probability and the premiums/discounts for various-
+reasonable level for the other three pairs.                                                        length MBGs. The estimation in the previous section (Table 3) deter-
+                                                                                                   mined the average value of an additional day of MBG over different
+value of MBG duration everywhere. In the spirit of Camerer’s (1989)                                lengths of MBGs ($0.67 per day for the ﬁrst 7 days, $0.25 for the next
+tests of risk and uncertainty models, we examine the primary testable                              23 days, and $.07 for the next 30 days). In this section we examine
+hypotheses of our model using individual data. Table 2 displays the                                whether buyers with different return probabilities have differing val-
+number of violations and the number of possible violations for each                                uations. We approximate the relationship in Eq. (6) using a quadratic
+hypothesis. While the table shows that a signiﬁcant number of indi-                                form for the relationship between the return probability and the will-
+viduals (36%) violate the hypotheses at least once, the violations occur                           ingness to pay (receive) for extending (shortening) the MBG duration:
+only 4% of the time. It would be hard to reject the notion that these                                  We approximate the relationship in Eqs. (5) and (6) using the form
+violations were occurring due to idiosyncratic errors.                                             (7)
+    We can test Hypotheses 1 through 4 by jointly testing all restric-                                              
+                                                                                                     t
+                                                                                                   ΔP30 =                      (βt + βRPt RP)δt + (βSC + βSC,RP RP)δSC
+tions included in each hypothesis for rejection. However, this test
+                                                                                                               t=0, 7, 60, ∞
+holds little power and, indeed, cannot be rejected for any of our hy-
+                                                                                                                          2                      2
+potheses. A more powerful method is to independently test for each                                             + β+ RP δt>30 + β− RP δt<30                                       (7)
+possible failure, maintaining failure as the null hypothesis. The results
+                                                                                                   where δt is a dummy variable taking the value 1 if the MBG duration
+of these hypotheses appear in the far right column of Table 2. These
+                                                                                                   is equal to t, and δSC is a dummy representing a 30-day store credit
+results are highly consistent with our model and hypotheses. Only
+                                                                                                   return guarantee. The coeﬃcients β+ , β− represent the quadratic ef-
+Hypothesis 4, which suggests that consumers are expected to have
+                                                                                                   fects of return probability for MBGs longer and shorter than 30 days,
+a higher valuation of marginal changes in MBG duration for catalogs
+                                                                                                   respectively. Table 4 reports the results of the regression. Due to
+than for store, fails to reject violations in some cases. Even so, the
+                                                                                                   the nature of sample heterogeneity, we report standard errors using
+estimates reﬂect congruence with Hypothesis 4.
+                                                                                                   White’s (1980) consistent correction.
+    By regressing the slope parameters on a constant, it is possible to
+                                                                                                       The results in the table conﬁrm Hypothesis 5, ﬁnding that a higher
+test these hypotheses using traditional hypothesis testing. We em-
+                                                                                                   return probability increases the premiums for longer MBGs (positive
+ploy a regression structure rather than a direct means test to take
+                                                                                                   signs for return probability, t = 60, ) and increases discounts
+advantage of the correlated error structure from survey data. Hence,
+                                                                                                   for shorter MBGs (negative signs for return probability, t = 0, 7).
+we employ Zellner’s Seemingly Unrelated Regression (SUR) technique
+                                                                                                   Further, we ﬁnd that the relationship is signiﬁcantly nonlinear, with
+to estimate the means. The results of this estimation appear in Table 3.
+                                                                                                   premiums concave in return probability for longer MBGs, and convex
+    The results in Table 3 clearly support Hypotheses 1, 2 and 3. How-
+                                                                                                   for shorter MBGs.
+ever, Hypothesis 4, that consumers value additional MBG durations
+for catalog purchases more than for store purchases, is statistically
+supported only when extending the duration from 7 days to 30 days.                                  Table 4
+For other periods, the value of extending the duration of catalog ver-                              Estimated parameters of discount/premium model.
+sus store MBGs are not signiﬁcantly different. The lack of a signiﬁcant                               Coeﬃcient                     In-store estimate ($)    Catalogue estimate ($)
+difference in the value of MBG for the ﬁrst 7 days may, as mentioned
+earlier, relate to the delay in the consumer receiving the product                                    Constant (t =0)               −9.570∗∗∗                −11.054∗∗∗
+purchased by catalog, since the consumer cannot get any value from                                                                   (0.904)                   (1.040)
+                                                                                                      30-day SC                       5.460∗∗∗                  5.674∗∗∗
+having an MBG until the product is received and tested. The signiﬁ-                                                                  (1.034)                   (1.266)
+cant difference in valuation of MBGs between the 7th and 30th days                                    7-day MBG                       4.705∗∗∗                  3.835∗∗∗
+                                                                                                                                     (1.091)                   (1.289)
+                                                                                                      60-day MBG                    10.813∗∗∗                 12.393∗∗∗
+Table 3                                                                                                                              (0.989)                   (1.141)
+Calculated per-day value of changes in MBG duration and conditions.                                   Inﬁnity MBG                   13.486∗∗∗                 14.938∗∗∗
+                                                                                                                                     (1.105)                   (1.276)
+  Variable                                            Mean ($)           Standard error ($)           RP (t = 0)                    −0.162∗∗                  −0.233∗∗∗
+                                                                                                                                     (0.076)                   (0.090)
+    7
+  ΔP0,store /7 MBG/day 1–7 store                       0.68              0.06
+                                                                                                      RP (t = 7)                    −0.192∗∗∗                 −0.355∗∗∗
+    30
+  ΔP7,store /23 MBG/day 7–30 store                     0.25              0.02                                                        (0.058)                   (0.083)
+    60
+  ΔP30,store /30 MBG/day 30–60 store                   0.07              0.02                         RP, SC (t = 30)               −0.249∗∗∗                 −0.261∗∗∗
+    ∞
+  ΔP60,store a
+               store                                   2.62              0.34                                                        (0.070)                   (0.089)
+    30,SC
+                                                                                                      RP (t = 60)                     0.121∗∗                   0.102∗∗
+  ΔP30,cash store                                     −6.78              0.76
+                                                                                                                                     (0.055)                   (0.057)
+    7
+  ΔP0,cat /7 MBG/day 1–7 catalog                       0.73              0.07                         RP (t =)                       0.127∗∗                   0.102
+    30
+  ΔP7,cat /23 MBG/day 7–30 catalog                     0.35              0.03                                                        (0.062)                   (0.067)
+    60                                                                                                RP2 t < 30                      0.003∗∗∗                  0.004∗∗∗
+  ΔP30,cat  MBG/day 30–60 catalog                      0.08              0.02
+                                                                                                                                     (0.001)                   (0.001)
+    ∞      a
+  ΔP60,cat   catalog                                   2.76              0.41                         RP2 t > 30                    −0.002∗∗                  −0.001∗
+    30,CSC
+  ΔP30,cash  ≤ 0 catalog                              −8.95              0.79                                                        (0.001)                   (0.001)
+  a
+      Because a slope cannot be calculated, we estimate the average rise of ΔMBG∞
+                                                                                60 .                Key: ∗ P < 0.10, ∗∗ P < 0.05, ∗∗∗ P < 0.01
+                                             A. Heiman et al. / Journal of Behavioral and Experimental Economics 54 (2015) 105–117                              113
+
+
+Table 5                                                                                       At t = 0, we know that Δπ (RPt ) = π (RPt0 ), which is given by the
+Predicted discounts and premiums compared with a 30-day MBG for average proba-
+                                                                                           stated RP. However, we have not calibrated the probability weight-
+bility of return.
+                                                                                           ing function. Other than the probability weight, all variables in the
+  Coeﬃcient                              In stores ($)            With catalogs ($)        right-hand side of (10) are known. If we consider return costs to be
+  Discount, no MBG                       10.90                    14.00
+                                                                                           negligible, and if we know the probability weighting function, the
+  Discount, 7-day MBG                     6.50                    12.44                    calculation in (10) yields a reasonable estimate of the cost of disap-
+  Premium, 60-day MBG                     2.26                     2.89                    pointment aversion.
+  Premium, inﬁnite MBG                    5.20                     5.78                       Furthermore, observing that
+  Discount, 30-day store credit           6.63                    10.24
+                                                                                                                                                        
+                                                                                           π (1 − RPt ) = π 1 − RPt0 − ΔRPt = π 1 − RPt0 − Δπ (RPt )            (9)
+    The negative coeﬃcient on the interactive return probability and
+SC term indicates that customers with higher return probabilities also                     we can rewrite Eq. (4) as
+have higher valuations (higher premiums) for store credit refunds.                                                        
+This is consistent with the notion that customers with higher return                                  Δπ (RPt ) Pt0 + D − R
+                                                                                           ΔPt =                           ,
+probabilities should value return guarantees more.                                                   π 1 − RPt0 − Δπ (RPt )
+    The results from Table 4 can be combined with the average re-
+ported RP (10.13% in stores and 18.63% through catalogs) to obtain                         which can be manipulated to yield
+the predicted value for various-length MBGs. For example, the pre-                                                         
+                                                                                                             ΔPt π 1 − RPt0
+dicted discount for no MBG with average in store RP is $10.90, while                       Δπ (RPt ) =                                  .                    (10)
+for an individual with RP of 5% it would be $10.30. Remarkably, it                                           Pt0 + D − R + ΔPt
+appears that the effect of average RP on the valuation of the MBG
+                                                                                               We can further manipulate (10) to obtain an estimate of the change
+is quite small (although signiﬁcant). This again highlights the lack of
+                                                                                           in RP with respect to MBG duration:
+ability of individuals to deal with probabilistic events, as they appear
+                                                                                                                                 
+to only vaguely account for changes in the likelihood of using the                                               π 1 − RPt0                 
+MBG for a return. In calibrating the probability weighting function,                       ΔRPt = π     −1
+                                                                                                                               ΔPt + π RPt0 − RPt0           (11)
+                                                                                                                     Pt + D − R
+Kahneman and Tversky (1979) note that probabilities smaller than
+0.3 tend to be overstated in a way that would reduce the decline                               Given our estimated D − R from (8), we can use Eq. (11) to estimate
+in perceived probability as the true probability tends towards zero.                       how a change in MBG duration impacts the consumer’s likelihood of
+Thus, this result is very similar to that predicted by prospect theory.                    returning the product.
+Table 5 contains predicted discount and premium values for the av-                             Tables 6A and 6B contain calculations of both the value of dis-
+erage return percentages.                                                                  appointment and the change in consumer expected probability of
+    From the model, we can calculate both the implied value of dis-                        return for various return periods predicted from our estimates given
+appointment for a given discount/premium and stated return proba-                          various starting values of return probabilities assuming the base case
+bility, as well as the change in return probability over MBG duration.                     is a 30-day return MBG. These tables show that the cost of disap-
+Eq. (4) can be rearranged to ﬁnd                                                           pointment can be substantial for the range of return probabilities
+           ΔPt π (1 − RPt )                                                                found in our data. Table 6A assumes that no weighting takes place
+D−R=                        − Pt 0 .                                             (8)       (i.e., π (RP) = RP), and Table 6B assumes the probability weighting
+             Δπ (RPt )
+
+                           Table 6A
+                           Calibrated costs of disappointment and implicit expected customer’s change in probability of return over time for various
+                           RPs assuming no probability weighting.
+
+                                                         In-store products                              Catalogue products
+
+                              RP                           0.05        0.10        0.15       0.20        0.05              0.10         0.15       0.20
+                              Discount, no MBG ($)        10.31       10.89       11.33      11.61       12.12             12.98        13.65      14.11
+                              Disappointment cost ($)    154.80       57.01       23.18       5.44      189.26             75.86        36.34      15.46
+                                                         Change in RP
+                              7-day MBG                   −0.028    −0.060       −0.095     −0. 132      −0.037           −0.081       −0.130     −0.183
+                              60-day MBG                   0.009      0.021       0.035      0.050        0.008            0.018        0.029      0.043
+                              Inﬁnite-length MBG           0.022      0.048       0.078      0.114        0.018            0.038        0.060      0.085
+
+
+                            Table 6B
+                            Calibrated cost of disappointment and implicit expected customer’s change in probability of return over time for various
+                            RPs using probability weighting.
+
+                                                          In-store products                             Catalogue products
+
+                              RP                           0.05        0.1         0.15       0.20       0.05              0.10         0.15       0.20
+                              π(RP)                        0.149       0.222       0.278      0.327      0.149             0.222        0.278      0.327
+                              Discount, no MBG ($)        10.31       10.89       11.33      11.61      12.12             12.98        13.65      14.11
+                              Disappointment cost ($)     35.21        6.28       -5.76     -12.94      48.62             15.38         1.47      -6.89
+                                                          Change in RP
+                              7-day MBG                   −0.036     −0.077      −0.122      −0.170     −0.044            −0.094       −0.120     −0.200
+                              60-day MBG                   0.023      0.063       0.115       0.170      0.021             0.056        0.101      0.151
+                              Inﬁnite-length MBG           0.054      0.134       0.231       0.333      0.044             0.107        0.181      0.260
+                                                          Change in π(RP)
+                              7-day MBG                   −0.150    −0.163       −0.171      −0.174     −0.256            −0.294       −0.326     −0.351
+                              60-day MBG                   0.039      0.045       0.049       0.051      0.039             0.045        0.049      0.052
+                              Inﬁnite-length MBG           0.092      0.097       0.101       0.105      0.089             0.092        0.095      0.098
+114                                                  A. Heiman et al. / Journal of Behavioral and Experimental Economics 54 (2015) 105–117
+
+
+function estimated in Tversky and Kahneman (1992), namely,                                        line segments. Anything below 90◦ is clearly infeasible (which is the
+             ⎧        RPγ
+                                                                                                  case for each of the examples below). The angles remain relatively
+             ⎨ (RPγ +(1−RP)γ )1/γ          if “loss”                                              infeasible and are likely to result in negatively sloped portions of the
+π + (RP) =             RPδ                                                                        utility function for larger return costs and widely different valuations
+             ⎩                 1/δ         if “gain”
+                 (RPδ +(1−RP)δ )                                                                  of the product. Thus, expected utility seems to be an unsatisfactory
+                                                                                                  explanation (see Appendix A2 for mathematical detailing).
+where γ = 0.61 and δ = 0.69. In our case, a return is considered a
+loss, while a ﬁt is considered a gain.
+                                                                                                  5. Conclusions
+     The results suggest that probability weighting (Table 6B) should
+accompany disappointment in any reasonable explanation of the sur-
+                                                                                                      This paper aims at explaining the anomalies observed in the price
+vey responses. The results also indicate that for a 10% return rate, that
+                                                                                                  consumers are willing to pay for marketing risk reduction tools.
+which is most relevant for our sample, the net disappointment costs
+                                                                                                  We apply prospect theory by incorporating a loss aversion term to
+(D − R) from realizing a non-ﬁt that cannot be returned is $10.89.
+                                                                                                  consumers’ payoffs based on the possibility that the consumer does
+For the average range of return probability from the survey (about
+                                                                                                  not receive the expected consumption beneﬁts after purchasing the
+10%), the predicted costs of a loss are much more reasonable when
+                                                                                                  product because the product turns out not to ﬁt the consumer’s id-
+employing the weighting function at the same time, to get a value,
+                                                                                                  iosyncratic needs. We demonstrate and test out theory on MBGs
+for example, of $6.28 instead of $57 when the weighting return prob-
+                                                                                                  and show that “behavioral anomalies” such as aversion to loss and
+ability are not used. These ﬁnding supports Hypothesis 6. The multi-
+                                                                                                  the distortion of probability beliefs play a role in the valuation of
+plicative nature of probability in the value of the option means that
+                                                                                                  MBGs.
+a misperception in probability can greatly increase the option value
+                                                                                                      We use prospect theory to decompose the value of the MBG into
+of MBGs, even when the true return probability is not substantially
+                                                                                                  three parts: (1) the “normal” returns accounted for in traditional
+increased. This makes MBGs an especially valuable tool to promote
+                                                                                                  analysis; (2) disappointment; and (3) overweighting the likelihood
+sales and possibly even proﬁts.
+                                                                                                  of return. The results of our analysis reveal signiﬁcant deviation from
+     The analysis also reveals that disappointment decreases with the
+                                                                                                  expected net beneﬁt valuation. The empirical results suggest that for
+probability of returning the product. This observation suggests that
+                                                                                                  this sample, disappointment may dominate other purchase risk con-
+consumers who are averse to disappointments may check products
+                                                                                                  siderations, inﬂating what otherwise might be a relatively modest
+more closely before deciding to purchase and would be therefore less
+                                                                                                  cost for a non-ﬁt.
+likely to return them.
+                                                                                                      This paper reveals the heterogeneous nature of demand for MBGs,
+     Comparison the model presented in our work against the model
+                                                                                                  where consumers vary in their valuations of the MBG, and relates this
+which has been the standard in the ﬁeld—expected utility theory
+                                                                                                  heterogeneity to differences in the likelihood of returning products.
+is one of the focal points of this paper. Throughout this paper we
+                                                                                                  The combination of the high risk premiums that some consumers
+have used an expected net beneﬁt model to approximate the ex-
+                                                                                                  are willing to pay for an MBG option, together with heterogeneity in
+pected utility model and demonstrated that it cannot explain the size
+                                                                                                  these valuations, suggests that retailers may proﬁtably consider un-
+of the observed valuation of an MBG in our sample. However, one
+                                                                                                  bundling MBGs from products and offering the MBG as an optional
+might argue that it would be possible to ﬁnd a concave utility func-
+                                                                                                  item for customers to select at the time of purchase. This implica-
+tion that might rationally explain the size of the discounts demanded
+                                                                                                  tion is consistent with that suggested in Heiman et al. (2002). Such a
+for shorter MBGs. This is not the case. In order to demonstrate this,
+                                                                                                  solution would permit customers to select the appropriate MBG de-
+we can employ the calibration technique ﬁrst introduced by Rabin
+                                                                                                  pending on their prediction of whether they are more or less likely
+(2000) and generalized by Just and Peterson (Just and Peterson, 2003,
+                                                                                                  to return the purchased good. Customers could possibly even select
+2010). As Rabin noted a utility curve can be approximated locally by
+                                                                                                  an optimal return schedule depending on the product and their per-
+a straight line. In the context of expected utility this means that indi-
+                                                                                                  sonal needs for continued assessment outside of the store. A similar
+viduals should behave approximately risk neutral for small gambles.
+                                                                                                  strategy has already been successfully adopted in the context of war-
+If individuals do not behave as risk neutral in small gambles, this be-
+                                                                                                  ranties, with retailers and producers of electronic goods signiﬁcantly
+havior will often imply that the individual would display somewhat
+                                                                                                  increasing their proﬁts by offering extended warranties and service
+absurd levels of risk aversion for larger gambles if the utility function
+                                                                                                  contracts while reducing the basic warranties they offer (Stafford,
+is concave. The basic problem is to ﬁnd the utility function that mini-
+                                                                                                  2006).
+mizes the change in slope (minimizes the Arrow–Pratt measure of risk
+                                                                                                      Store credit returns are less valuable than are cash refund MBGs.
+aversion) over the support of the gambles in the choice set, that ratio-
+                                                                                                  While this ﬁnding is not new, its importance to the retail sector is
+nalizes the selected gamble. In our case, the individual is indifferent
+                                                                                                  exempliﬁed when taking into account that consumers consider dis-
+between the 30-day MBG and no MBG. Just and Peterson (2010) show
+                                                                                                  appointment costs and inﬂate low probabilities of a bad decision.
+that the solution to this constrained optimization will always result
+                                                                                                  The estimations suggest that consumers perceive that their expected
+in a utility function given by two connected line segments. Moreover,
+                                                                                                  loss in beneﬁts when they are offered store credit instead of money
+if the resulting line segments form an acute angle, then there is no
+                                                                                                  is roughly similar to their loss in beneﬁts from reducing the MBG
+monotonically increasing utility function that could reconcile the ob-
+                                                                                                  duration from 30 days to 7 days, or over half of the value of the stan-
+served choice, and expected utility is clearly not applicable. Even if
+                                                                                                  dard 30-day MBG. Thus retailers should be careful about substituting
+they do not form an acute angle, they may produce a very unlikely
+                                                                                                  credit for cash in their return policies since this can seriously reduce
+change in marginal utility. In Table 7, we report the angle of the two
+                                                                                                  the perceived value of the MBG.
+Table 7
+                                                                                                      We also ﬁnd that MBGs have a greater value for catalog purchases
+Minimum Change in Slope of the Utility function Implied by WTP for 30 Day MBGs.                   than for in-store purchases, at least within the ﬁrst 30 days. This ﬁnd-
+                                                                                                  ing is consistent with Ofek, Katona and Sarvary (2010), Boniﬁeld, Cole
+             In-store products                         Catalogue products
+                                                                                                  and Schultz (2010), Zhang et al. (2010) and Shulman, Coughlan and
+  RP          0.05       0.1        0.15      0.20      0.05      0.10     0.15      0.20         Savaskan (2009). The large values attributed to disappointment from
+  RC = $0    66         68         70        72        58        60       62        64            bad purchasing estimated in this paper provide a strong argument for
+  RC = $1    70         72         74        76        63        65       67        69            why Internet retailing for experience goods has been much slower to
+Anything below 90 implies that the function must contain a negative slope over some               gain ground than had been generally anticipated. Consumers’ higher
+range of value.                                                                                   valuation of MBG for online shopping and lower value of store credit
+                                             A. Heiman et al. / Journal of Behavioral and Experimental Economics 54 (2015) 105–117                                 115
+
+
+may explain American Apparel returns policy that allow full refund for                        Following Kőszegi and Rabin (2007) who suggested that when the
+online purchase while offering only store credit for brick-and-mortar                     choice involves relatively small expenditure relative to income we
+purchases.                                                                                deﬁne the valuation function (the equivalent of the utility function)
+    These arguments raise several interesting research questions:                         in monetary terms. Under this assumption the monetary loss has the
+Why do we observe a difference in product return policy be-                               same weight as the gain, whereas the notion of loss aversion as pre-
+tween the US and the EU? Why is the product return policy in the                          sented in prospect theory suggests concavity in gains and convexity
+EU7 imposed by a law while in the US the standards are set by com-                        on losses. Concavity or convexity is captured in our model through
+petition? Why is it that in the EU products cannot be returned if they                    f(t) that yields non linear valuation functions. We assume that when
+were used? This restriction certainly restricts the ability of consumers                  F = 0 and E = 0, namely when the buyer is stuck with a product that
+to learn, thus limiting the value of the MBG.                                             is a non-ﬁt, she incurs a disappointment cost of D, so that the gain
+                                                                                          from the reduced probability of being stuck with a non-ﬁt product
+Acknowledgements                                                                          is included in the gain from avoiding disappointment cost together
+                                                                                          with the ﬁnancial reimbursement when returning the product. We
+  We acknowledge the Asociación Mexicana de Cultura A.C. and the                          assume that return costs (R) are unaffected by the duration of the re-
+Davidson center for Agribusiness for their support.                                       turn period. With this modiﬁcation, the distribution of the valuation
+                                                                                          of the change in outcomes is given by:
+
+Appendix A1                                                                               Changes in outcome                                   Changes in
+                                                                                                                                             probabilities of
+    Let F indicates whether the product ﬁts, where F = 1 indicates a
+                                                                                                                                                ﬁt/no-ﬁt
+product ﬁt and F = 0 indicates a non-ﬁt. Let M be the monetary cost
+associated with an outcome. In the context of having purchased a                          U[ΔF = 0, ΔM = −ΔPt , E = 0] = −Pt                      q
+product with an MBG of duration t for a price of Pt , M = 0 if and only if                U[F = 0, M = 0, E = −R] = −R                         (1 − q)Δf (t)
+                                                                                                                 
+the product is returned, and M = −Pt otherwise. The third dimension                       U[F = 0, M = − Pt0 + ΔPt , E = 0]                   −(1 − q)Δf (t)
+is the return costs represented by effort E. If the consumer returns the
+                                                                                                           
+                                                                                              = − Pt0 + ΔPt − D
+product, this return effort reﬂects a loss of E = −R; otherwise E = 0.
+                                                                                          U[ΔF = 0, ΔM = −ΔPt , ΔE = 0] = −ΔPt              (1 − q)[1 − f (t0 )]
+    From the previous notation, we can present the distribution of the
+three outcomes—ﬁt, returned and disappointed—respectively, for the                           Integrating the notion of the consumer’s probability weighting
+reference period as                                                                       function, π , into Eq. (6)8 yields the consumer’s willingness to pay for
+                                                                                          a marginal change in duration that is given by:
+Outcome:      Monetary cost Cost of return                   Probability
+                                                                                                                                 
+ﬁt/nonﬁt                                                                                             [Pt0 + D − R] π 1 − q Δf (t)          [Pt0 + D − R] Δπ [RPt ]
+                                                                                          ΔPt =                                       =
+1                   −Pt0                  0                        q                                π q + 1 − q [1 − f (t0 ) − Δf (t)]           π [1 − RPt ]
+0                     0                  −R                 (1 − q)f (t0 )                                                                                    (A1.1)
+0                   −Pt0                  0              (1 − q)(1 − f (t0 ))
+                                                                                          where, in the new notation given in the right term, RP represents
+where the outcomes are given on the left and their probability of                         the probability of returning the product and π [RP] represents the
+occurrence are given on the right. Under a new duration period, the                       change in perceived probability of returning the product induced by
+distribution of outcomes would be                                                         the change in MBG duration. Eq. (7) suggests that the maximal (mini-
+Outcome:        Monetary cost         Cost of              Probability                    mal) amount that consumers will be willing to pay (receive) for longer
+                                                                                          (shorter). MBG is a product of the increase (reduction) in the RP and
+ﬁt/nonﬁt                              return                                              the gain from returning an unﬁt product, divided by the probability
+1                −(Pt0 + Pt )           0                        q                       of keeping the product.
+0                         0             −R          (1 − q)[f (t0 ) + Δf (t)]
+0             M = −(Pt0 + ΔPt )          0        (1 − q)[1 − f (t0 ) − Δf (t)]           Appendix A2
+    Since the utility of a change in the contract is deﬁned on the dif-
+                                                                                              The 30-day MBG is a gamble with three outcomes: (i) the product
+ference between outcomes after adjustment, the distributions of the
+                                                                                          ﬁts, resulting in V − P. Let the utility of a ﬁt under the zero-day MBG
+differences in the states of nature are
+                                                                                          after paying for the good and receiving the compensating WTA0 ar-
+Changes in         Changes in          Changes in            Changes in                   bitrarily equal V, and the utility of being stuck with a non-ﬁt (again
+outcome:         monetary cost            cost of            probability                  after paying the price and receiving compensation) be equal to 0.
+                                                                                          Note that in this case, V must be above 30 if the individual is willing
+ﬁt/nonﬁt                                  return             of outcome
+                                                                                          to purchase the good for $40 with some probability of being stuck,
+ΔF = 0             ΔM = −ΔP              ΔE = 0                       q                   or of having to return the item (the expected utility must be at least
+F=0                M=0                   E = −R             (1 − q)Δf (t)                 the utility equivalent of $40). If we consider the move to a 0 day MBG
+                              
+F=0            M = − Pt0 + ΔPt            E=0              −(1 − q)Δf (t)                 the minimum concavity utility function will consist of two connected
+                                                                                          line segments, and must meet the constraint
+ΔF = 0             ΔM = −ΔP              ΔE = 0          (1 − q)[1 − f (t0 )]
+where either the outcomes (on the left), or the probabilities of these
+                                                                                          (1 − q)0 + q(V − P + WTA0 ) = −(1 − f (30))(1 − q)β WTA0
+outcomes (on the right), have changed. Since we are looking at                              + f (30)(1 − q)β(P − WTA0 + RC) + q[β(P − WTA0 + RC)
+changes in outcomes, the probabilities on the right no longer sum                              V − β(−RC + P − WTA0 )
+to one.                                                                                     +                          (V − P + RC)
+                                                                                                     V − P + WTA0 + RC
+
+  7
+       http://europa.eu/youreurope/citizens/shopping/shopping-abroad/returning-
+                                                                                                       P +D−R][(1−q)f (t)]
+unwanted-goods/index_en.htm.                                                                8
+                                                                                                Pt = [ t0                  .
+                                                                                                       [q+(1−q)[1−f (t0 )−f (t)]]
+116                                      A. Heiman et al. / Journal of Behavioral and Experimental Economics 54 (2015) 105–117
+
+
+where β is the slope of the left part of the utility function, the slope              8. What is your ethnicity? White____ Black____ Asian____ His-
+of the upper part of the calibrated utility function is                                  panic____ Other____
+                                                                                      9. Are you married? Yes____No____
+V − β(−RC + P − WTA0 )
+                                                                                     10. Where do you live? ___________________________________
+  V − P + WTA0 + RC
+                                                                                     11. What is your average household income? Below $20,000_____;
+   The left hand side of the equation is the expected utility of the                     $21,000–$40,000______;    $41,000–$60,000______;    $61,000–
+compensated MBG, and the right hand side is the utility resulting                        $80,000______; more than $81,000_______.
+from the forgoing the purchase (0). This can be rewritten as
+                                                                  
+                                                      V (V−P+RC)
+                                 q (V − P + WTA0 ) − V−P+WTA 0 +RC
+β=                                                                                          
+                                                                                 −RC+P−WTA0 )
+   −(1 − f (30))(1 − q)WTA0 + f (30)(1 − q)(P − WTA0 + RC) + q P − WTA0 + RC − (V−P+WTA 0 +RC
+
+
+   Expected utility is apparently violated if the dot product of the
+vectors formed by each line segment is positive, or
+[β(P − WTA0 − RC) (P − WTA0 − RC)]                                                    References
+                         
+      V − β(P − WTA0 − RC)
+  ×                         >0                                                        Akaah, Ishmael P. and Pradeep K. Korgaonkar, 1988. “A conjoint investigation of the
+       V − P + WTA0 + RC                                                                   relative importance of risk relievers in direct marketing.” Journal of Advertising
+                                                                                           Research 28(4), 38–44.
+or,                                                                                   Anderson, Eric T., Karsten Hansen and Duncan Simester, 2009. “The option value of
+                                                                                           returns: Theory and empirical evidence.” Marketing Science 28(3), 405–423.
+V (β + 1)(P − WTA0 − RC) − (β 2 + 1)(P − WTA0 − RC)2 > 0                              Arrow, Kenneth, 1962. “The economic implications of learning by doing.” The Review
+                                                                                           of Economic Studies 29, 155–173.
+   In our data, P = 40, WTA0 is given by the survey, while the prob-                  Barberis, Nicholas C., 2013. “Thirty years of prospect theory in economics: A review
+ability of return or being stuck with the product, Vand RC are unob-                       and assessment.” Journal of Economic Perspectives 27(1), 173–196.
+                                                                                      Bell, David E., 1982. “Regret in decision making under uncertainty.” Operations Re-
+servable. For the purpose of simulation, we assume the probability of
+                                                                                           search 30, 961–981.
+being stuck with the product in the 30 day MBG is 0.02 and use the                    Bell, David. E., 1985. “Reply—Putting a Premium on Regret.” Management Science 31(1),
+observed average discount for both in store and catalogue purchases.                       117–122.
+We use a range of return costs, and assume V = 44 (a 10% premium                      Boniﬁeld, Carolyn, Catherine Cole and Randall L. Schultz, 2010. “Product returns on
+                                                                                           the internet: A case of mixed signals?.” Journal of Business Research 63(9–10),
+over the price).                                                                           1058–1065.
+                                                                                      Bryant, Keith W. and Jennifer L. Gerner, 1978. “The price of a warranty: The case for
+Appendix B. Questionnaire                                                                  refrigerators.” Journal of Consumer Affairs 12, 30–47.
+                                                                                      Camerer, Colin F., 1989. “An experimental test of several generalized utility theories.”
+                                                                                           Journal of Risk and Uncertainty 2, 61–104.
+    This questionnaire is part of a research study being conducted at UC              Center for Policy Alternatives, 1978. “Consumer durables: Warranties, service contracts
+Berkeley on the use of cash-back/money-back guarantees (MBG). We are                       and alternatives.” Center for Policy Alternatives at the Massachusetts Institute of
+                                                                                           Technology 1-4, 14–78.
+interested in understanding how different people utilize MBG. Your par-               Che, Yeon-Koo, 1996. “Customer return policies for experience goods.” The Journal of
+ticipation will be very helpful to our study, and your answers will be kept                Industrial Economics 44(1), 17–24.
+conﬁdential. We thank you for taking the time to participate in our survey.           Chen, Tao, Ajay Kalra and Baohong Sun, 2009. “Why do consumers buy extended service
+                                                                                           contracts?” Journal of Consumer Research 36(4), 611–623.
+1. On average, what percentage of clothes that you purchased in                       Chu, Wujin, Eitan Gerstner and James D. Hess, 1998. “Managing dissatisfaction, how
+                                                                                           to decrease customer opportunism by partial refunds.” Journal of Service Research
+   stores or catalogs do you return?                                                       1(2), 140–154.
+   Store: _______% Catalog ______% (Write N/A if not applicable.)                     Chua, Hannah Faye, Richard Gonzalez, Stephan F. Taylor, Robert C. Welsh and
+2. Are there certain items that you return more often? Please specify                      Israel Liberzon, 2009. “Decision-related loss: Regret and disappointment.” Neu-
+                                                                                           roimage 47(4), 2031–2040.
+   items____________                                                                  Davis, Scott, Eitan Gerstner and Michael Hagerty, 1995. “Money-back guarantees in
+3. For an article of clothing (dress, trousers, etc.) purchased at a store                 retailing: Matching products to consumer tastes.” Journal of Retailing 71(1), 7–22.
+   and priced at $40 that comes with a 30-day money-back guarantee                    Davis, Scott, Michael Hagerty and Eitan Gerstner, 1998. “Return policies and the optimal
+                                                                                           level of hassle.” Journal of Economics and Business 50(5), 445–460.
+   (MBG),
+                                                                                      Day, George S. and David B. Montgomery, 1983. “Diagnosing the experience curve.”
+   How much off on this $40 item would you demand if:                                      The Journal of Marketing 47, 44–58.
+      (a) it did not come with a MBG? $_______;                                       Delaney, Peter F., Lynne M. Reder, James J. Staszewski and Frank E. Ritter, 1998. “The
+      (b) it came with only a 7-day MBG? $_______;                                         strategy speciﬁc nature of improvement: The power law applies by strategy within
+                                                                                           task.” Psychological Science 9(1), 1–7.
+      (c) if you only received store credit or replacement instead of                 Erdem, Tülin and Michael P. Keane, 1996. “Decision-making under uncertainty: Cap-
+          your money back? $_______                                                        turing dynamic brand choice processes in turbulent consumer goods markets.”
+   How much more would you pay to upgrade the MBG to                                       Marketing Science 15(1), 1–20.
+                                                                                      Ert, Eyal and Ido Erev, 2013. “On the descriptive value of loss aversion in decisions
+      (a) 60 days? $______                                                                 under risk: Six clariﬁcations.” Judgment and Decision Making 8(3), 214–235.
+      (b) unlimited time? $________                                                   Gul, Faruk, 1991. “A theory of disappointment aversion.” Econometrica 59(3), 667–686.
+   For an article of clothing (dress, trousers, etc.) purchased from a                Hahn, Sunku, 2005. “Allowing a pre-purchase product trial in duopoly.” Economics
+                                                                                           Letters 87(2), 175–179.
+   catalog and priced at $40 that comes with a 30-day MBG.                            Halbheer, Daniel, Florian Stahl, Oded Koenigsberg and Donald R. Lehmann, 2012. “Sam-
+4. How much off on this $40 catalog item would you demand if:                              pling Strategies for Information Goods.” Columbia Business School and University
+      (a) it did not come with a MBG? $_______;                                            of Zurich.
+                                                                                      Heidhues, Paul and Botond Kőszegi, 2008. “Competition and price variation when con-
+      (b) it came with only a 7-day MBG? $_______;                                         sumers are loss averse.” The American Economic Review 98(4), 1245–1268.
+      (c) if you only received store credit or replacement instead of                 Heiman, Amir, Bruce P. McWilliams, Zhihua Zhao and David. Zilberman, 2002. “Val-
+          your money back? $_________                                                      uation and management of money-back guarantee options.” Journal of Retailing
+                                                                                           78(3), 193–205.
+   How much more would you pay to upgrade the MBG to
+                                                                                      Heiman, Amir and Chezy Oﬁr, 2010. “The effects of imbalanced competition on demon-
+      (a) 60 days? $______                                                                 stration strategies.” International Journal of Research in Marketing 27(2), 175–187.
+      (b) unlimited time? $________                                                   Hess, James D., Wujin Chu and Eitan Gerstner, 1996. “Controlling product returns in
+5. What is your age? ________                                                              direct marketing.” Marketing Letters 7(4), 307–317.
+                                                                                      Just, David R. and Hikaru Hanawa Peterson, 2003. “Diminishing marginal utility of
+6. What is your gender? Female____ Male____                                                wealth and calibration of risk in agriculture.” American Journal of Agricultural
+7. What is your occupation? ___________________________                                    Economics 85(5), 1234–1241.
+                                                 A. Heiman et al. / Journal of Behavioral and Experimental Economics 54 (2015) 105–117                                           117
+
+
+Just, David R. and Hikaru Hanawa Peterson, 2010. “Is expected utility theory applicable?      Petersen, Andrew J. and V. Kumar, 2010. “Can products return make you money?” Sloan
+     A revealed preference test.” American Journal of Agricultural Economics 92(1),               Management Review 53(1), 85–89.
+     16–27.                                                                                   Posselt, Thorsten, Eitan Gerstner and Dubravko Radic, 2008. “Rating E-tailers’ money-
+Kahneman, Daniel and Amos Tversky, 1979. “Prospect theory: An analysis of decision                back guarantees.” Journal of Service Research 10(3), 207–219.
+     under risk.” Econometrica 47, 263–292.                                                   Rabin, Matthew, 2000. “Risk aversion and expected utility theory: A calibration theo-
+Kőszegi, B. and M. Rabin, 2007. “Reference-dependent risk attitudes.” American Eco-              rem.” Econometrica 68(5), 1281–1292.
+     nomic Review 97(4), 1047–1073.                                                           Reinartz, Werner J. and V. Kumar, 2003. “The impact of customer relationship charac-
+Kőszegi, B. and M. Rabin, 2009. “Reference-dependent consumption plans.” American                teristics on proﬁtable lifetime duration.” Journal of Marketing 67(1), 77–99.
+     Economic Review 99(3), 909–936.                                                          Roberts, John H. and Glen L. Urban, 1988. “Modeling multiattribute utility, risk, and
+Kőszegi, B. and M. Rabin, 2006. “A model of reference-dependent preferences.” The                belief dynamics for new consumer durable brand choice.” Management Science
+     Quarterly Journal of Economics 121(4), 1133–1165.                                            34(2), 167–185.
+Lieberman, Marvin B., 1987. “The learning curve, diffusion, and competitive strategy.”        Shalev, Jonathan, 2000. “Loss aversion equilibrium.” International Journal of Game
+     Strategic Management Journal 8(5), 441–452.                                                  Theory 29(2), 269–287.
+Loomes, Graham and Robert Sugden, 1982. “Regret theory: An alternative theory of              Shulman, Jeffrey D., Anne T. Coughlan and R. Canan Savaskan, 2009. “Optimal re-
+     rational choice under uncertainty.” The Economic Journal 92(368), 805–824.                   stocking fees and information provision in an integrated demand-supply model
+Loomes, G. and R. Sugden, 1986. “Disappointment and dynamic consistency in choice                 of product returns.” Manufacturing and Service Operations Management 11(4),
+     under uncertainty.” The Review of Economic Studies 53(2), 271–282.                           577–594.
+Louviere, Jordan J., David A. Hensher and Joffre D. Swait, 2000. “Stated Choice Methods:      Stafford, Alan, 2006. “Are extended warranties worth it?” PC World 24(5), 91–96.
+     Analysis and Application.” Cambridge University Press: Cambridge, UK.                    Thaler, Richard H., 1980. “Toward a positive theory consumer choice.” Journal of Eco-
+Lusk, Jayson L. and Ted C. Schroeder, 2004. “Are choice experiment incentive compati-             nomic Behavior and Organization 1(1), 39–60.
+     ble: A test with quality differentiated beef steak.” American Journal of Agricultural    Tversky, Amos and Daniel Kahneman, 1991. “Loss aversion in riskless choice:
+     Economics 86(2), 467–482.                                                                    A reference-dependent model.” The Quarterly Journal of Economics 106(4),
+Matthews, Steven A. and Nicola G. Persico, 2005. “Information Acquisition and the                 1039–1061.
+     Excess Refund Puzzle.” PIER working paper 05-015.                                        Tversky, Amos and Daniel Kahneman, 1992. “Advances in prospect theory: Cumulative
+Meyer, Robert J. and Arvind Sathi, 1985. “A multiattribute model of consumer choice               representation of uncertainty.” Journal of Risk and Uncertainty 5(4), 297–323.
+     during product learning.” Marketing Science 4(1), 41–61.                                 Van den Poel, Dirk and Joseph Leunis, 1999. “Consumer acceptance of the Internet as a
+Miller, Klaus M., Reto Hofstetter, Harley Krohmer and Z. John Zhang, 2011. “How should            channel of distribution.” Journal of Business Research 45(3), 249–256.
+     consumers’ willingness to pay be measured? An empirical comparison of state-of-          Venkatesan, Rajkumar and V. Kumar, 2004. “A customer lifetime value framework for
+     the-art approaches.” Journal of Marketing Research 48(1), 172–184.                           customer selection and resource allocation strategy.” The Journal of Marketing
+Nerlove, Marc, 1995. “Hedonic price functions and the measurement of prefer-                      68(4), 106–125.
+     ences: The case of Swedish wine consumers.” European Economic Review 39(9),              Wakker, Peter P., 1994. “Separating marginal utility and probabilistic risk aversion.”
+     1697–1716.                                                                                   Theory and Decision 36(1), 1–44.
+Newell, Allen and Paul. S. Rosenbloom, 1981. “Mechanisms of Skill Acquisition and the         White, Halbert, 1980. “A heteroskedasticity-consistent covariance matrix estimator
+     Law of Practice.” Lawrence Erlbaum Associates, Inc: Hillsdale, NJ.                           and a direct test for heteroskedasticity.” Econometrica 48(4), 817–838.
+Nizovtsev, Dmitri and William Novshek, 2004. “Money-back guarantees and mar-                  Wood, Stacy L., 2001. “Remote purchase environments: The inﬂuence of return policy
+     ket experimentation.” International Journal of Industrial Organization 22(7),                leniency on two stages decision processes.” Journal of Marketing Research 38(2),
+     983–996.                                                                                     157–169.
+Ofek, Elie., Zsolt Katona and Miklos Sarvary, 2010. “Bricks and Clicks: The impact of         Young, H. Peyton, 2009. “Innovation diffusion in heterogeneous populations: Con-
+     product returns on the strategies of multichannel retailers.” Marketing Science              tagion, social inﬂuence, and social learning.” American Economic Review 99(4),
+     30(1), 42–60.                                                                                1899–1924.
+Parente, Stephen, 1994. “Technology adoption, learning by doing, and economic                 Zhang, Jie, Paul W. Farris, John W. Irvin, Tarun Kushwaha, Thomas J. Steenburghe
+     growth.” Journal of Economic Theory 63(2), 346–369.                                          and Barton A. Weitz, 2010. “Crafting integrated multichannel retailing strategies.”
+Petersen, Andrew J. and V. Kumar, 2009. “Are product returns a necessary evil? An-                Journal of Interactive Marketing 24(2), 168–180.
+     tecedents and consequences.” Journal of Marketing Research 73(3), 35–51.
+
