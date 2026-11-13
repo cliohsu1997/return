@@ -245,7 +245,7 @@ elasticities, which also exposes the role of returns. The demand and supply elas
 The supply elasticity $\varepsilon_S$ has the sign of $\mu_p$, which can be
 written explicitly as
 \begin{equation}
-  \mu_p=(1-r)-\bigl[p+h-(1-\beta)t\bigr]r'.
+  \mu_p=(1-r)-r'\bigl[p+h-(1-\beta)t\bigr].
   \label{eq:mu-p}
 \end{equation}
 With no returns, $r=0$ and $r'=0$, so $\mu_p=1$ and the supply elasticity is positive. With returns,
@@ -635,7 +635,7 @@ than demand in absolute value, $\rho_c<0$, and the term is a gain.
 \end{result}
 \begin{proof}
 From \eqref{eq:mu-p},
-$\mu_p=(1-r)-\bigl[p+h-(1-\beta)t\bigr]r'=\bigl[p+h-(1-\beta)t\bigr](r'_0-r')$.
+$\mu_p=(1-r)-r'\bigl[p+h-(1-\beta)t\bigr]=(r'_0-r')\bigl[p+h-(1-\beta)t\bigr]$.
 The supply elasticity has the sign of $\mu_p$, so supply slopes up when
 $r'<r'_0$ and slopes down when $r'>r'_0$.
 Supply slopes down and is more elastic than demand in absolute value when
@@ -649,13 +649,13 @@ gap and $\rho_c$ are negative when $r'>\bar{r}'$.
 
 For the tax, platform revenue is part of social surplus. The platform
 receives $t$ on a kept sale and $\beta t$ on a return, so revenue is
-$G=tQ\theta$. Social surplus is $V\equiv W+G$. The marginal effect of the tax on
+$G=Qt\theta$. Social surplus is $V\equiv W+G$. The marginal effect of the tax on
 social surplus is
 \begin{equation}
   \frac{dV}{dt}
   =
   -Q\theta\Lambda+Q\theta
-  +t\theta\rho_c\bigl[\theta D'(p)-(1-\beta)Q r'(p)\bigr].
+  +t\theta\rho_c\bigl[D'(p)\,\theta-Q(1-\beta)r'(p)\bigr].
   \label{eq:dV}
 \end{equation}
 Without returns, $r'(p)=0$ and $\theta=1$. The ex-ante term $-Q$ is a transfer
@@ -668,66 +668,96 @@ and cancelling the refunded tax terms in $(1-\beta)$, the remaining terms are
 \[
   -Q\theta\,r'(p)\rho_c(p+h)
   +
-  t\theta^{2}\rho_c D'(p).
+  D'(p)\,t\theta^{2}\rho_c.
 \footnote{The tax term is $t\,d(Q\theta)/dt$. The product rule gives
 $d(Q\theta)/dt=Q\,d\theta/dt+\theta\,dQ/dt$.
 Quantity follows demand, so $dQ/dt=D'(p)\rho_t$.
 The tax weight is $\theta=1-(1-\beta)r$, and the tax moves the return rate
 through the price, so $d\theta/dt=-(1-\beta)r'(p)\rho_t$.
 Substituting both gives
-$d(Q\theta)/dt=\rho_t[\theta D'(p)-(1-\beta)Q r'(p)]$.
+$d(Q\theta)/dt=\rho_t[D'(p)\,\theta-Q(1-\beta)r'(p)]$.
 Added to the ex-post term, the pieces in $(1-\beta)$ cancel. A returned sale
 pays the platform only part of the tax. The seller recovers the rest, and
 the platform loses the same amount. These are the same dollars, so they
 cancel in social surplus. What remains is the real cost of a return.}
 \]
 
-The first term captures the ex-post keep-or-return margin without the refunded
-part of the tax. Because the refunded tax $(1-\beta)t$ is a pure transfer
-between the seller and the platform, only the real return cost $p+h$ enters
-social surplus. Since $Q$ and $p+h$ are positive, whether the ex-post margin
-is a gain or a loss depends only on the sign of the return-rate change
-$r'(p)\rho_t = \theta r'(p)\rho_c$. The second term captures the tax wedge on
-the ex-ante purchase margin. On existing units, the tax is a pure transfer to
-the platform. For marginal units, the buyer is indifferent at $p$ and the
-seller's effective marginal revenue equals marginal cost, so a small change
-in quantity leaves private surplus unchanged and alters social surplus only
-through the expected tax $t\theta$ per unit. Multiplying $t\theta$ by the
-change in units purchased $D'(p)\rho_t = \theta\rho_c D'(p)$ gives the
-second term. Because $D'(p)<0$, the ex-ante margin is negative when
-pass-through is positive and quantity falls, and it is positive when
-pass-through is negative and quantity rises.
+The first term is the ex-post margin net of the refunded tax $(1-\beta)t$, which
+is a pure transfer between seller and platform and leaves only the real
+return cost $p+h$. Since $Q,p+h>0$, its sign depends only on the return-rate
+change $r'(p)\rho_t=r'(p)\,\theta\rho_c$. The second term is the tax wedge on
+the ex-ante purchase margin. The tax on existing units is a transfer to the
+platform, and on marginal units the buyer's indifference at $p$ and the
+seller's effective marginal revenue equaling marginal cost leave private
+surplus unchanged, so only the expected tax $t\theta$ per unit enters social
+surplus. Multiplying $t\theta$ by the quantity change
+$D'(p)\rho_t=D'(p)\,\theta\rho_c$ gives $D'(p)\,t\theta^{2}\rho_c$, which is
+negative when pass-through is positive and positive when pass-through is
+negative.
 
-By Result~\ref{res:expost-r}, the signs of the two margins and whether they
-offset or reinforce each other depend on how strong the behavioral channel is
-relative to the selection channel. When the behavioral channel is weak,
-pass-through is positive and quantity falls, so the ex-ante margin is a loss.
-At the same time, the higher price screens out high-return buyers, so the
-return rate falls and the ex-post margin is a gain. The two margins therefore
-trade off. When the behavioral channel is intermediate, pass-through remains
-positive and quantity still falls, while the return rate now rises with the
-price. Both the ex-ante margin and the ex-post margin are losses, so they
-reinforce each other. When the behavioral channel is very strong, pass-through
-turns negative, so both the price and the return rate fall while quantity
-rises. Both margins are then gains, and they again reinforce each other.
+By Result~\ref{res:expost-r}, the two margins depend on the strength of the
+behavioral channel relative to the selection channel. When the behavioral
+channel is weak, pass-through is positive and quantity falls, so the
+ex-ante margin is a loss, while the higher price screens out high-return
+buyers and makes the ex-post margin a gain. The two margins trade off. When
+the behavioral channel is intermediate, pass-through stays positive and
+quantity falls, while the return rate rises with the price, so both margins
+are losses. When the behavioral channel is very strong, pass-through turns
+negative, so the price and return rate fall while quantity rises, and both
+margins are gains.
 
-These signs also determine whether letting the platform keep more of the tax
-on returns raises or lowers social surplus. At a positive tax with $r>0$,
-raising $\beta$ lowers the seller's effective marginal revenue on returns and
-shifts supply inward, just like raising the tax $t$. Because the extra
-retained tax on existing returns is a pure transfer to the platform, raising
-$\beta$ changes social surplus in the same direction as raising the
-tax.\footnote{Since $\mu_\beta=-rt$, $\beta$
-shifts pass-through and joint surplus like a handling-cost shock scaled by
-$t$, giving $\rho_\beta=rt\rho_c$ and $dW/d\beta=-Qrt\Lambda$. For revenue
-$G=tQ\theta$, $dG/d\beta=tQr+t\theta D'(p)\rho_\beta-t(1-\beta)Qr'(p)\rho_\beta$.
-Adding the two cancels $Qrt$ and the $(1-\beta)t$ terms, leaving
-$dV/d\beta=(tr/\theta)\,dV/dt$.}
-When the behavioral channel is very strong, both margins are gains, so a
-higher $\beta$ raises social surplus. When the behavioral channel is
-intermediate, both margins are losses, so a lower $\beta$ reduces the
-welfare loss. When the behavioral channel is weak, the ex-ante loss and the
-ex-post gain trade off, so the effect of $\beta$ is ambiguous.
+When $t>0$ and $r>0$, raising the retained tax share $\beta$ lowers effective
+marginal revenue on returns and shifts supply inward like a tax increase,
+while the extra tax kept on existing returns is a transfer to the platform.
+Consequently, $\beta$ moves social surplus in the same direction as the tax.
+
+\begin{result}[Retained tax share and social surplus]
+\label{res:beta-welfare}
+Suppose $t>0$ and $r(p)>0$. Then
+\begin{equation}
+  \frac{dV}{d\beta}
+  =
+  \frac{rt}{\theta}\,\frac{dV}{dt}
+  =
+  rt\rho_c\bigl[-Qr'(p)(p+h)+D'(p)\,t\theta\bigr].
+  \label{eq:dV-dbeta}
+\end{equation}
+By Result~\ref{res:expost-r}:
+\begin{enumerate}
+\item[(i)] if $r'(p)>\bar{r}'$, then $dV/d\beta>0$ (a higher $\beta$ raises
+social surplus);
+\item[(ii)] if $0<r'(p)<\bar{r}'$, then $dV/d\beta<0$ (a lower $\beta$
+raises social surplus);
+\item[(iii)] if $r'(p)<0$, the ex-post gain and ex-ante loss trade off, so
+$dV/d\beta$ has the sign of $-Qr'(p)(p+h)+D'(p)\,t\theta$.
+\end{enumerate}
+\end{result}
+\begin{proof}
+By \eqref{eq:mu}, $\mu_\beta=-rt=(rt/\theta)\mu_t$ and $S_\beta=S_t=0$. By
+\eqref{eq:pass-through} and \eqref{eq:rho-links},
+$\rho_\beta=(rt/\theta)\rho_t=rt\rho_c$. Because $CS$ and $PS$ depend on
+$(t,\beta)$ only through $(p,\mu)$, scaling $(\mu_t,\rho_t)$ by $rt/\theta$
+gives $dW/d\beta=(rt/\theta)(dW/dt)$. For revenue $G=Qt\theta$, since
+$dG/dt=Q\theta+t\,\partial(Q\theta)/\partial p\cdot\rho_t$,
+$\partial\theta/\partial\beta=r$, and $\rho_\beta=(rt/\theta)\rho_t$,
+\[
+  \frac{dG}{d\beta}
+  =
+  Qrt + t\frac{\partial(Q\theta)}{\partial p}\,\rho_\beta
+  =
+  \frac{rt}{\theta}\left(Q\theta+t\frac{\partial(Q\theta)}{\partial p}\,\rho_t\right)
+  =
+  \frac{rt}{\theta}\,\frac{dG}{dt}.
+\]
+Adding $dW/d\beta$ and $dG/d\beta$ gives $dV/d\beta=(rt/\theta)\,dV/dt$, and
+substituting $dV/dt=\theta\rho_c\bigl[-Qr'(p)(p+h)+D'(p)\,t\theta\bigr]$
+yields \eqref{eq:dV-dbeta}. Since $t,r,\theta,Q,p+h>0$ and $D'(p)<0$,
+Result~\ref{res:expost-r} implies that in~(i) $r'(p)>0$ and $\rho_c<0$, so
+both terms in \eqref{eq:dV-dbeta} are positive; in~(ii) $r'(p)>0$ and
+$\rho_c>0$, so both terms are negative; and in~(iii) $r'(p)<0$ and
+$\rho_c>0$, so $-Qrt\,r'(p)\rho_c(p+h)>0$ while $D'(p)\,r t^{2}\theta\rho_c<0$,
+leaving the sign of $-Qr'(p)(p+h)+D'(p)\,t\theta$.
+\end{proof}
 
 %=============================================================================
 \section{Global Incidence}
@@ -760,9 +790,9 @@ sign of local incidence.
 \label{app:welfare-bias-primitives}
 Result~\ref{res:welfare-bias} has an equivalent statement in elasticities.
 Recall $\varepsilon_r(p)\equiv p\,r'(p)/r(p)$ and
-$\mu_p=(1-r(p))-\bigl[p+h-(1-\beta)t\bigr]r'(p)$. Then
+$\mu_p=(1-r(p))-r'(p)\bigl[p+h-(1-\beta)t\bigr]$. Then
 $r'(p)\bigl[p+h-(1-\beta)t\bigr]
-=\varepsilon_r(p)\,r(p)\,\bigl[p+h-(1-\beta)t\bigr]/p$, so
+=r(p)\,\varepsilon_r(p)\,\bigl[p+h-(1-\beta)t\bigr]/p$, so
 \begin{equation}
   \mu_p>0
     \;\iff\;
