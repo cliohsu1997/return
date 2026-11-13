@@ -197,8 +197,7 @@ market clearing condition. Its general form is
 \begin{equation}
   m(p,x)\equiv D(p)-S\bigl(\mu(p,x),x\bigr).
 \end{equation}
-Market clearing requires $m(p,x)=0$. All three pass-throughs are
-evaluated at $\tau=0$. Differentiating $m=0$ gives
+Market clearing requires $m(p,x)=0$. Differentiating $m=0$ gives
 \begin{equation}
   \rho_x
   =
@@ -234,20 +233,25 @@ by $S'(\mu)$ times a scale factor. The factor is $1$ for production
 cost, $r$ for handling cost, and $\theta$ for the tax.
 Since supply and demand are locally linear, pass-through depends only
 on how far the supply curve shifts. That shift is proportional to the
-factor, so each pass-through is $\rho_c$ scaled by its factor. Since $\rho_h$ and $\rho_{\tau}$ are scalings of $\rho_c$, below we
-focus on $\rho_c$. The signs of $\rho_h$ and $\rho_{\tau}$ are the same.
+factor, so each pass-through is $\rho_c$ scaled by its factor.
+
+The pass-through above depends on $\tau$ in general, so the pass-through
+of a production-cost change and of a handling-cost change interacts with
+the prevailing tax. We focus on the case $\tau=0$ to abstract away from
+the interaction. This focus covers a production-cost change, a handling-cost
+change, and a tax change near zero. When a tax change goes beyond a local
+shift, $\mu^{\tau}$, $\mu_p^{\tau}$, and $\rho_c^{\tau}$ replace $\mu$,
+$\mu_p$, and $\rho_c$. The superscript marks the dependence on $\tau$.
 
 These pass-throughs take a more transparent form in price
-elasticities, which also exposes the role of returns. Let
-$\mu_p^0\equiv\mu_{p}\big|_{\tau=0}$ be the slope of effective
-marginal revenue with respect to price at zero tax. The demand and supply elasticities are
+elasticities, which also exposes the role of returns. The demand and supply elasticities are
 \[
 \varepsilon_D(p)\equiv\frac{p D'(p)}{D(p)}<0,
 \qquad
-\varepsilon_S(p)\equiv S'(\mu)\,\mu_p^0\,\frac{p}{S(\mu)}.
+\varepsilon_S(p)\equiv S'(\mu)\,\mu_p\,\frac{p}{S(\mu)}.
 \]
-The supply elasticity $\varepsilon_S$ has the sign of $\mu_p^0$. With no
-returns, $\mu_p^0=1$ and the supply elasticity is positive. With returns,
+The supply elasticity $\varepsilon_S$ has the sign of $\mu_p$. With no
+returns, $\mu_p=1$ and the supply elasticity is positive. With returns,
 the supply elasticity can be negative if the return rate is an
 increasing function of price. When the behavioral channel dominates, a
 higher price raises the return rate, reduces the effective marginal revenue, and
@@ -258,7 +262,7 @@ gives the elasticity form,
 \begin{equation}
   \rho_c
   =
-  \frac{\varepsilon_S(p)/\mu_p^0}
+  \frac{\varepsilon_S(p)/\mu_p}
        {-\varepsilon_D(p)+\varepsilon_S(p)}.
   \label{eq:rho_c_elasticity_final}
 \end{equation}
@@ -266,14 +270,14 @@ The pass-through $\rho_c$ is the ratio of the excess-demand gap a
 cost increase opens to the rate at which a price change closes it. A
 production-cost increase reduces supply by $S'(\mu)$ and opens excess
 demand of that size. An increase in the list price closes that gap at
-rate $S'(\mu)\,\mu_p^0-D'(p)$. Compared to the classical no-return
-formula, which sets $\mu_p^0=1$, the returns formula scales the
-pass-through by $1/\mu_p^0$. When $\mu_p^0$ is above unity, one dollar
+rate $S'(\mu)\,\mu_p-D'(p)$. Compared to the classical no-return
+formula, which sets $\mu_p=1$, the returns formula scales the
+pass-through by $1/\mu_p$. When $\mu_p$ is above unity, one dollar
 of list price restores more than one dollar of effective marginal revenue, so a
-smaller price movement closes the gap. When $0<\mu_p^0<1$, the return
+smaller price movement closes the gap. When $0<\mu_p<1$, the return
 rate rises in price and one dollar of list price restores less than
 one dollar of effective marginal revenue, so the price must move more and
-pass-through is larger than the classical value. When $\mu_p^0$ is
+pass-through is larger than the classical value. When $\mu_p$ is
 negative, the effective marginal revenue decreases in the list price, and the
 sign of pass-through depends on the magnitudes of the elasticities. In
 particular, negative pass-through can happen when supply is more
@@ -284,25 +288,25 @@ pass-through is always positive. The following two results summarize
 the findings.
 \begin{result}[Negative pass-through]
 \label{res:negative-pt}
-  We have $\rho_c<0$ if and only if $\varepsilon_S<0$ ($\mu_p^0<0$) and
+  We have $\rho_c<0$ if and only if $\varepsilon_S<0$ ($\mu_p<0$) and
   $|\varepsilon_S|>-\varepsilon_D$.
 \end{result}
 \begin{result}
 \label{res:pt-bias-er}
   Relative to the correct returns-adjusted $\rho_c$, the classical
   no-return pass-through formula overestimates pass-through when
-  $\mu_p^0>1$, agrees with it when $\mu_p^0=1$, and underestimates it
-  when $0\leq\mu_p^0<1$.
+  $\mu_p>1$, agrees with it when $\mu_p=1$, and underestimates it
+  when $0\leq\mu_p<1$.
 \end{result}
 
 Result~\ref{res:pt-bias-er} can be linked to the handling
 cost and which channel of $r'(p)$ dominates.
 Differentiating effective marginal revenue at $\tau=0$
-gives $\mu_p^0=1-r(p)-(p+h)\,r'(p)$. When the selection
+gives $\mu_p=1-r(p)-(p+h)\,r'(p)$. When the selection
 channel dominates, $r'(p)<0$, so a higher price lowers the return rate and saves handling
-cost, pushing $\mu_p^0$ above one when $h$ is large. When the behavioral channel dominates,
+cost, pushing $\mu_p$ above one when $h$ is large. When the behavioral channel dominates,
 $r'(p)>0$, so a higher price raises the return rate and adds handling
-cost, pushing $\mu_p^0$ below one. A larger handling cost
+cost, pushing $\mu_p$ below one. A larger handling cost
 amplifies both effects.
 
 %=============================================================================
@@ -312,8 +316,9 @@ amplifies both effects.
 Having established how prices respond to different shocks, we turn to
 local incidence, defined as the ratio of the change in consumer
 surplus to the change in producer surplus for a small shock $x$. Before a
-discussion of the incidence, it is useful to visualize consumer
-surplus and producer surplus in a graph.
+discussion of the incidence, it is useful to see the pass-through under
+different primitives and to show consumer surplus and producer surplus
+on the same graph.
 
 Figure~\ref{fig:cs_ps_mu_sign} shows demand, the inverse supply curve,
 consumer surplus, producer surplus, and how the inverse supply curve
@@ -321,33 +326,34 @@ moves after a production-cost increase. The inverse supply curve gives
 the price required to supply a given quantity. Consumer surplus is the
 area between gross demand $D(p)$ and returns $D(p)r(p)$ above $p$.
 Producer surplus is the area to the left of the supply curve and below
-$p$, between zero and $p$. For a unit production-cost increase, quantity
+$p$. For a unit production-cost increase, quantity
 supplied decreases at a fixed price, and the reduction is the same as a
-one-unit fall in the effective marginal revenue. To supply the same quantity, the
-price must adjust by $1/\mu_p^0$, so that the effective marginal revenue rises by
-exactly one unit to counteract the production-cost increase.
+one-unit fall in the effective marginal revenue.
 
-The left panel shows the case where the selection channel of the return rate
+The left panel shows the case where the selection channel
 is stronger than the behavioral channel, so that $r(p)$ falls with $p$. This
 can be seen from the graph as returns $D(p)r(p)$ taking a smaller share of
 gross demand $D(p)$ at a higher $p$. A higher $p$ screens out consumers with a high return probability,
-so the effective marginal revenue improves and the seller supplies more. A positive
-slope means $\mu_p^0>0$. A unit production-cost increase shifts the
-inverse supply curve up by $1/\mu_p^0$ at a given quantity, and the
-equilibrium price rises.
+so the effective marginal revenue improves and the seller supplies more,
+as illustrated by the locally upward-sloping supply curve.
+On that region, a unit production-cost increase shifts the
+inverse supply curve inward at a given quantity, so the equilibrium
+price rises.
 
-The right panel shows the case where the behavioral channel of the return
-rate is stronger than the selection channel, so that $r(p)$ rises with $p$.
+The right panel shows the case where the behavioral channel
+is stronger than the selection channel, so that $r(p)$ rises with $p$.
 This can be seen from the graph as returns $D(p)r(p)$ taking a larger share
-of gross demand $D(p)$ at a higher $p$. A higher $p$ raises the return
-probability for purchasers, which lowers the effective marginal revenue and reduces
-the quantity the seller supplies. The inverse supply curve is hump-shaped. It is not profitable to
-supply at a high $p$, because the return rate is so high that almost any
-sale leads to a return. It is also not profitable to supply at a low $p$,
-because the low profit margin is not enough to cover the production cost.
-On the downward-sloping region, $\mu_p^0<0$. A unit production-cost
-increase shifts the inverse supply curve down by $1/|\mu_p^0|$ at a given
-quantity, and the equilibrium price falls.
+of gross demand $D(p)$ at a higher $p$. The inverse supply curve is hump-shaped.
+It is not profitable to supply at a high $p$, because the return rate is so
+high that almost any sale leads to a return. It is also not profitable to
+supply at a low $p$, because the low profit margin is not enough to cover
+the production cost. A higher price raises the return
+probability for purchasers. The seller loses the price and the handling
+cost on the additional returns. When this loss outweighs the extra revenue
+on kept sales, the effective marginal revenue falls and the seller supplies
+less, as illustrated by the locally downward-sloping supply curve.
+On that region, a unit production-cost increase shifts the inverse supply curve
+inward at a given quantity, so the equilibrium price falls.
 
 \begin{figure}[htbp]
 \centering
@@ -379,9 +385,9 @@ Differentiating in $x$ and using
 $S\bigl(\mu(p(x),x),x\bigr)=Q$ gives
 $dPS/dx=Q\,d\mu(p(x),x)/dx+\Sigma_x$, where
 $\Sigma_x\equiv\int_0^{\mu(p(x),x)}(\partial S(z,x)/\partial x)\,dz$.
-Because $d\mu(p(x),x)/dx=\mu_p^0\rho_x+\mu_x$,
+Because $d\mu(p(x),x)/dx=\mu_p\rho_x+\mu_x$,
 \begin{equation}
-  \frac{dPS}{dx} = Q\mu_p^0\rho_x + Q\mu_x + \Sigma_x.
+  \frac{dPS}{dx} = Q\mu_p\rho_x + Q\mu_x + \Sigma_x.
   \label{eq:PSx_incidence}
 \end{equation}
 Table~\ref{tab:incidence_components} shows that the joint effect of these three
@@ -394,9 +400,9 @@ supply shift.
 \hline
 Shock $x$ & $\rho_x$ & $\mu_x$ & $\Sigma_x$ & $dCS/dx$ & $dPS/dx$ & $I_x$ \\
 \hline
-Production cost $c$ & $\rho_c$ & $0$ & $-Q$ & $-Q(1-r)\rho_c$ & $Q(\mu_p^0\rho_c - 1)$ & $\displaystyle \frac{(1-r)\rho_c}{1-\mu_p^0\rho_c}$ \\
-Handling cost $h$ & $r\rho_c$ & $-r$ & $0$ & $-Q(1-r)r\rho_c$ & $Qr(\mu_p^0\rho_c - 1)$ & $\displaystyle \frac{(1-r)\rho_c}{1-\mu_p^0\rho_c}$ \\
-Tax $\tau$ & $\theta\rho_c$ & $-\theta$ & $0$ & $-Q(1-r)\theta\rho_c$ & $\theta Q(\mu_p^0\rho_c - 1)$ & $\displaystyle \frac{(1-r)\rho_c}{1-\mu_p^0\rho_c}$ \\
+Production cost $c$ & $\rho_c$ & $0$ & $-Q$ & $-Q(1-r)\rho_c$ & $Q(\mu_p\rho_c - 1)$ & $\displaystyle \frac{(1-r)\rho_c}{1-\mu_p\rho_c}$ \\
+Handling cost $h$ & $r\rho_c$ & $-r$ & $0$ & $-Q(1-r)r\rho_c$ & $Qr(\mu_p\rho_c - 1)$ & $\displaystyle \frac{(1-r)\rho_c}{1-\mu_p\rho_c}$ \\
+Tax $\tau$ & $\theta\rho_c$ & $-\theta$ & $0$ & $-Q(1-r)\theta\rho_c$ & $\theta Q(\mu_p\rho_c - 1)$ & $\displaystyle \frac{(1-r)\rho_c}{1-\mu_p\rho_c}$ \\
 \hline
 \end{tabular}
 \caption{Local incidence for each shock. The tax column is evaluated at a zero rate.}
@@ -411,27 +417,27 @@ result formalizes this and shows that the common ratio is positive.
 For production cost, handling cost, and the tax, the local incidence
 ratio is identical and positive.
 \begin{equation}
-  I_x = \frac{(1-r)\rho_c}{1-\mu_p^0 \rho_c}>0.
+  I_x = \frac{(1-r)\rho_c}{1-\mu_p \rho_c}>0.
   \label{eq:incidence_result}
 \end{equation}
 \end{result}
 \begin{proof}
 Since $1-r>0$, the ratio is positive if $\rho_c$ has the same sign as
-$1-\mu_p^0\rho_c$. Multiplying the pass-through formula
-\eqref{eq:rho_c_elasticity_final} by $\mu_p^0$ gives
-$\mu_p^0\rho_c=\varepsilon_S/(\varepsilon_S-\varepsilon_D)$.
+$1-\mu_p\rho_c$. Multiplying the pass-through formula
+\eqref{eq:rho_c_elasticity_final} by $\mu_p$ gives
+$\mu_p\rho_c=\varepsilon_S/(\varepsilon_S-\varepsilon_D)$.
 This exceeds one if and only if $\varepsilon_S<0$ and $|\varepsilon_S|>-\varepsilon_D$.
 Result~\ref{res:negative-pt} states that this is the necessary and sufficient
 condition for $\rho_c<0$.
 \end{proof}
 
 For a unit increase in production cost, the numerator $(1-r)\rho_c$ is the
-per-unit consumer loss on kept units. The denominator $1-\mu_p^0\rho_c$ is
+per-unit consumer loss on kept units. The denominator $1-\mu_p\rho_c$ is
 the per-unit producer loss. Before the price adjusts, the direct effect
 through the supply curve shift lowers producer surplus by $Q$. The indirect price
-pass-through effect moves the effective marginal revenue by $\mu_p^0\rho_c$ per unit,
-and the envelope $dPS/d\mu=Q$ restores producer surplus by $Q\mu_p^0\rho_c$.
-Together, the net change in producer surplus is $Q(\mu_p^0\rho_c-1)$.
+pass-through effect moves the effective marginal revenue by $\mu_p\rho_c$ per unit,
+and the envelope $dPS/d\mu=Q$ restores producer surplus by $Q\mu_p\rho_c$.
+Together, the net change in producer surplus is $Q(\mu_p\rho_c-1)$.
 
 The incidence is positive even when pass-through is negative because the
 recovery from the indirect price pass-through effect more than offsets the
@@ -451,7 +457,7 @@ pass-through. When pass-through is negative, raising production cost,
 handling cost, or the tax lowers the price, reduces return rates, and saves
 enough handling costs to more than offset the direct resource drain. Both
 consumers and producers benefit. When pass-through is positive, all three
-shocks reduce both surpluses, as in the classical model, where $\mu_p^0=1$
+shocks reduce both surpluses, as in the classical model, where $\mu_p=1$
 and $\rho_c>0$.
 
 %=============================================================================
@@ -465,10 +471,10 @@ Table~\ref{tab:incidence_components},
 \begin{equation}
   \frac{dW}{dc}
   =
-  -Q(1-r)\rho_c+Q(\mu_p^0\rho_c-1).
+  -Q(1-r)\rho_c+Q(\mu_p\rho_c-1).
   \label{eq:dW-c-raw}
 \end{equation}
-At a zero tax, $\mu_p^0=1-r(p)-(p+h)r'(p)$. Substituting $\mu_p^0$
+At a zero tax, $\mu_p=1-r(p)-(p+h)r'(p)$. Substituting $\mu_p$
 into \eqref{eq:dW-c-raw} gives
 \begin{equation}
   \frac{dW}{dc}=-Q\Lambda,
@@ -541,11 +547,11 @@ sign as $\rho_c$.
 
 When pass-through is positive, the sign of $r'(p)$ decides whether the ex-post
 term offsets or amplifies the rectangle. When the selection channel dominates,
-$r'(p)<0$, so $\mu_p^0>0$. The higher list price screens out frequent
+$r'(p)<0$, so $\mu_p>0$. The higher list price screens out frequent
 returners, the return rate falls, and the effective marginal revenue
 improves. The ex-post term is then a gain, and it
 cuts the loss from $Q$ to $Q\Lambda$ with $0<\Lambda<1$. When the behavioral
-channel dominates, $r'(p)>0$, so $\mu_p^0<1$. The higher list price makes
+channel dominates, $r'(p)>0$, so $\mu_p<1$. The higher list price makes
 keeping less attractive, the return rate rises, and the effective marginal
 revenue worsens. The ex-post term is then a further loss, and it raises the
 loss from $Q$ to $Q\Lambda$ with $\Lambda>1$. In both cases the gap from the rectangle is larger when the return rate
@@ -629,14 +635,14 @@ than demand in absolute value, $\rho_c<0$, and the term is a gain.
 \end{enumerate}
 \end{result}
 \begin{proof}
-At a zero tax, $\mu_p^0=1-r-(p+h)r'=(p+h)(r'_0-r')$. The supply elasticity
-has the sign of $\mu_p^0$, so supply slopes up when $r'<r'_0$ and slopes down
+At a zero tax, $\mu_p=1-r-(p+h)r'=(p+h)(r'_0-r')$. The supply elasticity
+has the sign of $\mu_p$, so supply slopes up when $r'<r'_0$ and slopes down
 when $r'>r'_0$.
 Supply slopes down and is more elastic than demand in absolute value when
 $\varepsilon_S<\varepsilon_D<0$. The demand elasticity is negative. At the
 equilibrium $S=D$, the gap $\varepsilon_S-\varepsilon_D$ has the sign of
-$S'\mu_p^0-D'$, the denominator of $\rho_c$ in \eqref{eq:rho-links}.
-Substituting $\mu_p^0$ gives $S'(p+h)(\bar{r}'-r')$. The factor $S'(p+h)$ is
+$S'\mu_p-D'$, the denominator of $\rho_c$ in \eqref{eq:rho-links}.
+Substituting $\mu_p$ gives $S'(p+h)(\bar{r}'-r')$. The factor $S'(p+h)$ is
 positive, so this gap and $\rho_c$ are negative when $r'>\bar{r}'$.
 Since $-D'(p)/S'(\mu)>0$, $\bar{r}'>r'_0$.
 \end{proof}
@@ -672,7 +678,9 @@ $\beta$ enlarges that gain as well.
 %=============================================================================
 
 The tax row of Table~\ref{tab:incidence_components} is the derivative at a
-zero rate. It is not the integrand for a finite change in $\tau$.
+zero rate, using $\mu_p$ and $\rho_c$. It is not the integrand for a finite
+change in $\tau$. Along a path with $\tau>0$, that integrand uses
+$\mu^{\tau}$, $\mu_p^{\tau}$, and $\rho_c^{\tau}$.
 
 A finite production-cost or handling-cost change integrates that shock's row
 in the same table, with the row re-evaluated at the current equilibrium.
@@ -698,10 +706,10 @@ therefore need not preserve the sign of local incidence.
 \label{app:welfare-bias-primitives}
 Result~\ref{res:welfare-bias} has an equivalent statement in elasticities.
 Recall $\varepsilon_r(p)\equiv p\,r'(p)/r(p)$ and
-$\mu_p^0=1-r(p)-r'(p)(p+h)$. Then
+$\mu_p=1-r(p)-r'(p)(p+h)$. Then
 $r'(p)(p+h)=\varepsilon_r(p)\,r(p)\,(p+h)/p$, so
 \begin{equation}
-  \mu_p^0>0
+  \mu_p>0
     \;\iff\;
   \varepsilon_r(p)
   <
@@ -712,22 +720,22 @@ $r'(p)(p+h)=\varepsilon_r(p)\,r(p)\,(p+h)/p$, so
 In these elasticities, Result~\ref{res:welfare-bias} reads as follows.
 \begin{enumerate}
 \item[(i)] overestimation iff $\varepsilon_r(p)<0$;
-\item[(ii)] underestimation iff $\varepsilon_r(p)>0$ and either $\mu_p^0\geq 0$,
-or both $\mu_p^0<0$ and $|\varepsilon_S|< -\varepsilon_D$;
+\item[(ii)] underestimation iff $\varepsilon_r(p)>0$ and either $\mu_p\geq 0$,
+or both $\mu_p<0$ and $|\varepsilon_S|< -\varepsilon_D$;
 \item[(iii)] overestimation with wrong sign (predicted loss, actual gain)
-iff $\mu_p^0<0$ and $|\varepsilon_S|>-\varepsilon_D$.
+iff $\mu_p<0$ and $|\varepsilon_S|>-\varepsilon_D$.
 \end{enumerate}
 \begin{proof}
 By Result~\ref{res:welfare-bias}, overestimation with $0<\Lambda<1$ is
 $r'<0$, underestimation is $r'>0$ with $\rho_c>0$, and overestimation with
 wrong sign is $r'>0$ with $\rho_c<0$.
 Since $\varepsilon_r$ has the same sign as $r'$, write these in
-$\varepsilon_r$.  For~(i), $\varepsilon_r<0$ forces $\mu_p^0>1-r>0$ and hence
+$\varepsilon_r$.  For~(i), $\varepsilon_r<0$ forces $\mu_p>1-r>0$ and hence
 $\rho_c>0$, so $0<\Lambda<1$.
-When $\mu_p^0=0$ and $r(p)<1$, the derivative $r'(p)$ is positive,
+When $\mu_p=0$ and $r(p)<1$, the derivative $r'(p)$ is positive,
 $\varepsilon_S=0$, and $\rho_c=S'(\mu)/(-D'(p))>0$, so that case is in~(ii).
 Result~\ref{res:negative-pt} translates the sign of $\rho_c$ into conditions
-on $\mu_p^0$ and $|\varepsilon_S|\gtrless -\varepsilon_D$: with
+on $\mu_p$ and $|\varepsilon_S|\gtrless -\varepsilon_D$: with
 $\varepsilon_r>0$ this is~(ii), and $\rho_c<0$ is~(iii).
 \end{proof}
 
