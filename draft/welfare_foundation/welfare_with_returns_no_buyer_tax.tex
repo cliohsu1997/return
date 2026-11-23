@@ -299,13 +299,15 @@ the findings.
 
 Result~\ref{res:pt-bias-er} depends on which channel dominates the return
 rate, on the net handling cost, and on the share $\beta$ of the tax kept
-on a return. When the selection channel dominates, $r'(p)<0$. A higher
-price lowers the return rate and saves cost, so $\mu_p$ rises above one.
-When the behavioral channel dominates, $r'(p)>0$. A higher price raises
-the return rate and adds cost, so $\mu_p$ falls below one. A larger
-handling cost and a low refund of the tax amplify both effects. A low
-refund leaves the seller with less of the tax on a return, so the return
-is more costly.
+on a return. At $r'(p)=0$, $\mu_p=1-r(p)<1$ whenever $r(p)>0$, because a
+one-dollar price increase is kept only on non-returned sales. When the
+behavioral channel dominates, $r'(p)>0$, so a higher price raises the return
+rate, adds return cost, and pushes $\mu_p$ further below $1-r(p)<1$. When the
+selection channel dominates, $r'(p)<0$, so a higher price lowers the return
+rate and raises $\mu_p$ above $1-r(p)$, exceeding one if and only if
+$-r'(p)\bigl[p+h-(1-\beta)t\bigr]>r(p)$. A larger handling cost and a larger
+retained tax share $\beta$ amplify both effects because each return is more
+costly to the seller.
 
 %=============================================================================
 \section{Local incidence}
@@ -545,13 +547,11 @@ sign as $\rho_c$.
 
 When pass-through is positive, $r'(p)$ decides whether the ex-post
 term offsets or amplifies the ex-ante loss. When the selection channel dominates,
-$r'(p)<0$, so $\mu_p>0$. The higher list price screens out frequent
-returners, the return rate falls, and the effective marginal revenue
-improves. The ex-post term is then a gain, and it
+$r'(p)<0$, so $\mu_p>1-r(p)>0$. The higher list price screens out frequent
+returners, the return rate falls, and seller return losses shrink. The ex-post term is then a gain, and it
 cuts the loss from $Q$ to $Q\Lambda$ with $0<\Lambda<1$. When the behavioral
-channel dominates, $r'(p)>0$, so $\mu_p<1$. The higher list price makes
-keeping less attractive, the return rate rises, and the effective marginal
-revenue worsens. The ex-post term is then a further loss, and it raises the
+channel dominates, $r'(p)>0$, so $\mu_p<1-r(p)<1$. The higher list price makes
+keeping less attractive, the return rate rises, and seller return losses increase. The ex-post term is then a further loss, and it raises the
 loss from $Q$ to $Q\Lambda$ with $\Lambda>1$. In both cases the gap from the ex-ante loss is larger when the return rate
 responds more strongly to the price, or when a return is more costly to
 handle.
@@ -678,17 +678,17 @@ $Q\theta$ is the expected tax on existing sales, paid by sellers and received by
   -Q\theta\,r'(p)\rho_c(p+h).
   \label{eq:dV-simple}
 \end{equation}
-Without returns, $r'(p)=0$ and $\theta=1$, so \eqref{eq:dV-simple} reduces to $t\,dQ/dt$. The marginal buyer has zero surplus and the seller's receipt equals marginal cost, so each excluded unit creates marginal social surplus $t$. The term is positive whenever total sales expand. Holding purchases fixed, the price and the tax are internal transfers, so that part contributes nothing.
+Without returns, $r'(p)=0$ and $\theta=1$, so \eqref{eq:dV-simple} reduces to $t\,dQ/dt$. The marginal buyer has zero surplus and the seller's receipt equals marginal cost, so each excluded unit creates marginal social surplus $t$. For $t>0$, the term is positive whenever total sales expand, and at $t=0$ it is zero. Holding purchases fixed, the price and the tax are internal transfers, so that part contributes nothing.
 
-With returns, \eqref{eq:dV-simple} gives the ex-ante and ex-post decomposition of $dV/dt$. The first term is the ex-ante term, which holds the aggregate return rate fixed at $r(p)$. The marginal buyer has zero surplus, so a lost purchase leaves consumer surplus unchanged. At return rate $r(p)$, the seller's expected payoff on that unit is $\mu$, which equals marginal cost, so seller profit is also unchanged. The loss that remains is the platform's expected tax on the excluded sale. A kept sale pays $t$ and a returned sale pays $\beta t$, so the tax is $t\theta$. The tax passes through by $\theta\rho_c$. The excluded quantity is $dQ/dt=D'(p)\,\theta\rho_c$, and the ex-ante term is $t\theta\,dQ/dt$, which is positive whenever total sales expand. The second term is the ex-post term from the change in the aggregate return rate. In joint surplus each additional return costs $p+h-(1-\beta)t$. The refunded tax is an internal transfer, so the social cost per return is $p+h$.
+With returns, \eqref{eq:dV-simple} gives the ex-ante and ex-post decomposition of $dV/dt$. The first term is the ex-ante term, which holds the aggregate return rate fixed at $r(p)$. The marginal buyer has zero surplus, so a lost purchase leaves consumer surplus unchanged. At return rate $r(p)$, the seller's expected payoff on that unit is $\mu$, which equals marginal cost, so seller profit is also unchanged. The loss that remains is the platform's expected tax on the excluded sale. A kept sale pays $t$ and a returned sale pays $\beta t$, so the tax is $t\theta$. The tax passes through by $\theta\rho_c$. The excluded quantity is $dQ/dt=D'(p)\,\theta\rho_c$, and the ex-ante term is $t\theta\,dQ/dt$, which is positive whenever $t>0$ and total sales expand (and zero at $t=0$). The second term is the ex-post term from the change in the aggregate return rate. In joint surplus each additional return costs $p+h-(1-\beta)t$. The refunded tax is an internal transfer, so the social cost per return is $p+h$.
 
-Result~\ref{res:expost-r} gives the sign of the ex-post term from the strength of the behavioral channel relative to the selection channel. Together with the fact that $D'(p)\,t\theta^{2}\rho_c$ is positive whenever total sales expand, this gives Result~\ref{res:tax-welfare}.
+Result~\ref{res:expost-r} gives the sign of the ex-post term from the strength of the behavioral channel relative to the selection channel. Together with the sign of $D'(p)\,t\theta^{2}\rho_c$ for $t\geq 0$, this gives Result~\ref{res:tax-welfare}.
 
-A higher tax raises social surplus when the behavioral channel is very strong, lowers it when the behavioral channel is intermediate, and has a sign that depends on the underlying parameters when the behavioral channel is weak. When the behavioral channel is very strong, pass-through is negative. The price and the return rate fall, quantity rises, and both terms are gains. When the behavioral channel is intermediate, pass-through stays positive. Quantity falls and the return rate rises with the price, so both terms are losses. When the behavioral channel is weak, pass-through is positive and quantity falls, so the ex-ante term is a loss. The higher price screens out high-return buyers, so the ex-post term is a gain. The two terms trade off.
+A higher tax raises social surplus when the behavioral channel is very strong, lowers it when the behavioral channel is intermediate, and has a sign that depends on the underlying parameters when the behavioral channel is weak. When the behavioral channel is very strong, pass-through is negative. The price and the return rate fall, quantity rises, the ex-post term is a gain, and for $t>0$ the ex-ante term is also a gain. When the behavioral channel is intermediate, pass-through stays positive. Quantity falls and the return rate rises with the price, so the ex-post term is a loss, reinforced for $t>0$ by an ex-ante loss. When the behavioral channel is weak, pass-through is positive and quantity falls. The higher price screens out high-return buyers, so the ex-post term is a gain, which at $t=0$ gives $dV/dt>0$ and for $t>0$ trades off against the ex-ante loss.
 
 \begin{result}[Tax and social surplus]
 \label{res:tax-welfare}
-From \eqref{eq:dV-simple},
+For $t\geq 0$, \eqref{eq:dV-simple} can be written as
 \begin{equation}
   \frac{dV}{dt}
   =
@@ -701,12 +701,13 @@ By Result~\ref{res:expost-r},
 social surplus);
 \item[(ii)] if $0<r'(p)<\bar{r}'$, then $dV/dt<0$ (a higher tax lowers
 social surplus);
-\item[(iii)] if $r'(p)<0$, the ex-post gain and ex-ante loss trade off, so
-$dV/dt$ has the sign of $-Qr'(p)(p+h)+D'(p)\,t\theta$.
+\item[(iii)] if $r'(p)<0$, $dV/dt$ has the sign of
+$-Qr'(p)(p+h)+D'(p)\,t\theta$, which is positive at $t=0$ and trades off the
+ex-post gain against the ex-ante loss for $t>0$.
 \end{enumerate}
 \end{result}
 \begin{proof}
-\eqref{eq:dV-simple} is $\theta\rho_c$ times the bracket in \eqref{eq:dV-sign}. Since $\theta,Q,p+h>0$ and $D'(p)<0$, the sign of $\rho_c$ in Result~\ref{res:expost-r} gives the three cases. In~(i) $r'(p)>0$ and $\rho_c<0$, so both terms of \eqref{eq:dV-simple} are positive. In~(ii) $r'(p)>0$ and $\rho_c>0$, so both terms are negative. In~(iii) $r'(p)<0$ and $\rho_c>0$, so $-Q\theta\,r'(p)\rho_c(p+h)>0$ while $D'(p)\,t\theta^{2}\rho_c<0$, leaving the sign of $-Qr'(p)(p+h)+D'(p)\,t\theta$.
+\eqref{eq:dV-simple} is $\theta\rho_c$ times the bracket in \eqref{eq:dV-sign}. Since $\theta,Q,p+h>0$, $t\geq 0$, and $D'(p)<0$, the sign of $\rho_c$ in Result~\ref{res:expost-r} gives the three cases. In~(i) $r'(p)>0$ and $\rho_c<0$, so $-Q\theta\,r'(p)\rho_c(p+h)>0$ and $D'(p)\,t\theta^{2}\rho_c\geq 0$. In~(ii) $r'(p)>0$ and $\rho_c>0$, so $-Q\theta\,r'(p)\rho_c(p+h)<0$ and $D'(p)\,t\theta^{2}\rho_c\leq 0$. In~(iii) $r'(p)<0$ and $\rho_c>0$, so $-Q\theta\,r'(p)\rho_c(p+h)>0$ while $D'(p)\,t\theta^{2}\rho_c\leq 0$, leaving the sign of $-Qr'(p)(p+h)+D'(p)\,t\theta$.
 \end{proof}
 
 When $t>0$ and $r>0$, raising the retained tax share $\beta$ lowers effective
