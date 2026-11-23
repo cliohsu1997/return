@@ -538,81 +538,13 @@ $\theta$.
 \end{align}
 \end{result}
 
-The ex-post term offsets the ex-ante loss when $0<\Lambda<1$, amplifies it when
-$\Lambda>1$, and reverses it when $\Lambda<0$. Because $dW/dc=-Q\Lambda$, joint surplus falls when
-$\Lambda$ is positive and rises when $\Lambda$ is negative.
-Result~\ref{res:incidence-ratio} says that the two surpluses move together.
-They fall when $\rho_c>0$ and rise when $\rho_c<0$, so $\Lambda$ has the same
-sign as $\rho_c$.
-
-When pass-through is positive, $r'(p)$ decides whether the ex-post
-term offsets or amplifies the ex-ante loss. When the selection channel dominates,
-$r'(p)<0$, so $\mu_p>1-r(p)>0$. The higher list price screens out frequent
-returners, the return rate falls, and seller return losses shrink. The ex-post term is then a gain, and it
-cuts the loss from $Q$ to $Q\Lambda$ with $0<\Lambda<1$. When the behavioral
-channel dominates, $r'(p)>0$, so $\mu_p<1-r(p)<1$. The higher list price makes
-keeping less attractive, the return rate rises, and seller return losses increase. The ex-post term is then a further loss, and it raises the
-loss from $Q$ to $Q\Lambda$ with $\Lambda>1$. In both cases the gap from the ex-ante loss is larger when the return rate
-responds more strongly to the price, or when a return is more costly to
-handle.
-
-When pass-through is negative, the ex-post term reverses the ex-ante loss and
-joint surplus rises. Result~\ref{res:negative-pt} says that negative
-pass-through occurs only when the behavioral channel dominates. In this
-case, a lower price makes keeping more attractive, so the return rate falls
-and the seller pays the return cost on fewer units. When that saving outweighs
-the lower revenue on kept units, effective marginal revenue rises as the
-price falls, and supply slopes down. The behavioral effect is so strong that
-a lower price raises supply by more than demand and closes the excess-demand
-gap. The ex-post term is then a gain, and it turns the loss of $Q$ into a
-gain of $Q|\Lambda|$. The gain is larger than the ex-ante loss when the return
-rate responds strongly to the price, when the return cost is high (large
-$\beta$ and $h$), or when the magnitude of pass-through is large.
-
-The following result summarizes these three cases by pass-through and
-$r'(p)$. It shows the direction of the error when the no-return formula is
-used.
-\begin{result}[No-return joint-surplus bias]
-\label{res:welfare-bias}
-Consider a unit production-cost increase. Relative to the returns-adjusted
-change $dW/dc=-Q\Lambda$, the ex-ante formula $dW/dc=-Q$
-\begin{enumerate}
-\item[(i)] overestimates the joint-surplus loss if and only if $r'(p)<0$,
-in which case $0<\Lambda<1$;
-\item[(ii)] underestimates the joint-surplus loss if and only if
-$r'(p)>0$ and $\rho_c>0$, in which case $\Lambda>1$;
-\item[(iii)] overestimates the joint-surplus loss with the wrong sign if
-and only if $r'(p)>0$ and $\rho_c<0$. It reports a loss of $Q$ when joint
-surplus rises by $Q|\Lambda|$.
-\end{enumerate}
-For a handling-cost shock the same cuts compare $-Qr\Lambda$ with $-Qr$. For
-the tax they compare $-Q\theta\Lambda$ with $-Q\theta$.
-\end{result}
-\begin{proof}
-The three regimes above give the direct statements. For the converses,
-$0<\Lambda<1$ forces $\rho_c>0$ by positive incidence and $r'(p)\rho_c<0$,
-so $r'(p)<0$. This is (i). $\Lambda>1$ forces $r'(p)\rho_c>0$ and $\rho_c>0$,
-so $r'(p)>0$. This is (ii). $\Lambda<0$ forces $\rho_c<0$ and therefore
-$r'(p)>0$. This is (iii). Since $r$ and $\theta$ are positive, the
-handling-cost and tax comparisons follow the same logic.
-\end{proof}
-
-The sign of the ex-post term depends on the relative strength of the two
-channels, and it is not monotone. When the selection channel is stronger,
-supply still slopes up and pass-through is positive. The higher price screens
-out consumers with a high return probability, the return rate falls, and the
-ex-post term is a gain. When the behavioral channel dominates but supply is
-not yet both downward sloping and more elastic than demand in absolute value,
-pass-through remains positive. The higher price raises the return probability
-of the remaining consumers, the return rate rises, and the ex-post term is a
-loss. When the behavioral channel is strong enough that supply is both
-downward sloping and more elastic than demand in absolute value, pass-through
-is negative. The lower price lowers the return probability of the remaining
-consumers, the return rate falls, and the ex-post term is again a gain.
-Result~\ref{res:expost-r} states these three cases as thresholds on $r'(p)$.
-\begin{result}[Thresholds for the ex-post term]
-\label{res:expost-r}
-Let
+Because $dW/dc=-Q\Lambda$, the ex-post term offsets the ex-ante loss when
+$0<\Lambda<1$, amplifies it when $\Lambda>1$, and reverses it into a net gain
+when $\Lambda<0$. By Result~\ref{res:incidence-ratio}, consumer and producer
+surplus move together, falling when $\rho_c>0$ and rising when $\rho_c<0$, so
+$\Lambda$ has the same sign as $\rho_c$. Both the supply slope $\mu_p$ in
+\eqref{eq:mu-p} and the denominator $S'(\mu)\mu_p-D'(p)$ of $\rho_c$ in
+\eqref{eq:rho-links} decrease linearly in $r'(p)$, with roots
 \begin{equation}
   r'_0
   \equiv
@@ -620,32 +552,70 @@ Let
   \qquad
   \bar{r}'
   \equiv
-  \frac{1-r(p)-D'(p)/S'(\mu)}{p+h-(1-\beta)t}.
+  \frac{1-r(p)-D'(p)/S'(\mu)}{p+h-(1-\beta)t},
   \label{eq:r-thresholds}
 \end{equation}
-Then $0<r'_0<\bar{r}'$. For the ex-post term
-$-Qr'(p)\rho_c\bigl[p+h-(1-\beta)t\bigr]$,
+satisfying $0<r'_0<\bar{r}'$ because $1-r(p)>0$, $p+h-(1-\beta)t>0$, and
+$D'(p)/S'(\mu)<0$. Supply slopes up ($\mu_p>0$) when $r'(p)<r'_0$
+and down ($\mu_p<0$) when $r'(p)>r'_0$, while $\rho_c>0$ when $r'(p)<\bar{r}'$
+and $\rho_c<0$ when $r'(p)>\bar{r}'$.
+
+These thresholds partition $r'(p)$ into three regimes, and the ex-post term is
+not monotone in $r'(p)$. When the selection channel dominates ($r'(p)<0$),
+supply slopes up and $\rho_c>0$. The higher list price screens out frequent
+returners, the return rate falls, and seller return losses shrink, so the
+ex-post term is a gain that cuts the joint-surplus loss from $Q$ to $Q\Lambda$
+with $0<\Lambda<1$. When the behavioral channel is intermediate
+($0<r'(p)<\bar{r}'$), supply slopes up below $r'_0$ and slopes down above
+$r'_0$ (where saved return costs from a lower price outweigh lower revenue on
+kept units), but supply is not yet more elastic than demand in absolute value,
+so $\rho_c$ stays positive. The higher list price makes keeping less
+attractive, the return rate rises, and seller return losses increase, so the
+ex-post term is a further loss that raises the joint-surplus loss to
+$Q\Lambda$ with $\Lambda>1$. When the behavioral channel is strong
+($r'(p)>\bar{r}'$), downward-sloping supply becomes more elastic than demand
+in absolute value, so a lower list price raises supply by more than demand to
+clear excess demand and $\rho_c<0$. That price drop makes keeping more
+attractive, lowers the return rate, and saves enough return cost to outweigh
+the direct cost shock, so the ex-post term is again a gain and joint surplus
+rises by $Q|\Lambda|$ ($\Lambda<0$). Across all three regimes, the magnitude
+of the ex-post term is larger when $|r'(p)|$, $|\rho_c|$, net handling $h$, or
+the retained tax share $\beta$ is larger.
+
+\begin{result}[Ex-post term and no-return joint-surplus bias]
+\label{res:welfare-bias}
+\label{res:expost-r}
+With $0<r'_0<\bar{r}'$ defined in \eqref{eq:r-thresholds}, consider a unit
+production-cost increase and compare $dW/dc=-Q\Lambda$ with the ex-ante
+formula $-Q$.
 \begin{enumerate}
-\item[(i)] if $r'(p)<0$, supply slopes up, $\rho_c>0$, and the term is a gain;
-\item[(ii)] if $0<r'(p)<\bar{r}'$, then $\rho_c>0$ and the term is a loss.
-Supply slopes up when $r'(p)<r'_0$ and slopes down when
-$r'_0<r'(p)<\bar{r}'$;
-\item[(iii)] if $r'(p)>\bar{r}'$, supply slopes down and is more elastic
-than demand in absolute value, $\rho_c<0$, and the term is a gain.
+\item[(i)] $0<\Lambda<1$ if and only if $r'(p)<0$. Then supply slopes up,
+$\rho_c>0$, the ex-post term is a gain, and $-Q$ overestimates the
+joint-surplus loss.
+\item[(ii)] $\Lambda>1$ if and only if $0<r'(p)<\bar{r}'$ (equivalently,
+$r'(p)>0$ and $\rho_c>0$, with supply sloping up for $r'(p)<r'_0$ and down for
+$r'_0<r'(p)<\bar{r}'$). Then the ex-post term is a loss, and $-Q$
+underestimates the joint-surplus loss.
+\item[(iii)] $\Lambda<0$ if and only if $r'(p)>\bar{r}'$ (equivalently,
+$r'(p)>0$ and $\rho_c<0$, where supply slopes down and is more elastic than
+demand in absolute value). Then the ex-post term is a gain that raises joint
+surplus by $Q|\Lambda|$, and $-Q$ overestimates the loss with the wrong sign.
 \end{enumerate}
+For handling cost and the tax, the same thresholds compare $-Qr\Lambda$ with
+$-Qr$ and $-Q\theta\Lambda$ with $-Q\theta$.
 \end{result}
 \begin{proof}
-From \eqref{eq:mu-p},
-$\mu_p=(1-r)-r'\bigl[p+h-(1-\beta)t\bigr]=(r'_0-r')\bigl[p+h-(1-\beta)t\bigr]$.
-The supply elasticity has the sign of $\mu_p$, so supply slopes up when
-$r'<r'_0$ and slopes down when $r'>r'_0$.
-Supply slopes down and is more elastic than demand in absolute value when
-$\varepsilon_S<\varepsilon_D<0$. The demand elasticity is negative. At the
-equilibrium $S=D$, the gap $\varepsilon_S-\varepsilon_D$ has the sign of
-$S'\mu_p-D'$, the denominator of $\rho_c$ in \eqref{eq:rho-links}.
-Substituting $\mu_p$ gives
-$S'\bigl[p+h-(1-\beta)t\bigr](\bar{r}'-r')$. This factor is positive, so the
-gap and $\rho_c$ are negative when $r'>\bar{r}'$.
+From \eqref{eq:mu-p} and \eqref{eq:rho-links},
+$\mu_p=(r'_0-r')\bigl[p+h-(1-\beta)t\bigr]$ and
+$S'(\mu)\mu_p-D'(p)=S'(\mu)(\bar{r}'-r')\bigl[p+h-(1-\beta)t\bigr]$. Since
+$p+h-(1-\beta)t>0$ and $S'(\mu)>0$, supply slopes up ($\mu_p>0$) iff
+$r'<r'_0$, while $\rho_c>0$ iff $r'<\bar{r}'$ (and $\rho_c<0$ iff
+$r'>\bar{r}'$, matching Result~\ref{res:negative-pt}). By
+Result~\ref{res:incidence-ratio}, $\Lambda$ has the same sign as $\rho_c$, so
+$\Lambda<0\iff \rho_c<0\iff r'>\bar{r}'$. When $r'<\bar{r}'$, we have
+$\rho_c>0$ and $\Lambda>0$, so $\Lambda-1=r'\rho_c\bigl[p+h-(1-\beta)t\bigr]$
+is negative iff $r'<0$ and positive iff $0<r'<\bar{r}'$. Since $r>0$ and
+$\theta>0$, the handling-cost and tax comparisons follow immediately.
 \end{proof}
 
 For the tax, platform revenue is part of social surplus. The platform
@@ -682,9 +652,15 @@ Without returns, $r'(p)=0$ and $\theta=1$, so \eqref{eq:dV-simple} reduces to $t
 
 With returns, \eqref{eq:dV-simple} gives the ex-ante and ex-post decomposition of $dV/dt$. The first term is the ex-ante term, which holds the aggregate return rate fixed at $r(p)$. The marginal buyer has zero surplus, so a lost purchase leaves consumer surplus unchanged. At return rate $r(p)$, the seller's expected payoff on that unit is $\mu$, which equals marginal cost, so seller profit is also unchanged. The loss that remains is the platform's expected tax on the excluded sale. A kept sale pays $t$ and a returned sale pays $\beta t$, so the tax is $t\theta$. The tax passes through by $\theta\rho_c$. The excluded quantity is $dQ/dt=D'(p)\,\theta\rho_c$, and the ex-ante term is $t\theta\,dQ/dt$, which is positive whenever $t>0$ and total sales expand (and zero at $t=0$). The second term is the ex-post term from the change in the aggregate return rate. In joint surplus each additional return costs $p+h-(1-\beta)t$. The refunded tax is an internal transfer, so the social cost per return is $p+h$.
 
-Result~\ref{res:expost-r} gives the sign of the ex-post term from the strength of the behavioral channel relative to the selection channel. Together with the sign of $D'(p)\,t\theta^{2}\rho_c$ for $t\geq 0$, this gives Result~\ref{res:tax-welfare}.
-
-A higher tax raises social surplus when the behavioral channel is very strong, lowers it when the behavioral channel is intermediate, and has a sign that depends on the underlying parameters when the behavioral channel is weak. When the behavioral channel is very strong, pass-through is negative. The price and the return rate fall, quantity rises, the ex-post term is a gain, and for $t>0$ the ex-ante term is also a gain. When the behavioral channel is intermediate, pass-through stays positive. Quantity falls and the return rate rises with the price, so the ex-post term is a loss, reinforced for $t>0$ by an ex-ante loss. When the behavioral channel is weak, pass-through is positive and quantity falls. The higher price screens out high-return buyers, so the ex-post term is a gain, which at $t=0$ gives $dV/dt>0$ and for $t>0$ trades off against the ex-ante loss.
+Combining the ex-ante term $D'(p)\,t\theta^{2}\rho_c$ with the three regimes
+of the ex-post term in Result~\ref{res:welfare-bias} signs $dV/dt$. When
+$r'(p)>\bar{r}'$, pass-through is negative, so the price and return rate fall,
+sales expand, and both the ex-post term and (for $t>0$) the ex-ante term are
+gains. When $0<r'(p)<\bar{r}'$, pass-through is positive, so the return rate
+rises and sales contract, and the ex-post loss is reinforced for $t>0$ by an
+ex-ante loss. When $r'(p)<0$, pass-through is positive and sales contract, so
+the ex-post screening gain yields $dV/dt>0$ at $t=0$ and trades off against
+the ex-ante loss when $t>0$.
 
 \begin{result}[Tax and social surplus]
 \label{res:tax-welfare}
@@ -695,7 +671,7 @@ For $t\geq 0$, \eqref{eq:dV-simple} can be written as
   \theta\rho_c\bigl[-Qr'(p)(p+h)+D'(p)\,t\theta\bigr].
   \label{eq:dV-sign}
 \end{equation}
-By Result~\ref{res:expost-r},
+By Result~\ref{res:welfare-bias},
 \begin{enumerate}
 \item[(i)] if $r'(p)>\bar{r}'$, then $dV/dt>0$ (a higher tax raises
 social surplus);
@@ -707,7 +683,7 @@ ex-post gain against the ex-ante loss for $t>0$.
 \end{enumerate}
 \end{result}
 \begin{proof}
-\eqref{eq:dV-simple} is $\theta\rho_c$ times the bracket in \eqref{eq:dV-sign}. Since $\theta,Q,p+h>0$, $t\geq 0$, and $D'(p)<0$, the sign of $\rho_c$ in Result~\ref{res:expost-r} gives the three cases. In~(i) $r'(p)>0$ and $\rho_c<0$, so $-Q\theta\,r'(p)\rho_c(p+h)>0$ and $D'(p)\,t\theta^{2}\rho_c\geq 0$. In~(ii) $r'(p)>0$ and $\rho_c>0$, so $-Q\theta\,r'(p)\rho_c(p+h)<0$ and $D'(p)\,t\theta^{2}\rho_c\leq 0$. In~(iii) $r'(p)<0$ and $\rho_c>0$, so $-Q\theta\,r'(p)\rho_c(p+h)>0$ while $D'(p)\,t\theta^{2}\rho_c\leq 0$, leaving the sign of $-Qr'(p)(p+h)+D'(p)\,t\theta$.
+\eqref{eq:dV-simple} is $\theta\rho_c$ times the bracket in \eqref{eq:dV-sign}. Since $\theta,Q,p+h>0$, $t\geq 0$, and $D'(p)<0$, the sign of $\rho_c$ in Result~\ref{res:welfare-bias} gives the three cases. In~(i) $r'(p)>0$ and $\rho_c<0$, so $-Q\theta\,r'(p)\rho_c(p+h)>0$ and $D'(p)\,t\theta^{2}\rho_c\geq 0$. In~(ii) $r'(p)>0$ and $\rho_c>0$, so $-Q\theta\,r'(p)\rho_c(p+h)<0$ and $D'(p)\,t\theta^{2}\rho_c\leq 0$. In~(iii) $r'(p)<0$ and $\rho_c>0$, so $-Q\theta\,r'(p)\rho_c(p+h)>0$ while $D'(p)\,t\theta^{2}\rho_c\leq 0$, leaving the sign of $-Qr'(p)(p+h)+D'(p)\,t\theta$.
 \end{proof}
 
 When $t>0$ and $r>0$, raising the retained tax share $\beta$ lowers effective
