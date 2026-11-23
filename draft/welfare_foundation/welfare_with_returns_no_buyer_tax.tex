@@ -542,75 +542,68 @@ Because $dW/dc=-Q\Lambda$, the ex-post term offsets the ex-ante loss when
 $0<\Lambda<1$, amplifies it when $\Lambda>1$, and reverses it into a net gain
 when $\Lambda<0$. By Result~\ref{res:incidence-ratio}, consumer and producer
 surplus move together, falling when $\rho_c>0$ and rising when $\rho_c<0$, so
-$\Lambda$ has the same sign as $\rho_c$. Both the supply slope $\mu_p$ in
-\eqref{eq:mu-p} and the denominator $S'(\mu)\mu_p-D'(p)$ of $\rho_c$ in
-\eqref{eq:rho-links} decrease linearly in $r'(p)$, with roots
+$\Lambda$ shares the sign of $\rho_c$, while the ex-post term has the sign of
+$-r'(p)\rho_c$. Because $r'(p)$ also enters $\rho_c$ through the supply slope,
+pass-through flips sign at a single positive cutoff,
 \begin{equation}
-  r'_0
-  \equiv
-  \frac{1-r(p)}{p+h-(1-\beta)t},
-  \qquad
   \bar{r}'
   \equiv
-  \frac{1-r(p)-D'(p)/S'(\mu)}{p+h-(1-\beta)t},
+  \frac{1-r(p)-D'(p)/S'(\mu)}{p+h-(1-\beta)t}
+  >0,
   \label{eq:r-thresholds}
 \end{equation}
-satisfying $0<r'_0<\bar{r}'$ because $1-r(p)>0$, $p+h-(1-\beta)t>0$, and
-$D'(p)/S'(\mu)<0$. Supply slopes up ($\mu_p>0$) when $r'(p)<r'_0$
-and down ($\mu_p<0$) when $r'(p)>r'_0$, while $\rho_c>0$ when $r'(p)<\bar{r}'$
-and $\rho_c<0$ when $r'(p)>\bar{r}'$.
+with $\rho_c>0$ for $r'(p)<\bar{r}'$ and $\rho_c<0$ for $r'(p)>\bar{r}'$.
 
-These thresholds partition $r'(p)$ into three regimes, and the ex-post term is
-not monotone in $r'(p)$. When the selection channel dominates ($r'(p)<0$),
-supply slopes up and $\rho_c>0$. The higher list price screens out frequent
-returners, the return rate falls, and seller return losses shrink, so the
-ex-post term is a gain that cuts the joint-surplus loss from $Q$ to $Q\Lambda$
-with $0<\Lambda<1$. When the behavioral channel is intermediate
-($0<r'(p)<\bar{r}'$), supply slopes up below $r'_0$ and slopes down above
-$r'_0$ (where saved return costs from a lower price outweigh lower revenue on
-kept units), but supply is not yet more elastic than demand in absolute value,
-so $\rho_c$ stays positive. The higher list price makes keeping less
-attractive, the return rate rises, and seller return losses increase, so the
-ex-post term is a further loss that raises the joint-surplus loss to
-$Q\Lambda$ with $\Lambda>1$. When the behavioral channel is strong
-($r'(p)>\bar{r}'$), downward-sloping supply becomes more elastic than demand
-in absolute value, so a lower list price raises supply by more than demand to
-clear excess demand and $\rho_c<0$. That price drop makes keeping more
-attractive, lowers the return rate, and saves enough return cost to outweigh
-the direct cost shock, so the ex-post term is again a gain and joint surplus
-rises by $Q|\Lambda|$ ($\Lambda<0$). Across all three regimes, the magnitude
-of the ex-post term is larger when $|r'(p)|$, $|\rho_c|$, net handling $h$, or
-the retained tax share $\beta$ is larger.
+Since the ex-post term has the sign of $-r'(p)\rho_c$, zero and $\bar{r}'$
+divide $r'(p)$ into three welfare regimes, and the ex-post term is not monotone
+in $r'(p)$. When $r'(p)<0$, the selection channel dominates and pass-through is
+positive. The higher list price screens out frequent returners, the return rate
+falls, and seller return losses shrink. The ex-post term is then a gain that
+cuts the joint-surplus loss from $Q$ to $Q\Lambda$, with $0<\Lambda<1$. When
+$0<r'(p)<\bar{r}'$, the behavioral channel is intermediate and pass-through
+stays positive.\footnote{From \eqref{eq:mu-p}, supply slopes up below
+$r'_0\equiv\frac{1-r(p)}{p+h-(1-\beta)t}\in(0,\bar{r}')$ and slopes down above
+$r'_0$, where saved return costs from a price cut outweigh lost revenue on kept
+units. On $(r'_0,\bar{r}')$, supply remains less elastic than demand in
+absolute value, so $\rho_c>0$.} The higher list price makes keeping less
+attractive, the return rate rises, and seller return losses increase, raising
+the loss to $Q\Lambda$ with $\Lambda>1$. When $r'(p)>\bar{r}'$, the behavioral
+channel is strong enough that supply slopes down and is more elastic than
+demand in absolute value. A lower list price then raises supply by more than
+demand to clear excess demand, so pass-through turns negative. That price drop
+makes keeping more attractive, lowers the return rate, and saves enough return
+cost to outweigh the direct cost shock, so joint surplus rises by $Q|\Lambda|$
+($\Lambda<0$). Across all three regimes, the ex-post term is larger in
+magnitude when $|r'(p)|$, $|\rho_c|$, net handling $h$, or the retained tax
+share $\beta$ is larger. Result~\ref{res:welfare-bias} summarizes the three
+regimes and the resulting bias from using the ex-ante formula $-Q$, which
+ignores how the return rate responds to the price.
 
 \begin{result}[Ex-post term and no-return joint-surplus bias]
 \label{res:welfare-bias}
 \label{res:expost-r}
-With $0<r'_0<\bar{r}'$ defined in \eqref{eq:r-thresholds}, consider a unit
+With $\bar{r}'>0$ defined in \eqref{eq:r-thresholds}, consider a unit
 production-cost increase and compare $dW/dc=-Q\Lambda$ with the ex-ante
 formula $-Q$.
 \begin{enumerate}
-\item[(i)] $0<\Lambda<1$ if and only if $r'(p)<0$. Then supply slopes up,
-$\rho_c>0$, the ex-post term is a gain, and $-Q$ overestimates the
-joint-surplus loss.
+\item[(i)] $0<\Lambda<1$ if and only if $r'(p)<0$. Then $\rho_c>0$, the
+ex-post term is a gain, and $-Q$ overestimates the joint-surplus loss.
 \item[(ii)] $\Lambda>1$ if and only if $0<r'(p)<\bar{r}'$ (equivalently,
-$r'(p)>0$ and $\rho_c>0$, with supply sloping up for $r'(p)<r'_0$ and down for
-$r'_0<r'(p)<\bar{r}'$). Then the ex-post term is a loss, and $-Q$
+$r'(p)>0$ and $\rho_c>0$). Then the ex-post term is a loss, and $-Q$
 underestimates the joint-surplus loss.
 \item[(iii)] $\Lambda<0$ if and only if $r'(p)>\bar{r}'$ (equivalently,
-$r'(p)>0$ and $\rho_c<0$, where supply slopes down and is more elastic than
-demand in absolute value). Then the ex-post term is a gain that raises joint
+$r'(p)>0$ and $\rho_c<0$). Then the ex-post term is a gain that raises joint
 surplus by $Q|\Lambda|$, and $-Q$ overestimates the loss with the wrong sign.
 \end{enumerate}
-For handling cost and the tax, the same thresholds compare $-Qr\Lambda$ with
+For handling cost and the tax, the same cutoffs compare $-Qr\Lambda$ with
 $-Qr$ and $-Q\theta\Lambda$ with $-Q\theta$.
 \end{result}
 \begin{proof}
-From \eqref{eq:mu-p} and \eqref{eq:rho-links},
-$\mu_p=(r'_0-r')\bigl[p+h-(1-\beta)t\bigr]$ and
-$S'(\mu)\mu_p-D'(p)=S'(\mu)(\bar{r}'-r')\bigl[p+h-(1-\beta)t\bigr]$. Since
-$p+h-(1-\beta)t>0$ and $S'(\mu)>0$, supply slopes up ($\mu_p>0$) iff
-$r'<r'_0$, while $\rho_c>0$ iff $r'<\bar{r}'$ (and $\rho_c<0$ iff
-$r'>\bar{r}'$, matching Result~\ref{res:negative-pt}). By
+Since $1-r>0$, $p+h-(1-\beta)t>0$, and $D'(p)/S'(\mu)<0$,
+\eqref{eq:r-thresholds} gives $\bar{r}'>0$. Substituting \eqref{eq:mu-p} into
+the denominator of $\rho_c$ in \eqref{eq:rho-links} gives
+$S'(\mu)\mu_p-D'(p)=S'(\mu)(\bar{r}'-r')\bigl[p+h-(1-\beta)t\bigr]$, so
+$\rho_c>0$ iff $r'<\bar{r}'$ and $\rho_c<0$ iff $r'>\bar{r}'$. By
 Result~\ref{res:incidence-ratio}, $\Lambda$ has the same sign as $\rho_c$, so
 $\Lambda<0\iff \rho_c<0\iff r'>\bar{r}'$. When $r'<\bar{r}'$, we have
 $\rho_c>0$ and $\Lambda>0$, so $\Lambda-1=r'\rho_c\bigl[p+h-(1-\beta)t\bigr]$
@@ -711,21 +704,29 @@ the aggregate return rate $r(p)$, whereas consumers adjust along two distinct
 margins, the purchase margin (who buys at $v_i=p$) and the return margin
 (whether inframarginal buyers keep or return the good). Because
 $r'(p)=r'_b(p)+r'_s(p)$ in \eqref{eq:r-prime-decomp}, the ex-post term in
-\eqref{eq:dV-simple} combines the return-margin response $r'_b(p)$ with the
-selection channel $r'_s(p)$ from the purchase margin. Moving $r'_s(p)$ into
-the first term separates the purchase margin from the return margin. Since
-$Q=D(p)$, $f(p)=-D'(p)$, $\rho_t=\theta\rho_c$, and $dQ/dt=D'(p)\rho_t$, we
-have $Q\theta\,r'_s(p)\rho_c=\bigl(\phi(p,p)-r(p)\bigr)\,dQ/dt$, so
-\eqref{eq:dV-simple} becomes
-\begin{equation}
+\eqref{eq:dV-simple} mixes the return-margin response $r'_b(p)$ with the
+selection piece $r'_s(p)$ from the purchase margin. Using $\rho_t=\theta\rho_c$,
+$Q=D(p)$, and $dQ/dt=D'(p)\rho_t=-f(p)\rho_t$, substituting
+\eqref{eq:r-prime-decomp} into \eqref{eq:dV-simple} and grouping the selection
+piece with the first term separates the two margins,
+\begin{align}
   \frac{dV}{dt}
-  =
+  &=
+  t\theta\,\frac{dQ}{dt}
+  -Q(p+h)\bigl[r'_s(p)+r'_b(p)\bigr]\rho_t
+  \notag\\
+  &=
+  t\theta\,\frac{dQ}{dt}
+  -D(p)(p+h)\,\frac{f(p)}{D(p)}\bigl(r(p)-\phi(p,p)\bigr)\rho_t
+  -Q(p+h)\,r'_b(p)\,\rho_t
+  \notag\\
+  &=
   \Bigl[
     t\theta-\bigl(\phi(p,p)-r(p)\bigr)(p+h)
   \Bigr]\frac{dQ}{dt}
   -Q(p+h)\,r'_b(p)\,\rho_t.
   \label{eq:dV-margins}
-\end{equation}
+\end{align}
 
 The first term is the purchase margin, where the bracket is the marginal
 social surplus of the sale at $v_i=p$, equal to marginal social benefit minus
@@ -748,39 +749,55 @@ $r(p)$, so marginal social benefit minus marginal social cost is
   t\theta-\bigl(\phi(p,p)-r(p)\bigr)(p+h).
 \end{align*}
 
-Without selection, $\phi(p,p)=r(p)$, and marginal social benefit minus
-marginal social cost equals the tax wedge $t\theta$. Whenever $t>0$, the
-marginal buyer creates positive social surplus $t\theta>0$, so there is
-always underprovision on the purchase margin, whereas at $t=0$ the purchase
-margin is undistorted. Selection adds $-\bigl(\phi(p,p)-r(p)\bigr)(p+h)$
-because sellers cannot observe buyer types and price all sales at the average
-return rate $r(p)$ rather than the marginal return rate $\phi(p,p)$. When
-marginal buyers return more often than average, so $\phi(p,p)>r(p)$ and
-$r'_s(p)<0$, inframarginal low-return buyers cross-subsidize marginal
-high-return buyers through the pooled price. Relative to an average sale, the
-marginal sale is kept less often, lowering marginal social benefit by
-$\bigl(\phi(p,p)-r(p)\bigr)p$, and is returned more often, raising expected
-handling cost by $\bigl(\phi(p,p)-r(p)\bigr)h$. When this combined selection
-loss exceeds $t\theta$, marginal social cost exceeds marginal social benefit
-and the market overprovides on the purchase margin. When $\phi(p,p)<r(p)$, so
-$r'_s(p)>0$, marginal buyers return less often than average, and selection
-reinforces $t\theta$ toward underprovision. Finally, the second term in
+Without selection ($r'_s(p)=0$, so $\phi(p,p)=r(p)$), marginal social surplus
+at $v_i=p$ equals the tax wedge $t\theta$, giving underprovision for any $t>0$
+and no distortion at $t=0$. With selection ($r'_s(p)\neq 0$), sellers cannot
+observe buyer types and price all sales at the average return rate $r(p)$
+rather than the marginal return rate $\phi(p,p)$, which shifts marginal social
+surplus by $-\bigl(\phi(p,p)-r(p)\bigr)(p+h)$. When $r'_s(p)<0$
+($\phi(p,p)>r(p)$), low-return inframarginal buyers cross-subsidize high-return
+marginal buyers through the pooled price. Because each extra return costs
+society $p+h$, this cross-subsidy causes overprovision whenever
+$\bigl(\phi(p,p)-r(p)\bigr)(p+h)>t\theta$, and therefore whenever $r'_s(p)<0$
+at $t=0$. Conversely, when $r'_s(p)>0$ ($\phi(p,p)<r(p)$), marginal buyers
+return less often than average, so selection raises marginal social surplus and
+yields underprovision for all $t\geq 0$. Finally, the second term in
 \eqref{eq:dV-margins}, $-Q(p+h)\,r'_b(p)\,\rho_t$, is the return margin and
 keeps only the behavioral response $r'_b(p)$ of inframarginal buyers.
+Result~\ref{res:efficiency-margins} summarizes both margins.
 
 \begin{result}[Purchase and return margins]
 \label{res:efficiency-margins}
-Equation \eqref{eq:dV-margins} separates the purchase and return margins.
+Equation \eqref{eq:dV-margins} separates the purchase and return margins, where
+$dQ/dt=D'(p)\rho_t$ has the opposite sign of $\rho_t$.
 \begin{enumerate}
 \item[(i)] On the purchase margin, there is overprovision if and only if
-$\bigl(\phi(p,p)-r(p)\bigr)(p+h)>t\theta$, and underprovision if and only if
-$\bigl(\phi(p,p)-r(p)\bigr)(p+h)<t\theta$. Without selection
-($\phi(p,p)=r(p)$), any $t>0$ yields underprovision, whereas at $t=0$
-selection yields overprovision whenever $\phi(p,p)>r(p)$.
+$\bigl(\phi(p,p)-r(p)\bigr)(p+h)>t\theta$, and underprovision when the
+inequality is reversed. Under overprovision, a higher tax raises social surplus
+on the purchase margin if $\rho_t>0$ ($dQ/dt<0$) and lowers it if $\rho_t<0$
+($dQ/dt>0$), with the opposite signs under underprovision. Without selection
+($r'_s(p)=0$), any $t>0$ yields underprovision. At $t=0$, selection yields
+overprovision if and only if $r'_s(p)<0$ ($\phi(p,p)>r(p)$) and underprovision
+if and only if $r'_s(p)>0$ ($\phi(p,p)<r(p)$).
 \item[(ii)] On the return margin, when $r'_b(p)>0$, a higher tax lowers
-social surplus if $\rho_t>0$ and raises it if $\rho_t<0$.
+social surplus on the return margin if $\rho_t>0$ and raises it if $\rho_t<0$.
 \end{enumerate}
 \end{result}
+
+This departs sharply from the competitive benchmark without returns, where an
+untaxed market is efficient and a tax causes only underprovision on the
+purchase margin. With returns and pooled pricing, both overprovision
+($r'_s(p)<0$) and underprovision ($r'_s(p)>0$) can arise even without a tax,
+governed by the sign of the selection channel. Whenever negative selection
+causes overprovision and pass-through is positive ($\rho_t>0$, so $dQ/dt<0$), a
+higher tax is corrective on the purchase margin because the higher list price
+deters inefficient marginal purchases. Starting from $t=0$,
+\eqref{eq:dV-margins} reduces to
+$dV/dt=-Q(p+h)\bigl[r'_s(p)+r'_b(p)\bigr]\rho_t$. Under $\rho_t>0$ with
+$r'_s(p)<0$ and $r'_b(p)>0$, the higher price improves the purchase margin
+while worsening the return margin, so a small tax raises total social surplus
+if and only if selection dominates behavior ($r'(p)<0$, as in
+Result~\ref{res:tax-welfare}(iii)).
 
 %=============================================================================
 \section{Global Incidence}
@@ -806,46 +823,6 @@ point on the path. If $dPS/dx$ changes sign along the path, the weights
 $\omega(x)$ take both signs, and the weighted average of positive local
 ratios can be negative. A finite change therefore need not preserve the
 sign of local incidence.
-
-\clearpage
-\appendix
-\section{Welfare bias in primitives}
-\label{app:welfare-bias-primitives}
-Result~\ref{res:welfare-bias} has an equivalent statement in elasticities.
-Recall $\varepsilon_r(p)\equiv p\,r'(p)/r(p)$ and
-$\mu_p=(1-r(p))-r'(p)\bigl[p+h-(1-\beta)t\bigr]$. Then
-$r'(p)\bigl[p+h-(1-\beta)t\bigr]
-=r(p)\,\varepsilon_r(p)\,\bigl[p+h-(1-\beta)t\bigr]/p$, so
-\begin{equation}
-  \mu_p>0
-    \;\iff\;
-  \varepsilon_r(p)
-  <
-  \frac{p}{p+h-(1-\beta)t}\,\frac{1-r(p)}{r(p)},
-  \label{eq:app-mu-er}
-\end{equation}
-
-In these elasticities, Result~\ref{res:welfare-bias} reads as follows.
-\begin{enumerate}
-\item[(i)] overestimation iff $\varepsilon_r(p)<0$;
-\item[(ii)] underestimation iff $\varepsilon_r(p)>0$ and either $\mu_p\geq 0$,
-or both $\mu_p<0$ and $|\varepsilon_S|< -\varepsilon_D$;
-\item[(iii)] overestimation with wrong sign (predicted loss, actual gain)
-iff $\mu_p<0$ and $|\varepsilon_S|>-\varepsilon_D$.
-\end{enumerate}
-\begin{proof}
-By Result~\ref{res:welfare-bias}, overestimation with $0<\Lambda<1$ is
-$r'<0$, underestimation is $r'>0$ with $\rho_c>0$, and overestimation with
-wrong sign is $r'>0$ with $\rho_c<0$.
-Since $\varepsilon_r$ has the same sign as $r'$, write these in
-$\varepsilon_r$.  For~(i), $\varepsilon_r<0$ forces $\mu_p>1-r>0$ and hence
-$\rho_c>0$, so $0<\Lambda<1$.
-When $\mu_p=0$ and $r(p)<1$, the derivative $r'(p)$ is positive,
-$\varepsilon_S=0$, and $\rho_c=S'(\mu)/(-D'(p))>0$, so that case is in~(ii).
-Result~\ref{res:negative-pt} translates the sign of $\rho_c$ into conditions
-on $\mu_p$ and $|\varepsilon_S|\gtrless -\varepsilon_D$: with
-$\varepsilon_r>0$ this is~(ii), and $\rho_c<0$ is~(iii).
-\end{proof}
 
 \bibliographystyle{plainnat}
 \bibliography{references}
