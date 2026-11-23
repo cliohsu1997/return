@@ -8,6 +8,7 @@
 \usepackage[round,authoryear]{natbib}
 
 \newtheorem{result}{Result}
+\newtheorem{corollary}{Corollary}
 
 \title{Pass-Through, Welfare, and Incidence under Product Returns\\
   in Perfect Competition}
@@ -107,17 +108,17 @@ average over consumers who make a purchase at $p$, equal to
 The return rate depends on how consumers purchase and on how each
 purchaser returns. The price shapes the return rate through both.
 Therefore, the effect of the price can be decomposed into a behavioral
-channel and a selection channel,
+channel $r'_b(p)$ and a selection channel $r'_s(p)$,
 \[
   r'(p)
   =
   \underbrace{
     \frac{1}{D(p)}\int_p^\infty \frac{\partial \phi(v,p)}{\partial p}\,dF(v)
-  }_{\text{Behavioral channel}}
+  }_{r'_b(p)}
   +
   \underbrace{
     \frac{f(p)}{D(p)}\bigl(r(p)-\phi(p,p)\bigr)
-  }_{\text{Selection channel}},
+  }_{r'_s(p)},
 \]
 The behavioral channel is the change in return probability holding the
 purchase cutoff fixed. A higher price lowers the utility of keeping, so
@@ -677,70 +678,55 @@ $Q\theta$ is the expected tax on existing sales, paid by sellers and received by
   -Q\theta\,r'(p)\rho_c(p+h).
   \label{eq:dV-simple}
 \end{equation}
-Without returns, $r'(p)=0$ and $\theta=1$, so \eqref{eq:dV-simple} reduces to $t\,dQ/dt$. Each excluded unit creates marginal social surplus $t$, and $dQ/dt$ is the number excluded. With returns, the first term is the welfare loss from excluded purchases. The excluded buyer has zero surplus and the seller's receipt equals marginal cost, so both break even. The loss is the platform's revenue on that sale. A kept sale pays $t$ and a returned sale pays $\beta t$, so the revenue is $t\theta$. Pass-through $\theta\rho_c$ times $D'(p)$ is the excluded quantity $dQ/dt=D'(p)\,\theta\rho_c$, and the term is $t\theta\,dQ/dt$. The second term is the welfare loss from extra returns by buyers who still purchase. This is the ex-post loss in joint surplus, where each return costs $p+h-(1-\beta)t$. The refunded tax is an internal transfer, so it drops out and the social cost of each return is $p+h$.
+Without returns, $r'(p)=0$ and $\theta=1$, so \eqref{eq:dV-simple} reduces to $t\,dQ/dt$. The marginal buyer has zero surplus and the seller's receipt equals marginal cost, so each excluded unit creates marginal social surplus $t$. The term is positive whenever total sales expand. Holding purchases and the return rate fixed, the price and the tax are internal transfers, so that part contributes nothing.
 
-By Result~\ref{res:expost-r}, the two margins depend on the strength of the
-behavioral channel relative to the selection channel. When the behavioral
-channel is weak, pass-through is positive and quantity falls, so the
-ex-ante margin is a loss, while the higher price screens out high-return
-buyers and makes the ex-post margin a gain. The two margins trade off. When
-the behavioral channel is intermediate, pass-through stays positive and
-quantity falls, while the return rate rises with the price, so both margins
-are losses. When the behavioral channel is very strong, pass-through turns
-negative, so the price and return rate fall while quantity rises, and both
-margins are gains.
+With returns, the first term is the effect of the change in demand when the return rate does not change. The marginal buyer has zero surplus, so a lost purchase leaves consumer surplus unchanged. From the seller's perspective, marginal cost equals effective marginal revenue, so the same purchase leaves seller profit unchanged. The loss that remains is the platform's expected tax on the excluded sale. A kept sale pays $t$ and a returned sale pays $\beta t$, so the tax is $t\theta$. The tax passes through by $\theta\rho_c$. The excluded quantity is $dQ/dt=D'(p)\,\theta\rho_c$, and the term is $t\theta\,dQ/dt$. This term is positive whenever total sales expand. The second term is present only when the return rate changes. It is the welfare loss from extra returns by buyers who still purchase. In joint surplus each return costs $p+h-(1-\beta)t$. The refunded tax is an internal transfer, so the social cost of each return is $p+h$.
+
+Result~\ref{res:expost-r} gives the sign of the return margin from the strength of the behavioral channel relative to the selection channel. Together with the fact that $D'(p)\,t\theta^{2}\rho_c$ is positive whenever total sales expand, this gives Result~\ref{res:tax-welfare}.
+
+A higher tax raises social surplus when the behavioral channel is very strong, lowers it when the behavioral channel is intermediate, and has a sign that depends on the underlying parameters when the behavioral channel is weak. When the behavioral channel is very strong, pass-through is negative. The price and the return rate fall, quantity rises, and both terms are gains. When the behavioral channel is intermediate, pass-through stays positive. Quantity falls and the return rate rises with the price, so both terms are losses. When the behavioral channel is weak, pass-through is positive and quantity falls, so the purchase term is a loss. The higher price screens out high-return buyers, so the return term is a gain. The two terms trade off.
+
+\begin{result}[Tax and social surplus]
+\label{res:tax-welfare}
+From \eqref{eq:dV-simple},
+\begin{equation}
+  \frac{dV}{dt}
+  =
+  \theta\rho_c\bigl[-Qr'(p)(p+h)+D'(p)\,t\theta\bigr].
+  \label{eq:dV-sign}
+\end{equation}
+By Result~\ref{res:expost-r},
+\begin{enumerate}
+\item[(i)] if $r'(p)>\bar{r}'$, then $dV/dt>0$ (a higher tax raises
+social surplus);
+\item[(ii)] if $0<r'(p)<\bar{r}'$, then $dV/dt<0$ (a higher tax lowers
+social surplus);
+\item[(iii)] if $r'(p)<0$, the ex-post gain and ex-ante loss trade off, so
+$dV/dt$ has the sign of $-Qr'(p)(p+h)+D'(p)\,t\theta$.
+\end{enumerate}
+\end{result}
+\begin{proof}
+\eqref{eq:dV-simple} is $\theta\rho_c$ times the bracket in \eqref{eq:dV-sign}. Since $\theta,Q,p+h>0$ and $D'(p)<0$, the sign of $\rho_c$ in Result~\ref{res:expost-r} gives the three cases. In~(i) $r'(p)>0$ and $\rho_c<0$, so both terms of \eqref{eq:dV-simple} are positive. In~(ii) $r'(p)>0$ and $\rho_c>0$, so both terms are negative. In~(iii) $r'(p)<0$ and $\rho_c>0$, so $-Q\theta\,r'(p)\rho_c(p+h)>0$ while $D'(p)\,t\theta^{2}\rho_c<0$, leaving the sign of $-Qr'(p)(p+h)+D'(p)\,t\theta$.
+\end{proof}
 
 When $t>0$ and $r>0$, raising the retained tax share $\beta$ lowers effective
 marginal revenue on returns and shifts supply inward like a tax increase,
 while the extra tax kept on existing returns is a transfer to the platform.
-Consequently, $\beta$ moves social surplus in the same direction as the tax.
+Both pieces scale by $rt/\theta$, which is why $\beta$ moves social surplus in the same direction as the tax.
 
-\begin{result}[Retained tax share and social surplus]
+\begin{corollary}[Retained tax share]
 \label{res:beta-welfare}
 Suppose $t>0$ and $r(p)>0$. Then
 \begin{equation}
   \frac{dV}{d\beta}
   =
-  \frac{rt}{\theta}\,\frac{dV}{dt}
-  =
-  rt\rho_c\bigl[-Qr'(p)(p+h)+D'(p)\,t\theta\bigr].
+  \frac{rt}{\theta}\,\frac{dV}{dt},
   \label{eq:dV-dbeta}
 \end{equation}
-By Result~\ref{res:expost-r}:
-\begin{enumerate}
-\item[(i)] if $r'(p)>\bar{r}'$, then $dV/d\beta>0$ (a higher $\beta$ raises
-social surplus);
-\item[(ii)] if $0<r'(p)<\bar{r}'$, then $dV/d\beta<0$ (a lower $\beta$
-raises social surplus);
-\item[(iii)] if $r'(p)<0$, the ex-post gain and ex-ante loss trade off, so
-$dV/d\beta$ has the sign of $-Qr'(p)(p+h)+D'(p)\,t\theta$.
-\end{enumerate}
-\end{result}
+so $\beta$ moves social surplus in the same direction as the tax.
+\end{corollary}
 \begin{proof}
-By \eqref{eq:mu}, $\mu_\beta=-rt=(rt/\theta)\mu_t$ and $S_\beta=S_t=0$. By
-\eqref{eq:pass-through} and \eqref{eq:rho-links},
-$\rho_\beta=(rt/\theta)\rho_t=rt\rho_c$. Because $CS$ and $PS$ depend on
-$(t,\beta)$ only through $(p,\mu)$, scaling $(\mu_t,\rho_t)$ by $rt/\theta$
-gives $dW/d\beta=(rt/\theta)(dW/dt)$. For revenue $G=Qt\theta$, since
-$dG/dt=Q\theta+t\,\partial(Q\theta)/\partial p\cdot\rho_t$,
-$\partial\theta/\partial\beta=r$, and $\rho_\beta=(rt/\theta)\rho_t$,
-\[
-  \frac{dG}{d\beta}
-  =
-  Qrt + t\frac{\partial(Q\theta)}{\partial p}\,\rho_\beta
-  =
-  \frac{rt}{\theta}\left(Q\theta+t\frac{\partial(Q\theta)}{\partial p}\,\rho_t\right)
-  =
-  \frac{rt}{\theta}\,\frac{dG}{dt}.
-\]
-Adding $dW/d\beta$ and $dG/d\beta$ gives $dV/d\beta=(rt/\theta)\,dV/dt$, and
-substituting $dV/dt=\theta\rho_c\bigl[-Qr'(p)(p+h)+D'(p)\,t\theta\bigr]$
-yields \eqref{eq:dV-dbeta}. Since $t,r,\theta,Q,p+h>0$ and $D'(p)<0$,
-Result~\ref{res:expost-r} implies that in~(i) $r'(p)>0$ and $\rho_c<0$, so
-both terms in \eqref{eq:dV-dbeta} are positive; in~(ii) $r'(p)>0$ and
-$\rho_c>0$, so both terms are negative; and in~(iii) $r'(p)<0$ and
-$\rho_c>0$, so $-Qrt\,r'(p)\rho_c(p+h)>0$ while $D'(p)\,r t^{2}\theta\rho_c<0$,
-leaving the sign of $-Qr'(p)(p+h)+D'(p)\,t\theta$.
+By \eqref{eq:mu}, $\mu_\beta=(rt/\theta)\mu_t$ and $S_\beta=S_t=0$, so \eqref{eq:pass-through} gives $\rho_\beta=(rt/\theta)\rho_t$. Joint surplus depends on $(t,\beta)$ only through $(p,\mu)$, so $dW/d\beta=(rt/\theta)\,dW/dt$. For $G=Qt\theta$, the direct effect at a fixed price is $Qrt$ for $\beta$ and $Q\theta$ for $t$, and $Qrt=(rt/\theta)\,Q\theta$. The price effect scales by the same factor. Hence $dG/d\beta=(rt/\theta)\,dG/dt$, and adding the two derivatives gives \eqref{eq:dV-dbeta}.
 \end{proof}
 
 %=============================================================================
@@ -748,79 +734,33 @@ leaving the sign of $-Qr'(p)(p+h)+D'(p)\,t\theta$.
 \label{sec:efficiency}
 %=============================================================================
 
-The social-surplus derivative \eqref{eq:dV} still mixes the purchase margin with the return margin. Substituting the definition of $\Lambda$ cancels the transfer $Q\theta$. The seller's private loss on an induced return remains.
-\begin{equation}
+The purchase term in \eqref{eq:dV-simple} follows the seller's subjective belief about the market average return rate. Effective marginal revenue is computed at that rate, so marginal cost equals the revenue on the marginal purchase, and the marginal buyer has zero surplus. Marginal profit is therefore zero. The purchase margin then changes only the platform's marginal revenue.
+
+The seller's actual marginal profit need not be zero. The marginal buyer's return rate can differ from the average return rate the seller uses. This difference is the selection channel, and it is still inside the return term. Substituting $r'(p)=r'_b(p)+r'_s(p)$ shows whether the last sale creates positive or negative social surplus.
+\begin{align}
   \frac{dV}{dt}
-  =
-  -Q\theta\,r'(p)\rho_c\bigl[p+h-(1-\beta)t\bigr]
-  +t\theta\rho_c\bigl[D'(p)\,\theta-Q(1-\beta)r'(p)\bigr].
-  \label{eq:dV-private}
-\end{equation}
-Expand $p+h-(1-\beta)t$. The piece in $(1-\beta)t$ is $Q\theta r'(p)\rho_c(1-\beta)t$. The tax-base term contributes $-t\theta\rho_c Q(1-\beta)r'(p)$. These are the same dollars. The seller recovers the refunded tax when the return rate moves, and the platform loses it. They cancel in social surplus, and
-\begin{equation}
-  \frac{dV}{dt}
-  =
+  &=
   D'(p)\,t\theta^{2}\rho_c
-  -Q\theta\,r'(p)\rho_c(p+h).
-  \label{eq:dV-resource}
-\end{equation}
-The first term follows the quantity of buyers. The second follows the return rate.
-
-Split the return-rate slope into the two channels from the model. The behavioral slope $r'_b(p)$ holds the set of buyers fixed. The selection slope is the exit of the cutoff buyer,
-\begin{equation}
-  r'_s(p)=\frac{f(p)}{D(p)}\bigl(r(p)-\phi(p,p)\bigr),
-  \label{eq:r-split}
-\end{equation}
-and $r'(p)=r'_b(p)+r'_s(p)$. Gross demand is $D(p)=1-F(p)$, so $D'(p)=-f(p)$. Equilibrium quantity is $Q=D(p)$, and the tax passes through by $\rho_t=\theta\rho_c$. The change in quantity is therefore $dQ/dt=D'(p)\,\theta\rho_c$.
-
-The selection part of \eqref{eq:dV-resource} uses $Q r'_s(p)=f(p)\bigl(r(p)-\phi(p,p)\bigr)$. Substituting $f(p)=-D'(p)$ gives
-\begin{equation}
-  -Q\theta\,r'_s(p)\rho_c(p+h)
-  =
-  -\frac{dQ}{dt}\bigl(\phi(p,p)-r(p)\bigr)(p+h).
-  \label{eq:selection-piece}
-\end{equation}
-The quantity term in \eqref{eq:dV-resource} is $(dQ/dt)\,t\theta$. Adding it to \eqref{eq:selection-piece} gives the purchase margin
-\begin{equation}
-  \frac{dQ}{dt}
-  \Bigl[
-    t\theta-\bigl(\phi(p,p)-r(p)\bigr)(p+h)
-  \Bigr].
-  \label{eq:purchase-margin}
-\end{equation}
-
-The bracket is the social value of the cutoff buyer minus marginal cost. Competition sets marginal cost equal to the seller's margin $\mu=(1-r)(p-t)-r(\beta t+h)$, which equals $(1-r)p-rh-\theta t$. The cutoff buyer has zero private surplus. Because the tax is a transfer, his social value is the list price on the units he keeps minus net handling on the units he returns, $p\bigl(1-\phi(p,p)\bigr)-h\phi(p,p)$. The difference is $t\theta-(\phi(p,p)-r(p))(p+h)$.
-
-The tax $t\theta$ is the part of the receipt the seller remits and the platform keeps. It makes the cutoff buyer worth more to society than to the seller. The term $(\phi(p,p)-r(p))(p+h)$ is the extra resource cost from his returns above the average return rate. It makes him worth less than the average buyer on whom $\mu$ is computed. When the tax is larger, the bracket is positive. The last buyer is worth more than his production cost, and too few units are sold. When his extra returns are larger, the bracket is negative. The last buyer is worth less than his production cost, and too many units are sold.
-
-The quantity change multiplies the bracket. With positive pass-through, $dQ/dt<0$, so the tax removes buyers. Removing a buyer whose social value exceeds marginal cost lowers social surplus. Removing a buyer whose social value falls short of marginal cost raises it.
-
-The behavioral part of \eqref{eq:dV-resource} holds the set of buyers fixed. It is the return margin
-\begin{equation}
-  -Q(p+h)\,r'_b(p)\,\rho_t.
-  \label{eq:return-margin}
-\end{equation}
-Buyers who still purchase switch between keeping and returning. Each switch is valued at the resource cost $p+h$.
-
-The two margins add back to \eqref{eq:dV-resource}. The transfer $Q\theta$ is in neither margin.
-\begin{result}[Purchase and return margins]
-\label{res:margins}
-\begin{equation}
-  \frac{dV}{dt}
-  =
+  -Q\theta\,r'(p)\rho_c(p+h)
+  \notag\\
+  &=
+  D'(p)\,t\theta^{2}\rho_c
+  -Q\theta\bigl(r'_b(p)+r'_s(p)\bigr)\rho_c(p+h)
+  \notag\\
+  &=
+  t\theta\,\frac{dQ}{dt}
+  -\frac{dQ}{dt}\bigl(\phi(p,p)-r(p)\bigr)(p+h)
+  -Q(p+h)\,r'_b(p)\,\rho_t
+  \notag\\
+  &=
   \frac{dQ}{dt}
   \Bigl[
     t\theta-\bigl(\phi(p,p)-r(p)\bigr)(p+h)
   \Bigr]
   -Q(p+h)\,r'_b(p)\,\rho_t.
   \label{eq:dV-margins}
-\end{equation}
-\end{result}
-\begin{proof}
-Substitute $\Lambda=1+r'(p)\rho_c[p+h-(1-\beta)t]$ into \eqref{eq:dV}. The terms $-Q\theta$ and $+Q\theta$ cancel and leave \eqref{eq:dV-private}. The terms $Q\theta r'(p)\rho_c(1-\beta)t$ and $-t\theta\rho_c Q(1-\beta)r'(p)$ cancel and leave \eqref{eq:dV-resource}. Insert $r'(p)=r'_b(p)+r'_s(p)$ with \eqref{eq:r-split}. Then $Q r'_s(p)=f(p)(r(p)-\phi(p,p))$. With $D'(p)=-f(p)$ and $dQ/dt=D'(p)\theta\rho_c$, the selection piece equals \eqref{eq:selection-piece}. The remaining quantity piece is $D'(p)t\theta^{2}\rho_c=(dQ/dt)t\theta$. Their sum is \eqref{eq:purchase-margin}. The behavioral piece is $-Q\theta r'_b(p)\rho_c(p+h)$. Since $\rho_t=\theta\rho_c$, this is \eqref{eq:return-margin}.
-
-For the bracket, $\mu=(1-r)p-rh-\theta t$ at the equilibrium, and marginal cost equals $\mu$. The cutoff buyer has $cs=0$, so his social value is $p(1-\phi(p,p))-h\phi(p,p)$. Subtracting $\mu$ leaves $t\theta-(\phi(p,p)-r(p))(p+h)$.
-\end{proof}
+\end{align}
+The bracket is the ex-ante purchase margin. When $\bigl(\phi(p,p)-r(p)\bigr)(p+h)$ exceeds $t\theta$, the bracket is negative. The last unit creates negative social surplus, and the market over-provides. When it is smaller than $t\theta$, the bracket is positive. The last unit creates positive social surplus, and the market under-provides. The last term is the return margin and keeps only the behavioral channel $r'_b(p)$.
 
 %=============================================================================
 \section{Global Incidence}
