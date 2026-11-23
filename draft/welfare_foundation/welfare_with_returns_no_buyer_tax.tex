@@ -109,7 +109,7 @@ The return rate depends on how consumers purchase and on how each
 purchaser returns. The price shapes the return rate through both.
 Therefore, the effect of the price can be decomposed into a behavioral
 channel $r'_b(p)$ and a selection channel $r'_s(p)$,
-\[
+\begin{equation}
   r'(p)
   =
   \underbrace{
@@ -118,8 +118,9 @@ channel $r'_b(p)$ and a selection channel $r'_s(p)$,
   +
   \underbrace{
     \frac{f(p)}{D(p)}\bigl(r(p)-\phi(p,p)\bigr)
-  }_{r'_s(p)},
-\]
+  }_{r'_s(p)}.
+  \label{eq:r-prime-decomp}
+\end{equation}
 The behavioral channel is the change in return probability holding the
 purchase cutoff fixed. A higher price lowers the utility of keeping, so
 purchasers return more often. The selection channel captures the change in
@@ -486,21 +487,24 @@ gain the same amount. These price effects cancel, so what remains is the
 direct effect of the higher production cost on the equilibrium quantity
 sold, a change of $-Q$.
 
-With returns, consider the case in which the price does not change who
-buys or who returns. Buyers lose
-$\rho_c$ on each kept unit and lose nothing on a returned unit, because the
-refund equals the price. There are $Q(1-r)$ kept units, so buyers lose
-$Q(1-r)\rho_c$. Sellers gain the same amount on those units. These price
-effects still cancel, and the direct loss $-Q$ remains.
+With returns, suppose first that the aggregate return rate $r(p)$ does not
+change with the price, so $r'(p)=0$ and $\Lambda=1$. Buyers lose $\rho_c$ on
+each of the $Q(1-r)$ kept units and lose nothing on returned units because
+the refund equals the price. Sellers gain the same $Q(1-r)\rho_c$ on kept
+units. These price effects still cancel, leaving the direct production-cost
+loss $-Q$, a rectangle of height one and width $Q$.
 
-A change in who buys or who returns does not add a further consumer loss. A
-buyer who stops buying had zero surplus. The higher price lowers the value
-of keeping, but the buyer who switches from keep to return was indifferent
-between the two, so the switch offsets that lower value. The cost of the
-switch falls on the seller, who gives up the price $p$, pays the handling
-cost $h$, and recovers the refunded part $(1-\beta)t$ of the tax. The price moves the return rate by $r'(p)\rho_c$, so these
-switches change joint surplus by $-Qr'(p)\rho_c\bigl[p+h-(1-\beta)t\bigr]$. Added to the direct
-loss $-Q$, the change is $-Q\Lambda$.
+Allowing $r(p)$ to vary with the price adds no further first-order change in
+consumer surplus. A marginal buyer who stops buying had zero consumer surplus,
+and an inframarginal buyer who switches between keeping and returning was
+indifferent between the two. On the seller side, however, each unit increase
+in the aggregate return rate costs $p+h-(1-\beta)t$, because the seller gives
+up the price $p$, pays net handling $h$, and recovers $(1-\beta)t$ of the
+tax. By \eqref{eq:r-prime-decomp}, the price moves the aggregate return rate
+by $r'(p)\rho_c$ through both inframarginal switches $r'_b(p)$ and marginal
+buyer entry and exit $r'_s(p)$. Multiplying by $Q$ changes joint surplus by
+$-Qr'(p)\rho_c\bigl[p+h-(1-\beta)t\bigr]$. Added to the direct loss $-Q$, the
+total change is $-Q\Lambda$.
 
 Handling cost scales this change by $r$, and the tax scales it by $\theta$.
 \begin{equation}
@@ -510,16 +514,12 @@ Handling cost scales this change by $r$, and the tax scales it by $\theta$.
   \label{eq:dW-shocks}
 \end{equation}
 
-Freezing the return rate separates the ex-ante purchase margin
-from the ex-post keep-or-return margin. With $r'(p)=0$, the factor
-$\Lambda$ equals one. A unit production-cost increase then shifts supply up by
-one dollar at every quantity. The price changes in consumer and producer
-surplus cancel. Joint surplus then falls by the extra dollar of production
-cost on each of the $Q$ units sold, a rectangle of height one and width $Q$. Handling cost leaves the rectangle $Qr$, and the tax leaves the
-rectangle $Q\theta$. These rectangles are the ex-ante term, what the change
-would be if returns did not respond to the price. The gap between the actual
-change $-Q\Lambda$ and this rectangle is the ex-post term
-$-Q\,r'(p)\rho_c\bigl[p+h-(1-\beta)t\bigr]$, scaled by $r$ or by $\theta$ for the other two shocks.
+Freezing the aggregate return rate at $r(p)$ defines the ex-ante and ex-post
+decomposition of $dW/dx$. The ex-ante term is the change at $r'(p)=0$, equal
+to the rectangles $-Q$, $-Qr$, and $-Q\theta$. The ex-post term is the
+remaining change from the price response of the aggregate return rate, equal
+to $-Q\,r'(p)\rho_c\bigl[p+h-(1-\beta)t\bigr]$ scaled by $1$, $r$, or
+$\theta$.
 \begin{result}[Ex-ante and ex-post decomposition]
 \label{res:EA-EP}
 \begin{align}
@@ -536,7 +536,7 @@ $-Q\,r'(p)\rho_c\bigl[p+h-(1-\beta)t\bigr]$, scaled by $r$ or by $\theta$ for th
 \end{align}
 \end{result}
 
-The ex-post margin offsets the ex-ante loss when $0<\Lambda<1$, amplifies it when
+The ex-post term offsets the ex-ante loss when $0<\Lambda<1$, amplifies it when
 $\Lambda>1$, and reverses it when $\Lambda<0$. Because $dW/dc=-Q\Lambda$, joint surplus falls when
 $\Lambda$ is positive and rises when $\Lambda$ is negative.
 Result~\ref{res:incidence-ratio} says that the two surpluses move together.
@@ -544,19 +544,19 @@ They fall when $\rho_c>0$ and rise when $\rho_c<0$, so $\Lambda$ has the same
 sign as $\rho_c$.
 
 When pass-through is positive, $r'(p)$ decides whether the ex-post
-margin offsets or amplifies the ex-ante loss. When the selection channel dominates,
+term offsets or amplifies the ex-ante loss. When the selection channel dominates,
 $r'(p)<0$, so $\mu_p>0$. The higher list price screens out frequent
 returners, the return rate falls, and the effective marginal revenue
-improves. The ex-post margin is then a gain, and it
+improves. The ex-post term is then a gain, and it
 cuts the loss from $Q$ to $Q\Lambda$ with $0<\Lambda<1$. When the behavioral
 channel dominates, $r'(p)>0$, so $\mu_p<1$. The higher list price makes
 keeping less attractive, the return rate rises, and the effective marginal
-revenue worsens. The ex-post margin is then a further loss, and it raises the
+revenue worsens. The ex-post term is then a further loss, and it raises the
 loss from $Q$ to $Q\Lambda$ with $\Lambda>1$. In both cases the gap from the ex-ante loss is larger when the return rate
 responds more strongly to the price, or when a return is more costly to
 handle.
 
-When pass-through is negative, the ex-post margin reverses the ex-ante loss and
+When pass-through is negative, the ex-post term reverses the ex-ante loss and
 joint surplus rises. Result~\ref{res:negative-pt} says that negative
 pass-through occurs only when the behavioral channel dominates. In this
 case, a lower price makes keeping more attractive, so the return rate falls
@@ -564,7 +564,7 @@ and the seller pays the return cost on fewer units. When that saving outweighs
 the lower revenue on kept units, effective marginal revenue rises as the
 price falls, and supply slopes down. The behavioral effect is so strong that
 a lower price raises supply by more than demand and closes the excess-demand
-gap. The ex-post margin is then a gain, and it turns the loss of $Q$ into a
+gap. The ex-post term is then a gain, and it turns the loss of $Q$ into a
 gain of $Q|\Lambda|$. The gain is larger than the ex-ante loss when the return
 rate responds strongly to the price, when the return cost is high (large
 $\beta$ and $h$), or when the magnitude of pass-through is large.
@@ -597,18 +597,18 @@ $r'(p)>0$. This is (iii). Since $r$ and $\theta$ are positive, the
 handling-cost and tax comparisons follow the same logic.
 \end{proof}
 
-The sign of the ex-post margin depends on the relative strength of the two
+The sign of the ex-post term depends on the relative strength of the two
 channels, and it is not monotone. When the selection channel is stronger,
 supply still slopes up and pass-through is positive. The higher price screens
 out consumers with a high return probability, the return rate falls, and the
-ex-post margin is a gain. When the behavioral channel dominates but supply is
+ex-post term is a gain. When the behavioral channel dominates but supply is
 not yet both downward sloping and more elastic than demand in absolute value,
 pass-through remains positive. The higher price raises the return probability
-of the remaining consumers, the return rate rises, and the ex-post margin is a
+of the remaining consumers, the return rate rises, and the ex-post term is a
 loss. When the behavioral channel is strong enough that supply is both
 downward sloping and more elastic than demand in absolute value, pass-through
 is negative. The lower price lowers the return probability of the remaining
-consumers, the return rate falls, and the ex-post margin is again a gain.
+consumers, the return rate falls, and the ex-post term is again a gain.
 Result~\ref{res:expost-r} states these three cases as thresholds on $r'(p)$.
 \begin{result}[Thresholds for the ex-post term]
 \label{res:expost-r}
@@ -678,13 +678,13 @@ $Q\theta$ is the expected tax on existing sales, paid by sellers and received by
   -Q\theta\,r'(p)\rho_c(p+h).
   \label{eq:dV-simple}
 \end{equation}
-Without returns, $r'(p)=0$ and $\theta=1$, so \eqref{eq:dV-simple} reduces to $t\,dQ/dt$. The marginal buyer has zero surplus and the seller's receipt equals marginal cost, so each excluded unit creates marginal social surplus $t$. The term is positive whenever total sales expand. Holding purchases and the return rate fixed, the price and the tax are internal transfers, so that part contributes nothing.
+Without returns, $r'(p)=0$ and $\theta=1$, so \eqref{eq:dV-simple} reduces to $t\,dQ/dt$. The marginal buyer has zero surplus and the seller's receipt equals marginal cost, so each excluded unit creates marginal social surplus $t$. The term is positive whenever total sales expand. Holding purchases fixed, the price and the tax are internal transfers, so that part contributes nothing.
 
-With returns, the first term is the effect of the change in demand when the return rate does not change. The marginal buyer has zero surplus, so a lost purchase leaves consumer surplus unchanged. From the seller's perspective, marginal cost equals effective marginal revenue, so the same purchase leaves seller profit unchanged. The loss that remains is the platform's expected tax on the excluded sale. A kept sale pays $t$ and a returned sale pays $\beta t$, so the tax is $t\theta$. The tax passes through by $\theta\rho_c$. The excluded quantity is $dQ/dt=D'(p)\,\theta\rho_c$, and the term is $t\theta\,dQ/dt$. This term is positive whenever total sales expand. The second term is present only when the return rate changes. It is the welfare loss from extra returns by buyers who still purchase. In joint surplus each return costs $p+h-(1-\beta)t$. The refunded tax is an internal transfer, so the social cost of each return is $p+h$.
+With returns, \eqref{eq:dV-simple} gives the ex-ante and ex-post decomposition of $dV/dt$. The first term is the ex-ante term, which holds the aggregate return rate fixed at $r(p)$. The marginal buyer has zero surplus, so a lost purchase leaves consumer surplus unchanged. At return rate $r(p)$, the seller's expected payoff on that unit is $\mu$, which equals marginal cost, so seller profit is also unchanged. The loss that remains is the platform's expected tax on the excluded sale. A kept sale pays $t$ and a returned sale pays $\beta t$, so the tax is $t\theta$. The tax passes through by $\theta\rho_c$. The excluded quantity is $dQ/dt=D'(p)\,\theta\rho_c$, and the ex-ante term is $t\theta\,dQ/dt$, which is positive whenever total sales expand. The second term is the ex-post term from the change in the aggregate return rate. In joint surplus each additional return costs $p+h-(1-\beta)t$. The refunded tax is an internal transfer, so the social cost per return is $p+h$.
 
-Result~\ref{res:expost-r} gives the sign of the return margin from the strength of the behavioral channel relative to the selection channel. Together with the fact that $D'(p)\,t\theta^{2}\rho_c$ is positive whenever total sales expand, this gives Result~\ref{res:tax-welfare}.
+Result~\ref{res:expost-r} gives the sign of the ex-post term from the strength of the behavioral channel relative to the selection channel. Together with the fact that $D'(p)\,t\theta^{2}\rho_c$ is positive whenever total sales expand, this gives Result~\ref{res:tax-welfare}.
 
-A higher tax raises social surplus when the behavioral channel is very strong, lowers it when the behavioral channel is intermediate, and has a sign that depends on the underlying parameters when the behavioral channel is weak. When the behavioral channel is very strong, pass-through is negative. The price and the return rate fall, quantity rises, and both terms are gains. When the behavioral channel is intermediate, pass-through stays positive. Quantity falls and the return rate rises with the price, so both terms are losses. When the behavioral channel is weak, pass-through is positive and quantity falls, so the purchase term is a loss. The higher price screens out high-return buyers, so the return term is a gain. The two terms trade off.
+A higher tax raises social surplus when the behavioral channel is very strong, lowers it when the behavioral channel is intermediate, and has a sign that depends on the underlying parameters when the behavioral channel is weak. When the behavioral channel is very strong, pass-through is negative. The price and the return rate fall, quantity rises, and both terms are gains. When the behavioral channel is intermediate, pass-through stays positive. Quantity falls and the return rate rises with the price, so both terms are losses. When the behavioral channel is weak, pass-through is positive and quantity falls, so the ex-ante term is a loss. The higher price screens out high-return buyers, so the ex-post term is a gain. The two terms trade off.
 
 \begin{result}[Tax and social surplus]
 \label{res:tax-welfare}
@@ -729,38 +729,81 @@ so $\beta$ moves social surplus in the same direction as the tax.
 By \eqref{eq:mu}, $\mu_\beta=(rt/\theta)\mu_t$ and $S_\beta=S_t=0$, so \eqref{eq:pass-through} gives $\rho_\beta=(rt/\theta)\rho_t$. Joint surplus depends on $(t,\beta)$ only through $(p,\mu)$, so $dW/d\beta=(rt/\theta)\,dW/dt$. For $G=Qt\theta$, the direct effect at a fixed price is $Qrt$ for $\beta$ and $Q\theta$ for $t$, and $Qrt=(rt/\theta)\,Q\theta$. The price effect scales by the same factor. Hence $dG/d\beta=(rt/\theta)\,dG/dt$, and adding the two derivatives gives \eqref{eq:dV-dbeta}.
 \end{proof}
 
-%=============================================================================
-\section{Purchase margin and return margin}
-\label{sec:efficiency}
-%=============================================================================
-
-The purchase term in \eqref{eq:dV-simple} follows the seller's subjective belief about the market average return rate. Effective marginal revenue is computed at that rate, so marginal cost equals the revenue on the marginal purchase, and the marginal buyer has zero surplus. Marginal profit is therefore zero. The purchase margin then changes only the platform's marginal revenue.
-
-The seller's actual marginal profit need not be zero. The marginal buyer's return rate can differ from the average return rate the seller uses. This difference is the selection channel, and it is still inside the return term. Substituting $r'(p)=r'_b(p)+r'_s(p)$ shows whether the last sale creates positive or negative social surplus.
-\begin{align}
+The ex-ante and ex-post decomposition in \eqref{eq:dV-simple} holds or varies
+the aggregate return rate $r(p)$, whereas consumers adjust along two distinct
+margins, the purchase margin (who buys at $v_i=p$) and the return margin
+(whether inframarginal buyers keep or return the good). Because
+$r'(p)=r'_b(p)+r'_s(p)$ in \eqref{eq:r-prime-decomp}, the ex-post term in
+\eqref{eq:dV-simple} combines the return-margin response $r'_b(p)$ with the
+selection channel $r'_s(p)$ from the purchase margin. Moving $r'_s(p)$ into
+the first term separates the purchase margin from the return margin. Since
+$Q=D(p)$, $f(p)=-D'(p)$, $\rho_t=\theta\rho_c$, and $dQ/dt=D'(p)\rho_t$, we
+have $Q\theta\,r'_s(p)\rho_c=\bigl(\phi(p,p)-r(p)\bigr)\,dQ/dt$, so
+\eqref{eq:dV-simple} becomes
+\begin{equation}
   \frac{dV}{dt}
-  &=
-  D'(p)\,t\theta^{2}\rho_c
-  -Q\theta\,r'(p)\rho_c(p+h)
-  \notag\\
-  &=
-  D'(p)\,t\theta^{2}\rho_c
-  -Q\theta\bigl(r'_b(p)+r'_s(p)\bigr)\rho_c(p+h)
-  \notag\\
-  &=
-  t\theta\,\frac{dQ}{dt}
-  -\frac{dQ}{dt}\bigl(\phi(p,p)-r(p)\bigr)(p+h)
-  -Q(p+h)\,r'_b(p)\,\rho_t
-  \notag\\
-  &=
-  \frac{dQ}{dt}
+  =
   \Bigl[
     t\theta-\bigl(\phi(p,p)-r(p)\bigr)(p+h)
-  \Bigr]
+  \Bigr]\frac{dQ}{dt}
   -Q(p+h)\,r'_b(p)\,\rho_t.
   \label{eq:dV-margins}
-\end{align}
-The bracket is the ex-ante purchase margin. When $\bigl(\phi(p,p)-r(p)\bigr)(p+h)$ exceeds $t\theta$, the bracket is negative. The last unit creates negative social surplus, and the market over-provides. When it is smaller than $t\theta$, the bracket is positive. The last unit creates positive social surplus, and the market under-provides. The last term is the return margin and keeps only the behavioral channel $r'_b(p)$.
+\end{equation}
+
+The first term is the purchase margin, where the bracket is the marginal
+social surplus of the sale at $v_i=p$, equal to marginal social benefit minus
+marginal social cost. Holding inframarginal return behavior fixed, there is
+underprovision on the purchase margin when this bracket is positive and
+overprovision when it is negative. Because the marginal buyer has zero
+consumer surplus, expected match value when kept minus expected return hassle
+equals expected payment $\bigl(1-\phi(p,p)\bigr)p$, which is the marginal
+social benefit. Marginal social cost is marginal production cost plus
+expected handling $\phi(p,p)h$. Competitive sellers set marginal production
+cost equal to effective marginal revenue $\mu$ at the average return rate
+$r(p)$, so marginal social benefit minus marginal social cost is
+\begin{align*}
+  \bigl(1-\phi(p,p)\bigr)p-\bigl[\mu+\phi(p,p)h\bigr]
+  &=
+  \bigl(1-\phi(p,p)\bigr)p
+  -\bigl[\bigl(1-r(p)\bigr)(p-t)-r(p)(\beta t+h)+\phi(p,p)h\bigr]
+  \\
+  &=
+  t\theta-\bigl(\phi(p,p)-r(p)\bigr)(p+h).
+\end{align*}
+
+Without selection, $\phi(p,p)=r(p)$, and marginal social benefit minus
+marginal social cost equals the tax wedge $t\theta$. Whenever $t>0$, the
+marginal buyer creates positive social surplus $t\theta>0$, so there is
+always underprovision on the purchase margin, whereas at $t=0$ the purchase
+margin is undistorted. Selection adds $-\bigl(\phi(p,p)-r(p)\bigr)(p+h)$
+because sellers cannot observe buyer types and price all sales at the average
+return rate $r(p)$ rather than the marginal return rate $\phi(p,p)$. When
+marginal buyers return more often than average, so $\phi(p,p)>r(p)$ and
+$r'_s(p)<0$, inframarginal low-return buyers cross-subsidize marginal
+high-return buyers through the pooled price. Relative to an average sale, the
+marginal sale is kept less often, lowering marginal social benefit by
+$\bigl(\phi(p,p)-r(p)\bigr)p$, and is returned more often, raising expected
+handling cost by $\bigl(\phi(p,p)-r(p)\bigr)h$. When this combined selection
+loss exceeds $t\theta$, marginal social cost exceeds marginal social benefit
+and the market overprovides on the purchase margin. When $\phi(p,p)<r(p)$, so
+$r'_s(p)>0$, marginal buyers return less often than average, and selection
+reinforces $t\theta$ toward underprovision. Finally, the second term in
+\eqref{eq:dV-margins}, $-Q(p+h)\,r'_b(p)\,\rho_t$, is the return margin and
+keeps only the behavioral response $r'_b(p)$ of inframarginal buyers.
+
+\begin{result}[Purchase and return margins]
+\label{res:efficiency-margins}
+Equation \eqref{eq:dV-margins} separates the purchase and return margins.
+\begin{enumerate}
+\item[(i)] On the purchase margin, there is overprovision if and only if
+$\bigl(\phi(p,p)-r(p)\bigr)(p+h)>t\theta$, and underprovision if and only if
+$\bigl(\phi(p,p)-r(p)\bigr)(p+h)<t\theta$. Without selection
+($\phi(p,p)=r(p)$), any $t>0$ yields underprovision, whereas at $t=0$
+selection yields overprovision whenever $\phi(p,p)>r(p)$.
+\item[(ii)] On the return margin, when $r'_b(p)>0$, a higher tax lowers
+social surplus if $\rho_t>0$ and raises it if $\rho_t<0$.
+\end{enumerate}
+\end{result}
 
 %=============================================================================
 \section{Global Incidence}
