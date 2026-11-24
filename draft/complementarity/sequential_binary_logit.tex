@@ -1,0 +1,148 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[margin=1in]{geometry}
+\newtheorem{proposition}{Proposition}
+\newtheorem{corollary}{Corollary}
+\newtheorem{definition}{Definition}
+
+\title{History-Independent Complementarity Is Impossible\\
+in Sequential Binary Choice}
+\author{Draft notes}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section{Model}
+
+Two goods $A,B\in\{0,1\}$ have utilities $v_A$ and $v_B$. The parameter
+$\gamma$ measures complementarity. Choosing $A$ changes the incremental
+utility of $B$ by $\gamma$. When $\gamma>0$, taking $A$ makes $B$ more
+attractive. When $\gamma<0$, taking $A$ makes $B$ less attractive. When
+$\gamma=0$, the goods are independent.
+
+A sequential binary model chooses one good at a time. Two assumptions govern
+how utilities enter each step.
+
+\begin{definition}[Reference independence]
+\label{def:ref}
+Each binary step depends only on its own incremental utility relative to not
+taking the good.
+\end{definition}
+
+Let $f$ map an incremental utility into a choice probability. For every
+real incremental utility $x$, the link satisfies $0<f(x)<1$. Reference
+independence says that the choice probability at each step is $f$ of that
+step's incremental utility alone.
+
+\begin{definition}[History independence]
+\label{def:hist}
+Complementarity is \emph{history independent} if both choice orders use the
+same link $f$ and the same $\gamma$. Which good is chosen first does not
+change the form of complementarity.
+\end{definition}
+
+Under reference independence and history independence, choosing $A$ first
+gives
+\begin{equation}\label{eq:seq}
+P(A=1)=f(v_A),\qquad P(B=1\mid A=a)=f(v_B+\gamma a).
+\end{equation}
+The first equality is reference independence at the first step. The
+incremental utility of $A$ is just $v_A$, so $P(A=1)$ depends only on $v_A$.
+The second equality is reference independence at the second step together
+with complementarity. Conditional on $A=a$, the incremental utility of $B$ is
+$v_B+\gamma a$, so $P(B=1\mid A=a)$ depends only on that quantity. History
+independence requires the reverse order to take the same form with the same
+$f$ and $\gamma$,
+\begin{equation}\label{eq:rev}
+P(B=1)=f(v_B),\qquad P(A=1\mid B=b)=f(v_A+\gamma b).
+\end{equation}
+From \eqref{eq:seq}, the joint probability of the bundle is therefore
+\begin{equation}\label{eq:joint}
+P(A=1,B=1)=f(v_A)\,f(v_B+\gamma).
+\end{equation}
+
+\section{The functional equation}
+
+Bayes' identity holds for any joint distribution,
+\[
+P(A=1)\,P(B=1\mid A=1)=P(B=1)\,P(A=1\mid B=1).
+\]
+Substituting \eqref{eq:seq} and \eqref{eq:rev} forces
+\begin{equation}\label{eq:FE}
+f(v_A)\,f(v_B+\gamma)=f(v_B)\,f(v_A+\gamma)
+\quad\Longleftrightarrow\quad
+\frac{f(v_A+\gamma)}{f(v_A)}=\frac{f(v_B+\gamma)}{f(v_B)}.
+\end{equation}
+The multiplicative effect of $\gamma$ must not depend on the baseline
+utility.
+
+\section{Impossibility}
+
+\begin{proposition}\label{prop:exp}
+If $f>0$ satisfies \eqref{eq:FE} for all $v_A,v_B,\gamma$ and is continuous
+(or measurable, monotone, or bounded on an interval), then $f(x)=Ce^{kx}$.
+\end{proposition}
+
+\begin{proof}
+By \eqref{eq:FE} the ratio $f(x+\gamma)/f(x)$ is independent of $x$, so
+$f(x+\gamma)=R(\gamma)f(x)$. With $g=\ln f$ and $h=\ln R$,
+\[
+g(x+\gamma)=g(x)+h(\gamma).
+\]
+Applying twice with increments $\gamma,\delta$ gives
+$h(\gamma+\delta)=h(\gamma)+h(\delta)$, so $h$ is additive. Under regularity
+$h(\gamma)=k\gamma$, hence $g(x)=g(0)+kx$ and $f(x)=Ce^{kx}$.
+\end{proof}
+
+Utilities are unbounded, so a probability link must satisfy $0<f(x)<1$ for
+all $x$. The exponential $Ce^{kx}$ with $k\neq0$ is unbounded, so it fails.
+The only bounded solution is $k=0$, so $f$ is constant. A constant link gives
+$P(B=1\mid A=1)=P(B=1\mid A=0)$, so $\gamma$ has no effect.
+
+\begin{corollary}\label{cor:imposs}
+Under reference independence and history independence, no non-constant
+bounded probability link $f$ can satisfy \eqref{eq:FE} with $\gamma\neq0$.
+Either $\gamma=0$, or $f$ is constant and $\gamma$ has no effect on choice
+probabilities.
+\end{corollary}
+
+The same impossibility has a direct reading through reference independence.
+Complementarity requires the value of $A$ to depend on $B$, so the marginal
+for $A$ must depend on $v_B$ and $\gamma$. Reference independence forbids
+that dependence, because each step uses only its own incremental utility.
+History independence and reference independence are therefore two faces of
+the same constraint. The sequential decomposition forces each step to be a
+standalone binary comparison, and that structure cannot carry
+$\gamma\neq0$ in both orders.
+
+\section{Why the joint bundle logit escapes}
+
+The bundle model treats $\{0,A,B,AB\}$ as joint alternatives with utilities
+\[
+u_0=0,\quad u_A=v_A+\varepsilon_A,\quad u_B=v_B+\varepsilon_B,\quad
+u_{AB}=v_A+v_B+\Gamma+\varepsilon_{AB},
+\]
+where the $\varepsilon_j$ are i.i.d.\ Type-I extreme value. Then
+\[
+P_{AB}=\frac{e^{v_A+v_B+\Gamma}}{1+e^{v_A}+e^{v_B}+e^{v_A+v_B+\Gamma}},
+\]
+and analogously for the other bundles. The derived conditional is
+\[
+P(B=1\mid A=a)=\Lambda(v_B+\Gamma a),
+\]
+but the derived marginal is not $\Lambda(v_A)$,
+\[
+P(A=1)=\frac{e^{v_A}\bigl(1+e^{v_B+\Gamma}\bigr)}
+{1+e^{v_A}+e^{v_B}+e^{v_A+v_B+\Gamma}}.
+\]
+
+History independence \eqref{eq:FE} requires a single link $f$ to govern both
+the marginal and the conditional in both orders. The bundle model never
+imposes this. Its conditional is logistic, but its marginal is not
+$\Lambda(v_A)$ for the same $\Lambda$. Equivalently, it violates reference
+independence at the marginal, because $P(A=1)$ depends on $v_B$ and
+$\Gamma$. That dependence is exactly what allows $\Gamma\neq0$. The
+functional equation never arises, so no contradiction occurs.
+
+\end{document}
