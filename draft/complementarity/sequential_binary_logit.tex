@@ -107,14 +107,14 @@ Either $\gamma=0$, or $f$ is constant and $\gamma$ has no effect on choice
 probabilities.
 \end{corollary}
 
-The same impossibility has a direct reading through reference independence.
-Complementarity requires the value of $A$ to depend on $B$, so the marginal
-for $A$ must depend on $v_B$ and $\gamma$. Reference independence forbids
-that dependence, because each step uses only its own incremental utility.
-History independence and reference independence are therefore two faces of
-the same constraint. The sequential decomposition forces each step to be a
-standalone binary comparison, and that structure cannot carry
-$\gamma\neq0$ in both orders.
+Corollary \ref{cor:imposs} has a direct reading through reference
+independence. Complementarity means that choosing $A$ raises the value of
+$B$, and choosing $B$ raises the value of $A$. The first-step marginal must
+therefore respond to the other good's utility and to $\gamma$. Reference
+independence rules this out. Each step uses only its own incremental utility,
+so the marginal cannot depend on the other good. That is exactly what
+prevents a shared $\gamma\neq0$ from being carried by one link in both
+orders.
 
 \section{Why the joint bundle logit escapes}
 
@@ -137,12 +137,12 @@ P(A=1)=\frac{e^{v_A}\bigl(1+e^{v_B+\Gamma}\bigr)}
 {1+e^{v_A}+e^{v_B}+e^{v_A+v_B+\Gamma}}.
 \]
 
-History independence \eqref{eq:FE} requires a single link $f$ to govern both
-the marginal and the conditional in both orders. The bundle model never
-imposes this. Its conditional is logistic, but its marginal is not
-$\Lambda(v_A)$ for the same $\Lambda$. Equivalently, it violates reference
-independence at the marginal, because $P(A=1)$ depends on $v_B$ and
-$\Gamma$. That dependence is exactly what allows $\Gamma\neq0$. The
-functional equation never arises, so no contradiction occurs.
+The impossibility applies only when a single link $f$ governs the marginal
+and the conditional in both orders. The bundle model does not do this. Its
+conditional is logistic, but its marginal depends on $v_B$ and $\Gamma$.
+The marginal for the first good is therefore not reference independent.
+Because the marginal already carries the complementarity, the functional
+equation never arises. That is why the bundle model can support
+$\Gamma\neq0$.
 
 \end{document}
