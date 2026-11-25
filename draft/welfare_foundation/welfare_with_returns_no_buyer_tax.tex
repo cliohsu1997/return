@@ -784,16 +784,11 @@ When $t>0$ and $r>0$, raising $\beta$ lowers effective marginal revenue and
 transfers the kept fee to the platform, so $\beta$ moves social surplus in the
 same direction as the tax.
 
-\begin{corollary}[Optimal tax and retained share]
+\begin{corollary}[Welfare-maximizing retained share]
 \label{res:beta-welfare}
-Suppose $t>0$ and $r(p)>0$. Then
-\begin{enumerate}
-\item[(i)] (Retained share) $\beta^\ast=1$ when $r'>\bar{r}'$,
-  $\beta^\ast=0$ when $0<r'<\bar{r}'$, and $\beta^\ast$ is $t$-dependent
-  when $r'<0$.
-\item[(ii)] (Optimal tax) $t^\ast>0$ is optimal only when the selection
-  effect dominates the behavioral response, $-r'_s(p)>r'_b(p)$.
-\end{enumerate}
+Suppose $t>0$ and $r(p)>0$. Then $\beta^\ast=1$ when $r'>\bar{r}'$,
+$\beta^\ast=0$ when $0<r'<\bar{r}'$, and $\beta^\ast$ is $t$-dependent when
+$r'<0$.
 \end{corollary}
 \begin{proof}
 By \eqref{eq:mu}, $\mu_\beta=(rt/\theta)\mu_t$ and $S_\beta=S_t=0$, so \eqref{eq:pass-through} gives $\rho_\beta=(rt/\theta)\rho_t$. Joint surplus depends on $(t,\beta)$ only through $(p,\mu)$, so $dW/d\beta=(rt/\theta)\,dW/dt$. For $G=Qt\theta$, the direct effect at a fixed price is $Qrt$ for $\beta$ and $Q\theta$ for $t$, and $Qrt=(rt/\theta)\,Q\theta$. The price effect scales by the same factor. Hence $dG/d\beta=(rt/\theta)\,dG/dt$, and adding the two derivatives gives
@@ -803,22 +798,10 @@ By \eqref{eq:mu}, $\mu_\beta=(rt/\theta)\mu_t$ and $S_\beta=S_t=0$, so \eqref{eq
 \end{equation}
 with $rt/\theta>0$, so $\beta$ moves social surplus in the same direction as
 the tax and $\beta^\ast$ is a corner. Result~\ref{res:tax-welfare} then gives
-part~(i): $dV/dt>0$ (so $\beta^\ast=1$) when $r'>\bar{r}'$, $dV/dt<0$ (so
+$dV/dt>0$ (so $\beta^\ast=1$) when $r'>\bar{r}'$, $dV/dt<0$ (so
 $\beta^\ast=0$) when $0<r'<\bar{r}'$, and, when $r'<0$, $dV/dt$ has the sign
 of $-Qr'(p)(p+h)+D'(p)t\theta$, which depends on $t$, so $\beta^\ast$ is
 $t$-dependent.
-
-For part~(ii), setting $dV/dt=0$ in \eqref{eq:dV-simple} gives
-\begin{equation}
-t^\ast=\frac{Q\,r'(p)(p+h)}{D'(p)\,\theta},
-\label{eq:t-star}
-\end{equation}
-with every term evaluated at the equilibrium price $p(t)$, so $t^\ast$ is
-the fixed point of this equation. Since $D'(p)<0$ and $\theta>0$, $t^\ast>0$
-requires $r'(p)<0$; by \eqref{eq:r-prime-decomp},
-$r'(p)=r'_s(p)+r'_b(p)$ with $r'_b(p)>0$, this holds only if the selection
-effect is negative and outweighs the behavioral response,
-$-r'_s(p)>r'_b(p)$.
 \end{proof}
 
 The ex-ante and ex-post decomposition in \eqref{eq:dV-simple} holds or varies
