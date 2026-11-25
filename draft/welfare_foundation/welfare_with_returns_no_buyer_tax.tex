@@ -780,6 +780,22 @@ ex-post gain against the ex-ante loss for $t>0$.
 \eqref{eq:dV-simple} is $\theta\rho_c$ times the bracket in \eqref{eq:dV-sign}. Since $\theta,Q,p+h>0$, $t\geq 0$, and $D'(p)<0$, the sign of $\rho_c$ in Result~\ref{res:welfare-bias} gives the three cases. In~(i) $r'(p)>0$ and $\rho_c<0$, so $-Q\theta\,r'(p)\rho_c(p+h)>0$ and $D'(p)\,t\theta^{2}\rho_c\geq 0$. In~(ii) $r'(p)>0$ and $\rho_c>0$, so $-Q\theta\,r'(p)\rho_c(p+h)<0$ and $D'(p)\,t\theta^{2}\rho_c\leq 0$. In~(iii) $r'(p)<0$ and $\rho_c>0$, so $-Q\theta\,r'(p)\rho_c(p+h)>0$ while $D'(p)\,t\theta^{2}\rho_c\leq 0$, leaving the sign of $-Qr'(p)(p+h)+D'(p)\,t\theta$.
 \end{proof}
 
+\begin{corollary}[Selection-driven positive tax]
+\label{res:selection-positive-tax}
+Suppose $r'(p)<0$ for all prices $p$ on the equilibrium path. By
+\eqref{eq:r-prime-decomp} this means the selection effect dominates the
+behavioral response, $-r'_s(p)>r'_b(p)$. Then $\rho_c>0$ throughout, and
+\eqref{eq:dV-simple} gives $dV/dt>0$ at $t=0$, so a small tax raises social
+surplus and the welfare-maximizing tax is strictly positive.
+\end{corollary}
+\begin{proof}
+Since $r'(p)<0<\bar{r}'$, Result~\ref{res:welfare-bias}(i) gives $\rho_c>0$.
+At $t=0$ the ex-ante term $D'(p)\,t\theta^{2}\rho_c$ in \eqref{eq:dV-simple}
+vanishes, leaving $-Q\theta\,r'(p)\rho_c(p+h)>0$. The tax raises the price
+($\rho_c>0$), screens out high-return-rate buyers, lowers the return rate,
+and cuts the costly-return ex-post term, a gain, so $t^\ast>0$.
+\end{proof}
+
 When $t>0$ and $r>0$, raising the retained tax share $\beta$ lowers effective
 marginal revenue on returns and shifts supply inward like a tax increase,
 while the extra tax kept on existing returns is a transfer to the platform.
