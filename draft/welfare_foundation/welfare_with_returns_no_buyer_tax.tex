@@ -780,10 +780,33 @@ ex-post gain against the ex-ante loss for $t>0$.
 \eqref{eq:dV-simple} is $\theta\rho_c$ times the bracket in \eqref{eq:dV-sign}. Since $\theta,Q,p+h>0$, $t\geq 0$, and $D'(p)<0$, the sign of $\rho_c$ in Result~\ref{res:welfare-bias} gives the three cases. In~(i) $r'(p)>0$ and $\rho_c<0$, so $-Q\theta\,r'(p)\rho_c(p+h)>0$ and $D'(p)\,t\theta^{2}\rho_c\geq 0$. In~(ii) $r'(p)>0$ and $\rho_c>0$, so $-Q\theta\,r'(p)\rho_c(p+h)<0$ and $D'(p)\,t\theta^{2}\rho_c\leq 0$. In~(iii) $r'(p)<0$ and $\rho_c>0$, so $-Q\theta\,r'(p)\rho_c(p+h)>0$ while $D'(p)\,t\theta^{2}\rho_c\leq 0$, leaving the sign of $-Qr'(p)(p+h)+D'(p)\,t\theta$.
 \end{proof}
 
+\begin{result}[Optimal tax]
+\label{res:optimal-tax}
+Setting $dV/dt=0$ in \eqref{eq:dV-simple} gives
+\begin{equation}
+t^\ast=\frac{Q\,r'(p)(p+h)}{D'(p)\,\theta},
+\label{eq:t-star}
+\end{equation}
+with every term evaluated at the equilibrium price $p(t)$, so $t^\ast$ is
+the fixed point of this equation. It is positive if and only if
+$r'(p)<0$. When $r'>\bar{r}'$ the platform raises $t$ to its upper bound;
+when $0<r'<\bar{r}'$, $t^\ast=0$.
+\end{result}
+
+\begin{corollary}[Optimal tax and selection]
+\label{res:optimal-tax-selection}
+At an interior optimum the selection effect is negative and stronger than
+the behavioral response, $-r'_s(p)>r'_b(p)$.
+\end{corollary}
+
 When $t>0$ and $r>0$, raising the retained tax share $\beta$ lowers effective
 marginal revenue on returns and shifts supply inward like a tax increase,
 while the extra tax kept on existing returns is a transfer to the platform.
 Both pieces scale by $rt/\theta$, which is why $\beta$ moves social surplus in the same direction as the tax.
+
+To see the corollary, $D'(p)<0$ and $\theta>0$ make \eqref{eq:t-star} positive
+only when $r'(p)<0$; with $r'(p)=r'_s(p)+r'_b(p)$ and $r'_b(p)>0$, this holds
+only if the selection effect is negative and outweighs the behavioral response.
 
 \begin{corollary}[Retained tax share]
 \label{res:beta-welfare}
@@ -799,6 +822,15 @@ so $\beta$ moves social surplus in the same direction as the tax.
 \begin{proof}
 By \eqref{eq:mu}, $\mu_\beta=(rt/\theta)\mu_t$ and $S_\beta=S_t=0$, so \eqref{eq:pass-through} gives $\rho_\beta=(rt/\theta)\rho_t$. Joint surplus depends on $(t,\beta)$ only through $(p,\mu)$, so $dW/d\beta=(rt/\theta)\,dW/dt$. For $G=Qt\theta$, the direct effect at a fixed price is $Qrt$ for $\beta$ and $Q\theta$ for $t$, and $Qrt=(rt/\theta)\,Q\theta$. The price effect scales by the same factor. Hence $dG/d\beta=(rt/\theta)\,dG/dt$, and adding the two derivatives gives \eqref{eq:dV-dbeta}.
 \end{proof}
+
+\begin{corollary}[Welfare-maximizing retained share]
+\label{res:beta-star}
+Suppose $t>0$ and $r(p)>0$. Then $dV/d\beta=(rt/\theta)\,dV/dt$ with
+$rt/\theta>0$, so $\beta^\ast$ is a corner. Result~\ref{res:tax-welfare}
+gives $\beta^\ast=1$ when $r'>\bar{r}'$, $\beta^\ast=0$ when
+$0<r'<\bar{r}'$, and $\beta^\ast=1$ at $t=0$ (then $t$-dependent) when
+$r'<0$.
+\end{corollary}
 
 The ex-ante and ex-post decomposition in \eqref{eq:dV-simple} holds or varies
 the aggregate return rate $r(p)$, whereas consumers adjust along two distinct
