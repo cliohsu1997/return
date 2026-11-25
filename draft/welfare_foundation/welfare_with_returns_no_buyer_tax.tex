@@ -780,28 +780,24 @@ ex-post gain against the ex-ante loss for $t>0$.
 \eqref{eq:dV-simple} is $\theta\rho_c$ times the bracket in \eqref{eq:dV-sign}. Since $\theta,Q,p+h>0$, $t\geq 0$, and $D'(p)<0$, the sign of $\rho_c$ in Result~\ref{res:welfare-bias} gives the three cases. In~(i) $r'(p)>0$ and $\rho_c<0$, so $-Q\theta\,r'(p)\rho_c(p+h)>0$ and $D'(p)\,t\theta^{2}\rho_c\geq 0$. In~(ii) $r'(p)>0$ and $\rho_c>0$, so $-Q\theta\,r'(p)\rho_c(p+h)<0$ and $D'(p)\,t\theta^{2}\rho_c\leq 0$. In~(iii) $r'(p)<0$ and $\rho_c>0$, so $-Q\theta\,r'(p)\rho_c(p+h)>0$ while $D'(p)\,t\theta^{2}\rho_c\leq 0$, leaving the sign of $-Qr'(p)(p+h)+D'(p)\,t\theta$.
 \end{proof}
 
-When $t>0$ and $r>0$, raising $\beta$ lowers effective marginal revenue and
-transfers the kept fee to the platform, so $\beta$ moves social surplus in the
-same direction as the tax.
+When $t>0$ and $r>0$, raising the retained tax share $\beta$ lowers effective
+marginal revenue on returns and shifts supply inward like a tax increase,
+while the extra tax kept on existing returns is a transfer to the platform.
+Both pieces scale by $rt/\theta$, which is why $\beta$ moves social surplus in the same direction as the tax.
 
-\begin{corollary}[Welfare-maximizing retained share]
+\begin{corollary}[Retained tax share]
 \label{res:beta-welfare}
-Suppose $t>0$ and $r(p)>0$. Then $\beta^\ast=1$ when $r'>\bar{r}'$,
-$\beta^\ast=0$ when $0<r'<\bar{r}'$, and $\beta^\ast$ is $t$-dependent when
-$r'<0$.
-\end{corollary}
-\begin{proof}
-By \eqref{eq:mu}, $\mu_\beta=(rt/\theta)\mu_t$ and $S_\beta=S_t=0$, so \eqref{eq:pass-through} gives $\rho_\beta=(rt/\theta)\rho_t$. Joint surplus depends on $(t,\beta)$ only through $(p,\mu)$, so $dW/d\beta=(rt/\theta)\,dW/dt$. For $G=Qt\theta$, the direct effect at a fixed price is $Qrt$ for $\beta$ and $Q\theta$ for $t$, and $Qrt=(rt/\theta)\,Q\theta$. The price effect scales by the same factor. Hence $dG/d\beta=(rt/\theta)\,dG/dt$, and adding the two derivatives gives
+Suppose $t>0$ and $r(p)>0$. Then
 \begin{equation}
-  \frac{dV}{d\beta}=\frac{rt}{\theta}\,\frac{dV}{dt},
+  \frac{dV}{d\beta}
+  =
+  \frac{rt}{\theta}\,\frac{dV}{dt},
   \label{eq:dV-dbeta}
 \end{equation}
-with $rt/\theta>0$, so $\beta$ moves social surplus in the same direction as
-the tax and $\beta^\ast$ is a corner. Result~\ref{res:tax-welfare} then gives
-$dV/dt>0$ (so $\beta^\ast=1$) when $r'>\bar{r}'$, $dV/dt<0$ (so
-$\beta^\ast=0$) when $0<r'<\bar{r}'$, and, when $r'<0$, $dV/dt$ has the sign
-of $-Qr'(p)(p+h)+D'(p)t\theta$, which depends on $t$, so $\beta^\ast$ is
-$t$-dependent.
+so $\beta$ moves social surplus in the same direction as the tax.
+\end{corollary}
+\begin{proof}
+By \eqref{eq:mu}, $\mu_\beta=(rt/\theta)\mu_t$ and $S_\beta=S_t=0$, so \eqref{eq:pass-through} gives $\rho_\beta=(rt/\theta)\rho_t$. Joint surplus depends on $(t,\beta)$ only through $(p,\mu)$, so $dW/d\beta=(rt/\theta)\,dW/dt$. For $G=Qt\theta$, the direct effect at a fixed price is $Qrt$ for $\beta$ and $Q\theta$ for $t$, and $Qrt=(rt/\theta)\,Q\theta$. The price effect scales by the same factor. Hence $dG/d\beta=(rt/\theta)\,dG/dt$, and adding the two derivatives gives \eqref{eq:dV-dbeta}.
 \end{proof}
 
 The ex-ante and ex-post decomposition in \eqref{eq:dV-simple} holds or varies
